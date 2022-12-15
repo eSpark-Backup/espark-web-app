@@ -1,0 +1,1 @@
+export const mainPic = "../../assets/images/ml-banner-image/ml-main-pic.jpg";

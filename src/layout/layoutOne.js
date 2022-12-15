@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../components/footer/footer";
 import Header from "../components/header/header";
+// import Home from "../screens/home/index";
 
 const LayoutOne = ({ children }) => {
   return (
