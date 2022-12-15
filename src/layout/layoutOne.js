@@ -7,18 +7,6 @@ const LayoutOne = ({ children }) => {
     <div id="__next">
       <Header />
       {children}
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
       <Footer />
     </div>
   );

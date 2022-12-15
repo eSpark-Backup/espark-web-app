@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
+import { BrowserRouter as Router, useRoutes } from "react-router-dom";
+import Home from "../screens/home";
 
-const Router = () => {
+const AppRoutes = () => {
+  let routes = useRoutes([{ path: "/", element: <Home /> }]);
+
+  return routes;
+};
+
+const AppWraper = () => {
   return (
-    <div>Router</div>
-  )
-}
+    <Router>
+      <AppRoutes />;
+    </Router>
+  );
+};
 
-export default Router
+export default AppWraper;
