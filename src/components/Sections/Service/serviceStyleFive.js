@@ -11,7 +11,7 @@ const ServiceStyleFive = ({ data }) => {
               return (
                 <div class="col-lg-4 col-sm-6 col-md-6">
                   <div class="agency-services-box">
-                    {/* <img src={item.data.image} alt="image" /> */}
+                    <img src={item.data.image[0]} alt="image" />
                     <div class="content">
                       <h3>
                         <a href="/service-details/">{item.name}</a>

@@ -1,6 +1,9 @@
 import React from "react";
+import { services } from "../../helper/services";
 
 const HeroSectionOne = ({ heading, paragrah }) => {
+  const filterData = services.filter((item) => item.name === "Web Development");
+  console.log(filterData[0].data.image);
   return (
     <div>
       <div class="repair-main-banner">
@@ -17,27 +20,12 @@ const HeroSectionOne = ({ heading, paragrah }) => {
                 </p>
               </div>
             </div>
+
             <div class="col-lg-6">
               <div class="repair-banner-image">
-                <img
-                  src="/images/repair-banner-image/repair-banner-img.png"
-                  alt="image"
-                />
-                <img
-                  src="/images/repair-banner-image/repair-shape1.png"
-                  class="animate__animated animate__zoomIn animate__delay-0.6s"
-                  alt="image"
-                />
-                <img
-                  src="/images/repair-banner-image/repair-shape2.png"
-                  class="animate__animated animate__fadeInLeft animate__delay-0.6s"
-                  alt="image"
-                />
-                <img
-                  src="/images/repair-banner-image/repair-shape-circle.png"
-                  class="rotateme"
-                  alt="image"
-                />
+                {filterData[0].data.image?.map((item) => {
+                  return <img src={item} alt="image" />;
+                })}
               </div>
             </div>
           </div>
