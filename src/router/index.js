@@ -23,7 +23,7 @@ const AppRoutes = () => {
 const AppWraper = () => {
   return (
     <Router>
-      <AppRoutes />;
+      <AppRoutes />
     </Router>
   );
 };
