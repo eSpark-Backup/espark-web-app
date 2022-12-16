@@ -2,12 +2,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer class="footer-area bg-f7fafd">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="single-footer-widget">
-              <div class="logo">
+    <footer className="footer-area bg-f7fafd">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-3 col-md-6">
+            <div className="single-footer-widget">
+              <div className="logo">
                 <a href="/it-startup/">
                   <img
                     src={require("../../assets/images/logo.png")}
@@ -23,10 +23,10 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="single-footer-widget pl-5">
+          <div className="col-lg-3 col-md-6">
+            <div className="single-footer-widget pl-5">
               <h3>Company</h3>
-              <ul class="list">
+              <ul className="list">
                 <li>
                   <a href="/about-1/">About Us</a>
                 </li>
@@ -45,10 +45,10 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="single-footer-widget">
+          <div className="col-lg-3 col-md-6">
+            <div className="single-footer-widget">
               <h3>Support</h3>
-              <ul class="list">
+              <ul className="list">
                 <li>
                   <a href="/faq/">FAQ&#x27;s</a>
                 </li>
@@ -67,16 +67,16 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="single-footer-widget">
+          <div className="col-lg-3 col-md-6">
+            <div className="single-footer-widget">
               <h3>Address</h3>
-              <ul class="footer-contact-info">
+              <ul className="footer-contact-info">
                 <li>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    viewbox="0 0 24 24"
+                    viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
                     stroke-width="2"
@@ -93,7 +93,7 @@ const Footer = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    viewbox="0 0 24 24"
+                    viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
                     stroke-width="2"
@@ -106,7 +106,7 @@ const Footer = () => {
                   Email:{" "}
                   <a href="/cdn-cgi/l/email-protection#9cefe8fdeee8ecdcfbf1fdf5f0b2fff3f1">
                     <span
-                      class="__cf_email__"
+                      className="__cf_email__"
                       data-cfemail="3043445142444070575d51595c1e535f5d"
                     >
                       [email&#160;protected]
@@ -118,7 +118,7 @@ const Footer = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    viewbox="0 0 24 24"
+                    viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
                     stroke-width="2"
@@ -130,18 +130,18 @@ const Footer = () => {
                   Phone: <a href="tel:321984754">+ (321) 984 754</a>
                 </li>
               </ul>
-              <ul class="social-links">
+              <ul className="social-links">
                 <li>
                   <a
                     href="https://www.facebook.com/"
-                    class="facebook"
+                    className="facebook"
                     target="_blank"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
-                      viewbox="0 0 24 24"
+                      viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
                       stroke-width="2"
@@ -155,14 +155,14 @@ const Footer = () => {
                 <li>
                   <a
                     href="https://www.twitter.com/"
-                    class="twitter"
+                    className="twitter"
                     target="_blank"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
-                      viewbox="0 0 24 24"
+                      viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
                       stroke-width="2"
@@ -176,14 +176,14 @@ const Footer = () => {
                 <li>
                   <a
                     href="https://www.instagramcom/"
-                    class="instagram"
+                    className="instagram"
                     target="_blank"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
-                      viewbox="0 0 24 24"
+                      viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
                       stroke-width="2"
@@ -206,14 +206,14 @@ const Footer = () => {
                 <li>
                   <a
                     href="https://www.linkedin.com/"
-                    class="linkedin"
+                    className="linkedin"
                     target="_blank"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
-                      viewbox="0 0 24 24"
+                      viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
                       stroke-width="2"
@@ -229,8 +229,8 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div class="col-lg-12 col-md-12">
-            <div class="copyright-area">
+          <div className="col-lg-12 col-md-12">
+            <div className="copyright-area">
               <p>
                 Copyright © StartP. All rights reserved by{" "}
                 <a href="https://envytheme.com/" target="_blank">
@@ -241,8 +241,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <img src={require("../../assets/images/map.png")} class="map" alt="map" />
-      {/* <div class="shape1">
+      <img src={require("../../assets/images/map.png")} className="map" alt="map" />
+      {/* <div className="shape1">
         <img src={require("../../assets/images/shape.svg")} alt="shape" />
       </div> */}
     </footer>
