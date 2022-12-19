@@ -13,10 +13,6 @@ import Shape4_9 from "../assets/images/shape4-9.svg";
 import Shape5_5 from "../assets/images/shape5-5.png";
 import Shape2_10 from "../assets/images/shape2-10.svg";
 
-import man_and_women from "../assets/images/man-and-women.png"
-import circle_1 from "../assets/images/circle-1.png"
-import cta_shape_1 from "../assets/images/cta-shape-1.png"
-
 export const shapes = [
   { imgUrl: Shape1, className: "shape1", alt: "shape" },
   { imgUrl: Shape3_7, className: "shape2 rotateme", alt: "shape" },
@@ -35,14 +31,3 @@ export const partner = [
   { imgUrl: partner_2, hoverImage: partner_Hover2 },
   { imgUrl: partner_5, hoverImage: partner_Hover5 },
 ];
-export const serviceItems = [
-  {id: 1, heading:"i am odd one" , description: "Here you can add the your description loreml ", imgUrlMan: man_and_women, imgUrlCircle: circle_1 ,imgUrlCta: cta_shape_1  },
-  {id: 2 , heading:"i am even one", description: "Here you can add the your description ", imgUrlMan: man_and_women, imgUrlCircle: circle_1 ,imgUrlCta: cta_shape_1},
-  {id: 3 , heading:"jjjjjjj", description: "Here you can add the your description ", imgUrlMan: man_and_women, imgUrlCircle: circle_1 ,imgUrlCta: cta_shape_1},
-  {id: 4 , heading:"jjjjjjj", description: "Here you can add the your description ", imgUrlMan: man_and_women, imgUrlCircle: circle_1 ,imgUrlCta: cta_shape_1},
-  {id: 5 , heading:"jjjjjjj", description: "Here you can add the your description ", imgUrlMan: man_and_women, imgUrlCircle: circle_1 ,imgUrlCta: cta_shape_1},
-  {id: 6 , heading:"jjjjjjj", description: "Here you can add the your description ", imgUrlMan: man_and_women, imgUrlCircle: circle_1 ,imgUrlCta: cta_shape_1},
-
-]
-
-

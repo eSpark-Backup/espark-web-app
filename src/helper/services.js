@@ -1,7 +1,10 @@
-
 import image2 from "../assets/images/repair-banner-image/repair-shape-circle.png";
 import image3 from "../assets/images/repair-banner-image/repair-shape1.png";
 import image4 from "../assets/images/repair-banner-image/repair-shape2.png";
+
+import man_and_women from "../assets/images/man-and-women.png";
+import circle_1 from "../assets/images/circle-1.png";
+import cta_shape_1 from "../assets/images/cta-shape-1.png";
 
 const hash = () => {
   const s4 = () => {
@@ -10,6 +13,17 @@ const hash = () => {
       .substring(1);
   };
   return `${s4()}${s4()}-${s4()}-${s4()}-${s4()}-${s4()}${s4()}${s4()}`;
+};
+
+const serviceItems = (id, heading, des, image1, image2, image3) => {
+  return {
+    id: id,
+    heading: heading,
+    description: des,
+    imgUrlMan: image1,
+    imgUrlCircle: image2,
+    imgUrlCta: image3,
+  };
 };
 
 export const services = [
@@ -23,7 +37,16 @@ export const services = [
         image3,
         image4,
       ],
-      content: "",
+      content: [
+        serviceItems(
+          1,
+          "SEO Friendly website",
+          "We can create for you a beautiful SEO friendly website that can boost up your sales and website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
+          man_and_women,
+          circle_1,
+          cta_shape_1
+        ),
+      ],
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
     },
   },
@@ -37,7 +60,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: "",
+      content: serviceItems(),
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
     },
   },
@@ -51,7 +74,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: "",
+      content: serviceItems(),
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
     },
   },
@@ -65,7 +88,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: "",
+      content: serviceItems(),
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
     },
   },
@@ -79,7 +102,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: "",
+      content: serviceItems(),
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
     },
   },
@@ -93,7 +116,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: "",
+      content: serviceItems(),
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
     },
   },
@@ -107,7 +130,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: "",
+      content: serviceItems(),
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
     },
   },
@@ -121,7 +144,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: "",
+      content: serviceItems(),
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
     },
   },
@@ -135,7 +158,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: "",
+      content: serviceItems(),
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
     },
   },
@@ -149,7 +172,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: "",
+      content: serviceItems(),
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
     },
   },
@@ -163,7 +186,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: "",
+      content: serviceItems(),
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
     },
   },
@@ -177,7 +200,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: "",
+      content: serviceItems(),
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
     },
   },
@@ -191,7 +214,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: "",
+      content: serviceItems(),
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
     },
   },
@@ -205,7 +228,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: "",
+      content: serviceItems(),
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
     },
   },
@@ -219,7 +242,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: "",
+      content: serviceItems(),
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
     },
   },
@@ -233,7 +256,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: "",
+      content: serviceItems(),
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
     },
   },
@@ -247,7 +270,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: "",
+      content: serviceItems(),
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
     },
   },
