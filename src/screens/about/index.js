@@ -1,7 +1,6 @@
 import React from "react";
 import Partners from "../../components/partners/partners";
 import ReadyToTalk from "../../components/ready-to-talk/readyToTalk";
-import TeamCarousel from "../../components/team-carousel/teamCarousel";
 import ThreeColumn from "../../components/three-column/threeColumn";
 import Title from "../../components/title/title";
 import TwoColumns from "../../components/two-column/twoColumns";
@@ -38,10 +37,6 @@ export default function About() {
           },
         ]}
       />
-      {/* <TeamCarousel
-        heading2="Our Awesome Team"
-        paragraph1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      /> */}
       <ReadyToTalk
         h3="Ready to talk?"
         p1="Our team is here to answer your question about StartP"

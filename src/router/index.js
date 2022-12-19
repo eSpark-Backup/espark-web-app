@@ -9,18 +9,19 @@ import Projects from "../screens/projects/projects";
 import Services from "../screens/services";
 import ServiceDetail from "../screens/services/serviceDetail";
 import LayoutOne from "../layout/layoutOne";
+import ProjectDetails from "../screens/project-details/projectDetails";
 
 const AppRoutes = () => {
   let routes = useRoutes([
     { path: "/", element: <Home /> },
     { path: "/about", element: <About /> },
     { path: "/project", element: <Projects /> },
+    { path: "/project-detail/:id", element: <ProjectDetails /> },
     { path: "/blog", element: <Blog /> },
     { path: "/services", element: <Services /> },
     { path: "/services-detail/:id", element: <ServiceDetail /> },
     { path: "/lets-talk", element: <Contact /> },
   ]);
-
   return routes;
 };
 

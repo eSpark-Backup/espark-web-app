@@ -1,17 +1,8 @@
-// import React from 'react'
-
-// export default function ProjectCard({name}) {
-//     console.log(name)
-//   return (
-//     <h1>Hellow worl</h1>
-
-//   )
-// }
-
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function ProjectCard({ data }) {
-  console.log(data);
+
   return (
     <div className="works-area pt-80 pb-50">
       <div className="container">
@@ -19,7 +10,7 @@ export default function ProjectCard({ data }) {
           {data.map((item, index) => (
             <div className="col-lg-4 col-md-6" key={index}>
               <div className="single-works ">
-                <img src={item.imgUrl} alt="image" />
+                <img src={item.data.image} alt="image" />
                 <a className="icon" href="/project-details/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -37,10 +28,25 @@ export default function ProjectCard({ data }) {
                   </svg>
                 </a>
                 <div className="works-content">
-                  <h3>
-                    <a href="/project-details/">{item.h3}</a>
-                  </h3>
-                  <p>{item.p}</p>
+
+                      {/* {item.map(item => {
+                          return { item.data.content.map(nestedItem => <h1>hellp</h1>)}
+                          }
+                    }  */}
+
+                    {item.data.content.map(x =><><h3> 
+                         <Link
+                          class="read-more-btn"
+                              to={`/project-detail/${item.name }`}
+
+                              
+                            >
+                             <a href="/project_details/">
+                                {x.heading}
+                            </a>
+                            </Link> </h3><p>{x.description}</p></>)}
+                 
+              
                 </div>
               </div>
             </div>

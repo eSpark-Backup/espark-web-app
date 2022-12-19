@@ -80,6 +80,15 @@ const Header = () => {
                     Lets-Talk
                   </a>
                 </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="/lets-talk">
+                    Product
+                  </a>
+                </li>
+                
+              
+          
                 {/* <li class="nav-item">
                   <a class="nav-link" href="/#">
                     Careers
