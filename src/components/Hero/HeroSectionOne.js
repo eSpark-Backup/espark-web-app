@@ -1,6 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { services } from "../../helper/services";
-import image1 from "../../assets/images/repair-banner-image/repair-banner-img.png";
 
 const HeroSectionOne = ({ heading, paragrah }) => {
   const filterData = services.filter((item) => item.name === heading);
@@ -18,12 +18,19 @@ const HeroSectionOne = ({ heading, paragrah }) => {
                     __html: filterData[0].data.shortDescription,
                   }}
                 ></p>
+                <Link class="btn btn-primary" href="/lets-talk">
+                  Get A Quote Now
+                </Link>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="repair-banner-image">
                 {filterData[0].data.image?.slice(1).map((item) => {
-                  return <img src={item} alt="image" />;
+                  return (
+                    <>
+                      <img src={item} alt="image" />
+                    </>
+                  );
                 })}
               </div>
             </div>
