@@ -8,23 +8,24 @@ import Price from "../../components/Sections/Pricing/Price";
 import Service from "../../components/Sections/Service/Service";
 import RecentStory from "../../components/Sections/RecentStory/RecentStory";
 import Users from "../../components/Sections/User/Users";
-import Clients from './../../components/HappyClients/Clients';
+import Clients from "./../../components/HappyClients/Clients";
 
-const Home = ()=> {
+const Home = () => {
   return (
     <div>
       <Herosection />
-      <About />
-      <Features />
-      <Service />
-      <Users />
-      <Price />
-      <Feedback />
-      <RecentStory />
-      <Freetrial />
+      {/* <About /> */}
+      {/* <Features heading={"WE CREATE UNIQUEWEB SOLUTIONS"} /> */}
+
+      {/* <Service /> */}
+      {/* <Users /> */}
+      {/* <Price /> */}
+      {/* <Feedback /> */}
+      {/* <RecentStory /> */}
+      {/* <Freetrial /> */}
       <Clients />
     </div>
   );
-}
+};
 
 export default Home;
