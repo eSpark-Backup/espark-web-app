@@ -12,16 +12,16 @@ const ServiceStyleFive = ({ data }) => {
               return (
                 <div class="col-lg-4 col-sm-6 col-md-6">
                   <div class="agency-services-box">
-                    <img src={item.data.image[0]} alt="image" />
+                    <img src={item.data.image[0]} alt="image" height={300} />
                     <div class="content">
                       <h3>
                         <a href="/service-details/">{item.name}</a>
                       </h3>
                       <Link
                         class="read-more-btn"
-                        to={`/services-detail/${item.name }`}
+                        to={`/services-detail/${item.name}`}
                       >
-                        Read More{" "}
+                        Read More
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"

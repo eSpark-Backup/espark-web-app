@@ -16,13 +16,13 @@ const Header = () => {
       <div class="startp-nav">
         <div class="container">
           <nav class="navbar navbar-expand-md navbar-light">
-            <a class="navbar-brand" href="/">
+            <Link class="navbar-brand" to="/">
               <img
                 src={require("../../assets/images/logo.png")}
                 alt="logo"
                 width={100}
               />
-            </a>
+            </Link>
             <button
               className="navbar-toggler navbar-toggler-right collapsed"
               type="button"
@@ -42,28 +42,32 @@ const Header = () => {
             >
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                  <a className="nav-link" href="/">
+                  <Link className="nav-link" to="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/about">
+                  <Link class="nav-link" to="/about">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/project">
+                  <Link class="nav-link" to="/project">
                     Works
-                  </a>
+                  </Link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/services">
+                  <Link class="nav-link" to="/services">
                     Services
-                  </a>
+                  </Link>
                   <ul class="dropdown-menu">
                     {services.map((item) => {
                       return (
                         <li class="nav-item">
+                          <i
+                            class="fa fa-envelope-square"
+                            aria-hidden="true"
+                          ></i>
                           <Link
                             class="nav-link"
                             to={`services-detail/${item.name}`}
@@ -76,21 +80,21 @@ const Header = () => {
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/lets-talk">
+                  <Link class="nav-link" to="/lets-talk">
                     Lets-Talk
-                  </a>
+                  </Link>
                 </li>
                 {/* <li class="nav-item">
-                  <a class="nav-link" href="/#">
+                  <Link class="nav-link" to="/#">
                     Careers
-                  </a>
+                  </Link>
                 </li> */}
               </ul>
             </div>
             <div class="others-option">
-              <a class="btn btn-light" onClick={onOpenModal}>
+              <Link class="btn btn-light" onClick={onOpenModal}>
                 Quote Now
-              </a>
+              </Link>
             </div>
             <Modal open={open} onClose={onCloseModal} center>
               <GetInTouch />
