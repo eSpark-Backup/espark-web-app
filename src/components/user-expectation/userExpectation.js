@@ -22,7 +22,7 @@ export default function UserExpectation({h2,p1,data,h3,p2,p2_span,btnTitle,href}
             <h3>{h3}</h3>
             <p>{p2}&#x27;{p2_span}</p><a className="btn btn-primary" href={href}>{btnTitle}</a>
         </div>
-        <div className="map-bg"><img src="../images/map-10.png" alt="map"/></div>
+        <div className="map-bg"><img src={require('../../assets/images/map.png')} alt="map"/></div>
     </div>
 </div>  )
 }

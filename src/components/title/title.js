@@ -1,12 +1,16 @@
 import React from "react";
 
-export default function Title({ title, data }) {
+export default function Title({ title, data, paragraph }) {
   return (
     <div className="page-title-area">
       <div className="d-table">
         <div className="d-table-cell">
           <div className="container">
-            <h2>{title}</h2>
+            <h1>{title}</h1>
+            <p
+              style={{ fontSize: 20 }}
+              dangerouslySetInnerHTML={{ __html: paragraph }}
+            ></p>
           </div>
         </div>
       </div>

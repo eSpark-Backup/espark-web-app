@@ -1,8 +1,10 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import HeroSectionOne from "../../components/Hero/HeroSectionOne";
 import { serviceItems } from "../../helper/ImageUrl";
 
 const ServiceDetail = () => {
+ const params = useParams();
   const even = (item)=> {
     return <div class="repair-cta-area bg-0f054b ">
       <div class="container">
@@ -66,7 +68,7 @@ const ServiceDetail = () => {
   }
   return (
     <div>
-      <HeroSectionOne />
+         <HeroSectionOne heading={params.id} />
      {serviceItems.map((item)=>{
         if(item.id % 2 === 0){
           return even(item);

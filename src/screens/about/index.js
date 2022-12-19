@@ -38,10 +38,10 @@ export default function About() {
           },
         ]}
       />
-      <TeamCarousel
+      {/* <TeamCarousel
         heading2="Our Awesome Team"
         paragraph1="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      />
+      /> */}
       <ReadyToTalk
         h3="Ready to talk?"
         p1="Our team is here to answer your question about StartP"
@@ -67,7 +67,7 @@ export default function About() {
         p2="Don"
         p2_span="t hesitate to contact us"
         btnTitle="Contact Us"
-        href="/contact/"
+        href="/lets-talk"
       />
     </React.Fragment>
   );
