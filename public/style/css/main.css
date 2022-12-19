@@ -32228,12 +32228,29 @@ blockquote:after {
     padding-top: 10px;
     padding-bottom: 10px
 }
+.repair-cta-area-odd {
+    background-color: #0077b5;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
 
 .cta-repair-content {
     padding: 30px 0
 }
+.cta-repair-content-odd{
+    /* padding: 30px 0 */
+    
+}
 
 .cta-repair-content h3 {
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 17px
+}
+.cta-repair-content-odd h3 {
     color: #fff;
     font-size: 25px;
     margin-bottom: 17px
@@ -32244,12 +32261,25 @@ blockquote:after {
     opacity: .95;
     margin-bottom: 25px
 }
+.cta-repair-content-odd p {
+    color: #fff;
+    opacity: .95;
+    margin-bottom: 25px
+}
 
-.cta-repair-img {
-    text-align: right
+.cta-repair-img-odd {
+    text-align: center;
+}
+.cta-repair-img-odd  {
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .circle-box {
+    top: 0;
+    left: 0
+}
+.circle-box-odd {
     top: 0;
     left: 0
 }
@@ -32259,10 +32289,19 @@ blockquote:after {
     position: absolute;
     z-index: -1
 }
+.circle-box-odd,
+.cta-shape-odd {
+    position: absolute;
+    z-index: -1
+}
 
 .cta-shape {
     bottom: 0;
     right: 0
+}
+.cta-shape-odd {
+    bottom: 0;
+    right: 0;
 }
 
 .repair-team-area .container {

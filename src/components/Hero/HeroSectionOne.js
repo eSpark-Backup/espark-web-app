@@ -20,7 +20,6 @@ const HeroSectionOne = ({ heading, paragrah }) => {
                 </p>
               </div>
             </div>
-
             <div class="col-lg-6">
               <div class="repair-banner-image">
                 {filterData[0].data.image?.map((item) => {
@@ -36,3 +35,5 @@ const HeroSectionOne = ({ heading, paragrah }) => {
 };
 
 export default HeroSectionOne;
+
+
