@@ -29,10 +29,11 @@ const serviceItems = (id, heading, des, image1, image2, image3) => {
 export const services = [
   {
     id: hash(),
+    icon: "",
     name: "Web Development",
     data: {
       image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img1.jpg",
+        "https://i.pinimg.com/originals/5c/31/e0/5c31e0344d4204044cf874b0b1489b82.jpg",
         image2,
         image3,
         image4,
@@ -65,38 +66,47 @@ export const services = [
       ],
       shortDescription:
         "<p>If you need an app developing, a partial- or full-custom website, or anything in between – eSpark Consulting and our development experts have you covered!<br/> <br/><strong>A website with a perfect design is incomplete without the high- quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
+      extraContent: "",
+      heading: "Strengthening your web connections",
     },
   },
   {
     id: hash(),
+    icon: "",
     name: "UI UX Design",
     data: {
       image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img3.jpg",
+        "https://i.pinimg.com/originals/17/96/9e/17969e50ddb959b1a9fb3020d835f2e4.png",
         image2,
         image3,
         image4,
       ],
       content: [],
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
+      extraContent: "",
+      heading: "",
     },
   },
   {
     id: hash(),
+    icon: "",
     name: "Web Design",
     data: {
       image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img4.jpg",
+        "https://images.ctfassets.net/gg4ddi543f5b/7AHjFKPTt6B5ZwI8oI52rN/862db70ca26d7a72ce642932527e252d/web-design-workflow-blog.png",
         image2,
         image3,
         image4,
       ],
       content: [],
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
+      extraContent: "",
+      heading: "",
     },
   },
   {
     id: hash(),
+    icon: "",
     name: "Digital e-Commerce",
     data: {
       image: [
@@ -107,66 +117,81 @@ export const services = [
       ],
       content: [],
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
+      extraContent: "",
+      heading: "",
     },
   },
   {
     id: hash(),
+    icon: "",
     name: "Digital Marketing",
     data: {
       image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img1.jpg",
+        "https://site.paytabs.com/wp-content/uploads/2017/10/shutterstock_394814632.jpg",
         image2,
         image3,
         image4,
       ],
       content: [],
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
+      extraContent: "",
+      heading: "",
     },
   },
   {
     id: hash(),
+    icon: "",
     name: "Graphic Design",
     data: {
       image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img2.jpg",
+        "https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhcGhpYyUyMGRlc2lnbnxlbnwwfHwwfHw%3D&w=1000&q=80",
         image2,
         image3,
         image4,
       ],
       content: [],
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
+      extraContent: "",
+      heading: "",
     },
   },
   {
     id: hash(),
+    icon: "",
     name: "Content Writing",
     data: {
       image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img5.jpg",
+        "https://www.feedough.com/wp-content/uploads/2022/05/Content-writing.png",
         image2,
         image3,
         image4,
       ],
       content: [],
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
+      extraContent: "",
+      heading: "",
     },
   },
   {
     id: hash(),
+    icon: "",
     name: "Search Engine Optimization",
     data: {
       image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img6.jpg",
+        "https://www.gomage.com/m1wp/wp-content/uploads/2020/04/Search-Engine-Optimization-Techniques_-5-Basic-Strategies.png",
         image2,
         image3,
         image4,
       ],
       content: [],
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
+      extraContent: "",
+      heading: "",
     },
   },
   {
     id: hash(),
+    icon: "",
     name: "IT Consulting",
     data: {
       image: [
@@ -177,52 +202,64 @@ export const services = [
       ],
       content: [],
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
+      extraContent: "",
+      heading: "",
     },
   },
   {
     id: hash(),
+    icon: "",
     name: "IoT Product Development including Technical Support",
     data: {
       image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img1.jpg",
+        "https://startp-next.envytheme.com/images/about2.jpg",
         image2,
         image3,
         image4,
       ],
       content: [],
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
+      extraContent: "",
+      heading: "",
     },
   },
   {
     id: hash(),
+    icon: "",
     name: "PCB Layout and Designing",
     data: {
       image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img1.jpg",
+        "https://startp-next.envytheme.com/images/agency-image/agency-services-img6.jpg",
         image2,
         image3,
         image4,
       ],
       content: [],
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
+      extraContent: "",
+      heading: "",
     },
   },
   {
     id: hash(),
+    icon: "",
     name: "Embedded Firmware Development",
     data: {
       image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img1.jpg",
+        "https://startp-next.envytheme.com/images/bigdata-analytics/discover-img1.png",
         image2,
         image3,
         image4,
       ],
       content: [],
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
+      extraContent: "",
+      heading: "",
     },
   },
   {
     id: hash(),
+    icon: "",
     name: "Electrical Schematic Design",
     data: {
       image: [
@@ -233,10 +270,13 @@ export const services = [
       ],
       content: [],
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
+      extraContent: "",
+      heading: "",
     },
   },
   {
     id: hash(),
+    icon: "",
     name: "Reverse Engineering",
     data: {
       image: [
@@ -247,10 +287,13 @@ export const services = [
       ],
       content: [],
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
+      extraContent: "",
+      heading: "",
     },
   },
   {
     id: hash(),
+    icon: "",
     name: "PCB Manufacturing and Mass Production",
     data: {
       image: [
@@ -261,10 +304,13 @@ export const services = [
       ],
       content: [],
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
+      extraContent: "",
+      heading: "",
     },
   },
   {
     id: hash(),
+    icon: "",
     name: "Part Searching and Analysis",
     data: {
       image: [
@@ -275,10 +321,13 @@ export const services = [
       ],
       content: [],
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
+      extraContent: "",
+      heading: "",
     },
   },
   {
     id: hash(),
+    icon: "",
     name: "Components Library Design",
     data: {
       image: [
@@ -289,6 +338,8 @@ export const services = [
       ],
       content: [],
       shortDescription: "hekjkljdkljsklajdkljaskdjklj",
+      extraContent: "",
+      heading: "",
     },
   },
 ];

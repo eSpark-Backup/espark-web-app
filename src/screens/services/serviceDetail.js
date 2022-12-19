@@ -17,9 +17,6 @@ const ServiceDetail = () => {
               <div class="cta-repair-content">
                 <h3>{item.heading}</h3>
                 <p>{item.description}</p>
-                <a class="btn btn-primary" href="/contact/">
-                  Contact Us
-                </a>
               </div>
             </div>
             <div class="col-lg-6">
@@ -53,9 +50,6 @@ const ServiceDetail = () => {
               <div class="cta-repair-content-odd">
                 <h3>{item.heading}</h3>
                 <p>{item.description}</p>
-                <a class="btn btn-primary" href="/contact/">
-                  Contact Us
-                </a>
               </div>
             </div>
           </div>
