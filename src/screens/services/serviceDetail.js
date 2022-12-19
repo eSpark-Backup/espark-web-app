@@ -72,6 +72,7 @@ const ServiceDetail = () => {
   return (
     <div>
       <HeroSectionOne heading={params.id} />
+     
       {filterData[0]?.data?.content.map((item) => {
         if (item.id % 2 === 0) {
           return even(item);

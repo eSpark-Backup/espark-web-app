@@ -5,47 +5,48 @@ const Footer = () => {
     <footer className="footer-area bg-f7fafd">
       <div className="container">
         <div className="row">
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-5 col-md-6">
             <div className="single-footer-widget">
               <div className="logo">
-                <a href="/it-startup/">
+                <a href="/">
                   <img
-                    src={require("../../assets/images/logo.png")}
+                    src={require("../../assets/images/logo.png")} 
                     alt="logo"
                   />
                 </a>
               </div>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi.
+                eSpark Consulting Group is a full-carrier software development
+                employer presenting Enterprise Software Development, Application
+                Development (Desktop, Web & Mobile), Product Development,
+                Digital Commerce,UI/UX Design and IT Consulting services.
               </p>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-2 col-md-6">
             <div className="single-footer-widget pl-5">
               <h3>Company</h3>
               <ul className="list">
                 <li>
-                  <a href="/about-1/">About Us</a>
+                  <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="/services-1/">Services</a>
+                  <a href="/about">About Us</a>
                 </li>
                 <li>
-                  <a href="/features/">Features</a>
+                  <a href="/project">Work</a>
                 </li>
                 <li>
-                  <a href="/pricing/">Our Pricing</a>
+                  <a href="/services">Services</a>
                 </li>
                 <li>
-                  <a href="/blog-1/">Latest News</a>
+                  <a href="/lets-talk">Lets-Talk</a>
                 </li>
+                
               </ul>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6">
+          {/* <div className="col-lg-3 col-md-6">
             <div className="single-footer-widget">
               <h3>Support</h3>
               <ul className="list">
@@ -66,8 +67,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="col-lg-3 col-md-6">
+          </div> */}
+          <div className="col-lg-5 col-md-6">
             <div className="single-footer-widget">
               <h3>Address</h3>
               <ul className="footer-contact-info">
@@ -83,10 +84,13 @@ const Footer = () => {
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   >
+                    
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                     <circle cx="12" cy="10" r="3"></circle>
                   </svg>
-                  27 Division St, New York, <br /> NY 10002, USA
+                  &nbsp;&nbsp;
+                  Office# 301, 3rd Floor, Blossom Trade Center, Block
+                  1Gulistan-e-Johar, Karachi City, Sindh. 
                 </li>
                 <li>
                   <svg
@@ -103,13 +107,14 @@ const Footer = () => {
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                     <polyline points="22,6 12,13 2,6"></polyline>
                   </svg>
+                  &nbsp;&nbsp;
                   Email:{" "}
                   <a href="/cdn-cgi/l/email-protection#9cefe8fdeee8ecdcfbf1fdf5f0b2fff3f1">
                     <span
                       className="__cf_email__"
                       data-cfemail="3043445142444070575d51595c1e535f5d"
                     >
-                      [email&#160;protected]
+                      info@esparkconsultants.com
                     </span>
                   </a>
                 </li>
@@ -127,13 +132,14 @@ const Footer = () => {
                   >
                     <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                   </svg>
-                  Phone: <a href="tel:321984754">+ (321) 984 754</a>
+                  &nbsp;&nbsp;
+                  Phone: <a href="tel:321984754">+92 333 600 6055</a>
                 </li>
               </ul>
               <ul className="social-links">
                 <li>
                   <a
-                    href="https://www.facebook.com/"
+                    href="https://www.facebook.com/eSparkConsGroup"
                     className="facebook"
                     target="_blank"
                   >
@@ -154,7 +160,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.twitter.com/"
+                    href="https://twitter.com/eSparkConsGroup"
                     className="twitter"
                     target="_blank"
                   >
@@ -175,7 +181,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.instagramcom/"
+                    href="https://www.instagram.com/esparkconsultantsgroup"
                     className="instagram"
                     target="_blank"
                   >
@@ -205,7 +211,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/"
+                    href="https://www.linkedin.com/company/esparkconsgroup"
                     className="linkedin"
                     target="_blank"
                   >
@@ -232,16 +238,20 @@ const Footer = () => {
           <div className="col-lg-12 col-md-12">
             <div className="copyright-area">
               <p>
-                Copyright © StartP. All rights reserved by{" "}
-                <a href="https://envytheme.com/" target="_blank">
-                  EnvyTheme
+                Copyright © 2020. All Rights Reserved{" "}
+                <a href="/" target="_blank">
+                eSpark Consulting Group
                 </a>
               </p>
             </div>
           </div>
         </div>
       </div>
-      <img src={require("../../assets/images/map.png")} className="map" alt="map" />
+      <img
+        src={require("../../assets/images/map.png")}
+        className="map"
+        alt="map"
+      />
       {/* <div className="shape1">
         <img src={require("../../assets/images/shape.svg")} alt="shape" />
       </div> */}

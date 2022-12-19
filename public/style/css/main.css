@@ -34784,6 +34784,7 @@ blockquote:after {
 }
 
 .single-footer-widget .logo a {
+    width: 100px;
     display: block
 }
 
