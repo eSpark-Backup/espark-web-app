@@ -13,7 +13,11 @@ const HeroSectionOne = ({ heading, paragrah }) => {
             <div class="col-lg-6">
               <div class="repair-banner-content">
                 <h1>{filterData[0].name}</h1>
-                <p>{filterData[0].data.shortDescription}</p>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: filterData[0].data.shortDescription,
+                  }}
+                ></p>
               </div>
             </div>
             <div class="col-lg-6">

@@ -24,16 +24,16 @@ const ServiceDetail = () => {
             </div>
             <div class="col-lg-6">
               <div class="cta-repair-img">
-                <img src={item.imgUrlMan} />;
+                <img src={item.imgUrlMan} />
               </div>
             </div>
           </div>
         </div>
         <div class="circle-box">
-          <img src={item.imgUrlCircle} />;
+          <img src={item.imgUrlCircle} />
         </div>
         <div class="cta-shape">
-          <img src={item.imgUrlCta} />;
+          <img src={item.imgUrlCta} />
         </div>
       </div>
     );
@@ -46,7 +46,7 @@ const ServiceDetail = () => {
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div class="cta-repair-img-odd">
-                <img src={item.imgUrlMan} />;
+                <img src={item.imgUrlMan} />
               </div>
             </div>
             <div class="col-lg-6">
@@ -61,10 +61,10 @@ const ServiceDetail = () => {
           </div>
         </div>
         <div class="circle-box-odd">
-          <img src={item.imgUrlCircle} />;
+          <img src={item.imgUrlCircle} />
         </div>
         <div class="cta-shape-odd">
-          <img src={item.imgUrlCta} />;
+          <img src={item.imgUrlCta} />
         </div>
       </div>
     );

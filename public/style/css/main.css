@@ -32288,7 +32288,9 @@ blockquote:after {
 .circle-box,
 .cta-shape {
     position: absolute;
-    z-index: -1
+    z-index: -1;
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 .circle-box-odd,
 .cta-shape-odd {
