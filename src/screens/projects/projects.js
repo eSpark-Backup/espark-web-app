@@ -1,14 +1,6 @@
 import React from "react";
 import Title from "../../components/title/title";
 import ProjectCard from "../../components/project-card/projectCard";
-import work_img_1 from "../../assets/images/works-image/works-image1.jpg";
-import work_img_2 from "../../assets/images/works-image/works-image2.jpg";
-import work_img_3 from "../../assets/images/works-image/works-image3.jpg";
-import work_img_4 from "../../assets/images/works-image/works-image4.jpg";
-import work_img_5 from "../../assets/images/works-image/works-image5.jpg";
-import work_img_6 from "../../assets/images/works-image/works-image6.jpg";
-import ProjectNestedCard from "../../components/project-nested-card/projectNestedCard";
-import NetworkMarketing from "../../components/network-marketing/networkMarketing";
 import { shapes } from "../../helper/ImageUrl";
 import { projects } from "../../helper/projects";
 

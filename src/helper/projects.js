@@ -1,22 +1,6 @@
-import image2 from "../assets/images/repair-banner-image/repair-shape-circle.png";
-import image3 from "../assets/images/repair-banner-image/repair-shape1.png";
-import image4 from "../assets/images/repair-banner-image/repair-shape2.png";
-
-import man_and_women from "../assets/images/man-and-women.png";
-import circle_1 from "../assets/images/circle-1.png";
-import cta_shape_1 from "../assets/images/cta-shape-1.png";
-
-
-
-
 import work_img_1 from "../assets/images/works-image/works-image1.jpg";
 import work_img_2 from "../assets/images/works-image/works-image2.jpg";
 import work_img_3 from "../assets/images/works-image/works-image3.jpg";
-import work_img_4 from "../assets/images/works-image/works-image4.jpg";
-import work_img_5 from "../assets/images/works-image/works-image5.jpg";
-import work_img_6 from "../assets/images/works-image/works-image6.jpg";
-
-import Team_1 from '../assets/images/team-image/team1.jpg'
 
 const hash = () => {
   const s4 = () => {
@@ -119,6 +103,4 @@ export const projects = [
         carouselDetails(3,work_img_3, "Butler", "Marketing", 'Manager', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua')
       ] },
   },
-
-
 ];
