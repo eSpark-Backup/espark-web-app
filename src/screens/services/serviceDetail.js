@@ -38,7 +38,7 @@ const ServiceDetail = () => {
 
   const odd = (item) => {
     return (
-      <div class="repair-cta-area-odd  ">
+      <div class="repair-cta-area-odd">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6">
@@ -65,8 +65,25 @@ const ServiceDetail = () => {
   };
   return (
     <div>
-      <HeroSectionOne heading={params.id} />
-     
+      <HeroSectionOne filterData={filterData} />
+      <div className="container">
+        <div class="row align-items-center pb-80">
+          <div class="col-lg-6 features-details-image">
+            <img src={filterData[0].data.image[0]} alt="image" />
+          </div>
+          <div class="col-lg-6 features-details">
+            <div class="features-details-desc">
+              <h2 className="pb-50">{filterData[0]?.data.heading}</h2>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: filterData[0]?.data.extraContent,
+                }}
+              ></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {filterData[0]?.data?.content.map((item) => {
         if (item.id % 2 === 0) {
           return even(item);

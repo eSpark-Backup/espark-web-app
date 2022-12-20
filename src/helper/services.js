@@ -67,7 +67,8 @@ export const services = [
       ],
       shortDescription:
         "<p>If you need an app developing, a partial- or full-custom website, or anything in between – eSpark Consulting and our development experts have you covered!<br/> <br/><strong>A website with a perfect design is incomplete without the high- quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      extraContent: "",
+      extraContent:
+        "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
       heading: "Strengthening your web connections",
     },
   },
@@ -142,8 +143,9 @@ export const services = [
       ],
       shortDescription:
         "<p>If you need an UI/UX Design , eSpark Consulting and our Front end Designer experts have you covered!</p>",
-      extraContent: "",
-      heading: "",
+      extraContent:
+        "<strong > UI/UX design specialists will work closely with you to conceive a mobile, desktop or web app that both satisfies its users and meets your specific business and industry requirements..</strong> <br/><br/> <p>We are one of the leading web design business enterprise within the Middle-East and Pakistan and we construct innovative user interfaces that obtain splendid consequences on time and on price range. Our customers use our services to supply the all-important ‘wow element’ to their online presence. We can unleash your agency’s complete capability on the web and supply a extremely advantageous go back to your internet site investments. We recognize a way to make a website a precious asset for your commercial enterprise – the way to generate extra leads, increase sales, positioning your enterprise logo nicely and increasing purchaser loyalty.</p><p>In order to make your website more competitive eSpark Consulting Group assist you to to attract, convert and retain extra customers by efficiently improving your internet presence.</p>",
+      heading: "Leading UI/UX Design Agency That Will Level Up Your Business",
     },
   },
   {
@@ -228,11 +230,13 @@ export const services = [
       shortDescription:
         "Product lifecycle services from prototyping to product support and everything in between , Our Team of eSpark Is looking Forward for your sollutions..",
       extraContent: "",
-      heading:<div class="col-lg-6 features-details">
-      <div class="features-details-desc">
-        <h2>Custom websites at affordable prices</h2>
-      </div>
-    </div>,
+      heading: (
+        <div class="col-lg-6 features-details">
+          <div class="features-details-desc">
+            <h2>Custom websites at affordable prices</h2>
+          </div>
+        </div>
+      ),
     },
   },
   {
@@ -497,8 +501,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: [
-      ],
+      content: [],
       shortDescription:
         "IoT is the science of connecting physical devices using the internet to build a smart and connected world and we offer you the best services regarding that.",
       extraContent: "",
@@ -517,8 +520,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: [
-      ],
+      content: [],
       shortDescription:
         "We have many talented members having many ideas and guidelines that can be drawn up for the design and layout of a PCB.",
       extraContent: "",
@@ -536,11 +538,11 @@ export const services = [
         image3,
         image4,
       ],
-      content: [
-      ],
+      content: [],
       shortDescription:
         "Embedded firmware is the flash memory chip that stores specialized software running in a chip in an embedded device to control its functions. In eSpark we have talented people working closely so that no error occurs in firmware.",
-      extraContent: "",
+      extraContent:
+        "<strong > Embedded firmware is the flash memory chip that stores specialized software running in a chip in an embedded device to control its functions.</strong> <br/><br/> <p>Digital transformation is touching upon various physical objects, making them smart and powerful. The engine for such devices is embedded software that is an integral part of the rapidly developing IoT ecosystem. Here’s a short list of some popular languages for software and embedded firmware development.</p> <ul><li> <strong>C/C++: C </strong> is something of a legacy language for embedded systems and tends to be preferred over C++.</li><li> <strong >Hardware Description Languages (HDLs): </strong> The most popular are probably VHDL or Verilog. If you’re programming an FPGA or designing an ASIC, use an HDL to define digital logic. SystemVerilog is a good choice if you are designing a system with extensive digital logic.</li> <li> <strong >Python/MicroPython:</strong >Python is great for software applications, but many do not prefer it due to the periodic garbage collection operations required, which may create some latency problems. However, there is such a huge developer community around Python that developers can access a huge range of functionality and powerful computing capabilities.</li></ul>",
       heading:
         "Quality isn’t something that can be argued into an article or promised into it. It must be put there",
     },
@@ -556,8 +558,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: [
-      ],
+      content: [],
       shortDescription:
         "Schematic design is the first phase of basic services for project design. Here we first provide you with the design and will recreate our designs until you are satisfied.",
       extraContent: "",
@@ -575,8 +576,7 @@ export const services = [
         image3,
         image4,
       ],
-      content: [
-      ],
+      content: [],
       shortDescription:
         "Reverse engineering can be an invaluable tool for learning how to use a particular programming language or how to work on a particular type of application, beginners can use the technique to improve their skills.",
       extraContent: "",
