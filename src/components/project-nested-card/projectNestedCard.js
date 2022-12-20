@@ -4,7 +4,6 @@ import TeamCard from '../teamCard/teamcard'
 
 
 export default function ProjectNestedCard({data}) {
-  console.log("c",data[0].data.carousel)
   return (
         <>
         <div className="bigdata-analytics-banner banner"  style={{backgroundImage:"url(https://startp-next.envytheme.com/images/bigdata-analytics/main-banner.jpg)"}} >
