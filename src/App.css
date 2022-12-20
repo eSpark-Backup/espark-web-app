@@ -34,3 +34,6 @@
   background-size: cover;
   background-repeat: no-repeat; */
 }
+ .dropdown-menu .services{
+  width:400px !important;
+}
