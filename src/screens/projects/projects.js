@@ -3,50 +3,59 @@ import Title from "../../components/title/title";
 import ProjectCard from "../../components/project-card/projectCard";
 import { shapes } from "../../helper/ImageUrl";
 import { projects } from "../../helper/projects";
-
+import "./style.css";
+import { Fade } from "react-slideshow-image";
 
 export default function Projects() {
+  const properties = {
+    prevArrow: (
+      <button className="owl-nav1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+          <path
+            d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"
+            data-name="Left"
+          />
+        </svg>
+      </button>
+    ),
+    nextArrow: (
+      <button className="owl-nav1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+          <path
+            d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
+            data-name="Right"
+          />
+        </svg>
+      </button>
+    ),
+  };
   return (
     <React.Fragment>
-      <Title
-        title={"Our Works"}
-        data={shapes}
-      />
-      <ProjectCard
-        data={projects}
-        // data={[
-        //   {
-        //     imgUrl: work_img_1,
-        //     h3: "Incredible infrastructure",
-        //     p: "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
-        //   },
-        //   {
-        //     imgUrl: work_img_2,
-        //     h3: "UI/UX Design",
-        //     p: "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
-        //   },
-        //   {
-        //     imgUrl: work_img_3,
-        //     h3: "Apps Development",
-        //     p: "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
-        //   },
-        //   {
-        //     imgUrl: work_img_4,
-        //     h3: "Mock-up Design",
-        //     p: "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
-        //   },
-        //   {
-        //     imgUrl: work_img_5,
-        //     h3: "E-commerce",
-        //     p: "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
-        //   },
-        //   {
-        //     imgUrl: work_img_6,
-        //     h3: "Web Design",
-        //     p: "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
-        //   },
-        // ]}
-      />
+      <Fade {...properties} scale={1.4}>
+        {projects.map((item, index) => {
+          return (
+            <div className="each-slide" key={index}>
+              <div
+                className="img"
+                style={{ backgroundImage: `url(${item.data.image})` }}
+              >
+                {/* <div className="content">
+                  {item.data.carousel.map((car) => {
+                    return (
+                      <>
+                        <h1>{car.name}</h1>
+                        <span>{car.h3_span}</span>
+                      </>
+                    );
+                  })}
+                </div> */}
+              </div>
+            </div>
+          );
+        })}
+      </Fade>
+
+      <ProjectCard data={projects} />
       {/* <ProjectNestedCard
         data={[
           { imgUrl: work_img_1 },
