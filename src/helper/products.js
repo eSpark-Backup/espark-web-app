@@ -14,7 +14,7 @@ const hash = () => {
   };
   return `${s4()}${s4()}-${s4()}-${s4()}-${s4()}-${s4()}${s4()}${s4()}`;
 };
-const productItems = (id, heading, des, image1, image2, image3,bold) => {
+const productItems = (id, heading, des, image1, image2, image3, bold) => {
   return {
     id: id,
     heading: heading,
@@ -22,18 +22,18 @@ const productItems = (id, heading, des, image1, image2, image3,bold) => {
     imgUrlMan: image1,
     imgUrlCircle: image2,
     imgUrlCta: image3,
-    bold : bold,
+    bold: bold,
   };
 };
 export const products = [
-    {
-        id: hash(),
-        icon: "",
-        name: "Software",
-    },
-    {
-        id: hash(),
-        icon: "",
-        name: "Hardware",
-        
-    },];
+  {
+    id: hash(),
+    name: "Software",
+    icon: "glyphicon glyphicon-upload"
+  },
+  {
+    id: hash(),
+    name: "Hardware",
+    icon: "glyphicon glyphicon-download"
+
+  },];
