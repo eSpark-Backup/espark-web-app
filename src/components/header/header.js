@@ -61,7 +61,7 @@ const Header = () => {
                   <Link class="nav-link" to="/services">
                     Services
                   </Link>
-                  <ul class="dropdown-menu services">
+                  <ul class="dropdown-menu">
                     {services.map((item) => {
                       return (
                         <li class="nav-item">
@@ -90,7 +90,7 @@ const Header = () => {
                   <Link class="nav-link" to="/products">
                     Products
                   </Link>
-                  <ul class="dropdown-menu products">
+                  <ul class="dropdown-menu-products">
                     {products.map((item) => {
                       return (
                         <li class="nav-item">

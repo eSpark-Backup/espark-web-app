@@ -25104,10 +25104,29 @@ label {
     position: absolute;
     border: none;
     top: 80px;
+    width: auto;
     left: 0;
-    width: 400px;
     display: block;
     z-index: 99;
+    width: 400px;
+    padding: 15px 5px;
+    opacity: 0;
+    border-radius: 5px;
+    visibility: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}.startp-nav nav .navbar-nav .nav-item .dropdown-menu-products {
+    -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .05);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .05);
+    background: #fff;
+    position: absolute;
+    border: none;
+    top: 80px;
+    width: auto;
+    left: 0;
+    display: block;
+    z-index: 99;
+    width: 200px;
     padding: 15px 5px;
     opacity: 0;
     border-radius: 5px;
@@ -25115,7 +25134,6 @@ label {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out
 }
-
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu li {
     position: relative;
     padding: 0
@@ -39395,4 +39413,8 @@ blockquote:after {
 
 [dir=rtl] .slick-slide {
     float: left
+}
+
+.dropdown-menu .services{
+width: 400px !important;
 }
