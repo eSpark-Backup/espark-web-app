@@ -60,7 +60,7 @@ const Header = () => {
                   <Link class="nav-link" to="/services">
                     Services
                   </Link>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu ">
                     {services.map((item) => {
                       return (
                         <li class="nav-item">
@@ -84,15 +84,13 @@ const Header = () => {
                     Lets-Talk
                   </Link>
                 </li>
-                
+
                 <li class="nav-item">
-                  <a class="nav-link" href="/lets-talk">
+                  <Link class="nav-link" href="/lets-talk">
                     Product
-                  </a>
+                  </Link>
                 </li>
-                
-              
-          
+
                 {/* <li class="nav-item">
                   <Link class="nav-link" to="/#">
                     Careers
