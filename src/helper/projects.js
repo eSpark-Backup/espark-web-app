@@ -48,6 +48,17 @@ import img_49 from '../assets/images/projects/img_49.png'
 import img_50 from '../assets/images/projects/img_50.png'
 import img_51 from '../assets/images/projects/img_51.png'
 import img_52 from '../assets/images/projects/img_52.png'
+import img_53 from '../assets/images/projects/img_53.png'
+import img_55 from '../assets/images/projects/img_55.png'
+import img_56 from '../assets/images/projects/img_56.png'
+import img_57 from '../assets/images/projects/img_57.png'
+import img_58 from '../assets/images/projects/img_58.png'
+import img_59 from '../assets/images/projects/img_59.png'
+import img_60 from '../assets/images/projects/img_60.png'
+import img_61 from '../assets/images/projects/img_61.png'
+import img_62 from '../assets/images/projects/img_62.png'
+import img_63 from '../assets/images/projects/img_63.png'
+import img_64 from '../assets/images/projects/img_64.png'
 
 const hash = () => {
   const s4 = () => {
@@ -484,15 +495,77 @@ export const projects = [
       projectUrl: "https://wetransfer.com/",
       name: "WE Transfer",
     },
+  },
+  {
+    id: hash(),
+    data: {
+      image: img_53,
+      projectUrl: "https://www.im4l.co.uk/",
+      name: "Insure Me For Less",
+    },
+  }
+  
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_55,
+      projectUrl: "https://shop-dnd.com/",
+      name: "Shop Dnd",
+    },
   }
   ,
   {
     id: hash(),
     data: {
-      image: img_52,
-      projectUrl: "https://www.beonesolutions.com/",
-      name: "Beone Solutions",
+      image: img_56,
+      projectUrl: "https://www.themailingroom.com/",
+      name: "The Mailing Room",
     },
   }
-
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_57,
+      projectUrl: "https://web.flock.com/",
+      name: "Web Flock",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_59,
+      projectUrl: "https://www.wix.com/",
+      name: "Wix",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_62,
+      projectUrl: "https://watt.co.uk/",
+      name: "Watt",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_63,
+      projectUrl: "https://the.badstar.studio/",
+      name: "Badstar",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_64,
+      projectUrl: "https://www.aukey.com/",
+      name: "Aukey",
+    },
+  }
 ];

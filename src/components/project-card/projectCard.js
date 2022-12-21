@@ -13,8 +13,9 @@ export default function ProjectCard({ data }) {
       <div className="container">
         <div className="row justify-content-center">
           {data.map((item, index) => (
-            <div className="col-lg-4 col-md-6" key={index}>
-              <div className="single-works">
+            <div className="col-lg-4 col-md-6" key={index}  
+            >
+              <div className="single-works"   >
                 <img className="img" src={item.data.image} alt="image" />
                 <a className="icon" href={item.data.projectUrl} target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">

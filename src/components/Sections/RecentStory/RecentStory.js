@@ -27,7 +27,7 @@ function RecentStory() {
             <div class="col-lg-4 col-md-6">
               <div class="single-blog-post-box">
                 <div class="entry-thumbnail">
-                  <a href="/blog-details/"
+                  <a href="/blog-details"
                     ><img src={blog9} alt="image"
                   /></a>
                 </div>
@@ -39,7 +39,7 @@ function RecentStory() {
                     </ul>
                   </div>
                   <h3>
-                    <a href="/blog-details/"
+                    <a href="/blog-details"
                       >Making Peace With The Feast Or Famine Of Freelancing</a
                     >
                   </h3>
@@ -47,7 +47,7 @@ function RecentStory() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod...
                   </p>
-                  <a class="learn-more-btn" href="/blog-details/"
+                  <a class="learn-more-btn" href="/blog-details"
                     >Read Story
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@ function RecentStory() {
             <div class="col-lg-4 col-md-6">
               <div class="single-blog-post-box">
                 <div class="entry-thumbnail">
-                  <a href="/blog-details/"
+                  <a href="/blog-details"
                     ><img src={blog10} alt="image"
                   /></a>
                 </div>
@@ -81,7 +81,7 @@ function RecentStory() {
                     </ul>
                   </div>
                   <h3>
-                    <a href="/blog-details/"
+                    <a href="/blog-details"
                       >I Used The Web For A Day On A 50 MB Budget</a
                     >
                   </h3>
@@ -89,7 +89,7 @@ function RecentStory() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod...
                   </p>
-                  <a class="learn-more-btn" href="/blog-details/"
+                  <a class="learn-more-btn" href="/blog-details"
                     >Read Story
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +111,7 @@ function RecentStory() {
             <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
               <div class="single-blog-post-box">
                 <div class="entry-thumbnail">
-                  <a href="/blog-details/"
+                  <a href="/blog-details"
                     ><img src={blog11} alt="image"
                   /></a>
                 </div>
@@ -123,7 +123,7 @@ function RecentStory() {
                     </ul>
                   </div>
                   <h3>
-                    <a href="/blog-details/"
+                    <a href="/blog-details"
                       >Here are the 5 most telling signs of micromanagement</a
                     >
                   </h3>
@@ -131,7 +131,7 @@ function RecentStory() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod...
                   </p>
-                  <a class="learn-more-btn" href="/blog-details/"
+                  <a class="learn-more-btn" href="/blog-details"
                     >Read Story
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

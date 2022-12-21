@@ -17,6 +17,7 @@ import shape3 from "../../../../src/assets/images/shape3.svg";
 import shape4 from "../../../../src/assets/images/shape4.svg";
 import shape5 from "../../../../src/assets/images/shape5.png";
 import { shapes } from "../../../helper/ImageUrl";
+import { Link } from "react-router-dom";
 
 function Herosection({ heading1, image }) {
   return (
@@ -31,11 +32,13 @@ function Herosection({ heading1, image }) {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
                 ipsum suspendisse ultrices gravida.
               </p>
-              {heading1 === "Services" ? null : (
-                <a class="btn btn-secondary" href="/contact/">
-                  Get Started
-                </a>
-              )}
+                {heading1 === "Services" ? null : (
+                  <Link to={'/get-started'}>
+                      <a class="btn btn-secondary">
+                        Get Started
+                      </a>
+                  </Link>
+                )}
             </div>
           </div>
           <div class="col-lg-6 col-md-12">

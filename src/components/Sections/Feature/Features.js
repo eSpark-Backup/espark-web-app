@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import icon1 from "../../../../src/assets/images/icon1.png";
 import icon2 from "../../../../src/assets/images/icon2.png";
 import icon3 from "../../../../src/assets/images/icon3.png";
@@ -35,13 +36,15 @@ function Features({ heading }) {
                   <img src={icon4} alt="image" />
                 </div>
                 <h3>
-                  <a href="/service-details/">Robotic Automation</a>
+                  <Link to={"/service"}>
+                     <a>Robotic Automation</a>
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod
                   tempor incididunt ut labore dolore magna aliqua.
                 </p>
-                <a class="learn-more-btn" href="/service-details/">
+                <a class="learn-more-btn">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -58,7 +61,7 @@ function Features({ heading }) {
                     <line x1="8" y1="12" x2="16" y2="12"></line>
                   </svg>
                   Learn More
-                </a>
+                </a>       
               </div>
             </div>
             <div class="col-lg-3 col-sm-6 col-md-6">
@@ -67,13 +70,15 @@ function Features({ heading }) {
                   <img src={icon5} alt="image" />
                 </div>
                 <h3>
-                  <a href="/service-details/">Cognitive Automation</a>
+                <Link to={"/service"}>
+                  <a>Cognitive Automation</a>
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod
                   tempor incididunt ut labore dolore magna aliqua.
                 </p>
-                <a class="learn-more-btn" href="/service-details/">
+                <a class="learn-more-btn" href="/service">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -99,13 +104,15 @@ function Features({ heading }) {
                   <img src={icon6} alt="image" />
                 </div>
                 <h3>
-                  <a href="/service-details/">Cognitive Engagement</a>
+                <Link to={"/service"}>
+                  <a>Cognitive Engagement</a>
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod
                   tempor incididunt ut labore dolore magna aliqua.
                 </p>
-                <a class="learn-more-btn" href="/service-details/">
+                <a class="learn-more-btn" href="/service">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -131,15 +138,20 @@ function Features({ heading }) {
                   <img src={icon7} alt="image" />
                 </div>
                 <h3>
-                  <a href="/service-details/">Security &amp; Surveillance</a>
+                <Link to={"/service"}>
+                   <a >Security &amp; Surveillance</a>
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod
                   tempor incididunt ut labore dolore magna aliqua.
                 </p>
-                <a class="learn-more-btn" href="/service-details/">
-                  <i data-feather="plus-circle"></i> Learn More
-                </a>
+                    <a class="learn-more-btn" >
+                <Link to={"/service"}>
+                      <i data-feather="plus-circle"></i> Learn More
+                </Link>
+                    </a>
+
               </div>
             </div>
           </div>
