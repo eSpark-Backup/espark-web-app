@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { services } from "../../helper/services";
+import { products  } from "../../helper/products";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import GetInTouch from "../getInTouch/GetInTouch";
@@ -86,9 +87,27 @@ const Header = () => {
                 </li>
 
                 <li class="nav-item">
-                  <Link class="nav-link" href="/lets-talk">
-                    Product
+                  <Link class="nav-link" to="/products">
+                    Products
                   </Link>
+                  <ul class="dropdown-menu-products">
+                    {products.map((item) => {
+                      return (
+                        <li class="nav-item">
+                          <i
+                            class="fa fa-envelope-square"
+                            aria-hidden="true"
+                          ></i>
+                          <Link
+                            class="nav-link"
+                            to={`products-detail/${item.name}`}
+                          >
+                            {item.name}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
                 </li>
 
                 {/* <li class="nav-item">

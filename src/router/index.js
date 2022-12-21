@@ -10,7 +10,9 @@ import Services from "../screens/services";
 import ServiceDetail from "../screens/services/serviceDetail";
 import LayoutOne from "../layout/layoutOne";
 import ProjectDetails from "../screens/project-details/projectDetails";
+import Products from "../screens/products";
 import MobileApp from "../screens/mobileApp";
+
 
 const AppRoutes = () => {
   const data = window.scrollTo(0, 0);
@@ -22,6 +24,7 @@ const AppRoutes = () => {
     { path: "/project-detail/:id", element: <ProjectDetails /> },
     { path: "/blog", element: <Blog /> },
     { path: "/services", element: <Services /> },
+    { path: "/products", element: <Products /> },
     { path: "/services-detail/:id", element: <ServiceDetail /> },
     { path: "/lets-talk", element: <Contact /> },
     { path: "/espark-app", element: <MobileApp /> },
