@@ -5,6 +5,7 @@ import shape4 from "../../../../src/assets/images/shape4.svg";
 import shape5 from "../../../../src/assets/images/shape5.png";
 
 import about4 from "../../../../src/assets/images/about4.png";
+import { Link } from "react-router-dom";
 
 function About({ id }) {
   return (
@@ -35,9 +36,11 @@ function About({ id }) {
                     bibendum sodales, augue velit cursus nunc.Donec vitae sapien
                     ut libero venenatis faucibus tempus.
                   </p>
-                  <a class="btn btn-secondary" href="/about-1/">
+                  <Link to={"/s"}>
+                  <a class="btn btn-secondary" >
                     Discover More
                   </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -82,7 +85,7 @@ function About({ id }) {
                     bibendum sodales, augue velit cursus nunc.Donec vitae sapien
                     ut libero venenatis faucibus tempus.
                   </p>
-                  <a class="btn btn-secondary" href="/about-1/">
+                  <a class="btn btn-secondary" href="/">
                     Discover More
                   </a>
                 </div>

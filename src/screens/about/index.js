@@ -41,7 +41,7 @@ export default function About() {
         h3="Ready to talk?"
         p1="Our team is here to answer your question about StartP"
         btn="Contact Us"
-        href="index.htm#"
+        href="index"
         getStated="Or, get started now with a free trial"
       />
       <Partners

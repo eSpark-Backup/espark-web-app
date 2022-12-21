@@ -7,7 +7,7 @@ export default function Partners({h5,data}) {
         <h5>{h5}</h5>
         <div className="partner-inner">
             <div className="row justify-content-center">
-                {data.map((item,index) => <div className="col-lg-2 col-md-3 col-6" key={index}><a href="#" target="_balnk"><img
+                {data.map((item,index) => <div className="col-lg-2 col-md-3 col-6" key={index}>  <a href="/ab" ><img
                             src={item.imgUrl} alt="partner"/><img
                             src={item.hoverImage} alt="partner"/></a></div> )}
             </div>
