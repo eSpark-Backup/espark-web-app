@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function ProjectCard({ data }) {
+export default function ProjectCard({ data, link }) {
   return (
     <div className="works-area pt-80 pb-50">
       <div class="container">
@@ -35,6 +36,12 @@ export default function ProjectCard({ data }) {
             </div>
           ))}
         </div>
+      </div>
+      <div style={{textAlign:"center"}}>
+
+      {link == '/' ? <Link to={'/project'}>
+            <a className='btn btn-secondary' style={{marginTop:"2px"}} >GO To Projects</a>
+          </Link> : ""}
       </div>
     </div>
     // <div class="our-latest-projects ptb-80">

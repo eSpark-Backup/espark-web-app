@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { shapes } from "../../../helper/ImageUrl";
 
-const ServiceStyleFive = ({ data }) => {
+const ServiceStyleFive = ({ data,link }) => {
   return (
     <div>
       <div class="agency-services-area">
@@ -43,6 +43,9 @@ const ServiceStyleFive = ({ data }) => {
                 </div>
               );
             })}
+             {link == '/' ? <Link to={'/services'}>
+            <a className='btn btn-secondary' style={{marginTop:"2px",marginBottom:"15px"}} >GO TO Services</a>
+          </Link> : ""}
           </div>
         </div>
         {shapes?.map((item, index) => (
@@ -50,6 +53,8 @@ const ServiceStyleFive = ({ data }) => {
             <img src={item.imgUrl} alt={item.alt} />{" "}
           </div>
         ))}
+
+       
       </div>
     </div>
   );
