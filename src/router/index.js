@@ -10,6 +10,7 @@ import Services from "../screens/services";
 import ServiceDetail from "../screens/services/serviceDetail";
 import LayoutOne from "../layout/layoutOne";
 import ProjectDetails from "../screens/project-details/projectDetails";
+import Privacy from "../screens/privacy/Privacy";
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -21,6 +22,7 @@ const AppRoutes = () => {
     { path: "/services", element: <Services /> },
     { path: "/services-detail/:id", element: <ServiceDetail /> },
     { path: "/lets-talk", element: <Contact /> },
+    { path: "/privacy-policy", element: <Privacy /> },
   ]);
   return routes;
 };
