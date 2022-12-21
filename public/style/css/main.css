@@ -24879,7 +24879,7 @@ label {
 .section-title .bar {
     height: 5px;
     width: 90px;
-    background: #cdf1d8;
+    background: #76e5dd;
     margin: 20px auto;
     position: relative;
     border-radius: 30px
@@ -25208,7 +25208,7 @@ label {
 
 .startp-nav nav .others-option .btn.btn-light {
     background: transparent;
-    border: 2px dashed #cdf1d8;
+    border: 2px dashed #76e5dd;
     padding: 12px 33px;
     margin-right: 10px
 }
@@ -25492,7 +25492,7 @@ label {
 .hosting-main-banner {
     position: relative;
     z-index: 1;
-    background-color: #032b8d;
+    background-color: #11A79c;
     padding-top: 250px;
     padding-bottom: 190px
 }
@@ -25891,7 +25891,7 @@ label {
 }
 
 .single-box {
-    border: 1px dashed #cdf1d8;
+    border: 1px dashed #76e5dd;
     padding: 30px 20px;
     position: relative;
     z-index: 1;
@@ -25913,7 +25913,7 @@ label {
     width: 55px;
     height: 55px;
     line-height: 55px;
-    background: #cdf1d8;
+    background: #76e5dd;
     border-radius: 50%;
     color: #11A79c
 }
@@ -25938,8 +25938,8 @@ label {
     width: 100%;
     border-radius: 5px;
     height: 100%;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd);
     z-index: -1;
     opacity: 0;
     visibility: hidden
@@ -26132,8 +26132,8 @@ label {
     width: 100%;
     border-radius: 5px;
     height: 100%;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd);
     z-index: -1;
     opacity: 0;
     visibility: hidden
@@ -26216,8 +26216,8 @@ label {
     top: 0;
     height: 100%;
     width: 100%;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd);
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -26468,7 +26468,7 @@ label {
     width: 55px;
     height: 55px;
     line-height: 55px;
-    background: #cdf1d8;
+    background: #76e5dd;
     border-radius: 50%;
     color: #11A79c;
     -webkit-transition: .5s;
@@ -26738,7 +26738,7 @@ label {
     width: 55px;
     height: 55px;
     line-height: 55px;
-    background: #cdf1d8;
+    background: #76e5dd;
     border-radius: 50%;
     color: #11A79c;
     left: 20px;
@@ -26799,7 +26799,7 @@ label {
     width: 55px;
     height: 55px;
     line-height: 55px;
-    background: #cdf1d8;
+    background: #76e5dd;
     display: inline-block;
     border-radius: 50%;
     color: #11A79c;
@@ -26989,7 +26989,7 @@ label {
 }
 
 .single-team .team-image img {
-    border: 3px solid #cdf1d8;
+    border: 3px solid #76e5dd;
     width: auto !important;
     border-radius: 50%;
     display: inline-block !important;
@@ -27046,8 +27046,8 @@ label {
 }
 
 .single-team .team-info {
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd);
     padding: 10px 15px;
     border-radius: 75px;
     margin: 25px 10px;
@@ -27092,7 +27092,13 @@ label {
 
 .single-works {
     position: relative;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+
+.img {
+    height: 250px
 }
 
 .single-works:before {
@@ -27100,8 +27106,8 @@ label {
     left: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #23bdb8);
-    background: linear-gradient(135deg, #23bdb8, #23bdb8)
+    background: -webkit-linear-gradient(315deg, #23bdb8, #ffff);
+    background: linear-gradient(135deg, #23bdb8, #ffff)
 }
 
 .single-works .icon,
@@ -27348,8 +27354,8 @@ label {
     width: 100%;
     height: 100%;
     border-radius: 5px 5px 0 0;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd);
     opacity: 0;
     visibility: hidden;
     -webkit-transition: .5s;
@@ -27915,8 +27921,8 @@ label {
     top: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd);
     opacity: 0;
     visibility: hidden;
     -webkit-transition: .5s;
@@ -28101,8 +28107,8 @@ label {
 
 .agency-portfolio-feedback-slides.owl-theme .owl-dots .owl-dot.active span,
 .agency-portfolio-feedback-slides.owl-theme .owl-dots .owl-dot:hover span {
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794)
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd)
 }
 
 .agency-portfolio-feedback-item {
@@ -28186,8 +28192,8 @@ label {
     top: -25px;
     left: -25px;
     color: #fff;
-    background: -webkit-linear-gradient(315deg, #43e794, #23bdb8);
-    background: linear-gradient(135deg, #43e794, #23bdb8);
+    background: -webkit-linear-gradient(315deg, #76e5dd, #23bdb8);
+    background: linear-gradient(135deg, #76e5dd, #23bdb8);
     width: 60px;
     height: 60px;
     line-height: 60px;
@@ -28237,8 +28243,8 @@ label {
     position: relative;
     padding-top: 80px;
     padding-bottom: 160px;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794)
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd)
 }
 
 .ready-to-talk h3 {
@@ -28336,8 +28342,8 @@ label {
     top: 0;
     right: 0;
     bottom: 0;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd);
     z-index: -1;
     opacity: 0;
     margin: -1px;
@@ -28353,7 +28359,7 @@ label {
     left: 20px;
     top: 25px;
     line-height: 55px;
-    background: #cdf1d8;
+    background: #76e5dd;
     border-radius: 50%;
     color: #11A79c;
     -webkit-transition: .5s;
@@ -28431,8 +28437,8 @@ label {
     border-radius: 5px;
     color: #fff;
     text-align: center;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794)
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd)
 }
 
 .single-what-we-do-box .icon i {
@@ -28475,8 +28481,8 @@ label {
 .discover-area {
     position: relative;
     z-index: 1;
-    background: -webkit-linear-gradient(315deg, #43e794, #23bdb8);
-    background: linear-gradient(135deg, #43e794, #23bdb8)
+    background: -webkit-linear-gradient(315deg, #76e5dd, #23bdb8);
+    background: linear-gradient(135deg, #76e5dd, #23bdb8)
 }
 
 .discover-image {
@@ -28587,8 +28593,8 @@ label {
     padding-bottom: 50px;
     position: relative;
     z-index: 1;
-    background: -webkit-linear-gradient(315deg, #43e794, #23bdb8);
-    background: linear-gradient(135deg, #43e794, #23bdb8)
+    background: -webkit-linear-gradient(315deg, #76e5dd, #23bdb8);
+    background: linear-gradient(135deg, #76e5dd, #23bdb8)
 }
 
 .industries-serve-area .section-title h2,
@@ -28687,8 +28693,8 @@ label {
     position: absolute;
     left: 20px;
     bottom: -20px;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd);
     color: #fff;
     padding: 8px 16px;
     font-size: 13px;
@@ -28913,8 +28919,8 @@ label {
 
 .blog-slides.owl-theme .owl-dots .owl-dot.active span,
 .blog-slides.owl-theme .owl-dots .owl-dot:hover span {
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794)
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd)
 }
 
 .single-blog-post-item {
@@ -31792,8 +31798,8 @@ blockquote:after {
 }
 
 .cta-area {
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794)
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd)
 }
 
 .cta-area .container {
@@ -32009,8 +32015,8 @@ blockquote:after {
     top: 0;
     height: 100%;
     width: 100%;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd);
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -32137,12 +32143,12 @@ blockquote:after {
     width: 100%;
     height: 100%;
     z-index: -1;
-    border: 1px dashed #cdf1d8
+    border: 1px dashed #76e5dd
 }
 
 .single-repair-services:after {
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd);
     opacity: 0;
     visibility: hidden
 }
@@ -32327,8 +32333,8 @@ blockquote:after {
 .repair-why-choose-us {
     position: relative;
     z-index: 1;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794)
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd)
 }
 
 .repair-why-choose-us .section-title h2 {
@@ -32358,7 +32364,7 @@ blockquote:after {
 .single-repair-box {
     text-align: center;
     background-color: #fff;
-    border: 1px dashed #cdf1d8;
+    border: 1px dashed #76e5dd;
     padding: 30px;
     position: relative;
     z-index: 1;
@@ -32693,7 +32699,7 @@ blockquote:after {
     padding: 40px 30px;
     text-align: center;
     background-color: #fff;
-    border: 1px dashed #cdf1d8
+    border: 1px dashed #76e5dd
 }
 
 .single-iot-services:after {
@@ -32705,8 +32711,8 @@ blockquote:after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd);
     z-index: -1;
     opacity: 0;
     visibility: hidden
@@ -32836,8 +32842,8 @@ blockquote:after {
 .iot-why-choose-us {
     position: relative;
     z-index: 1;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794)
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd)
 }
 
 .iot-why-choose-us .section-title h2 {
@@ -32867,7 +32873,7 @@ blockquote:after {
 .single-iot-box {
     text-align: center;
     background-color: #fff;
-    border: 1px dashed #cdf1d8;
+    border: 1px dashed #76e5dd;
     padding: 30px;
     position: relative;
     z-index: 1;
@@ -33240,7 +33246,7 @@ blockquote:after {
 .ml-about-content .bar {
     height: 5px;
     width: 90px;
-    background: #cdf1d8;
+    background: #76e5dd;
     margin: 20px 0;
     position: relative;
     border-radius: 30px
@@ -33625,8 +33631,8 @@ blockquote:after {
     z-index: 1;
     -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
-    background: -webkit-linear-gradient(315deg, #43e794, #23bdb8);
-    background: linear-gradient(135deg, #43e794, #23bdb8)
+    background: -webkit-linear-gradient(315deg, #76e5dd, #23bdb8);
+    background: linear-gradient(135deg, #76e5dd, #23bdb8)
 }
 
 .newsletter-image img {
@@ -33744,8 +33750,8 @@ blockquote:after {
     right: 0;
     bottom: 0;
     z-index: -1;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd);
     display: none
 }
 
@@ -34076,7 +34082,7 @@ blockquote:after {
 .agency-about-content .bar {
     height: 5px;
     width: 90px;
-    background: #cdf1d8;
+    background: #76e5dd;
     margin: 20px 0;
     position: relative;
     border-radius: 30px
@@ -34407,8 +34413,8 @@ blockquote:after {
     opacity: 0;
     visibility: hidden;
     width: 100%;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #43e794);
-    background: linear-gradient(135deg, #23bdb8, #43e794);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
+    background: linear-gradient(135deg, #23bdb8, #76e5dd);
     left: 0;
     border-radius: 4px
 }
@@ -37081,7 +37087,7 @@ blockquote:after {
     }
 
     .startp-nav nav .others-option .btn.btn-light {
-        border: 1px dashed #cdf1d8;
+        border: 1px dashed #76e5dd;
         display: none
     }
 
@@ -37946,7 +37952,7 @@ blockquote:after {
     }
 
     .startp-nav nav .others-option .btn.btn-light {
-        border: 1px dashed #cdf1d8;
+        border: 1px dashed #76e5dd;
         display: none
     }
 

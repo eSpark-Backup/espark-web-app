@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, useRoutes } from "react-router-dom";
 import Header from "../components/header/header";
 import About from "../screens/about";
@@ -10,8 +10,11 @@ import Services from "../screens/services";
 import ServiceDetail from "../screens/services/serviceDetail";
 import LayoutOne from "../layout/layoutOne";
 import ProjectDetails from "../screens/project-details/projectDetails";
+import MobileApp from "../screens/mobileApp";
 
 const AppRoutes = () => {
+  const data = window.scrollTo(0, 0);
+
   let routes = useRoutes([
     { path: "/", element: <Home /> },
     { path: "/about", element: <About /> },
@@ -21,6 +24,7 @@ const AppRoutes = () => {
     { path: "/services", element: <Services /> },
     { path: "/services-detail/:id", element: <ServiceDetail /> },
     { path: "/lets-talk", element: <Contact /> },
+    { path: "/espark-app", element: <MobileApp /> },
   ]);
   return routes;
 };
