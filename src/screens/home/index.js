@@ -14,8 +14,8 @@ const Home = () => {
   return (
     <div>
       <Herosection />
-      <br/>
-      <br/>
+      <br />
+      <br />
       <Features heading={"WE CREATE UNIQUE WEB SOLUTIONS"} />
       <About />
 

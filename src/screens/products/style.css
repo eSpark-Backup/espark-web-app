@@ -45,6 +45,11 @@ label {
     user-select: none;
 }
 
+.light{
+    color: white;
+}
+
+
 
 /* -------- Switch Styles ------------*/
 [type="checkbox"] {
@@ -62,6 +67,9 @@ label {
 /* App */
 [type="checkbox"]:checked+.app .body {
     color: white;
+}
+[type="checkbox"]+.app .light {
+    color: black;
 }
 
 

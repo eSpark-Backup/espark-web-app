@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import GradiantCards from "../../components/cards/gradiantCards/gradiantCards";
+import HeroSectionThree from "../../components/Hero/HeroSectionThree";
 import Herosection from "../../components/Sections/Hero/Herosection";
 import Tabs from "../../components/tabs/tabs";
 import Title from "../../components/title/title";
+import TwoColumns from "../../components/two-column/twoColumns";
 import { shapes } from "../../helper/ImageUrl";
 import { products } from "../../helper/products";
 import "./style.css";
 
 const Products = () => {
+  const [productData, setProductData] = useState([]);
+  useEffect(() => {
+    setProductData(products[0].data);
+  }, []);
+
+  console.log(productData);
+
   return (
     <>
-      <Title title={"Our Latest Products"} data={shapes} />
+      <HeroSectionThree
+        heading1={"Our Latast Products"}
+        paragraph={
+          "At this point, it may seem like overkill to point out the continued growth bound to happen in the Internet of Things space for the years to come and how it will create new opportunities for companies, both established and new, from a hardware and software perspective."
+        }
+      />
       <input type="checkbox" id="switch" />
       <div class="app">
         <div class="body">
@@ -19,7 +33,7 @@ const Products = () => {
               <div class="toggle"></div>
               <div class="names">
                 {products.map((item) => (
-                  <p class="light" onClick={(e) => console.log(item)}>
+                  <p class="light" onClick={(e) => setProductData(item.data)}>
                     {item.name}
                   </p>
                 ))}
@@ -28,7 +42,19 @@ const Products = () => {
           </div>
         </div>
       </div>
-      <GradiantCards data={products} />
+      {productData.length &&
+        productData.map((item) => {
+          return (
+            <TwoColumns
+              imgUrl={item.image}
+              heading2={item.name}
+              paragraph={item.detail}
+              button={item.button}
+              id={item.sectionId}
+              link={item.routeLink}
+            />
+          );
+        })}
     </>
   );
 };
