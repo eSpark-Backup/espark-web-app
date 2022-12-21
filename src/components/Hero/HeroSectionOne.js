@@ -1,10 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { services } from "../../helper/services";
 
-const HeroSectionOne = ({ heading, paragrah }) => {
-  const filterData = services.filter((item) => item.name === heading);
-
+const HeroSectionOne = ({ filterData }) => {
   return (
     <div>
       <div class="repair-main-banner">
@@ -34,19 +31,6 @@ const HeroSectionOne = ({ heading, paragrah }) => {
                 })}
               </div>
             </div>
-          </div>
-
-          <div className="project-detail-desc pt-80 pb-0">
-            <p>
-            {filterData[0].data.extraContent}
-            </p>
-            
-          </div>
-          <div className="project-detail-desc  pb-0">
-            <h4>
-            {filterData[0].data.heading}
-            </h4>
-            
           </div>
         </div>
       </div>

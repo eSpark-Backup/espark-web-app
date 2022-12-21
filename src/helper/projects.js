@@ -1,22 +1,53 @@
-import image2 from "../assets/images/repair-banner-image/repair-shape-circle.png";
-import image3 from "../assets/images/repair-banner-image/repair-shape1.png";
-import image4 from "../assets/images/repair-banner-image/repair-shape2.png";
-
-import man_and_women from "../assets/images/man-and-women.png";
-import circle_1 from "../assets/images/circle-1.png";
-import cta_shape_1 from "../assets/images/cta-shape-1.png";
-
-
-
-
-import work_img_1 from "../assets/images/works-image/works-image1.jpg";
-import work_img_2 from "../assets/images/works-image/works-image2.jpg";
-import work_img_3 from "../assets/images/works-image/works-image3.jpg";
-import work_img_4 from "../assets/images/works-image/works-image4.jpg";
-import work_img_5 from "../assets/images/works-image/works-image5.jpg";
-import work_img_6 from "../assets/images/works-image/works-image6.jpg";
-
-import Team_1 from '../assets/images/team-image/team1.jpg'
+import img_1 from '../assets/images/projects/img_1.png'
+import img_2 from '../assets/images/projects/img_2.png'
+import img_3 from '../assets/images/projects/img_3.png'
+import img_4 from '../assets/images/projects/img_4.png'
+import img_5 from '../assets/images/projects/img_5.png'
+import img_6 from '../assets/images/projects/img_6.png'
+import img_7 from '../assets/images/projects/img_7.png'
+import img_8 from '../assets/images/projects/img_8.png'
+import img_9 from '../assets/images/projects/img_9.png'
+import img_10 from '../assets/images/projects/img_10.png'
+import img_11 from '../assets/images/projects/img_11.png'
+import img_12 from '../assets/images/projects/img_12.png'
+import img_13 from '../assets/images/projects/img_13.png'
+import img_14 from '../assets/images/projects/img_14.png'
+import img_15 from '../assets/images/projects/img_15.png'
+import img_16 from '../assets/images/projects/img_16.png'
+import img_17 from '../assets/images/projects/img_17.png'
+import img_18 from '../assets/images/projects/img_18.png'
+import img_19 from '../assets/images/projects/img_19.png'
+import img_20 from '../assets/images/projects/img_20.png'
+import img_21 from '../assets/images/projects/img_21.png'
+import img_22 from '../assets/images/projects/img_22.png'
+import img_23 from '../assets/images/projects/img_23.png'
+import img_24 from '../assets/images/projects/img_24.png'
+import img_25 from '../assets/images/projects/img_25.png'
+import img_26 from '../assets/images/projects/img_26.png'
+import img_27 from '../assets/images/projects/img_27.png'
+import img_28 from '../assets/images/projects/img_28.png'
+import img_29 from '../assets/images/projects/img_29.png'
+import img_30 from '../assets/images/projects/img_30.png'
+import img_31 from '../assets/images/projects/img_31.png'
+import img_32 from '../assets/images/projects/img_32.png'
+import img_33 from '../assets/images/projects/img_33.png'
+import img_34 from '../assets/images/projects/img_34.png'
+import img_35 from '../assets/images/projects/img_35.png'
+import img_36 from '../assets/images/projects/img_36.png'
+import img_37 from '../assets/images/projects/img_37.png'
+import img_39 from '../assets/images/projects/img_39.png'
+import img_40 from '../assets/images/projects/img_40.png'
+import img_41 from '../assets/images/projects/img_41.png'
+import img_43 from '../assets/images/projects/img_43.png'
+import img_44 from '../assets/images/projects/img_44.png'
+import img_45 from '../assets/images/projects/img_45.png'
+import img_46 from '../assets/images/projects/img_46.png'
+import img_47 from '../assets/images/projects/img_47.png'
+import img_48 from '../assets/images/projects/img_48.png'
+import img_49 from '../assets/images/projects/img_49.png'
+import img_50 from '../assets/images/projects/img_50.png'
+import img_51 from '../assets/images/projects/img_51.png'
+import img_52 from '../assets/images/projects/img_52.png'
 
 const hash = () => {
   const s4 = () => {
@@ -27,98 +58,441 @@ const hash = () => {
   return `${s4()}${s4()}-${s4()}-${s4()}-${s4()}-${s4()}${s4()}${s4()}`;
 };
 
-const projectsItems = (id, heading, des) => {
-  return {
-    id: id,
-    heading: heading,
-    description: des,
-  };
-};
-
-const projectsDetails = (id, imgUrl, heading,paragraph,btnName) => {
-  return {
-    id: id,
-    img: imgUrl,
-    heading: heading,
-    paragraph:paragraph,
-    btnName:btnName
-  };
-};
-const carouselDetails = (id, imgUrl, name, h3_span, h3_span2, paragraph) => {
-  return {
-    id: id,
-    img: imgUrl,
-    name:name,
-    h3_span:h3_span,
-    h3_span2:h3_span2,
-    paragraph:paragraph
-  };
-};
-
 export const projects = [
   {
     id: hash(),
-    name: "Seek Social",
     data: {
-      image: work_img_1,
-      content: [
-        projectsItems(
-          1,
-          "Seek Social",
-          "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
-        )
-      ],
-      details:[
-        projectsDetails(1,work_img_1,"Leading Big Data Analytics Company","Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.","Get Started")
-      ],
-      carousel:[
-        carouselDetails(1,work_img_1, "Josh Butler", "Marketing", 'Manager', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua')
-      ]
+      name: "Alternative Asset",
+      image: img_1,
+      projectUrl: "https://alternative-asset.co.uk/",
     },
   },
   {
     id: hash(),
-    name: "Shop & Great",
     data: {
-      image: [
-        work_img_2,
-      ],
-      content: [
-        projectsItems(
-          2,
-          "Shop & Great",
-          "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
-        )
-      ],
-      details:[
-        projectsDetails(1, work_img_2, "Leading Big Data Analytics Company","Leading Big Data Analytics Company","Get Started")
-      ],
-      carousel:[
-        carouselDetails(2,work_img_2, "Butler", "Marketing", 'Manager', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua')
-      ]
-     },
+      name: "Appolos's Boxing & Fitness",
+      image: img_2,
+      projectUrl: "https://www.apollosboxing.co.uk/",
+    },
   },
   {
     id: hash(),
-    name: "Sazgar",
     data: {
-      image: [
-        work_img_3,
-      ],
-      content: [
-        projectsItems(
-          3,
-          "Sazgar",
-          "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
-        )
-      ],
-      details:[
-        projectsDetails(3,work_img_3,"Leading Big Data Analytics Company","Leading Big Data Analytics Company","Get Started")
-      ] ,
-      carousel:[
-        carouselDetails(3,work_img_3, "Butler", "Marketing", 'Manager', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua')
-      ] },
+      image: img_3,
+      projectUrl: "https://billadvice.co.uk/",
+      name: "Bill Advice",
+    },
   },
-
+  {
+    id: hash(),
+    data: {
+      image: img_4,
+      projectUrl: "https://cbe-uk.com/",
+      name: "Custom Built Exhibitions",
+    },
+  },
+  {
+    id: hash(),
+    data: {
+      image: img_5,
+      projectUrl: "https://app.clockify.me/en/login",
+      name: "Clockify",
+    },
+  },
+  {
+    id: hash(),
+    data: {
+      image: img_6,
+      projectUrl: "https://dash.cloudflare.com/login",
+      name: "Cloud Flare",
+    },
+  },
+  {
+    id: hash(),
+    data: {
+      image: img_7,
+      projectUrl: "https://dashboard.branch.io/",
+      name: "Branch",
+    },
+  },
+  {
+    id: hash(),
+    data: {
+      image: img_8,
+      projectUrl: "https://diib.com/",
+      name: "Diib",
+    },
+  },
+  {
+    id: hash(),
+    data: {
+      image: img_9,
+      projectUrl: "http://ww1.directassistuk.co.uk/",
+      name: "Directassistuk.",
+    },
+  },
+  {
+    id: hash(),
+    data: {
+      image: img_10,
+      projectUrl: "https://cms-spares.co.uk/",
+      name: "Corby Mechanical Services",
+    },
+  },
+  {
+    id: hash(),
+    data: {
+      image: img_11,
+      projectUrl: "https://dashboard.tawk.to/login",
+      name: "Dashboard Tawk To",
+    },
+  },
+  {
+    id: hash(),
+    data: {
+      image: img_12,
+      projectUrl: "https://appleid.apple.com/",
+      name: "Appleid Apple",
+    },
+  },
+  {
+    id: hash(),
+    data: {
+      image: img_13,
+      projectUrl: "https://adaptgas.co.uk/",
+      name: "Adaptgas",
+    },
+  },
+  {
+    id: hash(),
+    data: {
+      image: img_14,
+      projectUrl: "https://wetransfer.com/",
+      name: "Wetransfer",
+    },
+  },
+  {
+    id: hash(),
+    data: {
+      image: img_15,
+      projectUrl: "https://contidisanbonifacio.com/",
+      name: "Conti Disan Bonifacio",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_16,
+      projectUrl: "https://www.beonesolutions.com/",
+      name: "Beonesoultions",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_17,
+      projectUrl: "https://ionenergysolutions.com/",
+      name: "Ionenergy Solutions.",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_18,
+      projectUrl: "https://inteligex.com/",
+      name: "Inteligex",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_19,
+      projectUrl: "https://www.limetreelondon.com/",
+      name: "Lime Tree london",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_20,
+      projectUrl: "https://id.atlassian.com/login",
+      name: "Atlassian",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_21,
+      projectUrl: "https://metalmagic.co.uk/",
+      name: "Ant Fabrication",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_22,
+      projectUrl: "https://manage.sslforfree.com/login",
+      name: "ssl for free.",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_23,
+      projectUrl: "https://luner.io/",
+      name: "Luner",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_24,
+      projectUrl: "https://www.glitzygiftz.co.uk/",
+      name: "Glitzy Giftz",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_25,
+      projectUrl: "https://huzaifaaliblog.blogspot.com/",
+      name: "Huzaifa Ali Blog",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_26,
+      projectUrl: "https://livewellnutritionuk.com/",
+      name: "Live Well Nutrition Uk",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_27,
+      projectUrl: "https://hayletscommunicate.com/",
+      name: "Hay Lets Communicate",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_28,
+      projectUrl: "https://hasnitube.com/",
+      name: "Hasni Tube",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_29,
+      projectUrl: "https://faithletsgrow.com/",
+      name: "Faith Lets Grow",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_30,
+      projectUrl: "https://esparkconsultants.com/",
+      name: "eSpark Consulting Group",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_31,
+      projectUrl: "https://emerynails.co.uk/",
+      name: "Emery Nails Ltd",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_32,
+      projectUrl: "https://jamiegrundy.net/",
+      name: "Jamie Grundy",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_33,
+      projectUrl: "https://www.khemploymentservices.com/",
+      name: "kHES People Management",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_34,
+      projectUrl: "https://www.livejournal.com/",
+      name: "Live Journal",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_35,
+      projectUrl: "https://seeksocial.co.uk/",
+      name: "Seek Social",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_36,
+      projectUrl: "https://supernovaweddingdesign.co.uk/",
+      name: "Supernova Wedding Design",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_37,
+      projectUrl: "https://trello.com/",
+      name: "Trello",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_39,
+      projectUrl: "https://jamiegrundy.net/",
+      name: "Jamie Grundy",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_40,
+      projectUrl: "https://octobercms.com/",
+      name: "Octobercms",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_41,
+      projectUrl: "https://jamiegrundy.net/",
+      name: "Jamie Grundy",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_43,
+      projectUrl: "https://seeksocial.co.uk/",
+      name: "Seek Social",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_44,
+      projectUrl: "https://seektraining.co.uk/",
+      name: "Seek Training",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_45,
+      projectUrl: "https://www.seniorwaste.com/",
+      name: "Senior W aste",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_46,
+      projectUrl: "https://sharethis.com/",
+      name: "Share This",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_47,
+      projectUrl: "https://shift8cdn.com/",
+      name: "Shift8cdn",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_48,
+      projectUrl: "https://timeless-treatments.co.uk/",
+      name: "Timeless Treatments",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_49,
+      projectUrl: "https://www.profileplan.com/",
+      name: "Profile Plan",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_50,
+      projectUrl: "https://traveltradeready.net/",
+      name: "Travel Trader Ready",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_51,
+      projectUrl: "https://wetransfer.com/",
+      name: "WE Transfer",
+    },
+  }
+  ,
+  {
+    id: hash(),
+    data: {
+      image: img_52,
+      projectUrl: "https://www.beonesolutions.com/",
+      name: "Beone Solutions",
+    },
+  }
 
 ];
