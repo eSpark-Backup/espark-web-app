@@ -11,11 +11,12 @@ import Users from "../../components/Sections/User/Users";
 import Clients from "./../../components/HappyClients/Clients";
 import Services from "../services";
 import ReadyToTalk from "../../components/ready-to-talk/readyToTalk";
-import { partner } from "../../helper/ImageUrl";
+import { partner, shapes } from "../../helper/ImageUrl";
 import Partners from "../../components/partners/partners";
 import PartnerAbout from "../../components/partners-about/parternsAbout";
 import Faqs from "../../components/faqs/faqs";
 import Projects from "../projects/projects";
+
 
 const Home = () => {
   return (
@@ -29,11 +30,10 @@ const Home = () => {
       <Projects link={window.location.pathname}/>
       <PartnerAbout/>
       <Users />
-      <Faqs/>
-      
       {/* <Price /> */}
       {/* <Feedback /> */}
       <RecentStory />
+      <Faqs data={shapes}/>
       {/* <Freetrial /> */}
       <Clients />
     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Faqs() {
+function Faqs({data}) {
   return (
     <>
     <div class="page-title-area">
@@ -11,16 +11,10 @@ function Faqs() {
                     </div>
                 </div>
             </div>
-            <div class="shape1"><img src="/images/shape1.png" alt="shape" /></div>
-            <div class="shape2 rotateme"><img src="/images/shape2.svg" alt="shape" /></div>
-            <div class="shape3"><img src="/images/shape3.svg" alt="shape" /></div>
-            <div class="shape4"><img src="/images/shape4.svg" alt="shape" /></div>
-            <div class="shape5"><img src="/images/shape5.png" alt="shape" /></div>
-            <div class="shape6 rotateme"><img src="/images/shape4.svg" alt="shape" /></div>
-            <div class="shape7"><img src="/images/shape4.svg" alt="shape" /></div>
-            <div class="shape8 rotateme"><img src="/images/shape2.svg" alt="shape" /></div>
+            {data.map(item => <div class={item.className}><img src={item.imgUrl} alt="shape" /></div>
+)}
         </div>
-        <div class="faq-area ptb-80">
+        <div class="faq-area">
             <div class="container">
                 <div class="faq-accordion">
                     <div data-accordion-component="Accordion" class="accordion">
@@ -92,40 +86,7 @@ function Faqs() {
                                     magna aliqua.</p>
                             </div>
                         </div>
-                        <div data-accordion-component="AccordionItem" class="accordion__item">
-                            <div data-accordion-component="AccordionItemHeading" role="heading"
-                                class="accordion__heading" aria-level="3">
-                                <div class="accordion__button" id="accordion__heading-e" aria-disabled="false"
-                                    aria-expanded="false" aria-controls="accordion__panel-e" role="button" tabindex="0"
-                                    data-accordion-component="AccordionItemButton"><span>Is multidex supported for
-                                        instant apps?</span></div>
-                            </div>
-                            <div data-accordion-component="AccordionItemPanel" class="accordion__panel" role="region"
-                                aria-labelledby="accordion__heading-e" id="accordion__panel-e" hidden="">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna
-                                    aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore
-                                    magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div data-accordion-component="AccordionItem" class="accordion__item">
-                            <div data-accordion-component="AccordionItemHeading" role="heading"
-                                class="accordion__heading" aria-level="3">
-                                <div class="accordion__button" id="accordion__heading-f" aria-disabled="false"
-                                    aria-expanded="false" aria-controls="accordion__panel-f" role="button" tabindex="0"
-                                    data-accordion-component="AccordionItemButton"><span>Can I share resources between
-                                        features?</span></div>
-                            </div>
-                            <div data-accordion-component="AccordionItemPanel" class="accordion__panel" role="region"
-                                aria-labelledby="accordion__heading-f" id="accordion__panel-f" hidden="">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna
-                                    aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore
-                                    magna aliqua.</p>
-                            </div>
-                        </div>
+                
                     </div>
                 </div>
       
