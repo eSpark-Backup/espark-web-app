@@ -12,6 +12,7 @@ import LayoutOne from "../layout/layoutOne";
 import ProjectDetails from "../screens/project-details/projectDetails";
 import Products from "../screens/products";
 import MobileApp from "../screens/mobileApp";
+import Privacy from './../screens/privacy/Privacy';
 
 
 const AppRoutes = () => {
@@ -28,6 +29,7 @@ const AppRoutes = () => {
     { path: "/services-detail/:id", element: <ServiceDetail /> },
     { path: "/lets-talk", element: <Contact /> },
     { path: "/espark-app", element: <MobileApp /> },
+    { path: "/privacy-policy", element: <Privacy /> },
   ]);
   return routes;
 };

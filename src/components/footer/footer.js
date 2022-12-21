@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer-area bg-f7fafd">
       <div className="container">
         <div className="row">
-          <div className="col-lg-5 col-md-6">
+          <div className="col-lg-4 col-md-6">
             <div className="single-footer-widget">
               <div className="logo">
                 <a href="/">
@@ -42,33 +42,20 @@ const Footer = () => {
                 <li>
                   <a href="/lets-talk">Lets-Talk</a>
                 </li>
-                
               </ul>
             </div>
           </div>
-          {/* <div className="col-lg-3 col-md-6">
+          <div className="col-lg-2 col-md-6">
             <div className="single-footer-widget">
               <h3>Support</h3>
               <ul className="list">
-                <li>
-                  <a href="/faq/">FAQ&#x27;s</a>
-                </li>
-                <li>
-                  <a href="/privacy-policy/">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="/term-condition/">Terms &amp; Condition</a>
-                </li>
-                <li>
-                  <a href="/team/">Team</a>
-                </li>
-                <li>
-                  <a href="/contact/">Contact Us</a>
+              <li>
+                  <a href="/privacy-policy">Privacy-policy</a>
                 </li>
               </ul>
             </div>
-          </div> */}
-          <div className="col-lg-5 col-md-6">
+          </div>
+          <div className="col-lg-4 col-md-6">
             <div className="single-footer-widget">
               <h3>Address</h3>
               <ul className="footer-contact-info">
@@ -89,8 +76,7 @@ const Footer = () => {
                     <circle cx="12" cy="10" r="3"></circle>
                   </svg>
                   &nbsp;&nbsp;
-                  Office# 301, 3rd Floor, Blossom Trade Center, Block
-                  1Gulistan-e-Johar, Karachi City, Sindh. 
+                    301/B 3rd Floor & 401/A 4th Floor, Blossom Trade Centre, Block 1 Gulistan-e-Johar, Karachi, 74300
                 </li>
                 <li>
                   <svg
