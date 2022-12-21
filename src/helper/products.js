@@ -14,26 +14,28 @@ const hash = () => {
   };
   return `${s4()}${s4()}-${s4()}-${s4()}-${s4()}-${s4()}${s4()}${s4()}`;
 };
-const productItems = (id, heading, des, image1, image2, image3, bold) => {
-  return {
-    id: id,
-    heading: heading,
-    description: des,
-    imgUrlMan: image1,
-    imgUrlCircle: image2,
-    imgUrlCta: image3,
-    bold: bold,
-  };
-};
+
 export const products = [
   {
     id: hash(),
-    name: "Software",
-    icon: "glyphicon glyphicon-upload"
+    name: "Software Products",
+    data: [
+      {
+        name: "",
+        image: "",
+        detail: "",
+      },
+    ],
   },
   {
     id: hash(),
-    name: "Hardware",
-    icon: "glyphicon glyphicon-download"
-
-  },];
+    name: "Hardware Products",
+    data: [
+      {
+        name: "",
+        image: "",
+        detail: "",
+      },
+    ],
+  },
+];

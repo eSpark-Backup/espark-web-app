@@ -9,10 +9,10 @@ const HeroSectionOne = ({ filterData }) => {
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div class="repair-banner-content">
-                <h1>{filterData[0].name}</h1>
+                <h1>{filterData[0]?.name}</h1>
                 <p
                   dangerouslySetInnerHTML={{
-                    __html: filterData[0].data.shortDescription,
+                    __html: filterData[0]?.data?.shortDescription,
                   }}
                 ></p>
                 <Link class="btn btn-primary" href="/lets-talk">
@@ -22,7 +22,7 @@ const HeroSectionOne = ({ filterData }) => {
             </div>
             <div class="col-lg-6">
               <div class="repair-banner-image">
-                {filterData[0].data.image?.slice(1).map((item) => {
+                {filterData[0]?.data?.image?.slice(1).map((item) => {
                   return (
                     <>
                       <img src={item} alt="image" />

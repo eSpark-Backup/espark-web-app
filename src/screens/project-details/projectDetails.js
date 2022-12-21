@@ -55,8 +55,6 @@ export default function ProjectDetails() {
           );
         })}
       </Fade>
-
-      {/* <ProjectDetails data={filterProjects} /> */}
     </>
   );
 }

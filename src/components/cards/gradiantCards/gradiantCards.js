@@ -2,7 +2,7 @@ import React from "react";
 
 const GradiantCards = ({ data }) => {
   return (
-    <div class="boxes-area">
+    <div className="pb-5">
       <div class="container">
         <div class="row">
           {data?.map((item) => {
@@ -44,7 +44,7 @@ const GradiantCards = ({ data }) => {
                   <h3>
                     <a href="/feature-details/">{item?.name}</a>
                   </h3>
-                  <p>{item.data.shortDescription}</p>
+                  <p>{item?.data?.shortDescription}</p>
                 </div>
               </div>
             );

@@ -12,8 +12,7 @@ import LayoutOne from "../layout/layoutOne";
 import ProjectDetails from "../screens/project-details/projectDetails";
 import Products from "../screens/products";
 import MobileApp from "../screens/mobileApp";
-import Privacy from './../screens/privacy/Privacy';
-
+import Privacy from "./../screens/privacy/Privacy";
 
 const AppRoutes = () => {
   const data = window.scrollTo(0, 0);

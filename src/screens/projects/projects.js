@@ -38,18 +38,7 @@ export default function Projects() {
               <div
                 className="img"
                 style={{ backgroundImage: `url(${item.data.image})` }}
-              >
-                {/* <div className="content">
-                  {item.data.carousel.map((car) => {
-                    return (
-                      <>
-                        <h1>{car.name}</h1>
-                        <span>{car.h3_span}</span>
-                      </>
-                    );
-                  })}
-                </div> */}
-              </div>
+              ></div>
             </div>
           );
         })}
