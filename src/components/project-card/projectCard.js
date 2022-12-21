@@ -19,7 +19,7 @@ export default function ProjectCard({ data }) {
           {data.map((item, index) => (
             <div className="col-lg-4 col-md-6" key={index}>
               <div className="single-works">
-                <img src={item.data.image} alt="image" />
+                <img src={item.data.image} alt="image"  />
                 <a className="icon" href={item.data.projectUrl} target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
                     <path
@@ -29,12 +29,7 @@ export default function ProjectCard({ data }) {
                   </svg>
                 </a>
                 <div className="works-content">
-                  {item.data.content.map((x) => (
-                    <>
-                      <h3>{item.name}</h3>
-                      <p>{x.description}</p>
-                    </>
-                  ))}
+                       <h3>{item.data.name}</h3>
                 </div>
               </div>
             </div>
