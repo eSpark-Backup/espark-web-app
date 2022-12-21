@@ -25103,9 +25103,9 @@ label {
     background: #fff;
     position: absolute;
     border: none;
+    width: 400px;
     top: 80px;
     left: 0;
-    width: 400px;
     display: block;
     z-index: 99;
     padding: 15px 5px;
@@ -26879,13 +26879,13 @@ label {
 
 .features-details-desc .features-details-list li {
     margin-bottom: 12px;
-    color: #6084a4;
+    color: #FFFFFF;
     position: relative;
     padding-left: 15px
 }
 
 .features-details-desc .features-details-list li:before {
-    background: #11A79c;
+    background: #FFFFFF;
     width: 8px;
     height: 8px;
     left: 0;
@@ -31854,7 +31854,7 @@ blockquote:after {
 .repair-main-banner {
     overflow-x: hidden;
     padding-top: 200px;
-    padding-bottom: 140px
+    padding-bottom: 60px
 }
 
 .repair-banner-content h1 {
