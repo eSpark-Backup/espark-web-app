@@ -8,10 +8,6 @@ export default function ProjectCard({ data }) {
           <h2>
             Our Latest <span>Projects</span>
           </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
         </div>
       </div>
       <div className="container">
@@ -19,7 +15,7 @@ export default function ProjectCard({ data }) {
           {data.map((item, index) => (
             <div className="col-lg-4 col-md-6" key={index}>
               <div className="single-works">
-                <img src={item.data.image} alt="image"  />
+                <img className="img" src={item.data.image} alt="image" />
                 <a className="icon" href={item.data.projectUrl} target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
                     <path
@@ -29,7 +25,10 @@ export default function ProjectCard({ data }) {
                   </svg>
                 </a>
                 <div className="works-content">
-                       <h3>{item.data.name}</h3>
+                  <h3>
+                    {item.data.name.charAt(0).toUpperCase() +
+                      item.data.name.slice(1)}
+                  </h3>
                 </div>
               </div>
             </div>
