@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import { services } from "../../helper/services";
 import { products } from "../../helper/products";
 import "react-responsive-modal/styles.css";

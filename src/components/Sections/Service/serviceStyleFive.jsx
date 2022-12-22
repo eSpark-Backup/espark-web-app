@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { shapes } from "../../../helper/ImageUrl";
-
-const ServiceStyleFive = ({ data }) => {
+import style from './style.module.css'
+const ServiceStyleFive = ({ data,link }) => {
   return (
     <div>
       <div class="agency-services-area">
@@ -43,6 +43,9 @@ const ServiceStyleFive = ({ data }) => {
                 </div>
               );
             })}
+             {link == '/' ? <Link to={'/services'} className={style.btnMargin}>
+                    <a className='btn btn-secondary'   >GO TO Services</a>
+              </Link> : ""}
           </div>
         </div>
         {shapes?.map((item, index) => (
@@ -50,6 +53,7 @@ const ServiceStyleFive = ({ data }) => {
             <img src={item.imgUrl} alt={item.alt} />{" "}
           </div>
         ))}
+      
       </div>
     </div>
   );

@@ -1,20 +1,5 @@
-import React, { useEffect } from "react";
-import mlMainPic from "../../assets/images/ml-banner-image/ml-main-pic.png";
-import one from "../../assets/images/ml-banner-image/one.png";
-import two from "../../assets/images/ml-banner-image/two.png";
-import three from "../../assets/images/ml-banner-image/three.png";
-import four from "../../assets/images/ml-banner-image/four.png";
-import five from "../../assets/images/ml-banner-image/five.png";
-import six from "../../assets/images/ml-banner-image/six.png";
-import seven from "../../assets/images/ml-banner-image/seven.png";
-import eleven from "../../assets/images/ml-banner-image/eleven.png";
-import eight from "../../assets/images/ml-banner-image/eight.png";
-import nine from "../../assets/images/ml-banner-image/nine.png";
-import ten from "../../assets/images/ml-banner-image/ten.png";
+import React from "react";
 
-import { shapes } from "../../helper/ImageUrl";
-import $ from "jquery";
-import { gsap } from "gsap";
 
 import "./style.css";
 

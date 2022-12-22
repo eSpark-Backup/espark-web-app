@@ -1,8 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import icon1 from "../../../../src/assets/images/icon1.png";
-import icon2 from "../../../../src/assets/images/icon2.png";
-import icon3 from "../../../../src/assets/images/icon3.png";
 import icon4 from "../../../../src/assets/images/icon4.png";
 import icon5 from "../../../../src/assets/images/icon5.png";
 import icon6 from "../../../../src/assets/images/icon6.png";
@@ -12,8 +9,6 @@ import shape2 from "../../../../src/assets/images/shape2.svg";
 import shape3 from "../../../../src/assets/images/shape3.svg";
 import shape4 from "../../../../src/assets/images/shape4.svg";
 import shape5 from "../../../../src/assets/images/shape5.png";
-import { services } from "../../../helper/services";
-import ServiceStyleFive from "../Service/serviceStyleFive";
 
 function Features({ heading }) {
   return (

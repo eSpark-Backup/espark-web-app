@@ -1,0 +1,8 @@
+.txtCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topMargin{
+    margin-top: 2px;
+}
