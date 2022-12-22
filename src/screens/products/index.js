@@ -15,8 +15,6 @@ const Products = () => {
     setProductData(products[0].data);
   }, []);
 
-  console.log(productData);
-
   return (
     <>
       <HeroSectionThree
