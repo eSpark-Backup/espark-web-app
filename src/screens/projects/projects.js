@@ -1,7 +1,5 @@
 import React from "react";
-import Title from "../../components/title/title";
 import ProjectCard from "../../components/project-card/projectCard";
-import { shapes } from "../../helper/ImageUrl";
 import { projects } from "../../helper/projects";
 import "./style.css";
 import { Fade } from "react-slideshow-image";

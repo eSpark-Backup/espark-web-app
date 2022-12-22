@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, useRoutes } from "react-router-dom";
-import Header from "../components/header/header";
 import About from "../screens/about";
 import Blog from "../screens/blog/blog";
 import Contact from "../screens/contact";

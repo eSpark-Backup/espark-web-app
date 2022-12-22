@@ -12,14 +12,10 @@ import eight from "../../../../src/assets/images/ml-banner-image/eight.png";
 import nine from "../../../../src/assets/images/ml-banner-image/nine.png";
 import ten from "../../../../src/assets/images/ml-banner-image/ten.png";
 
-import shape2 from "../../../../src/assets/images/shape2.svg";
-import shape3 from "../../../../src/assets/images/shape3.svg";
-import shape4 from "../../../../src/assets/images/shape4.svg";
-import shape5 from "../../../../src/assets/images/shape5.png";
 import { shapes } from "../../../helper/ImageUrl";
 import { Link } from "react-router-dom";
 
-function Herosection({ heading1, image }) {
+function Herosection({ heading1 }) {
   return (
     <div class="ml-main-section">
       <div class="container">
