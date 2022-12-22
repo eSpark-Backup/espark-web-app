@@ -1,4 +1,5 @@
 import React from "react";
+import { FaLongArrowAltRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import style from './style.module.css'
 
@@ -39,8 +40,8 @@ export default function ProjectCard({ data, link }) {
         </div>
       </div>
       <div className ={style.txtCenter}>
-      {link == '/' ? <Link to={'/project'} className={style.topMargin}>
-            <a className='btn btn-secondary'  >GO To Projects</a>
+      {link == '/' ? <Link to={'/project'} >
+            <a className='btn btn-secondary'  >GO To Projects<FaLongArrowAltRight  className={style.arrowSize}/></a>
           </Link> : ""}
       </div>
     </div>

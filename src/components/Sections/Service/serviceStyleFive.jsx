@@ -1,4 +1,5 @@
 import React from "react";
+import { FaLongArrowAltRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { shapes } from "../../../helper/ImageUrl";
 import style from './style.module.css'
@@ -44,7 +45,7 @@ const ServiceStyleFive = ({ data,link }) => {
               );
             })}
              {link == '/' ? <Link to={'/services'} className={style.btnMargin}>
-                    <a className='btn btn-secondary'   >GO TO Services</a>
+                    <a className='btn btn-secondary'   >GO TO Services<FaLongArrowAltRight  className={style.arrowSize}/></a>
               </Link> : ""}
           </div>
         </div>
