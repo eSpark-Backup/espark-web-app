@@ -25058,6 +25058,11 @@ label {
     opacity: 0;
     visibility: hidden
 }
+.privacy-li{
+    margin: 20px;
+}
+
+
 
 .startp-nav {
     background: transparent
@@ -25097,6 +25102,22 @@ label {
     width: 30px
 }
 
+.gb-headline-efd0cee8 {
+    background-color: #fff7de;
+        padding: 1.5em;
+        border-left-style: solid;
+        border-left-width: 4px;
+        border-color: #ffe28b;
+  }
+.gb-icon svg {
+    width: 8em;
+    height: 8em;
+    margin-left: 2px;
+    margin-right: 10px;
+  }
+  gb-headline-efd0cee8 .gb-icon {
+    padding-right: 0.5em;
+  }
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu {
     -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .05);
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, .05);

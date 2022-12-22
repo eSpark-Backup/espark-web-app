@@ -1,13 +1,9 @@
 import React from 'react'
-
 import map from "../../../../src/assets/images/map.png";
-
 import shape2 from "../../../../src/assets/images/shape2.svg";
 import shape3 from "../../../../src/assets/images/shape3.svg";
 import shape4 from "../../../../src/assets/images/shape4.svg";
 import shape5 from "../../../../src/assets/images/shape5.png";
-
-
 
 function Users() {
   return (
