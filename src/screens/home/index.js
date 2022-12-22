@@ -19,6 +19,7 @@ import Projects from "../projects/projects";
 
 
 const Home = () => {
+  const currentRoute = window.location.pathname;
   return (
     <div>
       <Herosection />
@@ -26,8 +27,8 @@ const Home = () => {
       <br/>
       <Features heading={"WE CREATE UNIQUE WEB SOLUTIONS"} />
       <About />
-      <Services link={window.location.pathname} />
-      <Projects link={window.location.pathname}/>
+      <Services link={currentRoute} />
+      <Projects link={currentRoute}/>
       <PartnerAbout/>
       <Users />
       {/* <Price /> */}

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import style from './style.module.css'
 
 export default function ProjectCard({ data, link }) {
   return (
@@ -37,48 +38,11 @@ export default function ProjectCard({ data, link }) {
           ))}
         </div>
       </div>
-      <div style={{textAlign:"center"}}>
-
-      {link == '/' ? <Link to={'/project'}>
-            <a className='btn btn-secondary' style={{marginTop:"2px"}} >GO To Projects</a>
+      <div className ={style.txtCenter}>
+      {link == '/' ? <Link to={'/project'} className={style.topMargin}>
+            <a className='btn btn-secondary'  >GO To Projects</a>
           </Link> : ""}
       </div>
     </div>
-    // <div class="our-latest-projects ptb-80">
-    // <div class="container">
-    //   <div class="section-title text-left">
-    //     <h2>
-    //       Our Latest <span>Projects</span>
-    //     </h2>
-    //     <p>
-    //       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    //       eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    //     </p>
-    //   </div>
-    //     <div class="row">
-    //       {data.map((item, index) => {
-    //         return (
-    //           <div class="col-lg-4 col-sm-6 item">
-    //             <div class="single-latest-projects">
-    //               <img
-    //                 src={item.data.image}
-    //                 alt="image"
-    //                 style={{
-    //                   height: item.imageHeight,
-    //                   marginTop: item.marginTop,
-    //                 }}
-    //               />
-    //               <div class="content">
-    //                 <span>Development</span>
-    //                 <h3>Web Development</h3>
-    //               </div>
-    //               <a class="link-btn" href="/project-details/"></a>
-    //             </div>
-    //           </div>
-    //         );
-    //       })}
-    //     </div>
-    //   </div>
-    // </div>
   );
 }
