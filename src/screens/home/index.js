@@ -4,6 +4,7 @@ import Features from "../../components/Sections/Feature/Features";
 import Herosection from "../../components/Sections/Hero/Herosection";
 import RecentStory from "../../components/Sections/RecentStory/RecentStory";
 import Clients from "./../../components/HappyClients/Clients";
+import Users from "./../../components/Sections/User/Users";
 import Services from "../services";
 import ReadyToTalk from "../../components/ready-to-talk/readyToTalk";
 import { partner, shapes } from "../../helper/ImageUrl";
@@ -11,7 +12,6 @@ import Partners from "../../components/partners/partners";
 import PartnerAbout from "../../components/partners-about/parternsAbout";
 import Faqs from "../../components/faqs/faqs";
 import Projects from "../projects/projects";
-
 
 const Home = () => {
   const currentRoute = window.location.pathname;
@@ -23,13 +23,13 @@ const Home = () => {
       <Features heading={"WE CREATE UNIQUE WEB SOLUTIONS"} />
       <About />
       <Services link={currentRoute} />
-      <Projects link={currentRoute}/>
-      <PartnerAbout/>
+      <Projects link={currentRoute} />
+      <PartnerAbout />
       <Users />
       {/* <Price /> */}
       {/* <Feedback /> */}
       <RecentStory />
-      <Faqs data={shapes}/>
+      <Faqs data={shapes} />
       {/* <Freetrial /> */}
       <Clients />
     </div>
