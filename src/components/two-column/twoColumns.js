@@ -68,7 +68,7 @@ export default function TwoColumns({
     );
   } else if (id === 3) {
     return (
-      <div class="cta-area ptb-80">
+      <div class="cta-area pt-5">
         <div class="container">
           <div class="row ">
             <div class="col-lg-2 col-md-6">

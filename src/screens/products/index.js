@@ -11,37 +11,70 @@ import "./style.css";
 
 const Products = () => {
   const [productData, setProductData] = useState([]);
+  const [active, setActive] = useState(1);
+
   useEffect(() => {
-    setProductData(products[0].data);
+    setProductData(products[0]);
+    setActive(1);
   }, []);
 
+  const setData = (item) => {
+    setActive(item.id);
+    setProductData(item);
+  };
+
+  // console.log(productData);
   return (
     <>
       <HeroSectionThree
-        heading1={"Our Latast Products"}
+        heading1={productData?.name}
         paragraph={
           "At this point, it may seem like overkill to point out the continued growth bound to happen in the Internet of Things space for the years to come and how it will create new opportunities for companies, both established and new, from a hardware and software perspective."
         }
+        image={productData?.image}
       />
-      <input type="checkbox" id="switch" />
+      {/* <input type="checkbox" id="switch" />
       <div class="app">
         <div class="body">
           <div class="content">
-            <label for="switch">
-              <div class="toggle"></div>
+            <label for="switch" onClick={(e) => console.log(e.target)}>
+              <div class="toggle" ></div>
               <div class="names">
-                {products.map((item) => (
-                  <p class="light" onClick={(e) => setProductData(item.data)}>
-                    {item.name}
-                  </p>
-                ))}
+                
               </div>
             </label>
           </div>
         </div>
+      </div> */}
+      <div className="text-center">
+        <div class="multi-button">
+          {products.map((item) => {
+            return (
+              <button
+                className={active === item.id && "active"}
+                onClick={() => setData(item)}
+              >
+                {item.id === 1 ? (
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/5741/5741483.png"
+                    alt=""
+                    width={50}
+                  />
+                ) : (
+                  <img
+                    src="https://static.thenounproject.com/png/1871497-200.png"
+                    alt=""
+                    width={50}
+                  />
+                )}{" "}
+                &nbsp; {item.name}
+              </button>
+            );
+          })}
+        </div>
       </div>
-      {productData.length &&
-        productData.map((item) => {
+      {productData?.data?.length &&
+        productData?.data.map((item) => {
           return (
             <TwoColumns
               imgUrl={item.image}

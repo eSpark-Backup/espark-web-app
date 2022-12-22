@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { services } from "../../helper/services";
-import { products  } from "../../helper/products";
+import { products } from "../../helper/products";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import GetInTouch from "../getInTouch/GetInTouch";
@@ -90,7 +90,7 @@ const Header = () => {
                   <Link class="nav-link" to="/products">
                     Products
                   </Link>
-                  <ul class="dropdown-menu-products">
+                  {/* <ul class="dropdown-menu-products">
                     {products.map((item) => {
                       return (
                         <li class="nav-item">
@@ -107,7 +107,7 @@ const Header = () => {
                         </li>
                       );
                     })}
-                  </ul>
+                  </ul> */}
                 </li>
 
                 {/* <li class="nav-item">

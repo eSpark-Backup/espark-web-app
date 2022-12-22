@@ -32,7 +32,7 @@ function HeroSectionThree({ heading1, image, paragraph }) {
           <div class="col-lg-6 col-md-12">
             <div class="iot-banner-image">
               <img
-                src={require("../../assets/images/iot-banner-image/iot-main-img1.png")}
+                src={image}
                 class="animate__animated animate__fadeInUp animate__delay-0.8s"
                 alt="image"
               />
