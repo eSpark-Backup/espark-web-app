@@ -35302,9 +35302,8 @@ blockquote:after {
 
     .cta-content {
         text-align: center;
-        margin-bottom: 25px;
+        margin-bottom: 25px
     }
-
 
     .cta-content h3 {
         font-size: 20px
@@ -39436,10 +39435,4 @@ blockquote:after {
 
 .dropdown-menu .services {
     width: 400px !important;
-}
-
-.cta-content img {
-    /* margin-top: 69px; */
-    position: relative;
-    top: 350px
 }
