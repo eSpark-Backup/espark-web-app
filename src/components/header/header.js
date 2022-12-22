@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import { services } from "../../helper/services";
 import { products } from "../../helper/products";
 import "react-responsive-modal/styles.css";
@@ -123,7 +123,7 @@ const Header = () => {
               </Link>
             </div>
             <Modal open={open} onClose={onCloseModal} center>
-              <GetInTouch />
+              <GetInTouch modal={true} />
             </Modal>
           </nav>
         </div>

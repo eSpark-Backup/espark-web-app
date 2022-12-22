@@ -2,10 +2,10 @@ import React from "react";
 import { services } from "../../helper/services";
 import { Link } from "react-router-dom";
 
-const GetInTouch = () => {
+const GetInTouch = ({ modal }) => {
   return (
     <div>
-      <div class="contact-area ptb-80">
+      <div class={`contact-area pt-80 ${!modal ? "pb-80" : null}`}>
         <div class="container">
           <div class="section-title">
             <h2>Get In Touch With Us</h2>
@@ -13,13 +13,15 @@ const GetInTouch = () => {
             <p>Anything On your Mind. We’ll Be Glad To Assist You!</p>
           </div>
           <div class="row align-items-center">
-            <div class="col-lg-6 col-md-12">
-              <img
-                src={require("../../assets/images/contact-img.png")}
-                alt="image"
-              />
-            </div>
-            <div class="col-lg-6 col-md-12">
+            {!modal && (
+              <div class="col-lg-6 col-md-12">
+                <img
+                  src={require("../../assets/images/contact-img.png")}
+                  alt="image"
+                />
+              </div>
+            )}
+            <div class={`col-lg-${modal ? "12" : 6} col-md-12`}>
               <form id="contactForm">
                 <div class="row">
                   <div class="col-lg-12 col-md-12">
@@ -29,7 +31,7 @@ const GetInTouch = () => {
                         name="name"
                         placeholder="Your Name"
                         class="form-control"
-                        value=""
+                        onChange={(e) => console.log(e)}
                       />
                       <div class="invalid-feedback"></div>
                     </div>
@@ -44,7 +46,7 @@ const GetInTouch = () => {
                         value=""
                       />
                       <div class="invalid-feedback"></div>
-                    </div>
+                    </div>  
                   </div>
                   <div class="col-lg-6 col-md-6">
                     <div class="form-group">
@@ -70,34 +72,35 @@ const GetInTouch = () => {
                       <div class="invalid-feedback"></div>
                     </div>
                   </div>
-                  <div>
-                  <div class="col-lg-6 col-md-6">
-                    <div class="form-group">
-                      <h6> Interested Field</h6>
-                      <input
-                        type="checkbox"
-                        name="Interested Field"
-                        value=""
-                      />
+                  {!modal && (
+                    <div>
+                      <div class="col-lg-12 col-md-6 ">
+                        <div
+                          style={{
+                            height: 400,
+                            display: "flex",
+                            flexDirection: "column",
+                            flexWrap: "wrap",
+                          }}
+                        >
+                          {services.map((item) => {
+                            return (
+                              <div class="items">
+                                <div class="checkbox-rect2">
+                                  <input
+                                    type="checkbox"
+                                    id={item.id}
+                                    name="check"
+                                  />
+                                  <label for={item.id}>{item.name}</label>
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
                     </div>
-                    <li class="nav-item">
-                  <ul class="checkBox ">
-                    {services.map((item) => {
-                      return (
-                        <li class="nav-item">
-                          <Link
-                            class="nav-link"
-                            to={`services-detail/${item.name}`}
-                          >
-                            {item.name}
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </li>
-                  </div>
-                  </div>
+                  )}
                   <div class="col-lg-12 col-md-12">
                     <div class="form-group">
                       <textarea
@@ -249,4 +252,3 @@ export default GetInTouch;
 // };
 
 // export default GetInTouch;
-
