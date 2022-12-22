@@ -6,7 +6,7 @@ import { projects } from "../../helper/projects";
 import "./style.css";
 import { Fade } from "react-slideshow-image";
 
-export default function Projects() {
+export default function Projects({link}) {
   const properties = {
     prevArrow: (
       <button className="owl-nav1">
@@ -43,8 +43,8 @@ export default function Projects() {
           );
         })}
       </Fade>
-
-      <ProjectCard data={projects} />
+    
+     {link !== '/' ? <ProjectCard data={projects} link={link} /> : <ProjectCard data={projects.slice(0,6)} link={link} />}   
       {/* <ProjectNestedCard
         data={[
           { imgUrl: work_img_1 },

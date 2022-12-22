@@ -9,8 +9,17 @@ import Service from "../../components/Sections/Service/Service";
 import RecentStory from "../../components/Sections/RecentStory/RecentStory";
 import Users from "../../components/Sections/User/Users";
 import Clients from "./../../components/HappyClients/Clients";
+import Services from "../services";
+import ReadyToTalk from "../../components/ready-to-talk/readyToTalk";
+import { partner, shapes } from "../../helper/ImageUrl";
+import Partners from "../../components/partners/partners";
+import PartnerAbout from "../../components/partners-about/parternsAbout";
+import Faqs from "../../components/faqs/faqs";
+import Projects from "../projects/projects";
+
 
 const Home = () => {
+  const currentRoute = window.location.pathname;
   return (
     <div>
       <Herosection />
@@ -18,12 +27,14 @@ const Home = () => {
       <br />
       <Features heading={"WE CREATE UNIQUE WEB SOLUTIONS"} />
       <About />
-
-      {/* <Service /> */}
-      {/* <Users /> */}
+      <Services link={currentRoute} />
+      <Projects link={currentRoute}/>
+      <PartnerAbout/>
+      <Users />
       {/* <Price /> */}
       {/* <Feedback /> */}
       <RecentStory />
+      <Faqs data={shapes}/>
       {/* <Freetrial /> */}
       <Clients />
     </div>
