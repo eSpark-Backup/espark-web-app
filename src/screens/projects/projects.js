@@ -32,7 +32,7 @@ export default function Projects({link}) {
       <Fade {...properties} scale={1.4}>
         {projects.map((item, index) => {
           return (
-            <div className="each-slide" key={index}>
+            <div className="each-slide carouselMargin" key={index}  >
               <div
                 className="img"
                 style={{ backgroundImage: `url(${item.data.image})` }}

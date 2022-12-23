@@ -10,8 +10,10 @@ import ReadyToTalk from "../../components/ready-to-talk/readyToTalk";
 import { partner, shapes } from "../../helper/ImageUrl";
 import Partners from "../../components/partners/partners";
 import PartnerAbout from "../../components/partners-about/parternsAbout";
-import Faqs from "../../components/faqs/faqs";
+import { faqsQuestions } from "../../helper/faqs";
+
 import Projects from "../projects/projects";
+import Faqs from "../faqs/faqs";
 
 const Home = () => {
   const currentRoute = window.location.pathname;
@@ -29,7 +31,8 @@ const Home = () => {
       {/* <Price /> */}
       {/* <Feedback /> */}
       <RecentStory />
-      <Faqs data={shapes} />
+      <Faqs imgs={shapes} data ={faqsQuestions} />
+      {/* <Faqs data={shapes} /> */}
       {/* <Freetrial /> */}
       <Clients />
     </div>
