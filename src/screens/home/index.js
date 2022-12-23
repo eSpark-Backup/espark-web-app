@@ -20,18 +20,16 @@ const Home = () => {
   return (
     <div>
       <Herosection />
-      <br />
-      <br />
-      <Features heading={"WE CREATE UNIQUE WEB SOLUTIONS"} />
-      <About />
+      <Features heading={"WE CREATE UNIQUE SOLUTIONS"} />
+      <About id={2} />
       <Services link={currentRoute} />
+      <Users />
       <Projects link={currentRoute} />
       <PartnerAbout />
-      <Users />
       {/* <Price /> */}
       {/* <Feedback /> */}
-      <RecentStory />
-      <Faqs imgs={shapes} data ={faqsQuestions} />
+      {/* <RecentStory /> */}
+      <Faqs imgs={shapes} data={faqsQuestions} />
       {/* <Faqs data={shapes} /> */}
       {/* <Freetrial /> */}
       <Clients />

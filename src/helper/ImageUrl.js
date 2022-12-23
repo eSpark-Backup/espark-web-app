@@ -27,7 +27,7 @@ export const mainPic = "../../assets/images/ml-banner-image/ml-main-pic.jpg";
 
 export const partner = [
   { imgUrl: partner_6, hoverImage: partner_Hover6 },
-  { imgUrl: partner_7, hoverImage: partner_Hover7 },
+  // { imgUrl: partner_7, hoverImage: partner_Hover7 },
   { imgUrl: partner_2, hoverImage: partner_Hover2 },
   { imgUrl: partner_5, hoverImage: partner_Hover5 },
 ];

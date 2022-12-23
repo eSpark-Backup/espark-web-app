@@ -25,14 +25,119 @@ function Features({ heading }) {
             </p>
           </div>
           <div class="row justify-content-center">
-            <div class="col-lg-3 col-sm-6 col-md-6">
+            <div class="col-lg-4 col-sm-6 col-md-6">
               <div class="single-solutions-box">
                 <div class="icon">
                   <img src={icon4} alt="image" />
                 </div>
                 <h3>
                   <Link to={"/service"}>
-                     <a>Robotic Automation</a>
+                    <a>Marketing</a>
+                  </Link>
+                </h3>
+                <p>
+                  eSpark is a full-service digital marketing agency and we have
+                  4+ years of experience driving most impressive results for
+                  multiple clients in a number of industries
+                </p>
+                {/* <a class="learn-more-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewbox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="16"></line>
+                    <line x1="8" y1="12" x2="16" y2="12"></line>
+                  </svg>
+                  Learn More
+                </a> */}
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6">
+              <div class="single-solutions-box">
+                <div class="icon">
+                  <img src={icon5} alt="image" />
+                </div>
+                <h3>
+                  <Link to={"/service"}>
+                    <a>Technology</a>
+                  </Link>
+                </h3>
+                <p>
+                  Here at eSpark, we deliver an array of tech-based solutions.
+                  These include delivering software, programming, networking and
+                  project management solutions.
+                </p>
+                {/* <a class="learn-more-btn" href="/service">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewbox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="16"></line>
+                    <line x1="8" y1="12" x2="16" y2="12"></line>
+                  </svg>
+                  Learn More
+                </a> */}
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6">
+              <div class="single-solutions-box">
+                <div class="icon">
+                  <img src={icon6} alt="image" />
+                </div>
+                <h3>
+                  <Link to={"/service"}>
+                    <a>Development</a>
+                  </Link>
+                </h3>
+                <p>
+                  Our software developers have the required expertise to develop
+                  a program that best satisfies the unique needs of your
+                  business. Our software and applications are compatible.
+                </p>
+                {/* <a class="learn-more-btn" href="/service">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewbox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="16"></line>
+                    <line x1="8" y1="12" x2="16" y2="12"></line>
+                  </svg>
+                  Learn More
+                </a> */}
+              </div>
+            </div>
+            {/* <div class="col-lg-3 col-sm-6 col-md-6">
+              <div class="single-solutions-box">
+                <div class="icon">
+                  <img src={icon7} alt="image" />
+                </div>
+                <h3>
+                  <Link to={"/service"}>
+                    <a>Security &amp; Surveillance</a>
                   </Link>
                 </h3>
                 <p>
@@ -40,117 +145,14 @@ function Features({ heading }) {
                   tempor incididunt ut labore dolore magna aliqua.
                 </p>
                 <a class="learn-more-btn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewbox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="8" x2="12" y2="16"></line>
-                    <line x1="8" y1="12" x2="16" y2="12"></line>
-                  </svg>
-                  Learn More
-                </a>       
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-md-6">
-              <div class="single-solutions-box">
-                <div class="icon">
-                  <img src={icon5} alt="image" />
-                </div>
-                <h3>
-                <Link to={"/service"}>
-                  <a>Cognitive Automation</a>
+                  <Link to={"/service"}>
+                    <i data-feather="plus-circle"></i> Learn More
                   </Link>
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod
-                  tempor incididunt ut labore dolore magna aliqua.
-                </p>
-                <a class="learn-more-btn" href="/service">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewbox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="8" x2="12" y2="16"></line>
-                    <line x1="8" y1="12" x2="16" y2="12"></line>
-                  </svg>
-                  Learn More
                 </a>
               </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-md-6">
-              <div class="single-solutions-box">
-                <div class="icon">
-                  <img src={icon6} alt="image" />
-                </div>
-                <h3>
-                <Link to={"/service"}>
-                  <a>Cognitive Engagement</a>
-                  </Link>
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod
-                  tempor incididunt ut labore dolore magna aliqua.
-                </p>
-                <a class="learn-more-btn" href="/service">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewbox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="8" x2="12" y2="16"></line>
-                    <line x1="8" y1="12" x2="16" y2="12"></line>
-                  </svg>
-                  Learn More
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-md-6">
-              <div class="single-solutions-box">
-                <div class="icon">
-                  <img src={icon7} alt="image" />
-                </div>
-                <h3>
-                <Link to={"/service"}>
-                   <a >Security &amp; Surveillance</a>
-                  </Link>
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod
-                  tempor incididunt ut labore dolore magna aliqua.
-                </p>
-                    <a class="learn-more-btn" >
-                <Link to={"/service"}>
-                      <i data-feather="plus-circle"></i> Learn More
-                </Link>
-                    </a>
-
-              </div>
-            </div>
+            </div> */}
           </div>
-           {/* <ServiceStyleFive data={services} /> */}
+          {/* <ServiceStyleFive data={services} /> */}
         </div>
         <div class="shape1">
           <img src={shape5} alt="shape" />

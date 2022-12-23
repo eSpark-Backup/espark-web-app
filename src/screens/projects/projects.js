@@ -3,8 +3,12 @@ import ProjectCard from "../../components/project-card/projectCard";
 import { projects } from "../../helper/projects";
 import "./style.css";
 import { Fade } from "react-slideshow-image";
+import Title from "../../components/title/title";
+import AwesomeSlider from "react-awesome-slider";
+import withAutoplay from "react-awesome-slider/dist/autoplay";
 
-export default function Projects({link}) {
+export default function Projects({ link }) {
+  const AutoplaySlider = withAutoplay(AwesomeSlider);
   const properties = {
     prevArrow: (
       <button className="owl-nav1">
@@ -29,20 +33,42 @@ export default function Projects({link}) {
   };
   return (
     <React.Fragment>
-      <Fade {...properties} scale={1.4}>
-        {projects.map((item, index) => {
-          return (
-            <div className="each-slide carouselMargin" key={index}  >
+      {link !== "/" ? (
+        // <Fade {...properties} scale={1.4}>
+        <AutoplaySlider
+          infinite={true}
+          bullets={false}
+          play={true}
+          cancelOnInteraction={false} // should stop playing on user interaction
+          interval={6000}
+          animation="fallAnimation"
+        >
+          {projects.map((item, index) => {
+            return (
               <div
-                className="img"
-                style={{ backgroundImage: `url(${item.data.image})` }}
+                class="each-slide"
+                style={{
+                  backgroundImage: `url(${item.data.image})`,
+                }}
               ></div>
-            </div>
-          );
-        })}
-      </Fade>
-    
-     {link !== '/' ? <ProjectCard data={projects} link={link} /> : <ProjectCard data={projects.slice(0,6)} link={link} />}   
+            );
+          })}
+        </AutoplaySlider>
+      ) : (
+        // </Fade>
+        <Title
+          title={"THINGS WE'VE MADE"}
+          paragraph="<p> We believe our work speaks for itself. Browse our most recent projects below<br/>
+        and enjoy our handmade work with love for every detail.</p>"
+          link={link}
+        />
+      )}
+
+      {link !== "/" ? (
+        <ProjectCard data={projects} link={link} />
+      ) : (
+        <ProjectCard data={projects.slice(0, 6)} link={link} />
+      )}
       {/* <ProjectNestedCard
         data={[
           { imgUrl: work_img_1 },

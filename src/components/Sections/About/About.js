@@ -25,21 +25,25 @@ function About({ id }) {
                   <h2>Engaging New Audiences Through Smart Approach</h2>
                   <div class="bar"></div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    eSpark Consultants is a complete solution provider for
+                    modern software development imparting latest methods and
+                    techniques to tackle the increasing software advancements.
+                    We began our journey in 2015 and are working hard since then
+                    to bring a big smile on the face of our customers by making
+                    them visible among their competitors We are passionate about
+                    providing solutions that represent real value for money.
                   </p>
                   <p>
-                    Nullam quis ante. Etiam sit amet orci eget eros faucibus
-                    tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
-                    Donec sodales sagittis magna. Sed consequat, leo eget
-                    bibendum sodales, augue velit cursus nunc.Donec vitae sapien
-                    ut libero venenatis faucibus tempus.
+                    We understand and believe you can’t afford to waste your
+                    investment for such a crucial aspect of your business by
+                    leaving it in the hands of amateurs. You are investing not
+                    only money, but your time when you decide to design and
+                    develop your project with us. Times and conditions change so
+                    rapidly that we must keep our aim constantly focused on the
+                    future
                   </p>
                   <Link to={"/s"}>
-                  <a class="btn btn-secondary" >
-                    Discover More
-                  </a>
+                    <a class="btn btn-secondary">Discover More</a>
                   </Link>
                 </div>
               </div>
@@ -74,20 +78,26 @@ function About({ id }) {
                   <h2>Engaging New Audiences Through Smart Approach</h2>
                   <div class="bar"></div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    eSpark Consultants is a complete solution provider for
+                    modern software development imparting latest methods and
+                    techniques to tackle the increasing software advancements.
+                    We began our journey in 2015 and are working hard since then
+                    to bring a big smile on the face of our customers by making
+                    them visible among their competitors We are passionate about
+                    providing solutions that represent real value for money.
                   </p>
                   <p>
-                    Nullam quis ante. Etiam sit amet orci eget eros faucibus
-                    tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
-                    Donec sodales sagittis magna. Sed consequat, leo eget
-                    bibendum sodales, augue velit cursus nunc.Donec vitae sapien
-                    ut libero venenatis faucibus tempus.
+                    We understand and believe you can’t afford to waste your
+                    investment for such a crucial aspect of your business by
+                    leaving it in the hands of amateurs. You are investing not
+                    only money, but your time when you decide to design and
+                    develop your project with us. Times and conditions change so
+                    rapidly that we must keep our aim constantly focused on the
+                    future
                   </p>
-                  <a class="btn btn-secondary" href="/">
+                  {/* <a class="btn btn-secondary" href="/">
                     Discover More
-                  </a>
+                  </a> */}
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">

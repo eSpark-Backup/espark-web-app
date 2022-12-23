@@ -1,5 +1,5 @@
 import React from "react";
-import mlMainPic from "../../../../src/assets/images/ml-banner-image/ml-main-pic.png";
+// import mlMainPic from "../../../../src/assets/images/ml-banner-image/ml-main-pic.png";
 import one from "../../../../src/assets/images/ml-banner-image/one.png";
 import two from "../../../../src/assets/images/ml-banner-image/two.png";
 import three from "../../../../src/assets/images/ml-banner-image/three.png";
@@ -22,19 +22,24 @@ function Herosection({ heading1 }) {
         <div class="row">
           <div class="col-lg-6 col-md-12">
             <div class="ml-banner-content">
-              <h1>{heading1}</h1>
+              <Link class="navbar-brand" to="/">
+                <img
+                  src={require("../../../assets/images/logo.png")}
+                  alt="logo"
+                  width={300}
+                />
+              </Link>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                ipsum suspendisse ultrices gravida.
+                We have created many awesome themes that will help designers,
+                developers, and companies
               </p>
-                {heading1 === "Services" ? null : (
-                  <Link to={'/get-started'}>
-                      <a class="btn btn-secondary">
-                        Get Started
-                      </a>
-                  </Link>
-                )}
+              <p>Catalyst Role & Solutions Provider</p>
+              <p>Free Add-ons, Free Updates, Free Templates</p>
+              {heading1 === "Services" ? null : (
+                <Link to={"/lets-talk"}>
+                  <a class="btn btn-secondary">Quote Now</a>
+                </Link>
+              )}
             </div>
           </div>
           <div class="col-lg-6 col-md-12">
@@ -94,11 +99,11 @@ function Herosection({ heading1 }) {
                 class="animate__animated animate__fadeInUp animate__delay-0.4s"
                 alt="image"
               />
-              <img
+              {/* <img
                 src={mlMainPic}
                 class="animate__animated animate__fadeInUp animate__delay-0.5s"
                 alt="image"
-              />
+              /> */}
             </div>
           </div>
         </div>

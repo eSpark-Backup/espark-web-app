@@ -1,8 +1,11 @@
 import React from "react";
 
-export default function Title({ title, data, paragraph }) {
+export default function Title({ title, data, paragraph, link }) {
   return (
-    <div className="page-title-area">
+    <div
+      className="page-title-area"
+      style={{ paddingTop: link === "/" ? 50 : 10 }}
+    >
       <div className="d-table">
         <div className="d-table-cell">
           <div className="container">

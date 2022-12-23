@@ -1,12 +1,19 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-export default function ReadyToTalk({h3,p1,btn,href,getStated}) {
+export default function ReadyToTalk({ h3, p1, btn, href, getStated }) {
   return (
-    <div className="ready-to-talk" >
-    <div className="container">
+    <div className="ready-to-talk">
+      <div className="container">
         <h3>{h3}</h3>
-        <p>{p1}</p><a className="btn btn-primary"
-            href="/contact">{btn}</a><span><a href={href}>{getStated}</a></span>
+        <p>{p1}</p>
+        <Link className="btn btn-primary" to={href}>
+          {btn}
+        </Link>
+        <span>
+          <Link to={href}>{getStated}</Link>
+        </span>
+      </div>
     </div>
-</div>  )
+  );
 }

@@ -21,7 +21,7 @@ const Header = () => {
               <img
                 src={require("../../assets/images/logo.png")}
                 alt="logo"
-                width={100}
+                width={120}
               />
             </Link>
             <button
