@@ -25,7 +25,7 @@ const Home = () => {
       <Services link={currentRoute} />
       <Users />
       <Projects link={currentRoute} />
-      <PartnerAbout />
+      <PartnerAbout  />
       {/* <Price /> */}
       {/* <Feedback /> */}
       {/* <RecentStory /> */}

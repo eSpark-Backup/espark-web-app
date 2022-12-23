@@ -1,18 +1,14 @@
 import React from 'react'
 import { useState } from 'react'
+import Title from '../../components/title/title'
 import style from './style.module.css'
 
 function Faqs({imgs, data}) {
   const [faqId,setFaqId] = useState(0)
   return (
     <>
-     <div class="about-area pt-0 ptb-80">
-                    <div class="container">
-                        <h2 className={style.textCenter}>FAQ</h2>
-                    </div>
-             {imgs.map((item,index) => <div key={index} class={item.className}><img src={item.imgUrl} alt="shape" /></div>)}
-      </div>
-      <div class="faq-area">
+     <Title title={"FAQS"} />
+      <div class="faq-area pb-5">
             <div class="container">
                 <div class="faq-accordion">
                     <div data-accordion-component="Accordion" class="accordion">

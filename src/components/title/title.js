@@ -4,7 +4,7 @@ export default function Title({ title, data, paragraph, link }) {
   return (
     <div
       className="page-title-area"
-      style={{ paddingTop: link === "/" ? 50 : 10 }}
+      style={{ paddingTop: link === "/" ? 50 : null }}
     >
       <div className="d-table">
         <div className="d-table-cell">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function UserExpectation({
   h2,
@@ -34,9 +35,12 @@ export default function UserExpectation({
           <p>
             {p2}&#x27;{p2_span}
           </p>
-          <a className="btn btn-primary" href={href}>
+          <Link to={href}>
+          <a className="btn btn-primary">
             {btnTitle}
           </a>
+          </Link>
+         
         </div>
         <div className="map-bg">
           <img src={require("../../assets/images/map.png")} alt="map" />
