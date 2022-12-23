@@ -22,19 +22,50 @@ function Herosection({ heading1 }) {
         <div class="row">
           <div class="col-lg-6 col-md-12">
             <div class="ml-banner-content">
-              <Link class="navbar-brand" to="/">
-                <img
-                  src={require("../../../assets/images/logo.png")}
-                  alt="logo"
-                  width={300}
-                />
-              </Link>
+              <h1>
+                {" "}
+                Our Mission{" "}
+                <span>
+                  <Link class="navbar-brand" to="/">
+                    <img
+                      src={
+                        "https://cliply.co/wp-content/uploads/2019/05/371905140_MEET_ROBOT_400px.gif"
+                      }
+                      alt="logo"
+                      width={100}
+                    />
+                  </Link>
+                </span>{" "}
+              </h1>
+
               <p>
-                We have created many awesome themes that will help designers,
-                developers, and companies
+                eSpark Consulting Group is a consultancy firm that offers
+                services in software and embedded systems design, web
+                development using JavaScript frameworks like React.js, Vue.js,
+                and Node.js, as well as Java, HTML, and CSS, and mobile app
+                development for Android and iOS using frameworks like React
+                Native, Swift, and Flutter. We also have a team for quality
+                assurance. Our team uses advanced technology and expertise to
+                design products that meet modern technical requirements and
+                needs for the future market.
               </p>
-              <p>Catalyst Role & Solutions Provider</p>
-              <p>Free Add-ons, Free Updates, Free Templates</p>
+              {/* <p>
+                To provide a complete one stop single end solution, we also
+                provide responsive, stable and dynamic web solutions to our
+                clients using the popular JavaScript Frameworks React.js,
+                Vue.js, Node.js JavaScript, Java, HTML and CSS. We have a team
+                of experienced people that develop custom and innovative mobile
+                applications in Android and iOS using frameworks like React
+                Native, Flutter, Swift and Java.
+              </p> */}
+              {/* <p>
+                We also have an in-house quality assurance team that completes
+                the project development life cycle where all the development is
+                tested by the SQA team and then forwarded only when the project
+                has reached near to perfection. We present a team that has the
+                energy and wisdom to design products that meets modern technical
+                requirements and needs and for future market reality.
+              </p> */}
               {heading1 === "Services" ? null : (
                 <Link to={"/lets-talk"}>
                   <a class="btn btn-secondary">Quote Now</a>
