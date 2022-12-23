@@ -2,24 +2,14 @@ import img_1 from '../assets/images/projects/img_1.png'
 import img_2 from '../assets/images/projects/img_2.png'
 import img_3 from '../assets/images/projects/img_3.png'
 import img_4 from '../assets/images/projects/img_4.png'
-import img_5 from '../assets/images/projects/img_5.png'
-import img_6 from '../assets/images/projects/img_6.png'
-import img_7 from '../assets/images/projects/img_7.png'
 import img_8 from '../assets/images/projects/img_8.png'
-import img_9 from '../assets/images/projects/img_9.png'
 import img_10 from '../assets/images/projects/img_10.png'
-import img_11 from '../assets/images/projects/img_11.png'
-import img_12 from '../assets/images/projects/img_12.png'
 import img_13 from '../assets/images/projects/img_13.png'
-import img_14 from '../assets/images/projects/img_14.png'
 import img_15 from '../assets/images/projects/img_15.png'
 import img_16 from '../assets/images/projects/img_16.png'
 import img_17 from '../assets/images/projects/img_17.png'
 import img_18 from '../assets/images/projects/img_18.png'
 import img_19 from '../assets/images/projects/img_19.png'
-import img_20 from '../assets/images/projects/img_20.png'
-import img_21 from '../assets/images/projects/img_21.png'
-import img_22 from '../assets/images/projects/img_22.png'
 import img_23 from '../assets/images/projects/img_23.png'
 import img_24 from '../assets/images/projects/img_24.png'
 import img_25 from '../assets/images/projects/img_25.png'
@@ -32,7 +22,6 @@ import img_31 from '../assets/images/projects/img_31.png'
 import img_32 from '../assets/images/projects/img_32.png'
 import img_33 from '../assets/images/projects/img_33.png'
 import img_34 from '../assets/images/projects/img_34.png'
-import img_35 from '../assets/images/projects/img_35.png'
 import img_36 from '../assets/images/projects/img_36.png'
 import img_37 from '../assets/images/projects/img_37.png'
 import img_39 from '../assets/images/projects/img_39.png'
@@ -50,7 +39,6 @@ import img_51 from '../assets/images/projects/img_51.png'
 import img_53 from '../assets/images/projects/img_53.png'
 import img_55 from '../assets/images/projects/img_55.png'
 import img_56 from '../assets/images/projects/img_56.png'
-import img_57 from '../assets/images/projects/img_57.png'
 import img_59 from '../assets/images/projects/img_59.png'
 import img_62 from '../assets/images/projects/img_62.png'
 import img_63 from '../assets/images/projects/img_63.png'
@@ -101,41 +89,9 @@ export const projects = [
   {
     id: hash(),
     data: {
-      image: img_5,
-      projectUrl: "https://app.clockify.me/en/login",
-      name: "Clockify",
-    },
-  },
-  {
-    id: hash(),
-    data: {
-      image: img_6,
-      projectUrl: "https://dash.cloudflare.com/login",
-      name: "Cloud Flare",
-    },
-  },
-  {
-    id: hash(),
-    data: {
-      image: img_7,
-      projectUrl: "https://dashboard.branch.io/",
-      name: "Branch",
-    },
-  },
-  {
-    id: hash(),
-    data: {
       image: img_8,
       projectUrl: "https://diib.com/",
       name: "Diib",
-    },
-  },
-  {
-    id: hash(),
-    data: {
-      image: img_9,
-      projectUrl: "http://ww1.directassistuk.co.uk/",
-      name: "Directassistuk.",
     },
   },
   {
@@ -149,33 +105,9 @@ export const projects = [
   {
     id: hash(),
     data: {
-      image: img_11,
-      projectUrl: "https://dashboard.tawk.to/login",
-      name: "Dashboard Tawk To",
-    },
-  },
-  {
-    id: hash(),
-    data: {
-      image: img_12,
-      projectUrl: "https://appleid.apple.com/",
-      name: "Appleid Apple",
-    },
-  },
-  {
-    id: hash(),
-    data: {
       image: img_13,
       projectUrl: "https://adaptgas.co.uk/",
       name: "Adaptgas",
-    },
-  },
-  {
-    id: hash(),
-    data: {
-      image: img_14,
-      projectUrl: "https://wetransfer.com/",
-      name: "Wetransfer",
     },
   },
   {
@@ -220,33 +152,6 @@ export const projects = [
       image: img_19,
       projectUrl: "https://www.limetreelondon.com/",
       name: "Lime Tree london",
-    },
-  }
-  ,
-  {
-    id: hash(),
-    data: {
-      image: img_20,
-      projectUrl: "https://id.atlassian.com/login",
-      name: "Atlassian",
-    },
-  }
-  ,
-  {
-    id: hash(),
-    data: {
-      image: img_21,
-      projectUrl: "https://metalmagic.co.uk/",
-      name: "Ant Fabrication",
-    },
-  }
-  ,
-  {
-    id: hash(),
-    data: {
-      image: img_22,
-      projectUrl: "https://manage.sslforfree.com/login",
-      name: "ssl for free.",
     },
   }
   ,
@@ -355,15 +260,6 @@ export const projects = [
       image: img_34,
       projectUrl: "https://www.livejournal.com/",
       name: "Live Journal",
-    },
-  }
-  ,
-  {
-    id: hash(),
-    data: {
-      image: img_35,
-      projectUrl: "https://seeksocial.co.uk/",
-      name: "Seek Social",
     },
   }
   ,
@@ -517,15 +413,6 @@ export const projects = [
       image: img_56,
       projectUrl: "https://www.themailingroom.com/",
       name: "The Mailing Room",
-    },
-  }
-  ,
-  {
-    id: hash(),
-    data: {
-      image: img_57,
-      projectUrl: "https://web.flock.com/",
-      name: "Web Flock",
     },
   }
   ,

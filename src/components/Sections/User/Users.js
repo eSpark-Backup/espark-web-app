@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom';
 import map from "../../../../src/assets/images/map.png";
 import shape2 from "../../../../src/assets/images/shape2.svg";
 import shape3 from "../../../../src/assets/images/shape3.svg";
@@ -48,8 +48,8 @@ function Users() {
           <div class="contact-cta-box">
             <h3>Have any question about us?</h3>
             <p>Don&#x27;t hesitate to contact us</p>
-            <Link class="btn btn-primary" to="/lets-talk">
-              Contact Us
+            <Link to={'lets-talk'}>
+            <a class="btn btn-primary">Contact Us</a>
             </Link>
           </div>
         </div>
