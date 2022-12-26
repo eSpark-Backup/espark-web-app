@@ -4,12 +4,15 @@ import { Link } from "react-router-dom";
 import { shapes } from "../../../helper/ImageUrl";
 import style from './style.module.css'
 const ServiceStyleFive = ({ data,link }) => {
+  const order =(a, b)=> {
+    return a < b ? -1 : (a > b ? 1 : 0);
+}
   return (
     <div>
       <div class="agency-services-area">
         <div class="container">
           <div class="row justify-content-center">
-            {data.map((item) => {
+            {data.sort().map((item) => {
               return (
                 <div class="col-lg-4 col-sm-6 col-md-6">
                   <div class="agency-services-box">
@@ -43,7 +46,7 @@ const ServiceStyleFive = ({ data,link }) => {
                   </div>
                 </div>
               );
-            })}
+            }).sort(order)}
              {link == '/' ? <Link to={'/services'} className={style.btnMargin}>
                     <a className='btn btn-secondary'   >GO TO Services<FaLongArrowAltRight  className={style.arrowSize}/></a>
               </Link> : ""}

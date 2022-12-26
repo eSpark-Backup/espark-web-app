@@ -31902,9 +31902,9 @@ blockquote:after {
 }
 
 .repair-main-banner {
-  overflow-x: hidden;
+  /* overflow-x: hidden !important; */
   padding-top: 200px;
-  padding-bottom: 60px
+  padding-bottom: 60px;
 }
 
 .repair-banner-content h1 {

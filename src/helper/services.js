@@ -1,6 +1,16 @@
 import image2 from "../assets/images/repair-banner-image/repair-shape-circle.png";
 import image3 from "../assets/images/repair-banner-image/repair-shape1.png";
 import image4 from "../assets/images/repair-banner-image/repair-shape2.png";
+import content from "../assets/images/services-image/content_writing.png";
+import IT_Consulting from "../assets/images/services-image/IT_Consulting.png";
+import marketing from "../assets/images/services-image/Digital_Marketing.png";
+import commerce from "../assets/images/services-image/e-commerce.png";
+import Design from "../assets/images/services-image/Graphic-Design.png";
+import IOT from "../assets/images/services-image/IOT.png";
+import PCB from "../assets/images/services-image/PCB.png";
+import SEO from "../assets/images/services-image/SEO.png";
+import UI from "../assets/images/services-image/UIUX Designing.png";
+import web_design from "../assets/images/services-image/Web-Designing.png";
 
 import man_and_women from "../assets/images/man-and-women.png";
 import circle_1 from "../assets/images/circle-1.png";
@@ -33,12 +43,7 @@ export const services = [
     icon: "",
     name: "Web Development",
     data: {
-      image: [
-        "https://i.pinimg.com/originals/5c/31/e0/5c31e0344d4204044cf874b0b1489b82.jpg",
-        image2,
-        image3,
-        image4,
-      ],
+      image: [web_design, image2, image3, image4],
       content: [
         serviceItems(
           1,
@@ -77,12 +82,7 @@ export const services = [
     icon: "",
     name: "UI UX Design",
     data: {
-      image: [
-        "https://i.pinimg.com/originals/17/96/9e/17969e50ddb959b1a9fb3020d835f2e4.png",
-        image2,
-        image3,
-        image4,
-      ],
+      image: [UI, image2, image3, image4],
       content: [
         serviceItems(
           1,
@@ -121,8 +121,8 @@ export const services = [
           "Banner Design:",
           "We increase banners for net and mobile sites that can be used as effective commercial and promoting gear. Banners are normally animated the usage of Flash or lively GIFs. Flash and animated GIF banners have foremost makes use of at the internet, firstly as an addition on your organizations’ internet site providing intensity and injecting ‘existence’ into a static internet page. The other principal use is as an marketing device, with the banner positioned strategically on any other website providing an attention-grabbing hyperlink, drawing customers who might also have in no way located you or your internet site.",
           man_and_women,
-          circle_1, 
-          cta_shape_1,
+          circle_1,
+          cta_shape_1
         ),
         serviceItems(
           6,
@@ -152,12 +152,7 @@ export const services = [
     id: hash(),
     name: "Graphic Design",
     data: {
-      image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img3.jpg",
-        image2,
-        image3,
-        image4,
-      ],
+      image: [Design, image2, image3, image4],
       content: [
         serviceItems(
           1,
@@ -186,7 +181,8 @@ export const services = [
       ],
       shortDescription:
         "<p>Online or off, eye-catching visuals are a great way to grab someone’s attention. No matter your project or campaign, the Catalyst Solutins Provider at eSpark Consulting have the creative skills to make you stand out…</p>",
-      extraContent: "<strong> Your brand is your business and one of the most critical part important of your brand is your logo. Ensuring that your business logo configuration is extraordinary and speaks to precisely what your association rely on, is the initial step for ensuring brand achievement.</strong> <br /> <br /> <p>You will find here graphic design gigs across various industries. Find the ones that suit your needs and budget both-creativity at its best.</p> <strong>Work directly with designer</strong><br /> <br /><strong>Fixed prices and terms</strong> <br /> <br /><strong>Suitable for every budget</strong>",
+      extraContent:
+        "<strong> Your brand is your business and one of the most critical part important of your brand is your logo. Ensuring that your business logo configuration is extraordinary and speaks to precisely what your association rely on, is the initial step for ensuring brand achievement.</strong> <br /> <br /> <p>You will find here graphic design gigs across various industries. Find the ones that suit your needs and budget both-creativity at its best.</p> <strong>Work directly with designer</strong><br /> <br /><strong>Fixed prices and terms</strong> <br /> <br /><strong>Suitable for every budget</strong>",
       heading: "Adding Creativity to your Triumph",
     },
   },
@@ -195,12 +191,7 @@ export const services = [
     icon: "",
     name: "Web Design",
     data: {
-      image: [
-        "https://images.ctfassets.net/gg4ddi543f5b/7AHjFKPTt6B5ZwI8oI52rN/862db70ca26d7a72ce642932527e252d/web-design-workflow-blog.png",
-        image2,
-        image3,
-        image4,
-      ],
+      image: [web_design, image2, image3, image4],
       content: [
         serviceItems(
           2,
@@ -229,8 +220,9 @@ export const services = [
       ],
       shortDescription:
         "Product lifecycle services from prototyping to product support and everything in between , Our Team of eSpark Is looking Forward for your sollutions..",
-      extraContent: "<strong>A great website designed by an expert Web Designer is what you Need for you brand.</strong> <br /> <br /> <p>It’s not easy to design the highly responsive designs that would be attracting the eyes of the people. It takes a lot of effort along the proper planning. We consider planning to be the core element in designing; as we need to customize the designs and craft the aesthetically impressive designs that would lock the success for you.We design for you.</p>",
-      heading: "Custom websites at affordable prices"
+      extraContent:
+        "<strong>A great website designed by an expert Web Designer is what you Need for you brand.</strong> <br /> <br /> <p>It’s not easy to design the highly responsive designs that would be attracting the eyes of the people. It takes a lot of effort along the proper planning. We consider planning to be the core element in designing; as we need to customize the designs and craft the aesthetically impressive designs that would lock the success for you.We design for you.</p>",
+      heading: "Custom websites at affordable prices",
     },
   },
   {
@@ -238,12 +230,7 @@ export const services = [
     icon: "",
     name: "Digital e-Commerce",
     data: {
-      image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img3.jpg",
-        image2,
-        image3,
-        image4,
-      ],
+      image: [commerce, image2, image3, image4],
       content: [
         serviceItems(
           2,
@@ -264,7 +251,8 @@ export const services = [
       ],
       shortDescription:
         "Technologies, programming languages, frameworks & tools we leverage to develop your product , we are here for your E-commerce solutions..",
-      extraContent: "<strong> If your online business site isn’t showing up at the highest level, then permit us to grow organic traffic for your website.</strong> <br /> <br /> <p>Our digital e-commerce make a major impact on your organic visibility and allow you to get the desired results for your e-commerce business. Every customer is treated individually and is provided with custom solutions according to the brand, targeted audience, and other relevant specifications.</p>",
+      extraContent:
+        "<strong> If your online business site isn’t showing up at the highest level, then permit us to grow organic traffic for your website.</strong> <br /> <br /> <p>Our digital e-commerce make a major impact on your organic visibility and allow you to get the desired results for your e-commerce business. Every customer is treated individually and is provided with custom solutions according to the brand, targeted audience, and other relevant specifications.</p>",
       heading: "Digital e-commerce is always the one",
     },
   },
@@ -273,12 +261,7 @@ export const services = [
     icon: "",
     name: "Digital Marketing",
     data: {
-      image: [
-        "https://site.paytabs.com/wp-content/uploads/2017/10/shutterstock_394814632.jpg",
-        image2,
-        image3,
-        image4,
-      ],
+      image: [marketing, image2, image3, image4],
       content: [
         serviceItems(
           2,
@@ -307,7 +290,8 @@ export const services = [
       ],
       shortDescription:
         "As part of our suite of agency services, eSpark Consulting also share our knowledge with others by providing professional marketing.",
-      extraContent: "<strong>Marketing has always been about connecting with your audience in the right place and at the right time.</strong> <br/> <br/> <p>Our skilled team of digital marketers will create, manage, and deliver top-performing digital marketing campaigns for your business. digital marketing is a strategy to create links with your buyers so we make every digital strategy prominent. We make use of many digital tactics and channels to connect your website with customers. We change your website to a business’s online branding asset.</p>",
+      extraContent:
+        "<strong>Marketing has always been about connecting with your audience in the right place and at the right time.</strong> <br/> <br/> <p>Our skilled team of digital marketers will create, manage, and deliver top-performing digital marketing campaigns for your business. digital marketing is a strategy to create links with your buyers so we make every digital strategy prominent. We make use of many digital tactics and channels to connect your website with customers. We change your website to a business’s online branding asset.</p>",
       heading: "Bring out your business to the whole world",
     },
   },
@@ -317,12 +301,7 @@ export const services = [
     icon: "",
     name: "Content Writing",
     data: {
-      image: [
-        "https://www.feedough.com/wp-content/uploads/2022/05/Content-writing.png",
-        image2,
-        image3,
-        image4,
-      ],
+      image: [content, image2, image3, image4],
       content: [
         serviceItems(
           2,
@@ -359,7 +338,8 @@ export const services = [
       ],
       shortDescription:
         "the experts at eSpark Consulting and the agency services we provide can certainly ease the burden and help you get it right!",
-      extraContent: "<strong>Whatever industry you’re in, you need experts who can augment your audience. We are the one you’re looking for</strong><br /> <br /> <p>Content writing is the process of planning, writing and editing web content, typically for digital marketing purposes and we carefully follow all these steps to ensure a perfect content for you that includes blog posts and articles, scripts for videos and podcasts. We also write content for specific platforms, such as tweetstorms on Twitter or text posts on Reddit.</p>",
+      extraContent:
+        "<strong>Whatever industry you’re in, you need experts who can augment your audience. We are the one you’re looking for</strong><br /> <br /> <p>Content writing is the process of planning, writing and editing web content, typically for digital marketing purposes and we carefully follow all these steps to ensure a perfect content for you that includes blog posts and articles, scripts for videos and podcasts. We also write content for specific platforms, such as tweetstorms on Twitter or text posts on Reddit.</p>",
       heading: "Content is the reason search began in the first place",
     },
   },
@@ -368,12 +348,7 @@ export const services = [
     icon: "",
     name: "Search Engine Optimization",
     data: {
-      image: [
-        "https://www.gomage.com/m1wp/wp-content/uploads/2020/04/Search-Engine-Optimization-Techniques_-5-Basic-Strategies.png",
-        image2,
-        image3,
-        image4,
-      ],
+      image: [SEO, image2, image3, image4],
       content: [
         serviceItems(
           2,
@@ -402,7 +377,8 @@ export const services = [
       ],
       shortDescription:
         "Page one of a search engine is the modern equivalent of the high street… Find out how expert agency services in the field of search engine optimisation eSpark Consulting can help you climb the rankings & claim your spot!",
-      extraContent: "<strong>Whatever industry you’re in, you need experts who can augment your audience. We are the one you’re looking for</strong><br /> <br /> <p>We provide complete support to help you rank top on the search engine.Search is often the primary source of digital traffic for brands and complements other marketing channels. We can provide you greater visibility and ranking higher in search results than your competition.</p>",
+      extraContent:
+        "<strong>Whatever industry you’re in, you need experts who can augment your audience. We are the one you’re looking for</strong><br /> <br /> <p>We provide complete support to help you rank top on the search engine.Search is often the primary source of digital traffic for brands and complements other marketing channels. We can provide you greater visibility and ranking higher in search results than your competition.</p>",
       heading: "Good SEO work only gets better over time",
     },
   },
@@ -411,36 +387,27 @@ export const services = [
     icon: "",
     name: "IT Consulting",
     data: {
-      image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img1.jpg",
-        image2,
-        image3,
-        image4,
-      ],
+      image: [IT_Consulting, image2, image3, image4],
       content: [
         serviceItems(
           2,
           "Our Responsibilities",
           <div class="col-lg-8 features-details">
             <div class="features-details-desc">
-            <ul class="features-details-list">
+              <ul class="features-details-list">
+                <li>meet with clients to determine requirements</li>
+                <li>work with clients to define the scope of a project</li>
+                <li>plan timescales and the resources needed</li>
                 <li>
-                meet with clients to determine requirements
+                  be involved in sales and support, and where appropriate,
+                  maintain contact with client organisations
                 </li>
                 <li>
-                work with clients to define the scope of a project
+                  clarify a client’s system specifications, understand their
+                  work practices and the nature of their business
                 </li>
                 <li>
-                plan timescales and the resources needed
-                </li>
-                <li>
-                be involved in sales and support, and where appropriate, maintain contact with client organisations
-                </li>
-                <li>
-                clarify a client’s system specifications, understand their work practices and the nature of their business
-                </li>
-                <li>
-                identify potential clients and build and maintain contacts.
+                  identify potential clients and build and maintain contacts.
                 </li>
               </ul>
             </div>
@@ -456,8 +423,14 @@ export const services = [
             <div class="features-details-desc">
               <ul>
                 <li>Align IT with strategic business initiatives.</li>
-                <li>Provide solutions that are both flexible and scalable to adapt to a constantly changing market.</li>
-                <li>Strategize, develop and implement new ingenuities with optimal speed to remain competitive.</li>
+                <li>
+                  Provide solutions that are both flexible and scalable to adapt
+                  to a constantly changing market.
+                </li>
+                <li>
+                  Strategize, develop and implement new ingenuities with optimal
+                  speed to remain competitive.
+                </li>
               </ul>
               <strong>You just have to trust us and We’ll Raise you UP.</strong>
             </div>
@@ -469,7 +442,8 @@ export const services = [
       ],
       shortDescription:
         "IT strategy development and consulting services to enhance business productivity , eSpark Team is ready for yor help..",
-      extraContent: "<strong>IT consulting services are advisory services for you and we will help you assess different technology strategies for your business.</strong> <p>Our IT Services help our customers make the most of their IT investments, from providing system integration solutions, application development and management services and more.We will consider all aspects of a situation and propose a number of solutions, all with clearly defined pros and cons. Essentially, we believe that major changes to your IT infrastructure calls for a clearly defined process.</p><p>We’ll provide you strategic guidance  with regard to technology and IT infrastructures and will enable major business processes through enhancements to IT. We provide guidance and technical expertise.</p>",
+      extraContent:
+        "<strong>IT consulting services are advisory services for you and we will help you assess different technology strategies for your business.</strong> <p>Our IT Services help our customers make the most of their IT investments, from providing system integration solutions, application development and management services and more.We will consider all aspects of a situation and propose a number of solutions, all with clearly defined pros and cons. Essentially, we believe that major changes to your IT infrastructure calls for a clearly defined process.</p><p>We’ll provide you strategic guidance  with regard to technology and IT infrastructures and will enable major business processes through enhancements to IT. We provide guidance and technical expertise.</p>",
       heading: "Strategy and technology consultants for your Business.",
     },
   },
@@ -478,16 +452,12 @@ export const services = [
     icon: "",
     name: "IoT Product Development including Technical Support",
     data: {
-      image: [
-        "https://startp-next.envytheme.com/images/about2.jpg",
-        image2,
-        image3,
-        image4,
-      ],
+      image: [IOT, image2, image3, image4],
       content: [],
       shortDescription:
         "IoT is the science of connecting physical devices using the internet to build a smart and connected world and we offer you the best services regarding that.",
-      extraContent: "<strong>IoT is the science of connecting physical devices using the internet to build a smart and connected world. IoT uses smart software solutions and makes it possible for objects to communicate with one another. </strong> <br /> <br /> <p>Our IoT development solution helps in increasing business efficiencies by streamlining processes using the power of technology. We help you integrate mobility with IoT solution so that you have every control at your fingertips. You can manage everything using your smartphone irrespective of the device involved in IoT product development. In true sense, you experience a connected world!</p> <p>We have with us a team of highly proficient and veteran IoT app developers who use the most advanced technology to offer a complete range of app development services for the Internet of Things. A wide range of IoT app development services offered by us include many IOT services.</p> <p>You will diagnose and troubleshoot software and hardware problems and help our customers install applications and programs. <strong>Technical Support</strong> Engineer <strong>responsibilities</strong> include resolving network issues, configuring operating systems and using remote desktop connections to provide immediate <strong> support</strong>.</p>",
+      extraContent:
+        "<strong>IoT is the science of connecting physical devices using the internet to build a smart and connected world. IoT uses smart software solutions and makes it possible for objects to communicate with one another. </strong> <br /> <br /> <p>Our IoT development solution helps in increasing business efficiencies by streamlining processes using the power of technology. We help you integrate mobility with IoT solution so that you have every control at your fingertips. You can manage everything using your smartphone irrespective of the device involved in IoT product development. In true sense, you experience a connected world!</p> <p>We have with us a team of highly proficient and veteran IoT app developers who use the most advanced technology to offer a complete range of app development services for the Internet of Things. A wide range of IoT app development services offered by us include many IOT services.</p> <p>You will diagnose and troubleshoot software and hardware problems and help our customers install applications and programs. <strong>Technical Support</strong> Engineer <strong>responsibilities</strong> include resolving network issues, configuring operating systems and using remote desktop connections to provide immediate <strong> support</strong>.</p>",
       heading:
         "The IoT will generate an enormous, truly unprecedented amount of precise information about buyers and their needs. It’s a marketer’s dream come true.",
     },
@@ -497,16 +467,12 @@ export const services = [
     icon: "",
     name: "PCB Layout and Designing",
     data: {
-      image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img6.jpg",
-        image2,
-        image3,
-        image4,
-      ],
+      image: [PCB, image2, image3, image4],
       content: [],
       shortDescription:
         "We have many talented members having many ideas and guidelines that can be drawn up for the design and layout of a PCB.",
-      extraContent: "<strong>The PCB layout and design is a specialist skill requiring knowledge of not only of the PCB design software and PCB CAD system, but also a variety of standards and techniques used to ensure that the basic circuit design is successfully transferred to an overall printed circuit board that can be manufactured in an electronics circuit manufacturing environment.</strong> <br /> <br /> <p>We are one of those specialist that will satisfy you with our designs.</p> <p>There are many ideas and guidelines that can be drawn up for the design and layout of a PCB. The list below covers a number of them. Obviously there are more, and the PCB design guidelines list below should not be thought of as a complete list.</p> <p>In order that the PCB design guidelines can be followed more easily, the guidelines are split into sections :</p> <ul><li>Board constraint design guidelines – those covering the initial constraints on the board</li> <li>Overall layout design guidelines</li> <li>Guidelines associated with the planes or layers</li> <li>Track design guidelines</li> <li>Thermal issues</li> <li>Signal integrity and RF considerations</li></ul> <p>These PCB design guidelines should be addressed before the main design of the circuit starts. They should effectively be some of the first elements of the component placement and that our moto.</p>",
+      extraContent:
+        "<strong>The PCB layout and design is a specialist skill requiring knowledge of not only of the PCB design software and PCB CAD system, but also a variety of standards and techniques used to ensure that the basic circuit design is successfully transferred to an overall printed circuit board that can be manufactured in an electronics circuit manufacturing environment.</strong> <br /> <br /> <p>We are one of those specialist that will satisfy you with our designs.</p> <p>There are many ideas and guidelines that can be drawn up for the design and layout of a PCB. The list below covers a number of them. Obviously there are more, and the PCB design guidelines list below should not be thought of as a complete list.</p> <p>In order that the PCB design guidelines can be followed more easily, the guidelines are split into sections :</p> <ul><li>Board constraint design guidelines – those covering the initial constraints on the board</li> <li>Overall layout design guidelines</li> <li>Guidelines associated with the planes or layers</li> <li>Track design guidelines</li> <li>Thermal issues</li> <li>Signal integrity and RF considerations</li></ul> <p>These PCB design guidelines should be addressed before the main design of the circuit starts. They should effectively be some of the first elements of the component placement and that our moto.</p>",
       heading: "Design is a formal response to a strategic question",
     },
   },
@@ -544,7 +510,8 @@ export const services = [
       content: [],
       shortDescription:
         "Schematic design is the first phase of basic services for project design. Here we first provide you with the design and will recreate our designs until you are satisfied.",
-      extraContent: "<strong> Schematic design is the first phase of basic services for project design.We consider this stage in a project, the design professional that describes the project three-dimensionally. A range of alternative design concepts are explored to define the character of the completed project and an optimum realization of the project program.</strong> <br /> <br /><p>Scheme Design stage will generally be used for Planning Submission Stage. The scheme design will provide a developed stage of design that coordinates other design disciplines, such as Structural, Civils and Services to such a level to enable Contractor Costs to be obtained. Coordinated design with other disciplines.</p><p>We are here to provide you with all the necessary details so that you can trust us to start a project with us.</p>",
+      extraContent:
+        "<strong> Schematic design is the first phase of basic services for project design.We consider this stage in a project, the design professional that describes the project three-dimensionally. A range of alternative design concepts are explored to define the character of the completed project and an optimum realization of the project program.</strong> <br /> <br /><p>Scheme Design stage will generally be used for Planning Submission Stage. The scheme design will provide a developed stage of design that coordinates other design disciplines, such as Structural, Civils and Services to such a level to enable Contractor Costs to be obtained. Coordinated design with other disciplines.</p><p>We are here to provide you with all the necessary details so that you can trust us to start a project with us.</p>",
       heading: "Design adds value faster than it adds costs",
     },
   },
@@ -562,7 +529,8 @@ export const services = [
       content: [],
       shortDescription:
         "Reverse engineering can be an invaluable tool for learning how to use a particular programming language or how to work on a particular type of application, beginners can use the technique to improve their skills.",
-      extraContent: "<strong>Reverse-engineering is used for many purposes: as a learning tool, as a way to make new, compatible products that are cheaper than what’s currently on the market.</strong> <br /> <br /> <p>Reverse engineering can be an invaluable tool for learning how to use a particular programming language or how to work on a particular type of application, beginners can use the technique to improve their skills.</p><p>Whether it’s rebuilding a car engine or diagramming a sentence, people can learn about many things simply by taking them apart and putting them back together again. That, in a nutshell, is the concept behind reverse-engineering—breaking something down in order to understand it, build a copy or improve it.</p> <p>A process that was originally applied only to hardware, reverse-engineering is now applied to software, databases and even human DNA. Reverse-engineering is especially important with computer hardware and software. Programs are written in a language, say C++ or Java, that’s understandable by other programmers. But to run on a computer, they have to be translated by another program, called a compiler, into the ones and zeros of machine language.</p>",
+      extraContent:
+        "<strong>Reverse-engineering is used for many purposes: as a learning tool, as a way to make new, compatible products that are cheaper than what’s currently on the market.</strong> <br /> <br /> <p>Reverse engineering can be an invaluable tool for learning how to use a particular programming language or how to work on a particular type of application, beginners can use the technique to improve their skills.</p><p>Whether it’s rebuilding a car engine or diagramming a sentence, people can learn about many things simply by taking them apart and putting them back together again. That, in a nutshell, is the concept behind reverse-engineering—breaking something down in order to understand it, build a copy or improve it.</p> <p>A process that was originally applied only to hardware, reverse-engineering is now applied to software, databases and even human DNA. Reverse-engineering is especially important with computer hardware and software. Programs are written in a language, say C++ or Java, that’s understandable by other programmers. But to run on a computer, they have to be translated by another program, called a compiler, into the ones and zeros of machine language.</p>",
       heading:
         "There is no such thing as a boring project. There are only boring executions",
     },
@@ -572,12 +540,7 @@ export const services = [
     icon: "",
     name: "PCB Manufacturing and Mass Production",
     data: {
-      image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img1.jpg",
-        image2,
-        image3,
-        image4,
-      ],
+      image: [PCB, image2, image3, image4],
       content: [
         serviceItems(
           2,
@@ -634,7 +597,8 @@ export const services = [
       ],
       shortDescription:
         "The manufacture of the PCBs is normally achieved using a chemical etching process. This process is very unique and our developers work very hard for our clients satisfaction.",
-      extraContent: "<p>The manufacture of the <strong>PCBs </strong> is normally achieved using a chemical etching process.</p> <br /> <p> <strong>Printed Circuit Board (PCB)</strong> fabrication is the assembly method for circuit boards used in electronic and computer devices. The layers of the board are put together along with the specific surface pattern so it can be used in electronics <strong>manufacturing</strong>.</p>",
+      extraContent:
+        "<p>The manufacture of the <strong>PCBs </strong> is normally achieved using a chemical etching process.</p> <br /> <p> <strong>Printed Circuit Board (PCB)</strong> fabrication is the assembly method for circuit boards used in electronic and computer devices. The layers of the board are put together along with the specific surface pattern so it can be used in electronics <strong>manufacturing</strong>.</p>",
       heading: "You must have a supplier relationship of constant improvement",
     },
   },
@@ -661,7 +625,8 @@ export const services = [
       ],
       shortDescription:
         "Selecting the most cost effective yet reliable electronic components from reputed supplier that best match the requirements of the product.",
-      extraContent: "<strong>Selecting the most cost effective yet reliable electronic components from reputed supplier that best match the requirements of the product.</strong><br /> <br /> <p>Our professional methodology involves first understanding the complete requirements of the product. We then proceed to analyse the best suited parts that can ensure noise reduction, cost effectiveness, logic implementation, hazard immunity and reliability. This is found by thoroughly studying the datasheets of parts and then short listing the correct components. After short listing, the prices are compared from several suppliers, ultimately settling upon those that match the quality standarda yet ensuring less cost.</p>",
+      extraContent:
+        "<strong>Selecting the most cost effective yet reliable electronic components from reputed supplier that best match the requirements of the product.</strong><br /> <br /> <p>Our professional methodology involves first understanding the complete requirements of the product. We then proceed to analyse the best suited parts that can ensure noise reduction, cost effectiveness, logic implementation, hazard immunity and reliability. This is found by thoroughly studying the datasheets of parts and then short listing the correct components. After short listing, the prices are compared from several suppliers, ultimately settling upon those that match the quality standarda yet ensuring less cost.</p>",
       heading:
         "With our present knowledge on hardware we can face any challenges coming towards us and select best components for your project.",
     },
@@ -708,7 +673,8 @@ export const services = [
       ],
       shortDescription:
         "Our group of talented people work very hard to organize components in a meaningful way that is beneficial for our clients task.",
-      extraContent: "<strong>A collection of components, organised in a meaningful manner, and often (but not necessarily) providing some way to browse and preview those components and their associated assets.</strong>",
+      extraContent:
+        "<strong>A collection of components, organised in a meaningful manner, and often (but not necessarily) providing some way to browse and preview those components and their associated assets.</strong>",
       heading: "Design is intelligence made visible",
     },
   },

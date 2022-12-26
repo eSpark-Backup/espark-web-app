@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 import map from "../../../../src/assets/images/map.png";
 import shape2 from "../../../../src/assets/images/shape2.svg";
 import shape3 from "../../../../src/assets/images/shape3.svg";
@@ -22,7 +22,7 @@ function Users() {
           <div class="row">
             <div class="col-lg-3 col-md-3 col-6 col-sm-6">
               <div class="single-funfact">
-                <h3>2.015</h3>
+                <h3>2015</h3>
                 <p>COMPANY FORMATION</p>
               </div>
             </div>
@@ -48,8 +48,8 @@ function Users() {
           <div class="contact-cta-box">
             <h3>Have any question about us?</h3>
             <p>Don&#x27;t hesitate to contact us</p>
-            <Link to={'lets-talk'}>
-            <a class="btn btn-primary">Contact Us</a>
+            <Link to={"lets-talk"}>
+              <a class="btn btn-primary">Contact Us</a>
             </Link>
           </div>
         </div>
