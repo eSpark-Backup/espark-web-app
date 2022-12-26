@@ -7,7 +7,6 @@ import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/fall-animation.css';
-
 import "react-slideshow-image/dist/styles.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -17,7 +16,7 @@ root.render(
   </React.StrictMode>
 );
 
-serviceWorkerRegistration.register();
+serviceWorkerRegistration.unregister();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
