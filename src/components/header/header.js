@@ -55,17 +55,17 @@ const Header = () => {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav ms-auto">
-                <li className="nav-item" onClick={()=>setIsNavCollapsed(!isNavCollapsed)}>
+                <li className="nav-item" onClick={handleNavCollapse}>
                   <Link className="nav-link" to="/">
                     Home
                   </Link>
                 </li>
-                <li class="nav-item" onClick={()=>setIsNavCollapsed(!isNavCollapsed)}>
+                <li class="nav-item" onClick={handleNavCollapse}>
                   <Link class="nav-link" to="/about">
                     About
                   </Link>
                 </li>
-                <li class="nav-item" onClick={()=>setIsNavCollapsed(!isNavCollapsed)}>
+                <li class="nav-item" onClick={handleNavCollapse}>
                   <Link class="nav-link" to="/project">
                     Works
                   </Link>
@@ -77,7 +77,7 @@ const Header = () => {
                   <ul class="dropdown-menu ">
                     {services.map((item) => {
                       return (
-                        <li class="nav-item" onClick={()=>setIsNavCollapsed(!isNavCollapsed)} >
+                        <li class="nav-item" onClick={handleNavCollapse} >
                           <i
                             class="fa fa-envelope-square"
                             aria-hidden="true"
@@ -93,13 +93,13 @@ const Header = () => {
                     })}
                   </ul>
                 </li>
-                <li class="nav-item" onClick={()=>setIsNavCollapsed(!isNavCollapsed)}>
+                <li class="nav-item" onClick={handleNavCollapse}>
                   <Link class="nav-link" to="/lets-talk">
                     Lets-Talk
                   </Link>
                 </li>
 
-                <li class="nav-item" onClick={()=>setIsNavCollapsed(!isNavCollapsed)}>
+                <li class="nav-item" onClick={handleNavCollapse}>
                   <Link class="nav-link" to="/products">
                     Products
                   </Link>
