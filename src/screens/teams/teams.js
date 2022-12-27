@@ -8,11 +8,7 @@ const Teams = () => {
   return (
     <div>
       <Title title={"Our Teams"} />
-      <div className="row justify-content-center">
-        {team.map((item) => {
-          return <TeamCard item={item} />;
-        })}
-      </div>
+      <TeamCard data={team} />;
     </div>
   );
 };
