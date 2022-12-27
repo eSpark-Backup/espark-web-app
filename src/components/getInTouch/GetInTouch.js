@@ -128,12 +128,13 @@
 
 // export default GetInTouch;
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { services } from "../../helper/services";
 
 import emailjs from "@emailjs/browser";
+import { toast } from "react-hot-toast";
 
-const GetInTouch = ({ modal }) => {
+const GetInTouch = ({ modal, modelClose }) => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -143,6 +144,7 @@ const GetInTouch = ({ modal }) => {
   const form = useRef();
 
   let array = [];
+  let limit = 15;
 
   const handleUpdateIntrestData = (e, index) => {
     const data = array.find((item) => item === e);
@@ -155,7 +157,15 @@ const GetInTouch = ({ modal }) => {
         array.splice(indexx, 1);
       }
     }
-    console.log(array);
+  };
+
+  const clearState = () => {
+    setEmail("");
+    setMessage("");
+    setName("");
+    setPhone("");
+    setSubject("");
+    array = [];
   };
 
   const sendEmail = (e) => {
@@ -163,25 +173,51 @@ const GetInTouch = ({ modal }) => {
 
     emailjs.init("bo0d42dcDbZL1U83o");
 
-    emailjs
-      .send("service_gzljqoh", "template_88hqabf", {
-        from_name: name,
-        from_email: email,
-        reply_to: email,
-        subject: subject,
-        message: message,
-        phone: phone,
-        user_interests: JSON.stringify(array),
-      })
-      .then(
-        (result) => {
-          console.log(result);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (modal) {
+      emailjs
+        .send("service_0n1v6bm", "template_88hqabf", {
+          from_name: name,
+          from_email: email,
+          reply_to: email,
+          subject: subject,
+          message: message,
+          phone: phone,
+          user_interests: null,
+        })
+        .then(
+          (result) => {
+            modelClose(false);
+            clearState();
+            toast.success("Thank you for Connecting");
+          },
+          (error) => {
+            modelClose(false);
+            console.log(error.text);
+          }
+        );
+    } else {
+      emailjs
+        .send("service_0n1v6bm", "template_88hqabf", {
+          from_name: name,
+          from_email: email,
+          reply_to: email,
+          subject: subject,
+          message: message,
+          phone: phone,
+          user_interests: JSON.stringify(array),
+        })
+        .then(
+          (result) => {
+            toast.success("Thank you for Connecting");
+            clearState();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
+
   return (
     <div>
       <div class={`contact-area pt-80 ${!modal ? "pb-80" : null}`}>
@@ -234,13 +270,15 @@ const GetInTouch = ({ modal }) => {
                   <div class="col-lg-6 col-md-6">
                     <div class="form-group">
                       <input
-                        type="text"
+                        type="number"
                         name="number"
                         required={true}
                         placeholder="Your phone number *"
                         class="form-control"
                         value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
+                        onChange={(e) =>
+                          setPhone(e.target.value.slice(0, limit))
+                        }
                       />
                       <div class="invalid-feedback"></div>
                     </div>
@@ -277,6 +315,7 @@ const GetInTouch = ({ modal }) => {
                                 <div class="checkbox-rect2">
                                   <input
                                     type="checkbox"
+                                    class="form-control"
                                     id={item.id}
                                     name="check"
                                     onClick={() =>
@@ -308,11 +347,7 @@ const GetInTouch = ({ modal }) => {
                     </div>
                   </div>
                   <div class="col-lg-12 col-sm-12">
-                    <button
-                      type="submit"
-                      class="btn btn-primary"
-                      // onClick={() => sendEmail()}
-                    >
+                    <button type="submit" class="btn btn-secondary">
                       Send Message
                     </button>
                   </div>

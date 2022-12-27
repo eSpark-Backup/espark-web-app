@@ -24791,8 +24791,8 @@ textarea.form-control {
   border-radius: 0;
   background-color: #11A79c;
   padding: 13px 30px;
-  -webkit-box-shadow: 5px 5px 5px #11A79c;
-  box-shadow: 5px 5px 5px #11A79c;
+  -webkit-box-shadow: 5px 5px 5px white;
+  box-shadow: 5px 5px 5px white;
   margin-right: 5px;
   margin-bottom: 5px;
   font-size: 14px;
@@ -24816,8 +24816,8 @@ textarea.form-control {
 .btn.btn-secondary:not(:disabled):not(.disabled).active:focus,
 .btn.btn-secondary:not(:disabled):not(.disabled):active:focus,
 .show>.btn.btn-secondary.dropdown-toggle:focus {
-  -webkit-box-shadow: 5px 5px 5px #e9caf5;
-  box-shadow: 5px 5px 5px #e9caf5
+  -webkit-box-shadow: 5px 5px 5px #11A79c;
+  box-shadow: 5px 5px 5px #11A79c
 }
 
 .btn.btn-secondary:focus {
@@ -24826,8 +24826,8 @@ textarea.form-control {
 
 .btn.btn-secondary:focus,
 .btn.btn-secondary:hover {
-  -webkit-box-shadow: 5px 5px 5px #e9caf5;
-  box-shadow: 5px 5px 5px #e9caf5
+  -webkit-box-shadow: 5px 5px 5px #11A79c;
+  box-shadow: 5px 5px 5px #11A79c
 }
 
 .form-group {

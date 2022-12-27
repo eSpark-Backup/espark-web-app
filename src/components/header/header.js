@@ -123,7 +123,7 @@ const Header = () => {
               </Link>
             </div>
             <Modal open={open} onClose={onCloseModal} center>
-              <GetInTouch modal={true} />
+              <GetInTouch modal={true} modelClose={(e) => setOpen(e)} />
             </Modal>
           </nav>
         </div>

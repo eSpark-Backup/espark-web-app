@@ -1,10 +1,12 @@
 import "./App.css";
 import AppWraper from "./router";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <>
       <AppWraper />
+      <Toaster />
       <div class="go-top" onClick={() => window.scrollTo(0, 0)}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
