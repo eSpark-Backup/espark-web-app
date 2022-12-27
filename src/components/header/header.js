@@ -67,12 +67,12 @@ const Header = () => {
                 </li>
                 <li class="nav-item" onClick={handleNavCollapse}>
                   <Link class="nav-link" to="/project">
-                    Works
+                    Projects 
                   </Link>
                 </li>
                 <li class="nav-item" >
                   <Link class="nav-link" to="/services">
-                    Services
+                     Services 
                   </Link>
                   <ul class="dropdown-menu ">
                     {services.map((item) => {
@@ -84,7 +84,7 @@ const Header = () => {
                           ></i>
                           <Link
                             class="nav-link"
-                            to={`services-detail/${item.name}`}
+                            to={`services-detail/${item.path}`}
                           >
                             {item.name}
                           </Link>
@@ -95,13 +95,13 @@ const Header = () => {
                 </li>
                 <li class="nav-item" onClick={handleNavCollapse}>
                   <Link class="nav-link" to="/lets-talk">
-                    Lets-Talk
+                      Contact Us
                   </Link>
                 </li>
 
                 <li class="nav-item" onClick={handleNavCollapse}>
                   <Link class="nav-link" to="/products">
-                    Products
+                  Products
                   </Link>
                   {/* <ul class="dropdown-menu-products">
                     {products.map((item) => {

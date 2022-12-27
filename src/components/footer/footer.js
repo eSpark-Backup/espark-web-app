@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./style.css";
+
 
 const Footer = () => {
   return (
@@ -32,16 +34,19 @@ const Footer = () => {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/about">About Us</Link>
+                  <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <Link to="/project">Work</Link>
+                  <Link to="/project">Projects </Link>
                 </li>
                 <li>
                   <Link to="/services">Services</Link>
                 </li>
                 <li>
-                  <Link to="/lets-talk">Lets-Talk</Link>
+                  <Link to="/lets-talk">Contact Us</Link>
+                </li>
+                <li>
+                  <Link to="/products">Products</Link>
                 </li>
               </ul>
             </div>
@@ -59,7 +64,7 @@ const Footer = () => {
           <div className="col-lg-4 col-md-6">
             <div className="single-footer-widget">
               <h3>Address</h3>
-              <ul className="footer-contact-info">
+              <ul className="footer-contact-info flex" >
                 <li>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -71,12 +76,13 @@ const Footer = () => {
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
+                    className="logoMargin"
                   >
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                     <circle cx="12" cy="10" r="3"></circle>
                   </svg>
-                  &nbsp;&nbsp; 301/B 3rd Floor & 401/A 4th Floor, Blossom Trade
-                  Centre, Block 1 Gulistan-e-Johar, Karachi, 74300
+                  <p style={{marginLeft:'10px'}}>
+                       301/B 3rd Floor & 401/A 4th Floor, Blossom Trade Centre,Block 1 Gulistan-e-Johar, Karachi, 74300 </p>
                 </li>
                 <li>
                   <svg
@@ -223,7 +229,7 @@ const Footer = () => {
           <div className="col-lg-12 col-md-12">
             <div className="copyright-area">
               <p>
-                Copyright © 2020. All Rights Reserved{" "}
+                Copyright © 2023. All Rights Reserved{" "}
                 <a href="/" target="_blank">
                   eSpark Consulting Group
                 </a>

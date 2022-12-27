@@ -7,7 +7,8 @@ function Faqs({imgs, data}) {
   const [faqId,setFaqId] = useState(0)
   return (
     <>
-     <Title title={"FAQS"} />
+     <Title title={"FAQs"} paragraph ='<p> We’ve amassed a large number of frequently asked questions (FAQs) by our clients.
+We hope this will be helpful for you to comprehend the most critical aspects of our effective project.</p>' />
       <div class="faq-area pb-5">
             <div class="container">
                 <div class="faq-accordion">

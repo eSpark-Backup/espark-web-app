@@ -15,13 +15,13 @@ function HeroSectionTwo({ heading1, image }) {
                   <div class="hosting-banner-content">
                     <h1>{heading1}</h1>
                     <ul>
-                      <li>FREE Domain Name for 2st Year</li>
-                      <li>FREE SSL Certificate Included</li>
+                      <li>Free Domain Name for 2st Year</li>
+                      <li>Free SSL Certificate Included</li>
                       <li>1-Click Wordpress Install</li>
                       <li>24/7 Support</li>
                     </ul>
                     <p>
-                      Starting at <span>$8.99</span> $3.95/month
+                    Starting with <span>$8.99</span> $3.95/month
                     </p>
                   </div>
                 </div>

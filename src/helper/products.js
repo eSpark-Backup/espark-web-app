@@ -32,7 +32,7 @@ export const products = [
         sectionId: 1,
         routeLink: "/espark-app",
         detail:
-          "<p>A data logger (also datalogger or data recorder) is an electronic device that records data over time or about location either with a built-in instrument or sensor or via external instruments and sensors. Increasingly, but not entirely, they are based on a digital processor (or computer), and called digital data loggers (DDL). They generally are small, battery-powered, portable, and equipped with a microprocessor, internal memory for data storage, and sensors. Some data loggers interface with a personal computer and use software to activate the data logger and view and analyze the collected data, while others have a local interface device (keypad, LCD) and can be used as a stand-alone device.</p>",
+          "<p>A data logger (a data recorder) is an electronic device that records data over time or about location either with a built-in instrument or sensor or via external instruments and sensors. Increasingly, but not entirely, they are based on a digital processor (or computer), and called digital data loggers (DDL). They generally are small, battery-powered, portable, and equipped with a microprocessor, internal memory for data storage, and sensors. Some data loggers interface with a personal computer and use software to activate the data logger and view and analyze the collected data, while others have a local interface device (keypad, LCD) and can be used as a stand-alone device.</p>",
       },
       {
         name: "",
@@ -52,7 +52,7 @@ export const products = [
         sectionId: 2,
         routeLink: "/espark-app",
         detail:
-          "<p>The TMCM-1310 is a single axis stepper motor controller/driver standalone board with closed loop support. For communication an USB interface and EtherCAT®* are provided. The module supports motor currents up to 3A RMS and supply voltages up to 48V nominal. The module offers inputs for one incremental a/b/n (TTL, open-collector and differential inputs) or absolute SSI encoders (selectable in software). There are dedicated stop switch inputs, 8 general purpose inputs, and 8 general purpose outputs.</p><br/>",
+          "<p>The TMCM-1310 is a single-axis stepper motor controller/driver standalone board with closed-loop support. For communication, a USB interface and EtherCAT®* are provided. The module supports motor currents up to 3A RMS and supplies up to 48V nominal voltages. The module offers inputs for one incremental a/b/n (TTL, open-collector and differential inputs) or absolute SSI encoders (selectable in software). There are dedicated stop-switch inputs, 8 general-purpose inputs, and 8 general-purpose outputs.</p><br/>",
       },
     ],
   },

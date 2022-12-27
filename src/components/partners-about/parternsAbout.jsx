@@ -14,8 +14,7 @@ export default function PartnerAbout() {
             <h2>HAPPY CLIENTS</h2>
             <div class="bar"></div>
             <p>
-              The following comments are just a sample of the clients worldwide
-              who transformed their business website with eSpark
+            The following comments are just a sample of customers around the world who have transformed their business websites with eSpark.
             </p>
           </div>
           <div style={{ display:"flex" ,flexDirection:"row", justifyContent:"center" }}>

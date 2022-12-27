@@ -223,7 +223,7 @@ export const projects = [
     data: {
       image: img_30,
       projectUrl: "https://esparkconsultants.com/",
-      name: "eSpark Consulting Group",
+      name: "eSpark Consulted Group",
     },
   }
   ,
@@ -250,7 +250,7 @@ export const projects = [
     data: {
       image: img_33,
       projectUrl: "https://www.khemploymentservices.com/",
-      name: "kHES People Management",
+      name: "KHES People Management",
     },
   }
   ,
