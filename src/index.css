@@ -37029,8 +37029,9 @@ blockquote:after {
   }
 
   .startp-nav nav .navbar-collapse {
-    max-height: 70vh;
-    overflow-y: scroll
+    max-height: 40vh;
+    /* overflow-y: scroll; */
+    position: relative !important;
   }
 
   .startp-nav nav .navbar-collapse::-webkit-scrollbar {
@@ -37064,8 +37065,8 @@ blockquote:after {
 
   .startp-nav nav .navbar-nav .nav-item .dropdown-menu {
     padding: 10px 0;
-    position: relative;
-    visibility: visible;
+    position: absolute;
+    /* visibility: hidden; */
     opacity: 1;
     top: 0;
     width: 95%;
@@ -37079,8 +37080,8 @@ blockquote:after {
 
   .startp-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
     padding: 10px 0;
-    position: relative;
-    visibility: visible !important;
+    position: absolute;
+    /* visibility: hidden !important; */
     opacity: 1 !important;
     left: 15px;
     top: 0;
@@ -39496,4 +39497,29 @@ blockquote:after {
   border-radius: 20px;
   border: 3px dotted red;
   pointer-events: none;
+}
+
+
+
+.carousel *{
+  width: 100%;
+  height: 100%;
+}
+
+@media(max-width: 600px) {
+  .logo {
+    width: 90px;
+  }
+  .messages{
+    margin: 10px;
+    width: 600px;
+  }
+  .carouselPic {
+    margin-top: 80px;
+  }
+}
+@media(max-width: 1400px) {
+  .carouselPic {
+    margin-top: 80px;
+  }
 }

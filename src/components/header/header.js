@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { services } from "../../helper/services";
 import { products } from "../../helper/products";
 import "react-responsive-modal/styles.css";
@@ -12,6 +12,9 @@ const Header = () => {
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
 
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+
   return (
     <header id="header" class="headroom  is-sticky">
       <div class="startp-nav">
@@ -21,50 +24,60 @@ const Header = () => {
               <img
                 src={require("../../assets/images/logo.png")}
                 alt="logo"
+                className="logo"
                 width={120}
               />
             </Link>
             <button
-              className="navbar-toggler navbar-toggler-right collapsed"
+              class={
+                !isNavCollapsed
+                  ? "custom-toggler navbar-toggler "
+                  : "custom-toggler navbar-toggler collapsed"
+              }
               type="button"
               data-toggle="collapse"
-              data-target="#navbarSupportedContent"
+              data-target="/navbarSupportedContent"
               aria-controls="navbarSupportedContent"
-              aria-expanded="false"
+              aria-expanded={!isNavCollapsed ? true : false}
               aria-label="Toggle navigation"
+              onClick={handleNavCollapse}
             >
-              <span className="icon-bar top-bar"></span>
-              <span className="icon-bar middle-bar"></span>
-              <span className="icon-bar bottom-bar"></span>
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
             </button>
             <div
-              className="collapse navbar-collapse"
+              className={
+                !isNavCollapsed
+                  ? "collapse navbar-collapse show"
+                  : "collapse navbar-collapse"
+              }
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav ms-auto">
-                <li className="nav-item">
+                <li className="nav-item" onClick={()=>setIsNavCollapsed(!isNavCollapsed)}>
                   <Link className="nav-link" to="/">
                     Home
                   </Link>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" onClick={()=>setIsNavCollapsed(!isNavCollapsed)}>
                   <Link class="nav-link" to="/about">
                     About
                   </Link>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" onClick={()=>setIsNavCollapsed(!isNavCollapsed)}>
                   <Link class="nav-link" to="/project">
                     Works
                   </Link>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" >
                   <Link class="nav-link" to="/services">
                     Services
                   </Link>
                   <ul class="dropdown-menu ">
                     {services.map((item) => {
                       return (
-                        <li class="nav-item">
+                        <li class="nav-item" onClick={()=>setIsNavCollapsed(!isNavCollapsed)} >
                           <i
                             class="fa fa-envelope-square"
                             aria-hidden="true"
@@ -80,13 +93,13 @@ const Header = () => {
                     })}
                   </ul>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" onClick={()=>setIsNavCollapsed(!isNavCollapsed)}>
                   <Link class="nav-link" to="/lets-talk">
                     Lets-Talk
                   </Link>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item" onClick={()=>setIsNavCollapsed(!isNavCollapsed)}>
                   <Link class="nav-link" to="/products">
                     Products
                   </Link>
