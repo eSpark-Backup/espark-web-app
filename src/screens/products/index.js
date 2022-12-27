@@ -23,7 +23,7 @@ const Products = () => {
     setProductData(item);
   };
 
-  // console.log(productData);
+
   return (
     <>
       <HeroSectionThree

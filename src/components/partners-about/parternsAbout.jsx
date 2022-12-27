@@ -30,7 +30,6 @@ export default function PartnerAbout() {
                 infiniteLoop={true}
               >
                 {clients.map((item) => {
-                  console.log(item);
                   return (
                     <div class="col-lg-12 col-sm-6 col-md-6">
                       <div class="single-feedback-box">

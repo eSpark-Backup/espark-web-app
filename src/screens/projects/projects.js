@@ -35,25 +35,37 @@ export default function Projects({ link }) {
     <React.Fragment>
       {link !== "/" ? (
         // <Fade {...properties} scale={1.4}>
-        <AutoplaySlider
-          infinite={true}
-          bullets={false}
-          play={true}
-          cancelOnInteraction={false} // should stop playing on user interaction
-          interval={6000}
-          animation="fallAnimation"
+
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide carouselPic"
+          data-ride="carousel"
         >
-          {projects.map((item, index) => {
-            return (
-              <div
-                class="each-slide"
-                style={{
-                  backgroundImage: `url(${item.data.image})`,
-                }}
-              ></div>
-            );
-          })}
-        </AutoplaySlider>
+          <div class="carousel-inner">
+            <div class="carousel-item active ">
+              <AutoplaySlider
+                infinite={true}
+                bullets={false}
+                play={true}
+                cancelOnInteraction={false} // should stop playing on user interaction
+                interval={6000}
+                animation="fallAnimation"
+              >
+                {projects.map((item, index) => {
+                  return (
+                    <div class="closer-sliderrs">
+                      <img
+                        class="d-block "
+                        src={item.data.image}
+                        alt="Third slide"
+                      />
+                    </div>
+                  );
+                })}
+              </AutoplaySlider>
+            </div>
+          </div>
+        </div>
       ) : (
         // </Fade>
         <Title

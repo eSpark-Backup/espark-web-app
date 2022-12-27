@@ -7,7 +7,7 @@ const Privacy = () => {
     <div>
       <Title title={"Privacy Policy "} data={shapes} />
       <div className="container">
-        <div>
+        <div className="row">
           <div class="entry-content" itemprop="text">
             <p>Last updated: December 21, 2022</p>
             <p>
@@ -23,9 +23,9 @@ const Privacy = () => {
               Policy has been created with the help of the Free Privacy Policy
               Generator.
             </p>
-            <div
+            <div className="col-sm-12 col-lg-4"
               id="ez-toc-container"
-              style={{ backgroundColor: "#f2fcfc", width: "40%", padding: 10 }}
+              style={{ backgroundColor: "#f2fcfc",  }}
             >
               <h5 class="ez-toc-title">Table of Contents</h5>
               <nav>
