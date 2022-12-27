@@ -302,17 +302,12 @@ const GetInTouch = ({ modal, modelClose }) => {
                       <div class="col-lg-12 col-md-6 ">
                         <h2> Select your Inrest </h2>
                         <div
-                          style={{
-                            height: 400,
-                            display: "flex",
-                            flexDirection: "column",
-                            flexWrap: "wrap",
-                          }}
+                        className="row"
                         >
                           {services.map((item, index) => {
                             return (
-                              <div class="items">
-                                <div class="checkbox-rect2">
+                              <div class="items col-12 col-lg-6">
+                                <div class="checkbox-rect2 ">
                                   <input
                                     type="checkbox"
                                     class="form-control"
