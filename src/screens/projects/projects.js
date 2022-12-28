@@ -42,7 +42,7 @@ export default function Projects({ link }) {
           data-ride="carousel"
         >
           <div class="carousel-inner">
-            <div class="carousel-item active ">
+            <div class=" carousl active ">
               <AutoplaySlider
                 infinite={true}
                 bullets={false}

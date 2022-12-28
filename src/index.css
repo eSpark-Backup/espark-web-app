@@ -37029,9 +37029,12 @@ blockquote:after {
   }
 
   .startp-nav nav .navbar-collapse {
-    max-height: 40vh;
-    /* overflow-y: scroll; */
+    max-height: 70vh;
+    overflow-y: scroll;
     position: relative !important;
+  }
+  .startp-nav nav .others-option .btn.btn-light {
+    display: inline-block
   }
 
   .startp-nav nav .navbar-collapse::-webkit-scrollbar {
@@ -37146,6 +37149,13 @@ blockquote:after {
     background: #fff
   }
 }
+@media only screen and (min-width:280px) and (max-width:576px){
+  .startp-nav nav .others-option .btn.btn-light {
+    display: inline-block
+  }
+ 
+}
+
 
 @media only screen and (min-width:576px) and (max-width:767px) {
   .startp-nav nav .others-option .btn.btn-light {
@@ -37234,6 +37244,9 @@ blockquote:after {
     height: 100%;
     padding-top: 185px;
     padding-bottom: 165px
+  }
+  .startp-nav nav .others-option .btn.btn-light {
+    display: inline-block
   }
 
   .main-banner .banner-image {
@@ -37963,7 +37976,7 @@ blockquote:after {
   .startp-nav nav .others-option .btn.btn-light {
     border: 1px dashed #76e5dd;
     display: none
-  }
+  } 
 
   .startp-nav nav .others-option .btn,
   .startp-nav nav .others-option .btn.btn-light {
@@ -39501,7 +39514,7 @@ blockquote:after {
 
 
 
-.carousel *{
+.carousl *{
   width: 100%;
   height: 100%;
 }
@@ -39521,5 +39534,13 @@ blockquote:after {
 @media(max-width: 1400px) {
   .carouselPic {
     margin-top: 80px;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+  .startp-nav nav .others-option .btn.btn-light {
+    display: inline-block;
+  }
+  .startp-nav nav .tes{
+    margin-left: 400px;
   }
 }
