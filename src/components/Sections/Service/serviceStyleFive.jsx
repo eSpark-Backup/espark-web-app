@@ -23,7 +23,7 @@ const ServiceStyleFive = ({ data,link }) => {
                       </h3>
                       <Link
                         class="read-more-btn"
-                        to={`/services-detail/${item.name}`}
+                        to={`/services-detail/${item.path}`}
                       >
                         Read More
                         <svg
@@ -48,7 +48,7 @@ const ServiceStyleFive = ({ data,link }) => {
               );
             }).sort(order)}
              {link == '/' ? <Link to={'/services'} className={style.btnMargin}>
-                    <a className='btn btn-secondary'   >GO TO Services<FaLongArrowAltRight  className={style.arrowSize}/></a>
+                    <a className='btn btn-secondary'   >Go To Services<FaLongArrowAltRight  className={style.arrowSize}/></a>
               </Link> : ""}
           </div>
         </div>

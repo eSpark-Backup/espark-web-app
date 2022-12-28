@@ -31,7 +31,7 @@ export default function ProjectCard({ data, link }) {
                 </a>
                 <div className="works-content">
                   <h3>
-                    {item.data.name.charAt(0).toUpperCase() +
+                    {item.data.name.charAt(0) +
                       item.data.name.slice(1)}
                   </h3>
                 </div>
@@ -44,7 +44,7 @@ export default function ProjectCard({ data, link }) {
         {link == "/" ? (
           <Link to={"/project"}>
             <a className="btn btn-secondary">
-              GO To Projects
+            Explore Projects
               <FaLongArrowAltRight className={style.arrowSize} />
             </a>
           </Link>

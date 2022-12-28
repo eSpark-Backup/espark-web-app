@@ -15,7 +15,7 @@ import { faqsQuestions } from "../../helper/faqs";
 import Projects from "../projects/projects";
 import Faqs from "../faqs/faqs";
 
-const Home = () => {
+const   Home = () => {
   const currentRoute = window.location.pathname;
   return (
     <div>
@@ -29,7 +29,7 @@ const Home = () => {
       {/* <Price /> */}
       {/* <Feedback /> */}
       {/* <RecentStory /> */}
-      <Faqs imgs={shapes} data={faqsQuestions} />
+      <Faqs imgs={shapes} data={faqsQuestions}  />
       {/* <Faqs data={shapes} /> */}
       {/* <Freetrial /> */}
       {/* <Clients /> */}

@@ -9,10 +9,11 @@ function NotFound() {
     <>
     <div className={styles.notFoundWrapper} >
         <h1>404 Page Not Found</h1>
-        <p className={styles.btnWrapper}>The page you are lookig for might be has been removed <br/> had its name changed or is temporary unavailable</p>
+        <p className={styles.btnWrapper}>The page you requested cannot be displayed right now.It may be temporarily unavailable, the link you clicked on may <br/>be broken or expired, or you may not have permission to view this page.
+</p>
         <div className={styles.btnWrapper}>
           <Link to={'/'}>
-            <a className='btn btn-secondary'>GO TO HOMEPAGE<FaLongArrowAltRight  className={styles.arrowSize}/></a>
+            <a className='btn btn-secondary'>Back to home<FaLongArrowAltRight  className={styles.arrowSize}/></a>
           </Link> 
         </div>
     </div>
