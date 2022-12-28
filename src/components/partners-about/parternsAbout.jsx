@@ -20,8 +20,6 @@ export default function PartnerAbout() {
           <div style={{ display:"flex" ,flexDirection:"row", justifyContent:"center" }}>
             <div class="row" style={{ width: "70%" }}>
               <Carousel
-                // thumbWidth={20}
-                // centerMode
                 autoPlay
                 showIndicators={false}
                 showArrows={false}

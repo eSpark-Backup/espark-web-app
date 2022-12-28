@@ -32,7 +32,7 @@ const   Home = () => {
       <Faqs imgs={shapes} data={faqsQuestions}  />
       {/* <Faqs data={shapes} /> */}
       {/* <Freetrial /> */}
-      <Clients />
+      {/* <Clients /> */}
     </div>
   );
 };
