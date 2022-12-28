@@ -4,13 +4,20 @@ import image4 from "../assets/images/repair-banner-image/repair-shape2.png";
 import content from "../assets/images/services-image/content_writing.png";
 import IT_Consulting from "../assets/images/services-image/IT_Consulting.png";
 import marketing from "../assets/images/services-image/Digital_Marketing.png";
-import commerce from "../assets/images/services-image/e-commerce.png";
-import Design from "../assets/images/services-image/Graphic-Design.png";
-import IOT from "../assets/images/services-image/IOT.png";
-import PCB from "../assets/images/services-image/PCB.png";
-import SEO from "../assets/images/services-image/SEO.png";
-import UI from "../assets/images/services-image/UIUX Designing.png";
-import web_design from "../assets/images/services-image/Web-Designing.png";
+import engineering from "../assets/images/services-image/Reverse_Engineering.png";
+import embedded from "../assets/images/services-image/Embedded_Firmware_Development.png";
+import electrical from "../assets/images/services-image/Electrical_Schmeatic_Designs.png";
+import Analysis from "../assets/images/services-image/Part_Searching_and_Analysis.png";
+import commerce from "../assets/images/services-image/Digital_e-Commerce.png";
+import Design from "../assets/images/services-image/Graphic_Design.png";
+import IOT from "../assets/images/services-image/IoT_Product_Development_including_Technical_Support.png";
+import PCB from "../assets/images/services-image/PCB_Layout_and_Designing.png";
+import SEO from "../assets/images/services-image/Search_Engine_Optimization.png";
+import UI from "../assets/images/services-image/UI_UX_Designing.png";
+import web_design from "../assets/images/services-image/Web_Designing.png";
+import componet from "../assets/images/services-image/Components_Library_Design.png";
+import web_development from "../assets/images/services-image/Web_Development.png";
+import PCB2 from "../assets/images/services-image/PCB-Manufacturing-and-Mass-Production.png";
 
 import man_and_women from "../assets/images/man-and-women.png";
 import circle_1 from "../assets/images/circle-1.png";
@@ -42,9 +49,9 @@ export const services = [
     id: hash(),
     icon: "",
     name: "Web Development",
-    path:'Web Development',
+    path: "Web Development",
     data: {
-      image: [web_design, image2, image3, image4],
+      image: [web_development, image2, image3, image4],
       content: [
         serviceItems(
           1,
@@ -185,9 +192,9 @@ export const services = [
       shortDescription:
         "<p>Online or offline, eye-catching visuals are a great way to grab someone’s attention. No matter what your project or campaign, the Catalyst Solutions Provider at eSpark Consulting has the creative skills to make you stand out.</p>",
       extraContent:
-      "<strong>Your brand is your business and one of the most critical parts important of your brand is your logo. Ensuring that your business logo configuration is extraordinary and speaks to precisely what your association relies on, is the initial step for ensuring brand achievement.</strong> <br /> <br /> <p>You will find here graphic design gigs across various industries. Find the ones that suit your needs and budget both-creativity at its best.</p> <strong>Work directly with designer</strong><br /> <br /><strong>Fixed prices and terms</strong> <br /> <br />",
-                  
-        heading: "Adding Creativity to your Triumph",
+        "<strong>Your brand is your business and one of the most critical parts important of your brand is your logo. Ensuring that your business logo configuration is extraordinary and speaks to precisely what your association relies on, is the initial step for ensuring brand achievement.</strong> <br /> <br /> <p>You will find here graphic design gigs across various industries. Find the ones that suit your needs and budget both-creativity at its best.</p> <strong>Work directly with designer</strong><br /> <br /><strong>Fixed prices and terms</strong> <br /> <br />",
+
+      heading: "Adding Creativity to your Triumph",
     },
   },
   {
@@ -494,12 +501,7 @@ export const services = [
     name: "Embedded Firmware Development",
     path: "Embedded Firmware Development",
     data: {
-      image: [
-        "https://startp-next.envytheme.com/images/bigdata-analytics/discover-img1.png",
-        image2,
-        image3,
-        image4,
-      ],
+      image: [embedded, image2, image3, image4],
       content: [],
       shortDescription:
         "Embedded firmware is the flash memory chip that stores specialized software running in a chip in an embedded device to control its functions. In eSpark we have talented people working closely so that no error occurs in firmware.",
@@ -515,12 +517,7 @@ export const services = [
     name: "Electrical Schematic Design",
     path: "Electrical Schematic Design",
     data: {
-      image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img1.jpg",
-        image2,
-        image3,
-        image4,
-      ],
+      image: [electrical, image2, image3, image4],
       content: [],
       shortDescription:
         "Schematic design is the first phase of basic services for project design. Here we first provide you with the design and will recreate our designs until you are satisfied.",
@@ -535,12 +532,7 @@ export const services = [
     name: "Reverse Engineering",
     path: "Reverse Engineering",
     data: {
-      image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img1.jpg",
-        image2,
-        image3,
-        image4,
-      ],
+      image: [engineering, image2, image3, image4],
       content: [],
       shortDescription:
         "Reverse engineering can be an invaluable tool for learning how to use a particular programming language or how to work on a particular type of application, beginners can use the technique to improve their skills.",
@@ -556,7 +548,7 @@ export const services = [
     name: "PCB Manufacturing and Mass Production",
     path: "PCB Manufacturing and Mass Production",
     data: {
-      image: [PCB, image2, image3, image4],
+      image: [PCB2, image2, image3, image4],
       content: [
         serviceItems(
           2,
@@ -624,12 +616,7 @@ export const services = [
     name: "Part Searching and Analysis",
     path: "Part Searching and Analysis",
     data: {
-      image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img1.jpg",
-        image2,
-        image3,
-        image4,
-      ],
+      image: [Analysis, image2, image3, image4],
       content: [
         serviceItems(
           2,
@@ -654,12 +641,7 @@ export const services = [
     name: "Components Library Design",
     path: "Components Library Design",
     data: {
-      image: [
-        "https://startp-next.envytheme.com/images/agency-image/agency-services-img1.jpg",
-        image2,
-        image3,
-        image4,
-      ],
+      image: [componet, image2, image3, image4],
       content: [
         serviceItems(
           2,

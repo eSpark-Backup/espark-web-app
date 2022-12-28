@@ -8,6 +8,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/custom-animations/fall-animation.css";
 import "react-slideshow-image/dist/styles.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
