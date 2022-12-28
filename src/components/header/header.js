@@ -19,10 +19,10 @@ const Header = () => {
   const isAppScreen = location.pathname === "/espark-app";
 
   return (
-    <header id="header" class="headroom  is-sticky">
+    <header id="header" class="headroom is-sticky">
       <div class="startp-nav">
         <div class="container">
-          <nav class="navbar navbar-expand-md navbar-light">
+          <nav class="navbar navbar-expand-lg navbar-light">
             <Link class="navbar-brand" to="/">
               <img
                 src={require(isAppScreen
@@ -49,9 +49,9 @@ const Header = () => {
                   aria-label="Toggle navigation"
                   onClick={handleNavCollapse}
                 >
-                  <span class="icon-bar top-bar"></span>
-                  <span class="icon-bar middle-bar"></span>
-                  <span class="icon-bar bottom-bar"></span>
+                  <span class="icon-bar top-bar tes"></span>
+                  <span class="icon-bar middle-bar tes"></span>
+                  <span class="icon-bar bottom-bar tes"></span>
                 </button>
                 <div
                   className={

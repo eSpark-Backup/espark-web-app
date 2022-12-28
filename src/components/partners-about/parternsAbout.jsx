@@ -17,8 +17,8 @@ export default function PartnerAbout() {
             The following comments are just a sample of customers around the world who have transformed their business websites with eSpark.
             </p>
           </div>
-          <div style={{ display:"flex" ,flexDirection:"row", justifyContent:"center" }}>
-            <div class="row" style={{ width: "70%" }}>
+          <div className="row" style={{ display:"flex" ,flexDirection:"row", justifyContent:"center" }}>
+            <div className="col-sm-12 col-md-12 col-lg-5" >
               <Carousel
                 autoPlay
                 showIndicators={false}
@@ -28,13 +28,13 @@ export default function PartnerAbout() {
               >
                 {clients.map((item) => {
                   return (
-                    <div class="col-lg-12 col-sm-6 col-md-6">
+                    <div class="col-lg-12 col-md-12 col-md-12">
                       <div class="single-feedback-box">
                         <div class="feedback-desc">
                           <p>{item.commet}</p>
                         </div>
                         <div class="client-info">
-                          <img src={item.image} alt="image" />
+                          <img src={item.image} alt="upwork" />
                           <h3>{item.name}</h3>
                           <span>{item.designation}</span>
                         </div>
