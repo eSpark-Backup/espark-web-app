@@ -1,0 +1,10 @@
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    height: 14vh;
+}
+.logoMargin{
+    margin-top: 5px;
+}

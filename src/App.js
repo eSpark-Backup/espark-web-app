@@ -3,6 +3,7 @@ import AppWraper from "./router";
 import { Toaster } from "react-hot-toast";
 
 function App() {
+
   return (
     <>
       <AppWraper />

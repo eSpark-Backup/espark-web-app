@@ -39,15 +39,7 @@ function Herosection({ heading1 }) {
               </h1>
 
               <p>
-                eSpark Consulting Group is a consultancy firm that offers
-                services in software and embedded systems design, web
-                development using JavaScript frameworks like React.js, Vue.js,
-                and Node.js, as well as Java, HTML, and CSS, and mobile app
-                development for Android and iOS using frameworks like React
-                Native, Swift, and Flutter. We also have a team for quality
-                assurance. Our team uses advanced technology and expertise to
-                design products that meet modern technical requirements and
-                needs for the future market.
+              eSpark Consulting Group is a consultancy firm that offers services in software and embedded systems design, web development using JavaScript frameworks like React.js, Vue.js, and Node.js, as well as Java, HTML, and CSS, and mobile app development for Android and iOS using frameworks like React Native, Swift, and Flutter. We also have a team for quality assurance. Our team uses leading-edge technology and expertise to develop products that meet modern technical requirements and future market needs.
               </p>
               {/* <p>
                 To provide a complete one stop single end solution, we also
@@ -68,7 +60,7 @@ function Herosection({ heading1 }) {
               </p> */}
               {heading1 === "Services" ? null : (
                 <Link to={"/lets-talk"}>
-                  <a class="btn btn-secondary">Quote Now</a>
+                  <a class="btn btn-secondary">Reach Us!</a>
                 </Link>
               )}
             </div>

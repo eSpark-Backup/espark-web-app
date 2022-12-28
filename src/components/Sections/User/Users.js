@@ -12,12 +12,11 @@ function Users() {
       <div class="funfacts-area bg-image ptb-80">
         <div class="container">
           <div class="section-title">
-            <h2>We always try to understand users expectation</h2>
+            <h2>“Your Expectations, Our Ability”</h2>
             <div class="bar"></div>
-            {/* <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p> */}
+            <p>
+            We explore several strategies for managing Our user expectations.
+            </p>
           </div>
           <div class="row">
             <div class="col-lg-3 col-md-3 col-6 col-sm-6">
