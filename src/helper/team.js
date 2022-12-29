@@ -1,6 +1,6 @@
 export const category = [
   {
-    name: "Huzafa Ali",
+    name: "Huzafa Ali  ",
     image: "https://ca.slack-edge.com/T030AKS5N2W-U030P992ZS5-895d70772f10-512",
     message: "",
   },
