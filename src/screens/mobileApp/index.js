@@ -3,6 +3,7 @@ import HeroSectionTwo from "../../components/Hero/HeroSectionTwo";
 import About from "../../components/Sections/About/About";
 import "./style.css";
 import Slider from "react-slick";
+import { Helmet } from "react-helmet";
 
 const MobileApp = () => {
   const features = [
@@ -81,6 +82,11 @@ const MobileApp = () => {
   };
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>eSpark MobileApp</title>
+        <meta name="description" content="my project" />
+      </Helmet>
       <HeroSectionTwo
         heading1={"Command دو "}
         paragarph={

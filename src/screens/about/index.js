@@ -7,10 +7,16 @@ import Title from "../../components/title/title";
 import TwoColumns from "../../components/two-column/twoColumns";
 import UserExpectation from "../../components/user-expectation/userExpectation";
 import { partner, shapes } from "../../helper/ImageUrl";
+import { Helmet } from "react-helmet";
 
 export default function About() {
   return (
     <React.Fragment>
+         <Helmet > 
+  <meta charSet="utf-8" />
+  <title>About</title>
+  <meta name="description" content="my project" />
+</Helmet>
       <Title title={"WE LOVE WHAT WE DO"} data={shapes} />
       <TwoColumns
         imgUrl="https://esparkconsultants.com/static/media/about4.5f1757d33ddea5ac950c.png"
@@ -50,6 +56,7 @@ export default function About() {
         h2="How We Are Unique"
         p1="Both eSpark's product and its focus on results are on the customer. The level of usefulness of a tool is frequently determined by the depth of knowledge and experience of each user. Because of this, eSpark ensures that customers have a solid understanding of the fundamentals upon which to build through its extensive education and training programs. eSpark also knows how important inteGREATTM is to the customer's bottom line; so it offers proficient administrations to help with absorbing the application into tasks straightforwardly."
         data={[
+
           { qty: "2015", title: "COMPANY FORMATION" },
           { qty: "300+", title: "COMPLETED PROJECTS" },
           { qty: "200", title: "SATISFIED CUSTOMERS" },

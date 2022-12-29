@@ -6,6 +6,8 @@ import { Fade } from "react-slideshow-image";
 import Title from "../../components/title/title";
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
+import { Helmet } from "react-helmet";
+import Home from './../home/index';
 
 export default function Projects({ link }) {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
@@ -33,6 +35,11 @@ export default function Projects({ link }) {
   };
   return (
     <React.Fragment>
+      <Helmet>
+    <meta charSet="utf-8" />
+    <title>Home</title>
+    <meta name="description" content="my project" />
+  </Helmet>
       {link !== "/" ? (
         // <Fade {...properties} scale={1.4}>
 
@@ -41,6 +48,11 @@ export default function Projects({ link }) {
           class="carousel slide carouselPic"
           data-ride="carousel"
         >
+          <Helmet>
+    <meta charSet="utf-8" />
+    <title>Works</title>
+    <meta name="description" content="my project" />
+  </Helmet>
           <div class="carousel-inner">
             <div class=" carousl active ">
               <AutoplaySlider

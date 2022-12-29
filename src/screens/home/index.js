@@ -14,6 +14,7 @@ import { faqsQuestions } from "../../helper/faqs";
 
 import Projects from "../projects/projects";
 import Faqs from "../faqs/faqs";
+import { Helmet } from 'react-helmet';
 
 const   Home = () => {
   const currentRoute = window.location.pathname;

@@ -2,10 +2,16 @@ import React from "react";
 import GetInTouch from "../../components/getInTouch/GetInTouch";
 import Title from "../../components/title/title";
 import { shapes } from "../../helper/ImageUrl";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Contact</title>
+        <meta name="description" content="my project" />
+      </Helmet>
       <Title
         title={"LET'S MAKE SOMETHING AWESOME TOGETHER"}
         data={shapes}
