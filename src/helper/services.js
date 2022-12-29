@@ -49,7 +49,7 @@ export const services = [
     id: hash(),
     icon: "",
     name: "Web Development",
-    path: "Web Development",
+    path: "Web-Development",
     data: {
       image: [web_development, image2, image3, image4],
       content: [
@@ -89,7 +89,7 @@ export const services = [
     id: hash(),
     icon: "",
     name: "UI/UX Design",
-    path: "UI UX Design",
+    path: "UI-UX-Design",
     data: {
       image: [UI, image2, image3, image4],
       content: [
@@ -160,7 +160,7 @@ export const services = [
   {
     id: hash(),
     name: "Graphic Design",
-    path: "Graphic Design",
+    path: "Graphic-Design",
     data: {
       image: [Design, image2, image3, image4],
       content: [
@@ -201,7 +201,7 @@ export const services = [
     id: hash(),
     icon: "",
     name: "Web Design",
-    path: "Web Design",
+    path: "Web-Design",
     data: {
       image: [web_design, image2, image3, image4],
       content: [
@@ -241,7 +241,7 @@ export const services = [
     id: hash(),
     icon: "",
     name: "Digital e-Commerce",
-    path: "Digital e-Commerce",
+    path: "Digital-e-Commerce",
     data: {
       image: [commerce, image2, image3, image4],
       content: [
@@ -273,7 +273,7 @@ export const services = [
     id: hash(),
     icon: "",
     name: "Digital Marketing",
-    path: "Digital Marketing",
+    path: "Digital-Marketing",
     data: {
       image: [marketing, image2, image3, image4],
       content: [
@@ -314,7 +314,7 @@ export const services = [
     id: hash(),
     icon: "",
     name: "Content Writing",
-    path: "Content Writing",
+    path: "Content-Writing",
     data: {
       image: [content, image2, image3, image4],
       content: [
@@ -362,7 +362,7 @@ export const services = [
     id: hash(),
     icon: "",
     name: "Search Engine Optimization",
-    path: "Search Engine Optimization",
+    path: "Search-Engine-Optimization",
     data: {
       image: [SEO, image2, image3, image4],
       content: [
@@ -402,7 +402,7 @@ export const services = [
     id: hash(),
     icon: "",
     name: "IT Consulting",
-    path: "IT Consulting",
+    path: "IT-Consulting",
     data: {
       image: [IT_Consulting, image2, image3, image4],
       content: [
@@ -468,7 +468,7 @@ export const services = [
     id: hash(),
     icon: "",
     name: "IoT Product Development including Technical Support",
-    path: "IoT Product Development including Technical Support",
+    path: "IoT-Product-Development-including-Technical-Support",
     data: {
       image: [IOT, image2, image3, image4],
       content: [],
@@ -484,7 +484,7 @@ export const services = [
     id: hash(),
     icon: "",
     name: "PCB Layout and Designing",
-    path: "PCB Layout and Designing",
+    path: "PCB-Layout-and-Designing",
     data: {
       image: [PCB, image2, image3, image4],
       content: [],
@@ -499,7 +499,7 @@ export const services = [
     id: hash(),
     icon: "",
     name: "Embedded Firmware Development",
-    path: "Embedded Firmware Development",
+    path: "Embedded-Firmware-Development",
     data: {
       image: [embedded, image2, image3, image4],
       content: [],
@@ -515,7 +515,7 @@ export const services = [
     id: hash(),
     icon: "",
     name: "Electrical Schematic Design",
-    path: "Electrical Schematic Design",
+    path: "Electrical-Schematic-Design",
     data: {
       image: [electrical, image2, image3, image4],
       content: [],
@@ -530,7 +530,7 @@ export const services = [
     id: hash(),
     icon: "",
     name: "Reverse Engineering",
-    path: "Reverse Engineering",
+    path: "Reverse-Engineering",
     data: {
       image: [engineering, image2, image3, image4],
       content: [],
@@ -546,7 +546,7 @@ export const services = [
     id: hash(),
     icon: "",
     name: "PCB Manufacturing and Mass Production",
-    path: "PCB Manufacturing and Mass Production",
+    path: "PCB-Manufacturing-and-Mass-Production",
     data: {
       image: [PCB2, image2, image3, image4],
       content: [
@@ -614,7 +614,7 @@ export const services = [
     id: hash(),
     icon: "",
     name: "Part Searching and Analysis",
-    path: "Part Searching and Analysis",
+    path: "Part-Searching-and-Analysis",
     data: {
       image: [Analysis, image2, image3, image4],
       content: [
@@ -639,7 +639,7 @@ export const services = [
     id: hash(),
     icon: "",
     name: "Components Library Design",
-    path: "Components Library Design",
+    path: "Components-Library-Design",
     data: {
       image: [componet, image2, image3, image4],
       content: [

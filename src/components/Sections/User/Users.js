@@ -12,7 +12,7 @@ function Users() {
       <div class="funfacts-area bg-image ptb-80">
         <div class="container">
           <div class="section-title">
-            <h2>“Your Expectations, Our Ability”</h2>
+            <h2>Your Expectations, Our Ability</h2>
             <div class="bar"></div>
             <p>
             We explore several strategies for managing Our user expectations.

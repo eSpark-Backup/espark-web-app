@@ -70,7 +70,7 @@ export default function Projects({ link }) {
         // </Fade>
         <Title
           title={"Things We’ve Created"}
-          paragraph="<p> We believe our work speaks for itself. Browse our most recent  projects<br/>below.Explore more and enjoy our work in detail.</p>"
+          paragraph="<p> We believe our work speaks for itself. Browse our most recent  projects<br/>below. Explore more and enjoy our work in detail.</p>"
           link={link}
         />
       )}

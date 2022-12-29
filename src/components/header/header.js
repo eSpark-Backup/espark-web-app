@@ -8,7 +8,6 @@ import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
 
@@ -74,7 +73,7 @@ const Header = () => {
                     </li>
                     <li class="nav-item" onClick={handleNavCollapse}>
                       <Link class="nav-link" to="/project">
-                        Works
+                      Projects 
                       </Link>
                     </li>
                     <li class="nav-item">
@@ -91,7 +90,7 @@ const Header = () => {
                               ></i>
                               <Link
                                 class="nav-link"
-                                to={`services-detail/${item.name}`}
+                                to={`services-detail/${item.path}`}
                               >
                                 {item.name}
                               </Link>
@@ -102,7 +101,7 @@ const Header = () => {
                     </li>
                     <li class="nav-item" onClick={handleNavCollapse}>
                       <Link class="nav-link" to="/lets-talk">
-                        Lets-Talk
+                       Contact Us
                       </Link>
                     </li>
 

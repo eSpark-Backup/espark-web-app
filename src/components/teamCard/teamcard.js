@@ -1,5 +1,4 @@
 import React from "react";
-
 import CategoryCard from "../cards/categoryCard/categoryCard";
 import TeamSection from "../Sections/Team/teamSection";
 import "./teamCard.css";
