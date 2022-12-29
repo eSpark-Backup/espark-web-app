@@ -1,10 +1,18 @@
 import React from 'react'
 import './style.css'
 
-function CategoryCard({header}) {
+function CategoryCard({ header, image,des }) {
   return (
-    <div className='card '>
-            <h1 className='carsour'>{header}</h1>
+    <div class="card p-2">
+      <div className="row">
+        <div className="col-4">
+          <img class="card-img-top" src={image} alt="Card image cap" />
+        </div>
+        <div className="col-8">
+        <h1 className="carsour">{header}</h1>
+        <p>{des}</p>
+        </div>
+      </div>
     </div>
   )
 }

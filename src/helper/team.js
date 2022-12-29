@@ -1,61 +1,68 @@
-const hash = () => {
-  const s4 = () => {
-    return Math.floor((1 + Math.random()) * 0x10000)
-      .toString(16)
-      .substring(1);
-  };
-  return `${s4()}${s4()}-${s4()}-${s4()}-${s4()}-${s4()}${s4()}${s4()}`;
-};
-
-export const team =[
+export const category = [
   {
-    name:"Rohail Ahmed",
-    designation:"Team Lead",
-    teamName:"Web & Mobile App developers",
-    imageUrl:"https://ca.slack-edge.com/T030AKS5N2W-U0310D9GM1N-51abb7a07510-512",
-    teamMembers:[
-      {
-        name:"Muhammad Rohail Ahmed",
-        designation:"React Js Developer",
-        imageUrl:"https://ca.slack-edge.com/T030AKS5N2W-U036Q4D41U4-06af2b6053e6-512"
+    name: "Huzafa Ali",
+    image: "https://ca.slack-edge.com/T030AKS5N2W-U030P992ZS5-895d70772f10-512",
+    message: "",
+  },
+  {
+    name: "Muhammad Waqar",
+    image: "https://ca.slack-edge.com/T030AKS5N2W-U030D0EHM1A-0f2272d21752-512",
+    message: "",
+  },
+  {
+    name: " Faizan Ur Rahman ",
+    image: "https://ca.slack-edge.com/T030AKS5N2W-U0310D8RWDN-1bf719f00545-512",
+    message: "",
+  },
+];
 
+export const team = [
+  {
+    name: "Rohail Ahmed",
+    designation: "Team Lead",
+    teamName: "Web & Mobile App developers",
+    imageUrl:
+      "https://ca.slack-edge.com/T030AKS5N2W-U0310D9GM1N-51abb7a07510-512",
+    teamMembers: [
+      {
+        name: "Muhammad Rohail Ahmed",
+        designation: "React Js Developer",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U036Q4D41U4-06af2b6053e6-512",
       },
       {
-        name:"Faraz Uddin",
-        designation:"Senior React Native Developer",
-        imageUrl:"https://ca.slack-edge.com/T030AKS5N2W-U0307PMF8Q5-4a6808c116bd-512"
-
+        name: "Faraz Uddin",
+        designation: "Senior React Native Developer",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U0307PMF8Q5-4a6808c116bd-512",
       },
       {
-        name:"Muhammad Wirad Ali",
-        designation:"React Native Developer",
-        imageUrl:"https://ca.slack-edge.com/T030AKS5N2W-U030ALX4ZT4-059edb41723a-512"
-
+        name: "Muhammad Wirad Ali",
+        designation: "React Native Developer",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U030ALX4ZT4-059edb41723a-512",
       },
       {
-        name:"Muzamil Ali",
-        designation:"React JS Developer",
-        imageUrl:"https://ca.slack-edge.com/T030AKS5N2W-U038WNRH36F-c4cf665271c6-512"
-
+        name: "Muzamil Ali",
+        designation: "React JS Developer",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U038WNRH36F-c4cf665271c6-512",
       },
       {
-        name:"Mudassir Raza",
-        designation:"React Native Developer",
-        imageUrl:"https://ca.slack-edge.com/T030AKS5N2W-U03TQSC2WCC-ff1f2ea4ff55-512"
-
+        name: "Mudassir Raza",
+        designation: "React Native Developer",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U03TQSC2WCC-ff1f2ea4ff55-512",
       },
       {
-        name:"Muhammad Abideen",
-        designation:"Junior Web App Developer",
-        imageUrl:"https://ca.slack-edge.com/T030AKS5N2W-U03GWUT0BLK-972893276fbe-512"
-
+        name: "Muhammad Abideen",
+        designation: "Junior Web App Developer",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U03GWUT0BLK-972893276fbe-512",
       },
-    
-    ]
-  }
-]
-
-
+    ],
+  },
+];
 
 // export const team = [
 //   {

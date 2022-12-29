@@ -7,7 +7,7 @@ import { team } from "../../helper/team";
 const Teams = () => {
   return (
     <div>
-      <Title title={"Our Teams"} />
+      <Title title={"Our Leaders"} />
       <TeamCard data={team} />;
     </div>
   );
