@@ -460,14 +460,14 @@ export const services = [
       shortDescription:
         "IT strategy development and consulting services to enhance business productivity , eSpark Team is ready for yor help..",
       extraContent:
-        "<strong>IT consulting services are advisory services for you and we will help you assess different technology strategies for your business.</strong> <p>Our IT Services help our customers make the most of their IT investments, from providing system integration solutions, application development and management services and more.We will consider all aspects of a situation and propose a number of solutions, all with clearly defined pros and cons. Essentially, we believe that major changes to your IT infrastructure calls for a clearly defined process.</p><p>We’ll provide you strategic guidance  with regard to technology and IT infrastructures and will enable major business processes through enhancements to IT. We provide guidance and technical expertise.</p>",
+        "<strong>IT consulting services are advisory services for you and we will help you assess different technology strategies for your business.</strong> <p>Our IT Services help our customers make the most of their IT investments, from providing system integration solutions, application development, management services, and more. We will consider all aspects of a situation and propose a number of solutions, all with clearly defined pros and cons. Essentially, we believe that major changes to your IT infrastructure call for a clearly defined process.</p><p>We’ll provide you with strategic guidance with regard to technology and IT infrastructures and will enable major business processes through enhancements to IT.</p>",
       heading: "Strategy and technology consultants for your Business.",
     },
   },
   {
     id: hash(),
     icon: "",
-    name: "IoT Product Development including Technical Support",
+    name: "IoT Product Development Including Technical Support",
     path: "iot-product-development-including-technical-support",
     data: {
       image: [IOT, image2, image3, image4],
@@ -475,7 +475,7 @@ export const services = [
       shortDescription:
         "IoT is the science of connecting physical devices using the internet to build a smart and connected world and we offer you the best services regarding that.",
       extraContent:
-        "<strong>IoT is the science of connecting physical devices using the internet to build a smart and connected world. IoT uses smart software solutions and makes it possible for objects to communicate with one another. </strong> <br /> <br /> <p>Our IoT development solution helps in increasing business efficiencies by streamlining processes using the power of technology. We help you integrate mobility with IoT solution so that you have every control at your fingertips. You can manage everything using your smartphone irrespective of the device involved in IoT product development. In true sense, you experience a connected world!</p> <p>We have with us a team of highly proficient and veteran IoT app developers who use the most advanced technology to offer a complete range of app development services for the Internet of Things. A wide range of IoT app development services offered by us include many IOT services.</p> <p>You will diagnose and troubleshoot software and hardware problems and help our customers install applications and programs. <strong>Technical Support</strong> Engineer <strong>responsibilities</strong> include resolving network issues, configuring operating systems and using remote desktop connections to provide immediate <strong> support</strong>.</p>",
+        "<strong>IoT is the science of connecting physical devices using the internet to build a smart and connected world. IoT uses smart software solutions and makes it possible for objects to communicate with one another. </strong> <br /> <br /> <p>Our IoT development solution helps in increasing business efficiencies by streamlining processes using the power of technology. We help you integrate mobility with IoT solution so that you have every control at your fingertips. You can manage everything using your smartphone irrespective of the device involved in IoT product development. In true sense, you experience a connected world!</p> <p>We have with us a team of highly proficient and veteran IoT app developers who use the most advanced technology to offer a complete range of app development services for the Internet of Things. A wide range of IoT app development services is offered to us, including many IoT services.</p> <p>You will diagnose and troubleshoot software and hardware problems and help our customers install applications and programs. <strong>Technical Support Engineer responsibilities include resolving network issues, configuring operating systems and using remote desktop connections to provide immediate support.</strong>.</p>",
       heading:
         "The IoT will generate an enormous, truly unprecedented amount of precise information about buyers and their needs. It’s a marketer’s dream come true.",
     },
@@ -506,7 +506,7 @@ export const services = [
       shortDescription:
         "Embedded firmware is the flash memory chip that stores specialized software running in a chip in an embedded device to control its functions. In eSpark we have talented people working closely so that no error occurs in firmware.",
       extraContent:
-        "<strong > Embedded firmware is the flash memory chip that stores specialized software running in a chip in an embedded device to control its functions.</strong> <br/><br/> <p>Digital transformation is touching upon various physical objects, making them smart and powerful. The engine for such devices is embedded software that is an integral part of the rapidly developing IoT ecosystem. Here’s a short list of some popular languages for software and embedded firmware development.</p> <ul><li> <strong>C/C++: C </strong> is something of a legacy language for embedded systems and tends to be preferred over C++.</li><li> <strong >Hardware Description Languages (HDLs): </strong> The most popular are probably VHDL or Verilog. If you’re programming an FPGA or designing an ASIC, use an HDL to define digital logic. SystemVerilog is a good choice if you are designing a system with extensive digital logic.</li> <li> <strong >Python/MicroPython:</strong >Python is great for software applications, but many do not prefer it due to the periodic garbage collection operations required, which may create some latency problems. However, there is such a huge developer community around Python that developers can access a huge range of functionality and powerful computing capabilities.</li></ul>",
+        "<strong >Embedded firmware is the flash memory chip that stores specialized software running on a chip in an embedded device to control its functions.</strong> <br/><br/> <p>Digital transformation is touching upon various physical objects, making them smart and powerful. The engine for such devices is embedded software that is an integral part of the rapidly developing IoT ecosystem. Following is a list of some famous languages of software and embedded firmware development.</p> <ul><li> <strong>C/C++: C </strong> is something of a legacy language for embedded systems and tends to be preferred over C++.</li><li> <strong >Hardware Description Languages (HDLs): </strong> The most popular are probably VHDL or Verilog. If you’re programming an FPGA or designing an ASIC, use an HDL to define digital logic. SystemVerilog is a good choice if you are designing a system with extensive digital logic.</li> <li> <strong >Python/MicroPython:</strong >Python is great for software applications, but many do not prefer it due to the periodic garbage collection operations required, which may create some latency problems. However, there is such a huge developer community around Python that developers can access a huge range of functionality and powerful computing capabilities.</li></ul>",
       heading:
         "Quality isn’t something that can be argued into an article or promised into it. It must be put there",
     },
@@ -604,24 +604,24 @@ export const services = [
         ),
       ],
       shortDescription:
-        "The manufacture of the PCBs is normally achieved using a chemical etching process. This process is very unique and our developers work very hard for our clients satisfaction.",
+        "The manufacture of the PCBs is normally achieved using a chemical etching process. This process is very unique And our developers work very hard for our clients satisfaction.",
       extraContent:
-        "<p>The manufacture of the <strong>PCBs </strong> is normally achieved using a chemical etching process.</p> <br /> <p> <strong>Printed Circuit Board (PCB)</strong> fabrication is the assembly method for circuit boards used in electronic and computer devices. The layers of the board are put together along with the specific surface pattern so it can be used in electronics <strong>manufacturing</strong>.</p>",
+        "<p>The manufacture of the <strong>PCBs </strong> is normally achieved using a chemical etching process.</p> <br /> <p> <strong>Printed Circuit Board (PCB)</strong> fabrication is the assembly method for circuit boards used in electronic And computer devices. The layers of the board are put together along with the specific surface pattern so it can be used in electronics <strong>manufacturing</strong>.</p>",
       heading: "You must have a supplier relationship of constant improvement",
     },
   },
   {
     id: hash(),
     icon: "",
-    name: "Part Searching and Analysis",
+    name: "Part Searching And Analysis",
     path: "part-searching-and-analysis",
     data: {
       image: [Analysis, image2, image3, image4],
       content: [
         serviceItems(
           2,
-          "Components like:",
-          "Transistor,IC ,Resistor ,Capacitor ,Diode We never compromise quality when it comes to parts selection. Our sources are always derived from renowned suppliers such as Digikey, Mouser, Farnell among others.",
+          "Components",
+          "Transistor, IC, Resistor, Capacitor & Diode.  We never compromise quality when it comes to the selection of parts. Our sources are always derived from renowned suppliers such as Digikey, Mouser, Farnell among others.",
           man_and_women,
           cta_shape_1,
           circle_1
@@ -630,9 +630,9 @@ export const services = [
       shortDescription:
         "Selecting the most cost effective yet reliable electronic components from reputed supplier that best match the requirements of the product.",
       extraContent:
-        "<strong>Selecting the most cost effective yet reliable electronic components from reputed supplier that best match the requirements of the product.</strong><br /> <br /> <p>Our professional methodology involves first understanding the complete requirements of the product. We then proceed to analyse the best suited parts that can ensure noise reduction, cost effectiveness, logic implementation, hazard immunity and reliability. This is found by thoroughly studying the datasheets of parts and then short listing the correct components. After short listing, the prices are compared from several suppliers, ultimately settling upon those that match the quality standarda yet ensuring less cost.</p>",
+        "<strong>Selecting the most cost effective yet reliable electronic components from reputed supplier that best match the requirements of the product.</strong><br /> <br /> <p>Our professional methodology involves first understanding the complete requirements of the product. We then proceed to analyse the best suited parts that can ensure noise reduction, cost effectiveness, logic implementation, hazard immunity and reliability. This is found by thoroughly studying the Datasheets of parts and then short listing the correct components. After short listing, the prices are compared from several suppliers, ultimately settling upon those that match the quality standard a yet ensuring less cost.</p>",
       heading:
-        "With our present knowledge on hardware we can face any challenges coming towards us and select best components for your project.",
+        "With our knowledge of hardware we can deal with any challenges coming towards us and select the best components for your project.",
     },
   },
   {
@@ -649,7 +649,7 @@ export const services = [
           <div class="col-lg-6 features-details">
             <div class="features-details-desc">
               <h3>Who you are</h3>
-              <ul class="features-details-list">
+              <ul class="features-details-list"  >
                 <li>An agency building component libraries for clients.</li>
                 <li>An in-house development team.</li>
                 <li>
@@ -665,17 +665,17 @@ export const services = [
         serviceItems(
           3,
           "",
-          "We are simply here to provide our clients with all the knowledge we have. We are available to work anytime. we are an agency that delivers front-end code (amongst many other things) to clients. We usually hand over the code we write to either the client’s in-house developers or a third-party back-end development agency for implementation into whatever application or CMS is being built. The libraries we hand over actually rarely live on in the format that we deliver them – instead they are often serve as more of a kind of ‘implementation documentation’ for other developers. We always encourage our clients to use what we deliver as a starting point for a more integrated, ‘living’ component system, but integration is hard and how to persist the work we deliver is a per-project consideration, and often largely determined by the depth of the client’s commitment to deeply integrating a modularised, component-based design and development mindset into their everyday workflow.",
+          "We are simply here to provide our clients with all the knowledge we have. We are available to work anytime. We are an agency that delivers front-end code (amongst many other things) to clients. We usually hand over the code we write to either the client’s in-house developers or a third-party back-end development agency for implementation into whatever application or CMS is being built. The libraries we hand over actually rarely lives on in the format that we deliver them – instead they often serve as more of a kind of ‘implementation documentation’ for other developers. We always encourage our clients to use what we deliver as a starting point for a more integrated, ‘living’ component system, but integration is hard and how to persist the work we deliver is a per-project consideration, and often largely determined by the depth of the client’s commitment to deeply integrating a modularised, component-based design and development mindset into their everyday workflow.",
           man_and_women,
           circle_1,
           cta_shape_1
         ),
       ],
       shortDescription:
-        "Our group of talented people work very hard to organize components in a meaningful way that is beneficial for our clients task.",
+        "Our group of talented people works very hard to organize the components in a meaningful manner that is beneficial to our customer task.",
       extraContent:
-        "<strong>A collection of components, organised in a meaningful manner, and often (but not necessarily) providing some way to browse and preview those components and their associated assets.</strong>",
-      heading: "Design is intelligence made visible",
+        "A collection of components, organised in a meaningful manner, and often (but not necessarily) providing some way to browse and preview those components and their associated assets.",
+      heading: "Design is the visible intelligence.",
     },
   },
 ];
