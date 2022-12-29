@@ -8,7 +8,6 @@ import styles from './style.module.css'
 const ServiceDetail = () => {
 
   const params = useParams();
-  console.log("params",params);
   
   const filterData = services.filter((item) => item.path === params.id);
 
