@@ -331,7 +331,7 @@ export const projects = [
     data: {
       image: img_45,
       projectUrl: "https://www.seniorwaste.com/",
-      name: "Senior W aste",
+      name: "Senior Waste",
     },
   }
   ,
