@@ -15,7 +15,7 @@ const HeroSectionOne = ({ filterData }) => {
                     __html: filterData[0]?.data?.shortDescription,
                   }}
                 ></p>
-                <Link class="btn btn-primary" to="/lets-talk">
+                <Link class="btn btn-primary" to="/contact">
                   Quote Now
                 </Link>
               </div>
