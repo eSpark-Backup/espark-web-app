@@ -42,7 +42,7 @@ export default function About() {
         h3="Ready to talk?"
         p1="Our team is here to answer your question about eSpark"
         btn="Contact Us"
-        href="/lets-talk"
+        href="/contact"
         getStated=""
       />
       <Partners h5="" data={partner} />
@@ -59,7 +59,7 @@ export default function About() {
         p2="Don"
         p2_span="t hesitate to contact us"
         btnTitle="Contact Us"
-        href="/lets-talk"
+        href="/contact"
       />
     </React.Fragment>
   );

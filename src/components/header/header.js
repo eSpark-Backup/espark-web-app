@@ -100,7 +100,7 @@ const Header = () => {
                       </ul>
                     </li>
                     <li class="nav-item" onClick={handleNavCollapse}>
-                      <Link class="nav-link" to="/lets-talk">
+                      <Link class="nav-link" to="/contact">
                        Contact Us
                       </Link>
                     </li>
