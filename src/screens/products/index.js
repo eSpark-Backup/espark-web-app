@@ -8,7 +8,8 @@ import TwoColumns from "../../components/two-column/twoColumns";
 import { shapes } from "../../helper/ImageUrl";
 import { products } from "../../helper/products";
 import "./style.css";
-import { Helmet } from 'react-helmet';
+import SEO from '../../utils/SEO';
+
 
 
 const Products = () => {
@@ -24,14 +25,12 @@ const Products = () => {
     setActive(item.id);
     setProductData(item);
   };
+  const location = window.location.href
+ console.log(location, "locatioan")
 
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Products</title>
-        <meta name="description" content="my project" />
-      </Helmet>
+      <SEO title="Product" description="eSpark web app"/>
       <HeroSectionThree
         heading1={productData?.name}
         paragraph={

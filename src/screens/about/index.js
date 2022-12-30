@@ -1,4 +1,5 @@
 import React from "react";
+
 import Partners from "../../components/partners/partners";
 import ReadyToTalk from "../../components/ready-to-talk/readyToTalk";
 import Users from "../../components/Sections/User/Users";
@@ -7,16 +8,11 @@ import Title from "../../components/title/title";
 import TwoColumns from "../../components/two-column/twoColumns";
 import UserExpectation from "../../components/user-expectation/userExpectation";
 import { partner, shapes } from "../../helper/ImageUrl";
-import { Helmet } from "react-helmet";
-
+import SEO from '../../utils/SEO';
 export default function About() {
   return (
     <React.Fragment>
-         <Helmet > 
-  <meta charSet="utf-8" />
-  <title>About</title>
-  <meta name="description" content="my project" />
-</Helmet>
+      <SEO title="About" description="eSpark web app"/>
       <Title title={"WE LOVE WHAT WE DO"} data={shapes} />
       <TwoColumns
         imgUrl="https://esparkconsultants.com/static/media/about4.5f1757d33ddea5ac950c.png"

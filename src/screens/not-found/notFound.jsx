@@ -2,16 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./style.module.css";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { Helmet } from 'react-helmet';
+import SEO from '../../utils/SEO';
 
 function NotFound() {
+  const location = window.location.href
+ console.log(location, "locatioan")
   return (
     <>
-     <Helmet>
-    <meta charSet="utf-8" />
-    <title>NotFound</title>
-    <meta name="description" content="my project" />
-  </Helmet>
+     <SEO title="Not found" description="eSpark web app"/>
       <div className={styles.notFoundWrapper}>
         <h1>404 Page Not Found</h1>
         <p className={styles.btnWrapper}>

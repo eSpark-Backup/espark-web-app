@@ -6,11 +6,12 @@ import { Fade } from "react-slideshow-image";
 import Title from "../../components/title/title";
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
-import { Helmet } from "react-helmet";
 import Home from './../home/index';
-
+import SEO from '../../utils/SEO';
 export default function Projects({ link }) {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
+  const location = window.location.href
+ console.log(location, "locatioan")
   const properties = {
     prevArrow: (
       <button className="owl-nav1">
@@ -35,11 +36,7 @@ export default function Projects({ link }) {
   };
   return (
     <React.Fragment>
-      <Helmet>
-    <meta charSet="utf-8" />
-    <title>Home</title>
-    <meta name="description" content="my project" />
-  </Helmet>
+      <SEO title="Home" description="eSpark web app" ogImage='https://esparkconsultants.com/old/wp-content/uploads/2020/09/3081627-2048x1365-1-1300x867.jpg' ogUrl="https://esparkconsultants.com/" />
       {link !== "/" ? (
         // <Fade {...properties} scale={1.4}>
 
@@ -48,11 +45,7 @@ export default function Projects({ link }) {
           class="carousel slide carouselPic"
           data-ride="carousel"
         >
-          <Helmet>
-    <meta charSet="utf-8" />
-    <title>Works</title>
-    <meta name="description" content="my project" />
-  </Helmet>
+          <SEO title="Work" description="eSpark web app"/>
           <div class="carousel-inner">
             <div class=" carousl active ">
               <AutoplaySlider

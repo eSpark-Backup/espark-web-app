@@ -1,16 +1,17 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import Title from "./../../components/title/title";
 import { shapes } from "./../../helper/ImageUrl";
-
+import SEO from '../../utils/SEO';
 const Privacy = () => {
+ const location = window.location.href
+ console.log(location, "locatioan")
+
+ const metaTag = () =>{
+  
+ }
   return (
     <div>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Privacy</title>
-        <meta name="description" content="my project" />
-      </Helmet>
+      <SEO title="Privacy" description="eSpark web app" />
       <Title title={"Privacy Policy "} data={shapes} />
       <div className="container">
         <div className="row">
@@ -595,12 +596,7 @@ const Privacy = () => {
             <h2>Security of Your Personal Data</h2>
             <p>
               The security of Your Personal Data is important to Us, but
-              remember that no method of transmissioimport { Helmet } from 'react-helmet';
-n over the Internet, orimport { Helmet } from 'react-helmet';
-import { Helmet } from 'react-helmet';
-import { Helmet } from 'react-helmet';
-import Privacy from './Privacy';
-
+              remember that no method of transmission over the Internet, or
               method of electronic storage is 100% secure. While We strive to
               use commercially acceptable means to protect Your Personal Data,
               We cannot guarantee its absolute security.

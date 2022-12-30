@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { BrowserRouter as Router, useRoutes } from "react-router-dom";
 import About from "../screens/about";
 import Blog from "../screens/blog/blog";
@@ -17,7 +17,6 @@ import Teams from "../screens/teams/teams";
 
 const AppRoutes = () => {
   const data = window.scrollTo(0, 0);
-
   let routes = useRoutes([
     { path: "/", element: <Home /> },
     { path: "/about", element: <About /> },

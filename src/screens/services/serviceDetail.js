@@ -4,9 +4,11 @@ import HeroSectionOne from "../../components/Hero/HeroSectionOne";
 import { serviceItems } from "../../helper/ImageUrl";
 import { services } from "../../helper/services";
 import styles from "./style.module.css";
-import { Helmet } from 'react-helmet';
+import SEO from '../../utils/SEO';
 
 const ServiceDetail = () => {
+  const location = window.location.href
+ console.log(location, "locatioan")
   const params = useParams();
   
   const filterData = services.filter((item) => item.path === params.id);
@@ -14,11 +16,7 @@ const ServiceDetail = () => {
   const even = (item) => {
     return (
       <>
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>ServiceDetail</title>
-          <meta name="description" content="my project" />
-        </Helmet>
+      <SEO title="ServiceDetails" description="eSpark web app"/>
         <div class="repair-cta-area bg-0f054b ">
           <div class="container">
             <div class="row align-items-center">
