@@ -59,7 +59,7 @@ function Herosection({ heading1 }) {
                 requirements and needs and for future market reality.
               </p> */}
               {heading1 === "Services" ? null : (
-                <Link to={"/lets-talk"}>
+                <Link to={"/contact"}>
                   <a class="btn btn-secondary">Reach Us!</a>
                 </Link>
               )}

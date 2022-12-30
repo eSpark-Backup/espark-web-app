@@ -8,12 +8,7 @@ import { Helmet } from 'react-helmet';
 const Teams = () => {
   return (
     <div>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Teams</title>
-        <meta name="description" content="my project" />
-      </Helmet>
-      <Title title={"Our Teams"} />
+      <Title title={"Our Leaders"} />
       <TeamCard data={team} />;
     </div>
   );

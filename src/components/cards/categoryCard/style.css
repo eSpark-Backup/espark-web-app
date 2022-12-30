@@ -1,38 +1,44 @@
-.divWrapper{
-    width: 400px;
-    height: 20vh;
-    border-radius: 15px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    
+.divWrapper {
+  width: 400px;
+  height: 20vh;
+  border-radius: 15px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
 }
 
-.card{
-    margin : auto;
-    height: 24vh;
-    width: 400px;
-    overflow : hidden;
-    border-radius : 20px;
-    background : white;
-    transition: all .2s;
-    box-shadow:5px 5px 15px rgba(0,0,0, .3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .card:hover {
-    box-shadow:5px 5px 25px rgba(0,0,0, .5);
-    transform: translate(-5px, -5px);
-  }
-  
-  .card:hover .icon svg{
-    animation : iconjln 1s;
-  }
+.card {
+  margin: auto;
+  /* height: 24vh; */
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  background: white;
+  transition: all .2s;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
 
-  .carsour{
-    cursor: pointer;
-  }
+.card img {
+  width: 200px;
+  border-radius: 10%;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, .5);
+  transform: translate(-5px, -5px);
+}
+
+.card:hover .icon svg {
+  animation: iconjln 1s;
+}
+
+.carsour {
+  cursor: pointer;
+  padding-top: 20px;
+}

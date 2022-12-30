@@ -27,7 +27,7 @@ const AppRoutes = () => {
     { path: "/services", element: <Services /> },
     { path: "/products", element: <Products /> },
     { path: "/services-detail/:id", element: <ServiceDetail /> },
-    { path: "/lets-talk", element: <Contact /> },
+    { path: "/contact", element: <Contact /> },
     { path: "/espark-app", element: <MobileApp /> },
     { path: "/privacy-policy", element: <Privacy /> },
     { path: "/teams", element: <Teams /> },

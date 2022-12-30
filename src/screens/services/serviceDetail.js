@@ -8,6 +8,7 @@ import { Helmet } from 'react-helmet';
 
 const ServiceDetail = () => {
   const params = useParams();
+  
   const filterData = services.filter((item) => item.path === params.id);
 
   const even = (item) => {

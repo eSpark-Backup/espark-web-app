@@ -31,9 +31,7 @@ function Features({ heading }) {
                   <img src={icon4} alt="image" />
                 </div>
                 <h3>
-                  <Link to={"/service"}>
-                    <a>Marketing</a>
-                  </Link>
+                    Marketing
                 </h3>
                 <p>
                 eSpark is a full-service digital marketing agency with over four years of experience delivering the most impressive results for many customers across a number of industries.
@@ -64,9 +62,7 @@ function Features({ heading }) {
                   <img src={icon5} alt="image" />
                 </div>
                 <h3>
-                  <Link to={"/service"}>
-                    <a>Technology</a>
-                  </Link>
+                Technology
                 </h3>
                 <p>
                 Here at eSpark, we deliver an array of tech-based solutions. These include delivering software, programming, networking and project management solutions.
@@ -97,9 +93,7 @@ function Features({ heading }) {
                   <img src={icon6} alt="image" />
                 </div>
                 <h3>
-                  <Link to={"/service"}>
-                    <a>Development</a>
-                  </Link>
+                    Development
                 </h3>
                 <p>
                 Our developers have enough expertise to develop your desired programs. Here you can find top-notch developers. Our software & applications are compatible.
