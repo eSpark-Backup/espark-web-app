@@ -1,5 +1,5 @@
 import React from "react";
-// import mlMainPic from "../../../../src/assets/images/ml-banner-image/ml-main-pic.png";
+import mlMainPic from "../../../../src/assets/images/ml-banner-image/ml-main-pic.png";
 import one from "../../../../src/assets/images/ml-banner-image/one.png";
 import two from "../../../../src/assets/images/ml-banner-image/two.png";
 import three from "../../../../src/assets/images/ml-banner-image/three.png";
@@ -122,11 +122,11 @@ function Herosection({ heading1 }) {
                 class="animate__animated animate__fadeInUp animate__delay-0.4s"
                 alt="image"
               />
-              {/* <img
+              <img
                 src={mlMainPic}
                 class="animate__animated animate__fadeInUp animate__delay-0.5s"
                 alt="image"
-              /> */}
+              />
             </div>
           </div>
         </div>

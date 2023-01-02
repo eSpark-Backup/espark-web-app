@@ -10,12 +10,8 @@ const Teams = () => {
  console.log(location, "locatioan")
   return (
     <div>
-<<<<<<< Updated upstream
-      <Title title={"Our Leaders"} />
-=======
       <SEO title="Teams" description="eSpark web app"/>
       <Title title={"Our Teams"} />
->>>>>>> Stashed changes
       <TeamCard data={team} />;
     </div>
   );
