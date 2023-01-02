@@ -8,6 +8,9 @@ import TwoColumns from "../../components/two-column/twoColumns";
 import { shapes } from "../../helper/ImageUrl";
 import { products } from "../../helper/products";
 import "./style.css";
+import SEO from '../../utils/SEO';
+
+
 
 const Products = () => {
   const [productData, setProductData] = useState([]);
@@ -22,10 +25,12 @@ const Products = () => {
     setActive(item.id);
     setProductData(item);
   };
-
+  const location = window.location.href
+ console.log(location, "locatioan")
 
   return (
     <>
+      <SEO title="Product" description="eSpark web app"/>
       <HeroSectionThree
         heading1={productData?.name}
         paragraph={
