@@ -8,11 +8,9 @@ import Title from "../../components/title/title";
 import TwoColumns from "../../components/two-column/twoColumns";
 import UserExpectation from "../../components/user-expectation/userExpectation";
 import { partner, shapes } from "../../helper/ImageUrl";
-import SEO from '../../utils/SEO';
 export default function About() {
   return (
     <React.Fragment>
-      <SEO title="About" description="eSpark web app"/>
       <Title title={"WE LOVE WHAT WE DO"} data={shapes} />
       <TwoColumns
         imgUrl="https://esparkconsultants.com/static/media/about4.5f1757d33ddea5ac950c.png"

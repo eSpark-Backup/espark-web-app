@@ -8,14 +8,10 @@ import Shape2_10 from "../../assets/images/shape2-10.svg";
 import BlogCard from "../../components/blog-card/blogCard";
 import blog1 from "../../assets/images/blog-image/blog1.jpg";
 import Pagination from "../../components/pagination/pagination";
-import SEO from '../../utils/SEO';
 
 export default function Blog() {
-  const location = window.location.href
- console.log(location, "locatioan")
   return (
     <React.Fragment>
-      <SEO title="Blogs" description="Web site created using create-react-app"/>
       <Title
         title={"Blog Grid"}
         data={[

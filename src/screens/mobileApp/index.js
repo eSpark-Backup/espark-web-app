@@ -3,11 +3,8 @@ import HeroSectionTwo from "../../components/Hero/HeroSectionTwo";
 import About from "../../components/Sections/About/About";
 import "./style.css";
 import Slider from "react-slick";
-import SEO from '../../utils/SEO';
 
 const MobileApp = () => {
-  const location = window.location.href
- console.log(location, "locatioan")
   const features = [
     {
       name: "Order History",
@@ -84,7 +81,6 @@ const MobileApp = () => {
   };
   return (
     <div>
-      <SEO title="eSpark MobileApp" description="eSpark web app"/>
 
       <HeroSectionTwo
         heading1={"Command دو "}

@@ -2,7 +2,7 @@ export const seoData = [
     {
       "page": "Home",
       "url": "/",
-      "title": "eSpark Consulting Group",
+      "title": "Home",
       "description": "eSpark Freelancing Our Passion Leads To Design And Develop Android Application Also Website Develop And PCB Designers - Development By eSpark Consultants Group.",
       "keywords": "Freelancing, software house, Software Company.",
       "canonical": "https://esparkconsultants.com/",
@@ -35,7 +35,7 @@ export const seoData = [
     {
       "page": "About",
       "url": "/about",
-      "title": "About | eSpark Consulting Group",
+      "title": "About ",
       "description": "eSpark aims to empower you to become a true enterprise. We specialised in bespoke desktop, web and mobile software solutions for your business.",
       "keywords": "Software house, software company, aims ,about",
       "canonical": "https://esparkconsultants.com/about",
@@ -68,7 +68,7 @@ export const seoData = [
     {
       "page": "Projects",
       "url": "/project",
-      "title": "Projects | eSpark Consulting Group",
+      "title": "Projects",
       "description": "You can find our collection of innovative and hard-hitting projects that are used by millions of our users. Discover our detailed-oriented projects.",
       "keywords": "Latest Projects, detailed work, Complete Project",
       "canonical": "https://esparkconsultants.com/project",
@@ -101,7 +101,7 @@ export const seoData = [
     {
       "page": "Services",
       "url": "/services",
-      "title": "Services | eSpark Consulting Group",
+      "title": "Services",
       "description": "We believe in offering our clients the best services & dispose of the client with highly qualified consultants and project managers throughout the project's life.",
       "keywords": "Best Service, High quality, Assistance",
       "canonical": "https://esparkconsultants.com/services",
@@ -134,7 +134,7 @@ export const seoData = [
     {
       "page": "Web Development",
       "url": "/services-detail/web-development",
-      "title": "Web Development-Sevices | eSpark Consulting Group",
+      "title": "Web Development-Sevices",
       "description": "We provide a technical aspect of your website user experience that your audience engages on your web & create, build & maintain websites.",
       "keywords": "Web Development  ,  Website Development",
       "canonical": "https://esparkconsultants.com/services-detail/web-development",
@@ -167,7 +167,7 @@ export const seoData = [
     {
       "page": "UX/UI Design",
       "url": "/services-detail/ui-ux-design",
-      "title": "UX/UI Design-Services | eSpark Consulting Group ",
+      "title": "UX/UI Design-Services",
       "description": "\"We provide the most captivating & eye catching interfaces for your site & services for both web and mobile that reflects your business ideology."
     },
     {
@@ -209,7 +209,7 @@ export const seoData = [
     {
       "page": "Graphic Design",
       "url": "/services-detail/graphic-design",
-      "title": "Graphic Design-Services | eSpark Consulting Group",
+      "title": "Graphic Design-Services",
       "description": "\"We provide the most captivating & eye catching interfaces for your site & services for both web and mobile that reflects your business ideology."
     },
     {
@@ -254,7 +254,7 @@ export const seoData = [
     {
       "page": "Web Design",
       "url": "/services-detail/web-design",
-      "title": "Web Design -Sevices | eSpark Consulting Group",
+      "title": "Web Design-Sevices",
       "description": "\"We provide the most captivating & eye catching interfaces for your site & services for both web and mobile that reflects your business ideology."
     },
     {
@@ -296,7 +296,7 @@ export const seoData = [
     {
       "page": "Digital e-Commerce",
       "url": "/services-detail/digital-e-commerce",
-      "title": "Digital e-Commerce  | eSpark Consulting Group",
+      "title": "Digital e-Commerce-Sevices",
       "description": "Grow your Business with eSpark. Browse & explore a ton of products, also the solution of e-commerce problems",
       "keywords": "Digital e-Commerce, commerce infrastructure,mobile networks",
       "canonical": "https://esparkconsultants.com/services-detail/digital-e-commerce",
@@ -329,7 +329,7 @@ export const seoData = [
     {
       "page": "Digital Marketing",
       "url": "/services-detail/digital-marketing",
-      "title": "Digital Marketing  | eSpark Consulting Group",
+      "title": "Digital Marketing-Sevices",
       "description": "We provide professional digital marketing services to give the best digital exposure you deserve & try to reflect our beliefs through dedication in our services. ",
       "keywords": "Digital Marketing,Digital Business,",
       "canonical": "https://esparkconsultants.com/services-detail/digital-marketing",
@@ -362,7 +362,7 @@ export const seoData = [
     {
       "page": "Content Writing",
       "url": "/services-detail/content-writing",
-      "title": "Content Writing-Services | eSpark Consulting Group",
+      "title": "Content Writing-Services",
       "description": "Connect with talented content writers and order high-quality content for your website with our professional content writer.",
       "keywords": "Content Writting, Writting,Content",
       "canonical": "https://esparkconsultants.com/services-detail/content-writing",
@@ -395,7 +395,7 @@ export const seoData = [
     {
       "page": "Search Engine Optimization",
       "url": "/services-detail/search-engine-optimization",
-      "title": "Search Engine Optimization  | eSpark Consulting Group",
+      "title": "Search Engine Optimization-Sevices",
       "description": "Search engine optimization is a powerful and cost-effective method of online marketing. We provide complete support to help you rank top on the search engine.",
       "keywords": "Search Engine Optimization, SEO, Search Engine",
       "canonical": "https://esparkconsultants.com/services-detail/search-engine-optimization",
@@ -428,7 +428,7 @@ export const seoData = [
     {
       "page": "IT Consulting",
       "url": "/services-detail/it-consulting",
-      "title": "IT Consulting-Service | eSpark Consulting Group",
+      "title": "IT Consulting-Service",
       "description": "\"IT consulting services are advisory services for you and we will help you assess different technology strategies for your business. We’ll Raise you Up."
     },
     {
@@ -470,7 +470,7 @@ export const seoData = [
     {
       "page": "IoT Product Development",
       "url": "/services-detail/iot-product-development-including-technical-support",
-      "title": "IoT Product Development-Services | eSpark Consulting Group",
+      "title": "IoT Product Development-Services ",
       "description": "\"IoT will generate an enormous, truly unprecedented amount of precise information about buyers. IoT Product Development including Technical Support."
     },
     {
@@ -512,7 +512,7 @@ export const seoData = [
     {
       "page": "PCB Layout And Designing",
       "url": "/services-detail/pcb-layout-and-designing",
-      "title": "PCB Layout And Designing | eSpark Consulting Group",
+      "title": "PCB Layout And Designing-Sevices ",
       "description": "PCB layout and designing is a skill requiring knowledge of PCB design software and PCB CAD system. We are those specialist that will satisfy you with our work.",
       "keywords": "PCB Layout And Designing, PCB Layout, PCB Designing,",
       "canonical": "https://esparkconsultants.com/services-detail/pcb-layout-and-designing",
@@ -545,7 +545,7 @@ export const seoData = [
     {
       "page": "Embedded Firmware Development",
       "url": "/services-detail/embedded-firmware-development",
-      "title": "Embedded Firmware Development | eSpark Consulting Group",
+      "title": "Embedded Firmware Development-Sevices",
       "description": "Embedded Firmware Development is a specialized software running in a chip in an embedded device to control its functions.",
       "keywords": "Embedded Firmware Development, Embedded Development,Firmware Developement",
       "canonical": "https://esparkconsultants.com/services-detail/embedded-firmware-development",
@@ -578,7 +578,7 @@ export const seoData = [
     {
       "page": "Electrical Schematic Design",
       "url": "/services-detail/electrical-schematic-design",
-      "title": "Electrical Schematic Design | eSpark Consulting Group",
+      "title": "Electrical Schematic Design-Sevices",
       "description": "The main purpose of a Schematic Design is to emphasize circuit elements. We are here to provide you all the details so you can trust and strart project with us.",
       "keywords": "Electrical Schematic Design, Electrical Design",
       "canonical": "https://esparkconsultants.com/services-detail/electrical-schematic-design",
@@ -611,7 +611,7 @@ export const seoData = [
     {
       "page": "Reverse Engineering",
       "url": "/services-detail/reverse-engineering",
-      "title": "Reverse Engineering | eSpark Consulting Group",
+      "title": "Reverse Engineering-Sevices",
       "description": "\"Reverse Engineering is used for learning tool, and way to make new and compatible products. It is especially important with computer hardware and software."
     },
     {
@@ -695,7 +695,7 @@ export const seoData = [
     {
       "page": "Part Searching And Analysis",
       "url": "/services-detail/part-searching-and-analysis",
-      "title": "Part Searching And Analysis | eSpark Consulting Group",
+      "title": "Part Searching And Analysis-Sevices",
       "description": "\"We can face any challenges come towards Part Searching and Analysis for your project. We never compromise quality when it comes to parts selection."
     },
     {
@@ -737,7 +737,7 @@ export const seoData = [
     {
       "page": "Components Library Design",
       "url": "/services-detail/components-library-design",
-      "title": "Components Library Design - Service | eSpark Consulting Group",
+      "title": "Components Library Design - Service ",
       "description": "\"The appropriate format and structure for components library is very much tied. We are simply here to provide our clients with all the knowledge we have."
     },
     {
@@ -778,8 +778,8 @@ export const seoData = [
     },
     {
       "page": "Contact US",
-      "url": "/lets-talk",
-      "title": "Contact US | eSpark Consulting Group",
+      "url": "/contact",
+      "title": "Contact US",
       "description": "We are just one ping away. Feel free to reach us. We'll get back to you as soon as possible. Your query is our utmost priority. Connect with us!",
       "keywords": "Contact, Talk, query here, Reach us, Call-us, ",
       "canonical": "https://esparkconsultants.com/ets-talk",
@@ -812,7 +812,7 @@ export const seoData = [
     {
       "page": "Products",
       "url": "/products",
-      "title": "Products | eSpark Consulting Group",
+      "title": "Products",
       "description": "We don't find customers for our product, we find products for our customers with high-quality & guaranteed services. Discover our products!",
       "keywords": "High quality products, Gadgets, innovations, equipments",
       "canonical": "https://esparkconsultants.com/products",
@@ -841,5 +841,5 @@ export const seoData = [
       "twitterImage": "https://startp-next.envytheme.com/images/iot-features-image/iot-feature-image1.png",
       "twitterSite": "esparkconsgroup",
       "twitterTitle": "Products | eSpark Consulting Group"
-    }
+    },
   ]

@@ -2,14 +2,10 @@ import React from "react";
 import GetInTouch from "../../components/getInTouch/GetInTouch";
 import Title from "../../components/title/title";
 import { shapes } from "../../helper/ImageUrl";
-import SEO from '../../utils/SEO';
 
 const Contact = () => {
-  const location = window.location.href
- console.log(location, "locatioan")
   return (
     <div>
-      <SEO title="Contact" description="eSpark web app"/>
       
       <Title
         title={"LET'S MAKE SOMETHING AWESOME TOGETHER"}
