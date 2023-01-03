@@ -5,8 +5,6 @@ import ProjectNestedCard from "../../components/project-nested-card/projectNeste
 import { projects } from "../../helper/projects";
 
 export default function ProjectDetails() {
-  const location = window.location.href
- console.log(location, "locatioan")
   const params = useParams();
   const filterProjects = projects.filter((item) => item.name == params.id);
 

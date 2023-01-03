@@ -21,7 +21,7 @@ const Header = () => {
     <header id="header" class="headroom is-sticky">
       <div class="startp-nav">
         <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-light">
+          <nav class="navbar navbar-expand-md navbar-light">
             <Link class="navbar-brand" to="/">
               <img
                 src={require(isAppScreen

@@ -71,8 +71,8 @@ export default function TwoColumns({
       <div class="cta-area pt-5">
         <div class="container">
           <div class="row ">
-            <div class="col-lg-2 col-md-6">
-              <div class="cta-content">
+            <div class="col-lg-2 col-md-2 col-sm-12">
+              <div class="cta-content cta-content2">
                 <img
                   src="https://assets.raspberrypi.com/static/14fc26731cfe6ef875c1e156c3d80f6f/acdfe/pico-board-transparent.webp"
                   alt=""
@@ -80,15 +80,15 @@ export default function TwoColumns({
                 />
               </div>
             </div>
-            <div class="col-lg-8 col-md-6">
+            <div class="col-lg-8 col-md-8">
               <div class="cta-right-content text-center">
                 <div class="hosting-price">
                   <h6 dangerouslySetInnerHTML={{ __html: paragraph }}></h6>
                 </div>
               </div>
             </div>
-            <div class="col-lg-2 col-md-6">
-              <div class="cta-content">
+            <div class="col-lg-2 col-md-2 cal-sm-12">
+              <div class="cta-content ">
                 <img
                   src="https://assets.raspberrypi.com/static/14fc26731cfe6ef875c1e156c3d80f6f/acdfe/pico-board-transparent.webp"
                   alt=""

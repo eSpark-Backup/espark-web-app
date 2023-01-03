@@ -4,14 +4,10 @@ import Title from "../../components/title/title";
 import { shapes } from "../../helper/ImageUrl";
 import { services } from "../../helper/services";
 import style from "./style.module.css";
-import SEO from "../../utils/SEO.js";
 
 const Services = ({ link }) => {
-  const location = window.location.href
- console.log(location, "locatioan")
   return (
     <div className={style.textCenter}>
-      <SEO title="Services" description="eSpark web app"/>
       <>
         <Title
           title={"WE HELP BRANDS AND MAKE NEW FANS"}

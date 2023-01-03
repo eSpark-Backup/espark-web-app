@@ -1,17 +1,13 @@
 import React from "react";
 import Title from "./../../components/title/title";
 import { shapes } from "./../../helper/ImageUrl";
-import SEO from '../../utils/SEO';
 const Privacy = () => {
- const location = window.location.href
- console.log(location, "locatioan")
 
  const metaTag = () =>{
   
  }
   return (
     <div>
-      <SEO title="Privacy" description="eSpark web app" />
       <Title title={"Privacy Policy "} data={shapes} />
       <div className="container">
         <div className="row">
