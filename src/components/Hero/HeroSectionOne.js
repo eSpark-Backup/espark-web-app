@@ -22,10 +22,14 @@ const HeroSectionOne = ({ filterData }) => {
             </div>
             <div class="col-lg-6">
               <div class="repair-banner-image">
-                {filterData[0]?.data?.image?.map((item) => {
+                {filterData[0]?.data?.image?.map((item, index) => {
                   return (
                     <>
-                      <img src={item} alt="image" />
+                      {
+                        index === 0?
+                        <img src={item} alt="image" width="75%"/>
+                        : <img src={item} alt="image" />
+                      }
                     </>
                   );
                 })}

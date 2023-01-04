@@ -3,6 +3,7 @@ import HeroSectionTwo from "../../components/Hero/HeroSectionTwo";
 import About from "../../components/Sections/About/About";
 import "./style.css";
 import Slider from "react-slick";
+import { shapes } from "../../helper/ImageUrl";
 
 const MobileApp = () => {
   const features = [
@@ -27,6 +28,8 @@ const MobileApp = () => {
   ];
   const settings = {
     dots: false,
+    organicArrows: false,
+    buttons: false,
     infinite: true,
     speed: 100,
     slidesToShow: 5,
@@ -81,7 +84,6 @@ const MobileApp = () => {
   };
   return (
     <div>
-
       <HeroSectionTwo
         heading1={"Command دو "}
         paragarph={
@@ -91,9 +93,7 @@ const MobileApp = () => {
       />
       <div className="pt-5">
         <About id={1} />
-        <About id={2} />
-      </div>
-      <div class="cta-area ptb-80">
+        <div class="cta-area ptb-80">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-7 col-md-6">
@@ -159,79 +159,90 @@ const MobileApp = () => {
           </div>
         </div>
       </div>
-      <div className="p-5">
-        <Slider {...settings}>
-          <div>
-            <img
-              src={require("../../assets/images/App Screenshots/Command Do App Screenshots/Screenshot 2022-12-26 184345.png")}
-              alt=""
-              width={250}
-            />
+        <About id={2} />
+      </div>
+     
+      <div class="hosting-main-banner-slider">
+        <div className="">
+          <Slider {...settings}>
+            <div>
+              <img
+                src={require("../../assets/images/App Screenshots/Command Do App Screenshots/Screenshot 2022-12-26 184345.png")}
+                alt=""
+                width={250}
+              />
+            </div>
+            <div>
+              <img
+                src={require("../../assets/images/App Screenshots/Command Do App Screenshots/Screenshot 2022-12-26 184444.png")}
+                alt=""
+                width={250}
+              />
+            </div>{" "}
+            <div>
+              <img
+                src={require("../../assets/images/App Screenshots/Command Do App Screenshots/Screenshot 2022-12-26 190406.png")}
+                alt=""
+                width={250}
+              />
+            </div>{" "}
+            <div>
+              <img
+                src={require("../../assets/images/App Screenshots/Command Do App Screenshots/Screenshot 2022-12-26 184623.png")}
+                alt=""
+                width={250}
+              />
+            </div>{" "}
+            <div>
+              <img
+                src={require("../../assets/images/App Screenshots/Command Do App Screenshots/Screenshot 2022-12-26 184535.png")}
+                alt=""
+                width={250}
+              />
+            </div>{" "}
+            <div>
+              <img
+                src={require("../../assets/images/App Screenshots/Command Do App Screenshots/Screenshot 2022-12-26 190520.png")}
+                alt=""
+                width={250}
+              />
+            </div>
+            <div>
+              <img
+                src={require("../../assets/images/App Screenshots/Command Do App Screenshots/Screenshot 2022-12-26 190804.png")}
+                alt=""
+                width={250}
+              />
+            </div>
+            <div>
+              <img
+                src={require("../../assets/images/App Screenshots/Command Do App Screenshots/image (6).png")}
+                alt=""
+                width={250}
+              />
+            </div>{" "}
+            <div>
+              <img
+                src={require("../../assets/images/App Screenshots/Command Do App Screenshots/image (7).png")}
+                alt=""
+                width={250}
+              />
+            </div>
+            <div>
+              <img
+                src={require("../../assets/images/App Screenshots/Command Do App Screenshots/image (8).png")}
+                alt=""
+                width={250}
+              />
+            </div>
+          </Slider>
+        </div>
+
+        {shapes?.map((item, index) => (
+          <div key={index} className={item.className}>
+            <img src={item.imgUrl} alt={item.alt} />{" "}
           </div>
-          <div>
-            <img
-              src={require("../../assets/images/App Screenshots/Command Do App Screenshots/Screenshot 2022-12-26 184444.png")}
-              alt=""
-              width={250}
-            />
-          </div>{" "}
-          <div>
-            <img
-              src={require("../../assets/images/App Screenshots/Command Do App Screenshots/Screenshot 2022-12-26 190406.png")}
-              alt=""
-              width={250}
-            />
-          </div>{" "}
-          <div>
-            <img
-              src={require("../../assets/images/App Screenshots/Command Do App Screenshots/Screenshot 2022-12-26 184623.png")}
-              alt=""
-              width={250}
-            />
-          </div>{" "}
-          <div>
-            <img
-              src={require("../../assets/images/App Screenshots/Command Do App Screenshots/Screenshot 2022-12-26 184535.png")}
-              alt=""
-              width={250}
-            />
-          </div>{" "}
-          <div>
-            <img
-              src={require("../../assets/images/App Screenshots/Command Do App Screenshots/Screenshot 2022-12-26 190520.png")}
-              alt=""
-              width={250}
-            />
-          </div>
-          <div>
-            <img
-              src={require("../../assets/images/App Screenshots/Command Do App Screenshots/Screenshot 2022-12-26 190804.png")}
-              alt=""
-              width={250}
-            />
-          </div>
-          <div>
-            <img
-              src={require("../../assets/images/App Screenshots/Command Do App Screenshots/image (6).png")}
-              alt=""
-              width={250}
-            />
-          </div>{" "}
-          <div>
-            <img
-              src={require("../../assets/images/App Screenshots/Command Do App Screenshots/image (7).png")}
-              alt=""
-              width={250}
-            />
-          </div>
-          <div>
-            <img
-              src={require("../../assets/images/App Screenshots/Command Do App Screenshots/image (8).png")}
-              alt=""
-              width={250}
-            />
-          </div>
-        </Slider>
+        ))}
       </div>
     </div>
   );
