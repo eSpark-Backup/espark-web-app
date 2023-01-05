@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "./style.css";
 const HeroSectionOne = ({ filterData }) => {
   return (
     <div>
@@ -27,8 +27,8 @@ const HeroSectionOne = ({ filterData }) => {
                     <>
                       {
                         index === 0?
-                        <img src={item} alt="image" width="75%"/>
-                        : <img src={item} alt="image" />
+                        <img src={item} alt="images" className="mainPics" />
+                        : <img src={item} alt="images" />
                       }
                     </>
                   );

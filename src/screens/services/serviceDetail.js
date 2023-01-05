@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import HeroSectionOne from "../../components/Hero/HeroSectionOne";
 import { serviceItems } from "../../helper/ImageUrl";
 import { services } from "../../helper/services";
-import styles from "./style.module.css";
+
 
 const ServiceDetail = () => {
   const params = useParams();
