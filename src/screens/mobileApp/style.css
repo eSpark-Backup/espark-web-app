@@ -29,3 +29,6 @@
 .slick-prev{
   display: none !important;
 }
+.appScreenShot{
+  width: 250px;
+}

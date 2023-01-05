@@ -203,8 +203,8 @@ const MobileApp = () => {
                   <div>
                     <img
                       src={items.image}
-                      alt=""
-                      width={250}
+                      alt="images"
+                      className="appScreenShot"
                     />
                   </div> 
                 );
