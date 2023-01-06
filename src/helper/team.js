@@ -19,7 +19,7 @@ export const category = [
 export const team = [
   //electronics team
   {
-    teamName: "Administartion",
+    teamName: "Embedded Design",
     reporting: "CEO",
     designation: "CTO",
     firstName: "Faizan",
@@ -28,7 +28,8 @@ export const team = [
     email: "faizan@esparkconsultants.com",
     deptSlug: "administartion",
     nameSlug: "faizan-ur-rehman",
-    imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U0310D8RWDN-1bf719f00545-512",
+    imageUrl:
+      "https://ca.slack-edge.com/T030AKS5N2W-U0310D8RWDN-1bf719f00545-512",
     intro: "",
     linkedin: "",
     instagram: "",
@@ -49,7 +50,9 @@ export const team = [
         imageUrl: "#N/A",
         intro: "",
         linkedin: "",
-        instagram: "", imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U046H276E72-cd7b48d47dfc-512",
+        instagram: "",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U046H276E72-cd7b48d47dfc-512",
         twitter: "",
         facebook: "",
         message: "",
@@ -64,7 +67,8 @@ export const team = [
         email: "bari@esparkconsultants.com",
         deptSlug: "electronics development",
         nameSlug: "fazle-bari",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U030D0H1SSG-1a0fcf37e760-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U030D0H1SSG-1a0fcf37e760-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -120,8 +124,7 @@ export const team = [
         email: "israr@esparkconsultants.com",
         deptSlug: "electronics development",
         nameSlug: "israr-ahmed",
-        imageUrl:
-          "",
+        imageUrl: "",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -140,7 +143,8 @@ export const team = [
         email: "marsvirgo@esparkconsultants.com",
         deptSlug: "electronics development",
         nameSlug: "muhammad-arsalan",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U03HJ03MNKC-dfc431d061c1-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U03HJ03MNKC-dfc431d061c1-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -161,7 +165,9 @@ export const team = [
         imageUrl: "0",
         intro: "",
         linkedin: "",
-        instagram: "", imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U04GR03RK4N-781ce0f6ae0e-512",
+        instagram: "",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U04GR03RK4N-781ce0f6ae0e-512",
         twitter: "",
         facebook: "",
         message: "",
@@ -176,7 +182,8 @@ export const team = [
         email: "saif@esparkconsultants.com ",
         deptSlug: "electronics development",
         nameSlug: "saif-ur-rehman",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U04660FNM4H-7bf6ba2912b5-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U04660FNM4H-7bf6ba2912b5-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -203,28 +210,6 @@ export const team = [
         facebook: "",
         message: "",
       },
-    ],
-  },
-  //fimrware team
-  {
-    teamName: "Administartion",
-    reporting: "CEO",
-    designation: "CTO",
-    firstName: "Faizan",
-    lastName: "Ur Rehman",
-    name: "Faizan Ur Rehman",
-    email: "faizan@esparkconsultants.com",
-    deptSlug: "administartion",
-    nameSlug: "faizan-ur-rehman",
-    imageUrl:
-      "https://ca.slack-edge.com/T030AKS5N2W-U0310D8RWDN-1bf719f00545-512",
-    intro: "",
-    linkedin: "",
-    instagram: "",
-    twitter: "",
-    facebook: "",
-    message: "",
-    teamMembers: [
       {
         teamName: "Firmware Designing",
         reporting: "CTO",
@@ -235,7 +220,8 @@ export const team = [
         email: "AbdulBasit@esparkconsultants.com",
         deptSlug: "electronics development",
         nameSlug: "abdul-basit",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U03PEL1HVC6-17cd627cb787-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U03PEL1HVC6-17cd627cb787-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -253,7 +239,8 @@ export const team = [
         email: "abeer@esparkconsultants.com",
         deptSlug: "electronics development",
         nameSlug: "abeer-ul-haq",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U03H9N64BND-8d4cd5d8490a-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U03H9N64BND-8d4cd5d8490a-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -271,7 +258,8 @@ export const team = [
         email: "ahsanmoten@esparkconsultants.com",
         deptSlug: "electronics development",
         nameSlug: "ahsan-moten",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U0412DTHMB5-6eeddd2f2aa6-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U0412DTHMB5-6eeddd2f2aa6-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -289,7 +277,8 @@ export const team = [
         email: "alizain@esparkconsultants.com",
         deptSlug: "electronics development",
         nameSlug: "ali-zain",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U04FQJ70V0X-d75f1d713ec9-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U04FQJ70V0X-d75f1d713ec9-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -481,7 +470,8 @@ export const team = [
         email: "abideen@esparkconsultants.com",
         deptSlug: "web-development",
         nameSlug: "abideen-espark",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U03GWUT0BLK-972893276fbe-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U03GWUT0BLK-972893276fbe-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -518,7 +508,8 @@ export const team = [
         email: "moin@esparkconsultants.com",
         deptSlug: "web-&-mobile-app-develoepmnt",
         nameSlug: "moin-khan",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U04D4584VP0-bc3fd5c0cb45-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U04D4584VP0-bc3fd5c0cb45-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -555,7 +546,8 @@ export const team = [
         email: "mraza@esparkconsultants.com",
         deptSlug: "web-&-mobile-app-develoepmnt",
         nameSlug: "mudassir-raza",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U03TQSC2WCC-ff1f2ea4ff55-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U03TQSC2WCC-ff1f2ea4ff55-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -573,7 +565,8 @@ export const team = [
         email: "muzamil@esparkconsultants.com",
         deptSlug: "web-&-mobile-app-develoepmnt",
         nameSlug: "muzamil-chandio",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U038WNRH36F-c4cf665271c6-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U038WNRH36F-c4cf665271c6-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -728,7 +721,8 @@ export const team = [
         email: "kamranahmed@esparkconsultants.com",
         deptSlug: "sales-marketing-department",
         nameSlug: "kamran-ahmed",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U04EVN7RB7X-00677023b5b0-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U04EVN7RB7X-00677023b5b0-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -746,7 +740,8 @@ export const team = [
         email: "radeel@esparkconsultants.com",
         deptSlug: "sales-marketing-department",
         nameSlug: "radeel-gill",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U04FB9YRV97-9d99104f663c-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U04FB9YRV97-9d99104f663c-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -764,7 +759,8 @@ export const team = [
         email: "raveed@esparkconsultants.com",
         deptSlug: "sales-marketing-department",
         nameSlug: "raveed-gill",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U04EYHCEJ3D-c0908bafa5ff-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U04EYHCEJ3D-c0908bafa5ff-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -782,7 +778,8 @@ export const team = [
         email: "rehan@esparkconsultants.com",
         deptSlug: "sales-marketing-department",
         nameSlug: "rehan-tabassum",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U04EYHCA875-18fe27a168ee-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U04EYHCA875-18fe27a168ee-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -841,7 +838,8 @@ export const team = [
     email: "m.ovais@esparkconsultants.com",
     deptSlug: "node-developemnt",
     nameSlug: "muhammad-ovais",
-    imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U03K3NB9N5V-0536a10fb959-512",
+    imageUrl:
+      "https://ca.slack-edge.com/T030AKS5N2W-U03K3NB9N5V-0536a10fb959-512",
     intro: "",
     linkedin: "",
     instagram: "",
@@ -859,7 +857,8 @@ export const team = [
         email: "ahmedshafi@esparkconsultants.com",
         deptSlug: "node-developemnt",
         nameSlug: "ahmed-shafi",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U03HKES45QX-f1583e5ee2f2-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U03HKES45QX-f1583e5ee2f2-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -896,7 +895,8 @@ export const team = [
         email: "muhammadali@esparkconsultants.com",
         deptSlug: "node-developemnt",
         nameSlug: "muhamamd-ali-ali",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U049B0DH5V5-671a5f5146f8-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U049B0DH5V5-671a5f5146f8-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -914,7 +914,8 @@ export const team = [
         email: "sadafkhan@esparkconsultants.com",
         deptSlug: "node-developemnt",
         nameSlug: "sadaf-khan",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U04994P15PA-65160c495c7b-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U04994P15PA-65160c495c7b-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -970,8 +971,7 @@ export const team = [
         email: "zeeshan@esparkconsultants.com",
         deptSlug: "node-developemnt",
         nameSlug: "zeeshan-nawaz",
-        imageUrl:
-          "",
+        imageUrl: "",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -1033,7 +1033,8 @@ export const team = [
     email: "ahsan-k@esparkconsultants.com",
     deptSlug: "ios-development",
     nameSlug: "ahsan-khatri",
-    imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U03FNAYPWRW-ba9c41c625f8-512",
+    imageUrl:
+      "https://ca.slack-edge.com/T030AKS5N2W-U03FNAYPWRW-ba9c41c625f8-512",
     intro: "",
     linkedin: "",
     instagram: "",
@@ -1089,7 +1090,8 @@ export const team = [
         email: "muhammadosamaafaque@esparkconsultants.com",
         deptSlug: "ios-development",
         nameSlug: "m.osama-afaque",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U03L5FFA05S-272d9a3fdee8-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U03L5FFA05S-272d9a3fdee8-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -1285,7 +1287,8 @@ export const team = [
         email: "kashaf.zahra@esparkconultants.com",
         deptSlug: "web-development",
         nameSlug: "syeda-kashaf-zahra",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U042Q26DUD8-1389582c53f5-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U042Q26DUD8-1389582c53f5-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -1303,7 +1306,8 @@ export const team = [
         email: "saad@esparkconsultants.com",
         deptSlug: "web-development",
         nameSlug: "saad-zafar",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U0370CGGG49-4ba76131ccc3-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U0370CGGG49-4ba76131ccc3-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -1370,6 +1374,29 @@ export const team = [
       },
     ],
   },
+  //fimrware team
+  // {
+  //   teamName: "Administartion",
+  //   reporting: "CEO",
+  //   designation: "CTO",
+  //   firstName: "Faizan",
+  //   lastName: "Ur Rehman",
+  //   name: "Faizan Ur Rehman",
+  //   email: "faizan@esparkconsultants.com",
+  //   deptSlug: "administartion",
+  //   nameSlug: "faizan-ur-rehman",
+  //   imageUrl:
+  //     "https://ca.slack-edge.com/T030AKS5N2W-U0310D8RWDN-1bf719f00545-512",
+  //   intro: "",
+  //   linkedin: "",
+  //   instagram: "",
+  //   twitter: "",
+  //   facebook: "",
+  //   message: "",
+  //   teamMembers: [
+
+  //   ],
+  // },
   //finance team
   {
     teamName: "Administartion",
@@ -1399,7 +1426,8 @@ export const team = [
         email: "absar@esparkconsultants.com",
         deptSlug: "finance",
         nameSlug: "absar-ahmed-ahmed",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U03PMF1BP4K-9a01bcdc582a-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U03PMF1BP4K-9a01bcdc582a-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -1430,7 +1458,7 @@ export const team = [
   },
   //admin team
   {
-    teamName: "Administartion",
+    teamName: "Human Resource",
     reporting: "CEO",
     designation: "HR lead",
     firstName: "Ambren ",
@@ -1496,7 +1524,8 @@ export const team = [
         email: "sami@esparkconsultants.com",
         deptSlug: "administartion",
         nameSlug: "sami-uddin",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U0307PKRB3P-e93745034f5d-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U0307PKRB3P-e93745034f5d-512",
         intro: "",
         linkedin: "",
         instagram: "",
@@ -1514,7 +1543,8 @@ export const team = [
         email: "kashif@esparkconsultants.com",
         deptSlug: "administartion",
         nameSlug: "sheikh-kashif",
-        imageUrl: "https://ca.slack-edge.com/T030AKS5N2W-U041FGAFQ9K-83b83044a697-512",
+        imageUrl:
+          "https://ca.slack-edge.com/T030AKS5N2W-U041FGAFQ9K-83b83044a697-512",
         intro: "",
         linkedin: "",
         instagram: "",
