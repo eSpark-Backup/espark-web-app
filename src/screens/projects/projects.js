@@ -6,7 +6,7 @@ import { Fade } from "react-slideshow-image";
 import Title from "../../components/title/title";
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
-import Home from './../home/index';
+import Home from "./../home/index";
 
 export default function Projects({ link }) {
   const AutoplaySlider = withAutoplay(AwesomeSlider);

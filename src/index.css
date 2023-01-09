@@ -33353,9 +33353,9 @@ blockquote:after {
 }
 
 .ml-feedback-area {
-  background: -webkit-gradient(linear, left bottom, right top, from(#d5fefd), color-stop(#e0fdff), color-stop(#effbff), color-stop(#fbfaff), to(#fffcff));
+  /* background: -webkit-gradient(linear, left bottom, right top, from(#d5fefd), color-stop(#e0fdff), color-stop(#effbff), color-stop(#fbfaff), to(#fffcff));
   background: -webkit-linear-gradient(left bottom, #d5fefd, #e0fdff, #effbff, #fbfaff, #fffcff);
-  background: linear-gradient(to right top, #d5fefd, #e0fdff, #effbff, #fbfaff, #fffcff);
+  background: linear-gradient(to right top, #d5fefd, #e0fdff, #effbff, #fbfaff, #fffcff); */
   position: relative;
   z-index: 1
 }
@@ -34320,64 +34320,147 @@ blockquote:after {
   margin-top: 40px
 }
 
-.user-shape1 {
-  top: 12%;
-  left: 10%;
-  -webkit-animation: movebounce 9s linear infinite;
-  animation: movebounce 9s linear infinite
-}
-
 .user-shape1,
-.user-shape2 {
+.user-shape2,
+.user-shape3,
+.user-shape4,
+.user-shape5,
+.user-shape6,
+.user-shape7,
+.user-shape8,
+.user-shape9,
+.user-shape10,
+.user-shape11,
+.user-shape12,
+.user-shape13,
+.user-shape14,
+.user-shape15,
+.user-shape16,
+.user-shape17 {
   position: absolute;
   z-index: -1
 }
 
+.user-shape1 {
+  top: 0%;
+  left: 34%;
+  -webkit-animation: movebounce 9s linear infinite;
+  animation: movebounce 9s linear infinite
+}
+
 .user-shape2 {
-  left: 7%;
-  -webkit-animation: moveleftbounce 7s linear infinite;
-  animation: moveleftbounce 7s linear infinite;
-  top: 47%
+  top: 0%;
+  right: 34%;
+  -webkit-animation: movebounce 9s linear infinite;
+  animation: movebounce 9s linear infinite
 }
 
 .user-shape3 {
+  bottom: 0%;
+  right: 34%;
+  -webkit-animation: movebounce 9s linear infinite;
+  animation: movebounce 9s linear infinite
+}
+
+.user-shape4 {
+  bottom: 0%;
+  left: 34%;
+  -webkit-animation: movebounce 7s linear infinite;
+  animation: movebounce 7s linear infinite
+}
+
+.user-shape5 {
+  left: 25%;
+  top: 40%;
+  -webkit-animation: moveleftbounce 7s linear infinite;
+  animation: moveleftbounce 7s linear infinite
+}
+
+
+.user-shape6 {
+  bottom: 40%;
+  right: 25%;
+  -webkit-animation: movebounce 5s linear infinite;
+  animation: movebounce 5s linear infinite
+}
+
+.user-shape7 {
+  top: 12%;
+  left: 7%;
+  -webkit-animation: movebounce 9s linear infinite;
+  animation: movebounce 9s linear infinite
+}
+
+
+.user-shape8 {
+  top: 12%;
+  right: 7%;
+  -webkit-animation: moveleftbounce 7s linear infinite;
+  animation: moveleftbounce 7s linear infinite;
+}
+
+.user-shape9 {
   bottom: 12%;
   left: 15%;
   -webkit-animation: movebounce 5s linear infinite;
   animation: movebounce 5s linear infinite
 }
 
-.user-shape3,
-.user-shape4 {
-  position: absolute;
-  z-index: -1
-}
 
-.user-shape4 {
-  top: 12%;
-  right: 10%;
+.user-shape10 {
+  bottom: 12%;
+  right: 15%;
   -webkit-animation: movebounce 9s linear infinite;
   animation: movebounce 9s linear infinite
 }
 
-.user-shape5 {
-  right: 7%;
-  top: 45%;
-  -webkit-animation: moveleftbounce 7s linear infinite;
-  animation: moveleftbounce 7s linear infinite
+.user-shape11 {
+  top: 0%;
+  left: 19%;
+  -webkit-animation: movebounce 9s linear infinite;
+  animation: movebounce 9s linear infinite
 }
 
-.user-shape5,
-.user-shape6 {
-  position: absolute;
-  z-index: -1
+.user-shape12 {
+  top: 0%;
+  right: 19%;
+  -webkit-animation: movebounce 7s linear infinite;
+  animation: movebounce 7s linear infinite
 }
 
-.user-shape6 {
-  bottom: 12%;
-  right: 15%;
+.user-shape13 {
+  bottom: -30%;
+  right: 25%;
   -webkit-animation: movebounce 5s linear infinite;
   animation: movebounce 5s linear infinite
+}
+
+.user-shape14 {
+  bottom: -30%;
+  left: 25%;
+  -webkit-animation: movebounce 9s linear infinite;
+  animation: movebounce 9s linear infinite
+}
+
+.user-shape15 {
+  bottom: -13%;
+  right: 7%;
+  -webkit-animation: movebounce 5s linear infinite;
+  animation: movebounce 5s linear infinite
+}
+
+.user-shape16 {
+  bottom: -13%;
+  left: 7%;
+  -webkit-animation: movebounce 9s linear infinite;
+  animation: movebounce 9s linear infinite
+}
+
+.user-shape17 {
+  bottom: -30%;
+  left: 47%;
+  -webkit-animation: movebounce 9s linear infinite;
+  animation: movebounce 9s linear infinite
 }
 
 .shape9 {
@@ -37033,6 +37116,7 @@ blockquote:after {
     overflow-y: scroll;
     position: relative !important;
   }
+
   .startp-nav nav .others-option .btn.btn-light {
     display: inline-block
   }
@@ -37149,11 +37233,12 @@ blockquote:after {
     background: #fff
   }
 }
-@media only screen and (min-width:280px) and (max-width:576px){
+
+@media only screen and (min-width:280px) and (max-width:576px) {
   .startp-nav nav .others-option .btn.btn-light {
     display: inline-block
   }
- 
+
 }
 
 
@@ -37245,6 +37330,7 @@ blockquote:after {
     padding-top: 185px;
     padding-bottom: 165px
   }
+
   .startp-nav nav .others-option .btn.btn-light {
     display: inline-block
   }
@@ -37976,7 +38062,7 @@ blockquote:after {
   .startp-nav nav .others-option .btn.btn-light {
     border: 1px dashed #76e5dd;
     display: none
-  } 
+  }
 
   .startp-nav nav .others-option .btn,
   .startp-nav nav .others-option .btn.btn-light {
@@ -39514,14 +39600,16 @@ blockquote:after {
   top: 280px
 }
 
-.carousl *{
+.carousl * {
   width: 100%;
   height: 100%;
 }
+
 @media(max-width: 768px) {
-  .cta-content2{
+  .cta-content2 {
     display: none;
   }
+
   .cta-content img {
     position: static !important;
   }
@@ -39531,33 +39619,39 @@ blockquote:after {
   .logo {
     width: 90px;
   }
-  .messages{
+
+  .messages {
     margin: 10px;
     width: 600px;
   }
+
   .carouselPic {
     margin-top: 80px;
   }
-  .react-responsive-modal-modal{
+
+  .react-responsive-modal-modal {
     margin-top: 100px !important;
   }
-  
+
 }
+
 @media(max-width: 1400px) {
   .carouselPic {
     margin-top: 80px;
   }
-  .react-responsive-modal-modal{
+
+  .react-responsive-modal-modal {
     margin-top: 100px !important;
   }
-  
+
 }
 
-@media only screen and (min-width:768px) and (max-width:991px){
+@media only screen and (min-width:768px) and (max-width:991px) {
   .startp-nav nav .others-option .btn.btn-light {
-    display: inline-block; 
+    display: inline-block;
   }
-  cta-content2{
+
+  cta-content2 {
     display: none !important;
   }
 }
