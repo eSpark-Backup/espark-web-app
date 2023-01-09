@@ -20,7 +20,7 @@ function HeroSectionTwo({ heading1, paragarph, features }) {
                 <div class="col-lg-6 col-md-12" style={{ textAlign: "center" }}>
                   <div class="hosting-banner-content">
                     <img
-                      src={require("../../assets/images/App Screenshots/Command Do App Screenshots/GIF_CommandDO.gif")}
+                      src={require("../../assets/images/App Screenshots/Command Do App Screenshots/GIF_CommandD.gif")}
                       alt=""
                       width={250}
                     />

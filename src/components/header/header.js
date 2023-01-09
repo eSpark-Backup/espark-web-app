@@ -73,7 +73,7 @@ const Header = () => {
                     </li>
                     <li class="nav-item" onClick={handleNavCollapse}>
                       <Link class="nav-link" to="/project">
-                      Projects 
+                        Projects
                       </Link>
                     </li>
                     <li class="nav-item">
@@ -90,7 +90,7 @@ const Header = () => {
                               ></i>
                               <Link
                                 class="nav-link"
-                                to={`services-detail/${item.path}`}
+                                to={`services/${item.path}`}
                               >
                                 {item.name}
                               </Link>
@@ -101,7 +101,7 @@ const Header = () => {
                     </li>
                     <li class="nav-item" onClick={handleNavCollapse}>
                       <Link class="nav-link" to="/contact">
-                       Contact Us
+                        Contact Us
                       </Link>
                     </li>
 
@@ -147,9 +147,13 @@ const Header = () => {
               }}
             >
               {isAppScreen ? (
-                <Link class="btn btn-light" onClick={onOpenModal}>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.commanddo"
+                  class="btn btn-light"
+                  target="_blank"
+                >
                   Download Now
-                </Link>
+                </a>
               ) : (
                 <Link class="btn btn-light" onClick={onOpenModal}>
                   Quote Now

@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, useRoutes } from "react-router-dom";
 import About from "../screens/about";
 import Blog from "../screens/blog/blog";
@@ -25,11 +25,12 @@ const AppRoutes = () => {
     { path: "/blog", element: <Blog /> },
     { path: "/services", element: <Services /> },
     { path: "/products", element: <Products /> },
-    { path: "/services-detail/:id", element: <ServiceDetail /> },
+    { path: "/services/:id", element: <ServiceDetail /> },
     { path: "/contact", element: <Contact /> },
     { path: "/espark-app", element: <MobileApp /> },
     { path: "/privacy-policy", element: <Privacy /> },
     { path: "/teams", element: <Teams /> },
+    { path: "/appointments", element: <Contact /> },
     { path: "/*", element: <NotFound /> },
   ]);
   return routes;

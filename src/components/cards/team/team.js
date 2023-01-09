@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
 
-function Team({name,designation,imageUrl}) {
+function Team({ name, designation, imageUrl }) {
   return (
     <div className="single-team">
       <div className="team-image">
         <img
-          src={imageUrl}
+          src={
+            imageUrl
+              ? imageUrl
+              : "https://png.pngtree.com/element_our/png/20181206/users-vector-icon-png_260862.jpg"
+          }
           alt="image"
         />
       </div>
@@ -15,7 +19,8 @@ function Team({name,designation,imageUrl}) {
           <span>{designation}</span>
         </div>
       </div>
-  </div>  )
+    </div>
+  );
 }
 
-export default Team
+export default Team;

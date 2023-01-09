@@ -15,7 +15,7 @@ import { faqsQuestions } from "../../helper/faqs";
 import Projects from "../projects/projects";
 import Faqs from "../faqs/faqs";
 
-const   Home = () => {
+const Home = () => {
   const currentRoute = window.location.pathname;
   return (
     <div>
@@ -25,14 +25,8 @@ const   Home = () => {
       <Services link={currentRoute} />
       <Users />
       <Projects link={currentRoute} />
-      <PartnerAbout  />
-      {/* <Price /> */}
-      {/* <Feedback /> */}
-      {/* <RecentStory /> */}
-      <Faqs imgs={shapes} data={faqsQuestions}  />
-      {/* <Faqs data={shapes} /> */}
-      {/* <Freetrial /> */}
-      {/* <Clients /> */}
+      <PartnerAbout />
+      <Faqs imgs={shapes} data={faqsQuestions} />
     </div>
   );
 };
