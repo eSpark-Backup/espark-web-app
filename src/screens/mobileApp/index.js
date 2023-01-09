@@ -61,10 +61,8 @@ const MobileApp = () => {
   ];
   const settings = {
     dots: false,
-    organicArrows: false,
-    buttons: false,
     infinite: true,
-    speed: 100,
+    speed: 1000,
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
@@ -100,17 +98,17 @@ const MobileApp = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
-          initialSlide: 2,
+          initialSlide: 1,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
-          initialSlide: 2,
+          initialSlide: 1,
         },
       },
     ],
@@ -126,14 +124,16 @@ const MobileApp = () => {
       />
       <div className="pt-5">
         <About id={1} />
-        <div class="cta-area ptb-80">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-7 col-md-6">
-                <div class="cta-content">
-                  <h3>Download App from google Play store </h3>
-                </div>
+        <About id={2} />
+      </div>
+      <div class="cta-area ptb-80">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-7 col-md-6">
+              <div class="cta-content">
+                <h3>Download App from google Play store </h3>
               </div>
+            </div>
               <div class="col-lg-5 col-md-6">
                 <div class="cta-right-content">
                   {/* <div class="hosting-price">
@@ -164,14 +164,12 @@ const MobileApp = () => {
                   </a> */}
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
-        <About id={2} />
       </div>
-
-      <div class="hosting-main-banner-slider">
+     
+      <div class="about-area">
         <div className="">
           <Slider {...settings}>
               {appScreenShot.map((items) => {
@@ -187,7 +185,6 @@ const MobileApp = () => {
               })}
           </Slider>
         </div>
-
         {shapes?.map((item, index) => (
           <div key={index} className={item.className}>
             <img src={item.imgUrl} alt={item.alt} />{" "}

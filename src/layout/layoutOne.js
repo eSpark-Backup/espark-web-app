@@ -8,7 +8,13 @@ const LayoutOne = ({ children }) => {
     <div id="__next">
       <SEO />
       <Header />
-      {children}
+      <div
+        style={{
+          marginTop: "100px",
+        }}
+      >
+        {children}
+      </div>
       <Footer />
     </div>
   );
