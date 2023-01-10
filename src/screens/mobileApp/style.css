@@ -1,0 +1,46 @@
+.slick-slider{
+  height: auto;
+}
+.slick-active.slick-center{
+     padding-top: 0px;
+     width: 330px;
+}
+.slick-active img{
+     transform: scale(1.1);
+     padding-top: 100px;
+     padding-bottom: 100px;
+}
+.slick-current {
+  transform: scale(1.2) !important;
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  position: relative; 
+  z-index: 1;
+}
+.slick-slide > div > div > img {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.slick-next{
+  display: none !important;
+}
+.slick-prev{
+  display: none !important;
+}
+.appScreenShot{
+  width: 250px;
+}
+@media (max-width: 1200px) {
+  .slick-center img{
+    transform: scale(1.4) !important;
+    
+  }
+}
+@media (max-width: 1024px) {
+  .slick-center img{
+    transform: scale(1) !important;
+    
+  }
+}
