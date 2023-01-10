@@ -1,17 +1,19 @@
 
-.pRelative{
+.positionRelative{
     position: relative;
     margin-top: 100px;
     width: 20%;
     height: 50vh;
 }
-.pAbsolute{
+
+.positionAbsolute{
     position: absolute;
     width: 100%;
     height: 60vh;
     background-color: #00A099;
 }
-.pAbsolut2{
+
+.imgWrapper{
     position: absolute;
     top: 55px;
     left: 130px;
@@ -35,7 +37,7 @@
     width: 50%;
 }
 
-.divOneC{
+.greenBox{
     background-color: #00A099;
 }
 
@@ -54,21 +56,21 @@
 .ceoWrapper h1 {
     color: #00A099;
 }
-.pAbsolut3{
+.imgWrapperDisplayNone{
     display: none;
 }
 
 @media only screen and (max-width: 1000px) {
-    .pRelative{
+    .positionRelative{
         display: none;
     }
-    .pAbsolute{
+    .positionAbsolute{
         display: none;
     }
-    .pAbsolut2{
+    .imgWrapper{
         display: none;
     } 
-    .pAbsolut3{
+    .imgWrapperDisplayNone{
         display: block;
     }
     
@@ -84,7 +86,7 @@
         width: 95%;
     }
     
-    .divOneC{
+    .greenBox{
         background-color: #00A099;
     }
     

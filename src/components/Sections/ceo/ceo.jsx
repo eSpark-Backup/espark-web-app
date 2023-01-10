@@ -3,21 +3,17 @@ import './ceo.css'
 
 function Ceo() {
   return (
-    <div className='items ' >
-
-      <div className='pRelative'>
-        <div className='pAbsolute divOneC'> 
+    <div className='items' >
+      <div className='positionRelative'>
+        <div className='positionAbsolute greenBox'> 
         </div>
-
-        <div className='pAbsolut2 '>
+        <div className='imgWrapper'>
               <img src='https://images.pexels.com/photos/4491476/pexels-photo-4491476.jpeg?auto=compress&cs=tinysrgb&w=1600' className='imgTag'></img>
         </div>
       </div>
-
-      <div className='pAbsolut3 '>
+      <div className='imgWrapperDisplayNone'>
               <img src='https://images.pexels.com/photos/4491476/pexels-photo-4491476.jpeg?auto=compress&cs=tinysrgb&w=1600' className='imgTag'></img>
       </div>
-
       <div className='ceoText'>
         <div className='ceoWrapper'>
           <div>
