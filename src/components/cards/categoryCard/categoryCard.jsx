@@ -14,6 +14,9 @@ function CategoryCard({ header, image,des }) {
         </div>
       </div>
     </div>
+  
+  
+    
   )
 }
 
