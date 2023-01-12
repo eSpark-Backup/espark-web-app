@@ -1,86 +1,87 @@
 import React, { useEffect, useState } from "react";
 import { FaCalendarAlt, FaRegArrowAltCircleRight } from "react-icons/fa";
 import Moment from "react-moment";
+import styles from "./style.module.css";
 import { shapes } from "./../../helper/ImageUrl";
-import {getApiCall } from './../../utils/Blogs';
+import { getApiCall } from "./../../utils/Blogs";
 
-export default  function Blog() {
-const [post , setPost] = useState()
+export default function Blog() {
+  const [post, setPost] = useState();
   useEffect(() => {
     const main = async () => {
       const data = await getApiCall();
-      setPost(data)
-      console.log(data, "abideeen");
-    }
+      setPost(data);
+    };
     main();
-  }, [])
+  }, []);
 
   return (
     <div>
-      {/* <div class="page-title-area">
-        <div class="d-table">
-          <div class="d-table-cell">
-            <div class="container">
-              <h2>Blogs</h2>
-            </div>
-          </div>
+      {shapes?.map((item, index) => (
+        <div key={index} className={item.className}>
+          <img src={item.imgUrl} alt={item.alt} />{" "}
         </div>
-      </div> */}
-        {shapes?.map((item, index) => (
-          <div key={index} className={item.className}>
-            <img src={item.imgUrl} alt={item.alt} />{" "}
-          </div>
-        ))}
+      ))}
       <div class="blog-area ptb-80">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-md-12">
               <div class="row justify-content-center">
-                {post?.map((items, key) => {
-                  return (
-                    <>
-                      <div class="col-lg-6 col-md-6">
-                        <div class="single-blog-post">
-                          <div class="blog-image">
-                            <a href="/blog-details/">
-
-                              <img
-                                src={ items.jetpack_featured_media_url ? items.jetpack_featured_media_url : "https://thumbs.dreamstime.com/b/blog-information-website-concept-workplace-background-text-view-above-127465079.jpg"}
-                                class="animate__animated animate__zoomIn"
-                                alt="blog-img"
-                              />
-                            </a>
-                            <div class="date d-flex justify-content-center align-items-center">
-                            <FaCalendarAlt size={15}/>
-                            <Moment format="YYYY/MM/DD hh:mm" >{items.date}</Moment>
-                           
-                              
+                {post ? (
+                  post?.map((items, key) => {
+                    return (
+                      <>
+                        <div class="col-lg-6 col-md-6">
+                          <div class="single-blog-post">
+                            <div class="blog-image">
+                              <a href="/blog-details/">
+                                <img
+                                  src={
+                                    items.jetpack_featured_media_url
+                                      ? items.jetpack_featured_media_url
+                                      : "https://thumbs.dreamstime.com/b/blog-information-website-concept-workplace-background-text-view-above-127465079.jpg"
+                                  }
+                                  class="animate__animated animate__zoomIn"
+                                  alt="blog-img"
+                                />
+                              </a>
+                              <div class="date d-flex justify-content-center align-items-center">
+                                <FaCalendarAlt size={15} />
+                                <Moment format="YYYY/MM/DD hh:mm">
+                                  {items.date}
+                                </Moment>
+                              </div>
+                            </div>
+                            <div class="blog-post-content">
+                              <h3>
+                                <a href="/blog-details/">
+                                  {items.title.rendered}
+                                </a>
+                              </h3>
+                              <span>
+                                By <a href="#">Admin</a>
+                              </span>
+                              <p
+                                dangerouslySetInnerHTML={{
+                                  __html: items.excerpt.rendered,
+                                }}
+                              ></p>
+                              <a class="read-more-btn" href={`/${items.slug}/`}>
+                                Read More{"  "}
+                                <FaRegArrowAltCircleRight />
+                              </a>
                             </div>
                           </div>
-                          <div class="blog-post-content">
-                            <h3>
-                              <a href="/blog-details/">
-                                {items.title.rendered}
-                              </a>
-                            </h3>
-                            <span>
-                              By <a href="#">Admin</a>
-                            </span>
-                            <p
-                              dangerouslySetInnerHTML={{
-                                __html: items.excerpt.rendered,
-                              }}
-                            ></p>
-                            <a class="read-more-btn" href={`/${items.slug}/`}>
-                              Read More{"  "}
-                              <FaRegArrowAltCircleRight margin={10} />
-                            </a>
-                          </div>
                         </div>
-                      </div>
-                    </>
-                  );
-                })}
+                      </>
+                    );
+                  })
+                ) : (
+                  <div class="d-flex justify-content-center">
+                    <div class={`spinner-border ${styles.loader}` } role="status">
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
             <div class="col-lg-4 col-md-12">
