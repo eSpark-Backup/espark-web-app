@@ -7,12 +7,87 @@ import "./style.css";
 
 import { useState } from "react";
 
-function TeamSection() {
-  const [changeClass, setChangeClass] = useState(false);
+function TeamSection({ data }) {
+  const [active, setActive] = useState(0);
+
+  const [teamData, setTeamData] = useState(data);
+
+  const setData = (item, index) => {
+    setTeamData(item);
+    setActive(index);
+  };
 
   return (
-    <>
-      {team.map((item, index) => {
+    <div className="container-fluid">
+      <div
+        class="multi-button"
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+        }}
+      >
+        {team.map((item, index) => {
+          return (
+            <button
+              className={active === index && "active"}
+              onClick={() => setData(item, index)}
+            >
+              &nbsp; {item.teamName}
+            </button>
+          );
+        })}
+      </div>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div class="profile-card2">
+          <div class="img">
+            <img src={teamData.imageUrl} />
+          </div>
+          <div class="caption2">
+            <h3>{teamData.name}</h3>
+            <p>{teamData.designation}</p>
+          </div>
+        </div>
+      </div>
+      <div class="main row">
+        {teamData?.teamMembers?.map((item, index) => {
+          if (!item.imageUrl) {
+            return null;
+          }
+          return (
+            <div class="col-lg-3 profile-card">
+              <div class="img">
+                <img src={item.imageUrl} />
+              </div>
+              <div class="caption">
+                <h3>{item.name}</h3>
+                <p>{item.designation}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* <div class="main">
+        {team.map((item, index) => {
+          return (
+            <>
+              {item.teamMembers.map((items) => (
+                <div class="profile-card">
+                  <div class="img">
+                    <img src={items.imageUrl} />
+                  </div>
+                  <div class="caption">
+                    <h3>{items.name}</h3>
+                    <p>{items.designation}</p>
+                  </div>
+                </div>
+              ))}
+            </>
+          );
+        })}
+      </div> */}
+      {/* {team.map((item, index) => {
         if (!item.imageUrl) {
           return null;
         }
@@ -83,10 +158,9 @@ function TeamSection() {
                 ))}
               </div>
             </div>
-            {/* )} */}
           </>
         );
-      })}
+      })} */}
       {/* {team.map((item) => (
         <>
           <Title title={item.teamName} data={shapes} />
@@ -97,6 +171,7 @@ function TeamSection() {
                   name={item.name}
                   designation={item.designation}
                   imageUrl={item.imageUrl}
+                  mainImage={true}
                 />
               </div>
             </div>{" "}
@@ -119,7 +194,7 @@ function TeamSection() {
           </div>
         </>
       ))} */}
-    </>
+    </div>
   );
 }
 
