@@ -1,5 +1,7 @@
-import React from 'react'
-
+import React, { useEffect, useState } from "react";
+import Moment from "react-moment";
+import { getApiCall, getCategoriesApiCall, getTagsApiCall } from './../../utils/Blogs';
+import { Link } from "react-router-dom";
 function CommentsArea() {
     return (
         <div className="comments-area">
@@ -29,9 +31,9 @@ function CommentsArea() {
                             </p>
                         </div>
                         <div className="reply">
-                            <a href="#" className="comment-reply-link">
+                            <Link to="#" className="comment-reply-link">
                                 Reply
-                            </a>
+                            </Link>
                         </div>
                     </article>
                     <ol className="children">
@@ -60,9 +62,9 @@ function CommentsArea() {
                                     </p>
                                 </div>
                                 <div className="reply">
-                                    <a href="#" className="comment-reply-link">
+                                    <Link to="#" className="comment-reply-link">
                                         Reply
-                                    </a>
+                                    </Link>
                                 </div>
                             </article>
                         </li>
@@ -92,9 +94,9 @@ function CommentsArea() {
                                         </p>
                                     </div>
                                     <div className="reply">
-                                        <a href="#" className="comment-reply-link">
+                                        <Link to="#" className="comment-reply-link">
                                             Reply
-                                        </a>
+                                        </Link>
                                     </div>
                                 </article>
                             </li>
@@ -125,9 +127,9 @@ function CommentsArea() {
                             </p>
                         </div>
                         <div className="reply">
-                            <a href="#" className="comment-reply-link">
+                            <Link to="#" className="comment-reply-link">
                                 Reply
-                            </a>
+                            </Link>
                         </div>
                     </article>
                     <ol className="children">
@@ -156,9 +158,9 @@ function CommentsArea() {
                                     </p>
                                 </div>
                                 <div className="reply">
-                                    <a href="#" className="comment-reply-link">
+                                    <Link to="#" className="comment-reply-link">
                                         Reply
-                                    </a>
+                                    </Link>
                                 </div>
                             </article>
                         </li>
