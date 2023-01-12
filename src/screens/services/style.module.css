@@ -4,11 +4,3 @@
 .marginTop{
     margin-top: 15px;
 }
-@media (max-width: 1200px) {
-    .circleBox{
-        display: none;
-    }
-    .circleBoxOdd{
-        display: none;
-    }
-}

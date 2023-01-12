@@ -13,7 +13,7 @@ const ServiceStyleOne = ({ data }) => {
                 <div class="col-lg-3 col-sm-6 col-md-6">
                   <div class="single-solutions-box">
                     <div class="icon">
-                      <img src={icon4} alt="IconImg" />
+                      <img src={icon4} alt="image" />
                     </div>
                     <h3>
                       <a href="/service-details/">{item.name}</a>

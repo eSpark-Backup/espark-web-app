@@ -2,11 +2,16 @@ import React from "react";
 import ProjectCard from "../../components/project-card/projectCard";
 import { projects } from "../../helper/projects";
 import "./style.css";
+import { Fade } from "react-slideshow-image";
 import Title from "../../components/title/title";
+import AwesomeSlider from "react-awesome-slider";
+import withAutoplay from "react-awesome-slider/dist/autoplay";
+import Home from "./../home/index";
 import Slider from "react-slick";
 import { shapes } from './../../helper/ImageUrl';
 
 export default function Projects({ link }) {
+  const AutoplaySlider = withAutoplay(AwesomeSlider);
 
   const settings = {
     dots: false,
@@ -97,6 +102,10 @@ export default function Projects({ link }) {
         ))}
         </div>
       ) : (
+        //     </div>
+        //   </div>
+        // </div>
+        // </Fade>
         <Title
           title={"Things We’ve Created"}
           paragraph="<p> We believe our work speaks for itself. Browse our most recent  projects<br/>below. Explore more and enjoy our work in detail.</p>"
@@ -109,6 +118,15 @@ export default function Projects({ link }) {
       ) : (
         <ProjectCard data={projects.slice(0, 6)} link={link} />
       )}
+      {/* <ProjectNestedCard
+        data={[
+          { imgUrl: work_img_1 },
+          { imgUrl: work_img_1 },
+          { imgUrl: work_img_1 },
+          { imgUrl: work_img_1 },
+        ]}
+      />
+      <NetworkMarketing /> */}
     </React.Fragment>
   );
 }

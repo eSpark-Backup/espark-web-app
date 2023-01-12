@@ -48,7 +48,7 @@ const ServiceStyleFive = ({ data,link }) => {
               );
             }).sort(order)}
              {link == '/' ? <Link to={'/services'} className={style.btnMargin}>
-                    <a className='btn btn-secondary'>Go To Services<FaLongArrowAltRight  className={style.arrowSize}/></a>
+                    <a className='btn btn-secondary'   >Go To Services<FaLongArrowAltRight  className={style.arrowSize}/></a>
               </Link> : ""}
           </div>
         </div>
