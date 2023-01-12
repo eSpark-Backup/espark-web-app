@@ -2,17 +2,17 @@ export const category = [
   {
     name: "Huzaifa Ali",
     image: "https://ca.slack-edge.com/T030AKS5N2W-U030P992ZS5-895d70772f10-512",
-    message: "",
+    message: "CEO",
   },
   {
     name: "Muhammad Waqar",
     image: "https://ca.slack-edge.com/T030AKS5N2W-U030D0EHM1A-0f2272d21752-512",
-    message: "",
+    message: "CFO",
   },
   {
     name: "Faizan Ur Rahman",
     image: "https://ca.slack-edge.com/T030AKS5N2W-U0310D8RWDN-1bf719f00545-512",
-    message: "",
+    message: "CTO",
   },
 ];
 
