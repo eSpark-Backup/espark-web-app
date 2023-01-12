@@ -10,10 +10,13 @@ function CategoryCard({ header, image,des }) {
         </div>
         <div className="col-8">
         <h1 className="carsour">{header}</h1>
-        <p>{des}</p>
+        <strong style={{ color:"#11A79c" }}>{des}</strong>
         </div>
       </div>
     </div>
+  
+  
+    
   )
 }
 

@@ -6,10 +6,56 @@ import { Fade } from "react-slideshow-image";
 import Title from "../../components/title/title";
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
-import Home from './../home/index';
+import Home from "./../home/index";
+import Slider from "react-slick";
+import { shapes } from './../../helper/ImageUrl';
 
 export default function Projects({ link }) {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
+
+  const settings = {
+    dots: false,
+    className: "center",
+    centerMode: true,
+    autoplay: true,
+    slidesToShow: 3,
+    speed: 1000,
+
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   const properties = {
     prevArrow: (
       <button className="owl-nav1">
@@ -35,39 +81,30 @@ export default function Projects({ link }) {
   return (
     <React.Fragment>
       {link !== "/" ? (
-        // <Fade {...properties} scale={1.4}>
-
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide carouselPic"
-          data-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class=" carousl active ">
-              <AutoplaySlider
-                infinite={true}
-                bullets={false}
-                play={true}
-                cancelOnInteraction={false} // should stop playing on user interaction
-                interval={6000}
-                animation="fallAnimation"
-              >
-                {projects.map((item, index) => {
-                  return (
-                    <div class="closer-sliderrs">
-                      <img
-                        class="d-block "
-                        src={item.data.image}
-                        alt="Third slide"
-                      />
-                    </div>
-                  );
-                })}
-              </AutoplaySlider>
-            </div>
+        <div className="project-slider mt-5 py-5">
+          <Slider {...settings}>
+            {projects.map((item, index) => {
+              return (
+                <div key={1}>
+                  <img
+                    src={item.data.image}
+                    alt="Third slide"
+                  />
+                
+                </div>
+              );
+            })}
+          </Slider>
+          {shapes?.map((item, index) => (
+          <div key={index} className={item.className}>
+            <img src={item.imgUrl} alt={item.alt} />{" "}
           </div>
+        ))}
         </div>
       ) : (
+        //     </div>
+        //   </div>
+        // </div>
         // </Fade>
         <Title
           title={"Things We’ve Created"}
