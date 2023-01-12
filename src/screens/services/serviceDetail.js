@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import HeroSectionOne from "../../components/Hero/HeroSectionOne";
-import { serviceItems } from "../../helper/ImageUrl";
 import { services } from "../../helper/services";
+import styles from "./style.module.css";
 
 
 const ServiceDetail = () => {
@@ -24,16 +24,16 @@ const ServiceDetail = () => {
               </div>
               <div class="col-lg-6">
                 <div class="cta-repair-img">
-                  <img src={item.imgUrlMan} />
+                  <img src={item.imgUrlMan} alt="cta-repair-img" />
                 </div>
               </div>
             </div>
           </div>
-          <div class="circle-box">
-            <img src={item.imgUrlCircle} />
+          <div class={`circle-box ${styles.circleBox}`}>
+            <img src={item.imgUrlCircle} alt="circle-box" />
           </div>
-          <div class="cta-shape">
-            <img src={item.imgUrlCta} />
+          <div class={`cta-shape`}>
+            <img src={item.imgUrlCta} alt="cta-shape" />
           </div>
         </div>
       </>
@@ -47,7 +47,7 @@ const ServiceDetail = () => {
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div class="cta-repair-img-odd">
-                <img src={item.imgUrlMan} />
+                <img src={item.imgUrlMan}  alt="cta-repair-img"/>
               </div>
             </div>
             <div class="col-lg-6">
@@ -58,11 +58,11 @@ const ServiceDetail = () => {
             </div>
           </div>
         </div>
-        <div class="circle-box-odd">
-          <img src={item.imgUrlCircle} />
+        <div class={`circle-box-odd ${styles.circleBoxOdd}`}>
+          <img src={item.imgUrlCircle} alt="cta-circle" />
         </div>
-        <div class="cta-shape-odd">
-          <img src={item.imgUrlCta} />
+        <div class={`cta-shape-odd `}>
+          <img src={item.imgUrlCta}  alt="cta-shape"/>   
         </div>
       </div>
     );
