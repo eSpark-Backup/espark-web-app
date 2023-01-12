@@ -30,12 +30,12 @@
     transition: .5s;
     border-radius: 50%;
     width: 120px;
-}
+} */
 
 .overlay-user {
-    position: absolute;
+    /* position: absolute; */
     z-index: 9;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .info-box {
@@ -44,6 +44,7 @@
     box-shadow: 0 3px 10px #cecece;
     margin: 20px;
     display: flex;
+    width: 100%;
     flex-direction: row;
     border-radius: 6px;
     animation: fadeInLeft 1s;
@@ -59,7 +60,7 @@
     border-radius: 50%;
     width: 60px;
     margin-right: 20px;
-} */
+}
 
 .main {
     padding: 40px;
