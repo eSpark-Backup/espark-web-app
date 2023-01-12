@@ -14,6 +14,7 @@ import MobileApp from "../screens/mobileApp";
 import Privacy from "./../screens/privacy/Privacy";
 import NotFound from "../screens/not-found/notFound";
 import Teams from "../screens/teams/teams";
+import BlogDetail from "../screens/blog/blog-detail";
 
 const AppRoutes = () => {
   const data = window.scrollTo(0, 0);
@@ -22,6 +23,7 @@ const AppRoutes = () => {
     { path: "/about", element: <About /> },
     { path: "/project", element: <Projects /> },
     { path: "/project-detail/:id", element: <ProjectDetails /> },
+    { path: "/blog-detail/:id", element: <BlogDetail /> },
     { path: "/blog", element: <Blog /> },
     { path: "/services", element: <Services /> },
     { path: "/products", element: <Products /> },
