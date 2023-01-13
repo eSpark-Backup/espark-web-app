@@ -22,7 +22,7 @@ export default function Blog() {
     <div>
       {shapes?.map((item, index) => (
         <div key={index} className={item.className}>
-          <image src={item.imgUrl} alt={item.alt} />{" "}
+          <img src={item.imgUrl} alt={item.alt} />{" "}
         </div>
       ))}
       <div class="blog-area ptb-80">

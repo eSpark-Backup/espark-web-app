@@ -33,8 +33,7 @@ const AppRoutes = () => {
     { path: "/privacy-policy", element: <Privacy /> },
     { path: "/teams", element: <Teams /> },
     { path: "/appointments", element: <Contact /> },
-    { path: "/*", element: <NotFound /> },
-  ]);
+    { path: "/*", element: <NotFound /> }  ]);
   return routes;
 };
 

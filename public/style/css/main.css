@@ -24879,7 +24879,7 @@ label {
 .section-title .bar {
     height: 5px;
     width: 90px;
-    background: #76e5dd;
+    background: #009189;
     margin: 20px auto;
     position: relative;
     border-radius: 30px
@@ -25255,7 +25255,7 @@ gb-headline-efd0cee8 .gb-icon {
 
 .startp-nav nav .others-option .btn.btn-light {
     background: transparent;
-    border: 2px dashed #76e5dd;
+    border: 2px dashed #009189;
     padding: 12px 33px;
     margin-right: 10px
 }
@@ -25938,7 +25938,7 @@ gb-headline-efd0cee8 .gb-icon {
 }
 
 .single-box {
-    border: 1px dashed #76e5dd;
+    border: 1px dashed #009189;
     padding: 30px 20px;
     position: relative;
     z-index: 1;
@@ -25960,7 +25960,7 @@ gb-headline-efd0cee8 .gb-icon {
     width: 55px;
     height: 55px;
     line-height: 55px;
-    background: #76e5dd;
+    background: #009189;
     border-radius: 50%;
     color: #11A79c
 }
@@ -25985,8 +25985,8 @@ gb-headline-efd0cee8 .gb-icon {
     width: 100%;
     border-radius: 5px;
     height: 100%;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189);
     z-index: -1;
     opacity: 0;
     visibility: hidden
@@ -26179,8 +26179,8 @@ gb-headline-efd0cee8 .gb-icon {
     width: 100%;
     border-radius: 5px;
     height: 100%;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189);
     z-index: -1;
     opacity: 0;
     visibility: hidden
@@ -26263,8 +26263,8 @@ gb-headline-efd0cee8 .gb-icon {
     top: 0;
     height: 100%;
     width: 100%;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189);
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -26515,7 +26515,7 @@ gb-headline-efd0cee8 .gb-icon {
     width: 55px;
     height: 55px;
     line-height: 55px;
-    background: #76e5dd;
+    background: #009189;
     border-radius: 50%;
     color: #11A79c;
     -webkit-transition: .5s;
@@ -26785,7 +26785,7 @@ gb-headline-efd0cee8 .gb-icon {
     width: 55px;
     height: 55px;
     line-height: 55px;
-    background: #76e5dd;
+    background: #009189;
     border-radius: 50%;
     color: #11A79c;
     left: 20px;
@@ -26846,7 +26846,7 @@ gb-headline-efd0cee8 .gb-icon {
     width: 55px;
     height: 55px;
     line-height: 55px;
-    background: #76e5dd;
+    background: #009189;
     display: inline-block;
     border-radius: 50%;
     color: #11A79c;
@@ -27036,7 +27036,7 @@ gb-headline-efd0cee8 .gb-icon {
 }
 
 .single-team .team-image img {
-    border: 3px solid #76e5dd;
+    border: 3px solid #009189;
     width: auto !important;
     border-radius: 50%;
     display: inline-block !important;
@@ -27093,8 +27093,8 @@ gb-headline-efd0cee8 .gb-icon {
 }
 
 .single-team .team-info {
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189);
     padding: 10px 15px;
     border-radius: 75px;
     margin: 25px 10px;
@@ -27401,8 +27401,8 @@ gb-headline-efd0cee8 .gb-icon {
     width: 100%;
     height: 100%;
     border-radius: 5px 5px 0 0;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189);
     opacity: 0;
     visibility: hidden;
     -webkit-transition: .5s;
@@ -27968,8 +27968,8 @@ gb-headline-efd0cee8 .gb-icon {
     top: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189);
     opacity: 0;
     visibility: hidden;
     -webkit-transition: .5s;
@@ -28154,8 +28154,8 @@ gb-headline-efd0cee8 .gb-icon {
 
 .agency-portfolio-feedback-slides.owl-theme .owl-dots .owl-dot.active span,
 .agency-portfolio-feedback-slides.owl-theme .owl-dots .owl-dot:hover span {
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd)
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189)
 }
 
 .agency-portfolio-feedback-item {
@@ -28239,8 +28239,8 @@ gb-headline-efd0cee8 .gb-icon {
     top: -25px;
     left: -25px;
     color: #fff;
-    background: -webkit-linear-gradient(315deg, #76e5dd, #23bdb8);
-    background: linear-gradient(135deg, #76e5dd, #23bdb8);
+    background: -webkit-linear-gradient(315deg, #009189, #23bdb8);
+    background: linear-gradient(135deg, #009189, #23bdb8);
     width: 60px;
     height: 60px;
     line-height: 60px;
@@ -28290,8 +28290,8 @@ gb-headline-efd0cee8 .gb-icon {
     position: relative;
     padding-top: 80px;
     padding-bottom: 160px;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd)
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189)
 }
 
 .ready-to-talk h3 {
@@ -28389,8 +28389,8 @@ gb-headline-efd0cee8 .gb-icon {
     top: 0;
     right: 0;
     bottom: 0;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189);
     z-index: -1;
     opacity: 0;
     margin: -1px;
@@ -28406,7 +28406,7 @@ gb-headline-efd0cee8 .gb-icon {
     left: 20px;
     top: 25px;
     line-height: 55px;
-    background: #76e5dd;
+    background: #009189;
     border-radius: 50%;
     color: #11A79c;
     -webkit-transition: .5s;
@@ -28484,8 +28484,8 @@ gb-headline-efd0cee8 .gb-icon {
     border-radius: 5px;
     color: #fff;
     text-align: center;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd)
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189)
 }
 
 .single-what-we-do-box .icon i {
@@ -28528,8 +28528,8 @@ gb-headline-efd0cee8 .gb-icon {
 .discover-area {
     position: relative;
     z-index: 1;
-    background: -webkit-linear-gradient(315deg, #76e5dd, #23bdb8);
-    background: linear-gradient(135deg, #76e5dd, #23bdb8)
+    background: -webkit-linear-gradient(315deg, #009189, #23bdb8);
+    background: linear-gradient(135deg, #009189, #23bdb8)
 }
 
 .discover-image {
@@ -28640,8 +28640,8 @@ gb-headline-efd0cee8 .gb-icon {
     padding-bottom: 50px;
     position: relative;
     z-index: 1;
-    background: -webkit-linear-gradient(315deg, #76e5dd, #23bdb8);
-    background: linear-gradient(135deg, #76e5dd, #23bdb8)
+    background: -webkit-linear-gradient(315deg, #009189, #23bdb8);
+    background: linear-gradient(135deg, #009189, #23bdb8)
 }
 
 .industries-serve-area .section-title h2,
@@ -28740,8 +28740,8 @@ gb-headline-efd0cee8 .gb-icon {
     position: absolute;
     left: 20px;
     bottom: -20px;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189);
     color: #fff;
     padding: 8px 16px;
     font-size: 13px;
@@ -28966,8 +28966,8 @@ gb-headline-efd0cee8 .gb-icon {
 
 .blog-slides.owl-theme .owl-dots .owl-dot.active span,
 .blog-slides.owl-theme .owl-dots .owl-dot:hover span {
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd)
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189)
 }
 
 .single-blog-post-item {
@@ -31845,8 +31845,8 @@ blockquote:after {
 }
 
 .cta-area {
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd)
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189)
 }
 
 .cta-area .container {
@@ -32062,8 +32062,8 @@ blockquote:after {
     top: 0;
     height: 100%;
     width: 100%;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189);
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -32190,12 +32190,12 @@ blockquote:after {
     width: 100%;
     height: 100%;
     z-index: -1;
-    border: 1px dashed #76e5dd
+    border: 1px dashed #009189
 }
 
 .single-repair-services:after {
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189);
     opacity: 0;
     visibility: hidden
 }
@@ -32380,8 +32380,8 @@ blockquote:after {
 .repair-why-choose-us {
     position: relative;
     z-index: 1;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd)
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189)
 }
 
 .repair-why-choose-us .section-title h2 {
@@ -32411,7 +32411,7 @@ blockquote:after {
 .single-repair-box {
     text-align: center;
     background-color: #fff;
-    border: 1px dashed #76e5dd;
+    border: 1px dashed #009189;
     padding: 30px;
     position: relative;
     z-index: 1;
@@ -32746,7 +32746,7 @@ blockquote:after {
     padding: 40px 30px;
     text-align: center;
     background-color: #fff;
-    border: 1px dashed #76e5dd
+    border: 1px dashed #009189
 }
 
 .single-iot-services:after {
@@ -32758,8 +32758,8 @@ blockquote:after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189);
     z-index: -1;
     opacity: 0;
     visibility: hidden
@@ -32889,8 +32889,8 @@ blockquote:after {
 .iot-why-choose-us {
     position: relative;
     z-index: 1;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd)
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189)
 }
 
 .iot-why-choose-us .section-title h2 {
@@ -32920,7 +32920,7 @@ blockquote:after {
 .single-iot-box {
     text-align: center;
     background-color: #fff;
-    border: 1px dashed #76e5dd;
+    border: 1px dashed #009189;
     padding: 30px;
     position: relative;
     z-index: 1;
@@ -33293,7 +33293,7 @@ blockquote:after {
 .ml-about-content .bar {
     height: 5px;
     width: 90px;
-    background: #76e5dd;
+    background: #009189;
     margin: 20px 0;
     position: relative;
     border-radius: 30px
@@ -33678,8 +33678,8 @@ blockquote:after {
     z-index: 1;
     -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
-    background: -webkit-linear-gradient(315deg, #76e5dd, #23bdb8);
-    background: linear-gradient(135deg, #76e5dd, #23bdb8)
+    background: -webkit-linear-gradient(315deg, #009189, #23bdb8);
+    background: linear-gradient(135deg, #009189, #23bdb8)
 }
 
 .newsletter-image img {
@@ -33797,8 +33797,8 @@ blockquote:after {
     right: 0;
     bottom: 0;
     z-index: -1;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189);
     display: none
 }
 
@@ -34129,7 +34129,7 @@ blockquote:after {
 .agency-about-content .bar {
     height: 5px;
     width: 90px;
-    background: #76e5dd;
+    background: #009189;
     margin: 20px 0;
     position: relative;
     border-radius: 30px
@@ -34460,8 +34460,8 @@ blockquote:after {
     opacity: 0;
     visibility: hidden;
     width: 100%;
-    background: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    background: linear-gradient(135deg, #23bdb8, #76e5dd);
+    background: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    background: linear-gradient(135deg, #23bdb8, #009189);
     left: 0;
     border-radius: 4px
 }
@@ -37135,7 +37135,7 @@ blockquote:after {
     }
 
     .startp-nav nav .others-option .btn.btn-light {
-        border: 1px dashed #76e5dd;
+        border: 1px dashed #009189;
         display: none
     }
 
@@ -38000,7 +38000,7 @@ blockquote:after {
     }
 
     .startp-nav nav .others-option .btn.btn-light {
-        border: 1px dashed #76e5dd;
+        border: 1px dashed #009189;
         display: none
     }
 

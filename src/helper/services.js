@@ -74,7 +74,7 @@ export const services = [
           "Taking care of your business",
           "The Websites we create are optimized. Our Agile Methodology of development is proven and effective. No worries, as we have an expert web development team. Our web developers are experienced and certified. We build responsive websites that are auto-adapted to various device screens.",
           man_and_women,
-          "",
+          circle_1,
           cta_shape_1
         ),
       ],

@@ -11,9 +11,8 @@ const Header = () => {
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
 
-  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+  const [isNavCollapsed, setIsNavCollapsed] = useState(false);
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
-
   const location = useLocation();
   const isAppScreen = location.pathname === "/espark-app";
 
@@ -36,7 +35,7 @@ const Header = () => {
               <>
                 <button
                   class={
-                    !isNavCollapsed
+                    isNavCollapsed
                       ? "custom-toggler navbar-toggler "
                       : "custom-toggler navbar-toggler collapsed"
                   }
@@ -44,7 +43,7 @@ const Header = () => {
                   data-toggle="collapse"
                   data-target="/navbarSupportedContent"
                   aria-controls="navbarSupportedContent"
-                  aria-expanded={!isNavCollapsed ? true : false}
+                  aria-expanded={isNavCollapsed ? true : false}
                   aria-label="Toggle navigation"
                   onClick={handleNavCollapse}
                 >
@@ -54,24 +53,24 @@ const Header = () => {
                 </button>
                 <div
                   className={
-                    !isNavCollapsed
+                    isNavCollapsed
                       ? "collapse navbar-collapse show"
                       : "collapse navbar-collapse"
                   }
                   id="navbarSupportedContent"
                 >
                   <ul className="navbar-nav ms-auto">
-                    <li className="nav-item" onClick={handleNavCollapse}>
-                      <Link className="nav-link" to="/">
+                    <li className="nav-item" >
+                      <Link className="nav-link" to="/" onClick={()=>setIsNavCollapsed(false)}>
                         Home
                       </Link>
                     </li>
-                    <li class="nav-item" onClick={handleNavCollapse}>
+                    <li class="nav-item" onClick={()=>setIsNavCollapsed(false)}>
                       <Link class="nav-link" to="/about">
                         About
                       </Link>
                     </li>
-                    <li class="nav-item" onClick={handleNavCollapse}>
+                    <li class="nav-item" onClick={()=>setIsNavCollapsed(false)}>
                       <Link class="nav-link" to="/project">
                         Projects
                       </Link>
@@ -83,7 +82,7 @@ const Header = () => {
                       <ul class="dropdown-menu ">
                         {services.map((item) => {
                           return (
-                            <li class="nav-item" onClick={handleNavCollapse}>
+                            <li class="nav-item" onClick={()=>setIsNavCollapsed(false)}>
                               <i
                                 class="fa fa-envelope-square"
                                 aria-hidden="true"
@@ -99,42 +98,19 @@ const Header = () => {
                         })}
                       </ul>
                     </li>
-                    <li class="nav-item" onClick={handleNavCollapse}>
+                    <li class="nav-item" onClick={()=>setIsNavCollapsed(false)}>
                       <Link class="nav-link" to="/contact">
                         Contact Us
                       </Link>
                     </li>
 
-                    <li class="nav-item" onClick={handleNavCollapse}>
+                    <li class="nav-item" onClick={()=>setIsNavCollapsed(false)}>
                       <Link class="nav-link" to="/products">
                         Products
                       </Link>
-                      {/* <ul class="dropdown-menu-products">
-
-                    {products.map((item) => {
-                      return (
-                        <li class="nav-item">
-                          <i
-                            class="fa fa-envelope-square"
-                            aria-hidden="true"
-                          ></i>
-                          <Link
-                            class="nav-link"
-                            to={`products-detail/${item.name}`}
-                          >
-                            {item.name}
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </ul> */}
                     </li>
 
-                    {/* <li class="nav-item">
-                  <Link class="nav-link" to="/#">
-                    Careers
-                  </Link>
-                </li> */}
+
                   </ul>
                 </div>
               </>
@@ -150,7 +126,7 @@ const Header = () => {
                 <a
                   href="https://play.google.com/store/apps/details?id=com.commanddo"
                   class="btn btn-light"
-                  target="_blank"
+                  target="_blanks"
                 >
                   Download Now
                 </a>
