@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Moment from "react-moment";
-import { getApiCall, getCategoriesApiCall, getTagsApiCall } from './../../utils/Blogs';
+import { getApiCall } from './../../utils/Blogs';
 
 
 function BlogSection() {
@@ -67,34 +67,15 @@ function BlogSection() {
                                 </ul>
                             </div>
                             <h2>{items.title.rendered}</h2>
-                            <div>
-                                {items.content.rendered}
+                            <div><p
+                                dangerouslySetInnerHTML={{
+                                    __html: items.content.rendered,
+                                }}
+                            ></p>
                             </div>
                         </div>
                     </div>)
             })}
-            {/* {tags?.map((items, key) => {
-                return (
-                    <div>
-                        <div className="article-footer">
-                            <div className="article-tags">
-                                <a href={`/${items.slug}/`}>{`/${items.name}/`}</a>
-                            </div>
-                        </div>
-                    </div>)
-            })} */}
-
-            {/* {categories?.map((items, key) => {
-                return (
-                    <div>
-                        <div className="article-footer">
-                            <div className="article-tags">
-                                <a href={`/${items.slug}/`}>{`/${items.name}/`}</a>
-                            </div>
-                        </div>
-                    </div>)
-            })} */}
-
         </>
     )
 }
