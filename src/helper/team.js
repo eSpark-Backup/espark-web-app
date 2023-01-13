@@ -519,7 +519,7 @@ export const team = [
       {
         teamName: "Web & Mobile App Development",
         reporting: "Web & Mobile App Lead",
-        designation: "Vue JS Developer",
+        designation: "Jr. Vue JS Developer",
         firstName: "Bilal",
         lastName: "Ahmed Khan",
         name: "Bilal Ahmed Khan",
@@ -538,7 +538,7 @@ export const team = [
       {
         teamName: "Web & Mobile App Development",
         reporting: "Web & Mobile App Lead",
-        designation: "Vue JS Developer",
+        designation: "Jr. Vue JS Developer",
         firstName: "Fariha",
         lastName: "Rehman",
         name: "Fariha Rehman",
@@ -556,7 +556,7 @@ export const team = [
       }, {
         teamName: "Web & Mobile App Development",
         reporting: "Web & Mobile App Lead",
-        designation: "React JS Developer",
+        designation: "Jr. React JS Developer",
         firstName: "Syed Ali",
         lastName: "Naqi Hasni",
         name: "Syed Ali Naqi Hasni",
@@ -575,7 +575,7 @@ export const team = [
       {
         teamName: "Web & Mobile App Development",
         reporting: "Web & Mobile App Lead",
-        designation: "React JS Developer",
+        designation: "Jr. React JS Developer",
         firstName: "Iqra",
         lastName: "Mukhtar",
         name: "Iqra Mukhtar",
@@ -594,7 +594,7 @@ export const team = [
       {
         teamName: "Web & Mobile App Development",
         reporting: "Web & Mobile App Lead",
-        designation: "React JS Developer",
+        designation: "Jr. React JS Developer",
         firstName: "Syeda Kashaf",
         lastName: "Zehra",
         name: "Syeda Kashaf Zehra",
@@ -613,7 +613,7 @@ export const team = [
       {
         teamName: "Web & Mobile App Development",
         reporting: "Web & Mobile App Lead",
-        designation: "Vue JS Developer",
+        designation: "Jr. Vue JS Developer",
         firstName: "Saad",
         lastName: "Zafar",
         name: "Saad Zafar",
@@ -632,9 +632,7 @@ export const team = [
       {
         teamName: "Web & Mobile App Development",
         reporting: "Web & Mobile App Lead",
-        designation: "React JS Developer",
-        reporting: "Web Development Lead",
-        designation: "Senior Web & SEO Dev",
+        designation: "Web Developer ",
         firstName: "Muhammad Sohaib",
         lastName: "Hussain",
         name: "Muhmmad Sohaib Hussain",
@@ -653,7 +651,7 @@ export const team = [
       {
         teamName: "Web & Mobile App Development",
         reporting: "Web & Mobile App Lead",
-        designation: "React JS Developer",
+        designation: "Jr. React JS Developer",
         firstName: "Suha",
         lastName: "Rehman",
         name: "Suha Rehman",
@@ -671,7 +669,7 @@ export const team = [
       }, {
         teamName: "Web & Mobile App Development",
         reporting: "Web & Mobile App Lead",
-        designation: "Vue JS Developer",
+        designation: "Jr. Vue JS Developer",
         firstName: "Areeba",
         lastName: "Shakeel",
         name: "Areeba Shakeel",
@@ -709,7 +707,7 @@ export const team = [
       {
         teamName: "Web & Mobile App Development",
         reporting: "Web & Mobile App Lead",
-        designation: "React Native Developer",
+        designation: "Jr. React JS Developer",
         firstName: "Moin",
         lastName: "Khan",
         name: "Moin Khan",
@@ -728,7 +726,7 @@ export const team = [
       {
         teamName: "Web & Mobile App Development",
         reporting: "Web & Mobile App Lead",
-        designation: "React JS Developer",
+        designation: "React JS & React Native Developer",
         firstName: "Fahim",
         lastName: "Uddin",
         name: "Fahim Uddin",
