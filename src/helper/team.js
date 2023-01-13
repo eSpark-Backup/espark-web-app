@@ -519,7 +519,7 @@ export const team = [
       {
         teamName: "Web & Mobile App Development",
         reporting: "Web & Mobile App Lead",
-        designation: "React JS Developer",
+        designation: "Vue JS Developer",
         firstName: "Bilal",
         lastName: "Ahmed Khan",
         name: "Bilal Ahmed Khan",
@@ -538,9 +538,7 @@ export const team = [
       {
         teamName: "Web & Mobile App Development",
         reporting: "Web & Mobile App Lead",
-        designation: "React JS Developer",
-        reporting: "Web Development Lead",
-        designation: "Sr. Web Developer",
+        designation: "Vue JS Developer",
         firstName: "Fariha",
         lastName: "Rehman",
         name: "Fariha Rehman",
@@ -615,7 +613,7 @@ export const team = [
       {
         teamName: "Web & Mobile App Development",
         reporting: "Web & Mobile App Lead",
-        designation: "React JS Developer",
+        designation: "Vue JS Developer",
         firstName: "Saad",
         lastName: "Zafar",
         name: "Saad Zafar",
@@ -671,9 +669,9 @@ export const team = [
         facebook: "",
         message: "",
       }, {
-        teamName: "Front-End/Web Designing",
-        reporting: "CEO",
-        designation: "Web Development Lead",
+        teamName: "Web & Mobile App Development",
+        reporting: "Web & Mobile App Lead",
+        designation: "Vue JS Developer",
         firstName: "Areeba",
         lastName: "Shakeel",
         name: "Areeba Shakeel",
