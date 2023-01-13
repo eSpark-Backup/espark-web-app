@@ -1,7 +1,6 @@
 import React from "react";
 import { shapes } from "../../../helper/ImageUrl";
 import { team } from "../../../helper/team";
-import Team from "../../cards/team/team";
 import Title from "../../title/title";
 import "./style.css";
 
@@ -20,12 +19,7 @@ function TeamSection({ data }) {
   return (
     <div className="container-fluid">
       <div
-        class="multi-button"
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-        }}
+        className="multi-button teams-leads"
       >
         {team.map((item, index) => {
           return (
@@ -38,28 +32,28 @@ function TeamSection({ data }) {
           );
         })}
       </div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <div class="profile-card2">
-          <div class="img">
+      <div className="employee-details">
+        <div className="profile-card2">
+          <div className="img">
             <img src={teamData.imageUrl} />
           </div>
-          <div class="caption2">
+          <div className="caption2">
             <h3>{teamData.name}</h3>
             <p>{teamData.designation}</p>
           </div>
         </div>
       </div>
-      <div class="main row">
+      <div className="main row">
         {teamData?.teamMembers?.map((item, index) => {
           if (!item.imageUrl) {
             return null;
           }
           return (
-            <div class="col-lg-3 profile-card">
-              <div class="img">
+            <div className="col-lg-3 profile-card">
+              <div className="img">
                 <img src={item.imageUrl} />
               </div>
-              <div class="caption">
+              <div className="caption">
                 <h3>{item.name}</h3>
                 <p>{item.designation}</p>
               </div>
@@ -68,16 +62,16 @@ function TeamSection({ data }) {
         })}
       </div>
 
-      {/* <div class="main">
+      {/* <div className="main">
         {team.map((item, index) => {
           return (
             <>
               {item.teamMembers.map((items) => (
-                <div class="profile-card">
-                  <div class="img">
+                <div className="profile-card">
+                  <div className="img">
                     <img src={items.imageUrl} />
                   </div>
-                  <div class="caption">
+                  <div className="caption">
                     <h3>{items.name}</h3>
                     <p>{items.designation}</p>
                   </div>
@@ -117,7 +111,7 @@ function TeamSection({ data }) {
 
             <div
               key={index + 1}
-              class="ml-feedback-area ptb-80"
+              className="ml-feedback-area ptb-80"
               style={{ filter: changeClass ? "blur(10px)" : null }}
             >
               <div className="container">
