@@ -1,0 +1,31 @@
+import React from 'react'
+import './ceo.css'
+
+function Ceo() {
+  return (
+    <div className='items' >
+      <div className='positionRelative'>
+        <div className='positionAbsolute greenBox'> 
+        </div>
+        <div className='imgWrapper'>
+              <img src='https://images.pexels.com/photos/4491476/pexels-photo-4491476.jpeg?auto=compress&cs=tinysrgb&w=1600' className='imgTag'></img>
+        </div>
+      </div>
+      <div className='imgWrapperDisplayNone'>
+              <img src='https://images.pexels.com/photos/4491476/pexels-photo-4491476.jpeg?auto=compress&cs=tinysrgb&w=1600' className='imgTag'></img>
+      </div>
+      <div className='ceoText'>
+        <div className='ceoWrapper'>
+          <div>
+              <h1>Meet our Ceo</h1>
+          </div>
+          <div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Ceo
