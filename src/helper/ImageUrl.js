@@ -13,9 +13,7 @@ import partner_3 from "../assets/images/partner-img/partner-3.png";
 import partner_4 from "../assets/images/partner-img/partner-4.png";
 import partner_5 from "../assets/images/partner-img/partner-5.png";
 import partner_6 from "../assets/images/partner-img/partner-6.png";
-import partner_7 from "../assets/images/partner-img/partner-7.png";
 import partner_8 from "../assets/images/partner-img/partner-8.png";
-import partner_9 from "../assets/images/partner-img/partner-9.png";
 import partner_10 from "../assets/images/partner-img/partner-10.png";
 import partner_11 from "../assets/images/partner-img/partner-11.png";
 import partner_12 from "../assets/images/partner-img/partner-12.png";
@@ -54,9 +52,7 @@ export const partner = [
   { Url: "https://www.digitalxraid.com/", imgUrl: partner_4, hoverImage: partner_4 },
   { Url: "https://www.pocketcreatives.co.uk/", imgUrl: partner_5, hoverImage: partner_5 },
   { Url: "http://okularynaswiat.pl/en/", imgUrl: partner_6, hoverImage: partner_6 },
-  { Url: "https://www.propertytribes.com/", imgUrl: partner_7, hoverImage: partner_7 },
   { Url: "https://www.inteligex.com/", imgUrl: partner_8, hoverImage: partner_8 },
-  { Url: "https://seeksocial.co.uk/", imgUrl: partner_9, hoverImage: partner_9 },
   { Url: "https://luner.io/", imgUrl: partner_10, hoverImage: partner_10 },
   { Url: "https://nucal.com/", imgUrl: partner_11, hoverImage: partner_11 },
   { Url: "https://www.itarian.com/", imgUrl: partner_12, hoverImage: partner_12 },
