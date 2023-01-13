@@ -1,7 +1,7 @@
 import React from 'react'
 import './ceo.css'
 
-function Ceo() {
+function CeoSection() {
   return (
     <div className='items' >
       <div className='positionRelative'>
@@ -20,7 +20,7 @@ function Ceo() {
               <h1>Meet our Ceo</h1>
           </div>
           <div>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</p>
+            <p>It gives me great pleasure to welcome you to the eSpark Consulting Group. As the founder and group CEO, I am incredibly proud and thrilled to have started a company whose mission is to help and train people who are eager to learn and advance in a fast-paced, tech-savvy business. Our organization's motivation is to position eSpark Consulting Group at the top of the IT industry with a bright future.</p>
           </div>
         </div>
       </div>
@@ -28,4 +28,4 @@ function Ceo() {
   )
 }
 
-export default Ceo
+export default CeoSection

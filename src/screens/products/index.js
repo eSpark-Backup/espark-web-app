@@ -9,16 +9,9 @@ import { shapes } from "../../helper/ImageUrl";
 import { products } from "../../helper/products";
 import "./style.css";
 
-
-
 const Products = () => {
-  const [productData, setProductData] = useState([]);
+  const [productData, setProductData] = useState(products[0]);
   const [active, setActive] = useState(1);
-
-  useEffect(() => {
-    setProductData(products[0]);
-    setActive(1);
-  }, []);
 
   const setData = (item) => {
     setActive(item.id);

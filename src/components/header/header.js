@@ -29,6 +29,7 @@ const Header = () => {
                 alt="logo"
                 className="logo"
                 width={120}
+                height={isAppScreen && 60}
               />
             </Link>
             {isAppScreen ? null : (
@@ -60,17 +61,27 @@ const Header = () => {
                   id="navbarSupportedContent"
                 >
                   <ul className="navbar-nav ms-auto">
-                    <li className="nav-item" >
-                      <Link className="nav-link" to="/" onClick={()=>setIsNavCollapsed(false)}>
+                    <li className="nav-item">
+                      <Link
+                        className="nav-link"
+                        to="/"
+                        onClick={() => setIsNavCollapsed(false)}
+                      >
                         Home
                       </Link>
                     </li>
-                    <li class="nav-item" onClick={()=>setIsNavCollapsed(false)}>
+                    <li
+                      class="nav-item"
+                      onClick={() => setIsNavCollapsed(false)}
+                    >
                       <Link class="nav-link" to="/about">
                         About
                       </Link>
                     </li>
-                    <li class="nav-item" onClick={()=>setIsNavCollapsed(false)}>
+                    <li
+                      class="nav-item"
+                      onClick={() => setIsNavCollapsed(false)}
+                    >
                       <Link class="nav-link" to="/project">
                         Projects
                       </Link>
@@ -82,7 +93,10 @@ const Header = () => {
                       <ul class="dropdown-menu ">
                         {services.map((item) => {
                           return (
-                            <li class="nav-item" onClick={()=>setIsNavCollapsed(false)}>
+                            <li
+                              class="nav-item"
+                              onClick={() => setIsNavCollapsed(false)}
+                            >
                               <i
                                 class="fa fa-envelope-square"
                                 aria-hidden="true"
@@ -98,19 +112,23 @@ const Header = () => {
                         })}
                       </ul>
                     </li>
-                    <li class="nav-item" onClick={()=>setIsNavCollapsed(false)}>
+                    <li
+                      class="nav-item"
+                      onClick={() => setIsNavCollapsed(false)}
+                    >
                       <Link class="nav-link" to="/contact">
                         Contact Us
                       </Link>
                     </li>
 
-                    <li class="nav-item" onClick={()=>setIsNavCollapsed(false)}>
+                    <li
+                      class="nav-item"
+                      onClick={() => setIsNavCollapsed(false)}
+                    >
                       <Link class="nav-link" to="/products">
                         Products
                       </Link>
                     </li>
-
-
                   </ul>
                 </div>
               </>

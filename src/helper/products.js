@@ -8,11 +8,11 @@ export const products = [
     image: software_img,
     data: [
       {
-        name: "eSpark Lunch App",
+        name: " Command دو ",
         image:
-          "https://startp-next.envytheme.com/images/iot-features-image/iot-feature-image1.png",
+          "https://play-lh.googleusercontent.com/B8DijOQgHXMif3UkHsWnCEMtbteswC57GoGWtx6vQ8HSokvhaAFkAGE103bg0LA46Xw=w2560-h1440-rw",
         detail:
-          "<p>eSpark Consultants is a complete solution provider for modern software development imparting latest methods and techniques to tackle the increasing software advancements. We began our journey in 2015 and are working hard since then to bring a big smile on the face of our customers by making them visible among their competitors</p><br/><p>We are passionate about providing solutions that represent real value for money. We understand and believe you can’t afford to waste your investment for such a crucial aspect of your business by leaving it in the hands of amateurs. You are investing not only money, but your time when you decide to design and develop your project with us.</p><p>Times and conditions change so rapidly that we must keep our aim constantly focused on the future</p> <br/><p>CEO eSpark</p>",
+          "<p>Command دو allows you to order and command an office boy to get lunch for you can be incredibly convenient and efficient. Imagine being able to simply pull out your phone, open the app, and place an order for your favourite lunch items without ever having to leave your desk.</p> <br/>  <strong>Simplify Your Life With Commandدو Our App Offers</strong> <br/> <br/> <ul><li>Provide internal office use services for employees and employers.</li><li>Communicate daily tasks to office boys</li><li>Add Reminders and Apply Notifications for all your office tasks.</li><li>Call and chat with your fellow and rate office boys/cleaners.</li><li> Order Lunch from the cafeteria and View Order Histories.</li></ul>",
         button: true,
         sectionId: 1,
         routeLink: "/espark-app",
