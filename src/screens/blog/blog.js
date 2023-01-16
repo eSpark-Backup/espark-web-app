@@ -3,20 +3,24 @@ import { FaCalendarAlt, FaRegArrowAltCircleRight } from "react-icons/fa";
 import Moment from "react-moment";
 import BlogSideBar from "../../components/blogs/blogSideBar";
 import { shapes } from "./../../helper/ImageUrl";
-import { getApiCall } from './../../utils/Blogs'
+import { getApiCall, getCatApiCall } from "./../../utils/Blogs";
 import { Link } from "react-router-dom";
 
-
 export default function Blog() {
-  const [post, setPost] = useState()
+  const [post, setPost] = useState();
   useEffect(() => {
     const main = async () => {
       const data = await getApiCall();
-      setPost(data)
-      //console.log(data, "Posts");
-    }
+      setPost(data);
+    };
     main();
-  }, [])
+  }, []);
+
+  const catpost = async (e) => {
+    const data = await getCatApiCall(e);
+
+    setPost(data);
+  };
 
   return (
     <div>
@@ -37,18 +41,21 @@ export default function Blog() {
                         <div class="single-blog-post">
                           <div class="blog-image">
                             <Link to={`/blog-detail/${items.slug}/`}>
-
                               <img
-                                src={items.jetpack_featured_media_url ? items.jetpack_featured_media_url : "https://thumbs.dreamstime.com/b/blog-information-website-concept-workplace-background-text-view-above-127465079.jpg"}
+                                src={
+                                  items.jetpack_featured_media_url
+                                    ? items.jetpack_featured_media_url
+                                    : "https://thumbs.dreamstime.com/b/blog-information-website-concept-workplace-background-text-view-above-127465079.jpg"
+                                }
                                 class="animate__animated animate__zoomIn"
                                 alt="blog-img"
                               />
                             </Link>
                             <div class="date d-flex justify-content-center align-items-center">
                               <FaCalendarAlt size={15} />
-                              <Moment format="YYYY/MM/DD hh:mm" >{items.date}</Moment>
-
-
+                              <Moment format="YYYY/MM/DD hh:mm">
+                                {items.date}
+                              </Moment>
                             </div>
                           </div>
                           <div class="blog-post-content">
@@ -65,7 +72,10 @@ export default function Blog() {
                                 __html: items.excerpt.rendered,
                               }}
                             ></p>
-                            <Link class="read-more-btn" to={`/blog-detail/${items.slug}/`}>
+                            <Link
+                              class="read-more-btn"
+                              to={`/blog-detail/${items.slug}/`}
+                            >
                               Read More{"  "}
                               <FaRegArrowAltCircleRight margin={10} />
                             </Link>
@@ -78,7 +88,7 @@ export default function Blog() {
               </div>
             </div>
             <div class="col-lg-4 col-md-12">
-              <BlogSideBar />
+              <BlogSideBar catagoryPosts={(e) => catpost(e)} />
             </div>
           </div>
         </div>
