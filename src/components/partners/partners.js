@@ -8,10 +8,16 @@ export default function Partners({ h5, data }) {
         <div className="partner-inner">
           <div className="row justify-content-center">
             {data.map((item, index) => (
-              <div className="col-lg-2 col-md-3 col-6" key={index}>
-                {" "}
-                <a href="/ab">
-                  <img src={item.imgUrl} alt="partner" />
+              <div
+                className="col-lg-2 col-md-3 col-6 m-3 d-flex align-items-center"
+                key={index}
+              >
+                <a href={item.Url} rel="nofollow" target="_blank">
+                  <img
+                    src={item.imgUrl}
+                    alt="partner"
+                    style={{ filter: "grayscale(100%)" }}
+                  />
                   <img src={item.hoverImage} alt="partner" />
                 </a>
               </div>

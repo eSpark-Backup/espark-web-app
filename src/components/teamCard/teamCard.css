@@ -1,6 +1,6 @@
 .colorTheme{
-    color: -webkit-linear-gradient(315deg, #23bdb8, #76e5dd);
-    color: linear-gradient(135deg, #23bdb8, #76e5dd);
+    color: -webkit-linear-gradient(315deg, #23bdb8, #009189);
+    color: linear-gradient(135deg, #23bdb8, #009189);
 }
 .borderWidth{
     border: 1px solid black;

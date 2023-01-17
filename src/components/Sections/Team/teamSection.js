@@ -1,18 +1,87 @@
 import React from "react";
 import { shapes } from "../../../helper/ImageUrl";
 import { team } from "../../../helper/team";
-import Team from "../../cards/team/team";
 import Title from "../../title/title";
 import "./style.css";
 
 import { useState } from "react";
 
-function TeamSection() {
-  const [changeClass, setChangeClass] = useState(false);
+function TeamSection({ data }) {
+  const [active, setActive] = useState(0);
+
+  const [teamData, setTeamData] = useState(data);
+
+  const setData = (item, index) => {
+    setTeamData(item);
+    setActive(index);
+  };
 
   return (
-    <>
-      {team.map((item, index) => {
+    <div className="container-fluid">
+      <div
+        className="multi-button teams-leads"
+      >
+        {team.map((item, index) => {
+          return (
+            <button
+              className={active === index && "active"}
+              onClick={() => setData(item, index)}
+            >
+              &nbsp; {item.teamName}
+            </button>
+          );
+        })}
+      </div>
+      <div className="employee-details">
+        <div className="profile-card2">
+          <div className="img">
+            <img src={teamData.imageUrl} />
+          </div>
+          <div className="caption2">
+            <h3>{teamData.name}</h3>
+            <p>{teamData.designation}</p>
+          </div>
+        </div>
+      </div>
+      <div className="main row">
+        {teamData?.teamMembers?.map((item, index) => {
+          if (!item.imageUrl) {
+            return null;
+          }
+          return (
+            <div className="col-lg-3 profile-card">
+              <div className="img">
+                <img src={item.imageUrl} />
+              </div>
+              <div className="caption">
+                <h3>{item.name}</h3>
+                <p>{item.designation}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* <div className="main">
+        {team.map((item, index) => {
+          return (
+            <>
+              {item.teamMembers.map((items) => (
+                <div className="profile-card">
+                  <div className="img">
+                    <img src={items.imageUrl} />
+                  </div>
+                  <div className="caption">
+                    <h3>{items.name}</h3>
+                    <p>{items.designation}</p>
+                  </div>
+                </div>
+              ))}
+            </>
+          );
+        })}
+      </div> */}
+      {/* {team.map((item, index) => {
         if (!item.imageUrl) {
           return null;
         }
@@ -42,7 +111,7 @@ function TeamSection() {
 
             <div
               key={index + 1}
-              class="ml-feedback-area ptb-80"
+              className="ml-feedback-area ptb-80"
               style={{ filter: changeClass ? "blur(10px)" : null }}
             >
               <div className="container">
@@ -83,10 +152,9 @@ function TeamSection() {
                 ))}
               </div>
             </div>
-            {/* )} */}
           </>
         );
-      })}
+      })} */}
       {/* {team.map((item) => (
         <>
           <Title title={item.teamName} data={shapes} />
@@ -97,6 +165,7 @@ function TeamSection() {
                   name={item.name}
                   designation={item.designation}
                   imageUrl={item.imageUrl}
+                  mainImage={true}
                 />
               </div>
             </div>{" "}
@@ -119,7 +188,7 @@ function TeamSection() {
           </div>
         </>
       ))} */}
-    </>
+    </div>
   );
 }
 

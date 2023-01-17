@@ -123,8 +123,41 @@ const MobileApp = () => {
         features={features}
       />
       <div className="pt-5">
-        <About id={1} />
-        <About id={2} />
+        <About
+          id={1}
+          img={appScreenShot[0].image}
+          h1={"User - friendly interface"}
+          p={
+            "With a User-friendly interface and fast performance, Commandدو is the perfect companion for your daily office tasks. Download now and see for yourself why Commandدو is the best choice for every office employee with a need to quickly command any office-related tasks within any type of office. Try it out today and start enjoying the benefits of Commandدو "
+          }
+        />
+        <About
+          id={2}
+          img={appScreenShot[2].image}
+          h1={"Simplify your life with Commandدو Our app offers"}
+          p={
+            <>
+              <ul>
+                <li>
+                  Provide internal office use services for employees and
+                  employers.
+                </li>
+                <li>Communicate daily tasks to office boys</li>
+                <li>
+                  Add Reminders and Apply Notifications for all your office
+                  tasks.
+                </li>
+                <li>
+                  Call and chat with your fellow and rate office boys/cleaners.
+                </li>
+                <li>
+                  {" "}
+                  Order Lunch from the cafeteria and View Order Histories.
+                </li>
+              </ul>
+            </>
+          }
+        />
       </div>
       <div class="cta-area ptb-80">
         <div class="container">
@@ -134,9 +167,9 @@ const MobileApp = () => {
                 <h3>Download App from google Play store </h3>
               </div>
             </div>
-              <div class="col-lg-5 col-md-6">
-                <div class="cta-right-content">
-                  {/* <div class="hosting-price">
+            <div class="col-lg-5 col-md-6">
+              <div class="cta-right-content">
+                {/* <div class="hosting-price">
                   <span>Starting at only</span>
                   <h4>$4.75/mo*</h4>
                 </div> */}
@@ -164,25 +197,25 @@ const MobileApp = () => {
                   </a> */}
                 </div>
               </div>
+            </div>
           </div>
         </div>
       </div>
-      </div>
-     
+
       <div class="about-area">
         <div className="">
           <Slider {...settings}>
-              {appScreenShot.map((items) => {
-                return (
-                  <div>
-                    <img
-                      src={items.image}
-                      alt="images"
-                      className="appScreenShot"
-                    />
-                  </div> 
-                );
-              })}
+            {appScreenShot.map((items) => {
+              return (
+                <div>
+                  <img
+                    src={items.image}
+                    alt="images"
+                    className="appScreenShot"
+                  />
+                </div>
+              );
+            })}
           </Slider>
         </div>
         {shapes?.map((item, index) => (

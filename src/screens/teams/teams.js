@@ -6,9 +6,9 @@ import { team } from "../../helper/team";
 
 const Teams = () => {
   return (
-    <div>
-      <Title title={"Our Teams"} />
-      <TeamCard data={team} />;
+    <div style={{ backgroundColor: "#009189" }}>
+      {/* <Title title={"Our Teams"} /> */}
+      <TeamCard data={team} />
     </div>
   );
 };
