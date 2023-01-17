@@ -8,9 +8,9 @@ export default function Partners({ h5, data }) {
         <div className="partner-inner">
           <div className="row justify-content-center">
             {data.map((item, index) => (
-              <div className="col-lg-2 col-md-3 col-6" key={index}>
+              <div className="col-lg-2 col-md-3 col-6 align-items-center" key={index} >
                 {" "}
-                <a href="/ab">
+                <a href={item.Url} rel="nofollow" target="_blank" >
                   <img src={item.imgUrl} alt="partner" />
                   <img src={item.hoverImage} alt="partner" />
                 </a>
