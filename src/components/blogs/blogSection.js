@@ -2,11 +2,19 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Moment from "react-moment";
 import { getApiCall } from './../../utils/Blogs';
+import { ShimmerThumbnail } from 'react-shimmer-effects';
 
 
 function BlogSection() {
     const params = useParams();
     const [post, setPost] = useState([])
+    const [loading , setLoading] = useState(true)
+
+    useEffect(()=>{
+        setTimeout(() => {
+            setLoading(false);
+        }, 3000);
+    })
 
     useEffect(() => {
         const main = async () => {
@@ -16,16 +24,22 @@ function BlogSection() {
         main();
     }, [])
 
+
     const filterData = post.filter((item) => item.slug === params.id);
 
     console.log(filterData);
     return (
         <>
             {filterData?.map((items, key) => {
+                console.log(items, "items")
                 return (
                     <div className="blog-details-desc">
                         <div className="article-image">
-                            <img src={items.jetpack_featured_media_url ? items.jetpack_featured_media_url : "https://thumbs.dreamstime.com/b/blog-information-website-concept-workplace-background-text-view-above-127465079.jpg"} alt="{items.title.rendered}" />
+                            {
+                             loading
+                            ? <ShimmerThumbnail height={550} rounded />
+                            : <img src={items.jetpack_featured_media_url ? items.jetpack_featured_media_url : "https://thumbs.dreamstime.com/b/blog-information-website-concept-workplace-background-text-view-above-127465079.jpg"} alt="{items.title.rendered}" />
+                            }
                         </div>
                         <div className="article-content">
                             <div className="entry-meta">

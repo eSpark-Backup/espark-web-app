@@ -6,14 +6,20 @@ import {
   getTagsApiCall,
 } from "./../../utils/Blogs";
 import { Link } from "react-router-dom";
+// import styles from "./style.module.css";
+import {
+  ShimmerText,
+  ShimmerThumbnail,
+  ShimmerButton,
+
+} from "react-shimmer-effects";
 
 function BlogSideBar({ catagoryPosts }) {
-  const [post, setPost] = useState();
+  const [post, setPost] = useState([]);
   useEffect(() => {
     const main = async () => {
       const data = await getApiCall();
       setPost(data);
-      //console.log(data, "Posts");
     };
     main();
   }, []);
@@ -33,10 +39,11 @@ function BlogSideBar({ catagoryPosts }) {
     const main = async () => {
       const categoriesdata = await getCategoriesApiCall();
       setCategories(categoriesdata);
-      //console.log(categoriesdata, "Categories");
     };
     main();
   }, []);
+  let ShemarArray = [1, 2, 3];
+  let ShemarArrays = [1, 2, 3, 4, 5, 6,7];
 
   return (
     <>
@@ -70,60 +77,105 @@ function BlogSideBar({ catagoryPosts }) {
         </div>
         <div className="widget widget_startp_posts_thumb">
           <h3 className="widget-title">Popular Posts</h3>
-          {post?.slice(0, 3).map((items, key) => {
-            return (
-              <article className="item">
-                <Link className="thumb" to={`/blog-detail/${items.slug}/`}>
-                  <img
-                    src={
-                      items.jetpack_featured_media_url
-                        ? items.jetpack_featured_media_url
-                        : "https://thumbs.dreamstime.com/b/blog-information-website-concept-workplace-background-text-view-above-127465079.jpg"
-                    }
-                    class="fullimage cover bg3"
-                    alt={items.title.rendered}
-                  />
-                </Link>
-                <div className="info">
-                  <time>
-                    {" "}
-                    <Moment format="YYYY/MM/DD hh:mm">{items.date}</Moment>
-                  </time>
-                  <h4 className="title usmall">
-                    <Link to={`/blog-detail/${items.slug}/`}>
-                      {items.title.rendered}
-                    </Link>
-                  </h4>
-                </div>
-                <div className="clear" />
-              </article>
-            );
-          })}
+          {post.length ? (
+            post?.slice(0, 3).map((items, key) => {
+              return (
+                <article className="item">
+                  <Link className="thumb" to={`/blog-detail/${items.slug}/`}>
+                    <img
+                      src={
+                        items.jetpack_featured_media_url
+                          ? items.jetpack_featured_media_url
+                          : "https://thumbs.dreamstime.com/b/blog-information-website-concept-workplace-background-text-view-above-127465079.jpg"
+                      }
+                      class="fullimage cover bg3"
+                      alt={items.title.rendered}
+                    />
+                  </Link>
+                  <div className="info">
+                    <time>
+                      {" "}
+                      <Moment format="YYYY/MM/DD hh:mm">{items.date}</Moment>
+                    </time>
+                    <h4 className="title usmall">
+                      <Link to={`/blog-detail/${items.slug}/`}>
+                        {items.title.rendered}
+                      </Link>
+                    </h4>
+                  </div>
+                  <div className="clear" />
+                </article>
+              );
+            })
+          ) : (
+            <div className="mt-5">
+              {ShemarArray.map((item) => {
+                return (
+                  <div class="d-flex">
+                    <div class="col-lg-4">
+                      <ShimmerThumbnail
+                        height={90}
+                        width={90}
+                        categoryStyle="STYLE_THREE"
+                      />
+                    </div>
+                    <div class="col-lg-8">
+                      <ShimmerText
+                        line={3}
+                        gap={10}
+                        items={3}
+                        categoryStyle="STYLE_THREE"
+                      />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
         <div className="widget widget_categories">
           <h3 className="widget-title">Categories</h3>
-          {categories?.map((items, key) => {
-            return (
-              <ul>
-                <li>
-                  <a onClick={() => catagoryPosts(items.id)}>{items.name}</a>
-                </li>
-              </ul>
-            );
-          })}
+          {categories ? (
+            categories?.map((items, key) => {
+              return (
+                <ul>
+                  <li>
+                    <a onClick={() => catagoryPosts(items.id)}>{items.name}</a>
+                  </li>
+                </ul>
+              );
+            })
+          ) : (
+            <div className="col-lg-4">
+              <ShimmerText line={12} gap={10} />
+            </div>
+          )}
         </div>
         <div className="widget widget_tag_cloud">
           <h3 className="widget-title">Tags</h3>
 
           <div className="tagcloud">
-            {tags?.map((items, key) => {
-              return (
-                <Link to={`/blogs/${items.slug}/`}>
-                  {items.name}{" "}
-                  <span className="tag-link-count">({items.count})</span>
-                </Link>
-              );
-            })}
+            {tags ? (
+              tags?.map((items, key) => {
+                console.log(items, "items");
+                return (
+                  <Link to={`/blogs/${items.slug}/`}>
+                    {items.name}{" "}
+                    <span className="tag-link-count">({items.count})</span>
+                  </Link>
+                );
+              })
+            ) : (
+              <div className="row">
+                {ShemarArrays?.map((items, key) => {
+                  return (
+                    <span className="col-lg-4">
+                      <ShimmerButton />
+                    </span>
+                  );
+                })}
+              </div>
+            )}
           </div>
         </div>
       </div>

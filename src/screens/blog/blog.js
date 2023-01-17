@@ -5,6 +5,7 @@ import BlogSideBar from "../../components/blogs/blogSideBar";
 import { shapes } from "./../../helper/ImageUrl";
 import { getApiCall, getCatApiCall } from "./../../utils/Blogs";
 import { Link } from "react-router-dom";
+import { ShimmerPostList } from "react-shimmer-effects";
 
 export default function Blog() {
   const [post, setPost] = useState();
@@ -34,7 +35,9 @@ export default function Blog() {
           <div class="row">
             <div class="col-lg-8 col-md-12">
               <div class="row justify-content-center">
-                {post?.map((items, key) => {
+              {
+                post  ?(
+                post?.map((items, key) => {
                   return (
                     <>
                       <div class="col-lg-6 col-md-6">
@@ -84,7 +87,11 @@ export default function Blog() {
                       </div>
                     </>
                   );
-                })}
+                })
+              ):(
+                  <ShimmerPostList postStyle="STYLE_FOUR" col={2} row={2} gap={30} />
+              )
+            }
               </div>
             </div>
             <div class="col-lg-4 col-md-12">
