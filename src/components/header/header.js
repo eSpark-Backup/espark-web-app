@@ -32,114 +32,91 @@ const Header = () => {
                 height={isAppScreen && 60}
               />
             </Link>
-            {isAppScreen ? null : (
-              <>
-                <button
-                  class={
-                    isNavCollapsed
-                      ? "custom-toggler navbar-toggler "
-                      : "custom-toggler navbar-toggler collapsed"
-                  }
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="/navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded={isNavCollapsed ? true : false}
-                  aria-label="Toggle navigation"
-                  onClick={handleNavCollapse}
-                >
-                  <span class="icon-bar top-bar tes"></span>
-                  <span class="icon-bar middle-bar tes"></span>
-                  <span class="icon-bar bottom-bar tes"></span>
-                </button>
-                <div
-                  className={
-                    isNavCollapsed
-                      ? "collapse navbar-collapse show"
-                      : "collapse navbar-collapse"
-                  }
-                  id="navbarSupportedContent"
-                >
-                  <ul className="navbar-nav ms-auto">
-                    <li className="nav-item">
-                      <Link
-                        className="nav-link"
-                        to="/"
-                        onClick={() => setIsNavCollapsed(false)}
-                      >
-                        Home
-                      </Link>
-                    </li>
-                    <li
-                      class="nav-item"
-                      onClick={() => setIsNavCollapsed(false)}
-                    >
-                      <Link class="nav-link" to="/about">
-                        About
-                      </Link>
-                    </li>
-                    <li
-                      class="nav-item"
-                      onClick={() => setIsNavCollapsed(false)}
-                    >
-                      <Link class="nav-link" to="/project">
-                        Projects
-                      </Link>
-                    </li>
-                    <li class="nav-item">
-                      <Link class="nav-link" to="/services">
-                        Services
-                      </Link>
-                      <ul class="dropdown-menu ">
-                        {services.map((item) => {
-                          return (
-                            <li
-                              class="nav-item"
-                              onClick={() => setIsNavCollapsed(false)}
-                            >
-                              <i
-                                class="fa fa-envelope-square"
-                                aria-hidden="true"
-                              ></i>
-                              <Link
-                                class="nav-link"
-                                to={`services/${item.path}`}
-                              >
-                                {item.name}
-                              </Link>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </li>
-                    <li
-                      class="nav-item"
-                      onClick={() => setIsNavCollapsed(false)}
-                    >
-                      <Link class="nav-link" to="/contact">
-                        Contact Us
-                      </Link>
-                    </li>
 
-                    <li
-                      class="nav-item"
-                      onClick={() => setIsNavCollapsed(false)}
-                    >
-                      <Link class="nav-link" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </>
-            )}
-            <div
-              class="others-option"
-              style={{
-                textAlign: "right",
-                width: isAppScreen ? "100%" : null,
-              }}
+            <button
+              class={
+                isNavCollapsed
+                  ? "custom-toggler navbar-toggler "
+                  : "custom-toggler navbar-toggler collapsed"
+              }
+              type="button"
+              data-toggle="collapse"
+              data-target="/navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded={isNavCollapsed ? true : false}
+              aria-label="Toggle navigation"
+              onClick={handleNavCollapse}
             >
+              <span class="icon-bar top-bar tes"></span>
+              <span class="icon-bar middle-bar tes"></span>
+              <span class="icon-bar bottom-bar tes"></span>
+            </button>
+            <div
+              className={
+                isNavCollapsed
+                  ? "collapse navbar-collapse show"
+                  : "collapse navbar-collapse"
+              }
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav ms-auto">
+                <li className="nav-item">
+                  <Link
+                    className="nav-link"
+                    to="/"
+                    onClick={() => setIsNavCollapsed(false)}
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li class="nav-item" onClick={() => setIsNavCollapsed(false)}>
+                  <Link class="nav-link" to="/about">
+                    About
+                  </Link>
+                </li>
+                <li class="nav-item" onClick={() => setIsNavCollapsed(false)}>
+                  <Link class="nav-link" to="/project">
+                    Projects
+                  </Link>
+                </li>
+                <li class="nav-item">
+                  <Link class="nav-link" to="/services">
+                    Services
+                  </Link>
+                  <ul class="dropdown-menu ">
+                    {services.map((item) => {
+                      return (
+                        <li
+                          class="nav-item"
+                          onClick={() => setIsNavCollapsed(false)}
+                        >
+                          <i
+                            class="fa fa-envelope-square"
+                            aria-hidden="true"
+                          ></i>
+                          <Link class="nav-link" to={`services/${item.path}`}>
+                            {item.name}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </li>
+                <li class="nav-item" onClick={() => setIsNavCollapsed(false)}>
+                  <Link class="nav-link" to="/contact">
+                    Contact Us
+                  </Link>
+                </li>
+
+                <li class="nav-item" onClick={() => setIsNavCollapsed(false)}>
+                  <Link class="nav-link" to="/products">
+                    Products
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div class="others-option">
               {isAppScreen ? (
                 <a
                   href="https://play.google.com/store/apps/details?id=com.commanddo"
