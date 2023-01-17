@@ -10,10 +10,8 @@ import {
   ShimmerText,
   ShimmerThumbnail,
   ShimmerButton,
-
 } from "react-shimmer-effects";
 import { ShemarLengths, ShemarLength } from "../../helper/Shemars";
-
 
 function BlogSideBar({ catagoryPosts }) {
   const [post, setPost] = useState([]);
@@ -42,7 +40,6 @@ function BlogSideBar({ catagoryPosts }) {
     };
     main();
   }, []);
-  
 
   return (
     <>

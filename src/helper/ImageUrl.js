@@ -30,11 +30,6 @@ import partner_20 from "../assets/images/partner-img/partner-20.png";
 import partner_21 from "../assets/images/partner-img/partner-21.png";
 import partner_22 from "../assets/images/partner-img/partner-22.png";
 
-
-
-
-
-
 import Shape1 from "../assets/images/shape1-10.png";
 import Shape3_7 from "../assets/images/shape3-7.svg";
 import Shape4_9 from "../assets/images/shape4-9.svg";
@@ -58,26 +53,98 @@ export const partner = [
   // // { imgUrl: partner_7, hoverImage: partner_Hover7 },
   // { imgUrl: partner_2, hoverImage: partner_Hover2 },
   // { imgUrl: partner_5, hoverImage: partner_Hover5 },
-  { Url: "https://www.inteligex.com/", imgUrl: partner_1, hoverImage: partner_1 },
-  { Url: "https://thisisparagon.co.uk/", imgUrl: partner_2, hoverImage: partner_2 },
-  { Url: "https://traveltradeready.net/", imgUrl: partner_3, hoverImage: partner_3 },
-  { Url: "https://www.digitalxraid.com/", imgUrl: partner_4, hoverImage: partner_4 },
-  { Url: "https://www.pocketcreatives.co.uk/", imgUrl: partner_5, hoverImage: partner_5 },
-  { Url: "http://okularynaswiat.pl/en/", imgUrl: partner_6, hoverImage: partner_6 },
+  {
+    Url: "https://www.inteligex.com/",
+    imgUrl: partner_1,
+    hoverImage: partner_1,
+  },
+  {
+    Url: "https://thisisparagon.co.uk/",
+    imgUrl: partner_2,
+    hoverImage: partner_2,
+  },
+  {
+    Url: "https://traveltradeready.net/",
+    imgUrl: partner_3,
+    hoverImage: partner_3,
+  },
+  {
+    Url: "https://www.digitalxraid.com/",
+    imgUrl: partner_4,
+    hoverImage: partner_4,
+  },
+  {
+    Url: "https://www.pocketcreatives.co.uk/",
+    imgUrl: partner_5,
+    hoverImage: partner_5,
+  },
+  {
+    Url: "http://okularynaswiat.pl/en/",
+    imgUrl: partner_6,
+    hoverImage: partner_6,
+  },
   { Url: "https://www.ezlo.com/", imgUrl: partner_7, hoverImage: partner_7 },
-  { Url: "https://www.inteligex.com/", imgUrl: partner_8, hoverImage: partner_8 },
-  { Url: "https://www.robotshop.com/", imgUrl: partner_9, hoverImage: partner_9 },
+  {
+    Url: "https://www.inteligex.com/",
+    imgUrl: partner_8,
+    hoverImage: partner_8,
+  },
+  {
+    Url: "https://www.robotshop.com/",
+    imgUrl: partner_9,
+    hoverImage: partner_9,
+  },
   { Url: "https://luner.io/", imgUrl: partner_10, hoverImage: partner_10 },
   { Url: "https://nucal.com/", imgUrl: partner_11, hoverImage: partner_11 },
-  { Url: "https://www.itarian.com/", imgUrl: partner_12, hoverImage: partner_12 },
-  { Url: "https://zuulsystems.com/", imgUrl: partner_13, hoverImage: partner_13 },
-  { Url: "https://thehearlab.com/", imgUrl: partner_14, hoverImage: partner_14 },
-  { Url: "https://www.kurvatur.com/", imgUrl: partner_15, hoverImage: partner_15 },
+  {
+    Url: "https://www.itarian.com/",
+    imgUrl: partner_12,
+    hoverImage: partner_12,
+  },
+  {
+    Url: "https://zuulsystems.com/",
+    imgUrl: partner_13,
+    hoverImage: partner_13,
+  },
+  {
+    Url: "https://thehearlab.com/",
+    imgUrl: partner_14,
+    hoverImage: partner_14,
+  },
+  {
+    Url: "https://www.kurvatur.com/",
+    imgUrl: partner_15,
+    hoverImage: partner_15,
+  },
   { Url: "https://adstrum.net/", imgUrl: partner_16, hoverImage: partner_16 },
-  { Url: "https://www.grippatank.co.uk/", imgUrl: partner_17, hoverImage: partner_17 },
-  { Url: "https://stor-guard.com/", imgUrl: partner_18, hoverImage: partner_18 },
-  { Url: "https://www.glitzygiftz.co.uk/", imgUrl: partner_19, hoverImage: partner_19 },
-  { Url: "https://ionenergysolutions.com/", imgUrl: partner_20, hoverImage: partner_20 },
-  { Url: "https://peaceburgers.com/", imgUrl: partner_21, hoverImage: partner_21 },
-  { Url: "https://contidisanbonifacio.com/", imgUrl: partner_22, hoverImage: partner_22 },
+  {
+    Url: "https://www.grippatank.co.uk/",
+    imgUrl: partner_17,
+    hoverImage: partner_17,
+  },
+  {
+    Url: "https://stor-guard.com/",
+    imgUrl: partner_18,
+    hoverImage: partner_18,
+  },
+  {
+    Url: "https://www.glitzygiftz.co.uk/",
+    imgUrl: partner_19,
+    hoverImage: partner_19,
+  },
+  {
+    Url: "https://ionenergysolutions.com/",
+    imgUrl: partner_20,
+    hoverImage: partner_20,
+  },
+  {
+    Url: "https://peaceburgers.com/",
+    imgUrl: partner_21,
+    hoverImage: partner_21,
+  },
+  {
+    Url: "https://contidisanbonifacio.com/",
+    imgUrl: partner_22,
+    hoverImage: partner_22,
+  },
 ];

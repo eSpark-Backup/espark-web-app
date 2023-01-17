@@ -35,63 +35,66 @@ export default function Blog() {
           <div class="row">
             <div class="col-lg-8 col-md-12">
               <div class="row justify-content-center">
-              {
-                post  ?(
-                post?.map((items, key) => {
-                  return (
-                    <>
-                      <div class="col-lg-6 col-md-6">
-                        <div class="single-blog-post">
-                          <div class="blog-image">
-                            <Link to={`/blog-detail/${items.slug}/`}>
-                              <img
-                                src={
-                                  items.jetpack_featured_media_url
-                                    ? items.jetpack_featured_media_url
-                                    : "https://thumbs.dreamstime.com/b/blog-information-website-concept-workplace-background-text-view-above-127465079.jpg"
-                                }
-                                class="animate__animated animate__zoomIn"
-                                alt="blog-img"
-                              />
-                            </Link>
-                            <div class="date d-flex justify-content-center align-items-center">
-                              <FaCalendarAlt size={15} />
-                              <Moment format="YYYY/MM/DD hh:mm">
-                                {items.date}
-                              </Moment>
+                {post ? (
+                  post?.map((items, key) => {
+                    return (
+                      <>
+                        <div class="col-lg-6 col-md-6">
+                          <div class="single-blog-post">
+                            <div class="blog-image">
+                              <Link to={`/blog-detail/${items.slug}/`}>
+                                <img
+                                  src={
+                                    items.jetpack_featured_media_url
+                                      ? items.jetpack_featured_media_url
+                                      : "https://thumbs.dreamstime.com/b/blog-information-website-concept-workplace-background-text-view-above-127465079.jpg"
+                                  }
+                                  class="animate__animated animate__zoomIn"
+                                  alt="blog-img"
+                                />
+                              </Link>
+                              <div class="date d-flex justify-content-center align-items-center">
+                                <FaCalendarAlt size={15} />
+                                <Moment format="YYYY/MM/DD hh:mm">
+                                  {items.date}
+                                </Moment>
+                              </div>
+                            </div>
+                            <div class="blog-post-content">
+                              <h3>
+                                <Link to={`/blog-detail/${items.slug}/`}>
+                                  {items.title.rendered}
+                                </Link>
+                              </h3>
+                              <span>
+                                By <Link to="#">Admin</Link>
+                              </span>
+                              <p
+                                dangerouslySetInnerHTML={{
+                                  __html: items.excerpt.rendered,
+                                }}
+                              ></p>
+                              <Link
+                                class="read-more-btn"
+                                to={`/blog-detail/${items.slug}/`}
+                              >
+                                Read More{"  "}
+                                <FaRegArrowAltCircleRight margin={10} />
+                              </Link>
                             </div>
                           </div>
-                          <div class="blog-post-content">
-                            <h3>
-                              <Link to={`/blog-detail/${items.slug}/`}>
-                                {items.title.rendered}
-                              </Link>
-                            </h3>
-                            <span>
-                              By <Link to="#">Admin</Link>
-                            </span>
-                            <p
-                              dangerouslySetInnerHTML={{
-                                __html: items.excerpt.rendered,
-                              }}
-                            ></p>
-                            <Link
-                              class="read-more-btn"
-                              to={`/blog-detail/${items.slug}/`}
-                            >
-                              Read More{"  "}
-                              <FaRegArrowAltCircleRight margin={10} />
-                            </Link>
-                          </div>
                         </div>
-                      </div>
-                    </>
-                  );
-                })
-              ):(
-                  <ShimmerPostList postStyle="STYLE_FOUR" col={2} row={2} gap={30} />
-              )
-            }
+                      </>
+                    );
+                  })
+                ) : (
+                  <ShimmerPostList
+                    postStyle="STYLE_FOUR"
+                    col={2}
+                    row={2}
+                    gap={30}
+                  />
+                )}
               </div>
             </div>
             <div class="col-lg-4 col-md-12">
