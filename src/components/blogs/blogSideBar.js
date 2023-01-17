@@ -6,13 +6,14 @@ import {
   getTagsApiCall,
 } from "./../../utils/Blogs";
 import { Link } from "react-router-dom";
-// import styles from "./style.module.css";
 import {
   ShimmerText,
   ShimmerThumbnail,
   ShimmerButton,
 
 } from "react-shimmer-effects";
+import { ShemarLengths, ShemarLength } from "../../helper/Shemars";
+
 
 function BlogSideBar({ catagoryPosts }) {
   const [post, setPost] = useState([]);
@@ -29,7 +30,6 @@ function BlogSideBar({ catagoryPosts }) {
     const main = async () => {
       const tagsdata = await getTagsApiCall();
       setTags(tagsdata);
-      //console.log(tagsdata, "Tags");
     };
     main();
   }, []);
@@ -42,8 +42,7 @@ function BlogSideBar({ catagoryPosts }) {
     };
     main();
   }, []);
-  let ShemarArray = [1, 2, 3];
-  let ShemarArrays = [1, 2, 3, 4, 5, 6,7];
+  
 
   return (
     <>
@@ -109,7 +108,7 @@ function BlogSideBar({ catagoryPosts }) {
             })
           ) : (
             <div className="mt-5">
-              {ShemarArray.map((item) => {
+              {ShemarLength.map((item) => {
                 return (
                   <div class="d-flex">
                     <div class="col-lg-4">
@@ -167,7 +166,7 @@ function BlogSideBar({ catagoryPosts }) {
               })
             ) : (
               <div className="row">
-                {ShemarArrays?.map((items, key) => {
+                {ShemarLengths?.map((items, key) => {
                   return (
                     <span className="col-lg-4">
                       <ShimmerButton />
