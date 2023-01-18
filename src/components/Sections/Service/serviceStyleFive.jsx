@@ -2,11 +2,12 @@ import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { shapes } from "../../../helper/ImageUrl";
+import Button from "../../button/button";
 import style from './style.module.css'
-const ServiceStyleFive = ({ data,link }) => {
-  const order =(a, b)=> {
+const ServiceStyleFive = ({ data, link }) => {
+  const order = (a, b) => {
     return a < b ? -1 : (a > b ? 1 : 0);
-}
+  }
   return (
     <div>
       <div class="agency-services-area">
@@ -47,9 +48,9 @@ const ServiceStyleFive = ({ data,link }) => {
                 </div>
               );
             }).sort(order)}
-             {link == '/' ? <Link to={'/services'} className={style.btnMargin}>
-                    <a className='btn btn-secondary'>Go To Services<FaLongArrowAltRight  className={style.arrowSize}/></a>
-              </Link> : ""}
+            {link == '/' ?
+              <Button title="Go To Services" link="/services" design={1} />
+              : ""}
           </div>
         </div>
         {shapes?.map((item, index) => (
@@ -57,7 +58,7 @@ const ServiceStyleFive = ({ data,link }) => {
             <img src={item.imgUrl} alt={item.alt} />{" "}
           </div>
         ))}
-      
+
       </div>
     </div>
   );
