@@ -15,7 +15,12 @@ function TeamSection({ data }) {
     setTeamData(item);
     setActive(index);
   };
-  const setData2 = (item) => {
+  const selectDropdown = (e) => {
+    const selectedValue = e.target.value;
+              setActive(selectedValue);
+              setSelectDropdown(team[selectedValue]);
+  }
+  const setSelectDropdown = (item) => {
     setTeamData(item);
   };
   return (
@@ -37,11 +42,8 @@ function TeamSection({ data }) {
         <div className=" hides">
           <select class="form-select" aria-label="Default select example" 
             value={active}
-            onChange={(e) => {
-              const selectedValue = e.target.value;
-              setActive(selectedValue);
-              setData2(team[selectedValue]);
-            }}
+            onChange={(e) => {selectDropdown(e)}
+            }
           >
             {team.map((item, index) => {
               return (
