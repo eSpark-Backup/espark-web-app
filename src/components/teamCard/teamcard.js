@@ -9,7 +9,7 @@ export default function TeamCard() {
     <>
       <div className="row justify-content-center p-5">
         {category.map((item) => (
-          <div className="col-lg-4">
+          <div className="col-lg-4 head">
             <CategoryCard
               header={item.name}
               image={item.image}
