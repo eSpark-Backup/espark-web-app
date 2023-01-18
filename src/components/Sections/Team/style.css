@@ -224,11 +224,29 @@
         display: flex;
         flex-direction: column;
     }
+    .hide {
+        display: none;
+    }
+}
+@media (max-width:1400px) {
+    .hide{
+        display: none;
+    }
+    
+}
+@media (min-width:1400px) {
+    .hides{
+        display: none;
+    }
+    
 }
 @media (max-width: 767px){
     .teams-leads{
         margin: 0% 10%;
         display: flex;
         flex-direction: column;
+    }
+    .hide {
+        display: none;
     }
 }
