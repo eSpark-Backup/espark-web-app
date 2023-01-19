@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styles from "./style.module.css";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import Button from "../../components/button/button";
 
 function NotFound() {
   return (
@@ -15,12 +14,7 @@ function NotFound() {
           page.
         </p>
         <div className={styles.btnWrapper}>
-          <Link to={"/"}>
-            <a className="btn btn-secondary">
-              Back to home
-              <FaLongArrowAltRight className={styles.arrowSize} />
-            </a>
-          </Link>
+          <Button title="Back to home" link="/" design={1} />
         </div>
       </div>
     </>

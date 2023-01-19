@@ -1,9 +1,7 @@
 import React from "react";
-import { FaLongArrowAltRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { shapes } from "../../../helper/ImageUrl";
 import Button from "../../button/button";
-import style from './style.module.css'
 const ServiceStyleFive = ({ data, link }) => {
   const order = (a, b) => {
     return a < b ? -1 : (a > b ? 1 : 0);

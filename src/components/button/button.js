@@ -72,7 +72,20 @@ const Button = ({ title, link, design }) => {
       </div>
     );
   }
-
+  if (design == 7) {
+    return (
+      <div>
+        <Link class="read-more-btn " to={link}>
+          {title}
+        </Link>
+      </div>
+    );
+  }
+  if (design == 8) {
+    return (
+      <a onClick={link}>{title}</a>
+    );
+  }
 }
 
 export default Button;
