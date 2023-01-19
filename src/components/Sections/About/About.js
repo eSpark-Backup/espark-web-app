@@ -5,7 +5,6 @@ import shape4 from "../../../../src/assets/images/shape4.svg";
 import shape5 from "../../../../src/assets/images/shape5.png";
 
 import about4 from "../../../../src/assets/images/about4.png";
-import { Link } from "react-router-dom";
 
 function About({ id, img, p, h1 }) {
   return (

@@ -11,7 +11,7 @@ const ServiceStyleFive = ({ data, link }) => {
       <div class="agency-services-area">
         <div class="container">
           <div class="row justify-content-center">
-            {newData.map((item) => {
+            {data.map((item) => {
               return (
                 <div class="col-lg-4 col-sm-6 col-md-6">
                   <div class="agency-services-box">

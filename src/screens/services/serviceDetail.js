@@ -7,7 +7,7 @@ import styles from "./style.module.css";
 
 const ServiceDetail = () => {
   const params = useParams();
-  
+
   const filterData = services.filter((item) => item.path === params.id);
 
   const even = (item) => {
@@ -47,7 +47,7 @@ const ServiceDetail = () => {
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div class="cta-repair-img-odd">
-                <img src={item.imgUrlMan}  alt="cta-repair-img"/>
+                <img src={item.imgUrlMan} alt="cta-repair-img" />
               </div>
             </div>
             <div class="col-lg-6">
@@ -62,7 +62,7 @@ const ServiceDetail = () => {
           <img src={item.imgUrlCircle} alt="cta-circle" />
         </div>
         <div class={`cta-shape-odd `}>
-          <img src={item.imgUrlCta}  alt="cta-shape"/>   
+          <img src={item.imgUrlCta} alt="cta-shape" />
         </div>
       </div>
     );
@@ -73,7 +73,7 @@ const ServiceDetail = () => {
       <div className="container">
         <div class="row align-items-center pb-80">
           <div class="col-lg-6 features-details-image">
-            <img src={filterData[0].data.image[0]} alt="image" />
+            <img src={filterData[0].data.image[0]} alt={item.heading} />
           </div>
           <div class="col-lg-6 features-details mt-3">
             <div class="features-details-desc">
