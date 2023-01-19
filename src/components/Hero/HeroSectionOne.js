@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 const HeroSectionOne = ({ filterData }) => {
   return (
-    <div>
+    <>
       <div class="repair-main-banner">
         <div class="container">
           <div class="row align-items-center">
@@ -38,7 +38,7 @@ const HeroSectionOne = ({ filterData }) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

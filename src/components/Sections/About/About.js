@@ -16,7 +16,7 @@ function About({ id, img, p, h1 }) {
             <div class="row align-items-center">
               <div class="col-lg-6 col-md-12">
                 <div class="ml-about-img">
-                  <img src={img ? img : about4} alt="image" width={200} />
+                  <img src={img ? img : about4} alt="image" width={400} />
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">
@@ -113,8 +113,8 @@ function About({ id, img, p, h1 }) {
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">
-                <div class="ml-about-img">
-                  <img src={img ? img : about4} alt="image" width={200} />
+                <div class="ml-about-img mt-2">
+                  <img src={img ? img : about4} alt="image" width={400} />
                 </div>
               </div>
             </div>

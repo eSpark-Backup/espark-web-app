@@ -5,7 +5,7 @@ import style from "./style.module.css";
 
 export default function ProjectCard({ data, link }) {
   return (
-    <div className="works-area pt-80 pb-50">
+    <div className={`works-area pt-70 pb-50 ${style.galleryContainer}`}>
       <div class="container">
         {link !== "/" && (
           <div class="section-title text-left">
