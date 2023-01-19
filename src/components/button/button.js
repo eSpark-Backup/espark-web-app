@@ -86,6 +86,17 @@ const Button = ({ title, link, design }) => {
       <a onClick={link}>{title}</a>
     );
   }
+
+  if (design == 9) {
+    return (
+      <a href={link} rel="nofollow" target="_blank">
+        {title}
+      </a>
+    );
+  }
+
+
+
 }
 
 export default Button;

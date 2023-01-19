@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../components/button/button";
 import GetInTouch from "../../components/getInTouch/GetInTouch";
 import Title from "../../components/title/title";
 import { shapes } from "../../helper/ImageUrl";
@@ -6,7 +7,7 @@ import { shapes } from "../../helper/ImageUrl";
 const Contact = () => {
   return (
     <div>
-      
+
       <Title
         title={"LET'S MAKE SOMETHING AWESOME TOGETHER"}
         data={shapes}
@@ -102,7 +103,7 @@ const Contact = () => {
                 </div>
                 <h3>Call Us</h3>
                 <p>
-                  <a href="tel:+92 323 2788259">+92 323 2788259</a>
+                  <Button title="+92 323 2788259" link="tel:+92 323 2788259" design={8} />
                 </p>
               </div>
             </div>
