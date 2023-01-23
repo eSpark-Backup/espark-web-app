@@ -8,3 +8,12 @@
 .logoMargin{
     margin-top: 5px;
 }
+@media (max-width: 576px) {
+    .footer {
+        width: 50%;
+    }
+    .footers {
+        width: 50%;
+        display: block;
+    }
+}

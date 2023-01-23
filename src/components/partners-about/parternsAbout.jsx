@@ -8,7 +8,7 @@ import { clients } from "../../helper/clients";
 export default function PartnerAbout() {
   return (
     <div className={style.partnerWrapper}>
-      <div class="bigdata-feedback-area pt-80 pb-50">
+      <div class="bigdata-feedback-area pt-80">
         <div class="container">
           <div class="section-title">
             <h2>HAPPY CLIENTS</h2>
