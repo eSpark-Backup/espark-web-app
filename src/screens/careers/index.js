@@ -12,14 +12,13 @@ import { ShemarLength } from "./../../helper/Shemars";
 const Careers = () => {
   const [careersData, setCareersData] = useState([]);
 
-  useEffect(
-    () => async () => {
+  useEffect(() => {
+    const main = async () => {
       const data = await getOpeningJobs();
       setCareersData(data);
-      console.log(data[0]);
-    },
-    []
-  );
+    };
+    main();
+  }, []);
 
   return (
     <>

@@ -12,19 +12,19 @@ const JobDetail = () => {
   const params = useParams();
   const [singleJob, setSingleJob] = useState([]);
 
-  useEffect(
-    () => async () => {
-      const jobData = await getSingleOpeningJobs(params.id);
-      setSingleJob(jobData);
-    },
-    []
-  );
+  useEffect(() => {
+    const main = async () => {
+      const data = await getSingleOpeningJobs(params.id);
+      setSingleJob(data);
+    };
+    main();
+  }, []);
 
   return (
     <div className="container">
       <Title title={singleJob?.title?.rendered} />
       <div className="row">
-        {singleJob.title ? (
+        {singleJob?.title ? (
           <p
             className="col-lg-6"
             dangerouslySetInnerHTML={{
