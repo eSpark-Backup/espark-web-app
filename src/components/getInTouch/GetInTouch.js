@@ -140,7 +140,7 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
   const [phone, setPhone] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [file, setFile] = useState("");
+  const [files, setFiles] = useState(null);
 
   const form = useRef();
 
@@ -166,16 +166,23 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
     setName("");
     setPhone("");
     setSubject("");
-    setFile("");
+    setFiles("");
     array = [];
   };
 
   const setfileData = (e) => {
-    let file = e.target.files[0];
-    let reader = new FileReader();
-    reader.readAsDataURL(file);
+    const fileToLoad = e.target.files[0];
 
-    setFile(reader.result);
+    var fileReader = new FileReader();
+    var base64;
+    // Onload of file read the file content
+    fileReader.onload = function (fileLoadedEvent) {
+      base64 = fileLoadedEvent.target.result;
+      // Print data in console
+      setFiles(base64);
+    };
+    // Convert data to base64
+    fileReader.readAsDataURL(fileToLoad);
   };
 
   const sendEmail = (e) => {
@@ -190,17 +197,15 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
           reply_to: email,
           message: message,
           phone: phone,
-          content: file,
+          content: files,
         })
         .then(
           (result) => {
-            modelClose(false);
             clearState();
             toast.success("Thank you for Connecting");
           },
           (error) => {
-            modelClose(false);
-            console.log(error.text);
+            toast.error("Something Went Wrong");
           }
         );
     } else {
@@ -223,7 +228,7 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
             },
             (error) => {
               modelClose(false);
-              console.log(error.text);
+              toast.error("Something Went Wrong");
             }
           );
       } else {
@@ -239,11 +244,12 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
           })
           .then(
             (result) => {
+              modelClose(false);
               toast.success("Thank you for Connecting");
               clearState();
             },
             (error) => {
-              console.log(error.text);
+              toast.error("Something Went Wrong");
             }
           );
       }
@@ -415,9 +421,9 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                             type="file"
                             name="file"
                             class="form-control"
-                            accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,.pdf"
+                            accept=".doc,.docx,.pdf"
                             required={true}
-                            value={file}
+                            value={files?.result}
                             onChange={(e) => setfileData(e)}
                           />
                           <div class="invalid-feedback"></div>

@@ -6,6 +6,9 @@ import { services } from "../../helper/services";
 import style from "./style.module.css";
 
 const Services = ({ link }) => {
+
+const servicesData = [...services].reverse()
+
   return (
     <div className={style.textCenter}>
       <>
@@ -17,7 +20,7 @@ const Services = ({ link }) => {
           }
         />
         <ServiceStyleFive
-          data={link !== "/" ? services : services.slice(0, 6)}
+          data={link !== "/" ? services : servicesData.slice(0, 6)}
           link={link}
         />{" "}
       </>
