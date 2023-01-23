@@ -1,13 +1,16 @@
 import "./App.css";
 import AppWraper from "./router";
 import { Toaster } from "react-hot-toast";
-import { HelmetProvider } from "react-helmet-async";
+import { renderToString } from 'react-dom/server';
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function App() {
   const helmetContext = {};
+
   return (
     <>
       <HelmetProvider context={helmetContext}>
+        <Helmet prioritizeSeoTags />
         <AppWraper />
         <Toaster />
         <div class="go-top" onClick={() => window.scrollTo(0, 0)}>
@@ -28,7 +31,9 @@ function App() {
         </div>
       </HelmetProvider>
     </>
-  );
+  ); const html = renderToString(App);
+
+  const { helmet } = helmetContext;
 }
 
 export default App;
