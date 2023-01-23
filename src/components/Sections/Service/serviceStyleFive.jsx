@@ -4,6 +4,7 @@ import { shapes } from "../../../helper/ImageUrl";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 import style from './style.module.css'
+import Button from "../../button/button";
 const ServiceStyleFive = ({ data, link }) => {
 
   const newData = [...data].reverse()
@@ -47,7 +48,7 @@ const ServiceStyleFive = ({ data, link }) => {
                   </div>
                 </div>
               );
-            }).sort(order)}
+            }).sort()}
             {link == '/' ?
               <Button title="Go To Services" link="/services" design={1} />
               : ""}

@@ -9,6 +9,7 @@ import "./style.css";
 import { Link } from "react-router-dom";
 import { ShimmerText, ShimmerThumbnail } from "react-shimmer-effects";
 import { ShemarLength } from "./../../helper/Shemars";
+import Button from "../../components/button/button";
 const Careers = () => {
   const [careersData, setCareersData] = useState([]);
 
@@ -166,21 +167,8 @@ const Careers = () => {
                   ></p>
                 </div>
                 <div class="col-lg-3 d-flex align-items-center justify-content-center">
-                  <Link class="btn btn-secondary" to={`/vacancies/${item.id}`}>
-                    Apply Now
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 448 512"
-                      class="style_arrowSize__wf8Oc"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path>
-                    </svg>
-                  </Link>
+                  <Button title="Apply Now" link={`/vacancies/${item.id}`} design={1} />
+
                 </div>
               </div>
             );
