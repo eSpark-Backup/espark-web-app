@@ -1,0 +1,15 @@
+.section-p {
+    text-align: left;
+}
+
+.section-p h2 {
+    color: #11A79c;
+}
+
+.section-p h3 {
+    color: gray !important
+}
+
+.section-p p {
+    font-size: 16px;
+}

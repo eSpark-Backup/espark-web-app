@@ -39,18 +39,19 @@ function HeroSectionTwo({ heading1, paragarph, features }) {
         <div className="pt-5">
           <div class="container">
             <div class="row">
-              {features.map((item) => {
-                return (
-                  <div class="col-lg-4 col-md-6">
-                    <div class="single-box">
-                      <h3>
-                        <a>{item.name}</a>
-                      </h3>
-                      <p>{item.description}</p>
+              {features &&
+                features.map((item) => {
+                  return (
+                    <div class="col-lg-4 col-md-6">
+                      <div class="single-box">
+                        <h3>
+                          <a>{item.name}</a>
+                        </h3>
+                        <p>{item.description}</p>
+                      </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
             </div>
           </div>
         </div>
