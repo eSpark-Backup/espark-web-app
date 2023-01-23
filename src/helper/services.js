@@ -48,220 +48,6 @@ export const services = [
   {
     id: hash(),
     icon: "",
-    name: "IoT Product Development Including Technical Support",
-    path: "iot-product-development-including-technical-support",
-    data: {
-      image: [IOT, image2, image3, image4],
-      content: [],
-      shortDescription:
-        "IoT is the science of connecting physical devices using the internet to build a smart and connected world and we offer you the best services regarding that.",
-      extraContent:
-        "<strong>IoT is the science of connecting physical devices using the internet to build a smart and connected world. IoT uses smart software solutions and makes it possible for objects to communicate with one another. </strong> <br /> <br /> <p>Our IoT development solution helps in increasing business efficiencies by streamlining processes using the power of technology. We help you integrate mobility with IoT solution so that you have every control at your fingertips. You can manage everything using your smartphone irrespective of the device involved in IoT product development. In true sense, you experience a connected world!</p> <p>We have with us a team of highly proficient and veteran IoT app developers who use the most advanced technology to offer a complete range of app development services for the Internet of Things. A wide range of IoT app development services is offered to us, including many IoT services.</p> <p>You will diagnose and troubleshoot software and hardware problems and help our customers install applications and programs. <strong>Technical Support Engineer responsibilities include resolving network issues, configuring operating systems and using remote desktop connections to provide immediate support.</strong>.</p>",
-      heading:
-        "The IoT will generate an enormous, truly unprecedented amount of precise information about buyers and their needs. It’s a marketer’s dream come true.",
-    },
-  },
-  {
-    id: hash(),
-    icon: "",
-    name: "PCB Layout and Designing",
-    path: "pcb-layout-and-designing",
-    data: {
-      image: [PCB, image2, image3, image4],
-      content: [],
-      shortDescription:
-        "We have many talented members having many ideas and guidelines that can be drawn up for the design and layout of a PCB.",
-      extraContent:
-        "<strong>The PCB layout and design is a specialist skill requiring knowledge of not only of the PCB design software and PCB CAD system, but also a variety of standards and techniques used to ensure that the basic circuit design is successfully transferred to an overall printed circuit board that can be manufactured in an electronics circuit manufacturing environment.</strong> <br /> <br /> <p>We are one of those specialist that will satisfy you with our designs.</p> <p>There are many ideas and guidelines that can be drawn up for the design and layout of a PCB. The list below covers a number of them. Obviously there are more, and the PCB design guidelines list below should not be thought of as a complete list.</p> <p>In order that the PCB design guidelines can be followed more easily, the guidelines are split into sections :</p> <ul><li>Board constraint design guidelines – those covering the initial constraints on the board</li> <li>Overall layout design guidelines</li> <li>Guidelines associated with the planes or layers</li> <li>Track design guidelines</li> <li>Thermal issues</li> <li>Signal integrity and RF considerations</li></ul> <p>These PCB design guidelines should be addressed before the main design of the circuit starts. They should effectively be some of the first elements of the component placement and that our moto.</p>",
-      heading: "Design is a formal response to a strategic question",
-    },
-  },
-  {
-    id: hash(),
-    icon: "",
-    name: "Embedded Firmware Development",
-    path: "embedded-firmware-development",
-    data: {
-      image: [embedded, image2, image3, image4],
-      content: [],
-      shortDescription:
-        "Embedded firmware is the flash memory chip that stores specialized software running in a chip in an embedded device to control its functions. In eSpark we have talented people working closely so that no error occurs in firmware.",
-      extraContent:
-        "<strong >Embedded firmware is the flash memory chip that stores specialized software running on a chip in an embedded device to control its functions.</strong> <br/><br/> <p>Digital transformation is touching upon various physical objects, making them smart and powerful. The engine for such devices is embedded software that is an integral part of the rapidly developing IoT ecosystem. Following is a list of some famous languages of software and embedded firmware development.</p> <ul><li> <strong>C/C++: C </strong> is something of a legacy language for embedded systems and tends to be preferred over C++.</li><li> <strong >Hardware Description Languages (HDLs): </strong> The most popular are probably VHDL or Verilog. If you’re programming an FPGA or designing an ASIC, use an HDL to define digital logic. SystemVerilog is a good choice if you are designing a system with extensive digital logic.</li> <li> <strong >Python/MicroPython:</strong >Python is great for software applications, but many do not prefer it due to the periodic garbage collection operations required, which may create some latency problems. However, there is such a huge developer community around Python that developers can access a huge range of functionality and powerful computing capabilities.</li></ul>",
-      heading:
-        "Quality isn’t something that can be argued into an article or promised into it. It must be put there",
-    },
-  },
-  {
-    id: hash(),
-    icon: "",
-    name: "Electrical Schematic Design",
-    path: "electrical-schematic-design",
-    data: {
-      image: [electrical, image2, image3, image4],
-      content: [],
-      shortDescription:
-        "Schematic design is the first phase of basic services for project design. Here we first provide you with the design and will recreate our designs until you are satisfied.",
-      extraContent:
-        "<strong> Schematic design is the first phase of basic services for project design.We consider this stage in a project, the design professional that describes the project three-dimensionally. A range of alternative design concepts are explored to define the character of the completed project and an optimum realization of the project program.</strong> <br /> <br /><p>Scheme Design stage will generally be used for Planning Submission Stage. The scheme design will provide a developed stage of design that coordinates other design disciplines, such as Structural, Civils and Services to such a level to enable Contractor Costs to be obtained. Coordinated design with other disciplines.</p><p>We are here to provide you with all the necessary details so that you can trust us to start a project with us.</p>",
-      heading: "Design adds value faster than it adds costs",
-    },
-  },
-  {
-    id: hash(),
-    icon: "",
-    name: "Reverse Engineering",
-    path: "reverse-engineering",
-    data: {
-      image: [engineering, image2, image3, image4],
-      content: [],
-      shortDescription:
-        "Reverse engineering can be an invaluable tool for learning how to use a particular programming language or how to work on a particular type of application, beginners can use the technique to improve their skills.",
-      extraContent:
-        "<strong>Reverse-engineering is used for many purposes: as a learning tool, as a way to make new, compatible products that are cheaper than what’s currently on the market.</strong> <br /> <br /> <p>Reverse engineering can be an invaluable tool for learning how to use a particular programming language or how to work on a particular type of application, beginners can use the technique to improve their skills.</p><p>Whether it’s rebuilding a car engine or diagramming a sentence, people can learn about many things simply by taking them apart and putting them back together again. That, in a nutshell, is the concept behind reverse-engineering—breaking something down in order to understand it, build a copy or improve it.</p> <p>A process that was originally applied only to hardware, reverse-engineering is now applied to software, databases and even human DNA. Reverse-engineering is especially important with computer hardware and software. Programs are written in a language, say C++ or Java, that’s understandable by other programmers. But to run on a computer, they have to be translated by another program, called a compiler, into the ones and zeros of machine language.</p>",
-      heading:
-        "There is no such thing as a boring project. There are only boring executions",
-    },
-  },
-  {
-    id: hash(),
-    icon: "",
-    name: "PCB Manufacturing and Mass Production",
-    path: "pcb-manufacturing-and-mass-production",
-    data: {
-      image: [PCB2, image2, image3, image4],
-      content: [
-        serviceItems(
-          2,
-          "",
-          <div class="col-lg-6 features-details">
-            <div class="features-details-desc">
-              <h3>PCB design process</h3>
-              <ul class="features-details-list">
-                <li>
-                  COMPONENT PLACEMENT. The PCB design process begins by
-                  converting a schematic diagram into a physical circuit board
-                  layout.
-                </li>
-                <li>
-                  PCB ROUTING. The PCB routing process is both an art and a
-                  science.
-                </li>
-                <li>
-                  ECAD-MCAD INTEGRATION. Nearly every electronics design exists
-                  within a mechanical product.
-                </li>
-              </ul>
-            </div>
-          </div>,
-          man_and_women,
-          cta_shape_1,
-          circle_1
-        ),
-        serviceItems(
-          3,
-          "",
-          <div class="col-lg-6 features-details">
-            <div class="features-details-desc">
-              <ul class="features-details-list">
-                <li>
-                  We can guarantee the same PCB material, relative to your first
-                  time ordering.
-                </li>
-                <li>
-                  Full automated manufacturing process can grasp the quality of
-                  each piece PCB board.
-                </li>
-                <li>
-                  High efficiency of time control and reasonable price
-                  advantage.
-                </li>
-              </ul>
-            </div>
-          </div>,
-          man_and_women,
-          circle_1,
-          cta_shape_1
-        ),
-      ],
-      shortDescription:
-        "The manufacture of the PCBs is normally achieved using a chemical etching process. This process is very unique And our developers work very hard for our clients satisfaction.",
-      extraContent:
-        "<p>The manufacture of the <strong>PCBs </strong> is normally achieved using a chemical etching process.</p> <br /> <p> <strong>Printed Circuit Board (PCB)</strong> fabrication is the assembly method for circuit boards used in electronic And computer devices. The layers of the board are put together along with the specific surface pattern so it can be used in electronics <strong>manufacturing</strong>.</p>",
-      heading: "You must have a supplier relationship of constant improvement",
-    },
-  },
-  {
-    id: hash(),
-    icon: "",
-    name: "Part Searching And Analysis",
-    path: "part-searching-and-analysis",
-    data: {
-      image: [Analysis, image2, image3, image4],
-      content: [
-        serviceItems(
-          2,
-          "Components",
-          "Transistor, IC, Resistor, Capacitor & Diode.  We never compromise quality when it comes to the selection of parts. Our sources are always derived from renowned suppliers such as Digikey, Mouser, Farnell among others.",
-          man_and_women,
-          cta_shape_1,
-          circle_1
-        ),
-      ],
-      shortDescription:
-        "Selecting the most cost effective yet reliable electronic components from reputed supplier that best match the requirements of the product.",
-      extraContent:
-        "<strong>Selecting the most cost effective yet reliable electronic components from reputed supplier that best match the requirements of the product.</strong><br /> <br /> <p>Our professional methodology involves first understanding the complete requirements of the product. We then proceed to analyse the best suited parts that can ensure noise reduction, cost effectiveness, logic implementation, hazard immunity and reliability. This is found by thoroughly studying the Datasheets of parts and then short listing the correct components. After short listing, the prices are compared from several suppliers, ultimately settling upon those that match the quality standard a yet ensuring less cost.</p>",
-      heading:
-        "With our knowledge of hardware we can deal with any challenges coming towards us and select the best components for your project.",
-    },
-  },
-  {
-    id: hash(),
-    icon: "",
-    name: "Components Library Design",
-    path: "components-library-design",
-    data: {
-      image: [componet, image2, image3, image4],
-      content: [
-        serviceItems(
-          2,
-          "",
-          <div class="col-lg-6 features-details">
-            <div class="features-details-desc">
-              <h3>Who you are</h3>
-              <ul class="features-details-list"  >
-                <li>An agency building component libraries for clients.</li>
-                <li>An in-house development team.</li>
-                <li>
-                  A freelancer working in one or both of those environments..
-                </li>
-              </ul>
-            </div>
-          </div>,
-          man_and_women,
-          cta_shape_1,
-          circle_1
-        ),
-        serviceItems(
-          3,
-          "",
-          "We are simply here to provide our clients with all the knowledge we have. We are available to work anytime. We are an agency that delivers front-end code (amongst many other things) to clients. We usually hand over the code we write to either the client’s in-house developers or a third-party back-end development agency for implementation into whatever application or CMS is being built. The libraries we hand over actually rarely lives on in the format that we deliver them – instead they often serve as more of a kind of ‘implementation documentation’ for other developers. We always encourage our clients to use what we deliver as a starting point for a more integrated, ‘living’ component system, but integration is hard and how to persist the work we deliver is a per-project consideration, and often largely determined by the depth of the client’s commitment to deeply integrating a modularised, component-based design and development mindset into their everyday workflow.",
-          man_and_women,
-          circle_1,
-          cta_shape_1
-        ),
-      ],
-      shortDescription:
-        "Our group of talented people works very hard to organize the components in a meaningful manner that is beneficial to our customer task.",
-      extraContent:
-        "A collection of components, organised in a meaningful manner, and often (but not necessarily) providing some way to browse and preview those components and their associated assets.",
-      heading: "Design is the visible intelligence.",
-    },
-  },
-  {
-    id: hash(),
-    icon: "",
     name: "Web Development",
     path: "web-development",
     data: {
@@ -676,6 +462,220 @@ export const services = [
       extraContent:
         "<strong>IT consulting services are advisory services for you and we will help you assess different technology strategies for your business.</strong> <p>Our IT Services help our customers make the most of their IT investments, from providing system integration solutions, application development, management services, and more. We will consider all aspects of a situation and propose a number of solutions, all with clearly defined pros and cons. Essentially, we believe that major changes to your IT infrastructure call for a clearly defined process.</p><p>We’ll provide you with strategic guidance with regard to technology and IT infrastructures and will enable major business processes through enhancements to IT.</p>",
       heading: "Strategy and technology consultants for your Business.",
+    },
+  },
+  {
+    id: hash(),
+    icon: "",
+    name: "IoT Product Development Including Technical Support",
+    path: "iot-product-development-including-technical-support",
+    data: {
+      image: [IOT, image2, image3, image4],
+      content: [],
+      shortDescription:
+        "IoT is the science of connecting physical devices using the internet to build a smart and connected world and we offer you the best services regarding that.",
+      extraContent:
+        "<strong>IoT is the science of connecting physical devices using the internet to build a smart and connected world. IoT uses smart software solutions and makes it possible for objects to communicate with one another. </strong> <br /> <br /> <p>Our IoT development solution helps in increasing business efficiencies by streamlining processes using the power of technology. We help you integrate mobility with IoT solution so that you have every control at your fingertips. You can manage everything using your smartphone irrespective of the device involved in IoT product development. In true sense, you experience a connected world!</p> <p>We have with us a team of highly proficient and veteran IoT app developers who use the most advanced technology to offer a complete range of app development services for the Internet of Things. A wide range of IoT app development services is offered to us, including many IoT services.</p> <p>You will diagnose and troubleshoot software and hardware problems and help our customers install applications and programs. <strong>Technical Support Engineer responsibilities include resolving network issues, configuring operating systems and using remote desktop connections to provide immediate support.</strong>.</p>",
+      heading:
+        "The IoT will generate an enormous, truly unprecedented amount of precise information about buyers and their needs. It’s a marketer’s dream come true.",
+    },
+  },
+  {
+    id: hash(),
+    icon: "",
+    name: "PCB Layout and Designing",
+    path: "pcb-layout-and-designing",
+    data: {
+      image: [PCB, image2, image3, image4],
+      content: [],
+      shortDescription:
+        "We have many talented members having many ideas and guidelines that can be drawn up for the design and layout of a PCB.",
+      extraContent:
+        "<strong>The PCB layout and design is a specialist skill requiring knowledge of not only of the PCB design software and PCB CAD system, but also a variety of standards and techniques used to ensure that the basic circuit design is successfully transferred to an overall printed circuit board that can be manufactured in an electronics circuit manufacturing environment.</strong> <br /> <br /> <p>We are one of those specialist that will satisfy you with our designs.</p> <p>There are many ideas and guidelines that can be drawn up for the design and layout of a PCB. The list below covers a number of them. Obviously there are more, and the PCB design guidelines list below should not be thought of as a complete list.</p> <p>In order that the PCB design guidelines can be followed more easily, the guidelines are split into sections :</p> <ul><li>Board constraint design guidelines – those covering the initial constraints on the board</li> <li>Overall layout design guidelines</li> <li>Guidelines associated with the planes or layers</li> <li>Track design guidelines</li> <li>Thermal issues</li> <li>Signal integrity and RF considerations</li></ul> <p>These PCB design guidelines should be addressed before the main design of the circuit starts. They should effectively be some of the first elements of the component placement and that our moto.</p>",
+      heading: "Design is a formal response to a strategic question",
+    },
+  },
+  {
+    id: hash(),
+    icon: "",
+    name: "Embedded Firmware Development",
+    path: "embedded-firmware-development",
+    data: {
+      image: [embedded, image2, image3, image4],
+      content: [],
+      shortDescription:
+        "Embedded firmware is the flash memory chip that stores specialized software running in a chip in an embedded device to control its functions. In eSpark we have talented people working closely so that no error occurs in firmware.",
+      extraContent:
+        "<strong >Embedded firmware is the flash memory chip that stores specialized software running on a chip in an embedded device to control its functions.</strong> <br/><br/> <p>Digital transformation is touching upon various physical objects, making them smart and powerful. The engine for such devices is embedded software that is an integral part of the rapidly developing IoT ecosystem. Following is a list of some famous languages of software and embedded firmware development.</p> <ul><li> <strong>C/C++: C </strong> is something of a legacy language for embedded systems and tends to be preferred over C++.</li><li> <strong >Hardware Description Languages (HDLs): </strong> The most popular are probably VHDL or Verilog. If you’re programming an FPGA or designing an ASIC, use an HDL to define digital logic. SystemVerilog is a good choice if you are designing a system with extensive digital logic.</li> <li> <strong >Python/MicroPython:</strong >Python is great for software applications, but many do not prefer it due to the periodic garbage collection operations required, which may create some latency problems. However, there is such a huge developer community around Python that developers can access a huge range of functionality and powerful computing capabilities.</li></ul>",
+      heading:
+        "Quality isn’t something that can be argued into an article or promised into it. It must be put there",
+    },
+  },
+  {
+    id: hash(),
+    icon: "",
+    name: "Electrical Schematic Design",
+    path: "electrical-schematic-design",
+    data: {
+      image: [electrical, image2, image3, image4],
+      content: [],
+      shortDescription:
+        "Schematic design is the first phase of basic services for project design. Here we first provide you with the design and will recreate our designs until you are satisfied.",
+      extraContent:
+        "<strong> Schematic design is the first phase of basic services for project design.We consider this stage in a project, the design professional that describes the project three-dimensionally. A range of alternative design concepts are explored to define the character of the completed project and an optimum realization of the project program.</strong> <br /> <br /><p>Scheme Design stage will generally be used for Planning Submission Stage. The scheme design will provide a developed stage of design that coordinates other design disciplines, such as Structural, Civils and Services to such a level to enable Contractor Costs to be obtained. Coordinated design with other disciplines.</p><p>We are here to provide you with all the necessary details so that you can trust us to start a project with us.</p>",
+      heading: "Design adds value faster than it adds costs",
+    },
+  },
+  {
+    id: hash(),
+    icon: "",
+    name: "Reverse Engineering",
+    path: "reverse-engineering",
+    data: {
+      image: [engineering, image2, image3, image4],
+      content: [],
+      shortDescription:
+        "Reverse engineering can be an invaluable tool for learning how to use a particular programming language or how to work on a particular type of application, beginners can use the technique to improve their skills.",
+      extraContent:
+        "<strong>Reverse-engineering is used for many purposes: as a learning tool, as a way to make new, compatible products that are cheaper than what’s currently on the market.</strong> <br /> <br /> <p>Reverse engineering can be an invaluable tool for learning how to use a particular programming language or how to work on a particular type of application, beginners can use the technique to improve their skills.</p><p>Whether it’s rebuilding a car engine or diagramming a sentence, people can learn about many things simply by taking them apart and putting them back together again. That, in a nutshell, is the concept behind reverse-engineering—breaking something down in order to understand it, build a copy or improve it.</p> <p>A process that was originally applied only to hardware, reverse-engineering is now applied to software, databases and even human DNA. Reverse-engineering is especially important with computer hardware and software. Programs are written in a language, say C++ or Java, that’s understandable by other programmers. But to run on a computer, they have to be translated by another program, called a compiler, into the ones and zeros of machine language.</p>",
+      heading:
+        "There is no such thing as a boring project. There are only boring executions",
+    },
+  },
+  {
+    id: hash(),
+    icon: "",
+    name: "PCB Manufacturing and Mass Production",
+    path: "pcb-manufacturing-and-mass-production",
+    data: {
+      image: [PCB2, image2, image3, image4],
+      content: [
+        serviceItems(
+          2,
+          "",
+          <div class="col-lg-6 features-details">
+            <div class="features-details-desc">
+              <h3>PCB design process</h3>
+              <ul class="features-details-list">
+                <li>
+                  COMPONENT PLACEMENT. The PCB design process begins by
+                  converting a schematic diagram into a physical circuit board
+                  layout.
+                </li>
+                <li>
+                  PCB ROUTING. The PCB routing process is both an art and a
+                  science.
+                </li>
+                <li>
+                  ECAD-MCAD INTEGRATION. Nearly every electronics design exists
+                  within a mechanical product.
+                </li>
+              </ul>
+            </div>
+          </div>,
+          man_and_women,
+          cta_shape_1,
+          circle_1
+        ),
+        serviceItems(
+          3,
+          "",
+          <div class="col-lg-6 features-details">
+            <div class="features-details-desc">
+              <ul class="features-details-list">
+                <li>
+                  We can guarantee the same PCB material, relative to your first
+                  time ordering.
+                </li>
+                <li>
+                  Full automated manufacturing process can grasp the quality of
+                  each piece PCB board.
+                </li>
+                <li>
+                  High efficiency of time control and reasonable price
+                  advantage.
+                </li>
+              </ul>
+            </div>
+          </div>,
+          man_and_women,
+          circle_1,
+          cta_shape_1
+        ),
+      ],
+      shortDescription:
+        "The manufacture of the PCBs is normally achieved using a chemical etching process. This process is very unique And our developers work very hard for our clients satisfaction.",
+      extraContent:
+        "<p>The manufacture of the <strong>PCBs </strong> is normally achieved using a chemical etching process.</p> <br /> <p> <strong>Printed Circuit Board (PCB)</strong> fabrication is the assembly method for circuit boards used in electronic And computer devices. The layers of the board are put together along with the specific surface pattern so it can be used in electronics <strong>manufacturing</strong>.</p>",
+      heading: "You must have a supplier relationship of constant improvement",
+    },
+  },
+  {
+    id: hash(),
+    icon: "",
+    name: "Part Searching And Analysis",
+    path: "part-searching-and-analysis",
+    data: {
+      image: [Analysis, image2, image3, image4],
+      content: [
+        serviceItems(
+          2,
+          "Components",
+          "Transistor, IC, Resistor, Capacitor & Diode.  We never compromise quality when it comes to the selection of parts. Our sources are always derived from renowned suppliers such as Digikey, Mouser, Farnell among others.",
+          man_and_women,
+          cta_shape_1,
+          circle_1
+        ),
+      ],
+      shortDescription:
+        "Selecting the most cost effective yet reliable electronic components from reputed supplier that best match the requirements of the product.",
+      extraContent:
+        "<strong>Selecting the most cost effective yet reliable electronic components from reputed supplier that best match the requirements of the product.</strong><br /> <br /> <p>Our professional methodology involves first understanding the complete requirements of the product. We then proceed to analyse the best suited parts that can ensure noise reduction, cost effectiveness, logic implementation, hazard immunity and reliability. This is found by thoroughly studying the Datasheets of parts and then short listing the correct components. After short listing, the prices are compared from several suppliers, ultimately settling upon those that match the quality standard a yet ensuring less cost.</p>",
+      heading:
+        "With our knowledge of hardware we can deal with any challenges coming towards us and select the best components for your project.",
+    },
+  },
+  {
+    id: hash(),
+    icon: "",
+    name: "Components Library Design",
+    path: "components-library-design",
+    data: {
+      image: [componet, image2, image3, image4],
+      content: [
+        serviceItems(
+          2,
+          "",
+          <div class="col-lg-6 features-details">
+            <div class="features-details-desc">
+              <h3>Who you are</h3>
+              <ul class="features-details-list"  >
+                <li>An agency building component libraries for clients.</li>
+                <li>An in-house development team.</li>
+                <li>
+                  A freelancer working in one or both of those environments..
+                </li>
+              </ul>
+            </div>
+          </div>,
+          man_and_women,
+          cta_shape_1,
+          circle_1
+        ),
+        serviceItems(
+          3,
+          "",
+          "We are simply here to provide our clients with all the knowledge we have. We are available to work anytime. We are an agency that delivers front-end code (amongst many other things) to clients. We usually hand over the code we write to either the client’s in-house developers or a third-party back-end development agency for implementation into whatever application or CMS is being built. The libraries we hand over actually rarely lives on in the format that we deliver them – instead they often serve as more of a kind of ‘implementation documentation’ for other developers. We always encourage our clients to use what we deliver as a starting point for a more integrated, ‘living’ component system, but integration is hard and how to persist the work we deliver is a per-project consideration, and often largely determined by the depth of the client’s commitment to deeply integrating a modularised, component-based design and development mindset into their everyday workflow.",
+          man_and_women,
+          circle_1,
+          cta_shape_1
+        ),
+      ],
+      shortDescription:
+        "Our group of talented people works very hard to organize the components in a meaningful manner that is beneficial to our customer task.",
+      extraContent:
+        "A collection of components, organised in a meaningful manner, and often (but not necessarily) providing some way to browse and preview those components and their associated assets.",
+      heading: "Design is the visible intelligence.",
     },
   },
 ];
