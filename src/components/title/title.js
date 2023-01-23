@@ -4,7 +4,10 @@ export default function Title({ title, data, paragraph, link }) {
   return (
     <div
       className="page-title-area"
-      style={{ paddingTop: link === "/" || "/teams" ? 50 : null }}
+      style={{
+        paddingTop: link === "/" || "/teams" ? 50 : null,
+        textAlign: link === "/careers" ? "left" : null,
+      }}
     >
       <div className="d-table">
         <div className="d-table-cell">

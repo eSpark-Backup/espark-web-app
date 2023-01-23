@@ -7,7 +7,6 @@ import { shapes } from "../../helper/ImageUrl";
 const Contact = () => {
   return (
     <div>
-
       <Title
         title={"LET'S MAKE SOMETHING AWESOME TOGETHER"}
         data={shapes}
