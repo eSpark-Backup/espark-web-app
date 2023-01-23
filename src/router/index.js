@@ -15,9 +15,12 @@ import Privacy from "./../screens/privacy/Privacy";
 import NotFound from "../screens/not-found/notFound";
 import Teams from "../screens/teams/teams";
 import BlogDetail from "../screens/blog/blog-detail";
+import Careers from "../screens/careers";
+import JobDetail from "../screens/careers/jobDetail";
 
 const AppRoutes = () => {
   const data = window.scrollTo(0, 0);
+
   let routes = useRoutes([
     { path: "/", element: <Home /> },
     { path: "/about", element: <About /> },
@@ -33,6 +36,8 @@ const AppRoutes = () => {
     { path: "/privacy-policy", element: <Privacy /> },
     { path: "/teams", element: <Teams /> },
     { path: "/appointments", element: <Contact /> },
+    { path: "/careers", element: <Careers /> },
+    { path: "/vacancies/:id", element: <JobDetail /> },
     { path: "/*", element: <NotFound /> },
   ]);
   return routes;

@@ -24,7 +24,7 @@ function About({ id, img, p, h1 }) {
                   <h2>
                     {h1 ? h1 : "Engaging New Audiences Through Smart Approach "}
                   </h2>
-                  <div class="bar"></div>
+                  {h1 ? null : <div class="bar"></div>}
                   {p ? (
                     <p>{p}</p>
                   ) : (
@@ -83,7 +83,7 @@ function About({ id, img, p, h1 }) {
                   <h2>
                     {h1 ? h1 : "Engaging New Audiences Through Smart Approach "}
                   </h2>
-                  <div class="bar"></div>
+                  {h1 ? null : <div class="bar"></div>}
                   {p ? (
                     <p>{p}</p>
                   ) : (
