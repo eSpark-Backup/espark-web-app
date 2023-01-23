@@ -143,8 +143,8 @@ export default function TwoColumns({
               </div>
             </div>
             <div class="col-lg-8 col-md-8">
-              <div class="cta-right-content text-center">
-                <div class="hosting-price">
+              <div class="cta-right-content text-center text-white">
+                <div class="textDiv">
                   <h6 dangerouslySetInnerHTML={{ __html: paragraph }}></h6>
                 </div>
               </div>

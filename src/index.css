@@ -24589,6 +24589,10 @@ p {
   color: #6084a4;
   line-height: 1.8
 }
+.textDiv p{
+  color: #fff;
+  line-height: 1.8
+}
 
 p:last-child {
   margin-bottom: 0
@@ -32833,6 +32837,7 @@ blockquote:after {
   opacity: .95;
   margin-bottom: 25px
 }
+
 
 .cta-iot-img {
   text-align: center
