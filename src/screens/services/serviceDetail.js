@@ -44,7 +44,7 @@ const ServiceDetail = () => {
     return (
       <div class="repair-cta-area-odd">
         <div class="container">
-          <div class="row align-items-center">
+          <div class="row align-items-center flex-column-reverse flex-lg-row">
             <div class="col-lg-6">
               <div class="cta-repair-img-odd">
                 <img src={item.imgUrlMan} alt="cta-repair-img" />
@@ -52,7 +52,7 @@ const ServiceDetail = () => {
             </div>
             <div class="col-lg-6">
               <div class="cta-repair-content-odd">
-                <h3>{item.heading}</h3>
+                <h3 className={styles.tex}>{item.heading}</h3>
                 <p>{item.description}</p>
               </div>
             </div>

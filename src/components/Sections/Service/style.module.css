@@ -7,3 +7,29 @@
     margin-left:15px;
     height: 20px;
 }
+@media (max-width: 766px){
+    .serviceImg{
+        height: 250px;
+    }
+    .contents{
+        width: 70%;
+        margin-left: 45px !important;
+        border-bottom: 2px solid gray;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1280px){
+    .contents{
+        border-bottom: 2px solid gray;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:576px) {
+    .serviceImg{
+        height: 250px;
+    }
+    .contents{
+        width: 50%;
+        margin-left: 115px !important;
+        border-bottom: 2px solid gray;
+    }
+}
