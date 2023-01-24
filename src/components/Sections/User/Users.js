@@ -5,6 +5,7 @@ import shape2 from "../../../../src/assets/images/shape2.svg";
 import shape3 from "../../../../src/assets/images/shape3.svg";
 import shape4 from "../../../../src/assets/images/shape4.svg";
 import shape5 from "../../../../src/assets/images/shape5.png";
+import Button from "../../button/button";
 
 function Users() {
   return (
@@ -15,7 +16,7 @@ function Users() {
             <h2>Your Expectations, Our Ability</h2>
             <div class="bar"></div>
             <p>
-            We explore several strategies for managing Our user expectations.
+              We explore several strategies for managing Our user expectations.
             </p>
           </div>
           <div class="row">
@@ -47,9 +48,7 @@ function Users() {
           <div class="contact-cta-box">
             <h3>Have any question about us?</h3>
             <p>Don&#x27;t hesitate to contact us</p>
-            <Link to={"contact"}>
-              <a class="btn btn-primary">Contact Us</a>
-            </Link>
+            <Button title="Contact Us" link="/contact" design={3} />
           </div>
         </div>
       </div>

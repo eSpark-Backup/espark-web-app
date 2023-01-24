@@ -15,7 +15,7 @@ import shape5 from "../../../../src/assets/images/shape5.png";
 function Service() {
   return (
     <div>
-        <div class="ml-services-area ptb-80">
+      <div class="ml-services-area ptb-80">
         <div class="container">
           <div class="section-title">
             <span class="sub-title">Our Solutions</span>
@@ -61,7 +61,7 @@ function Service() {
               <div class="single-ml-services-box">
                 <div class="image">
                   <img
-                    src={serviceImage3}                 
+                    src={serviceImage3}
                     alt="image"
                   />
                 </div>
@@ -96,7 +96,7 @@ function Service() {
                 <div class="image">
                   <img
                     src={serviceImage5}
-                    
+
                     alt="image"
                   />
                 </div>
@@ -111,7 +111,7 @@ function Service() {
               <div class="single-ml-services-box">
                 <div class="image">
                   <img
-                    src={serviceImage6}   
+                    src={serviceImage6}
                     alt="image"
                   />
                 </div>

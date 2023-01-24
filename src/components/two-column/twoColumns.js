@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
+import Button from "../button/button";
 
 export default function TwoColumns({
   imgUrl,
@@ -90,9 +91,7 @@ export default function TwoColumns({
                   <p dangerouslySetInnerHTML={{ __html: paragraph }}></p>
                 </div>
                 {button && (
-                  <Link class="btn btn-secondary" to={link}>
-                    Read More
-                  </Link>
+                  <Button title="Read More" link={link} design={2} />
                 )}
               </div>
             </div>
@@ -113,9 +112,7 @@ export default function TwoColumns({
                   <p dangerouslySetInnerHTML={{ __html: paragraph }}></p>
                 </div>
                 {button && (
-                  <Link class="btn btn-primary" to="/espark-app">
-                    Read More
-                  </Link>
+                  <Button title="Read More" link="/espark-app" design={5} />
                 )}
               </div>
             </div>

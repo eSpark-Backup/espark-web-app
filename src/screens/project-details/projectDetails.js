@@ -1,7 +1,6 @@
 import React from "react";
 import { useParams } from "react-router";
 import { Fade } from "react-slideshow-image";
-import ProjectNestedCard from "../../components/project-nested-card/projectNestedCard";
 import { projects } from "../../helper/projects";
 
 export default function ProjectDetails() {

@@ -1,11 +1,11 @@
 import React from "react";
-import { FaLongArrowAltRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { shapes } from "../../../helper/ImageUrl";
-import {FaRegArrowAltCircleRight } from "react-icons/fa";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 import style from './style.module.css'
-const ServiceStyleFive = ({ data,link }) => {
+import Button from "../../button/button";
+const ServiceStyleFive = ({ data, link }) => {
 
   const newData = [...data].reverse()
 
@@ -48,10 +48,10 @@ const ServiceStyleFive = ({ data,link }) => {
                   </div>
                 </div>
               );
-            })}
-             {link == '/' ? <Link to={'/services'} className={style.btnMargin}>
-                    <a className='btn btn-secondary'>Go To Services<FaLongArrowAltRight  className={style.arrowSize}/></a>
-              </Link> : ""}
+            }).sort()}
+            {link == '/' ?
+              <Button title="Go To Services" link="/services" design={1} />
+              : ""}
           </div>
         </div>
         {shapes?.map((item, index) => (
@@ -59,7 +59,7 @@ const ServiceStyleFive = ({ data,link }) => {
             <img src={item.imgUrl} alt={item.alt} />{" "}
           </div>
         ))}
-      
+
       </div>
     </div>
   );

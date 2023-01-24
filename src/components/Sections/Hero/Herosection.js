@@ -14,6 +14,8 @@ import ten from "../../../../src/assets/images/ml-banner-image/ten.png";
 
 import { shapes } from "../../../helper/ImageUrl";
 import { Link } from "react-router-dom";
+import Button from "../../button/button";
+
 import styles from "./style.module.css"
 function Herosection({ heading1 }) {
   return (
@@ -59,9 +61,8 @@ function Herosection({ heading1 }) {
                 requirements and needs and for future market reality.
               </p> */}
               {heading1 === "Services" ? null : (
-                <Link to={"/contact"}>
-                  <a class="btn btn-secondary">Reach Us!</a>
-                </Link>
+
+                <Button title="Reach Us!" link="/contact" design={2} />
               )}
             </div>
           </div>

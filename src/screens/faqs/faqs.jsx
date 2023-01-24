@@ -5,7 +5,7 @@ import style from "./style.module.css";
 
 function Faqs({ imgs, data }) {
   const [faqId, setFaqId] = useState(0);
-  const [faq, setFaq] = useState(false);    
+  const [faq, setFaq] = useState(false);
   return (
     <>
       <Title
@@ -41,8 +41,8 @@ function Faqs({ imgs, data }) {
                         tabindex="0"
                         data-accordion-component="AccordionItemButton"
                         onClick={() => {
-                            setFaq(!faq);
-                            setFaqId(item._id)
+                          setFaq(!faq);
+                          setFaqId(item._id)
                         }}
                       >
                         <span>{item.question}</span>
