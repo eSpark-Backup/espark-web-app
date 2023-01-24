@@ -16,6 +16,8 @@ const Header = () => {
   const location = useLocation();
   const isAppScreen = location.pathname === "/espark-app";
 
+  const newData = [...services].reverse();
+
   return (
     <header id="header" class="headroom is-sticky">
       <div class="startp-nav">
@@ -84,7 +86,7 @@ const Header = () => {
                     Services
                   </Link>
                   <ul class="dropdown-menu ">
-                    {services.map((item) => {
+                    {newData?.map((item) => {
                       return (
                         <li
                           class="nav-item"
@@ -111,6 +113,11 @@ const Header = () => {
                 <li class="nav-item" onClick={() => setIsNavCollapsed(false)}>
                   <Link class="nav-link" to="/products">
                     Products
+                  </Link>
+                </li>
+                <li class="nav-item" onClick={() => setIsNavCollapsed(false)}>
+                  <Link class="nav-link" to="/careers">
+                    Careers
                   </Link>
                 </li>
               </ul>

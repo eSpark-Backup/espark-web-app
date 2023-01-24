@@ -1,3 +1,11 @@
  .mainPics{
     width :75% !important;
  }
+ @media (max-width:992px) {
+   .repair-main-banner{
+      margin-top: 0px !important;
+   }
+ }
+ .comando{
+   color: white !important;
+ }

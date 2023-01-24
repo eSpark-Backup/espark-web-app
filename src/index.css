@@ -115,7 +115,9 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: .5rem;
-  line-height: 1.2
+  line-height: 1.2;
+  font-weight: 500 !important;
+  color: #11A79c !important;
 }
 
 .h1,
@@ -24587,6 +24589,10 @@ p {
   color: #6084a4;
   line-height: 1.8
 }
+.textDiv p{
+  color: #fff;
+  line-height: 1.8
+}
 
 p:last-child {
   margin-bottom: 0
@@ -24895,7 +24901,7 @@ label {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background: #11A79c;
+  background: black;
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   -webkit-animation-timing-function: linear;
@@ -32265,14 +32271,14 @@ blockquote:after {
   padding-bottom: 10px
 }
 
-.cta-repair-content {
+/* .cta-repair-content {
   padding: 30px 0
 }
-
 .cta-repair-content-odd {
-  /* padding: 30px 0 */
+  padding: 30px 0
+} */
 
-}
+
 
 .cta-repair-content h3 {
   color: #fff;
@@ -32832,6 +32838,7 @@ blockquote:after {
   margin-bottom: 25px
 }
 
+
 .cta-iot-img {
   text-align: center
 }
@@ -33007,7 +33014,7 @@ blockquote:after {
 .ml-main-section {
   position: relative;
   z-index: 1;
-  padding-top: 260px;
+  padding-top: 215px;
   padding-bottom: 240px;
   background-position: 100% 100%;
   background-size: cover;
@@ -33280,7 +33287,7 @@ blockquote:after {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background: #11A79c;
+  background: black;
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   -webkit-animation-timing-function: linear;
@@ -36037,7 +36044,7 @@ blockquote:after {
   }
 
   .repair-main-banner {
-    padding-top: 150px;
+    padding-top: 30px;
     padding-bottom: 85px
   }
 
@@ -36127,6 +36134,10 @@ blockquote:after {
   }
 
   .repair-cta-area {
+    padding-top: 50px;
+    padding-bottom: 50px
+  }
+  .repair-cta-area-odd {
     padding-top: 50px;
     padding-bottom: 50px
   }
@@ -36354,8 +36365,8 @@ blockquote:after {
 
   .ml-main-section {
     background-position: 50%;
-    padding-top: 130px;
-    padding-bottom: 140px
+    padding-top: 20px;
+    padding-bottom: 140px;
   }
 
   .ml-main-section .ml-banner-content h1 {
@@ -37643,9 +37654,9 @@ blockquote:after {
     display: none
   }
 
-  .repair-cta-area {
+  /* .repair-cta-area {
     padding-top: 80px
-  }
+  } */
 
   .cta-repair-content {
     margin-bottom: 30px
@@ -37759,7 +37770,7 @@ blockquote:after {
 
   .ml-main-section {
     background-position: 50%;
-    padding-top: 150px;
+    padding-top: 20px;
     padding-bottom: 140px
   }
 
@@ -38269,7 +38280,7 @@ blockquote:after {
   }
 
   .ml-main-section {
-    padding-top: 130px;
+    padding-top: 30px;
     padding-bottom: 140px
   }
 
@@ -39659,6 +39670,7 @@ blockquote:after {
 }
 
 
+
 .each-slide-effect>div {
   display: flex;
   align-items: center;
@@ -39672,4 +39684,10 @@ blockquote:after {
   font-size: 20px;
   background: #efefef ;
   text-align: center;
+}
+@media (max-width: 1280px) {
+  .repair-main-banner {
+    padding-top: 30px;
+    padding-bottom: 85px
+  }
 }

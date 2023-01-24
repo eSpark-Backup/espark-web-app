@@ -1,26 +1,28 @@
 import React from "react";
-import { FaLongArrowAltRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { shapes } from "../../../helper/ImageUrl";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
+
 import style from './style.module.css'
-const ServiceStyleFive = ({ data,link }) => {
-  const order =(a, b)=> {
-    return a < b ? -1 : (a > b ? 1 : 0);
-}
+import Button from "../../button/button";
+const ServiceStyleFive = ({ data, link }) => {
+
+  const newData = [...data].reverse()
+
   return (
     <div>
       <div class="agency-services-area">
         <div class="container">
           <div class="row justify-content-center">
-            {data.sort().map((item) => {
+            {newData.map((item) => {
               return (
                 <div class="col-lg-4 col-sm-6 col-md-6">
                   <div class="agency-services-box">
-                    <img src={item.data.image[0]} alt="img" height={300} />
-                    <div class="content">
-                      <h3>
+                    <img src={item.data.image[0]} alt="img" height={300} className={style.serviceImg} />
+                    <div class={`content ${style.contents}`}>
+                      <h6>
                         <Link to={`/services/${item.path}`}>{item.name}</Link>
-                      </h3>
+                      </h6>
                       <Link
                         class="read-more-btn"
                         to={`/services/${item.path}`}
@@ -46,10 +48,10 @@ const ServiceStyleFive = ({ data,link }) => {
                   </div>
                 </div>
               );
-            }).sort(order)}
-             {link == '/' ? <Link to={'/services'} className={style.btnMargin}>
-                    <a className='btn btn-secondary'>Go To Services<FaLongArrowAltRight  className={style.arrowSize}/></a>
-              </Link> : ""}
+            }).sort()}
+            {link == '/' ?
+              <Button title="Go To Services" link="/services" design={1} />
+              : ""}
           </div>
         </div>
         {shapes?.map((item, index) => (
@@ -57,7 +59,7 @@ const ServiceStyleFive = ({ data,link }) => {
             <img src={item.imgUrl} alt={item.alt} />{" "}
           </div>
         ))}
-      
+
       </div>
     </div>
   );

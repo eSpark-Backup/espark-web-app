@@ -1,3 +1,14 @@
 .textCenter{
         text-align: center;
 }
+@media (max-width: 768px) {
+        .paraText {
+        
+            display: flex;
+            text-align: start;
+            align-items: start;
+            justify-content: start;
+            margin-left: 10px;
+            margin-top: 0px;
+        }
+    }

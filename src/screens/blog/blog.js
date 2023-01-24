@@ -6,6 +6,7 @@ import { shapes } from "./../../helper/ImageUrl";
 import { getApiCall, getCatApiCall } from "./../../utils/Blogs";
 import { Link } from "react-router-dom";
 import { ShimmerPostList } from "react-shimmer-effects";
+import Button from "../../components/button/button";
 
 export default function Blog() {
   const [post, setPost] = useState();
@@ -62,25 +63,17 @@ export default function Blog() {
                             </div>
                             <div class="blog-post-content">
                               <h3>
-                                <Link to={`/blog-detail/${items.slug}/`}>
-                                  {items.title.rendered}
-                                </Link>
+                                <Button title={items.title.rendered} link={`/blog-detail/${items.slug}/`} design={7} />
                               </h3>
                               <span>
-                                By <Link to="#">Admin</Link>
+                                By <Button title="Admin " link="#" design={7} />
                               </span>
                               <p
                                 dangerouslySetInnerHTML={{
                                   __html: items.excerpt.rendered,
                                 }}
                               ></p>
-                              <Link
-                                class="read-more-btn"
-                                to={`/blog-detail/${items.slug}/`}
-                              >
-                                Read More{"  "}
-                                <FaRegArrowAltCircleRight margin={10} />
-                              </Link>
+                              <Button title="Read More " link={`/blog-detail/${items.slug}/`} design={6} size={15} />
                             </div>
                           </div>
                         </div>

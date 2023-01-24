@@ -134,12 +134,13 @@ import { services } from "../../helper/services";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
 
-const GetInTouch = ({ modal, modelClose }) => {
+const GetInTouch = ({ modal, modelClose, link, h1 }) => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [files, setFiles] = useState(null);
 
   const form = useRef();
 
@@ -165,56 +166,93 @@ const GetInTouch = ({ modal, modelClose }) => {
     setName("");
     setPhone("");
     setSubject("");
+    setFiles("");
     array = [];
+  };
+
+  const setfileData = (e) => {
+    const fileToLoad = e.target.files[0];
+
+    var fileReader = new FileReader();
+    var base64;
+    // Onload of file read the file content
+    fileReader.onload = function (fileLoadedEvent) {
+      base64 = fileLoadedEvent.target.result;
+      // Print data in console
+      setFiles(base64);
+    };
+    // Convert data to base64
+    fileReader.readAsDataURL(fileToLoad);
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.init("bo0d42dcDbZL1U83o");
 
-    if (modal) {
+    if (link?.includes("vacancies")) {
       emailjs
-        .send("service_0n1v6bm", "template_88hqabf", {
+        .send("service_0n1v6bm", "template_y6yzby6", {
           from_name: name,
           from_email: email,
           reply_to: email,
-          subject: subject,
           message: message,
           phone: phone,
-          user_interests: null,
+          content: files,
         })
         .then(
           (result) => {
-            modelClose(false);
             clearState();
             toast.success("Thank you for Connecting");
           },
           (error) => {
-            modelClose(false);
-            console.log(error.text);
+            toast.error("Something Went Wrong");
           }
         );
     } else {
-      emailjs
-        .send("service_0n1v6bm", "template_88hqabf", {
-          from_name: name,
-          from_email: email,
-          reply_to: email,
-          subject: subject,
-          message: message,
-          phone: phone,
-          user_interests: JSON.stringify(array),
-        })
-        .then(
-          (result) => {
-            toast.success("Thank you for Connecting");
-            clearState();
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
+      if (modal) {
+        emailjs
+          .send("service_0n1v6bm", "template_88hqabf", {
+            from_name: name,
+            from_email: email,
+            reply_to: email,
+            subject: subject,
+            message: message,
+            phone: phone,
+            user_interests: null,
+          })
+          .then(
+            (result) => {
+              modelClose(false);
+              clearState();
+              toast.success("Thank you for Connecting");
+            },
+            (error) => {
+              modelClose(false);
+              toast.error("Something Went Wrong");
+            }
+          );
+      } else {
+        emailjs
+          .send("service_0n1v6bm", "template_88hqabf", {
+            from_name: name,
+            from_email: email,
+            reply_to: email,
+            subject: subject,
+            message: message,
+            phone: phone,
+            user_interests: JSON.stringify(array),
+          })
+          .then(
+            (result) => {
+              modelClose(false);
+              toast.success("Thank you for Connecting");
+              clearState();
+            },
+            (error) => {
+              toast.error("Something Went Wrong");
+            }
+          );
+      }
     }
   };
 
@@ -222,11 +260,17 @@ const GetInTouch = ({ modal, modelClose }) => {
     <div>
       <div class={`contact-area pt-80 ${!modal ? "pb-80" : null}`}>
         <div class="container">
-          <div class="section-title">
-            <h2>Get In Touch With Us</h2>
-            <div class="bar"></div>
-            <p>Anything On your Mind. We’ll Be Glad To Assist You!</p>
-          </div>
+          {!link?.includes("vacancies") ? (
+            <div class="section-title">
+              <h2>Get In Touch With Us</h2>
+              <div class="bar"></div>
+              <p>Anything On your Mind. We’ll Be Glad To Assist You!</p>
+            </div>
+          ) : (
+            <div class="section-title">
+              <h2>Apply for this Position</h2>
+            </div>
+          )}
           <div class="row align-items-center">
             {!modal && (
               <div class="col-lg-6 col-md-12">
@@ -236,7 +280,11 @@ const GetInTouch = ({ modal, modelClose }) => {
                 />
               </div>
             )}
-            <div class={`col-lg-${modal ? "12" : 6} col-md-12`}>
+            <div
+              class={`col-lg-${
+                modal || link?.includes("vacancies") ? "12" : 6
+              } col-md-12`}
+            >
               <form id="contactForm" ref={form} onSubmit={sendEmail}>
                 <div class="row">
                   <div class="col-lg-12 col-md-12">
@@ -267,7 +315,14 @@ const GetInTouch = ({ modal, modelClose }) => {
                       <div class="invalid-feedback"></div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-6">
+
+                  <div
+                    class={
+                      !link?.includes("vacancies")
+                        ? "col-lg-6 col-md-6"
+                        : "col-lg-12 col-md-12"
+                    }
+                  >
                     <div class="form-group">
                       <input
                         type="number"
@@ -283,27 +338,33 @@ const GetInTouch = ({ modal, modelClose }) => {
                       <div class="invalid-feedback"></div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-6">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        name="subject"
-                        placeholder="Your Subject *"
-                        class="form-control"
-                        required={true}
-                        value={subject}
-                        onChange={(e) => setSubject(e.target.value)}
-                      />
-                      <div class="invalid-feedback"></div>
+                  {!link?.includes("vacancies") && (
+                    <div
+                      class={
+                        !link?.includes("vacancies")
+                          ? "col-lg-6 col-md-6"
+                          : "col-lg-12 col-md-12"
+                      }
+                    >
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="subject"
+                          placeholder="Your Subject *"
+                          class="form-control"
+                          required={true}
+                          value={subject}
+                          onChange={(e) => setSubject(e.target.value)}
+                        />
+                        <div class="invalid-feedback"></div>
+                      </div>
                     </div>
-                  </div>
+                  )}
                   {!modal && (
                     <div>
                       <div class="col-lg-12 col-md-6 ">
                         <h2> Select your Inrest </h2>
-                        <div
-                        className="row"
-                        >
+                        <div className="row">
                           {services.map((item, index) => {
                             return (
                               <div class="items col-12 col-lg-6">
@@ -333,7 +394,11 @@ const GetInTouch = ({ modal, modelClose }) => {
                         required={true}
                         cols="30"
                         rows="5"
-                        placeholder="Write your message... *"
+                        placeholder={
+                          link?.includes("vacancies")
+                            ? "Postion Applied For *"
+                            : "Write your message... *"
+                        }
                         class="form-control"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
@@ -341,9 +406,52 @@ const GetInTouch = ({ modal, modelClose }) => {
                       <div class="invalid-feedback"></div>
                     </div>
                   </div>
+                  {link?.includes("vacancies") && (
+                    <>
+                      <p>Upload CV/Resume *</p>
+                      <div
+                        class={
+                          !link?.includes("vacancies")
+                            ? "col-lg-6 col-md-6"
+                            : "col-lg-12 col-md-12"
+                        }
+                      >
+                        <div class="form-group">
+                          <input
+                            type="file"
+                            name="file"
+                            class="form-control"
+                            accept=".doc,.docx,.pdf"
+                            required={true}
+                            value={files?.result}
+                            onChange={(e) => setfileData(e)}
+                          />
+                          <div class="invalid-feedback"></div>
+                        </div>
+                      </div>
+                      <br />
+                      <p>Allowed Type(s): .pdf, .doc, .docx</p>
+                      <div class="form-group">
+                        <input
+                          id="checkbox-1"
+                          type="checkbox"
+                          name="subject"
+                          required={true}
+                        />
+
+                        <label for="checkbox-1">
+                          &nbsp; By using this form you agree with the storage
+                          and handling of your data by this website.{" "}
+                        </label>
+                        <div class="invalid-feedback"></div>
+                      </div>
+                    </>
+                  )}
                   <div class="col-lg-12 col-sm-12">
                     <button type="submit" class="btn btn-secondary">
-                      Send Message
+                      {link?.includes("vacancies")
+                        ? "Apply Now"
+                        : "Send Message"}
                     </button>
                   </div>
                 </div>

@@ -5,6 +5,8 @@ import shape4 from "../../../../src/assets/images/shape4.svg";
 import shape5 from "../../../../src/assets/images/shape5.png";
 
 import about4 from "../../../../src/assets/images/about4.png";
+import styles from "./style.module.css"
+
 import { Link } from "react-router-dom";
 
 function About({ id, img, p, h1 }) {
@@ -16,7 +18,7 @@ function About({ id, img, p, h1 }) {
             <div class="row align-items-center">
               <div class="col-lg-6 col-md-12">
                 <div class="ml-about-img">
-                  <img src={img ? img : about4} alt="image" width={200} />
+                  <img src={img ? img : about4} alt="image" width={250} />
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">
@@ -25,9 +27,9 @@ function About({ id, img, p, h1 }) {
                   <h2>
                     {h1 ? h1 : "Engaging New Audiences Through Smart Approach "}
                   </h2>
-                  <div class="bar"></div>
+                  {h1 ? null : <div class="bar"></div>}
                   {p ? (
-                    <p>{p}</p>
+                    <p >{p}</p>
                   ) : (
                     <>
                       <p>
@@ -84,12 +86,12 @@ function About({ id, img, p, h1 }) {
                   <h2>
                     {h1 ? h1 : "Engaging New Audiences Through Smart Approach "}
                   </h2>
-                  <div class="bar"></div>
+                  {h1 ? null : <div class="bar"></div>}
                   {p ? (
-                    <p>{p}</p>
+                    <p className={styles.paraText}>{p}</p>
                   ) : (
                     <>
-                      <p>
+                      <p className={styles.paraText}>
                         eSpark Consultants is a complete solution provider for
                         modern software development imparting latest methods and
                         techniques to tackle the increasing software
@@ -99,7 +101,7 @@ function About({ id, img, p, h1 }) {
                         competitors We are passionate about providing solutions
                         that represent real value for money.
                       </p>
-                      <p>
+                      <p className={styles.paraText}>
                         We understand and believe you can’t afford to waste your
                         investment for such a crucial aspect of your business by
                         leaving it in the hands of amateurs. You are investing
@@ -113,8 +115,8 @@ function About({ id, img, p, h1 }) {
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">
-                <div class="ml-about-img">
-                  <img src={img ? img : about4} alt="image" width={200} />
+                <div class="ml-about-img mt-2">
+                  <img src={img ? img : about4} alt="image" width={250} />
                 </div>
               </div>
             </div>

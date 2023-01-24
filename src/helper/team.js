@@ -704,25 +704,7 @@ export const team = [
         facebook: "",
         message: "",
       },
-      {
-        teamName: "Web & Mobile App Development",
-        reporting: "Web & Mobile App Lead",
-        designation: "Jr. React JS Developer",
-        firstName: "Moin",
-        lastName: "Khan",
-        name: "Moin Khan",
-        email: "moin@esparkconsultants.com",
-        deptSlug: "web-&-mobile-app-development",
-        nameSlug: "moin-khan",
-        imageUrl:
-          "https://ca.slack-edge.com/T030AKS5N2W-U04D4584VP0-bc3fd5c0cb45-512",
-        intro: "",
-        linkedin: "",
-        instagram: "",
-        twitter: "",
-        facebook: "",
-        message: "",
-      },
+
       {
         teamName: "Web & Mobile App Development",
         reporting: "Web & Mobile App Lead",

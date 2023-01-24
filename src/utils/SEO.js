@@ -12,7 +12,7 @@ export default function SEO() {
     <>
       {currentData.map((item) => {
         return (
-          <Helmet>
+          <Helmet prioritizeSeoTags>
             <title>{item.title}</title>
             <link rel="preload" as="style" href="" />
             <link rel="stylesheet" href={item.url} />

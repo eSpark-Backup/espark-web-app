@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Button from "../../components/button/button";
 import "./style.css";
 const HeroSectionOne = ({ filterData }) => {
   return (
-    <div>
+    <>
       <div class="repair-main-banner">
         <div class="container">
           <div class="row align-items-center">
@@ -15,9 +15,7 @@ const HeroSectionOne = ({ filterData }) => {
                     __html: filterData[0]?.data?.shortDescription,
                   }}
                 ></p>
-                <Link class="btn btn-primary" to="/contact">
-                  Quote Now
-                </Link>
+                <Button title="Quote Now" link="/contact" design={5} />
               </div>
             </div>
             <div class="col-lg-6">
@@ -26,9 +24,9 @@ const HeroSectionOne = ({ filterData }) => {
                   return (
                     <>
                       {
-                        index === 0?
-                        <img src={item} alt="images" className="mainPics" />
-                        : <img src={item} alt="images" />
+                        index === 0 ?
+                          <img src={item} alt="images" className="mainPics" />
+                          : <img src={item} alt="images" />
                       }
                     </>
                   );
@@ -38,7 +36,7 @@ const HeroSectionOne = ({ filterData }) => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

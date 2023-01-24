@@ -15,7 +15,6 @@ function BlogDetail() {
                     <div className="col-lg-8 col-md-12">
                         <BlogSection />
                         <hr />
-                        {/* <BlogPagination /> */}
                         <CommentsArea />
                     </div>
                     <div className="col-lg-4 col-md-12">
