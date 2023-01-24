@@ -2,11 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaLongArrowAltRight, FaRegArrowAltCircleRight } from "react-icons/fa";
 import style from "./style.module.css";
-const Button = ({ title, link, design }) => {
+const Button = ({ title, link, design, type, }) => {
 
 
   if (design == null) {
     return null;
+  } if (design == 0) {
+    return (
+      <div>
+        <button type={type} class="btn btn-secondary">
+          {title}
+        </button>
+      </div>
+    );
   }
   if (design == 1) {
     return (
@@ -60,7 +68,6 @@ const Button = ({ title, link, design }) => {
       </div>
     );
   }
-
   if (design == 6) {
     return (
       <div>
@@ -86,7 +93,6 @@ const Button = ({ title, link, design }) => {
       <a onClick={link}>{title}</a>
     );
   }
-
   if (design == 9) {
     return (
       <a href={link} rel="nofollow" target="_blank">
@@ -94,8 +100,13 @@ const Button = ({ title, link, design }) => {
       </a>
     );
   }
-
-
+  if (design == 10) {
+    return (
+      <a className="icon" href={link} target="_blank">
+        <FaLongArrowAltRight />
+      </a>
+    );
+  }
 
 }
 

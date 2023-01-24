@@ -15,7 +15,7 @@ const HeroSectionOne = ({ filterData }) => {
                     __html: filterData[0]?.data?.shortDescription,
                   }}
                 ></p>
-                <Button title="Quote Now" link="/contact" design={5} />
+                <Button title="Quote Now" link="/contact" design={2} />
               </div>
             </div>
             <div class="col-lg-6">

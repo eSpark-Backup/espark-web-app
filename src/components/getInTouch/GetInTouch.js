@@ -133,6 +133,7 @@ import { services } from "../../helper/services";
 
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
+import Button from "../button/button";
 
 const GetInTouch = ({ modal, modelClose, link, h1 }) => {
   const [email, setEmail] = useState("");
@@ -281,9 +282,8 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
               </div>
             )}
             <div
-              class={`col-lg-${
-                modal || link?.includes("vacancies") ? "12" : 6
-              } col-md-12`}
+              class={`col-lg-${modal || link?.includes("vacancies") ? "12" : 6
+                } col-md-12`}
             >
               <form id="contactForm" ref={form} onSubmit={sendEmail}>
                 <div class="row">
@@ -448,11 +448,9 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                     </>
                   )}
                   <div class="col-lg-12 col-sm-12">
-                    <button type="submit" class="btn btn-secondary">
-                      {link?.includes("vacancies")
-                        ? "Apply Now"
-                        : "Send Message"}
-                    </button>
+                    <Button type="submit" title={link?.includes("vacancies")
+                      ? "Apply Now"
+                      : "Send Message"} design={0} />
                   </div>
                 </div>
               </form>
