@@ -50,7 +50,7 @@ const ServiceStyleFive = ({ data, link }) => {
               );
             }).sort()}
             {link == '/' ?
-              <Button title="Go To Services" link="/services" design={1} style={{ margin: "20px !important" }} />
+              <Button title="Go To Services" link="/services" design={1} />
               : ""}
           </div>
         </div>
