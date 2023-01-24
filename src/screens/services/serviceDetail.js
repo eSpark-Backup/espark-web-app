@@ -73,7 +73,7 @@ const ServiceDetail = () => {
       <div className="container">
         <div class="row align-items-center pb-80">
           <div class="col-lg-6 features-details-image">
-            <img src={filterData[0].data.image[0]} alt={filterData[0]?.data.heading} />
+            <img src={filterData[0].data.image[0]} alt="image" className={styles.imgDetails}/>
           </div>
           <div class="col-lg-6 features-details mt-3">
             <div class="features-details-desc">

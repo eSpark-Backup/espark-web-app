@@ -13,8 +13,16 @@
     }
     
 }
+@media (max-width: 1020px) {
+    .imgDetails{
+        display: none;
+    }
+}
 @media (max-width:767px) {
     .tex{
         text-align: center;
+    }
+    .imgDetails{
+        display: none;
     }
 }
