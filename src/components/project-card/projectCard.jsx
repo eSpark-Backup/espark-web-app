@@ -1,6 +1,5 @@
 import React from "react";
-import { FaLongArrowAltRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import Button from "../button/button";
 import style from "./style.module.css";
 
 export default function ProjectCard({ data, link }) {
@@ -21,14 +20,7 @@ export default function ProjectCard({ data, link }) {
             <div className="col-lg-4 col-md-6" key={index}>
               <div className="single-works">
                 <img className="img" src={item.data.image} alt="image" />
-                <a className="icon" href={item.data.projectUrl} target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
-                    <path
-                      d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
-                      data-name="Right"
-                    />
-                  </svg>
-                </a>
+                <Button link={item.data.projectUrl} design={10} />
                 <div className="works-content">
                   <h3>
                     {item.data.name.charAt(0) +
@@ -42,12 +34,7 @@ export default function ProjectCard({ data, link }) {
       </div>
       <div className={style.txtCenter}>
         {link == "/" ? (
-          <Link to={"/project"}>
-            <a className="btn btn-secondary">
-            Explore Projects
-              <FaLongArrowAltRight className={style.arrowSize} />
-            </a>
-          </Link>
+          <Button title="Explore Projects" link={"/project"} design={1} />
         ) : (
           ""
         )}

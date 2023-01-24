@@ -164,7 +164,7 @@ const MobileApp = () => {
           <div class="row align-items-center">
             <div class="col-lg-7 col-md-6">
               <div class="cta-content">
-                <h3>Download App from google Play store </h3>
+                <strong style={{ fontSize: "25px", color: "white" }}>Download App from google Play store </strong>
               </div>
             </div>
             <div class="col-lg-5 col-md-6">
