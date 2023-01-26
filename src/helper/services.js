@@ -50,48 +50,9 @@ export const services = [
     icon: "",
     name: "App Development",
     path: "app-development",
-    data: {
-      image: [image2, image3, image4],
-      content: [
-        serviceItems(
-          1,
-          "SEO Friendly website",
-          "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-          man_and_women,
-          circle_1,
-          cta_shape_1
-        ),
-      ],
-      shortDescription:
-        "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      extraContent:
-        "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      heading: "Strengthening your web connections",
-    },
     childs: [
       {
-        id: "hash()",
-        icon: "",
         name: "CROSS PLATFORM APPS",
-        path: "cross-platform-apps",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
         childs: [
           {
             id: "hash()",
@@ -171,25 +132,6 @@ export const services = [
         id: "hash()",
         icon: "",
         name: "EMERGING TECHNOLOGIES",
-        path: "emerging-technologies",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
         childs: [
           {
             id: "hash()",
@@ -269,25 +211,6 @@ export const services = [
         id: "hash()",
         icon: "",
         name: "INDUSTRIES",
-        path: "industries",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
         childs: [
           {
             id: "hash()",
@@ -466,48 +389,11 @@ export const services = [
     icon: "",
     name: "Artificail Intelegence",
     path: "artificail-intelegence",
-    data: {
-      image: [image2, image3, image4],
-      content: [
-        serviceItems(
-          1,
-          "SEO Friendly website",
-          "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-          man_and_women,
-          circle_1,
-          cta_shape_1
-        ),
-      ],
-      shortDescription:
-        "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      extraContent:
-        "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      heading: "Strengthening your web connections",
-    },
     childs: [
       {
         id: "hash()",
         icon: "",
         name: "COMPUTER VISION",
-        path: "computer-vision",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
         childs: [
           {
             id: "hash()",
@@ -731,25 +617,6 @@ export const services = [
         id: "hash()",
         icon: "",
         name: "PRE-BUILT MODELS",
-        path: "pre-built-models",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
         childs: [
           {
             id: "hash()",
@@ -901,25 +768,6 @@ export const services = [
         id: "hash()",
         icon: "",
         name: "PREDICTIVE ANALYTICS",
-        path: "predictive-analytics",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
         childs: [
           {
             id: "hash()",
@@ -975,25 +823,6 @@ export const services = [
         id: "hash()",
         icon: "",
         name: "AI DRONES",
-        path: "ai-drones",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
         childs: [
           {
             id: "hash()",
@@ -1121,25 +950,6 @@ export const services = [
         id: "hash()",
         icon: "",
         name: "NATURAL LANGUAGE PROCESSING",
-        path: "natural-language-processing",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
         childs: [
           {
             id: "hash()",
@@ -1219,25 +1029,6 @@ export const services = [
         id: "hash()",
         icon: "",
         name: "INDUSTRIES",
-        path: "industries",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
         childs: [
           {
             id: "hash()",
@@ -1415,25 +1206,6 @@ export const services = [
     id: "hash()",
     icon: "",
     name: "Quality Assurance Services",
-    path: "quality-assurance-services",
-    data: {
-      image: [image2, image3, image4],
-      content: [
-        serviceItems(
-          1,
-          "SEO Friendly website",
-          "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-          man_and_women,
-          circle_1,
-          cta_shape_1
-        ),
-      ],
-      shortDescription:
-        "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      extraContent:
-        "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      heading: "Strengthening your web connections",
-    },
     childs: [
       {
         id: "hash()",
@@ -1537,25 +1309,6 @@ export const services = [
     id: "hash()",
     icon: "",
     name: "Cloud Software Solutions",
-    path: "cloud-software-solutions",
-    data: {
-      image: [image2, image3, image4],
-      content: [
-        serviceItems(
-          1,
-          "SEO Friendly website",
-          "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-          man_and_women,
-          circle_1,
-          cta_shape_1
-        ),
-      ],
-      shortDescription:
-        "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      extraContent:
-        "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      heading: "Strengthening your web connections",
-    },
     childs: [
       {
         id: "hash()",
@@ -1660,24 +1413,6 @@ export const services = [
     icon: "",
     name: "NET SUITS",
     path: "net-suits",
-    data: {
-      image: [image2, image3, image4],
-      content: [
-        serviceItems(
-          1,
-          "SEO Friendly website",
-          "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-          man_and_women,
-          circle_1,
-          cta_shape_1
-        ),
-      ],
-      shortDescription:
-        "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      extraContent:
-        "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      heading: "Strengthening your web connections",
-    },
     childs: [
       {
         id: "hash()",
@@ -2292,48 +2027,9 @@ export const services = [
     name: "PROVIDING SOLUTIONS",
     path: "providing-solutions",
     data: {
-      image: [image2, image3, image4],
-      content: [
-        serviceItems(
-          1,
-          "SEO Friendly website",
-          "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-          man_and_women,
-          circle_1,
-          cta_shape_1
-        ),
-      ],
-      shortDescription:
-        "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      extraContent:
-        "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      heading: "Strengthening your web connections",
+
     },
     childs: [
-      {
-        id: "hash()",
-        icon: "",
-        name: "Agriculture ERP",
-        path: "agriculture-erp",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
-      },
       {
         id: "hash()",
         icon: "",
@@ -2652,25 +2348,6 @@ export const services = [
     id: "hash()",
     icon: "",
     name: "MOBILITY",
-    path: "mobility",
-    data: {
-      image: [image2, image3, image4],
-      content: [
-        serviceItems(
-          1,
-          "SEO Friendly website",
-          "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-          man_and_women,
-          circle_1,
-          cta_shape_1
-        ),
-      ],
-      shortDescription:
-        "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      extraContent:
-        "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      heading: "Strengthening your web connections",
-    },
     childs: [
       {
         id: "hash()",
@@ -2846,25 +2523,6 @@ export const services = [
     id: "hash()",
     icon: "",
     name: "App Clone",
-    path: "app-clone",
-    data: {
-      image: [image2, image3, image4],
-      content: [
-        serviceItems(
-          1,
-          "SEO Friendly website",
-          "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-          man_and_women,
-          circle_1,
-          cta_shape_1
-        ),
-      ],
-      shortDescription:
-        "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      extraContent:
-        "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      heading: "Strengthening your web connections",
-    },
     childs: [
       {
         id: "hash()",
@@ -2992,25 +2650,6 @@ export const services = [
     id: "hash()",
     icon: "",
     name: "Other Services",
-    path: "other-services",
-    data: {
-      image: [image2, image3, image4],
-      content: [
-        serviceItems(
-          1,
-          "SEO Friendly website",
-          "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-          man_and_women,
-          circle_1,
-          cta_shape_1
-        ),
-      ],
-      shortDescription:
-        "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      extraContent:
-        "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      heading: "Strengthening your web connections",
-    },
     childs: [
       {
         id: "hash()",
@@ -3090,49 +2729,9 @@ export const services = [
     id: "hash()",
     icon: "",
     name: "Ecommerce",
-    path: "ecommerce",
-    data: {
-      image: [image2, image3, image4],
-      content: [
-        serviceItems(
-          1,
-          "SEO Friendly website",
-          "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-          man_and_women,
-          circle_1,
-          cta_shape_1
-        ),
-      ],
-      shortDescription:
-        "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      extraContent:
-        "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      heading: "Strengthening your web connections",
-    },
     childs: [
       {
-        id: "hash()",
-        icon: "",
         name: "INDUSTRIES",
-        path: "industries",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
         childs: [
           {
             id: "hash()",
@@ -3232,30 +2831,10 @@ export const services = [
           },
         ],
       },
-
       {
         id: "hash()",
         icon: "",
         name: "MAGENTO",
-        path: "magento",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
         childs: [
           {
             id: "hash()",
@@ -3497,56 +3076,36 @@ export const services = [
               heading: "Strengthening your web connections",
             },
           },
-        ],
+          {
+            id: "hash()",
+            icon: "",
+            name: "Magento to Shopify Migration",
+            path: "magento to shopify migration",
+            data: {
+              image: [image2, image3, image4],
+              content: [
+                serviceItems(
+                  1,
+                  "SEO Friendly website",
+                  "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
+                  man_and_women,
+                  circle_1,
+                  cta_shape_1
+                ),
+              ],
+              shortDescription:
+                "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
+              extraContent:
+                "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
+              heading: "Strengthening your web connections",
+            },
+          },],
       },
 
       {
         id: "hash()",
         icon: "",
-        name: "Magento to Shopify Migration",
-        path: "magento to shopify migration",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
-      },
-      {
-        id: "hash()",
-        icon: "",
         name: "B2B",
-        path: "b2b",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
         childs: [
           {
             id: "hash()",
@@ -3602,25 +3161,6 @@ export const services = [
         id: "hash()",
         icon: "",
         name: "SHOPIFY",
-        path: "shopify",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
         childs: [
           {
             id: "hash()",
@@ -3768,30 +3308,10 @@ export const services = [
           },
         ],
       },
-
       {
         id: "hash()",
         icon: "",
         name: "BIGCOMMERCE",
-        path: "bigcommerce",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
         childs: [
           {
             id: "hash()",
@@ -3891,30 +3411,10 @@ export const services = [
           },
         ],
       },
-
       {
         id: "hash()",
         icon: "",
         name: "WOOCOMMERCE",
-        path: "woocommerce",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
         childs: [
           {
             id: "hash()",
@@ -3997,49 +3497,11 @@ export const services = [
     id: "hash()",
     icon: "",
     name: "Health Care SERVICES",
-    path: "health care services",
-    data: {
-      image: [image2, image3, image4],
-      content: [
-        serviceItems(
-          1,
-          "SEO Friendly website",
-          "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-          man_and_women,
-          circle_1,
-          cta_shape_1
-        ),
-      ],
-      shortDescription:
-        "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      extraContent:
-        "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      heading: "Strengthening your web connections",
-    },
     childs: [
       {
         id: "hash()",
         icon: "",
         name: "AREAS OF FOCUS",
-        path: "areas of focus",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
         childs: [
           {
             id: "hash()",
@@ -4144,25 +3606,6 @@ export const services = [
         id: "hash()",
         icon: "",
         name: "SERVICES",
-        path: "services",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
         childs: [
           {
             id: "hash()",
@@ -4267,25 +3710,6 @@ export const services = [
         id: "hash()",
         icon: "",
         name: "SOLUTIONS",
-        path: "solutions",
-        data: {
-          image: [image2, image3, image4],
-          content: [
-            serviceItems(
-              1,
-              "SEO Friendly website",
-              "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-              man_and_women,
-              circle_1,
-              cta_shape_1
-            ),
-          ],
-          shortDescription:
-            "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          extraContent:
-            "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-          heading: "Strengthening your web connections",
-        },
         childs: [
           {
             id: "hash()",
@@ -4368,25 +3792,6 @@ export const services = [
     id: "hash()",
     icon: "",
     name: "AUTOMATION SOLUTIONS",
-    path: "automation solutions",
-    data: {
-      image: [image2, image3, image4],
-      content: [
-        serviceItems(
-          1,
-          "SEO Friendly website",
-          "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-          man_and_women,
-          circle_1,
-          cta_shape_1
-        ),
-      ],
-      shortDescription:
-        "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      extraContent:
-        "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      heading: "Strengthening your web connections",
-    },
     childs: [
       {
         id: "hash()",
@@ -4635,25 +4040,6 @@ export const services = [
     id: "hash()",
     icon: "",
     name: "INTERNET OF THINGS SOLUTIONS AND SERVICES",
-    path: "internet of things solutions and services",
-    data: {
-      image: [image2, image3, image4],
-      content: [
-        serviceItems(
-          1,
-          "SEO Friendly website",
-          "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-          man_and_women,
-          circle_1,
-          cta_shape_1
-        ),
-      ],
-      shortDescription:
-        "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      extraContent:
-        "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      heading: "Strengthening your web connections",
-    },
     childs: [
       {
         id: "hash()",
@@ -4855,24 +4241,6 @@ export const services = [
     icon: "",
     name: "BUSINESS INTELLIGENCE & DATA VISUALIZATION SOLUTIONS",
     path: "business intelligence & data visualization solutions",
-    data: {
-      image: [image2, image3, image4],
-      content: [
-        serviceItems(
-          1,
-          "SEO Friendly website",
-          "We can create a beautiful SEO-friendly website for you, that can boost your sales website traffic. We have assisted various businesses who have asked us to develop a website for them that would allow them to recognize a new place for their brand.",
-          man_and_women,
-          circle_1,
-          cta_shape_1
-        ),
-      ],
-      shortDescription:
-        "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      extraContent:
-        "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      heading: "Strengthening your web connections",
-    },
     childs: [
       {
         id: "hash()",

@@ -8,7 +8,9 @@ import styles from "./style.module.css";
 const ServiceDetail = () => {
   const params = useParams();
 
-  const filterData = services.filter((item) => item.path === params.id);
+  const filterData = services.map((item) => item.childs)
+  console.log(filterData)
+  // filter((childs) => childs.path === params.id);
 
   const even = (item) => {
     return (
@@ -73,7 +75,7 @@ const ServiceDetail = () => {
       <div className="container">
         <div class="row align-items-center pb-80">
           <div class="col-lg-6 features-details-image">
-            <img src={filterData[0].data.image[0]} alt="image" className={styles.imgDetails}/>
+            <img src={filterData[0].data.image[0]} alt="image" className={styles.imgDetails} />
           </div>
           <div class="col-lg-6 features-details mt-3">
             <div class="features-details-desc">
