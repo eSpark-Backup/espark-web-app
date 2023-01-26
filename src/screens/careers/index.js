@@ -9,17 +9,67 @@ import "./style.css";
 import { Link } from "react-router-dom";
 import { ShimmerText, ShimmerThumbnail } from "react-shimmer-effects";
 import { ShemarLength } from "./../../helper/Shemars";
+import { optionData } from "./../../utils/utils";
 import Button from "../../components/button/button";
 const Careers = () => {
   const [careersData, setCareersData] = useState([]);
+  const [getCat, setGetCat] = useState([]);
+  const [allData, setAllData] = useState([]);
+
 
   useEffect(() => {
     const main = async () => {
       const data = await getOpeningJobs();
       setCareersData(data);
+      const getDatafromJobs = optionData(data);
+      setGetCat(getDatafromJobs);
+      setAllData(data);
     };
     main();
   }, []);
+
+  console.log("careersData", careersData);
+
+  const inputFeilds = (category, inputFor) => {
+    return (
+      <div className="col-lg-4">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          onChange={(e) => {
+            selectCategory(e);
+          }}
+        >
+          {category?.map((item) => {
+            return <option value={item + "," + inputFor}>{item}</option>;
+          })}
+        </select>
+      </div>
+    );
+  };
+
+  const selectCategory = (e) => {
+    const categories = e.target.value;
+    const split = categories.split(",");
+    console.log(split[1]);
+
+    const cat = allData.filter((item) => {
+      if (split[1] === "job_cat" && item.acf.job_category.includes(split[0])) {
+        console.log("running condition 1")
+          return item;
+        }
+        // return item;
+      
+      if (split[1] === "job_type" && item.acf.job_type.includes(split[0])) {
+        return item;
+      }
+      if (split[1] === "job_location" && item.acf.job_location.includes(split[0])) {
+        return item;
+      }
+      // return cat
+    });
+    setCareersData([...cat]);
+  };
 
   return (
     <>
@@ -144,6 +194,14 @@ const Careers = () => {
           <Title title={"Open Vacancies"} link={window.location.pathname} />
         )}
 
+        {/* {console.log(careersData, "careers")} */}
+
+        <div className="row">
+          {inputFeilds(getCat.category, "job_cat")}
+          {inputFeilds(getCat.type, "job_type")}
+          {inputFeilds(getCat.location, "job_location")}
+        </div>
+        <br />
         {careersData?.length ? (
           careersData?.map((item) => {
             return (
