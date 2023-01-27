@@ -20,7 +20,7 @@ const servicesData = [...services].reverse()
           }
         />
         <ServiceStyleFive
-          data={link !== "/" ? services : servicesData.slice(0, 6)}
+          data={link !== "/" ? services : servicesData.slice(0, 1)}
           link={link}
         />{" "}
       </>
