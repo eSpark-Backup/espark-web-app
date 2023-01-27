@@ -15,7 +15,12 @@ const Careers = () => {
   const [careersData, setCareersData] = useState([]);
   const [getCat, setGetCat] = useState([]);
   const [allData, setAllData] = useState([]);
-
+  const [fetch, setFetch] = useState(true);
+  const [filter, setFilter] = useState({
+    job_cat: "",
+    job_type: "Full Time",
+    job_location: "Pakistan",
+  });
 
   useEffect(() => {
     const main = async () => {
@@ -26,9 +31,10 @@ const Careers = () => {
       setAllData(data);
     };
     main();
+    setTimeout(() => {
+      setFetch(true);
+    }, 3000);
   }, []);
-
-  console.log("careersData", careersData);
 
   const inputFeilds = (category, inputFor) => {
     return (
@@ -50,25 +56,45 @@ const Careers = () => {
 
   const selectCategory = (e) => {
     const categories = e.target.value;
-    const split = categories.split(",");
-    console.log(split[1]);
+    const categorySplitArr = categories.split(",");
+    const value = categorySplitArr[0];
+    const name = categorySplitArr[1];
 
-    const cat = allData.filter((item) => {
-      if (split[1] === "job_cat" && item.acf.job_category.includes(split[0])) {
-        console.log("running condition 1")
-          return item;
-        }
-        // return item;
-      
-      if (split[1] === "job_type" && item.acf.job_type.includes(split[0])) {
-        return item;
-      }
-      if (split[1] === "job_location" && item.acf.job_location.includes(split[0])) {
-        return item;
-      }
-      // return cat
+    if (name === "job_cat") {
+      let newData = applyFilter([...allData], {
+        ...filter,
+        [name]: value,
+      });
+
+      setCareersData(newData);
+
+      setFilter({
+        job_cat: value,
+        job_type: "Full Time",
+        job_location: "Pakistan",
+      });
+    } else {
+      let newData = applyFilter([...allData], {
+        ...filter,
+        [name]: value,
+      });
+
+      setCareersData(newData);
+      setFilter({
+        ...filter,
+        [name]: value,
+      });
+    }
+  };
+
+  const applyFilter = (jobs, filter) => {
+    return jobs.filter((job) => {
+      return (
+        job.acf.job_category.includes(filter.job_cat) &&
+        job.acf.job_type.includes(filter.job_type) &&
+        job.acf.job_location.includes(filter.job_location)
+      );
     });
-    setCareersData([...cat]);
   };
 
   return (
@@ -194,16 +220,16 @@ const Careers = () => {
           <Title title={"Open Vacancies"} link={window.location.pathname} />
         )}
 
-        {/* {console.log(careersData, "careers")} */}
-
         <div className="row">
           {inputFeilds(getCat.category, "job_cat")}
           {inputFeilds(getCat.type, "job_type")}
           {inputFeilds(getCat.location, "job_location")}
         </div>
         <br />
-        {careersData?.length ? (
-          careersData?.map((item) => {
+
+        {careersData &&
+          careersData.length > 0 &&
+          careersData.map((item) => {
             return (
               <div className="row border-top p-3">
                 <div class="col-12 col-sm-3 ">
@@ -225,15 +251,19 @@ const Careers = () => {
                   ></p>
                 </div>
                 <div class="col-lg-3 d-flex align-items-center justify-content-center">
-                  <Button title="Apply Now" link={`/vacancies/${item.id}`} design={1} />
-
+                  <Button
+                    title="Apply Now"
+                    link={`/vacancies/${item.id}`}
+                    design={1}
+                  />
                 </div>
               </div>
             );
-          })
-        ) : (
-          <>
-            {ShemarLength.map((item) => {
+          })}
+
+        {fetch
+          ? careersData.length === 0 &&
+            ShemarLength.map((item) => {
               return (
                 <div class="row">
                   <div class="col-lg-4">
@@ -253,9 +283,8 @@ const Careers = () => {
                   </div>
                 </div>
               );
-            })}
-          </>
-        )}
+            })
+          : "Not found"}
       </div>
     </>
   );
