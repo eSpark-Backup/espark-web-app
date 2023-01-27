@@ -17,6 +17,7 @@ import Teams from "../screens/teams/teams";
 import BlogDetail from "../screens/blog/blog-detail";
 import Careers from "../screens/careers";
 import JobDetail from "../screens/careers/jobDetail";
+import SEO from "./../utils/SEO";
 
 const AppRoutes = () => {
   const data = window.scrollTo(0, 0);
@@ -47,6 +48,7 @@ const AppWraper = () => {
   return (
     <Router>
       <LayoutOne>
+        <SEO />
         <AppRoutes />
       </LayoutOne>
     </Router>

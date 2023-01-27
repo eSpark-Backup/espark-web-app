@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import Button from "../button/button";
 
@@ -112,7 +111,7 @@ export default function TwoColumns({
                   <p dangerouslySetInnerHTML={{ __html: paragraph }}></p>
                 </div>
                 {button && (
-                  <Button title="Read More" link="/espark-app" design={5} />
+                  <Button title="Read More" link="/espark-app" design={1} />
                 )}
               </div>
             </div>

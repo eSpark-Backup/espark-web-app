@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Button from "../button/button";
 
 export default function UserExpectation({
   h2,
@@ -30,17 +30,20 @@ export default function UserExpectation({
             </div>
           ))}
         </div>
-        <div className="contact-cta-box">
-          <h3>{h3}</h3>
-          <p>
-            {p2}&#x27;{p2_span}
-          </p>
-          <Link to={href}>
-          <a className="btn btn-primary">
-            {btnTitle}
-          </a>
-          </Link>
-         
+        <div className="contact-cta-box row ">
+          <div class="col-lg-8">
+            <h3>{h3}</h3>
+            <p>
+              {p2}&#x27;{p2_span}
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <Button
+              title={btnTitle}
+              link={href}
+              design={2}
+            />
+          </div>
         </div>
         <div className="map-bg">
           <img src={require("../../assets/images/map.png")} alt="map" />

@@ -86,7 +86,7 @@ const Header = () => {
                     Services
                   </Link>
                   <ul class="dropdown-menu ">
-                    {newData?.map((item) => {
+                    {newData?.map((child) => {
                       return (
                         <li
                           class="nav-item"
@@ -95,10 +95,25 @@ const Header = () => {
                           <i
                             class="fa fa-envelope-square"
                             aria-hidden="true"
-                          ></i>
-                          <Link class="nav-link" to={`services/${item.path}`}>
-                            {item.name}
-                          </Link>
+                          ></i><Link class="nav-link" to={`#`}>
+                            {child.name}</Link>
+                          <ul class="dropdown-menu ">
+                            {child.childs.map(item => {
+                              return (<li
+                                class="nav-item"
+                                onClick={() => setIsNavCollapsed(false)}
+                              >
+                                <i
+                                  class="fa fa-envelope-square"
+                                  aria-hidden="true"
+                                ></i>
+                                <Link class="nav-link" to={`services/${item.path}`}>
+                                  {item.name}
+                                </Link>
+                              </li>);
+                            })}
+                          </ul>
+
                         </li>
                       );
                     })}
