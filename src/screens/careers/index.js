@@ -9,17 +9,93 @@ import "./style.css";
 import { Link } from "react-router-dom";
 import { ShimmerText, ShimmerThumbnail } from "react-shimmer-effects";
 import { ShemarLength } from "./../../helper/Shemars";
+import { optionData } from "./../../utils/utils";
 import Button from "../../components/button/button";
 const Careers = () => {
   const [careersData, setCareersData] = useState([]);
+  const [getCat, setGetCat] = useState([]);
+  const [allData, setAllData] = useState([]);
+  const [fetch, setFetch] = useState(true);
+  const [filter, setFilter] = useState({
+    job_cat: "",
+    job_type: "Full Time",
+    job_location: "Pakistan",
+  });
 
   useEffect(() => {
     const main = async () => {
       const data = await getOpeningJobs();
       setCareersData(data);
+      const getDatafromJobs = optionData(data);
+      setGetCat(getDatafromJobs);
+      setAllData(data);
     };
     main();
+    setTimeout(() => {
+      setFetch(true);
+    }, 3000);
   }, []);
+
+  const inputFeilds = (category, inputFor) => {
+    return (
+      <div className="col-lg-4">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          onChange={(e) => {
+            selectCategory(e);
+          }}
+        >
+          {category?.map((item) => {
+            return <option value={item + "," + inputFor}>{item}</option>;
+          })}
+        </select>
+      </div>
+    );
+  };
+
+  const selectCategory = (e) => {
+    const categories = e.target.value;
+    const categorySplitArr = categories.split(",");
+    const value = categorySplitArr[0];
+    const name = categorySplitArr[1];
+
+    if (name === "job_cat") {
+      let newData = applyFilter([...allData], {
+        ...filter,
+        [name]: value,
+      });
+
+      setCareersData(newData);
+
+      setFilter({
+        job_cat: value,
+        job_type: "Full Time",
+        job_location: "Pakistan",
+      });
+    } else {
+      let newData = applyFilter([...allData], {
+        ...filter,
+        [name]: value,
+      });
+
+      setCareersData(newData);
+      setFilter({
+        ...filter,
+        [name]: value,
+      });
+    }
+  };
+
+  const applyFilter = (jobs, filter) => {
+    return jobs.filter((job) => {
+      return (
+        job.acf.job_category.includes(filter.job_cat) &&
+        job.acf.job_type.includes(filter.job_type) &&
+        job.acf.job_location.includes(filter.job_location)
+      );
+    });
+  };
 
   return (
     <>
@@ -144,8 +220,16 @@ const Careers = () => {
           <Title title={"Open Vacancies"} link={window.location.pathname} />
         )}
 
-        {careersData?.length ? (
-          careersData?.map((item) => {
+        <div className="row">
+          {inputFeilds(getCat.category, "job_cat")}
+          {inputFeilds(getCat.type, "job_type")}
+          {inputFeilds(getCat.location, "job_location")}
+        </div>
+        <br />
+
+        {careersData &&
+          careersData.length > 0 &&
+          careersData.map((item) => {
             return (
               <div className="row border-top p-3">
                 <div class="col-12 col-sm-3 ">
@@ -167,15 +251,19 @@ const Careers = () => {
                   ></p>
                 </div>
                 <div class="col-lg-3 d-flex align-items-center justify-content-center">
-                  <Button title="Apply Now" link={`/vacancies/${item.id}`} design={1} />
-
+                  <Button
+                    title="Apply Now"
+                    link={`/vacancies/${item.id}`}
+                    design={1}
+                  />
                 </div>
               </div>
             );
-          })
-        ) : (
-          <>
-            {ShemarLength.map((item) => {
+          })}
+
+        {fetch
+          ? careersData.length === 0 &&
+            ShemarLength.map((item) => {
               return (
                 <div class="row">
                   <div class="col-lg-4">
@@ -195,9 +283,8 @@ const Careers = () => {
                   </div>
                 </div>
               );
-            })}
-          </>
-        )}
+            })
+          : "Not found"}
       </div>
     </>
   );
