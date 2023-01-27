@@ -29,6 +29,7 @@
     "react-shimmer-effects": "^1.0.2",
     "react-slick": "^0.29.0",
     "react-slideshow-image": "^4.1.1",
+    "react-snap": "^1.23.0",
     "react-tiny-popover": "^7.2.0",
     "serve": "^14.1.2",
     "slick-carousel": "^1.8.1",
@@ -38,7 +39,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": [
