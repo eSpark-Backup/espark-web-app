@@ -7,6 +7,7 @@ export default function Title({ title, data, paragraph, link }) {
       style={{
         paddingTop: link === "/" || "/teams" ? 50 : null,
         textAlign: link === "/careers" ? "left" : null,
+        padding: link === "/services" ? 20 : null
       }}
     >
       <div className="d-table">
