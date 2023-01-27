@@ -5,9 +5,9 @@ import style from "./style.module.css";
 const Button = ({ title, link, design, type, }) => {
 
 
-  if (design == null) {
+  if (design === null) {
     return null;
-  } if (design == 0) {
+  } if (design === 0) {
     return (
       <div>
         <button type={type} class="btn btn-secondary">
@@ -16,7 +16,7 @@ const Button = ({ title, link, design, type, }) => {
       </div>
     );
   }
-  if (design == 1) {
+  if (design === 1) {
     return (
       <div>
         <Link to={link} className={style.btnMargin}>
@@ -28,7 +28,7 @@ const Button = ({ title, link, design, type, }) => {
       </div>
     );
   }
-  if (design == 2) {
+  if (design === 2) {
     return (
       <div>
         <Link to={link} className={style.btnMargin}>
@@ -39,7 +39,7 @@ const Button = ({ title, link, design, type, }) => {
       </div>
     );
   }
-  if (design == 3) {
+  if (design === 3) {
     return (
       <div>
         <Link class="btn btn-light" onClick={link}>
@@ -48,7 +48,7 @@ const Button = ({ title, link, design, type, }) => {
       </div>
     );
   }
-  if (design == 4) {
+  if (design === 4) {
     return (
       <div>
         <Link class="btn btn-primary " to={link}>
@@ -59,7 +59,7 @@ const Button = ({ title, link, design, type, }) => {
       </div>
     );
   }
-  if (design == 5) {
+  if (design === 5) {
     return (
       <div>
         <Link class="btn btn-primary " to={link}>
@@ -68,7 +68,7 @@ const Button = ({ title, link, design, type, }) => {
       </div>
     );
   }
-  if (design == 6) {
+  if (design === 6) {
     return (
       <div>
         <Link class="read-more-btn " to={link}>
@@ -79,7 +79,7 @@ const Button = ({ title, link, design, type, }) => {
       </div>
     );
   }
-  if (design == 7) {
+  if (design === 7) {
     return (
       <div>
         <Link class="read-more-btn " to={link}>
@@ -88,19 +88,19 @@ const Button = ({ title, link, design, type, }) => {
       </div>
     );
   }
-  if (design == 8) {
+  if (design === 8) {
     return (
       <a onClick={link}>{title}</a>
     );
   }
-  if (design == 9) {
+  if (design === 9) {
     return (
       <a href={link} rel="nofollow" target="_blank">
         {title}
       </a>
     );
   }
-  if (design == 10) {
+  if (design === 10) {
     return (
       <a className="icon" href={link} target="_blank">
         <FaLongArrowAltRight />

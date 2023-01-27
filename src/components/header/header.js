@@ -5,6 +5,7 @@ import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import GetInTouch from "../getInTouch/GetInTouch";
 import { Link, useLocation } from "react-router-dom";
+import { AiOutlineCaretRight } from "react-icons/ai";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -86,19 +87,36 @@ const Header = () => {
                     Services
                   </Link>
                   <ul class="dropdown-menu ">
-                    {newData?.map((item) => {
+                    {newData?.slice(0, 2)?.map((child) => {
                       return (
                         <li
                           class="nav-item"
                           onClick={() => setIsNavCollapsed(false)}
                         >
-                          <i
-                            class="fa fa-envelope-square"
-                            aria-hidden="true"
-                          ></i>
-                          <Link class="nav-link" to={`services/${item.path}`}>
-                            {item.name}
+                          <Link class="nav-link" to={`#`}>
+                            <AiOutlineCaretRight /> {child.name}
                           </Link>
+                          <ul class="dropdown-menu ">
+                            {child.childs.map((item) => {
+                              return (
+                                <li
+                                  class="nav-item"
+                                  onClick={() => setIsNavCollapsed(false)}
+                                >
+                                  <i
+                                    class="fa fa-envelope-square"
+                                    aria-hidden="true"
+                                  ></i>
+                                  <Link
+                                    class="nav-link"
+                                    to={`services/${item.path}`}
+                                  >
+                                    {item.name}
+                                  </Link>
+                                </li>
+                              );
+                            })}
+                          </ul>
                         </li>
                       );
                     })}
