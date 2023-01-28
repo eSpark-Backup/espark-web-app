@@ -45,10 +45,14 @@ function Users() {
               </div>
             </div>
           </div>
-          <div class="contact-cta-box">
-            <h3>Have any question about us?</h3>
-            <p>Don&#x27;t hesitate to contact us</p>
-            <Button title="Contact Us" link="/contact" design={3} />
+          <div class="contact-cta-box row">
+            <div className="col-lg-8">
+              <h3>Have any question about us?</h3>
+              <p>Don&#x27;t hesitate to contact us</p>
+            </div>
+            <div className="col-lg-4">
+              <Button title="Contact Us" link="/contact" design={3} />
+            </div>
           </div>
         </div>
       </div>

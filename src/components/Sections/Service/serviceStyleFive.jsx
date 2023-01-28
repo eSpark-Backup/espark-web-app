@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { shapes } from "../../../helper/ImageUrl";
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 import style from './style.module.css'
 import Button from "../../button/button";
@@ -14,10 +13,10 @@ const ServiceStyleFive = ({ data, link }) => {
     <div>
       <div class="agency-services-area">
         <div class="container">
-          {newData.map((child) => {
+          {newData?.slice(0,2)?.map((child) => {
             return (
               <div class="row justify-content-center p-20">
-                <Title title={child.name} link={window.location.pathname} />
+               {link === "/" ?null: <Title title={child.name} link={window.location.pathname} /> }
                 {
                   child.childs.map(item => {
                     return (
@@ -59,7 +58,7 @@ const ServiceStyleFive = ({ data, link }) => {
               </div>
 
             )
-          }).sort()}
+          })}
 
 
           {link == '/' ?
