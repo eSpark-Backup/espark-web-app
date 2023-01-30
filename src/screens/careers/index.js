@@ -15,7 +15,7 @@ const Careers = () => {
   const [careersData, setCareersData] = useState([]);
   const [getCat, setGetCat] = useState([]);
   const [allData, setAllData] = useState([]);
-  const [fetch, setFetch] = useState(true);
+  const [showMessage, setShowMessage] = useState(false);
   const [filter, setFilter] = useState({
     job_cat: "",
     job_type: "Full Time",
@@ -31,9 +31,15 @@ const Careers = () => {
       setAllData(data);
     };
     main();
-    setTimeout(() => {
-      setFetch(true);
+  },[]);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setShowMessage(true);
     }, 3000);
+    return () => {
+      clearTimeout(timeoutId);
+    };
   }, []);
 
   const inputFeilds = (category, inputFor) => {
@@ -227,64 +233,61 @@ const Careers = () => {
         </div>
         <br />
 
-        {careersData &&
-          careersData.length > 0 &&
-          careersData.map((item) => {
-            return (
-              <div className="row border-top p-3">
-                <div class="col-12 col-sm-3 ">
-                  <h4 id="data_job_num1" data-job-num="1">
-                    {item?.title?.rendered}
-                  </h4>
-                  <p>
-                    Karachi
-                    <br />
-                    <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
-                  </p>
-                </div>
-                <div class="col-12 col-sm-6 ">
-                  <h4>Description</h4>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: item?.excerpt.rendered,
-                    }}
-                  ></p>
-                </div>
-                <div class="col-lg-3 d-flex align-items-center justify-content-center">
-                  <Button
-                    title="Apply Now"
-                    link={`/vacancies/${item.id}`}
-                    design={1}
-                  />
-                </div>
+        {careersData && careersData.length > 0 ? (
+        careersData.map((item) => {
+          return (
+            <div className="row border-top p-3">
+              <div class="col-12 col-sm-3 ">
+                <h4 id="data_job_num1" data-job-num="1">
+                  {item?.title?.rendered}
+                </h4>
+                <p>
+                  Karachi
+                  <br />
+                  <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
+                </p>
               </div>
-            );
-          })}
-
-        {fetch
-          ? careersData.length === 0 &&
-            ShemarLength.map((item) => {
-              return (
-                <div class="row">
-                  <div class="col-lg-4">
-                    <ShimmerThumbnail
-                      height={150}
-                      width={300}
-                      categoryStyle="STYLE_THREE"
-                    />
-                  </div>
-                  <div class="col-lg-8">
-                    <ShimmerText
-                      line={5}
-                      gap={10}
-                      items={3}
-                      categoryStyle="STYLE_THREE"
-                    />
-                  </div>
-                </div>
-              );
-            })
-          : "Not found"}
+              <div class="col-12 col-sm-6 ">
+                <h4>Description</h4>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: item?.excerpt.rendered,
+                  }}
+                ></p>
+              </div>
+              <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                <Button title="Apply Now" link={`/vacancies/${item.id}`} design={1} />
+              </div>
+            </div>
+          );
+        })
+      ) : showMessage ? (
+        <div className="notfound" >
+          Not found try another filter 
+        </div>
+      ) : (
+         ShemarLength.map((item) => {
+          return (
+            <div class="row">
+              <div class="col-lg-4">
+                <ShimmerThumbnail
+                  height={150}
+                  width={300}
+                  categoryStyle="STYLE_THREE"
+                />
+              </div>
+              <div class="col-lg-8">
+                <ShimmerText
+                  line={5}
+                  gap={10}
+                  items={3}
+                  categoryStyle="STYLE_THREE"
+                />
+              </div>
+            </div>
+          );
+        })
+      )}
       </div>
     </>
   );
