@@ -18,6 +18,7 @@ import BlogDetail from "../screens/blog/blog-detail";
 import Careers from "../screens/careers";
 import JobDetail from "../screens/careers/jobDetail";
 import SEO from "./../utils/SEO";
+import Event from './../components/event/event';
 
 const AppRoutes = () => {
   const data = window.scrollTo(0, 0);
@@ -36,6 +37,7 @@ const AppRoutes = () => {
     { path: "/espark-app", element: <MobileApp /> },
     { path: "/privacy-policy", element: <Privacy /> },
     { path: "/teams", element: <Teams /> },
+    { path: "/event", element: <Event /> },
     { path: "/appointments", element: <Contact /> },
     { path: "/careers", element: <Careers /> },
     { path: "/vacancies/:id", element: <JobDetail /> },
