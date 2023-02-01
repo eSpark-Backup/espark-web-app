@@ -2,10 +2,10 @@ import Axios from "axios";
 export const getApiCall = async (page) => {
   try {
     const pageCount = page ? page : 1
-    const { data } = await Axios.get(
+    const { data, headers } = await Axios.get(
       `https://esparkconsultants.com/old/wp-json/wp/v2/posts?per_page=10&page=${pageCount}`
     );
-    return data;
+    return { data: data, headers: headers };
   } catch (error) {
     console.log("API Error: ", error);
   }
@@ -33,10 +33,10 @@ export const getTagsApiCall = async () => {
 
 export const getCatApiCall = async (id) => {
   try {
-    const { data } = await Axios.get(
+    const { data, headers } = await Axios.get(
       `https://esparkconsultants.com/old/wp-json/wp/v2/posts?categories=${id}`
     );
-    return data;
+    return { data: data, headers: headers };
   } catch (error) {
     console.log("API Error: ", error);
   }

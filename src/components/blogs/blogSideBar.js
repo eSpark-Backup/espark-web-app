@@ -18,7 +18,7 @@ function BlogSideBar({ catagoryPosts }) {
   useEffect(() => {
     const main = async () => {
       const data = await getApiCall();
-      setPost(data);
+      setPost(data.data);
     };
     main();
   }, []);

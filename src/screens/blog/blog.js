@@ -11,32 +11,43 @@ import Button from "../../components/button/button";
 export default function Blog() {
   const [post, setPost] = useState();
   const [count, setCount] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
 
   useEffect(() => {
-    const main = async (page) => {
-      const data = await getApiCall(page);
-      setPost(data);
+    const main = async () => {
+      const data = await getApiCall();
+      setTotalPages(data.headers["x-wp-totalpages"]);
+      setPost(data.data);
     };
     main();
   }, []);
 
   const catPost = async (e) => {
     const data = await getCatApiCall(e);
-    setPost(data);
+    setPost(data.data);
+    console.log(data.data);
   };
 
   const nextPost = async () => {
+
     setCount(count + 1)
-    const data = await getApiCall(count);
-    setPost(data);
-    console.log(setCount);
+    if (count <= totalPages) {
+      const data = await getApiCall(count);
+      setTotalPages(data.headers["x-wp-totalpages"]);
+      setPost(data.data);
+    }
+
+    // const data = await getApiCall(count);
+    // setPost(data);
   };
 
   const prvPost = async () => {
     setCount(count - 1);
-    // const data = await getApiCall(count);
-    // setPost(data);
-    console.log(setCount);
+    if (count === totalPages) {
+      const data = await getApiCall(count);
+      setTotalPages(data.headers["x-wp-totalpages"]);
+      setPost(data.data);
+    }
   };
 
 
@@ -105,9 +116,10 @@ export default function Blog() {
                     gap={30}
                   />
                 )}
-                <div class="col-lg-6 col-md-6"><Button title="< Previous" onClick={() => nextPost()} design={3} /></div>
-                <div class="col-lg-6 col-md-6 text-right"><Button title="Next >" onClick={() => prvPost()} design={3} /></div>
-
+                <div class="col-lg-12 col-md-12 row">
+                  <div class="col-lg-6 col-md-6"><Button title="< Previous" onClick={() => prvPost()} design={3} disabled={count === 1 ? true : false} /></div>
+                  <div class="col-lg-6 col-md-6 text-right"><Button title="Next >" onClick={() => nextPost()} design={3} disabled={count === Number(totalPages) ? true : false} /></div>
+                </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-12">
