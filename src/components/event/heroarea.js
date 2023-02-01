@@ -76,15 +76,11 @@ const Heroarea = () => {
                 class="swiper-wrapper"
                 id="swiper-wrapper-5be6b74bde6610c7b"
                 aria-live="off"
-                //   style="
-                //     transition-duration: 0ms;
-                //     transform: translate3d(0px, 0px, 0px);
-                //   "
               >
                 <div
-                  class="swiper-slide swiper-slide-duplicate swiper-slide-active"
+                  class="swiper-slide swiper-slide-duplicate swiper-slide-active myclass"
                   data-swiper-slide-index="1"
-                  style={{ width: "1296px" }}
+                  
                 >
                   <div class="row align-items-center">
                     <div class="col-lg-6">

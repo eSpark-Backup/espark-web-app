@@ -120,18 +120,11 @@ const Eventcard = () => {
                   >
                     <div class="row">
                       {eventsCard.map((items) => {
-                        console.log(items, "items");
                         return (
                           <div
-                            class="col-lg-4 col-md-6 wow fadeInUp"
+                            class="col-lg-4 col-md-6 wow fadeInUp mytransformfadeInUp"
                             data-wow-delay="200ms"
                             data-wow-duration="1500ms"
-                            style={{
-                              visibility: "visible",
-                              animationDuration: "1500ms",
-                              animationDelay: "200ms",
-                              animationName: "fadeInUp",
-                            }}
                           >
                             <div class="event-card-md">
                               <div class="event-thumb">

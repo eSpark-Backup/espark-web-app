@@ -21,18 +21,15 @@ const Recentevent = () => {
             <div class="col-lg-12 overflow-hidden">
               <div class="swiper-container schedule-slider position-relative swiper-initialized swiper-horizontal swiper-pointer-events">
                 <div
-                  class="swiper-wrapper"
+                  class="swiper-wrapper myThreeD"
                   id="swiper-wrapper-de4130ab53042830"
                   aria-live="polite"
-                  style={{
-                    transitionDuration: "0ms",
-                    // transform: translate3d(-'1336px', '0px', '0px')
-                  }}
+                 
                 >
                   <div
-                    class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-prev swiper-slide-duplicate-next"
+                    class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-prev swiper-slide-duplicate-next recentclass"
                     data-swiper-slide-index="1"
-                    style={{ width: "1296px", marginRight: "40px" }}
+
                   >
                     <div class="schedule-wrapper">
                       <div class="event-date">
@@ -42,15 +39,10 @@ const Recentevent = () => {
                         recentEvent.map((items)=>{
                             return (
                                 <div
-                                    class="single-schedule-card row wow fadeInLeft animated"
+                                    class="single-schedule-card row wow fadeInLeft animated myanimation"
                                     data-wow-delay="200ms"
                                     data-wow-duration="1500ms"
-                                    style={{
-                                    visibility: "visible",
-                                    animationDuration: "1500ms",
-                                    animationDelay: "200ms",
-                                    // animation-name: fadeInLeft;
-                                    }}
+                                  
                                     >
                                     <div class="col-xl-4 col-lg-5 p-0">
                                     <div class="single-schedule-left">
@@ -145,15 +137,10 @@ const Recentevent = () => {
                       }
                      
                       <div
-                        class="single-schedule-card row wow fadeInLeft animated"
+                        class="single-schedule-card row wow fadeInLeft animated myanimation"
                         data-wow-delay="400ms"
                         data-wow-duration="1500ms"
-                        style={{
-                          visibility: "visible",
-                          animationDuration: "1500ms",
-                          animationDelay: "400ms",
-                          // animation-name: fadeInLeft;
-                        }}
+                    
                       >
                         <div class="col-xl-4 col-lg-5 p-0">
                           <div class="single-schedule-left">

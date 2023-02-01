@@ -22,29 +22,18 @@ const Telentedspeaker = () => {
               {telentedSpeakers.map((items) => {
                 return (
                   <div
-                    class="col-lg-4 col-md-6 wow fadeInUp"
+                    class="col-lg-4 col-md-6 wow fadeInUp mytransformfadeInUp"
                     data-wow-delay="200ms"
                     data-wow-duration="1500ms"
-                    style={{
-                      visibility: "visible",
-                      animationDuration: "1500ms",
-                      animationDelay: "200ms",
-                      animationName: "fadeInUp",
-                    }}
                   >
                     <div
-                      class="swiper-wrapper"
+                      class="swiper-wrapper myThreeD"
                       id="swiper-wrapper-df101108e5274561053"
                       aria-live="off"
-                      //   style={{
-                      //     transitionDuration: "0ms",
-                      //     transform: "translate3d(-1320px, 0px, 0px)",
-                      //   }}
                     >
                       <div
                         class="swiper-slide swiper-slide-duplicate"
                         data-swiper-slide-index="0"
-                        // style={{ width: "416px", marginRight: "24px" }}
                       >
                         <div class="speaker-card">
                           <div class="speaker-image">

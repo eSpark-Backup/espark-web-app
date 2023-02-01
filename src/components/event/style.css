@@ -2061,7 +2061,7 @@ header .header-style-two .main-nav ul li a.active span {
   display: flex;
 }
 .event-card-md .event-content .event-bottom .event-share-icons .share-btn {
-  color: #ce1446;
+  color: #0fa49d;
   font-size: 16px;
 }
 .event-card-md
@@ -6795,4 +6795,29 @@ header .header-style-two .main-nav ul li a.active span {
   text-transform: capitalize;
   color: #fff;
   font-family: raleway, sans-serif;
+}
+
+.myclass {
+  width: 1296px;
+}
+.recentclass{
+  width: 1296px;
+  margin-right: 40px;
+}
+.myanimation{
+  visibility: visible;
+  animation-duration: 1500ms;
+  animation-delay: 200ms;
+  animation-name: fadeInLeft;
+}
+.mytransformfadeInUp{
+  visibility: visible;
+  animation-duration: 1500ms;
+  animation-delay: 200ms;
+  animation-name: fadeInUp;
+
+}
+.myThreeD{
+  transition-duration: 0ms;
+ transform: translateY(-1336px, 0px, 0px)
 }
