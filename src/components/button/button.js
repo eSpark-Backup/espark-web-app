@@ -41,7 +41,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
   if (design === 3) {
     return (
       <>
-        <button class="btn" to={link} onClick={onClick} disabled={disabled}>
+        <button class="btn btn-light" to={link} onClick={onClick} disabled={disabled}>
           {title}
         </button>
       </>
