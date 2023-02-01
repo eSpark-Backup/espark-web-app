@@ -28768,7 +28768,8 @@ gb-headline-efd0cee8 .gb-icon {
 .single-blog-post .blog-image .date svg {
   width: 15px;
   margin-right: 3px
-}.single-blog-post .blog-image img {
+}
+.single-blog-post .blog-image img {
   width: 100vh;
   height: 250px;
 }

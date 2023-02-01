@@ -10,19 +10,36 @@ import Button from "../../components/button/button";
 
 export default function Blog() {
   const [post, setPost] = useState();
+  const [count, setCount] = useState(1);
+
   useEffect(() => {
-    const main = async () => {
-      const data = await getApiCall();
+    const main = async (page) => {
+      const data = await getApiCall(page);
       setPost(data);
     };
     main();
   }, []);
 
-  const catpost = async (e) => {
+  const catPost = async (e) => {
     const data = await getCatApiCall(e);
-
     setPost(data);
   };
+
+  const nextPost = async () => {
+    setCount(count + 1)
+    const data = await getApiCall(count);
+    setPost(data);
+    console.log(setCount);
+  };
+
+  const prvPost = async () => {
+    setCount(count - 1);
+    // const data = await getApiCall(count);
+    // setPost(data);
+    console.log(setCount);
+  };
+
+
 
   return (
     <div>
@@ -88,10 +105,13 @@ export default function Blog() {
                     gap={30}
                   />
                 )}
+                <div class="col-lg-6 col-md-6"><Button title="< Previous" onClick={() => nextPost()} design={3} /></div>
+                <div class="col-lg-6 col-md-6 text-right"><Button title="Next >" onClick={() => prvPost()} design={3} /></div>
+
               </div>
             </div>
             <div class="col-lg-4 col-md-12">
-              <BlogSideBar catagoryPosts={(e) => catpost(e)} />
+              <BlogSideBar catagoryPosts={(e) => catPost(e)} />
             </div>
           </div>
         </div>

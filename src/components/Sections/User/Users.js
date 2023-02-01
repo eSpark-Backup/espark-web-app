@@ -51,7 +51,7 @@ function Users() {
               <p>Don&#x27;t hesitate to contact us</p>
             </div>
             <div className="col-lg-4">
-              <Button title="Contact Us" link="/contact" design={3} />
+              <Button title="Contact Us" link="/contact" design={2} />
             </div>
           </div>
         </div>

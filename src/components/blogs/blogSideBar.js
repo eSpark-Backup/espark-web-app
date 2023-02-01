@@ -153,7 +153,6 @@ function BlogSideBar({ catagoryPosts }) {
           <div className="tagcloud">
             {tags ? (
               tags?.map((items, key) => {
-                console.log(items, "items");
                 return (
                   <Link to={`/blogs/${items.slug}/`}>
                     {items.name}{" "}

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaLongArrowAltRight, FaRegArrowAltCircleRight } from "react-icons/fa";
 import style from "./style.module.css";
-const Button = ({ title, link, design, type, }) => {
+const Button = ({ title, link, design, type, onClick }) => {
 
 
   if (design === null) {
@@ -42,7 +42,7 @@ const Button = ({ title, link, design, type, }) => {
   if (design === 3) {
     return (
       <div>
-        <Link class="btn btn-light" onClick={link}>
+        <Link class="btn btn-light" onClick={onClick}>
           {title}
         </Link>
       </div>
