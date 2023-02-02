@@ -28769,6 +28769,10 @@ gb-headline-efd0cee8 .gb-icon {
   width: 15px;
   margin-right: 3px
 }
+.single-blog-post .blog-image img {
+  width: 100vh;
+  height: 250px;
+}
 
 .single-blog-post .blog-post-content {
   padding: 40px 20px 20px;

@@ -10,19 +10,47 @@ import Button from "../../components/button/button";
 
 export default function Blog() {
   const [post, setPost] = useState();
+  const [count, setCount] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+
   useEffect(() => {
     const main = async () => {
       const data = await getApiCall();
-      setPost(data);
+      setTotalPages(data.headers["x-wp-totalpages"]);
+      setPost(data.data);
     };
     main();
   }, []);
 
-  const catpost = async (e) => {
+  const catPost = async (e) => {
     const data = await getCatApiCall(e);
-
-    setPost(data);
+    setPost(data.data);
+    console.log(data.data);
   };
+
+  const nextPost = async () => {
+
+    setCount(count + 1)
+    if (count <= totalPages) {
+      const data = await getApiCall(count);
+      setTotalPages(data.headers["x-wp-totalpages"]);
+      setPost(data.data);
+    }
+
+    // const data = await getApiCall(count);
+    // setPost(data);
+  };
+
+  const prvPost = async () => {
+    setCount(count - 1);
+    if (count === totalPages) {
+      const data = await getApiCall(count);
+      setTotalPages(data.headers["x-wp-totalpages"]);
+      setPost(data.data);
+    }
+  };
+
+
 
   return (
     <div>
@@ -88,10 +116,14 @@ export default function Blog() {
                     gap={30}
                   />
                 )}
+                <div class="col-lg-12 col-md-12 row">
+                  <div class="col-lg-6 col-md-6"><Button title="< Previous" onClick={() => prvPost()} design={3} disabled={count === 1 ? true : false} /></div>
+                  <div class="col-lg-6 col-md-6 text-right"><Button title="Next >" onClick={() => nextPost()} design={3} disabled={count === Number(totalPages) ? true : false} /></div>
+                </div>
               </div>
             </div>
             <div class="col-lg-4 col-md-12">
-              <BlogSideBar catagoryPosts={(e) => catpost(e)} />
+              <BlogSideBar catagoryPosts={(e) => catPost(e)} />
             </div>
           </div>
         </div>

@@ -1,21 +1,19 @@
 import Axios from "axios";
-export const getApiCall = async () => {
+export const getApiCall = async (page) => {
   try {
-    let postparams = "";
-    const { data } = await Axios.get(
-      "https://esparkconsultants.com/old/wp-json/wp/v2/posts " + postparams
+    const pageCount = page ? page : 1
+    const { data, headers } = await Axios.get(
+      `https://esparkconsultants.com/old/wp-json/wp/v2/posts?per_page=10&page=${pageCount}`
     );
-    return data;
+    return { data: data, headers: headers };
   } catch (error) {
     console.log("API Error: ", error);
   }
 };
 export const getCategoriesApiCall = async () => {
   try {
-    let categoriesparams = "";
     const { data } = await Axios.get(
-      "https://esparkconsultants.com/old/wp-json/wp/v2/categories" +
-        categoriesparams
+      `https://esparkconsultants.com/old/wp-json/wp/v2/categories`
     );
     return data;
   } catch (error) {
@@ -24,9 +22,8 @@ export const getCategoriesApiCall = async () => {
 };
 export const getTagsApiCall = async () => {
   try {
-    let tagsparams = "";
     const { data } = await Axios.get(
-      "https://esparkconsultants.com/old/wp-json/wp/v2/tags" + tagsparams
+      `https://esparkconsultants.com/old/wp-json/wp/v2/tags`
     );
     return data;
   } catch (error) {
@@ -36,10 +33,10 @@ export const getTagsApiCall = async () => {
 
 export const getCatApiCall = async (id) => {
   try {
-    const { data } = await Axios.get(
+    const { data, headers } = await Axios.get(
       `https://esparkconsultants.com/old/wp-json/wp/v2/posts?categories=${id}`
     );
-    return data;
+    return { data: data, headers: headers };
   } catch (error) {
     console.log("API Error: ", error);
   }
