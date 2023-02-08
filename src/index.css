@@ -33031,8 +33031,9 @@ blockquote:after {
 .ml-main-section {
   position: relative;
   z-index: 1;
-  padding-top: 215px;
-  padding-bottom: 240px;
+  background-image: url("./assets/images/hero-section/hero-back.svg");
+  padding-top: 150px;
+  padding-bottom: 150px;
   background-position: 100% 100%;
   background-size: cover;
   background-repeat: no-repeat
