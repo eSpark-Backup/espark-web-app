@@ -1,14 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import icon4 from "../../../../src/assets/images/icon4.png";
-import icon5 from "../../../../src/assets/images/icon5.png";
-import icon6 from "../../../../src/assets/images/icon6.png";
-import icon7 from "../../../../src/assets/images/icon7.png";
 import whyesaprk from "../../../assets/images/why-espark/why-esaprk.svg";
-import shape2 from "../../../../src/assets/images/shape2.svg";
-import shape3 from "../../../../src/assets/images/shape3.svg";
-import shape4 from "../../../../src/assets/images/shape4.svg";
-import shape5 from "../../../../src/assets/images/shape5.png";
 import { FaCheckCircle } from "react-icons/fa";
 import styles from "./styles.module.css";
 import Button from "../../button/button";
@@ -22,18 +14,10 @@ function WhyeSpark({ heading }) {
             <div className="col-lg-2">
               <div
                 // className={styles.sociallinks}
-                className={`${styles.sociallinks} row d-flex flex-row `}
-              >
-                <div className="justify-content-between"></div>
-                <div className="col-lg-4">
-                  <Button title="Facebook" link="https://www.facebook.com/eSparkConsGroup/" design={2} />
-                </div>
-                <div className="col-lg-4">
-                  <Button title="Linkedin" link="https://www.linkedin.com/company/esparkconsgroup/" design={2} />
-                </div>
-                <div className="col-lg-4">
-                  <Button title="Instagram" link="https://www.instagram.com/esparkconsultantsgroup/" design={2} />
-                </div>
+                className={`${styles.sociallinks} row d-flex flex-row `}>
+                <Button title="Facebook" link="https://www.facebook.com/eSparkConsGroup/" design={2} />
+                <Button title="Linkedin" link="https://www.linkedin.com/company/esparkconsgroup/" design={2} />
+                <Button title="Instagram" link="https://www.instagram.com/esparkconsultantsgroup/" design={2} />
               </div>
             </div>
             <div className="col-lg-5 justify-content-center">
@@ -113,27 +97,6 @@ function WhyeSpark({ heading }) {
               </div>
             </div>
           </div>
-        </div>
-        <div className="shape1">
-          <img src={shape5} alt="shape" />
-        </div>
-        <div className="shape2 rotateme">
-          <img src={shape2} alt="shape" />
-        </div>
-        <div className="shape3">
-          <img src={shape3} alt="shape" />
-        </div>
-        <div className="shape4">
-          <img src={shape4} alt="shape" />
-        </div>
-        <div className="shape6 rotateme">
-          <img src={shape4} alt="shape" />
-        </div>
-        <div className="shape7">
-          <img src={shape4} alt="shape" />
-        </div>
-        <div className="shape8 rotateme">
-          <img src={shape2} alt="shape" />
         </div>
       </div>
     </div >

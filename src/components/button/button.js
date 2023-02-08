@@ -9,7 +9,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
   } if (design === 0) {
     return (
       <div>
-        <button type={type} class="btn btn-secondary rounded-pill">
+        <button type={type} class="roundbutton rounded-pill">
           {title}
         </button>
       </div>
@@ -19,7 +19,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
     return (
       <div>
         <Link to={link} className={style.btnMargin} onClick={onClick} disabled={disabled}>
-          <button className="btn btn-secondary rounded-pill">
+          <button className="roundbutton rounded-pill">
             {title}
             <FaLongArrowAltRight className={style.arrowSize} />
           </button>
@@ -31,7 +31,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
     return (
       <div>
         <Link to={link} className={style.btnMargin} onClick={onClick} disabled={disabled}>
-          <button className="btn btn-secondary rounded-pill ">
+          <button className="roundbutton rounded-pill">
             {title}
           </button>
         </Link>

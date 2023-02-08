@@ -10,3 +10,18 @@
     height: 20px;
 }
 
+button {
+    background-color: #11A79c !important;
+    color: #ffff !important;
+    ;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px !important;
+    line-height: 20px;
+    letter-spacing: 0em;
+}
+
+button:hover {
+    box-shadow: 5px 5px 5px #11a79c;
+}
