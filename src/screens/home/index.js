@@ -1,6 +1,6 @@
 import React from "react";
 import About from "../../components/Sections/About/About";
-import Features from "../../components/Sections/Feature/Features";
+import WhyeSpark from "../../components/Sections/WhyeSpark/WhyeSpark";
 import Herosection from "../../components/Sections/Hero/Herosection";
 import Users from "./../../components/Sections/User/Users";
 import Services from "../services";
@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div>
       <Herosection />
-      <Features heading={"WE CREATE UNIQUE SOLUTIONS"} />
+      <WhyeSpark heading={"Why eSpark?"} />
       <About id={2} />
       <Services link={currentRoute} />
       <Users />
