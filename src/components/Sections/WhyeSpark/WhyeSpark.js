@@ -29,7 +29,9 @@ function WhyeSpark({ heading }) {
               })}
             </div>
             <div className="col-lg-4 col-md-12  justify-content-center">
-              <div className="p-20"><hr /></div>
+              <div className="p-20">
+                <hr />
+              </div>
               <h2 className={styles.heading} >{heading}</h2>
               <p className={styles.whyPara}>
                 We focus on custom tailored software and IoT based solutions for our businesses. Through our broad range of services that can help clients and businesses to optimize their operations, save cost and promote their businesses most effectively. Whether you need help with software development, hardware design, or technology consulting, eSpark Consultancy Group has the expertise to help you achieve your goals.

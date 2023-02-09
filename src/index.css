@@ -113,7 +113,10 @@ hr {
 }
 
 hr:not([size]) {
-  height: 1px
+  height: 3px;
+  width: 20%;
+  color: #00A099;
+  margin: 0 auto;
 }
 
 .h1,
@@ -28769,6 +28772,7 @@ gb-headline-efd0cee8 .gb-icon {
   width: 15px;
   margin-right: 3px
 }
+
 .single-blog-post .blog-image img {
   width: 100vh;
   height: 250px;

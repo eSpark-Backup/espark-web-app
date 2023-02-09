@@ -51,12 +51,6 @@
    text-align: center;
 }
 
-hr:not([size]) {
-   height: 2px;
-   width: 10vw;
-   color: #00A099;
-   margin: '0 auto',
-}
 
 .points {
    padding-bottom: 10px;
@@ -66,12 +60,8 @@ hr:not([size]) {
    height: 100 !important;
 }
 
-#whylinksmobile {
-   margin: 20px !important;
-}
-
 #whypoints {
-   padding: 50px;
+   padding: 20px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -82,12 +72,9 @@ hr:not([size]) {
 
 }
 
-
-
 @media only screen and (min-width: 1024px) {
    #whylinksmobile {
       margin: 20px;
       display: none !important;
-
    }
 }
