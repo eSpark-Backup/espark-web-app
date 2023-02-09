@@ -1,17 +1,5 @@
 import React from "react";
-import mlMainPic from "../../../../src/assets/images/ml-banner-image/ml-main-pic.png";
 import heroImage from "../../../../src/assets/images/hero-section/hero-image.svg";
-import two from "../../../../src/assets/images/ml-banner-image/two.png";
-import three from "../../../../src/assets/images/ml-banner-image/three.png";
-import four from "../../../../src/assets/images/ml-banner-image/four.png";
-import five from "../../../../src/assets/images/ml-banner-image/five.png";
-import six from "../../../../src/assets/images/ml-banner-image/six.png";
-import seven from "../../../../src/assets/images/ml-banner-image/seven.png";
-import eleven from "../../../../src/assets/images/ml-banner-image/eleven.png";
-import eight from "../../../../src/assets/images/ml-banner-image/eight.png";
-import nine from "../../../../src/assets/images/ml-banner-image/nine.png";
-import ten from "../../../../src/assets/images/ml-banner-image/ten.png";
-
 
 import { shapes } from "../../../helper/ImageUrl";
 import { Link } from "react-router-dom";
