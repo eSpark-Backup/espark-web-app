@@ -1,43 +1,93 @@
 .arrowSize {
-      width: 30px;
-         margin-left: 30px;
-         height: 20px;
-         color: #11A79c;
+   width: 30px;
+   margin-left: 30px;
+   height: 20px;
+   color: #11A79c;
 }
-.sociallinks{font-family: Poppins;
-        transform: rotate(270deg);
+
+.sociallink {
+   font-family: Poppins;
+   transform: rotate(270deg);
+
 }
- .whyPoints {font-family: Poppins; font-size: 22px;
-    font-weight: 600 !important;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-     color: #3359A2 !important;
- }
-  .whyPointsPara {font-family: Poppins;
-    font-size: 16px;
-        font-weight: 400 !important;
-        line-height: 22px;
-        letter-spacing: 0em;
-        text-align: left;
-        padding: 10px 0;
- }
- .heading{font-family: Poppins;
-    font-size: 44px;
-    font-weight: 700 !important;
-    line-height: 44px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #3359A2 !important;
- }
- .whyPara{
-    font-family: Poppins;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 22px;
-        letter-spacing: 0em;padding: 10px 0;
-    text-align: center;
- }
- .points{
-    padding-bottom: 10px;
- }
+
+.whyPoints {
+   font-family: Poppins;
+   font-size: 22px;
+   font-weight: 600 !important;
+   line-height: 22px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: #3359A2 !important;
+}
+
+.whyPointsPara {
+   font-family: Poppins;
+   font-size: 16px;
+   font-weight: 400 !important;
+   line-height: 22px;
+   letter-spacing: 0em;
+   text-align: left;
+   padding: 10px 0;
+}
+
+.heading {
+   font-family: Poppins;
+   font-size: 44px;
+   font-weight: 700 !important;
+   line-height: 44px;
+   letter-spacing: 0em;
+   text-align: center;
+   color: #3359A2 !important;
+}
+
+.whyPara {
+   font-family: Poppins;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 22px;
+   letter-spacing: 0em;
+   padding: 10px 0;
+   text-align: center;
+}
+
+hr:not([size]) {
+   height: 2px;
+   width: 10vw;
+   color: #00A099;
+   margin: '0 auto',
+}
+
+.points {
+   padding-bottom: 10px;
+}
+
+.linkbutt {
+   height: 100 !important;
+}
+
+#whylinksmobile {
+   margin: 20px !important;
+}
+
+#whypoints {
+   padding: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+   #whylinks {
+      display: none !important;
+   }
+
+
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+   #whylinksmobile {
+      margin: 20px;
+      display: none !important;
+
+   }
+}

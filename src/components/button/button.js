@@ -17,25 +17,25 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
   }
   if (design === 1) {
     return (
-      <div>
+      <>
         <Link to={link} className={style.btnMargin} onClick={onClick} disabled={disabled}>
           <button className="roundbutton rounded-pill">
             {title}
             <FaLongArrowAltRight className={style.arrowSize} />
           </button>
         </Link>
-      </div>
+      </>
     );
   }
   if (design === 2) {
     return (
-      <div>
+      <>
         <Link to={link} className={style.btnMargin} onClick={onClick} disabled={disabled}>
           <button className="roundbutton rounded-pill">
             {title}
           </button>
         </Link>
-      </div>
+      </>
     );
   }
   if (design === 3) {
