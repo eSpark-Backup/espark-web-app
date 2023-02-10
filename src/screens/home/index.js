@@ -14,7 +14,9 @@ const Home = () => {
   const currentRoute = window.location.pathname;
   return (
     <div>
-      <Herosection />
+      <Herosection
+        heading={"The Ultimate Partner for Software and Iot Solutions"}
+      />
       <WhyeSpark heading={"Why eSpark?"} />
       <About id={2} />
       <Services link={currentRoute} />
