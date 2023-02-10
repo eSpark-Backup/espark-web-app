@@ -14,7 +14,7 @@ export const clients = [
       "https://pbs.twimg.com/profile_images/1389671445953921029/8D3jABqV_400x400.jpg",
     name: "Julie King",
     designation: "Web developer needed to do a website build-out",
-    commet: "Excellent experience, hope to hire again",
+    testimonial: "Excellent experience, hope to hire again",
   },
   {
     _id: hash(),
@@ -22,7 +22,7 @@ export const clients = [
       "https://pbs.twimg.com/profile_images/1389671445953921029/8D3jABqV_400x400.jpg",
     name: "Zealous SEO",
     designation: "WordPress Customization Help",
-    commet: "Great WordPress builder, will work again",
+    testimonial: "Great WordPress builder, will work again",
   },
   {
     _id: hash(),
@@ -30,7 +30,7 @@ export const clients = [
       "https://pbs.twimg.com/profile_images/1389671445953921029/8D3jABqV_400x400.jpg",
     name: "Briana Olson",
     designation: "Website WordPress specialist",
-    commet:
+    testimonial:
       "Although the project was very short, they came in with the right attitude and delivered amazing results. Things that were blocking us were suddenly unblocked, and things that weren't clear were suddenly made clear. All thanks to their experience and knowledge. I would definitely recommend it!",
   },
   {
@@ -39,7 +39,7 @@ export const clients = [
       "https://pbs.twimg.com/profile_images/1389671445953921029/8D3jABqV_400x400.jpg",
     name: "jesper bendsen",
     designation: "Woocommerce",
-    commet:
+    testimonial:
       " Great Job, reliable and quick developer. Good execution and ideas.",
   },
   {
@@ -48,7 +48,7 @@ export const clients = [
       "https://pbs.twimg.com/profile_images/1389671445953921029/8D3jABqV_400x400.jpg",
     name: "Gross2net",
     designation: "WordPress Site - CMS platform",
-    commet:
+    testimonial:
       "Was very helpful and supportive...Did everything and even more as per the task requirements!",
   },
   {
@@ -57,7 +57,7 @@ export const clients = [
       "https://pbs.twimg.com/profile_images/1389671445953921029/8D3jABqV_400x400.jpg",
     name: "Conti di San Bonifacio",
     designation: "Ecommerce",
-    commet:
+    testimonial:
       "Great Job, reliable and quick developer. Good execution and ideas.",
   },
 ];

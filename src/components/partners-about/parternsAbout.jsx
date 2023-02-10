@@ -2,8 +2,10 @@ import React from "react";
 import { partner } from "../../helper/ImageUrl";
 import Partners from "../partners/partners";
 import style from "./style.module.css";
+// import "./style.css";
 import { Carousel } from "react-responsive-carousel";
 import { clients } from "../../helper/clients";
+import Testimonial from "../testimonial/Testimonial";
 
 export default function PartnerAbout() {
   return (
@@ -11,33 +13,32 @@ export default function PartnerAbout() {
       <div class="bigdata-feedback-area pt-80">
         <div class="container">
           <div class="section-title">
-            <h2>HAPPY CLIENTS</h2>
-            <div class="bar"></div>
-            <p>
-              The following comments are just a sample of customers around the world who have transformed their business websites with eSpark.
-            </p>
+            <div className="p-20">
+              <hr />
+            </div>
+            <h1>Client Testimonials</h1>
           </div>
-          <div className={style.row}>
-            <div className="col-sm-12 col-md-12 col-lg-5" >
+          <div className="row" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+            <div id={style["testimonial"]} className=" testmonials col-sm-12 col-md-12 col-lg-10" >
+              {/* <Testimonial /> */}
               <Carousel
                 autoPlay
-                showIndicators={false}
-                showArrows={false}
+                showIndicators={true}
+                showArrows={true}
                 showStatus={false}
                 infiniteLoop={true}
               >
                 {clients.map((item) => {
                   return (
-                    <div class="col-lg-12 col-md-12 col-md-12">
-                      <div class="single-feedback-box">
-                        <div class="feedback-desc">
-                          <p>{item.commet}</p>
+                    <div className={`${style.testimonial} col-lg-12 col-md-12 `}>
+                      <div className="col-lg-12 col-md-12 col-md-12">
+                        <img className={`${style.testiImage} rounded-circle shadow-4-strong`} alt="upwork" src={item.image} />
+                        <div className={style.subTestimonial}>
+                          <h3 className={style.testiName}>{item.name}</h3>
+                          <h4 className={style.testiDesignation}>{item.designation}</h4>
+                          <p className={style.testiReviews}>{item.testimonial}</p>
                         </div>
-                        <div class="client-info">
-                          <img src={item.image} alt="upwork" />
-                          <h3>{item.name}</h3>
-                          <span>{item.designation}</span>
-                        </div>
+
                       </div>
                     </div>
                   );
@@ -48,6 +49,6 @@ export default function PartnerAbout() {
         </div>
       </div>
       {/* <Partners h5="More that 1.5 million subscriber" data={partner} /> */}
-    </div>
+    </div >
   );
 }
