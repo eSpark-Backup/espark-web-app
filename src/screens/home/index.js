@@ -9,11 +9,13 @@ import PartnerAbout from "../../components/partners-about/parternsAbout";
 import { faqsQuestions } from "../../helper/faqs";
 import Projects from "../projects/projects";
 import Faqs from "../faqs/faqs";
+// import ServicesRecreate from "../../components/Sections/services-recreate/services";
 
 const Home = () => {
   const currentRoute = window.location.pathname;
   return (
     <div>
+      {/* <ServicesRecreate /> */}
       <Herosection />
       <Features heading={"WE CREATE UNIQUE SOLUTIONS"} />
       <About id={2} />
