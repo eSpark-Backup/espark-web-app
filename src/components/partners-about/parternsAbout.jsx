@@ -14,10 +14,10 @@ export default function PartnerAbout() {
             <h2>HAPPY CLIENTS</h2>
             <div class="bar"></div>
             <p>
-            The following comments are just a sample of customers around the world who have transformed their business websites with eSpark.
+              The following comments are just a sample of customers around the world who have transformed their business websites with eSpark.
             </p>
           </div>
-          <div className="row" style={{ display:"flex" ,flexDirection:"row", justifyContent:"center" }}>
+          <div className={style.row}>
             <div className="col-sm-12 col-md-12 col-lg-5" >
               <Carousel
                 autoPlay

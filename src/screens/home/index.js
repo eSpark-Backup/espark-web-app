@@ -14,7 +14,7 @@ const Home = () => {
   const currentRoute = window.location.pathname;
   return (
     <div>
-      <Herosection />
+      <Herosection heading={"The Ultimate Partner for Software and Iot Solutions"} />
       <Features heading={"WE CREATE UNIQUE SOLUTIONS"} />
       <About id={2} />
       <Services link={currentRoute} />
