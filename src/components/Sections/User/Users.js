@@ -14,6 +14,9 @@ function Users() {
   return (
     <div>
       <div className="container martop">
+        <div className='p-20'>
+           <hr />
+        </div>
         <div className="headingWithPra">
           <h2>Our Achievements</h2>
           <p>
