@@ -9,6 +9,7 @@ import PartnerAbout from "../../components/partners-about/parternsAbout";
 import { faqsQuestions } from "../../helper/faqs";
 import Projects from "../projects/projects";
 import Faqs from "../faqs/faqs";
+import Portfolio from "../../components/Sections/portfolio/Portfolio";
 
 const Home = () => {
   const currentRoute = window.location.pathname;
@@ -21,6 +22,7 @@ const Home = () => {
       <About id={2} />
       <Services link={currentRoute} />
       <Users />
+      <Portfolio />
       <Projects link={currentRoute} />
       <PartnerAbout />
       <Faqs imgs={shapes} data={faqsQuestions} />
