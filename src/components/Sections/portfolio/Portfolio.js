@@ -5,6 +5,9 @@ import styles from './style.module.css';
 const Portfolio = () => {
   return (
     <div className="container pt-5 mt-5">
+       <div className='p-20'>
+         <hr />
+        </div>
         <div className={styles.headingWithPra}>
           <h2>OUR PORTFOLIO</h2>
           <p>
