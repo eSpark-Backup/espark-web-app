@@ -114,7 +114,10 @@ hr {
 }
 
 hr:not([size]) {
-  height: 1px
+  height: 3px;
+  width: 20%;
+  color: #00A099;
+  margin: 0 auto;
 }
 
 .h1,
