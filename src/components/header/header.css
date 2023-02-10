@@ -1,0 +1,49 @@
+.ulItemsColor{
+    border-radius: 15px;
+    margin-top: 5px;
+    width: 400px;
+    background-color: #D9D9D9;
+}
+.list-bgrd{
+    background-color: transparent !important;
+    width: 420px!important;
+    
+}
+
+.headerBtn {
+    width: 147px;
+    height: 52px;
+    background: #00A099;
+    border-radius: 26px;    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn-content {
+    width: 92px;
+    height: 17px;
+    margin-bottom: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: #FFFFFF;
+    cursor: pointer;
+    
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .headerBtn {
+        width: 120px;
+        height: 40px;
+        margin-bottom: 150px;
+        margin-right: 40px;
+        
+    }
+  }

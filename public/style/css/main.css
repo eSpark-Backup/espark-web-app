@@ -25096,7 +25096,7 @@ label {
 .startp-nav nav .navbar-nav .nav-item a.active,
 .startp-nav nav .navbar-nav .nav-item a:focus,
 .startp-nav nav .navbar-nav .nav-item a:hover {
-    color: #11A79c
+    color: #11A79c;
 }
 
 .startp-nav nav .navbar-nav .nav-item a svg {

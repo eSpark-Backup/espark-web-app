@@ -6,6 +6,7 @@ import { Modal } from "react-responsive-modal";
 import GetInTouch from "../getInTouch/GetInTouch";
 import { Link, useLocation } from "react-router-dom";
 import { AiOutlineCaretRight } from "react-icons/ai";
+import './header.css'
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -62,7 +63,7 @@ const Header = () => {
               }
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav ms-auto">
+              <ul className="navbar-nav ms-auto" >
                 <li className="nav-item">
                   <Link
                     className="nav-link"
@@ -72,36 +73,28 @@ const Header = () => {
                     Home
                   </Link>
                 </li>
-                <li class="nav-item" onClick={() => setIsNavCollapsed(false)}>
-                  <Link class="nav-link" to="/about">
-                    About
-                  </Link>
-                </li>
-                <li class="nav-item" onClick={() => setIsNavCollapsed(false)}>
-                  <Link class="nav-link" to="/project">
-                    Projects
-                  </Link>
-                </li>
                 <li class="nav-item">
                   <Link class="nav-link" to="/services">
                     Services
                   </Link>
-                  <ul class="dropdown-menu ">
+                  <ul class="dropdown-menu  list-bgrd"  >
                     {newData?.slice(0, 2)?.map((child) => {
                       return (
                         <li
-                          class="nav-item"
+                          class="nav-item ulItemsColor"
                           onClick={() => setIsNavCollapsed(false)}
+                          
                         >
                           <Link class="nav-link" to={`#`}>
                             <AiOutlineCaretRight /> {child.name}
                           </Link>
-                          <ul class="dropdown-menu ">
+                          <ul class="dropdown-menu" style={{background:'transparent'}} >
                             {child.childs.map((item) => {
                               return (
                                 <li
-                                  class="nav-item"
+                                  class="nav-item ulItemsColor"
                                   onClick={() => setIsNavCollapsed(false)}
+                                  // style={{border:'1px solid black',borderRadius:"15px",marginTop:"5px",width:"400px",background:"#D9D9D9"}}
                                 >
                                   <i
                                     class="fa fa-envelope-square"
@@ -123,6 +116,17 @@ const Header = () => {
                   </ul>
                 </li>
                 <li class="nav-item" onClick={() => setIsNavCollapsed(false)}>
+                  <Link class="nav-link" to="/about">
+                    About
+                  </Link>
+                </li>
+                <li class="nav-item" onClick={() => setIsNavCollapsed(false)}>
+                  <Link class="nav-link" to="/project">
+                    Projects
+                  </Link>
+                </li>
+              
+                <li class="nav-item" onClick={() => setIsNavCollapsed(false)}>
                   <Link class="nav-link" to="/contact">
                     Contact Us
                   </Link>
@@ -142,6 +146,8 @@ const Header = () => {
             </div>
 
             <div class="others-option">
+
+        
               {isAppScreen ? (
                 <a
                   href="https://play.google.com/store/apps/details?id=com.commanddo"
@@ -150,10 +156,12 @@ const Header = () => {
                 >
                   Download Now
                 </a>
-              ) : (
-                <Link class="btn btn-light" onClick={onOpenModal}>
-                  Quote Now
-                </Link>
+              ) : (    <div className="headerBtn" onClick={onOpenModal} >
+              <span className="btn-content ">Lets Talk</span>
+          </div>
+                // <Link class="btn btn-light" >
+                //   Quote Now
+                // </Link>
               )}
             </div>
             <Modal open={open} onClose={onCloseModal} center>

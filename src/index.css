@@ -4451,10 +4451,10 @@ fieldset:disabled .btn {
   padding: .5rem 0;
   margin: 0;
   font-size: 1rem;
-  color: #212529;
+  /* color: #212529; */
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  /* background-color: #fff; */
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, .15);
   border-radius: .25rem
@@ -4680,7 +4680,7 @@ fieldset:disabled .btn {
   padding: .25rem 1rem;
   clear: both;
   font-weight: 400;
-  color: #212529;
+  /* color: #212529; */
   text-align: inherit;
   text-decoration: none;
   white-space: nowrap;
@@ -4691,19 +4691,19 @@ fieldset:disabled .btn {
 .dropdown-item:focus,
 .dropdown-item:hover {
   color: #1e2125;
-  background-color: #e9ecef
+  /* background-color: #e9ecef */
 }
 
 .dropdown-item.active,
 .dropdown-item:active {
-  color: #fff;
+  /* color: #fff; */
   text-decoration: none;
   background-color: #0d6efd
 }
 
 .dropdown-item.disabled,
 .dropdown-item:disabled {
-  color: #adb5bd;
+  /* color: #adb5bd; */
   pointer-events: none;
   background-color: transparent
 }
@@ -4728,13 +4728,13 @@ fieldset:disabled .btn {
 }
 
 .dropdown-menu-dark {
-  color: #dee2e6;
+  /* color: #dee2e6; */
   background-color: #343a40;
   border-color: rgba(0, 0, 0, .15)
 }
 
 .dropdown-menu-dark .dropdown-item {
-  color: #dee2e6
+  /* color: #dee2e6 */
 }
 
 .dropdown-menu-dark .dropdown-item:focus,
@@ -4958,8 +4958,8 @@ fieldset:disabled .btn {
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
   color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff
+  /* background-color: #fff; */
+  /* border-color: #dee2e6 #dee2e6 #fff */
 }
 
 .nav-tabs .dropdown-menu {
@@ -4976,7 +4976,7 @@ fieldset:disabled .btn {
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-  color: #fff;
+  /* color: #fff; */
   background-color: #0d6efd
 }
 
@@ -25164,9 +25164,9 @@ gb-headline-efd0cee8 .gb-icon {
 }
 
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu {
-  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .05);
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .05);
-  background: #fff;
+  /* -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .05); */
+  /* box-shadow: 0 0 30px 0 rgba(0, 0, 0, .05); */
+  /* background: #fff; */
   position: absolute;
   border: none;
   width: 250px;
@@ -25220,7 +25220,9 @@ gb-headline-efd0cee8 .gb-icon {
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu li a.active,
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu li a:focus,
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover {
-  color: #11A79c
+  background-color: #11A79c;
+  color: white !important;
+  border-radius: 10px;
 }
 
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu li a i,
