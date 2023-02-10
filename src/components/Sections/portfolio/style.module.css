@@ -1,28 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .wrapper {
-  border-radius: 10px;
+  border-radius: 27px 27px 27px 27px;
+  box-shadow: 0px 8px 60px 10px rgba(0, 0, 0, 0.12) !important;
 }
 .images {
   border-radius: 27px 27px 0px 0px;
+  height: 217px;
+  width: 100%;
 }
 .titleWrapper {
-  height: 70px;
+  height: 60px;
   background-color: #ececec;
   border-radius: 0px 0px 27px 27px;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .titleText {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600 !important;
-  font-size: 22px;
+  font-size: 15px;
   line-height: 100%;
   text-align: center;
-  padding-top: 20px;
   color: #000000 !important;
 }
-.headingWithPra > h2 {
+.content > h2 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700 !important;
@@ -30,13 +34,15 @@
   line-height: 100%;
   color: #3359a2 !important;
   text-align: center;
+  margin-top: 15px;
 }
-.headingWithPra > p {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    color: #000000 !important;
-    text-align: center;
+.content > p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000 !important;
+  text-align: center;
+  margin-top: 10px;
 }
