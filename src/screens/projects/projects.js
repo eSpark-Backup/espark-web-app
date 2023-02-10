@@ -5,6 +5,7 @@ import "./style.css";
 import Title from "../../components/title/title";
 import Slider from "react-slick";
 import { shapes } from './../../helper/ImageUrl';
+import Portfolio from "../../components/Sections/portfolio/Portfolio";
 
 export default function Projects({ link }) {
 
@@ -97,18 +98,14 @@ export default function Projects({ link }) {
         ))}
         </div>
       ) : (
-        <Title
-          title={"Things We’ve Created"}
-          paragraph="<p> We believe our work speaks for itself. Browse our most recent  projects<br/>below. Explore more and enjoy our work in detail.</p>"
-          link={link}
-        />
+        <Portfolio />
       )}
 
-      {link !== "/" ? (
+      {/* {link !== "/" ? (
         <ProjectCard data={projects} link={link} />
       ) : (
         <ProjectCard data={projects.slice(0, 6)} link={link} />
-      )}
+      )} */}
     </React.Fragment>
   );
 }
