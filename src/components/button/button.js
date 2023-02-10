@@ -9,7 +9,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
   } if (design === 0) {
     return (
       <div>
-        <button type={type} class="btn btn-secondary">
+        <button type={type} class="roundbutton rounded-pill">
           {title}
         </button>
       </div>
@@ -17,31 +17,31 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
   }
   if (design === 1) {
     return (
-      <div>
+      <>
         <Link to={link} className={style.btnMargin} onClick={onClick} disabled={disabled}>
-          <button className="btn btn-secondary">
+          <button className="roundbutton rounded-pill">
             {title}
             <FaLongArrowAltRight className={style.arrowSize} />
           </button>
         </Link>
-      </div>
+      </>
     );
   }
   if (design === 2) {
     return (
-      <div>
+      <>
         <Link to={link} className={style.btnMargin} onClick={onClick} disabled={disabled}>
-          <button className="btn btn-secondary">
+          <button className="roundbutton rounded-pill">
             {title}
           </button>
         </Link>
-      </div>
+      </>
     );
   }
   if (design === 3) {
     return (
       <>
-        <button class="btn btn-light" to={link} onClick={onClick} disabled={disabled}>
+        <button class="btn btn-light rounded-pill" to={link} onClick={onClick} disabled={disabled}>
           {title}
         </button>
       </>
@@ -50,7 +50,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
   if (design === 4) {
     return (
       <div>
-        <Link class="btn btn-primary " to={link} onClick={onClick} disabled={disabled}>
+        <Link class="btn btn-primary rounded-pill" to={link} onClick={onClick} disabled={disabled}>
           {title}
           {"  "}
           <FaRegArrowAltCircleRight margin={10} />
@@ -61,7 +61,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
   if (design === 5) {
     return (
       <div>
-        <Link class="btn btn-primary " to={link}>
+        <Link class="btn btn-primary rounded-pill" to={link}>
           {title}
         </Link>
       </div>

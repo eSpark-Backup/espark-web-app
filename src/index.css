@@ -107,13 +107,17 @@ body::-webkit-scrollbar-thumb {
 hr {
   margin: 1rem 0;
   color: inherit;
-  background-color: currentColor;
+  background-color: #00A099;
   border: 0;
+  height: 2px;
   opacity: .25
 }
 
 hr:not([size]) {
-  height: 1px
+  height: 3px;
+  width: 20%;
+  color: #00A099;
+  margin: 0 auto;
 }
 
 .h1,
@@ -137,8 +141,11 @@ h6 {
 
 .h1,
 h1 {
-  font-size: -webkit-calc(1.375rem + 1.5vw);
-  font-size: calc(1.375rem + 1.5vw)
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 @media (min-width:1200px) {
@@ -202,6 +209,12 @@ h6 {
 }
 
 p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
   margin-top: 0;
   margin-bottom: 1rem
 }
@@ -287,12 +300,18 @@ sup {
 }
 
 a {
-  color: #0d6efd;
-  text-decoration: underline
+  color: #949292;
+  text-decoration: underline;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 a:hover {
-  color: #0a58ca
+  color: #949292
 }
 
 a:not([href]):not([class]),
@@ -17800,11 +17819,11 @@ print {
 }
 
 /* @font-face {
-    font-family: boxicons;
-    font-weight: 400;
-    font-style: normal;
-    src: url(/fonts/boxicons.eot);
-    src: url(/fonts/boxicons.eot) format("embedded-opentype"), url(/fonts/boxicons.woff2) format("woff2"), url(/fonts/boxicons.woff) format("woff"), url(/fonts/boxicons.ttf) format("truetype"), url(/fonts/boxicons.svg?#boxicons) format("svg")
+font-family: boxicons;
+font-weight: 400;
+font-style: normal;
+src: url(/fonts/boxicons.eot);
+src: url(/fonts/boxicons.eot) format("embedded-opentype"), url(/fonts/boxicons.woff2) format("woff2"), url(/fonts/boxicons.woff) format("woff"), url(/fonts/boxicons.ttf) format("truetype"), url(/fonts/boxicons.svg?#boxicons) format("svg")
 } */
 
 .bx {
@@ -24226,18 +24245,18 @@ print {
 }
 
 /* @font-face {
-    font-family: Flaticon;
-    src: url(/fonts/Flaticon.eot);
-    src: url(/fonts/Flaticon.eot?#iefix) format("embedded-opentype"), url(/fonts/Flaticon.woff2) format("woff2"), url(/fonts/Flaticon.woff) format("woff"), url(/fonts/Flaticon.ttf) format("truetype"), url(/fonts/Flaticon.svg#Flaticon) format("svg");
-    font-weight: 400;
-    font-style: normal
+font-family: Flaticon;
+src: url(/fonts/Flaticon.eot);
+src: url(/fonts/Flaticon.eot?#iefix) format("embedded-opentype"), url(/fonts/Flaticon.woff2) format("woff2"), url(/fonts/Flaticon.woff) format("woff"), url(/fonts/Flaticon.ttf) format("truetype"), url(/fonts/Flaticon.svg#Flaticon) format("svg");
+font-weight: 400;
+font-style: normal
 } */
 
 /* @media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family: Flaticon;
-        src: url(/fonts/Flaticon.svg#Flaticon) format("svg")
-    }
+@font-face {
+    font-family: Flaticon;
+    src: url(/fonts/Flaticon.svg#Flaticon) format("svg")
+}
 } */
 
 [class*=" flaticon-"]:after,
@@ -24626,7 +24645,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #0e314c;
+  color: #3359A2;
   font-weight: 500
 }
 
@@ -28769,6 +28788,7 @@ gb-headline-efd0cee8 .gb-icon {
   width: 15px;
   margin-right: 3px
 }
+
 .single-blog-post .blog-image img {
   width: 100vh;
   height: 250px;
@@ -33031,15 +33051,16 @@ blockquote:after {
 .ml-main-section {
   position: relative;
   z-index: 1;
-  padding-top: 215px;
-  padding-bottom: 240px;
+  background-image: url("./assets/images/hero-section/hero-image.png");
+  padding-top: 150px;
+  padding-bottom: 150px;
   background-position: 100% 100%;
   background-size: cover;
   background-repeat: no-repeat
 }
 
 .ml-main-section .ml-banner-content h1 {
-  font-size: 37px
+  font-size: 44px
 }
 
 .ml-main-section .ml-banner-content p {
@@ -37673,7 +37694,7 @@ blockquote:after {
   }
 
   /* .repair-cta-area {
-    padding-top: 80px
+padding-top: 80px
   } */
 
   .cta-repair-content {
