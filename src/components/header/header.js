@@ -18,7 +18,20 @@ const Header = () => {
   const location = useLocation();
   const isAppScreen = location.pathname === "/espark-app";
 
+  const [iconShow, setIconShow] = useState(false);
+
+  const [dropDownId , setDropDownId] = useState()
   const newData = [...services].reverse();
+
+
+  const handleMouseEnter = (_id)=>{
+        setDropDownId(_id);
+        setIconShow(true)
+  }
+  const handleMouseLeave = (_id)=>{
+        setDropDownId(10);
+        setIconShow(false)
+  }
 
   return (
     <header id="header" class="headroom is-sticky">
@@ -36,7 +49,6 @@ const Header = () => {
                 height={isAppScreen && 60}
               />
             </Link>
-
             <button
               class={
                 isNavCollapsed
@@ -58,44 +70,55 @@ const Header = () => {
             <div
               className={
                 isNavCollapsed
-                  ? "collapse navbar-collapse show"
+                  ? "collapse navbar-collapse show d-flex autoSize"
                   : "collapse navbar-collapse"
               }
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav ms-auto" >
+              <ul className="navbar-nav marginEnd" >
                 <li className="nav-item">
                   <Link
                     className="nav-link"
                     to="/"
                     onClick={() => setIsNavCollapsed(false)}
+                    
                   >
-                    Home
+                  <span className="itemTxt">Home</span>  
                   </Link>
                 </li>
                 <li class="nav-item">
                   <Link class="nav-link" to="/services">
-                    Services
+                     <span className="itemTxt">Services</span>  
                   </Link>
                   <ul class="dropdown-menu  list-bgrd"  >
-                    {newData?.slice(0, 2)?.map((child) => {
+                    {newData?.slice(0, 4)?.map((child) => {
                       return (
+                        <>
+                        
                         <li
                           class="nav-item ulItemsColor"
                           onClick={() => setIsNavCollapsed(false)}
-                          
+                          onMouseEnter ={()=>{handleMouseEnter(child.id)}}
+                          onMouseLeave = {()=>{handleMouseLeave(child.id)}}
+        
                         >
                           <Link class="nav-link" to={`#`}>
-                            <AiOutlineCaretRight /> {child.name}
+                            
+                        {child.dropDown ==true ?   child.id == dropDownId ? (<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/> </svg>) : (<svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.2439 1.53943L6.77649 8.00684L0.309082 1.53943L1.45705 0.391464L6.77649 5.71091L12.0959 0.391464L13.2439 1.53943Z" fill="black"/>
+</svg>
+) : ""}
+                        {child.name}
                           </Link>
-                          <ul class="dropdown-menu" style={{background:'transparent'}} >
-                            {child.childs.map((item) => {
+                       {(child.dropDown == true) && <ul class="dropdown-menu menuDropDown "   >
+                            {child?.childs.map((item) => {
                               return (
                                 <li
                                   class="nav-item ulItemsColor"
                                   onClick={() => setIsNavCollapsed(false)}
-                                  // style={{border:'1px solid black',borderRadius:"15px",marginTop:"5px",width:"400px",background:"#D9D9D9"}}
                                 >
+
+                                  
                                   <i
                                     class="fa fa-envelope-square"
                                     aria-hidden="true"
@@ -107,32 +130,41 @@ const Header = () => {
                                     {item.name}
                                   </Link>
                                 </li>
+                              
+                                
                               );
                             })}
-                          </ul>
+                         
+                          </ul> }
+                          
                         </li>
+                      
+                        </>
                       );
                     })}
                   </ul>
                 </li>
                 <li class="nav-item" onClick={() => setIsNavCollapsed(false)}>
                   <Link class="nav-link" to="/about">
-                    About
+                                          <span className="itemTxt">Portfolio</span>  
+
                   </Link>
                 </li>
                 <li class="nav-item" onClick={() => setIsNavCollapsed(false)}>
                   <Link class="nav-link" to="/project">
-                    Projects
+                                                               <span className="itemTxt">Careers</span>  
+
                   </Link>
                 </li>
               
                 <li class="nav-item" onClick={() => setIsNavCollapsed(false)}>
                   <Link class="nav-link" to="/contact">
-                    Contact Us
+                        <span className="itemTxt">Blogs</span>  
+
                   </Link>
                 </li>
 
-                <li class="nav-item" onClick={() => setIsNavCollapsed(false)}>
+                {/* <li class="nav-item" onClick={() => setIsNavCollapsed(false)}>
                   <Link class="nav-link" to="/products">
                     Products
                   </Link>
@@ -141,7 +173,7 @@ const Header = () => {
                   <Link class="nav-link" to="/careers">
                     Careers
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 

@@ -25205,7 +25205,9 @@ gb-headline-efd0cee8 .gb-icon {
 
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu li {
   position: relative;
-  padding: 0
+  padding: 0;
+  border-radius: 16px;
+
 }
 
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu li a {
@@ -25214,15 +25216,16 @@ gb-headline-efd0cee8 .gb-icon {
   padding: 8px 15px;
   margin: 0;
   display: block;
-  color: #4a6f8a
+  color: #4a6f8a;
+  border-radius: 16px;
+
 }
 
-.startp-nav nav .navbar-nav .nav-item .dropdown-menu li a.active,
+bar-nav .nav-item .dropdown-menu li a.active,
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu li a:focus,
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover {
   background-color: #11A79c;
   color: white !important;
-  border-radius: 10px;
 }
 
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu li a i,
@@ -25369,7 +25372,8 @@ gb-headline-efd0cee8 .gb-icon {
 .navbar-toggler {
   border: none;
   border-radius: 0;
-  padding: 0
+  padding: 0;
+  margin-top:8px!important;
 }
 
 .navbar-toggler:focus {
@@ -37166,7 +37170,8 @@ blockquote:after {
   }
 
   .startp-nav nav .navbar-collapse {
-    max-height: 70vh;
+    /* max-height: 70\vh; */
+    max-height: 450px;
     overflow-y: scroll;
     position: relative !important;
   }
