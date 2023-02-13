@@ -1,0 +1,23 @@
+#testimonial .control-arrow {
+    background-color: transparent !important;
+}
+
+#testimonial .carousel .control-prev.control-arrow:before {
+    border-right: 12px solid #000;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+#testimonial .carousel .control-next.control-arrow:before {
+    border-left: 12px solid #000;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+#testimonial button:hover {
+    box-shadow: none;
+}
+
+#testimonial .dot {
+    
+}

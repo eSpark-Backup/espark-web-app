@@ -2,7 +2,7 @@ import React from "react";
 import { partner } from "../../helper/ImageUrl";
 import Partners from "../partners/partners";
 import style from "./style.module.css";
-// import "./style.css";
+import "./style.css";
 import { Carousel } from "react-responsive-carousel";
 import { clients } from "../../helper/clients";
 import Testimonial from "../testimonial/Testimonial";
@@ -19,7 +19,7 @@ export default function PartnerAbout() {
             <h1>Client Testimonials</h1>
           </div>
           <div className="row" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
-            <div id={style["testimonial"]} className=" testmonials col-sm-12 col-md-12 col-lg-10" >
+            <div id="testimonial" className=" testmonials col-sm-12 col-md-12 col-lg-10" >
               {/* <Testimonial /> */}
               <Carousel
                 autoPlay
