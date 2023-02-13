@@ -52,6 +52,8 @@
 .autoSize{
     overflow: inherit!important;
 }
+
+
 @media screen and (max-width: 700px) {
     .headerBtn {
         width: 120px;
