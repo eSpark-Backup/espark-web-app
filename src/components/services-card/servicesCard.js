@@ -2,7 +2,6 @@ import React from "react";
 import Button from "../button/button";
 import "./servicesCard.css";
 
-
 function ServicesCard({svgImage, title, para}) {
   return (
     <div className="p-4">

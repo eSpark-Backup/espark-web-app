@@ -16,11 +16,10 @@
 .appDevWrapper:hover {
 
     background-color: #3359A2;
-    transition: 'background-color 1s ease-in-out';
+    transition: background-color 1s ease-in-out;
 }
 
 .appDevWrapper:hover .txtCardService_para {
-    /* transition: all 0.5s ease; */
     display: block;
 }
 .appDevWrapper:hover .txtCardService {
@@ -53,7 +52,7 @@
     line-height: 27px;
     text-align: center;
     color: #949292;
-    transition: display 1s;
+    transition: display 1s ease-in;
 }
 
 .readMoreTxt {

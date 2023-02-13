@@ -57,13 +57,13 @@ function ServiceSlider() {
 
   const settings = {
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 3000,
     dots: false,
     initialSlide: 1,
     swipe: false,
     swipeToSlide: false,
     infinite: true,
-    speed: 1000,
+    speed: 3000,
     slidesToShow: 4,
     slidesToScroll: 4,
     centerMode: false,

@@ -1,17 +1,4 @@
-.nextBtn{
-    width: 70px;
-height: 70px;
-background: #00A099;
-border-radius: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
-cursor: pointer;
-position: absolute;
-top: 150px;
-left: 1550px;
-}
-.btnPre{
+.nextBtn {
     width: 70px;
     height: 70px;
     background: #00A099;
@@ -20,7 +7,41 @@ left: 1550px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    position:absolute;
+    position: absolute;
+    top: 150px;
+    left: 1550px;
+}
+
+.btnPre {
+    width: 70px;
+    height: 70px;
+    background: #00A099;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
     top: 155px;
     right: 1600px;
 }
+
+
+@media only screen and (max-width: 700px) {
+    .nextBtn {
+        top: 200px;
+        left: 389px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .btnPre {
+        top: 200px;
+        right: 388px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+
