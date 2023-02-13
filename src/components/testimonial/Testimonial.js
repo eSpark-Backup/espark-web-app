@@ -1,15 +1,15 @@
 import Slider from "react-slick";
-
-import "./Testimonial.css";
-import style from "./Testimonial.css";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import style from "./testimonial.module.css";
+import "./testimonial.css";
+// import style from "./Testimonial.css";
+import { MdOutlineArrowForwardIos, MdOutlineArrowBackIos } from "react-icons/md";
 
 const PreviousBtn = (props) => {
   console.log(props);
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <FaLongArrowAltRight className={style.arrowSize} />
+      <MdOutlineArrowBackIos className={style.arrowSize} />
       {/* <ArrowBackIos style={{ color: "gray", fontSize: "45px" }} /> */}
     </div>
   );
@@ -18,7 +18,7 @@ const NextBtn = (props) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <FaLongArrowAltRight className={style.arrowSize} />
+      <MdOutlineArrowForwardIos className={style.arrowSize} />
       {/* <ArrowForwardIos style={{ color: "gray", fontSize: "45px" }} /> */}
     </div>
   );
@@ -27,7 +27,7 @@ const Testimonial = () => {
   return (
     <div
       className="testimonial"
-    // style={{ display: "flex", justifyContent: "center", marginTop: 50 }}
+      style={{ display: "flex", justifyContent: "center", marginTop: 50 }}
     >
       <div style={{ width: "100%", textAlign: "center" }} >
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots >

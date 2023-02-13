@@ -5,7 +5,7 @@ import style from "./style.module.css";
 import "./style.css";
 import { Carousel } from "react-responsive-carousel";
 import { clients } from "../../helper/clients";
-import Testimonial from "../testimonial/Testimonial";
+import Testimonial from "../testimonial/testimonial";
 
 export default function PartnerAbout() {
   return (
@@ -20,8 +20,8 @@ export default function PartnerAbout() {
           </div>
           <div className="row" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
             <div id="testimonial" className=" testmonials col-sm-12 col-md-12 col-lg-10" >
-              {/* <Testimonial /> */}
-              <Carousel
+              <Testimonial />
+              {/* <Carousel
                 autoPlay
                 showIndicators={true}
                 showArrows={true}
@@ -43,7 +43,7 @@ export default function PartnerAbout() {
                     </div>
                   );
                 })}
-              </Carousel>
+              </Carousel> */}
             </div>
           </div>
         </div>
