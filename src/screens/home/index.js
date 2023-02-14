@@ -4,11 +4,9 @@ import WhyeSpark from "../../components/Sections/WhyeSpark/WhyeSpark";
 import Herosection from "../../components/Sections/Hero/Herosection";
 import Users from "./../../components/Sections/User/Users";
 import Services from "../services";
-import { shapes } from "../../helper/ImageUrl";
 import PartnerAbout from "../../components/partners-about/parternsAbout";
-import { faqsQuestions } from "../../helper/faqs";
 import Projects from "../projects/projects";
-import Faqs from "../faqs/faqs";
+import LetsTalk from "../../components/LetsTalk/LetsTalk";
 
 const Home = () => {
   const currentRoute = window.location.pathname;
@@ -23,7 +21,7 @@ const Home = () => {
       <Users />
       <Projects link={currentRoute} />
       <PartnerAbout />
-      <Faqs imgs={shapes} data={faqsQuestions} />
+      <LetsTalk />
     </div>
   );
 };

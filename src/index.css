@@ -136,7 +136,7 @@ h6 {
   margin-bottom: .5rem;
   line-height: 1.2;
   font-weight: 500 !important;
-  color: #11A79c !important;
+  color: #2B4E89 !important;
 }
 
 .h1,
@@ -146,6 +146,7 @@ h1 {
   line-height: 58px;
   letter-spacing: 0em;
   text-align: left;
+  font-size: 44px;
 }
 
 @media (min-width:1200px) {
