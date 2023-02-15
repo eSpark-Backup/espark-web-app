@@ -20,8 +20,8 @@ import { BsGlobe } from "react-icons/bs";
 const Footer = () => {
   return (
     <>
-      <footer className="footer-area">
-        <div className="container">
+      <footer className="footer-area ">
+        <div className="container footer_areas">
           <div className="row">
             <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="single-footer-widget">
@@ -155,13 +155,6 @@ const Footer = () => {
                      <FaMapMarkerAlt />   301/B 3rd Floor & 401/A 4th Floor,Blossom Trade Centre,Block 1, Gulistan-e-Johar Karachi,74300
                     </Link>
                   </li>
-                  {/* <li>
-                    <Link to="/">
-                      <FaMapMarkerAlt /> 
-                      Blossom Trade Centre,Block 1 Gulistan-e-Johar, Karachi,
-                      74300
-                    </Link>
-                  </li> */}
                 </ul>
               </div>
             </div>
