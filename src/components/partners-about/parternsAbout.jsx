@@ -12,7 +12,7 @@ export default function PartnerAbout() {
             </div>
             <h1>Client Testimonials</h1>
           </div>
-          <div className="container d-flex flex-row  justify-content-center" >
+          <div className="row d-flex flex-row justify-content-center" >
             <div id="testimonial" className=" testmonials col-sm-12 col-md-12 col-lg-10" >
               <Testimonial />
             </div>
