@@ -4,8 +4,6 @@ export const completedProject = [
         numbers: '150+',
         title : 'Project Completed',
         bgcolor : '#00A099'
-        
-
     },
     {
         value : 85,

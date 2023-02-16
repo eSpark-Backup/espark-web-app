@@ -1,5 +1,5 @@
 import React from "react";
-import "./styl.css";
+import "./style.css";
 import { completedProject } from "../../../helper/projectComplate";
 import {
   buildStyles,
