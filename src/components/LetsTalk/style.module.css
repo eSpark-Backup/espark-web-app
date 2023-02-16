@@ -72,9 +72,6 @@ button:last-of-type {
 }
 
 @media only screen and (max-width: 1024px) {
-    .letsTalkImage {
-        display: none;
-    }
 
     .formcol {
         margin-top: -50% !important;

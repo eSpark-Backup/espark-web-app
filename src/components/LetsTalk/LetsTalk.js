@@ -135,18 +135,16 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
             <div className="col-lg-8 text-center">
               <div className="pt-30"> <hr /></div>
               <h1 className="text-center">Let’s Talk</h1>
-              <p className="text-center talk-contect  p-20">Have any queries, ideas, or feedback for us?<br />
-                We got you all covered! Just fill out the form below to connect with us.</p>
-
+              <p className="text-center talk-contect  p-20">Have any queries, ideas, or feedback for us? We got you all covered! Just fill out the form below to connect with us.</p>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 hidden-md hidden-sm">
               <div className={style.letsTalkImage}>
                 <img src={letsTalkImage} alt="" />
               </div>
             </div>
           </div>
           <div className="row">
-            <div className={`${style.formcol} col-lg-8 text-center`}>
+            <div className={`${style.formcol} col-lg-8 col-md-12 col-sm-12  text-center`}>
               <div className={`${style.formbox} col-lg-12`}>
                 <form id="contactForm" ref={form} onSubmit={sendEmail}>
                   <div class="row">
@@ -205,11 +203,7 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                           required={true}
                           cols="30"
                           rows="5"
-                          placeholder={
-                            link?.includes("vacancies")
-                              ? "Postion Applied For *"
-                              : "Write your message... *"
-                          }
+                          placeholder={"Write your message..."}
                           class="form-control"
                           value={message}
                           onChange={(e) => setMessage(e.target.value)}
@@ -217,7 +211,7 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                         <div class="invalid-feedback"></div>
                       </div>
                     </div>
-                    <div class="col-lg-12 col-sm-12 d-flex  ">
+                    <div class="col-lg-12 col-sm-12 d-flex justify-content-center justify-content-sm-start ">
                       <Button type="submit" title="Send Message" design={0} />
                     </div>
                   </div>
@@ -225,7 +219,7 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
               </div>
 
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 hidden-md hidden-sm">
             </div>
           </div>
         </div>
