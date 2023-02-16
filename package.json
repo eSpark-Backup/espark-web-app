@@ -13,6 +13,7 @@
     "jquery": "^3.6.3",
     "moment": "^2.29.4",
     "react": "^18.1.0",
+    "react-animated-css": "^1.2.1",
     "react-awesome-slider": "^4.1.0",
     "react-card-flip": "^1.2.0",
     "react-datepicker": "^4.10.0",

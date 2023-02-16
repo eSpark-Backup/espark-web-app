@@ -4,8 +4,8 @@ import "./servicesCard.css";
 
 function ServicesCard({svgImage, title, para}) {
   return (
-    <div className="p-4">
-      <div className="appDevWrapper">
+    <div className="p-4" >
+      <div className="appDevWrapper" >
         <div   dangerouslySetInnerHTML={{
                     __html: svgImage,
                   }}>
@@ -15,7 +15,7 @@ function ServicesCard({svgImage, title, para}) {
               {para}
         </p>
       </div>
-      <div className="readMoreDiv">
+      <div className="readMoreDiv" >
         <h1 className="readMoreTxt">Read More</h1>
         <p>
           <svg
