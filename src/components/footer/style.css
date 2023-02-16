@@ -20,7 +20,6 @@
   line-height: 143.5%;
   color: #353535;
 }
-
 .footer-area p {
   color: #353535;
   padding-right: 20%;
@@ -35,7 +34,6 @@
 .logoMargin {
   margin-top: 5px;
 }
-
 .copyright {
   background: #2b4e89;
   padding: 5px;
@@ -49,14 +47,12 @@
   color: #e8f1f2 !important;
   text-align: center !important;
 }
-
 footer .container {
   padding-bottom: 100px;
 }
 footer .social-links {
   padding-top: 10px;
 }
-
 @media only screen and (min-width:300px) and (max-width:400px) {
   .footer_areas{
     padding: 0px 40px 0px 15px !important;

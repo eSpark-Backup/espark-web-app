@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-import Event from "./../event/event";
-import Privacy from "./../../screens/privacy/Privacy";
 import {
   FaAngleDoubleRight,
   FaFacebookF,
@@ -13,8 +11,6 @@ import {
 } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { MdAttachEmail } from "react-icons/md";
-
-import { GrMapLocation } from "react-icons/gr";
 import { BsGlobe } from "react-icons/bs";
 
 const Footer = () => {
