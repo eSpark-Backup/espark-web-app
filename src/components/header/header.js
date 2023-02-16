@@ -51,8 +51,8 @@ const Header = () => {
             <button
               class={
                 isNavCollapsed
-                  ? "custom-toggler navbar-toggler "
-                  : "custom-toggler navbar-toggler collapsed"
+                  ? "custom-toggler navbar-toggler customColor "
+                  : "custom-toggler navbar-toggler customColor collapsed"
               }
               type="button"
               data-toggle="collapse"
