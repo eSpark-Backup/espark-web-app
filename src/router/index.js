@@ -25,7 +25,6 @@ const AppRoutes = () => {
   const data = window.scrollTo(0, 0);
 
   let routes = useRoutes([
-    // { path: "/", element: <Home /> },
     { path: "/", element: <ServicesRecreate /> },
     { path: "/about", element: <About /> },
     { path: "/project", element: <Projects /> },

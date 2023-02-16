@@ -91,19 +91,34 @@ function ServiceSlider() {
     ],
   };
   return (
-    <div>
-      <Slider {...settings}>
-        {serviceData.map((item) => (
-          <div>
-            <ServicesCard
-              svgImage={item.svgImage}
-              title={item.tittle}
-              para={item.para}
-            />
-          </div>
-        ))}
-      </Slider>
-    </div>
+    <>
+      <div className="sliderMobileResponsive">
+        <Slider {...settings}>
+          {serviceData.map((item) => (
+            <div>
+              <ServicesCard
+                svgImage={item.svgImage}
+                title={item.tittle}
+                para={item.para}
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
+      <div className="mobileResponsive">
+        <div className="row">
+          {serviceData.slice(1,5).map((item) => (
+            <div className="col-md-12">
+              <ServicesCard
+                svgImage={item.svgImage}
+                title={item.tittle}
+                para={item.para}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
   );
 }
 

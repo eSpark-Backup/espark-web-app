@@ -26,20 +26,34 @@
     right: 1600px;
 }
 
+.sliderMobileResponsive{
+    display: block;
+}
+
+.mobileResponsive{
+    display: none;
+}
+
 
 @media only screen and (max-width: 700px) {
-    .nextBtn {
+    /* .nextBtn {
         top: 200px;
         left: 389px;
         width: 45px;
         height: 45px;
-    }
+    } */
 
-    .btnPre {
+    /* .btnPre {
         top: 200px;
         right: 388px;
         width: 45px;
         height: 45px;
+    } */
+    .mobileResponsive{
+        display: block;
+    }
+    .sliderMobileResponsive{
+        display: none;
     }
 }
 
