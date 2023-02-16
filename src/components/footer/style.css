@@ -59,7 +59,7 @@ footer .social-links {
 
 @media only screen and (min-width:300px) and (max-width:400px) {
   .footer_areas{
-    padding: 0px 40px 0px 1px !important;
+    padding: 0px 40px 0px 15px !important;
    }
 }
 @media only screen and (min-width:400px) and (max-width:500px) {
@@ -67,7 +67,7 @@ footer .social-links {
     margin-bottom: 40px;
   }
   .footer_areas{
-    padding: 0px 60px 0px 1px !important;
+    padding: 0px 60px 0px 15px !important;
    }
 }
 @media only screen and (min-width:500px) and (max-width:541px) {
@@ -96,9 +96,7 @@ footer .social-links {
     margin-bottom: 495px;
   }
 }
-.footer_areas{
-  margin: 0px 25px 0px 45px !important;
- }
+
 @media only screen and (min-width:991px) and (max-width:1200px) {
   .copyright{
     margin-bottom: 495px;
