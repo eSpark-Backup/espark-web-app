@@ -25036,7 +25036,7 @@ label {
 #header.headroom.is-sticky {
     -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, .06);
     box-shadow: 0 2px 28px 0 rgba(0, 0, 0, .06);
-    background-color: #fff !important;
+    /* background-color: #fff !important; */
     padding-top: 15px;
     padding-bottom: 15px
 }

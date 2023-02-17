@@ -5,7 +5,7 @@
     background-color: #D9D9D9;
 }
 .customColor{
-    background-color: white!important;
+    background-color: transparent!important;
 }
 .customColor:hover{
     box-shadow: none;
