@@ -12,7 +12,7 @@ function WhyeSpark({ heading }) {
       <div className="solutions-area pt-80">
         <div className="container">
           <div className="row ">
-            <div id={styles["whylinks"]} className="col-lg-2 col-md-12 d-flex flex-column justify-content-around text-center" >
+            <div id={styles["whylinks"]} className="col-lg-2 col-md-12 d-flex flex-column justify-content-around text-center  " >
               {sociallinks.map((items) => {
                 return (
                   <div className={` col-lg-12 ${styles.sociallink}`} >
@@ -30,7 +30,7 @@ function WhyeSpark({ heading }) {
               </p>
               <img src={whyesaprk} alt="" />
             </div>
-            <div id={styles["whylinksmobile"]} className="col-lg-12 col-md-12 col-md-4 col-sm-12 justify-content-around text-center " >
+            <div id={styles["whylinksmobile"]} className="col-sm-12 justify-content-center text-center  " >
               {sociallinks.map((items) => {
                 return (
                   <div className={` col-lg-4 col-md-4 col-sm-12 col-xs-12 p-10`} >
