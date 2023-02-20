@@ -24793,7 +24793,7 @@ textarea.form-control {
   position: relative;
   border-radius: 4px;
   z-index: 1;
-  text-transform: uppercase
+  /* text-transform: lowercase */
 }
 
 .btn,
@@ -24810,7 +24810,8 @@ textarea.form-control {
   top: 0;
   height: 100%;
   width: 0;
-  background: #11A79c;
+  /* background: #11A79c; */
+  background: #3359A2;
   z-index: -1
 }
 

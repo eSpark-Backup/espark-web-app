@@ -6,7 +6,7 @@ function ServicesRecreate() {
   return (
     <>
       <div className="d-flex">
-        <hr />
+        <span className="bar"> </span>
         <h4 className="servicesColor">Our Services</h4>
         <p className="txtpara">
           We offer complete product development solutions that fit your{" "}
