@@ -10,12 +10,11 @@
     flex-direction: column;
     align-items: center;
     margin: auto;
-    transition:  background-color 1s;
+    transition: background-color 1s;
 
 }
 
 .appDevWrapper:hover {
-
     background-color: #3359A2;
     transition: background-color 1s ease-in-out;
 }
@@ -23,6 +22,7 @@
 .appDevWrapper:hover .txtCardService_para {
     display: block;
 }
+
 .appDevWrapper:hover .txtCardService {
     color: white;
 }

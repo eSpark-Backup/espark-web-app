@@ -19,13 +19,12 @@ import Careers from "../screens/careers";
 import JobDetail from "../screens/careers/jobDetail";
 import SEO from "./../utils/SEO";
 import Event from './../components/event/event';
-import ServicesRecreate from "../components/Sections/services-recreate";
 
 const AppRoutes = () => {
   const data = window.scrollTo(0, 0);
 
   let routes = useRoutes([
-    { path: "/", element: <ServicesRecreate /> },
+    { path: "/", element: <Home /> },
     { path: "/about", element: <About /> },
     { path: "/project", element: <Projects /> },
     { path: "/project-detail/:id", element: <ProjectDetails /> },

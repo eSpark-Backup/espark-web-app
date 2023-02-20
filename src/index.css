@@ -3592,7 +3592,7 @@ textarea.form-control.is-invalid {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #292121;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -3912,7 +3912,7 @@ fieldset:disabled .btn {
 }
 
 .btn-light {
-  color: #000;
+  color: #d88110;
   background-color: #f8f9fa;
   border-color: #f8f9fa
 }
