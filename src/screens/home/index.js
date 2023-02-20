@@ -7,10 +7,11 @@ import Services from "../services";
 import { shapes } from "../../helper/ImageUrl";
 import PartnerAbout from "../../components/partners-about/parternsAbout";
 import { faqsQuestions } from "../../helper/faqs";
-import Projects from "../projects/projects";
 import Faqs from "../faqs/faqs";
+import Portfolio from "../../components/Sections/portfolio/Portfolio";
+import { projects } from "../../helper/projects";
 import heroImage from "../../../src/assets/images/hero-section/hero-image.svg";
-import Portfolio from "../Portfolio";
+
 
 
 const Home = () => {
@@ -35,7 +36,8 @@ const Home = () => {
       <About id={2} />
       <Services link={currentRoute} />
       <Users />
-      <Projects link={currentRoute} />
+      {/* <Projects link={currentRoute} /> */}
+      <Portfolio data={projects.slice(0, 4)} />
       <PartnerAbout />
       <Faqs imgs={shapes} data={faqsQuestions} />
     </div>
