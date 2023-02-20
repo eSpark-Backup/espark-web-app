@@ -1,0 +1,95 @@
+.arrowSize {
+   width: 30px;
+   height: 20px;
+   color: #11A79c;
+}
+
+.sociallink {
+   font-family: Poppins;
+   transform: rotate(270deg);
+
+}
+
+.whyPoints {
+   font-family: Poppins;
+   font-size: 22px;
+   font-weight: 600 !important;
+   line-height: 22px;
+   letter-spacing: 0em;
+   text-align: left;
+   color: #3359A2 !important;
+}
+
+.whyPointsPara {
+   font-family: Poppins;
+   font-size: 16px;
+   font-weight: 400 !important;
+   line-height: 22px;
+   letter-spacing: 0em;
+   text-align: left;
+   padding: 10px 0;
+}
+
+.heading {
+   font-family: Poppins;
+   font-size: 44px;
+   font-weight: 700 !important;
+   line-height: 44px;
+   letter-spacing: 0em;
+   text-align: center;
+   color: #3359A2 !important;
+}
+
+.whyPara {
+   font-family: Poppins;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 22px;
+   letter-spacing: 0em;
+   padding: 10px 0;
+   text-align: center;
+}
+
+
+.points {
+   padding-bottom: 10px;
+}
+
+#whypoints {
+   padding: 20px;
+}
+
+#whylinksmobile {
+   display: none;
+}
+
+#whylinksmobile button {
+   font-size: 22px !important;
+   width: 163.09px;
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+   #whylinks {
+      display: none !important;
+   }
+
+   #whylinksmobile button {
+      font-size: 22px !important;
+      width: 163.09px;
+   }
+
+   #whylinksmobile {
+      display: block;
+   }
+
+   .arrowSize {
+      margin-right: 30px;
+   }
+
+   #whylinksmobile {
+      margin: 20px;
+   }
+
+}

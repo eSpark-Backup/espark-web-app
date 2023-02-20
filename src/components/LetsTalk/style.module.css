@@ -1,0 +1,85 @@
+.formbox {
+    padding: 30px;
+    background-color: #2B4E89;
+    border-radius: 30px;
+}
+
+.formbox input {
+    border-radius: 5px;
+}
+
+.formbox .submit {
+    border-radius: 5px !important;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18.7018px;
+    line-height: 140%;
+    text-align: center;
+    color: #E8F1F2;
+}
+
+button:last-of-type {
+    border-radius: 5px !important;
+}
+
+.letsTalkImage {
+    padding-top: 10%;
+    padding: 5%;
+}
+
+.formbox .label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    text-align: left !important;
+    font-size: 18.7018px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.formbox input,
+.formbox textarea {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    text-align: left !important;
+    font-size: 18.7018px;
+    line-height: 140%;
+    color: #3a3a3a;
+}
+
+.letsTalk {
+    background: #F4F6F9;
+    border-radius: 10px;
+    padding-bottom: 100px !important;
+    padding-top: 30px !important;
+}
+
+.letsTalk p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 144%;
+    text-align: center;
+    color: #000000;
+}
+
+.formcol {
+    margin-top: -25% !important;
+    padding-left: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .formcol {
+        margin-top: -50% !important;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .letsTalk {
+        padding-bottom: 50% !important;
+    }
+}
