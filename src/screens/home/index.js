@@ -4,10 +4,9 @@ import WhyeSpark from "../../components/Sections/WhyeSpark/WhyeSpark";
 import Herosection from "../../components/Sections/Hero/Herosection";
 import Users from "./../../components/Sections/User/Users";
 import Services from "../services";
-import { shapes } from "../../helper/ImageUrl";
 import PartnerAbout from "../../components/partners-about/parternsAbout";
-import { faqsQuestions } from "../../helper/faqs";
-import Faqs from "../faqs/faqs";
+import Projects from "../projects/projects";
+import LetsTalk from "../../components/LetsTalk/LetsTalk";
 import Portfolio from "../../components/Sections/portfolio/Portfolio";
 import { projects } from "../../helper/projects";
 import heroImage from "../../../src/assets/images/hero-section/hero-image.svg";
@@ -26,10 +25,10 @@ const Home = () => {
                     years of experience in the industry and a passion for technology
                     that drives us to stay ahead of the curve and deliver
                     cutting-edge solutions"
-      images={heroImage}
-      ShowButton={true}
-      buttonText={'Learn More'}
-      buttonUrl={'/services/'}
+        images={heroImage}
+        ShowButton={true}
+        buttonText={'Learn More'}
+        buttonUrl={'/services/'}
       />
       {/* <Portfolio /> */}
       <WhyeSpark heading={"Why eSpark?"} />
@@ -39,7 +38,7 @@ const Home = () => {
       {/* <Projects link={currentRoute} /> */}
       <Portfolio data={projects.slice(0, 4)} />
       <PartnerAbout />
-      <Faqs imgs={shapes} data={faqsQuestions} />
+      <LetsTalk />
     </div>
   );
 };
