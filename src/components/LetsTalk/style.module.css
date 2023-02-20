@@ -19,8 +19,8 @@
     color: #E8F1F2;
 }
 
-button:last-of-type {
-    border-radius: 5px !important;
+.formbox button:last-of-type {
+    border-radius: 5px;
 }
 
 .letsTalkImage {
