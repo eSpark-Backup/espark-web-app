@@ -11,14 +11,6 @@ function WhyeSpark({ heading }) {
     <div>
       <div className="solutions-area pt-80">
         <div className="container">
-          <div id={styles["whylinksmobile"]} className="col-lg-12 col-md-12 d-flex justify-content-around text-center" >
-            {sociallinks.map((items) => {
-              return (
-                <div className={` col-lg-4`} >
-                  <Button title={items.name} link={items.url} design={2} />
-                </div>)
-            })}
-          </div>
           <div className="row ">
             <div id={styles["whylinks"]} className="col-lg-2 col-md-12 d-flex flex-column justify-content-around text-center" >
               {sociallinks.map((items) => {
@@ -38,11 +30,19 @@ function WhyeSpark({ heading }) {
               </p>
               <img src={whyesaprk} alt="" />
             </div>
-            <div id={styles["whypoints"]} className="col-lg-6 col-md-12  ">
+            <div id={styles["whylinksmobile"]} className="col-lg-12 col-md-12 col-md-4 col-sm-12 justify-content-around text-center " >
+              {sociallinks.map((items) => {
+                return (
+                  <div className={` col-lg-4 col-md-4 col-sm-12 col-xs-12 p-10`} >
+                    <Button title={items.name} link={items.url} design={2} />
+                  </div>)
+              })}
+            </div>
+            <div id={styles["whypoints"]} className="col-lg-6 col-md-12 col-sm-12   ">
               {whypoints.map((items) => {
                 return (
-                  <div className={`${styles.points} row `}>
-                    <div className="col-lg-2 col-md-2 col-sm-2">
+                  <div className={`${styles.points} d-flex   `}>
+                    <div className="col-lg-2 col-md-2 col-sm-2 d-flex justify-content-around  ">
                       <FaCheckCircle className={styles.arrowSize} />
                     </div>
                     <div className="col-lg-10 col-md-10 col-sm-10">
