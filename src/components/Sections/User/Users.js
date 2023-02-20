@@ -1,59 +1,64 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import map from "../../../../src/assets/images/map.png";
-import shape2 from "../../../../src/assets/images/shape2.svg";
-import shape3 from "../../../../src/assets/images/shape3.svg";
-import shape4 from "../../../../src/assets/images/shape4.svg";
-import shape5 from "../../../../src/assets/images/shape5.png";
-import Button from "../../button/button";
+import "./style.css";
+import { completedProject } from "../../../helper/projectComplate";
+import {
+  buildStyles,
+  CircularProgressbar,
+} from "react-circular-progressbar";
+import "./AnimatedProgressProvider";
+import { easeQuadInOut } from "d3-ease";
+import AnimatedProgressProvider from "./AnimatedProgressProvider";
+import 'react-circular-progressbar/dist/styles.css';
 
 function Users() {
   return (
     <div>
-      <div class="funfacts-area bg-image ptb-80">
-        <div class="container">
-          <div class="section-title">
-            <h2>Your Expectations, Our Ability</h2>
-            <div class="bar"></div>
-            <p>
-              We explore several strategies for managing Our user expectations.
-            </p>
-          </div>
-          <div class="row">
-            <div class="col-lg-3 col-md-3 col-6 col-sm-6">
-              <div class="single-funfact">
-                <h3>2015</h3>
-                <p>COMPANY FORMATION</p>
+      <div className="container martop">
+        <div className='p-20'>
+           <hr />
+        </div>
+        <div className="headingWithPra">
+          <h2>Our Achievements</h2>
+          <p>
+            We offer complete product development solutions that fit your
+            prduct's unique requirements.
+          </p>
+        </div>
+        <div className="row mt-3">
+          {completedProject.map((item) => {
+            return (
+              <div class="col-sm-6 col-md-6 col-lg-3  pt-5 ">
+                <AnimatedProgressProvider
+                  valueStart={0}
+                  valueEnd={item.value}
+                  duration={1.4}
+                  easingFunction={easeQuadInOut}  
+                  repeat          
+                >
+                  {(value) => {
+                    return (
+                      <CircularProgressbar
+                        value={value}
+                        text={`${item.numbers}`}
+                        background
+                        backgroundPadding={6}
+                        className='CircularProgressbar-path'
+                        styles={buildStyles({
+                          backgroundColor:item.bgcolor,
+                          textColor: "#fff",
+                          pathColor: "#fff",
+                          trailColor: "transparent",
+                        })}
+                      />
+                    );
+                  }}
+                </AnimatedProgressProvider>
+                <div className="project_title">
+                  <h2>{item.title}</h2>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 col-sm-6">
-              <div class="single-funfact">
-                <h3>300+</h3>
-                <p>COMPLETED PROJECTS</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 col-sm-6">
-              <div class="single-funfact">
-                <h3>50+</h3>
-                <p>TALENTED ESPARKS</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-6 col-sm-6">
-              <div class="single-funfact">
-                <h3>200+</h3>
-                <p>SATISFIED CUSTOMERS</p>
-              </div>
-            </div>
-          </div>
-          <div class="contact-cta-box row">
-            <div className="col-lg-8">
-              <h3>Have any question about us?</h3>
-              <p>Don&#x27;t hesitate to contact us</p>
-            </div>
-            <div className="col-lg-4">
-              <Button title="Contact Us" link="/contact" design={2} />
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </div>

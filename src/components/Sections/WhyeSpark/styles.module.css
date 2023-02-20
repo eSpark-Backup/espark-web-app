@@ -1,6 +1,5 @@
 .arrowSize {
    width: 30px;
-   margin-left: 30px;
    height: 20px;
    color: #11A79c;
 }
@@ -56,12 +55,19 @@
    padding-bottom: 10px;
 }
 
-.linkbutt {
-   height: 100 !important;
-}
-
 #whypoints {
    padding: 20px;
+}
+
+#whylinksmobile {
+   display: none;
+}
+
+#whylinksmobile button {
+   font-size: 22px !important;
+   width: 163.09px;
+
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -69,12 +75,21 @@
       display: none !important;
    }
 
+   #whylinksmobile button {
+      font-size: 22px !important;
+      width: 163.09px;
+   }
 
-}
+   #whylinksmobile {
+      display: block;
+   }
 
-@media only screen and (min-width: 1024px) {
+   .arrowSize {
+      margin-right: 30px;
+   }
+
    #whylinksmobile {
       margin: 20px;
-      display: none !important;
    }
+
 }

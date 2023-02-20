@@ -1,0 +1,108 @@
+.testimonial .slick-arrow.slick-prev,
+.testimonial .slick-arrow.slick-next {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.testimonial .slick-prev::before,
+.testimonial .slick-next::before {
+  display: none;
+}
+
+.testimonial .slick-arrow.slick-next {
+  right: -70px;
+}
+
+.testimonial .slick-arrow.slick-prev {
+  left: -70px;
+}
+
+.testimonial .slick-dots li button:before {
+  font-size: 15px;
+}
+
+.testimonial .slick-dots li {
+  top: 15px;
+}
+
+.testimonial .arrowSize {
+  width: 30px;
+  margin-left: 20px;
+  height: 30px;
+  color: #000;
+}
+
+.testimonial .name {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 123.5%;
+  text-align: center;
+  color: #00A099;
+}
+
+.testimonial .designation {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  /* or 27px */
+
+  text-align: center;
+
+  color: #2B4E89;
+}
+
+.testimonial .imgbox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -12%;
+}
+
+.testimonial .testibox {
+  background: #F1F1F1;
+  border: 1px solid #D3D3D3;
+  padding: 20px;
+  border-radius: 15px;
+  padding-bottom: 20px;
+  padding-top: 15%;
+
+}
+
+.testimonial .image {
+  height: 220px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.testimonial .testimonialText {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #3A3A3A;
+}
+
+.testimonial {
+  display: flex;
+  justify-Content: center;
+  margin-Top: 50px;
+}
+
+.subtesti {
+  width: 100%;
+  text-Align: center;
+
+}
+
+
+.bigdata-feedback-area .row {}
