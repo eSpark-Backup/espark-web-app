@@ -10,8 +10,7 @@ import LetsTalk from "../../components/LetsTalk/LetsTalk";
 import Portfolio from "../../components/Sections/portfolio/Portfolio";
 import { projects } from "../../helper/projects";
 import heroImage from "../../../src/assets/images/hero-section/hero-image.svg";
-
-
+import ServicesRecreate from "./../../components/Sections/services-recreate/index";
 
 const Home = () => {
   const currentRoute = window.location.pathname;
@@ -27,15 +26,12 @@ const Home = () => {
                     cutting-edge solutions"
         images={heroImage}
         ShowButton={true}
-        buttonText={'Learn More'}
-        buttonUrl={'/services/'}
+        buttonText={"Learn More"}
+        buttonUrl={"/services/"}
       />
-      {/* <Portfolio /> */}
       <WhyeSpark heading={"Why eSpark?"} />
-      <About id={2} />
-      <Services link={currentRoute} />
+      <ServicesRecreate link={currentRoute} />
       <Users />
-      {/* <Projects link={currentRoute} /> */}
       <Portfolio data={projects.slice(0, 4)} />
       <PartnerAbout />
       <LetsTalk />

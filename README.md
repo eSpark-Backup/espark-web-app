@@ -1,5 +1,5 @@
 # GitHub Codespaces ♥️ React
-
+ 
 Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
 
 You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
@@ -12,7 +12,7 @@ This project was bootstrapped for you with [Create React App](https://github.com
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm start` 
 
 We've already run this for you in the `Codespaces: server` terminal window below. If you need to stop the server for any reason you can just run `npm start` again to bring it back online.
 

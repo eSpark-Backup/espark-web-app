@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 .CircularProgressbar {
   width: 120px !important;
   align-items: center !important;
@@ -7,7 +8,8 @@
   margin-left: 85px;
   padding-bottom: 20px;
 }
-.project_title > h2 {
+
+.project_title>h2 {
   font-family: "Poppins" !important;
   font-style: normal;
   font-weight: 600 !important;
@@ -16,21 +18,14 @@
   text-align: center;
   color: #000000 !important;
 }
+
 .headingWithPra {
   margin-top: 20px;
   text-align: center;
 }
-.headingWithPra > h2 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700 !important;
-  font-size: 44px;
-  line-height: 100%;
-  padding-bottom: 15px;
-  text-align: center;
-  color: #3359a2 !important;
-}
-.headingWithPra > p {
+
+
+.headingWithPra>p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -41,15 +36,18 @@
   text-align: center;
   color: #000000;
 }
+
 .mt-100 {
   margin-top: 200px;
 }
+
 .mains {
   width: 190px;
   height: 190px !important;
   background-color: #0fa49d;
   border-radius: 50%;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .CircularProgressbar {
     width: 120px !important;
@@ -57,7 +55,8 @@
     margin-left: 98px;
     padding-bottom: 20px;
   }
-  .headingWithPra > p {
+
+  .headingWithPra>p {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -69,6 +68,7 @@
     color: #000000;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .CircularProgressbar {
     width: 120px !important;
@@ -79,6 +79,7 @@
     padding-bottom: 20px;
   }
 }
+
 @media only screen and (min-width: 500px) and (max-width: 576px) {
   .CircularProgressbar {
     width: 120px !important;
@@ -86,7 +87,8 @@
     margin-left: 188px !important;
     padding-bottom: 20px;
   }
-  .headingWithPra > p {
+
+  .headingWithPra>p {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -98,6 +100,7 @@
     color: #000000;
   }
 }
+
 @media only screen and (min-width: 400px) and (max-width: 500px) {
   .CircularProgressbar {
     width: 120px !important;
@@ -105,7 +108,8 @@
     margin-left: 130px !important;
     padding-bottom: 20px;
   }
-  .headingWithPra > p {
+
+  .headingWithPra>p {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -117,6 +121,7 @@
     color: #000000;
   }
 }
+
 @media only screen and (min-width: 360px) and (max-width: 400px) {
   .CircularProgressbar {
     width: 120px !important;
@@ -124,7 +129,8 @@
     margin-left: 110px !important;
     padding-bottom: 20px;
   }
-  .headingWithPra > p {
+
+  .headingWithPra>p {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -136,6 +142,7 @@
     color: #000000;
   }
 }
+
 .martop {
   margin-top: 180px;
 }

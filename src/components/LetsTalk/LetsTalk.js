@@ -1,10 +1,11 @@
 import React, { useRef, useState } from "react";
 import { services } from "../../helper/services";
-import letsTalkImage from "../../assets/images/letsTalk.svg"
+import letsTalkImage from "../../assets/images/letsTalk.svg";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
 import Button from "../button/button";
-import style from "./style.module.css"
+import style from "./style.module.css";
+import SectionTitle from "../sectionTitle";
 const LetsTalk = ({ modal, modelClose, link, h1 }) => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
@@ -133,9 +134,17 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
         <div className="container">
           <div class={`${style.letsTalk} row`}>
             <div className="col-lg-8 text-center">
-              <div className="pt-30"> <hr /></div>
-              <h1 className="text-center">Let’s Talk</h1>
-              <p className="text-center talk-contect  p-20">Have any queries, ideas, or feedback for us? We got you all covered! Just fill out the form below to connect with us.</p>
+              <SectionTitle
+                heading={"Let’s Talk"}
+                paragraph={
+                  <p>
+                    Have any queries, ideas, or feedback for us?
+                    <br /> We got you all covered! Just fill out the form below
+                    to connect with us.
+                  </p>
+                }
+                width={"100px"}
+              />
             </div>
             <div className="col-lg-4 hidden-md hidden-sm">
               <div className={style.letsTalkImage}>
@@ -144,7 +153,9 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
             </div>
           </div>
           <div className="row">
-            <div className={`${style.formcol} col-lg-8 col-md-12 col-sm-12  text-center`}>
+            <div
+              className={`${style.formcol} col-lg-8 col-md-12 col-sm-12  text-center`}
+            >
               <div className={`${style.formbox} col-lg-12`}>
                 <form id="contactForm" ref={form} onSubmit={sendEmail}>
                   <div class="row">
@@ -179,10 +190,11 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                       </div>
                     </div>
                     {!link?.includes("vacancies") && (
-                      <div
-                        class="col-lg-12 col-md-12"
-                      >
-                        <div class="form-group"><label className={`${style.label} d-flex`}>Subject</label>
+                      <div class="col-lg-12 col-md-12">
+                        <div class="form-group">
+                          <label className={`${style.label} d-flex`}>
+                            Subject
+                          </label>
                           <input
                             type="text"
                             name="subject"
@@ -197,7 +209,10 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                       </div>
                     )}
                     <div class="col-lg-12 col-md-12">
-                      <div class="form-group"><label className={`${style.label} d-flex`}>Message</label>
+                      <div class="form-group">
+                        <label className={`${style.label} d-flex`}>
+                          Message
+                        </label>
                         <textarea
                           name="text"
                           required={true}
@@ -212,26 +227,18 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                       </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 d-flex justify-content-center justify-content-sm-start ">
-                      <Button type="submit" title="Send Message" design={0} />
+                      <Button type="submit" title="Send Message" design={1} />
                     </div>
                   </div>
                 </form>
               </div>
-
             </div>
-            <div className="col-lg-4 hidden-md hidden-sm">
-            </div>
+            <div className="col-lg-4 hidden-md hidden-sm"></div>
           </div>
         </div>
       </div>
-    </div >
+    </div>
   );
 };
 
 export default LetsTalk;
-
-
-
-
-
-
