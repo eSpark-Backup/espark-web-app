@@ -58,9 +58,6 @@ function App() {
       </HelmetProvider>
     </>
   );
-  const html = renderToString(App);
-
-  const { helmet } = helmetContext;
 }
 
 export default App;
