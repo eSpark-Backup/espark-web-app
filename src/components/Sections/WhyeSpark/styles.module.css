@@ -70,6 +70,10 @@
 
 }
 
+#whylinksbtn {
+   padding: 5px;
+}
+
 @media only screen and (max-width: 1024px) {
    #whylinks {
       display: none !important;
