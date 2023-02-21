@@ -46,10 +46,15 @@
     display: none;
 }
 
-@media (max-width: 760) {
+@media screen and (max-width: 750px) {
     .headingColumn {
         display: none !important;
     }
+    .ml-banner-image {
+        height: 700;
+        width: 100vw;
+    }
+    
 
     button {
         font-family: 'Poppins';

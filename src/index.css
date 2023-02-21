@@ -18404,10 +18404,6 @@ body {
   scroll-behavior: inherit
 }
 
-img {
-  max-width: 100%
-}
-
 a {
   color: #0e314c;
   display: inline-block;
