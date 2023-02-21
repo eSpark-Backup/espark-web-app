@@ -148,6 +148,7 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
   let array = [];
   let limit = 15;
 
+
   const handleUpdateIntrestData = (e, index) => {
     const data = array.find((item) => item === e);
 
