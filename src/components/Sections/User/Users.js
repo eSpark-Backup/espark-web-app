@@ -1,29 +1,22 @@
 import React from "react";
 import "./style.css";
 import { completedProject } from "../../../helper/projectComplate";
-import {
-  buildStyles,
-  CircularProgressbar,
-} from "react-circular-progressbar";
+import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "./AnimatedProgressProvider";
 import { easeQuadInOut } from "d3-ease";
 import AnimatedProgressProvider from "./AnimatedProgressProvider";
-import 'react-circular-progressbar/dist/styles.css';
+import "react-circular-progressbar/dist/styles.css";
+import SectionTitle from "../../sectionTitle";
 
 function Users() {
   return (
     <div>
-      <div className="container martop">
-        <div className='p-20'>
-           <hr />
-        </div>
-        <div className="headingWithPra">
-          <h2>Our Achievements</h2>
-          <p>
-            We offer complete product development solutions that fit your
-            prduct's unique requirements.
-          </p>
-        </div>
+      <div className="container pb-80">
+        <SectionTitle
+          heading={"Our Achievements"}
+          paragraph={`We offer complete product development solutions that fit your
+          prduct's unique requirements.`}
+        />
         <div className="row mt-3">
           {completedProject.map((item) => {
             return (
@@ -32,8 +25,8 @@ function Users() {
                   valueStart={0}
                   valueEnd={item.value}
                   duration={1.4}
-                  easingFunction={easeQuadInOut}  
-                  repeat          
+                  easingFunction={easeQuadInOut}
+                  repeat
                 >
                   {(value) => {
                     return (
@@ -42,9 +35,9 @@ function Users() {
                         text={`${item.numbers}`}
                         background
                         backgroundPadding={6}
-                        className='CircularProgressbar-path'
+                        className="CircularProgressbar-path"
                         styles={buildStyles({
-                          backgroundColor:item.bgcolor,
+                          backgroundColor: item.bgcolor,
                           textColor: "#fff",
                           pathColor: "#fff",
                           trailColor: "transparent",

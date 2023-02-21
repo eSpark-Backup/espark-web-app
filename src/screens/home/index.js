@@ -29,12 +29,9 @@ const Home = () => {
         buttonText={"Learn More"}
         buttonUrl={"/services/"}
       />
-      {/* <Portfolio /> */}
       <WhyeSpark heading={"Why eSpark?"} />
-      <About id={2} />
       <ServicesRecreate link={currentRoute} />
       <Users />
-      {/* <Projects link={currentRoute} /> */}
       <Portfolio data={projects.slice(0, 4)} />
       <PartnerAbout />
       <LetsTalk />

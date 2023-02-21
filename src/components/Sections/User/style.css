@@ -24,16 +24,6 @@
   text-align: center;
 }
 
-.headingWithPra>h2 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700 !important;
-  font-size: 44px;
-  line-height: 100%;
-  padding-bottom: 15px;
-  text-align: center;
-  color: #3359a2 !important;
-}
 
 .headingWithPra>p {
   font-family: "Poppins";

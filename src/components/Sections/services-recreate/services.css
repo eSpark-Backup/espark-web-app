@@ -12,14 +12,10 @@
 }
 
 .bar {
-    width: 158.08px;
-    height: 0px;
-    left: 891px;
-    top: 2140px;
-    border: 2px solid #00A099;
+    width: 150px !important
 }
 
-.d-flex {
+.servicesWrap {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,10 +23,9 @@
 }
 
 .sliderWrapper {
-    height: 60vh;
     width: 80%;
     margin: auto;
-    margin-top: 10px;
+ 
 }
 
 .txtpara {

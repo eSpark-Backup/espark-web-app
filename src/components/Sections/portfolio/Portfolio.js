@@ -1,16 +1,15 @@
 import React from "react";
+import SectionTitle from "../../sectionTitle";
 import styles from "./style.module.css";
 
 const Portfolio = ({ data }) => {
   return (
-    <div className="container pt-5 mt-5">
-      <div className="p-20">
-        <hr />
-      </div>
-      <div className={styles.content}>
-        <h2>OUR PORTFOLIO</h2>
-        <p>Empowering decentralization, one project at a time</p>
-      </div>
+    <div className="container ptb-80">
+      <SectionTitle
+        heading={"Our Portfolio"}
+        paragraph={"Empowering decentralization, one project at a time"}
+        
+      />
       <div className="row pt-5 mt-3">
         {data?.map((item) => {
           return (
