@@ -31,7 +31,7 @@ export const clients = [
     name: "Briana Olson",
     designation: "Website WordPress specialist",
     testimonial:
-      "Although the project was very short, they came in with the right attitude and delivered amazing results. Things that were blocking us were suddenly unblocked, and things that weren't clear were suddenly made clear. All thanks to their experience and knowledge. I would definitely recommend it!",
+      "Although the project was very short, they came in with the right attitude and delivered amazing results.",
   },
   {
     _id: hash(),
