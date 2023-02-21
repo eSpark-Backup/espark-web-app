@@ -137,7 +137,7 @@ h6 {
 .h2,
 h1,
 h2 {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 700;
   line-height: 44px;
   letter-spacing: 0em;
@@ -206,7 +206,7 @@ h6 {
 }
 
 p {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -19195,7 +19195,7 @@ bar-nav .nav-item .dropdown-menu li a.active,
   border: none;
   border-radius: 0;
   padding: 0;
-  margin-top:8px!important;
+  margin-top: 8px !important;
 }
 
 .navbar-toggler:focus {
@@ -33724,7 +33724,7 @@ Responsive Grids
 
 
 .content>h2 {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700 !important;
   font-size: 44px;
@@ -33735,7 +33735,7 @@ Responsive Grids
 }
 
 .content>p {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

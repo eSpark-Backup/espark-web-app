@@ -5,13 +5,13 @@
 }
 
 .sociallink {
-   font-family: Poppins;
+   font-family: 'Poppins';
    transform: rotate(270deg);
 
 }
 
 .whyPoints {
-   font-family: Poppins;
+   font-family: 'Poppins';
    font-size: 22px;
    font-weight: 600 !important;
    line-height: 22px;
@@ -21,7 +21,7 @@
 }
 
 .whyPointsPara {
-   font-family: Poppins;
+   font-family: 'Poppins';
    font-size: 16px;
    font-weight: 400 !important;
    line-height: 22px;
@@ -31,7 +31,7 @@
 }
 
 .heading {
-   font-family: Poppins;
+   font-family: 'Poppins';
    font-size: 44px;
    font-weight: 700 !important;
    line-height: 44px;
@@ -41,7 +41,7 @@
 }
 
 .whyPara {
-   font-family: Poppins;
+   font-family: 'Poppins';
    font-size: 16px;
    font-weight: 400;
    line-height: 22px;
