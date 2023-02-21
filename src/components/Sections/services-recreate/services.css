@@ -1,0 +1,46 @@
+.hrLine {
+    width: 158.08px;
+    height: 0px;
+
+    border: 2px solid #00A099;
+}
+
+.servicesColor {
+    color: #3359A2;
+    font-size: 44px;
+    margin-top: 15px;
+}
+
+.bar {
+    width: 158.08px;
+    height: 0px;
+    left: 891px;
+    top: 2140px;
+    border: 2px solid #00A099;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sliderWrapper {
+    height: 60vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.txtpara {
+
+
+    font-weight: 400;
+    font-size: 16px;
+    /* or 22px */
+
+    text-align: center;
+
+    color: #000000;
+}
