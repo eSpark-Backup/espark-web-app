@@ -25,17 +25,49 @@ const NextBtn = (props) => {
     </div>
   );
 };
+
+const settings = {
+  autoplay: false,
+  dots: false,
+  initialSlide: 1,
+  swipe: false,
+  swipeToSlide: false,
+  infinite: true,
+  nextArrow: <NextBtn />,
+  prevArrow: <PreviousBtn />,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+  ],
+};
+
 const Testimonial = () => {
   return (
     <div className="testimonial">
       <div className="subtesti">
-        <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />}>
+        <Slider {...settings}>
           {clients?.map((item) => {
             return (
               <>
-                <div className="imgbox">
+                <div className="imgbox  ">
                   <img
-                    className="image"
+                    className="image "
                     src={item.image}
                     alt={item.testimonial}
                   />
@@ -49,6 +81,7 @@ const Testimonial = () => {
             );
           })}
         </Slider>
+        <div className="new_class"></div>
       </div>
     </div>
   );

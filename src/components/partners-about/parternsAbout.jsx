@@ -12,11 +12,7 @@ export default function PartnerAbout() {
         paragraph={""}
       />
           
-          <div className="row d-flex flex-row justify-content-center" >
-            <div id="testimonial" className=" testmonials col-sm-12 col-md-12 col-lg-10" >
               <Testimonial />
-            </div>
-          </div>
         </div>
       </div>
     </div>

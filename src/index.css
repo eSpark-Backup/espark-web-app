@@ -19040,6 +19040,8 @@ gb-headline-efd0cee8 .gb-icon {
   display: block;
   color: #4a6f8a;
   border-radius: 16px;
+  font-family: Poppins;
+  text-align: left;
 
 }
 
@@ -19195,7 +19197,7 @@ bar-nav .nav-item .dropdown-menu li a.active,
   border: none;
   border-radius: 0;
   padding: 0;
-  margin-top:8px!important;
+  margin-top: 8px !important;
 }
 
 .navbar-toggler:focus {
