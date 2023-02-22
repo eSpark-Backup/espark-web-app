@@ -4,17 +4,9 @@ import Testimonial from "../testimonial/Testimonial";
 
 export default function PartnerAbout() {
   return (
-    <div className="partnerWrapper ptb-80">
-      <div class=" row">
-        <div class="container">
-        <SectionTitle
-        heading={"Client Testimonials"}
-        paragraph={""}
-      />
-          
-              <Testimonial />
-        </div>
-      </div>
+    <div class="container">
+      <SectionTitle heading={"Client Testimonials"} paragraph={""} />
+      <Testimonial />
     </div>
   );
 }

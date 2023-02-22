@@ -60,7 +60,6 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
   };
 
   const sendEmail = (e) => {
-    console.log("e")
     e.preventDefault();
     emailjs.init("bo0d42dcDbZL1U83o");
 

@@ -8,7 +8,7 @@ const LayoutOne = ({ children }) => {
     <div id="__next">
       <Header />
       <div className={styles.gaps}>{children}</div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

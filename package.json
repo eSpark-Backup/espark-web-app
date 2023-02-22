@@ -25,7 +25,6 @@
     "react-icons": "^4.7.1",
     "react-moment": "^1.1.2",
     "react-move": "^6.5.0",
-    "react-multi-carousel": "^2.8.2",
     "react-owl-carousel2": "^0.3.0",
     "react-responsive-carousel": "^3.2.23",
     "react-responsive-modal": "^6.4.1",
@@ -36,7 +35,6 @@
     "react-slick": "^0.29.0",
     "react-slideshow-image": "^4.1.1",
     "react-snap": "^1.23.0",
-    "react-tiny-popover": "^7.2.0",
     "serve": "^14.1.2",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
@@ -45,8 +43,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "postbuild": "react-snap"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

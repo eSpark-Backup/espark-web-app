@@ -7,12 +7,11 @@ import {
 } from "react-icons/md";
 
 const PreviousBtn = (props) => {
-  console.log(props);
+
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
       <MdOutlineArrowBackIos className="arrowSize" />
-      {/* <ArrowBackIos style={{ color: "gray", fontSize: "45px" }} /> */}
     </div>
   );
 };
@@ -21,7 +20,6 @@ const NextBtn = (props) => {
   return (
     <div className={className} onClick={onClick}>
       <MdOutlineArrowForwardIos className="arrowSize" />
-      {/* <ArrowForwardIos style={{ color: "gray", fontSize: "45px" }} /> */}
     </div>
   );
 };
