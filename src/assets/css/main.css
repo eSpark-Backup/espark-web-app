@@ -83,8 +83,8 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 1em;
-    display: none;
+    width: 0.5em;
+    
 }
 
 body::-webkit-scrollbar-track {

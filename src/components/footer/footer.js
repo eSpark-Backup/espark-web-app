@@ -141,11 +141,11 @@ const Footer = () => {
                       <MdAttachEmail /> Info@eSparkConsultingGroup.com
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="/">
                       <BsGlobe /> www.eSparkConsultingGroup.com
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a
                       href="https://www.google.com/maps/dir//eSpark+Consulting+Group+301%2FB+3rd+Floor+%26+401%2FA+4th+Floor,+Blossom+Trade+Centre+Block+1+Gulistan-e-Johar,+Karachi,+74300/@24.929158,67.115604,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb33feab1c28595:0xa3b2a5dc2f97a82e"
