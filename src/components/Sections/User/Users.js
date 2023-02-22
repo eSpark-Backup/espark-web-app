@@ -16,11 +16,12 @@ function Users() {
           heading={"Our Achievements"}
           paragraph={`We offer complete product development solutions that fit your
           prduct's unique requirements.`}
+          portFolio="portfolio"
         />
         <div className="row mt-3">
           {completedProject.map((item) => {
             return (
-              <div class="col-sm-6 col-md-6 col-lg-3  pt-5 ">
+              <div class="col-6 col-sm-6 col-md-6 col-lg-3  pt-5 ">
                 <AnimatedProgressProvider
                   valueStart={0}
                   valueEnd={item.value}
