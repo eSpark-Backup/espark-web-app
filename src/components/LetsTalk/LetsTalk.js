@@ -6,6 +6,7 @@ import { toast } from "react-hot-toast";
 import Button from "../button/button";
 import style from "./style.module.css";
 import SectionTitle from "../sectionTitle";
+
 const LetsTalk = ({ modal, modelClose, link, h1 }) => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
@@ -18,6 +19,7 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
 
   let array = [];
   let limit = 15;
+
 
   const handleUpdateIntrestData = (e, index) => {
     const data = array.find((item) => item === e);
@@ -58,6 +60,7 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
   };
 
   const sendEmail = (e) => {
+    console.log("e")
     e.preventDefault();
     emailjs.init("bo0d42dcDbZL1U83o");
 
@@ -227,7 +230,7 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                       </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 d-flex justify-content-center justify-content-sm-start ">
-                      <Button type="submit" title="Send Message" design={1} />
+                      <Button type="submit" onClick={sendEmail}  title="Send Message" design={0} />
                     </div>
                   </div>
                 </form>

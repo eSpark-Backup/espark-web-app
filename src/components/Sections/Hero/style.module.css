@@ -15,7 +15,7 @@
 }
 
 .paraText {
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -23,19 +23,69 @@
     text-align: left;
     padding-bottom: 30px;
     margin-left: 10px;
+    color: #3A3A3A;
+
 }
 
 .ml-main-section {
     background-repeat: no-repeat;
 }
 
+
 .heading {
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-size: 44px;
-    font-weight: 700;
+    font-weight: 700 !important;
     line-height: 58px;
     letter-spacing: 0em;
     text-align: left;
     margin-left: 10px;
-    color: #3359A2 !important;
+}
+
+.headingColumnMobile {
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+    .headingColumn {
+        display: none !important;
+    }
+    .ml-banner-image {
+        height: 700;
+        width: 100vw;
+    }
+    
+
+    button {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px !important;
+        line-height: 100%;
+        color: #FFFFFF;
+    }
+
+    .ml-main-section {
+        background-position: 50%;
+        padding-top: 20px;
+        padding-bottom: 40px !important;
+    }
+
+    .headingColumnMobile {
+        display: block;
+        padding: 5%;
+    }
+
+    .paraText {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .heading {
+        font-size: 28px;
+        line-height: 37px;
+    }
 }

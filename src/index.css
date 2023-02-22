@@ -137,7 +137,7 @@ h6 {
 .h2,
 h1,
 h2 {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 700;
   line-height: 44px;
   letter-spacing: 0em;
@@ -206,7 +206,7 @@ h6 {
 }
 
 p {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -18404,10 +18404,6 @@ body {
   scroll-behavior: inherit
 }
 
-img {
-  max-width: 100%
-}
-
 a {
   color: #0e314c;
   display: inline-block;
@@ -33726,7 +33722,7 @@ Responsive Grids
 
 
 .content>h2 {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700 !important;
   font-size: 44px;
@@ -33737,7 +33733,7 @@ Responsive Grids
 }
 
 .content>p {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

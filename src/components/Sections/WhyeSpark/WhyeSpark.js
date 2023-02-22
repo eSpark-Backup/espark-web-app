@@ -19,7 +19,7 @@ function WhyeSpark({ heading }) {
               {sociallinks.map((items) => {
                 return (
                   <div className={` col-lg-12 ${styles.sociallink}`}>
-                    <Button title={items.name} link={items.url} design={2} />
+                    <Button title={items.name} link={items.url} design={11} />
                   </div>
                 );
               })}
@@ -44,8 +44,8 @@ function WhyeSpark({ heading }) {
             >
               {sociallinks.map((items) => {
                 return (
-                  <div
-                    className={` col-lg-4 col-md-4 col-sm-12 col-xs-12 p-10`}
+                  <div id={styles["whylinksbtn"]}
+                    className="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-10"
                   >
                     <Button title={items.name} link={items.url} design={2} />
                   </div>
