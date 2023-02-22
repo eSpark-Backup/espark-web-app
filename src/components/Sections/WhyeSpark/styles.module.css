@@ -70,6 +70,10 @@
 
 }
 
+.icon {
+   padding-right: 10px;
+}
+
 #whylinksbtn {
    padding: 5px;
 }
@@ -78,6 +82,8 @@
    #whylinks {
       display: none !important;
    }
+
+ 
 
    #whylinksmobile button {
       font-size: 22px !important;

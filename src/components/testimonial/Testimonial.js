@@ -50,6 +50,7 @@ const settings = {
         slidesToScroll: 1,
         infinite: true,
         dots: true,
+        arrows: false,
       },
     },
   ],

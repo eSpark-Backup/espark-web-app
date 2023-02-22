@@ -58,11 +58,11 @@ function WhyeSpark({ heading }) {
             >
               {whypoints.map((items) => {
                 return (
-                  <div className={`${styles.points} d-flex   `}>
-                    <div className="col-lg-2 col-md-2 col-sm-2 d-flex justify-content-around">
+                  <div className={`${styles.points} d-flex  `}>
+                    <div className={`${styles.icon} col-sm-4 d-flex justify-content-around`}>
                       <FaCheckCircle size={25} color={"#11A79c"} />
                     </div>
-                    <div className="col-lg-10 col-md-10 col-sm-10">
+                    <div className="col-sm-8">
                       <h4 className={styles.whyPoints}>{items.name}</h4>
                       <p className={styles.whyPointsPara}>{items.content}</p>
                     </div>
