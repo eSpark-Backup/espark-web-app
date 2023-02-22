@@ -2,25 +2,26 @@
     width: 327px;
     height: 325px;
     background-color: #F5F5F5;
-    box-shadow: 0px 4px 10px #F4F2F2;
+    box-shadow: 0px -2px 3px 1px #bbbbbb;
     border-radius: 5px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: auto;
     transition: background-color 1s;
     margin-bottom: 5px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .appDevWrapper:hover {
     background-color: #3359A2;
     transition: background-color 1s ease-in-out;
 }
+
 .appDevWrapper:hover .logo-img path {
     fill: #ffff;
-  }
+}
 
 .appDevWrapper:hover .txtCardService_para {
     display: block;
@@ -72,9 +73,9 @@
     width: 327px;
     height: 80px;
     background: #F5F5F5;
-    box-shadow: 0px 4px 10px #F4F2F2;
-    border-radius: 5px;
-    border: 3px solid #F9F9F9;
+    box-shadow: 0px 3px 3px 1px #bbbbbb;
+    border-radius: 0px 0px 5px 5px;
+    /* border: 3px solid #F9F9F9; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -129,14 +130,18 @@
 }
 
 
-.cardAnimation:hover:after, .cardAnimation:hover:before {
+.cardAnimation:hover:after,
+.cardAnimation:hover:before {
     width: 50%;
 }
+
 .cardAnimation:before {
     right: 0;
     border-radius: 0 4px 4px 0;
 }
-.cardAnimation:after, .cardAnimation:before {
+
+.cardAnimation:after,
+.cardAnimation:before {
     content: "";
     position: absolute;
     top: 0;
@@ -145,20 +150,31 @@
     background: #11A79c;
     z-index: -1;
 }
-.cardAnimation, .cardAnimation:after, .cardAnimation:before {
+
+.cardAnimation,
+.cardAnimation:after,
+.cardAnimation:before {
     transition: .5s;
 }
-*, :after, :before {
+
+*,
+:after,
+:before {
     box-sizing: border-box;
 }
-.cardAnimation:hover:after, .cardAnimation:hover:before {
+
+.cardAnimation:hover:after,
+.cardAnimation:hover:before {
     width: 50%;
 }
+
 .cardAnimation:after {
     left: 0;
     border-radius: 4px 0 0 4px;
 }
-.cardAnimation:after, .cardAnimation:before {
+
+.cardAnimation:after,
+.cardAnimation:before {
     content: "";
     position: absolute;
     top: 0;
@@ -167,9 +183,15 @@
     background: #11A79c;
     z-index: -1;
 }
-.cardAnimation, .cardAnimation:after, .cardAnimation:before {
+
+.cardAnimation,
+.cardAnimation:after,
+.cardAnimation:before {
     transition: .5s;
 }
-*, :after, :before {
+
+*,
+:after,
+:before {
     box-sizing: border-box;
 }

@@ -4,10 +4,10 @@ import { projects } from "../../helper/projects";
 import "./style.css";
 import Title from "../../components/title/title";
 import Slider from "react-slick";
-import { shapes } from './../../helper/ImageUrl';
+import { shapes } from "./../../helper/ImageUrl";
+import Portfolio from "../../components/Sections/portfolio/Portfolio";
 
 export default function Projects({ link }) {
-
   const settings = {
     dots: false,
     className: "center",
@@ -76,25 +76,21 @@ export default function Projects({ link }) {
   return (
     <React.Fragment>
       {link !== "/" ? (
-        <div className="project-slider mt-5 py-5">
-          <Slider {...settings}>
+        <div className="project-slider ">
+          <Slider>
             {projects.map((item, index) => {
               return (
                 <div key={1}>
-                  <img
-                    src={item.data.image}
-                    alt="Third slide"
-                  />
-                
+                  <img src={item.data.image} alt="Third slide" />
                 </div>
               );
             })}
           </Slider>
           {shapes?.map((item, index) => (
-          <div key={index} className={item.className}>
-            <img src={item.imgUrl} alt={item.alt} />{" "}
-          </div>
-        ))}
+            <div key={index} className={item.className}>
+              <img src={item.imgUrl} alt={item.alt} />{" "}
+            </div>
+          ))}
         </div>
       ) : (
         <Title
@@ -105,7 +101,7 @@ export default function Projects({ link }) {
       )}
 
       {link !== "/" ? (
-        <ProjectCard data={projects} link={link} />
+        <Portfolio data={projects} link={link} />
       ) : (
         <ProjectCard data={projects.slice(0, 6)} link={link} />
       )}

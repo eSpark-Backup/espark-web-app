@@ -61,7 +61,7 @@ const ServiceStyleFive = ({ data, link }) => {
           })}
 
 
-          {link == '/' ?
+          {link === '/' ?
             <Button title="Go To Services" link="/services" design={1} />
             : ""}
         </div>

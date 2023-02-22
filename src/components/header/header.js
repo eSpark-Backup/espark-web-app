@@ -113,7 +113,7 @@ const Header = () => {
                       </svg>
                     </span>
                   </Link>
-                  <ul class="dropdown-menu  list-bgrd">
+                  <ul class="dropdown-menu list-bgrd">
                     {newData?.slice(0, 4)?.map((child) => {
                       return (
                         <>
@@ -127,9 +127,13 @@ const Header = () => {
                               handleMouseLeave(child.id);
                             }}
                           >
-                            <Link class="nav-link" to={`#`}>
-                              {child.dropDown == true ? (
-                                child.id == dropDownId ? (
+                            <Link
+                              class="nav-link d-flex justify-content-between align-items-center"
+                              to={`#`}
+                            >
+                              {child.name}
+                              {child.dropDown === true ? (
+                                child.id === dropDownId ? (
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="16"
@@ -161,9 +165,8 @@ const Header = () => {
                               ) : (
                                 ""
                               )}
-                              {child.name}
                             </Link>
-                            {child.dropDown == true && (
+                            {child.dropDown === true && (
                               <ul class="dropdown-menu menuDropDown  list-bgrd">
                                 {child?.childs.map((item) => {
                                   return (
@@ -199,7 +202,7 @@ const Header = () => {
                     setIsNavCollapsed(false);
                   }}
                 >
-                  <Link class="nav-link" to="/about">
+                  <Link class="nav-link" to="/project">
                     <span
                       class={selected == 2 ? "itemTxt selected" : "itemTxt"}
                     >
@@ -214,7 +217,7 @@ const Header = () => {
                     setIsNavCollapsed(false);
                   }}
                 >
-                  <Link class="nav-link" to="/project">
+                  <Link class="nav-link" to="/careers">
                     <span
                       class={selected == 3 ? "itemTxt selected" : "itemTxt "}
                     >
@@ -229,7 +232,7 @@ const Header = () => {
                     setIsNavCollapsed(false);
                   }}
                 >
-                  <Link class="nav-link" to="/contact">
+                  <Link class="nav-link" to="/blog">
                     <span
                       class={selected == 4 ? "itemTxt selected" : "itemTxt "}
                     >

@@ -78,7 +78,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-2 col-md-6 col-sm-6 footer" >
+            <div className="col-lg-2 col-md-6 col-sm-6 footer">
               <div className="single-footer-widget pl-5">
                 <h3>Explore</h3>
                 <ul className="list">
@@ -132,24 +132,30 @@ const Footer = () => {
                 <h3>Contact Detail</h3>
                 <ul className="list">
                   <li>
-                    <Link to="tel:+923336006055">
+                    <a href="tel:+923336006055">
                       <FaPhoneAlt /> +92(333-6006055)
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to="mailto:info@eSparkConsultingGroup.com">
+                    <a href="mailto:info@eSparkConsultingGroup.com">
                       <MdAttachEmail /> Info@eSparkConsultingGroup.com
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to="/">
+                    <a href="/">
                       <BsGlobe /> www.eSparkConsultingGroup.com
-                    </Link>
+                    </a>
                   </li>
-                  <li >
-                    <Link to="/">
-                     <FaMapMarkerAlt />   301/B 3rd Floor & 401/A 4th Floor,Blossom Trade Centre,Block 1, Gulistan-e-Johar Karachi,74300
-                    </Link>
+                  <li>
+                    <a
+                      href="https://www.google.com/maps/dir//eSpark+Consulting+Group+301%2FB+3rd+Floor+%26+401%2FA+4th+Floor,+Blossom+Trade+Centre+Block+1+Gulistan-e-Johar,+Karachi,+74300/@24.929158,67.115604,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb33feab1c28595:0xa3b2a5dc2f97a82e"
+                      target="_blank"
+                      style={{ width: "90%", textAlign: "left" }}
+                    >
+                      <FaMapMarkerAlt /> 301/B 3rd Floor & 401/A 4th
+                      Floor,Blossom Trade Centre,Block 1, Gulistan-e-Johar
+                      Karachi,74300
+                    </a>
                   </li>
                 </ul>
               </div>

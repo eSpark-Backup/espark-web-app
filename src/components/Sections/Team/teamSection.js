@@ -1,7 +1,5 @@
 import React from "react";
-import { shapes } from "../../../helper/ImageUrl";
 import { team } from "../../../helper/team";
-import Title from "../../title/title";
 import "./style.css";
 
 import { useState } from "react";

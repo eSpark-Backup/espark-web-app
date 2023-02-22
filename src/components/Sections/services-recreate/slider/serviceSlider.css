@@ -8,7 +8,7 @@
     align-items: center;
     cursor: pointer;
     position: absolute;
-    top: 150px;
+    top: 195px;
     left: 1550px;
 }
 
@@ -22,8 +22,8 @@
     align-items: center;
     cursor: pointer;
     position: absolute;
-    top: 155px;
-    right: 1600px;
+    top: 195px;
+    right: 1550px;
 }
 
 .sliderMobileResponsive{

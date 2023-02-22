@@ -15,7 +15,9 @@ function Herosection({
       <div class="ml-main-section">
         <div class="container">
           <div class="row">
-            <div class={`${styles.headingColumn} col-lg-6 col-md-12 col-sm-12`}>
+            <div
+              class={`${styles.headingColumn} col-lg-6 col-md-12 col-sm-12 `}
+            >
               <div class="ml-banner-content">
                 <h1 className={styles.heading}>{title}</h1>
 
@@ -26,9 +28,12 @@ function Herosection({
                 )}
               </div>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12">
-              <img src={images} alt="image" />
-            </div>
+
+            <img
+              src={images}
+              alt="image"
+              class="col-lg-6 col-md-12 col-sm-12 text-center"
+            />
           </div>
         </div>
       </div>

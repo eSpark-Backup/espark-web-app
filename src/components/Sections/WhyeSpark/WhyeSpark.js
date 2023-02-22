@@ -9,17 +9,17 @@ import SectionTitle from "../../sectionTitle";
 function WhyeSpark({ heading }) {
   return (
     <div>
-      <div className="solutions-area pt-80">
+      <div className="solutions-area pt-80 ">
         <div className="container">
-          <div className="row ">
+          <div className="row">
             <div
               id={styles["whylinks"]}
-              className="col-lg-2 col-md-12 d-flex flex-column justify-content-around text-center  "
+              className="col-lg-2 col-md-12 d-flex flex-column justify-content-around"
             >
               {sociallinks.map((items) => {
                 return (
-                  <div className={` col-lg-12 ${styles.sociallink}`}>
-                    <Button title={items.name} link={items.url} design={11} />
+                  <div className={`col-lg-12 ${styles.sociallink}`}>
+                    <Button title={items.name} link={items.url} design={12} />
                   </div>
                 );
               })}
@@ -44,7 +44,8 @@ function WhyeSpark({ heading }) {
             >
               {sociallinks.map((items) => {
                 return (
-                  <div id={styles["whylinksbtn"]}
+                  <div
+                    id={styles["whylinksbtn"]}
                     className="col-lg-4 col-md-4 col-sm-12 col-xs-12 p-10"
                   >
                     <Button title={items.name} link={items.url} design={2} />

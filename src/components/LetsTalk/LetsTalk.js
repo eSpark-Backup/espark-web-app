@@ -20,7 +20,6 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
   let array = [];
   let limit = 15;
 
-
   const handleUpdateIntrestData = (e, index) => {
     const data = array.find((item) => item === e);
 
@@ -229,7 +228,12 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                       </div>
                     </div>
                     <div class="col-lg-12 col-sm-12 d-flex justify-content-center justify-content-sm-start ">
-                      <Button type="submit" onClick={sendEmail}  title="Send Message" design={0} />
+                      <Button
+                        type="submit"
+                        onClick={sendEmail}
+                        title="Send Message"
+                        design={1}
+                      />
                     </div>
                   </div>
                 </form>

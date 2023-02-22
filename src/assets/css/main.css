@@ -71,7 +71,7 @@
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    font-family: 'Poppins' !important;
     font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
     line-height: var(--bs-body-line-height);
@@ -84,6 +84,7 @@ body {
 
 body::-webkit-scrollbar {
     width: 1em;
+    display: none;
 }
 
 body::-webkit-scrollbar-track {
@@ -127,6 +128,7 @@ h6 {
     line-height: 1.2;
     font-weight: 500 !important;
     color: #3359a2;
+    font-family: 'Poppins' !important;
 }
 
 .h1,
@@ -139,6 +141,7 @@ h2 {
     letter-spacing: 0em;
     font-size: 44px;
     color: #3359a2;
+    font-family: 'Poppins' !important;
 }
 
 @media (min-width:1200px) {
@@ -202,7 +205,7 @@ h6 {
 }
 
 p {
-    font-family: 'Poppins';
+    font-family: 'Poppins' !important;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -230,7 +233,8 @@ address {
 
 ol,
 ul {
-    padding-left: 2rem
+    padding-left: 2rem;
+    font-family: 'Poppins' !important;
 }
 
 dl,
@@ -262,7 +266,8 @@ blockquote {
 
 b,
 strong {
-    font-weight: bolder
+    font-weight: bolder;
+    font-family: 'Poppins' !important;
 }
 
 .small,
@@ -301,6 +306,7 @@ a {
     line-height: 23px;
     letter-spacing: 0em;
     text-align: center;
+    font-family: 'Poppins' !important;
 }
 
 a:hover {
@@ -19009,14 +19015,13 @@ gb-headline-efd0cee8 .gb-icon {
 }
 
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu li a {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     padding: 8px 15px;
     margin: 0;
     display: block;
     color: #4a6f8a;
     border-radius: 16px;
-    font-family: Poppins;
     text-align: left;
 
 }
@@ -28707,6 +28712,9 @@ blockquote:after {
     z-index: 1;
     background-color: #e8f1f2
 }
+.footer-area h3 {
+    color: #11A79c;
+}
 
 .single-footer-widget .logo {
     margin-bottom: 20px;
@@ -33690,7 +33698,8 @@ blockquote:after {
     text-align: center;
     margin-top: 10px;
 }
-.portfolio>h2{
+
+.portfolio>h2 {
     font-family: Poppins;
     font-style: normal;
     font-weight: 700 !important;
@@ -33699,8 +33708,9 @@ blockquote:after {
     color: #3359a2 !important;
     text-align: center;
     margin-top: 15px;
-  }
-  .portfolio>p {
+}
+
+.portfolio>p {
     font-family: Poppins;
     font-style: normal;
     font-weight: 400;
@@ -33710,28 +33720,29 @@ blockquote:after {
     text-align: center;
     margin-top: 10px;
     margin: 0px 80px;
-  }
-  
-  @media (max-width:408px ){
+}
+
+@media (max-width:408px) {
     .portfolio>p {
-      font-family: Poppins;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 140%;
-      color: #000000 !important;
-      text-align: center;
-      margin-top: 10px;
-      margin: 0px 60px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #000000 !important;
+        text-align: center;
+        margin-top: 10px;
+        margin: 0px 60px;
     }
-    .portfolio>h2{
-      font-family: Poppins;
-      font-style: normal;
-      font-weight: 700 !important;
-      font-size: 30px;
-      line-height: 100%;
-      color: #3359a2 !important;
-      text-align: center;
-      margin-top: 15px;
+
+    .portfolio>h2 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 700 !important;
+        font-size: 30px;
+        line-height: 100%;
+        color: #3359a2 !important;
+        text-align: center;
+        margin-top: 15px;
     }
 }

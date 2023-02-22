@@ -9,7 +9,10 @@ function ServicesRecreate() {
       <SectionTitle
         heading={"Our Services"}
         paragraph={
-          " We offer complete product development solutions that fit your"
+          <p>
+            We offer complete product development solutions that fit your <br />
+            product’s unique requirements"
+          </p>
         }
       />
 

@@ -7,7 +7,6 @@ import {
 } from "react-icons/md";
 
 const PreviousBtn = (props) => {
-
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
@@ -40,7 +39,7 @@ const settings = {
         slidesToShow: 2,
         slidesToScroll: 1,
         infinite: true,
-        dots: true,
+        dots: false,
       },
     },
     {
@@ -49,8 +48,7 @@ const settings = {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true,
-        arrows: false,
+        dots: false,
       },
     },
   ],

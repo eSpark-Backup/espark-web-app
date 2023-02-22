@@ -1,7 +1,6 @@
 import "./App.css";
 import AppWraper from "./router";
 import { Toaster } from "react-hot-toast";
-import { renderToString } from "react-dom/server";
 import { HelmetProvider } from "react-helmet-async";
 import { useEffect, useState } from "react";
 
@@ -9,23 +8,23 @@ function App() {
   const [isVisible, setIsVisible] = useState(0);
   const helmetContext = {};
 
-  const listenToScroll = () => {
-    let heightToHideFrom = 10;
-    const winScroll =
-      document.body.scrollTop || document.documentElement.scrollTop;
+  // const listenToScroll = () => {
+  //   let heightToHideFrom = 10;
+  //   const winScroll =
+  //     document.body.scrollTop || document.documentElement.scrollTop;
 
-    if (winScroll > heightToHideFrom) {
-      isVisible && // to limit setting state only the first time
-        setIsVisible(winScroll);
-    } else {
-      setIsVisible(winScroll);
-    }
-  };
+  //   if (winScroll > heightToHideFrom) {
+  //     isVisible && // to limit setting state only the first time
+  //       setIsVisible(winScroll);
+  //   } else {
+  //     setIsVisible(winScroll);
+  //   }
+  // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", listenToScroll);
-    return () => window.removeEventListener("scroll", listenToScroll);
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", listenToScroll);
+  //   return () => window.removeEventListener("scroll", listenToScroll);
+  // }, []);
 
   return (
     <>

@@ -1,15 +1,12 @@
 import React from "react";
-import About from "../../components/Sections/About/About";
 import WhyeSpark from "../../components/Sections/WhyeSpark/WhyeSpark";
 import Herosection from "../../components/Sections/Hero/Herosection";
 import Users from "./../../components/Sections/User/Users";
-import Services from "../services";
 import PartnerAbout from "../../components/partners-about/parternsAbout";
-import Projects from "../projects/projects";
 import LetsTalk from "../../components/LetsTalk/LetsTalk";
 import Portfolio from "../../components/Sections/portfolio/Portfolio";
 import { projects } from "../../helper/projects";
-import heroImage from "../../../src/assets/images/hero-section/hero-image.svg";
+import heroImage from "../../../src/assets/images/hero-section/banner-image.png";
 import ServicesRecreate from "./../../components/Sections/services-recreate/index";
 
 const Home = () => {

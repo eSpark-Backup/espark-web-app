@@ -4,12 +4,15 @@
     width: 100%;
     background-color: #D9D9D9;
 }
-.customColor{
-    background-color: transparent!important;
+
+.customColor {
+    background-color: transparent !important;
 }
-.customColor:hover{
+
+.customColor:hover {
     box-shadow: none;
 }
+
 .list-bgrd {
     background-color: transparent !important;
     width: 300px !important;
@@ -52,20 +55,22 @@
 
 .menuDropDown {
     left: 0px;
-    
+
 }
 
 .marginEnd {
     margin-left: auto !important;
 }
-.autoSize{
-    overflow: inherit!important;
+
+.autoSize {
+    overflow: inherit !important;
 }
+
 .selected {
-        border-bottom: 5px solid #00A099;
-        width: 80px;
-        padding: 5px;
-  }
+    border-bottom: 5px solid #00A099;
+    width: 80px;
+    padding: 5px;
+}
 
 
 @media screen and (max-width: 700px) {
