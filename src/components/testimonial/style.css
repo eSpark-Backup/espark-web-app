@@ -60,7 +60,8 @@
 }
 
 .testimonial .slick-dots button {
-  box-shadow: none
+  box-shadow: none;
+  background-color: transparent !important;
 }
 
 .testimonial .imgbox {
