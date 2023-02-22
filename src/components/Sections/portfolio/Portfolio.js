@@ -6,8 +6,9 @@ const Portfolio = ({ data }) => {
   return (
     <div className="container ptb-80">
       <SectionTitle
-        heading={"Our Portfolio"}
+        heading={"OUR PORTFOLIO"}
         paragraph={"Empowering decentralization, one project at a time"}
+        portFolio="portfolio"
         
       />
       <div className="row pt-5 mt-3">

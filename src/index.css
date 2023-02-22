@@ -33742,3 +33742,49 @@ Responsive Grids
   text-align: center;
   margin-top: 10px;
 }
+
+.portfolio>h2{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 40px;
+  line-height: 100%;
+  color: #3359a2 !important;
+  text-align: center;
+  margin-top: 15px;
+}
+.portfolio>p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000 !important;
+  text-align: center;
+  margin-top: 10px;
+  margin: 0px 80px;
+}
+
+@media (max-width:408px ){
+  .portfolio>p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000 !important;
+    text-align: center;
+    margin-top: 10px;
+    margin: 0px 60px;
+  }
+  .portfolio>h2{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 30px;
+    line-height: 100%;
+    color: #3359a2 !important;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
