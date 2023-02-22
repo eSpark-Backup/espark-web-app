@@ -59,10 +59,15 @@
   color: #2B4E89;
 }
 
+.testimonial .slick-dots button {
+  box-shadow: none;
+  background-color: transparent !important;
+}
+
 .testimonial .imgbox {
   display: flex;
   justify-content: center;
- 
+
 
 }
 

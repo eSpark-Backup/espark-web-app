@@ -28,7 +28,7 @@ button:hover {
 }
 
 button {
-    background-color: #11A79c !important;
+    background-color: #11A79c;
     color: #ffff !important;
     font-family: 'Poppins';
     font-size: 20px;
