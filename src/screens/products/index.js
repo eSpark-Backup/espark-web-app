@@ -27,19 +27,7 @@ const Products = () => {
         }
         image={productData?.image}
       />
-      {/* <input type="checkbox" id="switch" />
-      <div class="app">
-        <div class="body">
-          <div class="content">
-            <label for="switch" onClick={(e) => console.log(e.target)}>
-              <div class="toggle" ></div>
-              <div class="names">
-                
-              </div>
-            </label>
-          </div>
-        </div>
-      </div> */}
+     
       <div className="text-center">
         <div class="multi-button">
           {products.map((item) => {

@@ -55,25 +55,18 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 47px;
-  /* or 27px */
-
   text-align: center;
-
   color: #2B4E89;
 }
 
 .testimonial .imgbox {
   display: flex;
   justify-content: center;
-  /* margin-bottom: -4%; */
+ 
 
 }
 
 .testimonial .testibox {
-
-  /* padding: 120px; */
-  /* border-radius: 15px; */
-  /* padding-bottom: 20px; */
   padding-top: 5%;
 
 
@@ -109,14 +102,10 @@
 .testimonial {
   display: flex;
   justify-Content: center;
-  margin-Top: 50px;
+  margin-Top: 0px;
 }
 
 .subtesti {
   width: 100%;
   text-Align: center;
-
 }
-
-
-.bigdata-feedback-area .row {}

@@ -237,17 +237,6 @@ const Header = () => {
                     </span>
                   </Link>
                 </li>
-
-                {/* <li class="nav-item" onClick={() => setIsNavCollapsed(false)}>
-                  <Link class="nav-link" to="/products">
-                    Products
-                  </Link>
-                </li>
-                <li class="nav-item" onClick={() => setIsNavCollapsed(false)}>
-                  <Link class="nav-link" to="/careers">
-                    Careers
-                  </Link>
-                </li> */}
               </ul>
             </div>
 

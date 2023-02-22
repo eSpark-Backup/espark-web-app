@@ -16,7 +16,6 @@ function Features({ heading }) {
       <div class="solutions-area pt-80">
         <div class="container">
           <div class="section-title">
-            {/* <span class="sub-title">{heading}</span> */}
             <h2>{heading}</h2>
             <div class="bar"></div>
             <p>
@@ -30,30 +29,12 @@ function Features({ heading }) {
                 <div class="icon">
                   <img src={icon4} alt="image" />
                 </div>
-                <h3>
-                    Marketing
-                </h3>
+                <h3>Marketing</h3>
                 <p>
-                eSpark is a full-service digital marketing agency with over four years of experience delivering the most impressive results for many customers across a number of industries.
+                  eSpark is a full-service digital marketing agency with over
+                  four years of experience delivering the most impressive
+                  results for many customers across a number of industries.
                 </p>
-                {/* <a class="learn-more-btn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewbox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="8" x2="12" y2="16"></line>
-                    <line x1="8" y1="12" x2="16" y2="12"></line>
-                  </svg>
-                  Learn More
-                </a> */}
               </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-md-6">
@@ -61,30 +42,12 @@ function Features({ heading }) {
                 <div class="icon">
                   <img src={icon5} alt="image" />
                 </div>
-                <h3>
-                Technology
-                </h3>
+                <h3>Technology</h3>
                 <p>
-                Here at eSpark, we deliver an array of tech-based solutions. These include delivering software, programming, networking and project management solutions.
+                  Here at eSpark, we deliver an array of tech-based solutions.
+                  These include delivering software, programming, networking and
+                  project management solutions.
                 </p>
-                {/* <a class="learn-more-btn" href="/service">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewbox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="8" x2="12" y2="16"></line>
-                    <line x1="8" y1="12" x2="16" y2="12"></line>
-                  </svg>
-                  Learn More
-                </a> */}
               </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-md-6">
@@ -92,55 +55,15 @@ function Features({ heading }) {
                 <div class="icon">
                   <img src={icon6} alt="image" />
                 </div>
-                <h3>
-                    Development
-                </h3>
+                <h3>Development</h3>
                 <p>
-                Our developers have enough expertise to develop your desired programs. Here you can find top-notch developers. Our software & applications are compatible.
+                  Our developers have enough expertise to develop your desired
+                  programs. Here you can find top-notch developers. Our software
+                  & applications are compatible.
                 </p>
-                {/* <a class="learn-more-btn" href="/service">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewbox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="8" x2="12" y2="16"></line>
-                    <line x1="8" y1="12" x2="16" y2="12"></line>
-                  </svg>
-                  Learn More
-                </a> */}
               </div>
             </div>
-            {/* <div class="col-lg-3 col-sm-6 col-md-6">
-              <div class="single-solutions-box">
-                <div class="icon">
-                  <img src={icon7} alt="image" />
-                </div>
-                <h3>
-                  <Link to={"/service"}>
-                    <a>Security &amp; Surveillance</a>
-                  </Link>
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod
-                  tempor incididunt ut labore dolore magna aliqua.
-                </p>
-                <a class="learn-more-btn">
-                  <Link to={"/service"}>
-                    <i data-feather="plus-circle"></i> Learn More
-                  </Link>
-                </a>
-              </div>
-            </div> */}
           </div>
-          {/* <ServiceStyleFive data={services} /> */}
         </div>
         <div class="shape1">
           <img src={shape5} alt="shape" />

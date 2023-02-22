@@ -5,7 +5,7 @@ import shape4 from "../../../../src/assets/images/shape4.svg";
 import shape5 from "../../../../src/assets/images/shape5.png";
 
 import about4 from "../../../../src/assets/images/about4.png";
-import styles from "./style.module.css"
+import styles from "./style.module.css";
 
 import { Link } from "react-router-dom";
 
@@ -23,13 +23,12 @@ function About({ id, img, p, h1 }) {
               </div>
               <div class="col-lg-6 col-md-12">
                 <div class="ml-about-content">
-                  {/* <span class="sub-title">About Us</span> */}
                   <h2>
                     {h1 ? h1 : "Engaging New Audiences Through Smart Approach "}
                   </h2>
                   {h1 ? null : <div class="bar"></div>}
                   {p ? (
-                    <p >{p}</p>
+                    <p>{p}</p>
                   ) : (
                     <>
                       <p>
@@ -82,7 +81,6 @@ function About({ id, img, p, h1 }) {
             <div class="row align-items-center">
               <div class="col-lg-6 col-md-12">
                 <div class="ml-about-content">
-                  {/* <span class="sub-title">About Us</span> */}
                   <h2>
                     {h1 ? h1 : "Engaging New Audiences Through Smart Approach "}
                   </h2>

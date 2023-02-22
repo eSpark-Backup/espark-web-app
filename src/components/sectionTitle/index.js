@@ -2,7 +2,7 @@ import React from "react";
 
 const SectionTitle = ({ heading, paragraph, width }) => {
   return (
-    <div>
+    <div className="pb-80">
       <hr style={{ width: width ? width : "200px" }} />
       <div className={"content"}>
         <h2>{heading ?? null}</h2>

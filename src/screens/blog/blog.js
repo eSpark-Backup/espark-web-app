@@ -25,7 +25,7 @@ export default function Blog() {
   const catPost = async (e) => {
     const data = await getCatApiCall(e);
     setPost(data.data);
-    console.log(data.data);
+   
   };
 
   const nextPost = async () => {

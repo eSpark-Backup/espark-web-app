@@ -171,13 +171,7 @@ const Heroarea = () => {
                           // onSelect={handleDateSelect} //when day is clicked
                           onChange={(date) => setStartDate(date)} //only when value has changed
                         />
-                        {/* <input
-                          type="text"
-                          id="datepicker"
-                          placeholder="Date"
-                          class="hasDatepicker"
-                        />
-                        <i class="bi bi-calendar2-week"></i> */}
+                       
                       </div>
                     </div>
                   </div>
