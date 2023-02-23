@@ -59,16 +59,29 @@
    padding: 20px;
 }
 
+#whylinksmobile {
+   display: none;
+}
 
 #whylinksmobile button {
    font-size: 22px !important;
    width: 163.09px;
+
 
 }
 
 @media only screen and (max-width: 1024px) {
    #whylinks {
       display: none !important;
+   }
+
+   #whylinksmobile button {
+      font-size: 22px !important;
+      width: 163.09px;
+   }
+
+   #whylinksmobile {
+      display: block;
    }
 
    .arrowSize {
