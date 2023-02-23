@@ -32,7 +32,7 @@ export const serviceData = [
     </svg>
     
     `,
-    tittle: "Web Development",
+    tittle: "Web Application Development",
     para: "We have an experienced and professional Front End & Backend Developer Team to execute your defined requirements enthusiastically.",
   },
 
