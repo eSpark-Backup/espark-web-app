@@ -20,7 +20,7 @@ export const serviceData = [
     </clipPath>
     </defs>
     </svg>`,
-    tittle: "App Development",
+    title: "App Development",
     para: "We develop sleek looking native and hybrid mobile apps for iOS & Android to ensure the customer satisfaction and performance at the core.",
   },
   {
@@ -32,7 +32,7 @@ export const serviceData = [
     </svg>
     
     `,
-    tittle: "Web Application Development",
+    title: "Web Application Development",
     para: "We have an experienced and professional Front End & Backend Developer Team to execute your defined requirements enthusiastically.",
   },
 
@@ -47,7 +47,7 @@ export const serviceData = [
     <path d="M3.81332 19.8416C3.81332 17.6694 3.82287 15.4971 3.80786 13.3249C3.80377 12.7289 3.93199 12.2209 4.51441 11.9655C5.11867 11.6991 5.59606 11.9366 6.038 12.3843C7.60387 13.9757 9.2052 15.5342 10.7465 17.149C11.0302 17.4456 11.243 17.9481 11.2457 18.3573C11.2812 22.7705 11.2676 27.1837 11.2662 31.5968C11.2662 32.1653 11.0712 32.6226 10.5146 32.8628C9.95131 33.1059 9.49573 32.9095 9.09745 32.5086C7.47293 30.8773 5.83476 29.2612 4.24707 27.5942C3.98518 27.3182 3.83924 26.8239 3.83242 26.4271C3.7915 24.2315 3.81196 22.0359 3.81332 19.8416Z" fill="#00A099"/>
     </svg>
     `,
-    tittle: "Embedded Systems Design",
+    title: "Embedded Systems Design",
     para: "We Help You Build Embedded Systems From The Ground Up, Working With You Every Step Of The Way. We offer a range of related services.",
   },
 
@@ -59,7 +59,7 @@ export const serviceData = [
     <path d="M30.5945 32.7285C30.5945 35.3691 30.605 38.0096 30.5839 40.6449C30.5786 41.0418 30.695 41.2588 31.0443 41.4651C32.3884 42.2695 32.981 43.82 32.563 45.307C32.1502 46.7781 30.8061 47.7835 29.2556 47.7835C27.7052 47.7835 26.3611 46.7781 25.9483 45.307C25.5303 43.8306 26.1282 42.2589 27.4776 41.4704C27.8692 41.2429 27.938 40.9889 27.938 40.5867C27.9274 35.3479 27.938 30.1091 27.9168 24.8755C27.9168 24.3675 28.028 24.1823 28.5518 24.2299C29.0651 24.2776 29.5837 24.2723 30.097 24.2299C30.5257 24.1982 30.605 24.3675 30.5997 24.7538C30.5892 27.4103 30.5945 30.072 30.5945 32.7285Z" fill="#00A099"/>
     </svg>
     `,
-    tittle: "IOT",
+    title: "IOT",
     para: "From strategy to delivery, Our track record of combining strategy, design and technical expertise ensures your IoT project moves from concept to reality at speed.",
   },
   
@@ -81,7 +81,7 @@ export const serviceData = [
     </defs>
     </svg>
     `,
-    tittle: "UI / UX Design",
+    title: "UI / UX Design",
     para: "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.",
   },
 
@@ -94,7 +94,7 @@ export const serviceData = [
     <path d="M30.5945 32.7285C30.5945 35.3691 30.605 38.0096 30.5839 40.6449C30.5786 41.0418 30.695 41.2588 31.0443 41.4651C32.3884 42.2695 32.981 43.82 32.563 45.307C32.1502 46.7781 30.8061 47.7835 29.2556 47.7835C27.7052 47.7835 26.3611 46.7781 25.9483 45.307C25.5303 43.8306 26.1282 42.2589 27.4776 41.4704C27.8692 41.2429 27.938 40.9889 27.938 40.5867C27.9274 35.3479 27.938 30.1091 27.9168 24.8755C27.9168 24.3675 28.028 24.1823 28.5518 24.2299C29.0651 24.2776 29.5837 24.2723 30.097 24.2299C30.5257 24.1982 30.605 24.3675 30.5997 24.7538C30.5892 27.4103 30.5945 30.072 30.5945 32.7285Z" fill="#00A099"/>
     </svg>
     `,
-    tittle: "IOT",
+    title: "IOT",
     para: "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.",
   },
   {
@@ -118,7 +118,7 @@ export const serviceData = [
     </clipPath>
     </defs>
     </svg>`,
-    tittle: "App Development",
+    title: "App Development",
     para: "We develop sleek looking native and hybrid mobile apps for iOS & Android to ensure the customer satisfaction and performance at the core.",
   },
   {
@@ -138,7 +138,7 @@ export const serviceData = [
     </defs>
     </svg>
     `,
-    tittle: "UI / UX Design",
+    title: "UI / UX Design",
     para: "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.",
   },
   {
@@ -151,7 +151,7 @@ export const serviceData = [
     <path d="M3.81332 19.8416C3.81332 17.6694 3.82287 15.4971 3.80786 13.3249C3.80377 12.7289 3.93199 12.2209 4.51441 11.9655C5.11867 11.6991 5.59606 11.9366 6.038 12.3843C7.60387 13.9757 9.2052 15.5342 10.7465 17.149C11.0302 17.4456 11.243 17.9481 11.2457 18.3573C11.2812 22.7705 11.2676 27.1837 11.2662 31.5968C11.2662 32.1653 11.0712 32.6226 10.5146 32.8628C9.95131 33.1059 9.49573 32.9095 9.09745 32.5086C7.47293 30.8773 5.83476 29.2612 4.24707 27.5942C3.98518 27.3182 3.83924 26.8239 3.83242 26.4271C3.7915 24.2315 3.81196 22.0359 3.81332 19.8416Z" fill="#00A099"/>
     </svg>
     `,
-    tittle: "Firmware Development",
+    title: "Firmware Development",
     para: "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.",
   },
  
