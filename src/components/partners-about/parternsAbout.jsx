@@ -1,53 +1,24 @@
 import React from "react";
-import { partner } from "../../helper/ImageUrl";
-import Partners from "../partners/partners";
-import style from "./style.module.css";
-import { Carousel } from "react-responsive-carousel";
-import { clients } from "../../helper/clients";
+import Testimonial from "../testimonial/Testimonial";
 
 export default function PartnerAbout() {
   return (
-    <div className={style.partnerWrapper}>
-      <div class="bigdata-feedback-area pt-80">
+    <div className="partnerWrapper">
+      <div class=" row">
         <div class="container">
           <div class="section-title">
-            <h2>HAPPY CLIENTS</h2>
-            <div class="bar"></div>
-            <p>
-              The following comments are just a sample of customers around the world who have transformed their business websites with eSpark.
-            </p>
+            <div className="p-20">
+              <hr />
+            </div>
+            <h1>Client Testimonials</h1>
           </div>
-          <div className={style.row}>
-            <div className="col-sm-12 col-md-12 col-lg-5" >
-              <Carousel
-                autoPlay
-                showIndicators={false}
-                showArrows={false}
-                showStatus={false}
-                infiniteLoop={true}
-              >
-                {clients.map((item) => {
-                  return (
-                    <div class="col-lg-12 col-md-12 col-md-12">
-                      <div class="single-feedback-box">
-                        <div class="feedback-desc">
-                          <p>{item.commet}</p>
-                        </div>
-                        <div class="client-info">
-                          <img src={item.image} alt="upwork" />
-                          <h3>{item.name}</h3>
-                          <span>{item.designation}</span>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </Carousel>
+          <div className="row d-flex flex-row justify-content-center" >
+            <div id="testimonial" className=" testmonials col-sm-12 col-md-12 col-lg-10" >
+              <Testimonial />
             </div>
           </div>
         </div>
       </div>
-      {/* <Partners h5="More that 1.5 million subscriber" data={partner} /> */}
     </div>
   );
 }
