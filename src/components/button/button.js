@@ -9,7 +9,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
   if (design === 0) {
     return (
       <div>
-        <button type={type} class="submit">
+        <button type={type} class="submit roundbutton rounded-pill">
           {title}
         </button>
       </div>

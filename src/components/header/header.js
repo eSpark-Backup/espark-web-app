@@ -87,16 +87,16 @@ const Header = () => {
                     }}
                   >
                     <span
-                      class={selected == 0 ? "itemTxt selected" : "itemTxt "}
+                      class={selected === 0 ? "itemTxt selected" : "itemTxt "}
                     >
                       Home{" "}
                     </span>
                   </Link>
                 </li>
                 <li class="nav-item" onClick={() => setSelected(1)}>
-                  <Link class="nav-link" to="/services">
+                  <Link class="nav-link">
                     <span
-                      class={selected == 1 ? "itemTxt selected" : "itemTxt "}
+                      class={selected === 1 ? "itemTxt selected" : "itemTxt "}
                     >
                       Services{" "}
                       <svg
@@ -204,7 +204,7 @@ const Header = () => {
                 >
                   <Link class="nav-link" to="/project">
                     <span
-                      class={selected == 2 ? "itemTxt selected" : "itemTxt"}
+                      class={selected === 2 ? "itemTxt selected" : "itemTxt"}
                     >
                       Portfolio
                     </span>
@@ -219,7 +219,7 @@ const Header = () => {
                 >
                   <Link class="nav-link" to="/careers">
                     <span
-                      class={selected == 3 ? "itemTxt selected" : "itemTxt "}
+                      class={selected === 3 ? "itemTxt selected" : "itemTxt "}
                     >
                       Careers
                     </span>
@@ -234,7 +234,7 @@ const Header = () => {
                 >
                   <Link class="nav-link" to="/blog">
                     <span
-                      class={selected == 4 ? "itemTxt selected" : "itemTxt "}
+                      class={selected === 4 ? "itemTxt selected" : "itemTxt "}
                     >
                       Blogs
                     </span>
