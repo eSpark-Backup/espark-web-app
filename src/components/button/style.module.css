@@ -38,6 +38,23 @@ button {
     line-height: 20px;
     letter-spacing: 0em;
 }
+.button_11_size{
+    width: 242px;
+height: 72px;
+}
+.button_12_size{
+    width: 382px;
+    height: 72px;
+}
+.button_13_size{
+    width: 314px;
+    height: 71.86px;
+}
+.button_14_size{
+    width: 325.5px;
+    height: 71.86px;
+}
+
 
 button:hover {
     box-shadow: 5px 5px 5px #11a79c;

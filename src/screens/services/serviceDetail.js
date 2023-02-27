@@ -1,102 +1,29 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import HeroSectionOne from "../../components/Hero/HeroSectionOne";
 import { services } from "../../helper/services";
-import styles from "./style.module.css";
-
+import SectionTitle from "./../../components/sectionTitle/index";
+import ProcessCircle from "../../components/circle/processCircle";
+import Herosection from "../../components/Sections/Hero/Herosection";
 
 const ServiceDetail = () => {
   const params = useParams();
-  const getDataFromParams = services.map((item) => item.childs.filter(filterItem => params.id === filterItem.path))
-  const filterData = getDataFromParams.flat(1)
+  const getDataFromParams = services.map((item) =>
+    item.childs.filter((filterItem) => params.id === filterItem.path)
+  );
+  const filterData = getDataFromParams.flat(1);
 
-
-  const even = (childs) => {
-
-    return (
-      <>
-        <div class="repair-cta-area bg-0f054b ">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-6 ">
-                <div class="cta-repair-content">
-                  <h3>{childs.heading}</h3>
-                  <p>{childs.description}</p>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="cta-repair-img">
-                  <img src={childs.imgUrlMan} alt="cta-repair-img" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class={`circle-box ${styles.circleBox}`}>
-            <img src={childs.imgUrlCircle} alt="circle-box" />
-          </div>
-          <div class={`cta-shape`}>
-            <img src={childs.imgUrlCta} alt="cta-shape" />
-          </div>
-        </div>
-      </>
-    );
-  };
-
-  const odd = (childs) => {
-    return (
-      <div class="repair-cta-area-odd">
-        <div class="container">
-          <div class="row align-items-center flex-column-reverse flex-lg-row">
-            <div class="col-lg-6">
-              <div class="cta-repair-img-odd">
-                <img src={childs.imgUrlMan} alt="cta-repair-img" />
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="cta-repair-content-odd">
-                <h3 className={styles.tex}>{childs.heading}</h3>
-                <p>{childs.description}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class={`circle-box-odd ${styles.circleBoxOdd}`}>
-          <img src={childs.imgUrlCircle} alt="cta-circle" />
-        </div>
-        <div class={`cta-shape-odd `}>
-          <img src={childs.imgUrlCta} alt="cta-shape" />
-        </div>
-      </div>
-    );
-  };
   return (
     <div>
-      <HeroSectionOne filterData={filterData} />
-      <div className="container">
-        <div class="row align-items-center pb-80">
-          <div class="col-lg-6 features-details-image">
-            <img src={filterData[0].data.image[0]} alt="image" className={styles.imgDetails} />
-          </div>
-          <div class="col-lg-6 features-details mt-3">
-            <div class="features-details-desc">
-              <h2 className="pb-50 mt-5">{filterData[0]?.data.heading}</h2>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: filterData[0]?.data.extraContent,
-                }}
-              ></p>
-            </div>
-          </div>
-        </div>
+      <Herosection
+        title={filterData[0]?.name}
+        paragraph={filterData[0]?.data?.shortDescription}
+        images={filterData[0].data.image[0]}
+        ShowButton={false}
+      />
+      <div className="container ptb-80">
+        <SectionTitle heading={"Our Process​"}  />
+        <ProcessCircle />
       </div>
-
-      {filterData[0]?.data?.content.map((item) => {
-        if (item.id % 2 === 0) {
-          return even(item);
-        } else {
-          return odd(item);
-        }
-      })}
     </div>
   );
 };

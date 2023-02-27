@@ -48,7 +48,7 @@ export const services = [
   {
     id: "hash()",
     icon: "",
-    name: "App Development",
+    name: "IOT CONSULTANCY",
     path: "app-development",
     data: {
       image: [image2, image3, image4],
@@ -63,10 +63,10 @@ export const services = [
         ),
       ],
       shortDescription:
-        "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
+        "eSpark has expertise in various areas, including cloud computing, hardware design, data analytics, and software development. Our experts will help you evaluate the potential impact of IoT solutions on your operations, and revenue. Providing you valuable insights on IoT security, compliance, and roadmap development.​",
       extraContent:
-        "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      heading: "Strengthening your web connections",
+        "With our expert guidance on the implementation of IoT solutions, we will identify the most suitable IoT solutions for you according to your specific needs and requirements.​",
+      heading: "IoT Consultancy",
     },
     childs: [
       {
@@ -551,8 +551,8 @@ export const services = [
   {
     id: "hash()",
     icon: "",
-    name: "Artificail Intelegence",
-    path: "artificail-intelegence",
+    name: "APP DEVELOPMENT",
+    path: "app development",
     data: {
       image: [image2, image3, image4],
       content: [
@@ -569,7 +569,7 @@ export const services = [
         "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
       extraContent:
         "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      heading: "Strengthening your web connections",
+      heading: "App Development",
     },
     childs: [
       {
@@ -1528,7 +1528,7 @@ export const services = [
   {
     id: "hash()",
     icon: "",
-    name: "Quality Assurance Services",
+    name: "WEB DEVELOPMENT",
     path: "quality-assurance-services",
     data: {
       image: [image2, image3, image4],
@@ -1546,7 +1546,7 @@ export const services = [
         "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
       extraContent:
         "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      heading: "Strengthening your web connections",
+      heading: "Web Development",
     },
     childs: [
       {
@@ -1654,7 +1654,7 @@ export const services = [
   {
     id: "hash()",
     icon: "",
-    name: "Cloud Software Solutions",
+    name: "DATABASE SOLUTION",
     path: "cloud-software-solutions",
     data: {
       image: [image2, image3, image4],
@@ -1672,7 +1672,7 @@ export const services = [
         "<p><strong>A Website With a perfect design is incomplete without high-quality website development.</strong></p><p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
       extraContent:
         "<strong>A website with a perfect design is incomplete without the high- quality website development.</strong> <br/> <br/> <p>As you know our technology is advancing day by day and businesses are also making effectual use of technology. Everyone requires a website that possesses creative and eye-catching layouts and designs that attract users and appeal them to go with it.</p>",
-      heading: "Strengthening your web connections",
+      heading: "Database Solution",
     },
     childs: [
       {

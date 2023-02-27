@@ -21,7 +21,12 @@ function Herosection({
               <div class="ml-banner-content">
                 <h1 className={styles.heading}>{title}</h1>
 
-                <p className={styles.paraText}>{paragraph}</p>
+                <p
+                  className={styles.paraText}
+                  dangerouslySetInnerHTML={{
+                    __html: paragraph,
+                  }}
+                ></p>
 
                 {ShowButton === false ? null : (
                   <Button title={buttonText} link={buttonUrl} design={2} />
