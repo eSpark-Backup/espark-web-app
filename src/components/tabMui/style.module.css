@@ -5,11 +5,11 @@
 
 .txtColorTabs {
     color: #9B9B9B;
-    /* font-size: 15px; */
 }
 
 .selectedTab .txtColorTab {
     color: #00A099;
+    transition: 1s;
 }
 
 .cursorType {

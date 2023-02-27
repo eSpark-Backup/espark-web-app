@@ -5,12 +5,13 @@ import Title from "../../components/title/title";
 import { shapes } from "../../helper/ImageUrl";
 import { services } from "../../helper/services";
 import style from "./style.module.css";
-
 import SectionTitle from "../../components/sectionTitle";
 import CenteredTabs from "../../components/tabMui/centeredTab";
 import TabCard from "../tabCard/tabCard";
 import { useState } from "react";
 import tabs from "../../helper/tabs";
+import TabDescription from "../tabDescription/tabDescription";
+import ProcessCircle from "../../components/circle/processCircle";
 
 const Services = ({ link }) => {
   const servicesData = [...services].reverse();
@@ -33,12 +34,25 @@ const Services = ({ link }) => {
           />
           <CenteredTabs cardHandler={cardHandler} tabSelect={tabSelect} />
           <TabCard tabCard={tabCard} />
-          <BestServices />
+          <TabDescription />
+  
+        <div style={{marginTop:"190px"}}>
+
+          <SectionTitle
+            heading={"Our Process​"}
+            paragraph={<p></p>}
+            />
+            </div>
+            <ProcessCircle/>
+
+  
+       
         </div>
-        <ServiceStyleFive
+             {/* <BestServices className="my-5" /> */}
+        {/* <ServiceStyleFive
           data={link !== "/" ? services : servicesData.slice(0, 1)}
           link={link}
-        />
+        /> */}
       </>
     </div>
   );
