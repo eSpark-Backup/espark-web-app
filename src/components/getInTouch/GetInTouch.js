@@ -148,7 +148,6 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
   let array = [];
   let limit = 15;
 
-
   const handleUpdateIntrestData = (e, index) => {
     const data = array.find((item) => item === e);
 
@@ -283,8 +282,9 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
               </div>
             )}
             <div
-              class={`col-lg-${modal || link?.includes("vacancies") ? "12" : 6
-                } col-md-12`}
+              class={`col-lg-${
+                modal || link?.includes("vacancies") ? "12" : 6
+              } col-md-12`}
             >
               <form id="contactForm" ref={form} onSubmit={sendEmail}>
                 <div class="row">
@@ -449,9 +449,15 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                     </>
                   )}
                   <div class="col-lg-12 col-sm-12">
-                    <Button type="submit" title={link?.includes("vacancies")
-                      ? "Apply Now"
-                      : "Send Message"} design={0} />
+                    <Button
+                      type="submit"
+                      title={
+                        link?.includes("vacancies")
+                          ? "Apply Now"
+                          : "Send Message"
+                      }
+                      design={0}
+                    />
                   </div>
                 </div>
               </form>
