@@ -7,7 +7,6 @@
 .sociallink {
    font-family: 'Poppins';
    transform: rotate(270deg);
-   /* border: 1px solid #000; */
    display: flex;
    align-items: start;
    height: 200px;
@@ -57,6 +56,9 @@
 .points {
    padding-bottom: 10px;
 }
+.buttons{
+   margin-top: 100px !important;
+}
 
 #whypoints {
    padding: 20px;
@@ -74,8 +76,14 @@
 }
 
 .icon {
-   padding-right: 10px;
+   padding-right: 50px !important;
 }
+.image{
+   width: 100%;
+}
+/* .cont{
+   margin-left: -15px;
+} */
 
 #whylinksbtn {
    padding: 5px;
@@ -104,5 +112,21 @@
    #whylinksmobile {
       margin: 20px;
    }
+   .buttons{
+      align-items: center;
+      text-align: center;
+   }
+   .icon {
+      padding-right: auto !important;
+   }
 
+}
+@media (min-width: 275px) and (max-width: 574px) {
+.icon {
+   padding-right: 10px !important;
+
+}
+.button{
+   width: 100% !important;
+}
 }
