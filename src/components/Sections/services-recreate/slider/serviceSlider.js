@@ -99,7 +99,7 @@ function ServiceSlider() {
             <div>
               <ServicesCard
                 svgImage={item.svgImage}
-                title={item.tittle}
+                title={item.title}
                 para={item.para}
               />
             </div>
