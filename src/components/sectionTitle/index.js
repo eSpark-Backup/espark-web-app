@@ -6,7 +6,7 @@ const SectionTitle = ({ heading, paragraph, width, portFolio }) => {
       <hr style={{ width: width ? width : "200px" }} />
       <div className={"content"}>
         <h2>{heading ?? null}</h2>
-        {paragraph.type === "p" ? (
+        {paragraph?.type === "p" ? (
           paragraph ?? null
         ) : (
           <p>{paragraph ?? null}</p>
