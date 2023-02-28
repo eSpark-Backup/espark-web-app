@@ -114,26 +114,26 @@ const Header = () => {
                     </span>
                   </Link>
                   <ul class="dropdown-menu list-bgrd">
-                    {newData?.slice(0, 4)?.map((child) => {
+                    {newData?.slice(0, 4)?.map((item) => {
                       return (
                         <>
                           <li
                             class="nav-item ulItemsColor"
                             onClick={() => setIsNavCollapsed(false)}
                             onMouseEnter={() => {
-                              handleMouseEnter(child.id);
+                              handleMouseEnter(item.id);
                             }}
                             onMouseLeave={() => {
-                              handleMouseLeave(child.id);
+                              handleMouseLeave(item.id);
                             }}
                           >
                             <Link
                               class="nav-link d-flex justify-content-between align-items-center"
-                              to={`#`}
+                              to={`/services/${item.path}`}
                             >
-                              {child.name}
-                              {child.dropDown === true ? (
-                                child.id === dropDownId ? (
+                              {item.name}
+                              {item.dropDown === true ? (
+                                item.id === dropDownId ? (
                                   <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="16"
@@ -166,9 +166,9 @@ const Header = () => {
                                 ""
                               )}
                             </Link>
-                            {child.dropDown === true && (
+                            {item.dropDown === true && (
                               <ul class="dropdown-menu menuDropDown  list-bgrd">
-                                {child?.childs.map((item) => {
+                                {item?.childs.map((child) => {
                                   return (
                                     <li
                                       class="nav-item ulItemsColor"
@@ -180,9 +180,9 @@ const Header = () => {
                                       ></i>
                                       <Link
                                         class="nav-link"
-                                        to={`services/${item.path}`}
+                                        to={`#`}
                                       >
-                                        {item.name}
+                                        {child.name}
                                       </Link>
                                     </li>
                                   );
