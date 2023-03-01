@@ -7,7 +7,6 @@ import Herosection from "../../components/Sections/Hero/Herosection";
 import CenteredTabs from "../../components/tabMui/centeredTab";
 import TabCard from "../tabCard/tabCard";
 import TabDescription from "../tabDescription/tabDescription";
-import tabs from "../../helper/tabs";
 import styles from "./style.module.css";
 import { shapes } from "../../helper/ImageUrl";
 import Title from "../../components/title/title";
@@ -48,6 +47,7 @@ const ServiceDetail = () => {
         />
         <TabCard tabCard={tabCard ?? null} />
         <div>
+          
         <TabDescription
           discrption={filterData[0]?.quote}
           image={filterData[0]?.quoteImage}

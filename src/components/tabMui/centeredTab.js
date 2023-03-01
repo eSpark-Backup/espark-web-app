@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
-import tabs from "../../helper/tabs";
 import styles from "./style.module.css";
-import { services } from "./../../helper/services";
 
 function CenteredTabs({ cardHandler, tabSelect, tabData }) {
   useEffect(() => {
@@ -9,15 +7,11 @@ function CenteredTabs({ cardHandler, tabSelect, tabData }) {
   }, [tabData]);
 
   return (
-    <div className="d-flex justify-content-between">
+    <div className={styles.centeredWrapper}>
       {tabData?.map((item) => {
         return (
           <div
-            className={
-              tabSelect === item.id
-                ? `${styles.selectedTab}`
-                : `${styles.cursorType}`
-            }
+            className={styles.selectedTab}
             onClick={() => {
               cardHandler(item);
             }}
@@ -31,6 +25,7 @@ function CenteredTabs({ cardHandler, tabSelect, tabData }) {
             >
               {item.title}
             </p>
+            <div className={styles.barDiv}>{tabSelect === item.id && <hr className={styles.bar} />}</div>
           </div>
         );
       })}
