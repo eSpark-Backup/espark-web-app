@@ -12,7 +12,6 @@ function Herosection({
   serviceClass
 })
 {
-   console.log(serviceClass, 'service')
   return (
     <>
       <div class="ml-main-section">
