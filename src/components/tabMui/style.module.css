@@ -1,0 +1,27 @@
+.selectedTab {
+    border-bottom: 5px solid #3359A2;
+    cursor: pointer;
+}
+
+.txtColorTabs {
+    color: #9B9B9B;
+}
+
+.selectedTab .txtColorTab {
+    color: #00A099;
+    transition: 1s;
+}
+
+.cursorType {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .txtColorTabs {
+        font-size: 10px;
+    }
+
+    .selectedTab .txtColorTab {
+        font-size: 10px;
+    }
+}

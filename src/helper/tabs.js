@@ -806,7 +806,6 @@ const tabs =[
     cardData:{
         title:'ASP.Net Development ',
         paragraph:"Our .Net Development services will provide you with a responsive, high-speed, and effortless web application to navigate. ​",
-      
     }},
     {
     select:2,
