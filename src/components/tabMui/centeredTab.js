@@ -11,7 +11,6 @@ function CenteredTabs({ cardHandler, tabSelect, tabData }) {
   return (
     <div className="d-flex justify-content-between">
       {tabData?.map((item) => {
-        console.log(tabSelect, "iteeeeeeeeeeem");
         return (
           <div
             className={
@@ -23,7 +22,7 @@ function CenteredTabs({ cardHandler, tabSelect, tabData }) {
               cardHandler(item);
             }}
           >
-            <h6
+            <p
               className={
                 tabSelect === item.id
                   ? `${styles.txtColorTab}`
@@ -31,13 +30,10 @@ function CenteredTabs({ cardHandler, tabSelect, tabData }) {
               }
             >
               {item.title}
-            </h6>
+            </p>
           </div>
         );
       })}
-      {/* {services.map(item => <div className= {tabSelect == item.select ? `${styles.selectedTab}` :`${styles.cursorType}`} onClick ={()=>{cardHandler(item.id,item.childs)}} >
-            <h3 className= {tabSelect == item.select ? `${styles.txtColorTab}` :`${styles.txtColorTabs}`} >{item.title}<br/>{item.select == 3 ? "Elementor Development":"Development"}</h3>
-        </div>)} */}
     </div>
   );
 }

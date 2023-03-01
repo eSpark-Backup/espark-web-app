@@ -49,8 +49,8 @@ const ServiceDetail = () => {
         <TabCard tabCard={tabCard ?? null} />
         <div>
         <TabDescription
-          discrption={filterData?.quote}
-          image={filterData?.quoteImage}
+          discrption={filterData[0]?.quote}
+          image={filterData[0]?.quoteImage}
           title={filterData.title}
         />
       </div>

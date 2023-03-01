@@ -14,7 +14,7 @@ function TabCard({ tabCard }) {
           </div>
         </div>
         <div className="col-md-6 ">
-          <div className={styles.imgWrapper}>
+          <div className={`${styles.imgWrapper} `}>
             <img src={tabCard.image} alt={tabCard.title} />
           </div>
         </div>

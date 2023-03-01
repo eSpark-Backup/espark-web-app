@@ -10,8 +10,8 @@
     }
 .imgPlacement >img{
     position: absolute ;
-    width: 270.51px;
-    height: 284.67px;
+    width: 200px;
+    height: auto;
     left: 0px;
     top: 208px;
 }
