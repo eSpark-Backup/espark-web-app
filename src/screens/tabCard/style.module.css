@@ -17,7 +17,7 @@
 .imgWrapper > img{
     width: 330px;
     height: 330px;
-    margin-left: 120px;
+    /* margin-left: 120px; */
 }
 @media only screen and (min-width:240px) and (max-width: 768px){
     .imgWrapper >img{

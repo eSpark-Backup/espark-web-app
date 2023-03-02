@@ -9,9 +9,8 @@ function Herosection({
   paragraph,
   title,
   images,
-  serviceClass
-})
-{
+  serviceClass,
+}) {
   return (
     <>
       <div class="ml-main-section">
@@ -20,7 +19,13 @@ function Herosection({
             <div
               class={`${styles.headingColumn} col-lg-6 col-md-12 col-sm-12 `}
             >
-              <div class={serviceClass ? `${styles.serviceText} ml-banner-content` : "ml-banner-content"}>
+              <div
+                class={
+                  serviceClass
+                    ? `${styles.serviceText} ml-banner-content`
+                    : "ml-banner-content"
+                }
+              >
                 <h1 className={styles.heading}>{title}</h1>
 
                 <p
@@ -30,7 +35,7 @@ function Herosection({
                   }}
                 ></p>
 
-                {ShowButton === false ? null : (
+                {ShowButton ?? (
                   <Button title={buttonText} link={buttonUrl} design={2} />
                 )}
               </div>
@@ -39,7 +44,11 @@ function Herosection({
             <img
               src={images}
               alt="image"
-              class={serviceClass ? `${styles.service} col-lg-6 col-md-12 col-sm-12 text-center`: 'col-lg-6 col-md-12 col-sm-12 text-center'}
+              class={
+                serviceClass
+                  ? `${styles.service} animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-12 col-sm-12 text-center`
+                  : "col-lg-6 col-md-12 col-sm-12 text-center"
+              }
             />
           </div>
         </div>
@@ -49,8 +58,8 @@ function Herosection({
           <h1 className={styles.heading}>{title}</h1>
 
           <p className={styles.paraText}>{paragraph}</p>
-          <div className="d-flex ">
-            {ShowButton === false ? null : (
+          <div className="d-flex">
+            {ShowButton ?? (
               <Button title={buttonText} link={buttonUrl} design={2} />
             )}
           </div>

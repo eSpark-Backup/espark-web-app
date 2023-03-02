@@ -5,7 +5,7 @@ function TabCard({ tabCard }) {
   return (
     <>
       <div className={`row  ${styles.cardWrapper} border my-5 p-3`}>
-        <div className={`col-md-6  d-flex justify-content-center flex-column align-items-left`}>
+        <div className={`col-md-8  d-flex justify-content-center flex-column`}>
           <div>
             <h3 className={`${styles.heading} mx-4`}>{tabCard.title}</h3>
           </div>
@@ -13,13 +13,12 @@ function TabCard({ tabCard }) {
             <p className="text-white my-4 mx-4">{tabCard.content}</p>
           </div>
         </div>
-        <div className="col-md-6 ">
+        <div className="col-md-4 text-right">
           <div className={`${styles.imgWrapper} `}>
             <img src={tabCard.image} alt={tabCard.title} />
           </div>
         </div>
       </div>
-      
     </>
   );
 }
