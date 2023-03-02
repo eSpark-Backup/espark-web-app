@@ -15,8 +15,8 @@ import ReactNativeAppDevelopment from "../assets/images/services/react-native-ap
 import FlutterAppDevelopment from "../assets/images/services/flutter-app-development.svg";
 
 import DatabaseDevelopment from "../assets/images/services/database-development.svg";
-import EmbeddedSystemsDesignQuote from "../assets/images/services/embedded-systems-design-quote.svg";
-import EmbeddedSystemsDesignIcon from "../assets/images/services/embedded-systems-design-icon.svg";
+import DatabaseDevelopmentQuote from "../assets/images/services/database-development-quote.svg";
+import DatabaseDevelopmentIcon from "../assets/images/services/database-development-icon.svg";
 import PostGreSQLDatabase from "../assets/images/services/postgre-sql-database.svg";
 import NoSQLFirebaseMongoDB from "../assets/images/services/nosql-firebase-mangodb.svg";
 import MicrosoftSQL from "../assets/images/services/microsoft-sql.svg";
