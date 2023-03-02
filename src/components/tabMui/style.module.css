@@ -1,0 +1,87 @@
+.selectedTab {
+  cursor: pointer;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.txtColorTabs {
+  color: #9b9b9b;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #9b9b9b;
+}
+
+.selectedTab .txtColorTab {
+  color: #00a099;
+  font-size: 25px !important;
+  font-weight: 600;
+  text-align: center;
+  line-height: 30px;
+}
+.cursorType {
+  cursor: pointer;
+}
+.centeredWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bar{
+  width: 50% !important;
+  background-color : #3359A2 !important;
+}
+.barDiv{
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .txtColorTabs {
+    font-size: 10px;
+  }
+
+  .selectedTab .txtColorTab {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 240px) and (max-width: 768px) {
+  .txtColorTabs {
+    line-height: 20px;
+  }
+  .selectedTab .txtColorTab {
+    color: #00a099;
+    font-size: 10px !important;
+    font-weight: 600;
+    font-family: "Inter";
+    font-style: normal;
+    text-align: center;
+    line-height: 20px !important;
+
+  }
+  .bar{
+    width: 70% !important;
+    background-color : #3359A2 !important;
+    line-height: 20px !important;
+  }
+  .barDiv{
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .txtColorTabs {
+    line-height: 20px;
+  }
+  .selectedTab .txtColorTab {
+    color: #00a099;
+    font-size: auto !important;
+    font-weight: 600;
+    font-family: "Inter";
+    font-style: normal;
+    text-align: center;
+    line-height: 20px !important;
+
+  }
+}
