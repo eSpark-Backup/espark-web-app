@@ -4,6 +4,9 @@
 .marginTop{
     margin-top: 15px;
 }
+.gaps{
+    padding-bottom: 120px;
+}
 @media (max-width: 1200px) {
     .circleBox{
         display: none;
@@ -25,4 +28,7 @@
     .imgDetails{
         display: none;
     }
+}
+.hero>img{
+    width: 10% !important;
 }

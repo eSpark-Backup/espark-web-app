@@ -49,18 +49,16 @@ const serviceItems = (id, title, name, content, image) => {
     name: name,
     content: content,
     image: image,
-    quote: quote,
-    quoteImage: quoteImage,
   };
 };
-
 
 export const services = [
   {
     id: hash(),
     name: "Web Application Development",
     path: "web-app-development",
-    content: "We have an experienced and professional Front End & Backend Developer Team to execute your defined requirements enthusiastically.",
+    content:
+      "We have an experienced and professional Front End & Backend Developer Team to execute your defined requirements enthusiastically.",
     image: WebApplicationDevelopment,
     quote: "We are a leading custom web app development company that creates scalable web applications, web portals and solutions with high-quality standards. Thoroughly examining your preferences, requirements and expectations, our community of 100+ developers deliver top-notch web app development services to enhance your customer retention and boost brand equity.",
     quoteImage: WebApplicationDevelopmentQuote,
@@ -75,7 +73,8 @@ export const services = [
     id: hash(),
     name: "Mobile App Development",
     path: "mobile-app-development",
-    content: "We have an experienced and professional Front End & Backend Developer Team to execute your defined requirements enthusiastically.",
+    content:
+      "We have an experienced and professional Front End & Backend Developer Team to execute your defined requirements enthusiastically.",
     image: MobileApplicationDevelopment,
     quote: "We have perfected the art of mobile applications. With over a decade of experience under our belt, our technically trained iOS developers, Android developers, and designers deliver state-of-the-art, responsive, and engaging mobile applications. Here at eSpark, we excel at creating end-to-end tailor-made mobile solutions using the latest technologies with a seamless interface, frictionless navigation, and stunning visuals.",
     quoteImage: MobileApplicationDevelopmentQuote,

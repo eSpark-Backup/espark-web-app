@@ -9,7 +9,9 @@ function Herosection({
   paragraph,
   title,
   images,
-}) {
+  serviceClass
+})
+{
   return (
     <>
       <div class="ml-main-section">
@@ -18,10 +20,15 @@ function Herosection({
             <div
               class={`${styles.headingColumn} col-lg-6 col-md-12 col-sm-12 `}
             >
-              <div class="ml-banner-content">
+              <div class={serviceClass ? `${styles.serviceText} ml-banner-content` : "ml-banner-content"}>
                 <h1 className={styles.heading}>{title}</h1>
 
-                <p className={styles.paraText}>{paragraph}</p>
+                <p
+                  className={styles.paraText}
+                  dangerouslySetInnerHTML={{
+                    __html: paragraph,
+                  }}
+                ></p>
 
                 {ShowButton === false ? null : (
                   <Button title={buttonText} link={buttonUrl} design={2} />
@@ -32,7 +39,7 @@ function Herosection({
             <img
               src={images}
               alt="image"
-              class="col-lg-6 col-md-12 col-sm-12 text-center"
+              class={serviceClass ? `${styles.service} col-lg-6 col-md-12 col-sm-12 text-center`: 'col-lg-6 col-md-12 col-sm-12 text-center'}
             />
           </div>
         </div>

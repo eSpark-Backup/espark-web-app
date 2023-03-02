@@ -6,7 +6,32 @@
         justify-content: start;
         margin-left: 10px;
     }
+    .service{
+        width: 100% !important;
+        margin: 0px 0px 0px 0px !important;
+        padding: 5px 30px ;
+    }
+    .serviceText{
+        margin-top: 0px;
+    }
 
+}
+@media only screen and (min-width:786px) and (max-width: 1200px){
+    .service{
+        width: 70% !important;
+        margin: 0px 0px 0px 0px;
+        
+    }
+    .serviceText{
+        margin-top: 0px;
+    }
+}
+.service{
+    width: 35%;
+    margin: 0px 0px 30px 100px;
+}
+.serviceText{
+    margin-top: 50px;
 }
 
 .ml-banner-image {
