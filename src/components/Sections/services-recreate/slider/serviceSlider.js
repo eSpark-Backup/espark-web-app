@@ -7,8 +7,6 @@ import ServicesCard from "../../../services-card/servicesCard";
 import "./serviceSlider.css";
 import { Animated } from "react-animated-css";
 
-
-
 function ServiceSlider() {
   // const allChilds = services.flatMap(service => service.childs);
   // console.log(allChilds);
@@ -62,7 +60,6 @@ function ServiceSlider() {
     sliderRef.current.slickPrev();
   };
   {
-
     const settings = {
       autoplay: false,
       autoplaySpeed: 3000,
@@ -97,18 +94,20 @@ function ServiceSlider() {
           },
         },
       ],
-    }; 
+    };
     return (
       <>
         <div className="sliderMobileResponsive">
           <Slider {...settings}>
             {services.map((item) => (
               <div>
-                <ServicesCard
-                  image={item.icon}
-                  title={item.name}
-                  para={item.content}
-                />
+                <a href={`/services/${item.path}`}>
+                  <ServicesCard
+                    image={item.icon}
+                    title={item.name}
+                    para={item.content}
+                  />
+                </a>
               </div>
             ))}
           </Slider>
@@ -118,12 +117,13 @@ function ServiceSlider() {
             {services.slice(1, 5).map((item) => (
               // <Animated animationIn="bounce" animationOut="bounceOut" isVisible={true}>
               <div className="col-sm-12  col-md-6 ">
-                <ServicesCard
-                  image={item.icon}
-                  title={item.name}
-                  para={item.content}
-                />
-
+                <a href={`/services/${item.path}`}>
+                  <ServicesCard
+                    image={item.icon}
+                    title={item.name}
+                    para={item.content}
+                  />
+                </a>
               </div>
               // </Animated>
             ))}
@@ -131,7 +131,6 @@ function ServiceSlider() {
         </div>
       </>
     );
-
   }
 }
 
