@@ -6,6 +6,7 @@ import { services } from "../../../../helper/services";
 import ServicesCard from "../../../services-card/servicesCard";
 import "./serviceSlider.css";
 import { Animated } from "react-animated-css";
+import { Link } from "react-router-dom";
 
 function ServiceSlider() {
   // const allChilds = services.flatMap(service => service.childs);
@@ -101,13 +102,13 @@ function ServiceSlider() {
           <Slider {...settings}>
             {services.map((item) => (
               <div>
-                <a href={`/services/${item.path}`}>
+                <Link to={`/services/${item.path}`}>
                   <ServicesCard
                     image={item.icon}
                     title={item.name}
                     para={item.content}
                   />
-                </a>
+                </Link>
               </div>
             ))}
           </Slider>
@@ -117,13 +118,13 @@ function ServiceSlider() {
             {services.slice(1, 5).map((item) => (
               // <Animated animationIn="bounce" animationOut="bounceOut" isVisible={true}>
               <div className="col-sm-12  col-md-6 ">
-                <a href={`/services/${item.path}`}>
+                <Link to={`/services/${item.path}`}>
                   <ServicesCard
                     image={item.icon}
                     title={item.name}
                     para={item.content}
                   />
-                </a>
+                </Link>
               </div>
               // </Animated>
             ))}
