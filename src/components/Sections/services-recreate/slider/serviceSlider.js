@@ -2,11 +2,16 @@ import React from "react";
 import { useRef } from "react";
 import Slider from "react-slick";
 import { serviceData } from "../../../../helper/serviceCards";
+import { services } from "../../../../helper/services";
 import ServicesCard from "../../../services-card/servicesCard";
 import "./serviceSlider.css";
 import { Animated } from "react-animated-css";
+import { Link } from "react-router-dom";
 
 function ServiceSlider() {
+  // const allChilds = services.flatMap(service => service.childs);
+  // console.log(allChilds);
+
   const sliderRef = useRef(null);
   const CustomNextArrow = ({ onClick }) => {
     return (
@@ -55,74 +60,79 @@ function ServiceSlider() {
   const handlePrev = () => {
     sliderRef.current.slickPrev();
   };
-
-  const settings = {
-    autoplay: false,
-    autoplaySpeed: 3000,
-    dots: false,
-    initialSlide: 1,
-    swipe: false,
-    swipeToSlide: false,
-    infinite: true,
-    speed: 3000,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    centerMode: false,
-    nextArrow: <CustomNextArrow />,
-    prevArrow: <CustomPrevArrow />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
+  {
+    const settings = {
+      autoplay: false,
+      autoplaySpeed: 3000,
+      dots: false,
+      initialSlide: 1,
+      swipe: false,
+      swipeToSlide: false,
+      infinite: true,
+      speed: 3000,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      centerMode: false,
+      nextArrow: <CustomNextArrow />,
+      prevArrow: <CustomPrevArrow />,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+          },
         },
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+          },
         },
-      },
-    ],
-  };
-  return (
-    <>
-      <div className="sliderMobileResponsive">
-        <Slider {...settings}>
-          {serviceData.map((item) => (
-            <div>
-              <ServicesCard
-                svgImage={item.svgImage}
-                title={item.title}
-                para={item.para}
-              />
-            </div>
-          ))}
-        </Slider>
-      </div>
-      <div className="mobileResponsive">
-        <div className="row">
-          {serviceData.slice(1, 5).map((item) => (
-            // <Animated animationIn="bounce" animationOut="bounceOut" isVisible={true}>
-            <div className="col-sm-12  col-md-6 ">
-              <ServicesCard
-                svgImage={item.svgImage}
-                title={item.tittle}
-                para={item.para}
-              />
-            </div>
-            // </Animated>
-          ))}
+      ],
+    };
+    return (
+      <>
+        <div className="sliderMobileResponsive">
+          <Slider {...settings}>
+            {services.map((item) => (
+              <div>
+                <Link to={`/services/${item.path}`}>
+                  <ServicesCard
+                    image={item.icon}
+                    title={item.name}
+                    para={item.content}
+                  />
+                </Link>
+              </div>
+            ))}
+          </Slider>
         </div>
-      </div>
-    </>
-  );
+        <div className="mobileResponsive">
+          <div className="row">
+            {services.slice(1, 5).map((item) => (
+              // <Animated animationIn="bounce" animationOut="bounceOut" isVisible={true}>
+              <div className="col-sm-12  col-md-6 ">
+                <Link to={`/services/${item.path}`}>
+                  <ServicesCard
+                    image={item.icon}
+                    title={item.name}
+                    para={item.content}
+                  />
+                </Link>
+              </div>
+              // </Animated>
+            ))}
+          </div>
+        </div>
+      </>
+    );
+  }
 }
 
 export default ServiceSlider;
