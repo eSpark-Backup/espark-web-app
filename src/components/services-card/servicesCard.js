@@ -2,17 +2,20 @@ import React from "react";
 import Button from "../button/button";
 import "./servicesCard.css";
 
-function ServicesCard({ svgImage, title, para }) {
+function ServicesCard({ image, title, para }) {
   return (
     <div className="p-4">
       <div className="mainCardWrapper">
         <div className="appDevWrapper btn">
           <div
             className="logo-img "
-            dangerouslySetInnerHTML={{
-              __html: svgImage,
-            }}
-          ></div>
+          >
+            <img
+              className="image "
+              src={image}
+              alt={title}
+            />
+          </div>
           <p className="txtCardService">{title}</p>
           <p className="txtCardService_para">{para}</p>
         </div>
