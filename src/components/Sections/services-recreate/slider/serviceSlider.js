@@ -10,8 +10,8 @@ import { Animated } from "react-animated-css";
 
 
 function ServiceSlider() {
-  const allChilds = services.flatMap(service => service.childs);
-  console.log(allChilds);
+  // const allChilds = services.flatMap(service => service.childs);
+  // console.log(allChilds);
 
   const sliderRef = useRef(null);
   const CustomNextArrow = ({ onClick }) => {
@@ -97,16 +97,16 @@ function ServiceSlider() {
           },
         },
       ],
-    };
+    }; 
     return (
       <>
         <div className="sliderMobileResponsive">
           <Slider {...settings}>
-            {allChilds.map((item) => (
+            {services.map((item) => (
               <div>
                 <ServicesCard
-                  image={item.icons}
-                  title={item.title}
+                  image={item.icon}
+                  title={item.name}
                   para={item.content}
                 />
               </div>
@@ -115,14 +115,15 @@ function ServiceSlider() {
         </div>
         <div className="mobileResponsive">
           <div className="row">
-            {allChilds.slice(1, 5).map((item) => (
+            {services.slice(1, 5).map((item) => (
               // <Animated animationIn="bounce" animationOut="bounceOut" isVisible={true}>
               <div className="col-sm-12  col-md-6 ">
                 <ServicesCard
                   image={item.icon}
-                  title={item.title}
+                  title={item.name}
                   para={item.content}
                 />
+
               </div>
               // </Animated>
             ))}
@@ -130,6 +131,7 @@ function ServiceSlider() {
         </div>
       </>
     );
+
   }
 }
 
