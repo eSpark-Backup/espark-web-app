@@ -79,8 +79,8 @@ function ServiceSlider() {
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
+            slidesToShow: 4,
+            slidesToScroll: 4,
             infinite: true,
             dots: true,
           },
@@ -117,7 +117,7 @@ function ServiceSlider() {
           <div className="row">
             {services.slice(1, 5).map((item) => (
               // <Animated animationIn="bounce" animationOut="bounceOut" isVisible={true}>
-              <div className="col-sm-12  col-md-6 ">
+              <div className="col-sm-12 col-md-3 col-lg-3 ">
                 <Link to={`/services/${item.path}`}>
                   <ServicesCard
                     image={item.icon}
