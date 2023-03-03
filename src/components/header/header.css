@@ -69,7 +69,8 @@
 .selected {
     border-bottom: 5px solid #00A099;
     width: 80px;
-    padding: 5px;
+    padding: 2px;
+    color: #00A099;
 }
 
 
