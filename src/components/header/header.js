@@ -13,6 +13,8 @@ const Header = () => {
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
 
+  const { pathname } = useLocation();
+
   const [isNavCollapsed, setIsNavCollapsed] = useState(false);
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
   const location = useLocation();
@@ -87,7 +89,7 @@ const Header = () => {
                     }}
                   >
                     <span
-                      class={selected === 0 ? "itemTxt selected" : "itemTxt "}
+                      class={pathname === "/" ? "itemTxt selected" : "itemTxt "}
                     >
                       Home{" "}
                     </span>
@@ -96,7 +98,11 @@ const Header = () => {
                 <li class="nav-item" onClick={() => setSelected(1)}>
                   <Link class="nav-link">
                     <span
-                      class={selected === 1 ? "itemTxt selected" : "itemTxt "}
+                      class={
+                        pathname?.includes("services")
+                          ? "itemTxt selected"
+                          : "itemTxt "
+                      }
                     >
                       Services{" "}
                       <svg
@@ -178,10 +184,7 @@ const Header = () => {
                                         class="fa fa-envelope-square"
                                         aria-hidden="true"
                                       ></i>
-                                      <Link
-                                        class="nav-link"
-                                        to={`#`}
-                                      >
+                                      <Link class="nav-link" to={`#`}>
                                         {child.name}
                                       </Link>
                                     </li>
@@ -202,9 +205,13 @@ const Header = () => {
                     setIsNavCollapsed(false);
                   }}
                 >
-                  <Link class="nav-link" to="/project">
+                  <Link class="nav-link" to="/portfolio">
                     <span
-                      class={selected === 2 ? "itemTxt selected" : "itemTxt"}
+                      class={
+                        pathname === "/portfolio"
+                          ? "itemTxt selected"
+                          : "itemTxt"
+                      }
                     >
                       Portfolio
                     </span>
@@ -219,7 +226,11 @@ const Header = () => {
                 >
                   <Link class="nav-link" to="/careers">
                     <span
-                      class={selected === 3 ? "itemTxt selected" : "itemTxt "}
+                      class={
+                        pathname === "/careers"
+                          ? "itemTxt selected"
+                          : "itemTxt "
+                      }
                     >
                       Careers
                     </span>
@@ -234,7 +245,9 @@ const Header = () => {
                 >
                   <Link class="nav-link" to="/blog">
                     <span
-                      class={selected === 4 ? "itemTxt selected" : "itemTxt "}
+                      class={
+                        pathname === "/blog" ? "itemTxt selected" : "itemTxt "
+                      }
                     >
                       Blogs
                     </span>
