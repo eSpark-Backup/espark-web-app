@@ -5,7 +5,7 @@
 }
 
 .appDevWrapper {
-    width: 335px;
+    width: 100%;
     height: 325px;
     background-color: #F5F5F5;
     display: flex;
@@ -37,8 +37,6 @@
 
 .txtCardService {
     margin-top: 10px;
-    width: 151px;
-    height: 44px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 800;
@@ -53,8 +51,6 @@
     display: none;
     margin-top: 10px;
     color: white !important;
-    width: 285px;
-    height: 81px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -74,12 +70,7 @@
 }
 
 .readMoreDiv {
-    width: 335px;
-    height: 80px;
     background: #F5F5F5;
-    /* box-shadow: 0px 3px 3px 1px #bbbbbb; */
-    /* border-radius: 0px 0px 5px 5px; */
-    /* border: 3px solid #F9F9F9; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -88,8 +79,6 @@
 }
 
 .nextcardAnimation {
-    width: 70px;
-    height: 70px;
     background: #00A099;
     border-radius: 50%;
     display: flex;
@@ -102,8 +91,6 @@
 }
 
 .cardAnimationPre {
-    width: 70px;
-    height: 70px;
     background: #00A099;
     border-radius: 50%;
     display: flex;

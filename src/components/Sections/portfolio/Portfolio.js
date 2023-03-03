@@ -1,21 +1,21 @@
 import React from "react";
+import Button from "../../button/button";
 import SectionTitle from "../../sectionTitle";
 import styles from "./style.module.css";
 
-const Portfolio = ({ data }) => {
+const Portfolio = ({ data, title }) => {
   return (
     <div className="container ptb-80">
       <SectionTitle
-        heading={"OUR PORTFOLIO"}
-        paragraph={"Empowering decentralization, one project at a time"}
-        portFolio="portfolio"
-        
+        heading={title}
+        paragraph="Empowering decentralization, one project at a time"
       />
-      <div className="row pt-5 mt-3">
+      <div className="row pt-5 mt-3 ">
         {data?.map((item) => {
+          console.log(item, "project data")
           return (
-            <div className="col-sm-6 col-md-4 col-lg-3 my-2">
-              <div className={styles.wrapper}>
+            <div className="col-sm-6 col-md-4 col-lg-3 mt-2 mb-30">
+              <a href={item.data.projectUrl}><div className={styles.wrapper}>
                 <div className={styles.imagesWrapper}>
                   <img
                     src={item.data.image}
@@ -26,13 +26,15 @@ const Portfolio = ({ data }) => {
                 <div className={styles.titleWrapper}>
                   <h3 className={styles.titleText}>{item.data.name}</h3>
                 </div>
-              </div>
+              </div></a>
+
             </div>
           );
-        })}
+        })}<Button title="View More" link="/project" design={1} />
       </div>
+
     </div>
   );
-};
+}
 
 export default Portfolio;

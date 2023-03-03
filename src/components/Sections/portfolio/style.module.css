@@ -2,11 +2,13 @@
   border-radius: 27px 27px 27px 27px;
   box-shadow: 0px 8px 60px 10px rgba(0, 0, 0, 0.12) !important;
 }
+
 .images {
   border-radius: 27px 27px 0px 0px;
   height: 217px;
   width: 100%;
 }
+
 .titleWrapper {
   height: 60px;
   background-color: #ececec;
@@ -16,6 +18,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .titleText {
   font-family: "Poppins";
   font-style: normal;
@@ -25,14 +28,16 @@
   text-align: center;
   color: #000000 !important;
 }
+
 @media (max-width: 450px) {
-  .wrapper{
+  .wrapper {
     width: 80%;
     margin-left: 15%;
   }
 }
+
 @media (min-width:451px) and (max-width:575px) {
-  .wrapper{
+  .wrapper {
     width: 60%;
     margin-left: 23%;
   }
