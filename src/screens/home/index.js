@@ -29,7 +29,7 @@ const Home = () => {
       <WhyeSpark heading={"Why eSpark?"} />
       <ServicesRecreate link={currentRoute} />
       <Users />
-      <Portfolio data={projects.slice(0, 4)} title="Our Case Studies" />
+      <Portfolio data={projects.slice(0, 4)} title="OUR PORTFOLIO" />
       <PartnerAbout />
       <LetsTalk />
     </div>

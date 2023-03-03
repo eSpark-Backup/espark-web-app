@@ -8,6 +8,7 @@ const Portfolio = ({ data, title }) => {
     <div className="container ptb-80">
       <SectionTitle
         heading={title}
+        paragraph="Empowering decentralization, one project at a time"
       />
       <div className="row pt-5 mt-3 ">
         {data?.map((item) => {
