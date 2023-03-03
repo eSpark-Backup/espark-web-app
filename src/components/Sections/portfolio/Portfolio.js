@@ -6,15 +6,14 @@ const Portfolio = ({ data }) => {
   return (
     <div className="container ptb-80">
       <SectionTitle
-        heading={"OUR PORTFOLIO"}
-        paragraph={"Empowering decentralization, one project at a time"}
-        portFolio="portfolio"
-        
+        heading={"Our Case Studies"}
+
+
       />
-      <div className="row pt-5 mt-3">
+      <div className="row pt-5 mt-3 ">
         {data?.map((item) => {
           return (
-            <div className="col-sm-6 col-md-4 col-lg-3 my-2">
+            <div className="col-sm-6 col-md-4 col-lg-4 mt-2 mb-30">
               <div className={styles.wrapper}>
                 <div className={styles.imagesWrapper}>
                   <img
