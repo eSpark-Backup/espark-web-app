@@ -11,6 +11,8 @@ import { ShimmerText, ShimmerThumbnail } from "react-shimmer-effects";
 import { ShemarLength } from "./../../helper/Shemars";
 import { optionData } from "./../../utils/utils";
 import Button from "../../components/button/button";
+import Herosection from "../../components/Sections/Hero/Herosection";
+import CareerImg from "../../assets/images/hero-section/Careerherosection.svg"
 const Careers = () => {
   const [careersData, setCareersData] = useState([]);
   const [getCat, setGetCat] = useState([]);
@@ -104,19 +106,13 @@ const Careers = () => {
   };
 
   return (
-    <>
-      <div style={{ marginTop: 200 }}>
-        <HeroSectionThree
-          heading1="CAREERS"
-          paragraph="eSpark Consulting Group has been delivering premium IT-enabled business solutions to a wide array of client organizations for over four decades.
-        We have remained at the cutting edge of enterprise technology by making employee excellence our top priority. 
-        We believe in cultivating a working environment that supports innovation and creative thinking"
-          link={window.location.pathname}
-          bgimage={
-            "https://www.pngarts.com/files/1/Career-Transparent-Images.png"
-          }
-        />
-      </div>
+    <div>
+      <Herosection 
+      title="CAREERS"
+      paragraph="eSpark Consulting Group has been delivering premium IT-enabled business solutions to a wide array of client organizations for over four decades. We have remained at the cutting edge of enterprise technology by making employee excellence our top"
+      images={CareerImg}
+      ShowButton={false}
+      />
      
       <div class="container">
        
@@ -188,7 +184,7 @@ const Careers = () => {
         })
       )}
       </div>
-    </>
+    </div>
   );
 };
 
