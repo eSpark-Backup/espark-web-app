@@ -106,7 +106,7 @@ const Careers = () => {
   };
 
   return (
-    <div className="careerMain">
+    <div>
       <Herosection 
       title="CAREERS"
       paragraph="eSpark Consulting Group has been delivering premium IT-enabled business solutions to a wide array of client organizations for over four decades. We have remained at the cutting edge of enterprise technology by making employee excellence our top"
