@@ -99,7 +99,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
   if (design === 7) {
     return (
       <div>
-        <Link class="read-more-btn " to={link}>
+        <Link class="read-more-btn" to={link}>
           {title}
         </Link>
       </div>
@@ -132,7 +132,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
           onClick={onClick}
           disabled={disabled}
         >
-          <button className="roundbutton rounded-pill">{title}</button>
+          <button className="roundbutton">{title}</button>
         </a>
       </>
     );

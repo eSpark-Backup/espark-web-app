@@ -78,6 +78,11 @@
     display: none;
 }
 
+.headingColumn {
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (max-width: 750px) {
     .headingColumn {
         display: none !important;
