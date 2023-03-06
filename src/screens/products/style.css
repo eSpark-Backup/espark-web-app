@@ -7,17 +7,18 @@ button {
     transition: background .2s ease, color .2s ease, box-shadow .2s ease, transform .2s ease;
     box-shadow: 0 0 0 #BEE3F8;
     transform: translateY(0);
+    border-radius: 17px;
 }
 
 
 
-button:first-of-type {
+/* button:first-of-type {
     border-radius: .5em 0 0 .5em;
 }
 
 button:last-of-type {
     border-radius: 0 .5em .5em 0;
-}
+} */
 
 button i {
     color: #A0AEC0;

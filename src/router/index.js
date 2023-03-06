@@ -29,7 +29,7 @@ const AppRoutes = () => {
     { path: "/portfolio", element: <Projects /> },
     { path: "/project-detail/:id", element: <ProjectDetails /> },
     { path: "/blog-detail/:id", element: <BlogDetail /> },
-    { path: "/blog", element: <Blog /> },
+    { path: "/blogs", element: <Blog /> },
     { path: "/services", element: <Services /> },
     { path: "/products", element: <Products /> },
     { path: "/services/:id", element: <ServiceDetail /> },

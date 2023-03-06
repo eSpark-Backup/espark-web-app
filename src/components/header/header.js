@@ -243,10 +243,10 @@ const Header = () => {
                     setIsNavCollapsed(false);
                   }}
                 >
-                  <Link class="nav-link" to="/blog">
+                  <Link class="nav-link" to="/blogs">
                     <span
                       class={
-                        pathname === "/blog" ? "itemTxt selected" : "itemTxt "
+                        pathname === "/blogs" ? "itemTxt selected" : "itemTxt "
                       }
                     >
                       Blogs
