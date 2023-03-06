@@ -9,9 +9,6 @@ import { Animated } from "react-animated-css";
 import { Link } from "react-router-dom";
 
 function ServiceSlider() {
-  // const allChilds = services.flatMap(service => service.childs);
-  // console.log(allChilds);
-
   const sliderRef = useRef(null);
   const CustomNextArrow = ({ onClick }) => {
     return (
@@ -77,21 +74,30 @@ function ServiceSlider() {
       prevArrow: <CustomPrevArrow />,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1700,
           settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToShow: 3,
+            slidesToScroll: 1,
             infinite: true,
-            dots: true,
+            dots: false,
           },
         },
         {
-          breakpoint: 800,
+          breakpoint: 1500,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,
-            dots: true,
+            dots: false,
+          },
+        },
+        {
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
           },
         },
       ],
@@ -117,7 +123,6 @@ function ServiceSlider() {
         <div className="mobileResponsive">
           <div className="row">
             {services.slice(1, 5).map((item) => (
-              // <Animated animationIn="bounce" animationOut="bounceOut" isVisible={true}>
               <div className="col-sm-12 col-md-3 col-lg-3 ">
                 <Link to={`/services/${item.path}`}>
                   <ServicesCard
@@ -128,7 +133,6 @@ function ServiceSlider() {
                   />
                 </Link>
               </div>
-              // </Animated>
             ))}
           </div>
         </div>
