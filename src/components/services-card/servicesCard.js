@@ -1,25 +1,30 @@
 import React from "react";
-import "./servicesCard.css";
+import style from "./style.module.css";
 
-function ServicesCard({ image, title, para }) {
+function ServicesCard({ image, image2, title, para }) {
   return (
     <div className="p-4">
-      <div className="mainCardWrapper">
-        <div className="appDevWrapper btn">
+      <div className={style.mainCardWrapper}>
+        <div className={`${style.appDevWrapper} btn`} >
           <div
-            className="logo-img "
+            className={style.logoImg}
           >
             <img
-              className="image "
+              className={style.image}
               src={image}
               alt={title}
             />
+            <img
+              className={style.himage}
+              src={image2}
+              alt={title}
+            />
           </div>
-          <p className="txtCardService">{title}</p>
-          <p className="txtCardService_para">{para}</p>
+          <p className={style.txtCardService}>{title}</p>
+          <p className={style.txtCardService_para}>{para}</p>
         </div>
-        <div className="readMoreDiv">
-          <h1 className="readMoreTxt">Read More</h1>
+        <div className={style.readMoreDiv}>
+          <h1 className={style.readMoreTxt}>Read More</h1>
           <p>
             <svg
               width="27"

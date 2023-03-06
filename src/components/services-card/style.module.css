@@ -23,12 +23,24 @@
     transition: background-color 1s ease-in-out;
 }
 
-.appDevWrapper:hover .logo-img path {
-    fill: #ffff;
+.appDevWrapper .image {
+    display: block !important;
+}
+
+.appDevWrapper .himage {
+    display: none !important;
+}
+
+.appDevWrapper:hover .image {
+    display: none !important;
+}
+
+.appDevWrapper:hover .himage {
+    display: block !important;
 }
 
 .appDevWrapper:hover .txtCardService_para {
-    display: block;
+    display: block !important;
 }
 
 .appDevWrapper:hover .txtCardService {

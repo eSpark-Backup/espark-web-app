@@ -105,6 +105,7 @@ function ServiceSlider() {
                 <Link to={`/services/${item.path}`}>
                   <ServicesCard
                     image={item.icon}
+                    image2={item.icon2}
                     title={item.name}
                     para={item.content}
                   />
@@ -121,6 +122,7 @@ function ServiceSlider() {
                 <Link to={`/services/${item.path}`}>
                   <ServicesCard
                     image={item.icon}
+                    image2={item.icon2}
                     title={item.name}
                     para={item.content}
                   />
