@@ -26,37 +26,40 @@
     right: 1550px;
 }
 
-.sliderMobileResponsive{
+.sliderMobileResponsive {
     display: block;
 }
 
-.mobileResponsive{
+.mobileResponsive {
     display: none;
 }
 
 
 @media only screen and (max-width: 700px) {
-    .mobileResponsive{
+    .mobileResponsive {
         display: block;
     }
-    .sliderMobileResponsive{
+
+    .sliderMobileResponsive {
         display: none;
     }
 }
 
 
-@media only screen and (max-width: 1500px) {
-    .btnPre{
+@media only screen and (max-width: 800) {
+    .btnPre {
         display: block;
     }
-    .nextBtn{
+
+    .nextBtn {
         display: none;
     }
-    .sliderMobileResponsive{
+
+    .sliderMobileResponsive {
         display: none;
     }
-    .mobileResponsive{
+
+    .mobileResponsive {
         display: block;
     }
 }
-
