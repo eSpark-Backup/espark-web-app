@@ -11,7 +11,8 @@ import {
 } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { MdAttachEmail } from "react-icons/md";
-import { BsGlobe } from "react-icons/bs";
+
+import ScrollTopButton from "./ScrollTopButton";
 
 const Footer = () => {
   return (
@@ -175,6 +176,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <ScrollTopButton />
     </>
   );
 };
