@@ -1,0 +1,38 @@
+.topRow {
+    padding: 20px 0
+}
+
+.topContainer {
+    background: rgba(92, 97, 131, 0.73);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 39px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-Image: url("./topRowMedia.png");
+    justify-content: center;
+    align-items: center;
+    padding: 10% 5%;
+}
+
+
+
+.topText {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56.9472px;
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+.topText:hover {
+    color: #11A79c;
+}
+
+/* .loader{
+    width: 6rem;
+    height: 6rem;
+    margin-top: 200px;
+    color: #61dbd4;
+} */
