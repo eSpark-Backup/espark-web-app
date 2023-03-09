@@ -133,6 +133,22 @@ export const services = [
       serviceItems(hash(), "Embedded Linux / RTOS (Zephyr, ESP-IDF)​", "Embedded Linux / RTOS (Zephyr, ESP-IDF)​", "Custom Embedded Linux/RTOS solutions that match your company's needs can be designed and implemented by our talented developers. We specialise in creating high-performance, embedded system-optimised solutions that guarantee quick boot times and effective resource use. Our team will assist you with the testing, optimisation, and porting of Embedded Linux/RTOS using well-liked platforms like Zephyr and ESP-IDF.", EmbeddedLinuxRTOS),
     ]
   },
+  {
+    id: hash(),
+    name: "QA and Web Plugin and Desktop Development ",
+    path: "QA-WebPlugin and Desktop Development",
+    content: "We provide C/C++ firmware development services for efficient and reliable embedded systemsWe provide C/C++ firmware development services for efficient and reliable embedded systems.",
+    image: EmbeddedSystemsDesign,
+    quote: "We have perfected the art of mobile applications. With over a decade of experience under our belt, our technically trained iOS developers, Android developers, and designers deliver state-of-the-art, responsive, and engaging mobile applications. Here at eSpark, we excel at creating end-to-end tailor-made mobile solutions using the latest technologies with a seamless interface, frictionless navigation, and stunning visuals.",
+    quoteImage: EmbeddedSystemsDesignQuote,
+    icon: EmbeddedSystemsDesignIcon,
+    childs: [
+      serviceItems(hash(), "Firmware Development C / C++​", "Firmware Development C / C++​", "For developing firmware for embedded devices, we provide dependable C/C++ firmware development services. Custom firmware that satisfies your business requirements can be designed and implemented by our skilled experts. Our expertise lies in the creation of high-performance firmware that is tailored for embedded systems, resulting in quick boot times and effective resource management. Also, you can get assistance from our expertise with firmware testing and optimisation.​​", FirmwareDevelopment),
+      serviceItems(hash(), "PCB Design and Assembly", "PCB Design and Assembly", "For all of your circuit board requirements, you can rely on the excellent quality and dependability of our PCB design and assembly services. Custom PCBs can be designed and assembled by our skilled developers to match your company's needs. To guarantee the greatest level of quality and dependability for the circuit boards, we employ cutting-edge tools and methods. Our team can also help you with prototyping, testing, and optimisation services for PCBs", PCBDesignAssembly),
+      serviceItems(hash(), "Raspberry Pi Python / Matlab​", "Raspberry Pi Python / Matlab​", "For creating IoT solutions, our Raspberry Pi Python/Matlab development services provide a flexible and potent option. Our skilled developers can create and deploy unique Raspberry Pi solutions that satisfy your company's needs. For simple sensor and other peripheral integration, we specialise in creating high-performance solutions that interact with the Raspberry Pi's GPIO using Python/Matlab.", RaspberryPiPythonMatlab),
+      serviceItems(hash(), "Embedded Linux / RTOS (Zephyr, ESP-IDF)​", "Embedded Linux / RTOS (Zephyr, ESP-IDF)​", "Custom Embedded Linux/RTOS solutions that match your company's needs can be designed and implemented by our talented developers. We specialise in creating high-performance, embedded system-optimised solutions that guarantee quick boot times and effective resource use. Our team will assist you with the testing, optimisation, and porting of Embedded Linux/RTOS using well-liked platforms like Zephyr and ESP-IDF.", EmbeddedLinuxRTOS),
+    ]
+  },
   // {
   //   id: hash(),
   //   name: "QA and Web Plugin and Desktop Development",

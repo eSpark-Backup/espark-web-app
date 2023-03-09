@@ -104,3 +104,55 @@
         left: 230px !important;
     }
 }
+.navbar{
+    position: static;
+}
+#serve:hover  #serveDrop{
+    display: flex !important;
+    background: #FDFDFD;
+opacity: 0.9;
+    margin-top: -15px;
+}
+#serve{
+    position: static;
+    padding-bottom: 40px;
+}
+
+#serveDrop{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display: none !important;
+    padding: auto 100px ;
+    height: 260px;
+
+}
+.contents{
+    padding: 30px 0px;
+}
+.heading{
+ font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px ;
+line-height: 25px;
+color: #2074B4;
+border-bottom: 2px solid black;
+}
+.linkClass {
+    text-align: start;
+    align-items: start;
+}
+a{
+    text-align: start;
+    align-items: start;
+}
+.ptag{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px !important;
+line-height: 100%;
+color: #000000 !important;
+
+}

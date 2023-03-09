@@ -7,6 +7,8 @@ import GetInTouch from "../getInTouch/GetInTouch";
 import { Link, useLocation } from "react-router-dom";
 import { AiOutlineCaretRight } from "react-icons/ai";
 import "./header.css";
+import LayoutOne from "./../../layout/layoutOne";
+import Title from "./../title/title";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -95,7 +97,11 @@ const Header = () => {
                     </span>
                   </Link>
                 </li>
-                <li class="nav-item" onClick={() => setSelected(1)}>
+                <li
+                  class="services-items nav-item"
+                  id="serve"
+                  onClick={() => setSelected(1)}
+                >
                   <Link class="nav-link">
                     <span
                       class={
@@ -118,8 +124,28 @@ const Header = () => {
                         />
                       </svg>
                     </span>
+                    <div id="serveDrop" className="container-fluid d-flex justify-content-between">
+                      {services.map((items) => {
+                        return (
+                          <div className="contents p-4">
+                            <Link id='linkss ' className="linkClass" to={`/services/${items.path}`}>
+                            <p className="heading ">{items.name}</p>
+                            </Link>
+                            {items.childs.map((item) => {
+                              return (
+                                
+                                  <Link  className="my-3 ptag linkClass" to={`/services/${items.path}`} onClick={()=> localStorage.setItem('child_id', item.id)}>
+                                   {item.title}
+                                  </Link>
+                              
+                              )
+                              })}
+                          </div>
+                        );
+                      })}
+                    </div>
                   </Link>
-                  <ul class="dropdown-menu list-bgrd">
+                  {/* <ul class="dropdown-menu list-bgrd">
                     {newData?.slice(0, 4)?.map((item) => {
                       return (
                         <>
@@ -196,7 +222,8 @@ const Header = () => {
                         </>
                       );
                     })}
-                  </ul>
+                  </ul> */}
+                 
                 </li>
                 <li
                   className="nav-item"
