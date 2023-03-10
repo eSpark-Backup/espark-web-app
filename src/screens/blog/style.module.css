@@ -1,0 +1,21 @@
+.one img {
+    height: 45vh !important;
+}
+
+.two img {
+    height: 20vh !important;
+}
+
+.three img {
+    height: 50vh !important;
+    border-radius:0 ;
+}
+.three a {
+    border: none !important;
+    padding: none;
+}
+
+.three{
+    border: none !important;
+    padding-bottom: 100px;
+}

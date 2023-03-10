@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Button from '../button/button'
 import style from './style.module.css'
 
 const BlogsStrip = ({ title, para, link, btext }) =>  {
