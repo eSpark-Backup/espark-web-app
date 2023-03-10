@@ -127,16 +127,18 @@ const Header = () => {
                     <div id="serveDrop" className="container-fluid d-flex justify-content-between">
                       {services.map((items) => {
                         return (
-                          <div className="contents p-4">
+                          <div className="contents p-2 my-3">
                             <Link id='linkss ' className="linkClass" to={`/services/${items.path}`}>
                             <p className="heading ">{items.name}</p>
                             </Link>
                             {items.childs.map((item) => {
                               return (
-                                
-                                  <Link  className="my-3 ptag linkClass" to={`/services/${items.path}`} onClick={()=> localStorage.setItem('child_id', item.id)}>
+                                <>
+                                <Link  className="my-2 ptag linkClass" to={`/services/${items.path}`} onClick={()=> localStorage.setItem('child_id', item.id)}>
                                    {item.title}
                                   </Link>
+                                  <br />
+                                </>
                               
                               )
                               })}
