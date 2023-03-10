@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getApiCall, getCatApiCall } from "./../../utils/Blogs";
-import { ShimmerPostList } from "react-shimmer-effects";
-import Button from "../../components/button/button";
-import Herosection from "../../components/Sections/Hero/Herosection";
-import heroImage from "../../assets/images/blog-image/blog-hero.png";
+import { ShimmerContentBlock, ShimmerPostItem, ShimmerPostList, ShimmerText } from "react-shimmer-effects";
 import style from "./style.module.css";
-import { Link } from "react-router-dom";
 import BlogsCard from "../../components/blogs/blogsCard";
 import BlogsBanner from "../../components/blogs/blogsBanner";
 import BlogsStrip from "../../components/blogs/blogsStrip";
@@ -14,10 +10,10 @@ export default function Blog() {
   const [post, setPost] = useState();
   const [count, setCount] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
-
+  const numbers = [1, 2, 3, 4];
   useEffect(() => {
     const main = async () => {
-      const data = await getApiCall();
+      const data = getApiCall();
       setTotalPages(data.headers["x-wp-totalpages"]);
       setPost(data.data);
     };
@@ -63,12 +59,11 @@ export default function Blog() {
                 </div>
               )
             })) : (
-            <ShimmerPostList
-              postStyle="STYLE_FOUR"
-              col={1}
-              row={1}
-              gap={30}
-            />
+            <>
+              {numbers.slice(0, 2).map((item) => { return (<ShimmerPostItem card title text cta imageWidth="80%" />) })}
+            </>
+
+
           )}
 
           <div className="col-lg-4 col-md-12 col-sm-12">
@@ -78,12 +73,10 @@ export default function Blog() {
                   <BlogsStrip title={items.title.rendered} para={items.excerpt.rendered} link={`/blogs/${items.slug}`} btext={`Read more`} />
                 )
               })) : (
-              <ShimmerPostList
-                postStyle="STYLE_FOUR"
-                col={1}
-                row={1}
-                gap={30}
-              />
+              <>
+                {numbers.slice(0, 3).map((item) => {return (<ShimmerContentBlock text thumbnailHeight={200} />) })}
+              </>
+
             )}
           </div>
         </div>
@@ -97,13 +90,9 @@ export default function Blog() {
               <div className="col-lg-3 col-md-6 col-sm-12">
                 <BlogsCard image={items.jetpack_featured_media_url} title={items.title.rendered} para={items.excerpt.rendered} link={`/blogs/${items.slug}`} btext={`Read more`} />
               </div>)
-          })) : (
-          <ShimmerPostList
-            postStyle="STYLE_FOUR"
-            col={1}
-            row={1}
-            gap={30}
-          />
+          })) : (<>
+              {numbers.slice(0, 4).map((item) => {return (<ShimmerPostItem card title text cta imageWidth="80%" />) })}
+             </>
         )}
         </div>
       </div>
@@ -118,12 +107,9 @@ export default function Blog() {
                   <BlogsStrip title={items.title.rendered} para={items.excerpt.rendered} link={`/blogs/${items.slug}`} btext={`Read more`} />
                 )
               })) : (
-              <ShimmerPostList
-                postStyle="STYLE_FOUR"
-                col={1}
-                row={1}
-                gap={30}
-              />
+                <>
+                   {numbers.slice(0, 4).map((item) => {return (<ShimmerContentBlock text thumbnailHeight={200} gap={20} />) })}
+              </>
             )}
           </div>
           <div className="col-lg-7 col-md-12 col-sm-12">
@@ -134,13 +120,9 @@ export default function Blog() {
                     <BlogsCard image={items.jetpack_featured_media_url} title={items.title.rendered} para={items.excerpt.rendered} link={`/blogs/${items.slug}`} btext={`Read more`} />
                   </>
                 )
-              })) : (
-              <ShimmerPostList
-                postStyle="STYLE_FOUR"
-                col={1}
-                row={1}
-                gap={30}
-              />
+              })) : (<>
+                <ShimmerPostItem card title text cta imageWidth="80%" />
+              </>
             )}
           </div>
 
