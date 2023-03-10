@@ -1,15 +1,19 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Button from '../button/button'
 import style from './style.module.css'
 
-const blogsStrip = ({ title, para, link, btext }) =>  {
+const BlogsStrip = ({ title, para, link, btext }) =>  {
     return (
-        <div className={`${style.blogsCard}`}>
-            <h2 className={`${style.blogsHeading}`}>{title}</h2>
-            <p className={`${style.blogsPara}`}>{para} </p>
-            <Button link={link} title={btext} design={2} />
+        <div className={`${style.blogsStrip}`}>
+            <h2 className={`${style.blogsStripHeading}`}>{title}</h2>
+            <p className={`${style.blogsStripPara}`} dangerouslySetInnerHTML={{
+                                  __html: para}} />
+            <Link className={`${style.blogsStripbtn}`} to={link}>
+                {btext}
+            </Link>
         </div>
     )
 }
 
-export default blogsStrip;
+export default BlogsStrip;

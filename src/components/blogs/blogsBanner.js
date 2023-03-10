@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './style.module.css'
 
-const blogsBanner = ({ title }) => {
+const BlogsBanner = ({ title }) => {
     return (
         <div className={`${style.topRow} row`} >
             <div className={`${style.topContainer} container align-self-center`} >
@@ -11,4 +11,4 @@ const blogsBanner = ({ title }) => {
     )
 }
 
-export default blogsBanner;
+export default BlogsBanner;
