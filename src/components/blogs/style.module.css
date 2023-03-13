@@ -12,14 +12,12 @@
 }.scroll .blogsStrip{
     height: 180px;
 }
-/* to hide the Scrollbar */
-/* .scroll::-webkit-scrollbar {
+.scroll::-webkit-scrollbar {
     display: none;
-} */
-/* to hide the Scrollbar */
-/* .scroll::-webkit-scrollbar:hover {
+}
+.scroll::-webkit-scrollbar:hover {
     display:block !important;
-} */
+}
 .two .blogsCard {
     height: 500px;
 }
