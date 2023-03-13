@@ -54,13 +54,13 @@ export default function Blog() {
           {post ? (
             post?.slice(0, 2)?.map((items, key) => {
               return (
-                <div className="col-lg-4 col-md-6 col-sm-12">
+                <div className="col-lg-4 col-md-6 col-sm-12 ">
                   <BlogsCard
                     image={items.jetpack_featured_media_url}
                     title={items.title.rendered}
                     para={items.excerpt.rendered}
                     link={`/blogs/${items.slug}`}
-                    btext={`Read more`}
+                    btn_text={`Read more`}
                   />
                 </div>
               );
@@ -73,7 +73,7 @@ export default function Blog() {
             </>
           )}
 
-          <div className="col-lg-4 col-md-12 col-sm-12">
+          <div className="col-lg-4 col-md-12 col-sm-12 align-self-center">
             {post ? (
               post?.slice(2, 5)?.map((items, key) => {
                 return (
@@ -81,7 +81,7 @@ export default function Blog() {
                     title={items.title.rendered}
                     para={items.excerpt.rendered}
                     link={`/blogs/${items.slug}`}
-                    btext={`Read more`}
+                    btn_text={`Read more`}
                   />
                 );
               })
@@ -101,13 +101,13 @@ export default function Blog() {
           {post ? (
             post?.slice(5, 9)?.map((items, key) => {
               return (
-                <div className="col-lg-3 col-md-6 col-sm-12">
+                <div className="col-lg-3 col-md-6 col-sm-12 ">
                   <BlogsCard
                     image={items.jetpack_featured_media_url}
                     title={items.title.rendered}
                     para={items.excerpt.rendered}
                     link={`/blogs/${items.slug}`}
-                    btext={`Read more`}
+                    btn_text={`Read more`}
                   />
                 </div>
               );
@@ -123,8 +123,8 @@ export default function Blog() {
       </div>
 
       <div className={`${style.three} row gx-2 p-10`}>
-        <div className={`container align-self-center d-flex`}>
-          <div className="col-lg-5 col-md-12 col-sm-12">
+        <div className={`container d-flex`}>
+          <div className="col-lg-5 col-md-12 col-sm-12 align-self-center">
             {post ? (
               post?.slice(9, 13)?.map((items, key) => {
                 return (
@@ -132,7 +132,7 @@ export default function Blog() {
                     title={items.title.rendered}
                     para={items.excerpt.rendered}
                     link={`/blogs/${items.slug}`}
-                    btext={`Read more`}
+                    btn_text={`Read more`}
                   />
                 );
               })
@@ -146,7 +146,7 @@ export default function Blog() {
               </>
             )}
           </div>
-          <div className="col-lg-7 col-md-12 col-sm-12">
+          <div className="col-lg-7 col-md-12 col-sm-12 align-self-start ">
             {post ? (
               post?.slice(13, 14)?.map((items, key) => {
                 return (
@@ -156,7 +156,7 @@ export default function Blog() {
                       title={items.title.rendered}
                       para={items.excerpt.rendered}
                       link={`/blogs/${items.slug}`}
-                      btext={`Read more`}
+                      btn_text={`Read more`}
                     />
                   </>
                 );
