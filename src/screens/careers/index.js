@@ -13,6 +13,7 @@ import { optionData } from "./../../utils/utils";
 import Button from "../../components/button/button";
 import Herosection from "../../components/Sections/Hero/Herosection";
 import CareerImg from "../../assets/images/hero-section/Careerherosection.svg"
+import SectionTitle from "../../components/sectionTitle";
 const Careers = () => {
   const [careersData, setCareersData] = useState([]);
   const [getCat, setGetCat] = useState([]);
@@ -113,12 +114,10 @@ const Careers = () => {
       images={CareerImg}
       ShowButton={false}
       />
-     
-      <div class="container">
-       
-
+      <div class="container containerMarginBottom my-5">
         {careersData && (
-          <Title title={"Open Vacancies"} link={window.location.pathname} />
+          // <Title title={"Open Vacancies"} link={window.location.pathname} />
+          <SectionTitle    heading={"Open Vacancies"} />
         )}
 
         <div className="row">
