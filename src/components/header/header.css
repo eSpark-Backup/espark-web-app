@@ -140,8 +140,8 @@
   text-align: start;
   align-items: start;
 }
-a {
-  text-align: start;
+.headroom a {
+  text-align: start; 
   align-items: start;
 }
 .ptag {

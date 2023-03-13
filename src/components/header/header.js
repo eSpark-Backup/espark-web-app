@@ -161,84 +161,6 @@ const Header = () => {
                       })}
                     </div>
                   </Link>
-                  {/* <ul class="dropdown-menu list-bgrd">
-                    {newData?.slice(0, 4)?.map((item) => {
-                      return (
-                        <>
-                          <li
-                            class="nav-item ulItemsColor"
-                            onClick={() => setIsNavCollapsed(false)}
-                            onMouseEnter={() => {
-                              handleMouseEnter(item.id);
-                            }}
-                            onMouseLeave={() => {
-                              handleMouseLeave(item.id);
-                            }}
-                          >
-                            <Link
-                              class="nav-link d-flex justify-content-between align-items-center"
-                              to={`/services/${item.path}`}
-                            >
-                              {item.name}
-                              {item.dropDown === true ? (
-                                item.id === dropDownId ? (
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="16"
-                                    height="16"
-                                    fill="currentColor"
-                                    class="bi bi-chevron-up"
-                                    viewBox="0 0 16 16"
-                                  >
-                                    {" "}
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
-                                    />{" "}
-                                  </svg>
-                                ) : (
-                                  <svg
-                                    width="14"
-                                    height="9"
-                                    viewBox="0 0 14 9"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M13.2439 1.53943L6.77649 8.00684L0.309082 1.53943L1.45705 0.391464L6.77649 5.71091L12.0959 0.391464L13.2439 1.53943Z"
-                                      fill="black"
-                                    />
-                                  </svg>
-                                )
-                              ) : (
-                                ""
-                              )}
-                            </Link>
-                            {item.dropDown === true && (
-                              <ul class="dropdown-menu menuDropDown  list-bgrd">
-                                {item?.childs.map((child) => {
-                                  return (
-                                    <li
-                                      class="nav-item ulItemsColor"
-                                      onClick={() => setIsNavCollapsed(false)}
-                                    >
-                                      <i
-                                        class="fa fa-envelope-square"
-                                        aria-hidden="true"
-                                      ></i>
-                                      <Link class="nav-link" to={`#`}>
-                                        {child.name}
-                                      </Link>
-                                    </li>
-                                  );
-                                })}
-                              </ul>
-                            )}
-                          </li>
-                        </>
-                      );
-                    })}
-                  </ul> */}
                 </li>
                 <li
                   className="nav-item"
@@ -311,9 +233,6 @@ const Header = () => {
                 <div className="headerBtn" onClick={onOpenModal}>
                   <span className="btn-content ">Lets Talk</span>
                 </div>
-                // <Link class="btn btn-light" >
-                //   Quote Now
-                // </Link>
               )}
             </div>
             <Modal open={open} onClose={onCloseModal} center>
