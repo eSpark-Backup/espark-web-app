@@ -19071,6 +19071,11 @@ bar-nav .nav-item .dropdown-menu li a.active,
     visibility: visible;
     top: 100%
 }
+.startp-nav nav .navbar-nav .nav-item:hover div {
+    opacity: 1;
+    visibility: visible;
+    top: 100%
+}
 
 .startp-nav nav .others-option {
     margin-left: 20px

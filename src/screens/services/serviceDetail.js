@@ -10,13 +10,18 @@ import TabDescription from "../tabDescription/tabDescription";
 import styles from "./style.module.css";
 import { shapes } from "../../helper/ImageUrl";
 import Title from "../../components/title/title";
+import { useEffect } from "react";
 
 const ServiceDetail = () => {
   const params = useParams();
   const filterData = services.filter((item) => params.id === item.path);
+  const getId = localStorage.getItem('child_id');
 
   const [tabCard, setTabCard] = useState({});
   const [tabSelect, setSelectTab] = useState("");
+  useEffect(()=>{
+    setSelectTab(getId)
+  },  [getId])
 
   const cardHandler = (item) => {
     const { id } = item;
