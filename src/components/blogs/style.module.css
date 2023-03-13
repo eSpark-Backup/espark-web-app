@@ -6,9 +6,20 @@
   padding: 10px 0;
 }
 
-.one .blogsCard{
-    height: 600px;
+.scroll{
+    overflow: scroll !important;
+    height:400px !important;
+}.scroll .blogsStrip{
+    height: 180px;
 }
+/* to hide the Scrollbar */
+/* .scroll::-webkit-scrollbar {
+    display: none;
+} */
+/* to hide the Scrollbar */
+/* .scroll::-webkit-scrollbar:hover {
+    display:block !important;
+} */
 .two .blogsCard {
     height: 500px;
 }
@@ -16,7 +27,7 @@
     text-align: left;
 }
 .three .blogsCard {
-    height: 800px;
+    height: 700px;
 }
 .blogsStrip {
   margin: 0 1rem;

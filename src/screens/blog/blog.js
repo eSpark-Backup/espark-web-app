@@ -54,7 +54,7 @@ export default function Blog() {
           {post ? (
             post?.slice(0, 2)?.map((items, key) => {
               return (
-                <div className="col-lg-4 col-md-6 col-sm-12 ">
+                <div className="col-lg-4 col-md-6 col-sm-12">
                   <BlogsCard
                     image={items.jetpack_featured_media_url}
                     title={items.title.rendered}
@@ -73,9 +73,9 @@ export default function Blog() {
             </>
           )}
 
-          <div className="col-lg-4 col-md-12 col-sm-12 align-self-center">
+          <div className={`${style.scroll} col-lg-4 col-md-12 col-sm-12`}>
             {post ? (
-              post?.slice(2, 5)?.map((items, key) => {
+              post?.slice(2,7)?.map((items, key) => {
                 return (
                   <BlogsStrip
                     title={items.title.rendered}
@@ -99,7 +99,7 @@ export default function Blog() {
       <div className={`${style.two} row gx-2  p-10`}>
         <div className={`container align-self-center d-flex `}>
           {post ? (
-            post?.slice(5, 9)?.map((items, key) => {
+            post?.slice(7, 11)?.map((items, key) => {
               return (
                 <div className="col-lg-3 col-md-6 col-sm-12 ">
                   <BlogsCard
@@ -126,7 +126,7 @@ export default function Blog() {
         <div className={`container d-flex`}>
           <div className="col-lg-5 col-md-12 col-sm-12 align-self-center">
             {post ? (
-              post?.slice(9, 13)?.map((items, key) => {
+              post?.slice(11, 15)?.map((items, key) => {
                 return (
                   <BlogsStrip
                     title={items.title.rendered}
@@ -148,7 +148,7 @@ export default function Blog() {
           </div>
           <div className="col-lg-7 col-md-12 col-sm-12 align-self-start ">
             {post ? (
-              post?.slice(13, 14)?.map((items, key) => {
+              post?.slice(15, 16)?.map((items, key) => {
                 return (
                   <>
                     <BlogsCard

@@ -3,7 +3,7 @@ export const getApiCall = async (page) => {
   try {
     const pageCount = page ? page : 1
     const { data, headers } = await Axios.get(
-      `https://esparkconsultants.com/old/wp-json/wp/v2/posts?per_page=15&page=${pageCount}`
+      `https://esparkconsultants.com/old/wp-json/wp/v2/posts?per_page=20&page=${pageCount}`
     );
     return { data: data, headers: headers };
   } catch (error) {
