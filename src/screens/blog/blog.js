@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getApiCall, getCatApiCall } from "./../../utils/Blogs";
-import style from "./style.module.css";
+import style from "../../components/blogs/style.module.css";
 import BlogsCard from "../../components/blogs/blogsCard";
 import BlogsBanner from "../../components/blogs/blogsBanner";
 import BlogsStrip from "../../components/blogs/blogsStrip";

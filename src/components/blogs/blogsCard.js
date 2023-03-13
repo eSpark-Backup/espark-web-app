@@ -6,9 +6,9 @@ const BlogsCard = ({ image, title, para, link, btn_text }) => {
   const words = para.split(" ");
   const limitedPara = words.slice(0, 20).join(" ") + "...";
   return (
-    <div className={`${style.blogsCard} `}>
+    <div className={`${style.blogsCard}  d-flex align-items-center flex-column justify-content-center`}>
       {/* <img className={`${style.blogsCardImg}`} src={image} alt={title} /> */}
-      <img
+      <Link  to={link}><img
         className={`${style.blogsCardImg}`}
         src={
           image
@@ -17,16 +17,17 @@ const BlogsCard = ({ image, title, para, link, btn_text }) => {
         }
         alt={title}
       />
-      <h2 className={`${style.blogsCardHeading} text-justify`}>{title}</h2>
+      <h2 className={`${style.blogsCardHeading} my-auto text-justify`}>{title}</h2></Link>
       <p
-        className={`${style.blogsCardPara} text-justify`}
+        className={`${style.blogsCardPara} my-auto text-justify`}
         dangerouslySetInnerHTML={{
           __html: limitedPara,
         }}
       />
-      <Link className={`${style.blogsCardbtn}`} to={link}>
+      <Link className={`${style.blogsCardbtn} mt-auto mr-auto `} to={link}>
         {btn_text}
       </Link>
+      
     </div>
   );
 };
