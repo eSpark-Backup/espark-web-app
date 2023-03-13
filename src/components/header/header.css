@@ -141,7 +141,7 @@
   align-items: start;
 }
 .headroom a {
-  text-align: start; 
+  text-align: start;
   align-items: start;
 }
 .ptag {
@@ -151,6 +151,9 @@
   font-size: 15px !important;
   line-height: 22px;
   color: #000000 !important;
+}
+.selectedColor {
+  color: #00a099 !important;
 }
 .ptag:hover {
   color: #00a099 !important;
@@ -184,6 +187,9 @@
     line-height: 10px;
     color: #000000 !important;
   }
+  .selectedColor {
+    color: #00a099 !important;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1480px) {
   .contents {
@@ -214,5 +220,7 @@
     line-height: 16px;
     color: #000000 !important;
   }
+  .selectedColor {
+    color: #00a099 !important;
+  }
 }
-
