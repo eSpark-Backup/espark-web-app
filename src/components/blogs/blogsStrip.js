@@ -9,7 +9,11 @@ const BlogsStrip = ({ title, para, link, btn_text }) => {
   const limitedtitle = heading.slice(0, 4).join(" ") + "...";
   return (
     <div className={`${style.blogsStrip}`}>
-      <h2 className={`${style.blogsStripHeading} text-justify`}>{limitedtitle}</h2>
+      <Link to={link}>
+        <h2 className={`${style.blogsStripHeading} text-justify`}>
+          {limitedtitle}
+        </h2>
+      </Link>
       <p
         className={`${style.blogsStripPara} text-justify`}
         dangerouslySetInnerHTML={{

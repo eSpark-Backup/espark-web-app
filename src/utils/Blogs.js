@@ -140,12 +140,7 @@ export const BlogStripMap = ({
   );
 };
 
-export const BlogImageMap = ({
-  post,
-  sliceStart,
-  sliceEnd,
-  shimmerClass,
-}) => {
+export const BlogImageMap = ({ post, sliceStart, sliceEnd, shimmerClass }) => {
   return (
     <>
       {post ? (

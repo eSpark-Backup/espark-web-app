@@ -1,67 +1,84 @@
 .row {
   padding-bottom: 50px !important;
 }
+
 .blogsCard {
   margin: 0 1rem;
   padding: 10px 0;
 }
-.scroll{
-    overflow: scroll !important;
-    height:455px !important;
-}.scroll .blogsStrip{
-    height: 180px;
+
+.scroll {
+  overflow: scroll !important;
+  height: 455px !important;
 }
+
+.scroll .blogsStrip {
+  height: 180px;
+}
+
 .scroll::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
+
 .scroll::-webkit-scrollbar:hover {
-    display:block !important;
+  display: block !important;
 }
+
 .two .blogsCard {
-    height: 450px;
+  height: 450px;
 }
-.one img{
+
+.one img {
   height: 250px;
-} 
-.blogsCard a{
-    text-align: left;
 }
+
+.blogsCard a {
+  text-align: left;
+}
+
 .three .blogsCard {
-    height: 550px;
+  height: 550px;
 }
+
 .blogsStrip {
   margin: 0 1rem;
   padding: 10px 0;
   height: 100%;
 }
-.images{
+
+.images {
   margin: 1rem;
   width: 100%;
-  height: 420px !important;
+  height: 500px !important;
 }
+
 .three img {
   border-radius: 0;
   height: auto;
 }
 
-
 .three a {
   border: none !important;
   padding: none;
 }
+
 .one {
   padding-bottom: 50px;
 }
+
 .two {
   padding-bottom: 60px;
 }
+
 .three {
   border: none !important;
   padding-bottom: 100px;
 }
+
 .topRow {
   padding: 20px 0 !important;
 }
+
 .topContainer {
   background: rgba(92, 97, 131, 0.73);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -110,7 +127,7 @@
   color: #212121;
 }
 
-.blogsCardPara > p {
+.blogsCardPara>p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -139,10 +156,12 @@
   font-weight: 600;
   font-size: 25px;
   line-height: 1.02;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: #212121;
 }
 
-.blogsStripPara > p {
+.blogsStripPara>p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
