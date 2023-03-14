@@ -8,7 +8,7 @@
 
 .scroll{
     overflow: scroll !important;
-    height:400px !important;
+    height:455px !important;
 }.scroll .blogsStrip{
     height: 180px;
 }
@@ -19,24 +19,32 @@
     display:block !important;
 }
 .two .blogsCard {
-    height: 500px;
+    height: 450px;
 }
+.one img{
+  height: 250px;
+} 
 .blogsCard a{
     text-align: left;
 }
 .three .blogsCard {
-    height: 700px;
+    height: 550px;
 }
 .blogsStrip {
   margin: 0 1rem;
   padding: 10px 0;
   height: 100%;
 }
-
-.three img {
-  height: 50vh !important;
-  border-radius: 0;
+.images{
+  margin: 1rem;
+  width: 100%;
+  height: 420px !important;
 }
+.three img {
+  border-radius: 0;
+  height: auto;
+}
+
 
 .three a {
   border: none !important;
@@ -46,7 +54,7 @@
   padding-bottom: 50px;
 }
 .two {
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 .three {
   border: none !important;
@@ -98,6 +106,7 @@
   font-weight: 600 Im !important;
   font-size: 20px;
   padding-top: 1rem;
+  padding-bottom: 1rem;
   line-height: 1.02;
   color: #212121;
 }
@@ -108,8 +117,8 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 1.8;
-  padding: 10px 0px;
   color: #212121;
+  padding-bottom: 20px;
   text-align: justify;
 }
 
@@ -131,7 +140,6 @@
   font-weight: 600;
   font-size: 25px;
   line-height: 1.02;
-  padding: 10px 0px;
   color: #212121;
 }
 

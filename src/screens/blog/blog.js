@@ -42,14 +42,13 @@ export default function Blog() {
       setPost(data.data);
     }
   };
-
   return (
     <>
       <BlogsBanner
         title={`A Blog for Passionate People and Technical lovers`}
       />
 
-      <div className={`${style.one} row gx-2 p-10`}>
+      <div className={`${style.one} row gx-2`}>
         <div className={`container align-self-center d-flex`}>
           {post ? (
             post?.slice(0, 2)?.map((items, key) => {
@@ -122,11 +121,51 @@ export default function Blog() {
         </div>
       </div>
 
-      <div className={`${style.three} row gx-2 p-10`}>
+      <div className={`${style.three} row gx-2 `}>
         <div className={`container d-flex`}>
-          <div className="col-lg-5 col-md-12 col-sm-12 align-self-center">
+          <div className="col-lg-5 col-md-12 col-sm-12 align-self-start">
             {post ? (
-              post?.slice(11, 15)?.map((items, key) => {
+              post?.slice(11, 14)?.map((items, key) => {
+                return (
+                  <BlogsStrip
+                    title={items.title.rendered}
+                    para={items.excerpt.rendered}
+                    link={`/blogs/${items.slug}`}
+                    btn_text={`Read more`}
+                  />
+                );
+              })
+            ) : (
+              <>
+                {numbers.slice(0, 4).map((item) => {
+                  return (
+                    <ShimmerContentBlock text thumbnailHeight={200} gap={20} />
+                  );
+                })}
+              </>
+            )}
+          </div>
+          <div className="col-lg-7 col-md-12 col-sm-12 align-self-start ">
+            {post ? (
+              post?.slice(15, 16)?.map((items, key) => {
+                const imageUrl =items?.jetpack_featured_media_url || 'https://thumbs.dreamstime.com/b/blog-information-website-concept-workplace-background-text-view-above-127465079.jpg';
+                return (
+                  <>
+                    <img className={ style.images} src={imageUrl} alt="shape" />
+                  </>
+                );
+              })
+            ) : (
+              <>
+                <ShimmerPostItem card title text cta imageWidth="80%" />
+              </>
+            )}
+          </div>
+        </div>
+<div className={`container d-flex`}>
+          <div className="col-lg-5 col-md-12 col-sm-12 align-self-start">
+            {post ? (
+              post?.slice(14, 15)?.map((items, key) => {
                 return (
                   <BlogsStrip
                     title={items.title.rendered}
@@ -151,8 +190,7 @@ export default function Blog() {
               post?.slice(15, 16)?.map((items, key) => {
                 return (
                   <>
-                    <BlogsCard
-                      image={items.jetpack_featured_media_url}
+                    <BlogsStrip
                       title={items.title.rendered}
                       para={items.excerpt.rendered}
                       link={`/blogs/${items.slug}`}
