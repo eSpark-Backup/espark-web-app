@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { services } from "../../helper/services";
 import { products } from "../../helper/products";
 import "react-responsive-modal/styles.css";
@@ -7,6 +7,8 @@ import GetInTouch from "../getInTouch/GetInTouch";
 import { Link, useLocation } from "react-router-dom";
 import { AiOutlineCaretRight } from "react-icons/ai";
 import "./header.css";
+import LayoutOne from "./../../layout/layoutOne";
+import Title from "./../title/title";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -35,6 +37,12 @@ const Header = () => {
     setDropDownId(10);
     setIconShow(false);
   };
+
+  const getId = localStorage.getItem("child_id");
+  const [tabSelect, setSelectTab] = useState("");
+  useEffect(() => {
+    setSelectTab(getId);
+  }, [getId]);
 
   return (
     <header id="header" class="headroom is-sticky">
@@ -95,7 +103,11 @@ const Header = () => {
                     </span>
                   </Link>
                 </li>
-                <li class="nav-item" onClick={() => setSelected(1)}>
+                <li
+                  class="services-items nav-item"
+                  id="serve"
+                  onClick={() => setSelected(1)}
+                >
                   <Link class="nav-link">
                     <span
                       class={
@@ -114,89 +126,51 @@ const Header = () => {
                       >
                         <path
                           d="M-9.99769e-07 1.1762C0.141427 0.721149 0.482915 0.442572 0.799883 0.154746C1.05396 -0.0760532 1.45194 -0.032128 1.70992 0.201369C1.76216 0.248762 1.8112 0.300778 1.85917 0.35318C3.53001 2.16413 5.20049 3.97546 6.87026 5.78757C6.90863 5.82918 6.93706 5.8812 6.9758 5.9363C7.03727 5.87349 7.07707 5.83496 7.11438 5.79412C8.79836 3.96891 10.4816 2.14371 12.1653 0.318888C12.4662 -0.00708247 12.8365 -0.108418 13.1364 0.13394C13.4164 0.360116 13.6687 0.644088 13.8819 0.945014C14.0753 1.2182 14.0163 1.59503 13.813 1.86552C13.7757 1.91522 13.7352 1.96223 13.6936 2.00731C11.666 4.20626 9.6384 6.40522 7.61044 8.60379C7.29916 8.94131 6.94239 9.01568 6.61121 8.8053C6.53019 8.75367 6.45699 8.68277 6.39019 8.60995C4.35512 6.40522 2.31934 4.20087 0.290317 1.98997C0.167368 1.85588 0.0955877 1.66593 0.000354708 1.50178C-5.45965e-08 1.39313 -1.00403e-06 1.28486 -9.99769e-07 1.1762Z"
-                          fill="#3359A2"
+                          fill={
+                            pathname?.includes("services")
+                              ? "#00a099"
+                              : "#3359A2"
+                          }
                         />
                       </svg>
                     </span>
-                  </Link>
-                  <ul class="dropdown-menu list-bgrd">
-                    {newData?.slice(0, 4)?.map((item) => {
-                      return (
-                        <>
-                          <li
-                            class="nav-item ulItemsColor"
-                            onClick={() => setIsNavCollapsed(false)}
-                            onMouseEnter={() => {
-                              handleMouseEnter(item.id);
-                            }}
-                            onMouseLeave={() => {
-                              handleMouseLeave(item.id);
-                            }}
-                          >
+                    <div
+                      id="serveDrop"
+                      className="container-fluid d-flex justify-content-between"
+                    >
+                      {services.map((items) => {
+                        return (
+                          <div className="contents p-2 my-3">
                             <Link
-                              class="nav-link d-flex justify-content-between align-items-center"
-                              to={`/services/${item.path}`}
+                              id="linkss "
+                              className="linkClass"
+                              to={`/services/${items.path}`}
                             >
-                              {item.name}
-                              {item.dropDown === true ? (
-                                item.id === dropDownId ? (
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="16"
-                                    height="16"
-                                    fill="currentColor"
-                                    class="bi bi-chevron-up"
-                                    viewBox="0 0 16 16"
-                                  >
-                                    {" "}
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
-                                    />{" "}
-                                  </svg>
-                                ) : (
-                                  <svg
-                                    width="14"
-                                    height="9"
-                                    viewBox="0 0 14 9"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M13.2439 1.53943L6.77649 8.00684L0.309082 1.53943L1.45705 0.391464L6.77649 5.71091L12.0959 0.391464L13.2439 1.53943Z"
-                                      fill="black"
-                                    />
-                                  </svg>
-                                )
-                              ) : (
-                                ""
-                              )}
+                              <p className="heading ">{items.name}</p>
                             </Link>
-                            {item.dropDown === true && (
-                              <ul class="dropdown-menu menuDropDown  list-bgrd">
-                                {item?.childs.map((child) => {
-                                  return (
-                                    <li
-                                      class="nav-item ulItemsColor"
-                                      onClick={() => setIsNavCollapsed(false)}
-                                    >
-                                      <i
-                                        class="fa fa-envelope-square"
-                                        aria-hidden="true"
-                                      ></i>
-                                      <Link class="nav-link" to={`#`}>
-                                        {child.name}
-                                      </Link>
-                                    </li>
-                                  );
-                                })}
-                              </ul>
-                            )}
-                          </li>
-                        </>
-                      );
-                    })}
-                  </ul>
+                            {items.childs.map((item) => {
+                              return (
+                                <>
+                                  <Link
+                                    className={`my-2 ptag linkClass ${
+                                      item.id === tabSelect && "selectedColor"
+                                    }`}
+                                    to={`/services/${items.path}`}
+                                    onClick={() =>
+                                      localStorage.setItem("child_id", item.id)
+                                    }
+                                  >
+                                    {item.title}
+                                  </Link>
+                                  <br />
+                                </>
+                              );
+                            })}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </Link>
                 </li>
                 <li
                   className="nav-item"
@@ -269,9 +243,6 @@ const Header = () => {
                 <div className="headerBtn" onClick={onOpenModal}>
                   <span className="btn-content ">Lets Talk</span>
                 </div>
-                // <Link class="btn btn-light" >
-                //   Quote Now
-                // </Link>
               )}
             </div>
             <Modal open={open} onClose={onCloseModal} center>
