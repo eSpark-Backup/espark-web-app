@@ -158,6 +158,24 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
       </>
     );
   }
+  if (design === 13) {
+    return (
+      <>
+         <a
+          href="#newDiv_0"
+          className={style.btnMargin}
+          onClick={onClick}
+          disabled={disabled}
+        >
+          <button
+            className="roundbutton rounded-pill"
+          >
+            {title}
+          </button>
+        </a>
+      </>
+    );
+  }
 };
 
 export default Button;
