@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { getApiCall, getCatApiCall } from "./../../utils/Blogs";
-import { ShimmerPostList } from "react-shimmer-effects";
-import Button from "../../components/button/button";
-import Herosection from "../../components/Sections/Hero/Herosection";
-import heroImage from "../../assets/images/blog-image/blog-hero.png";
+import {
+  BlogCardMap,
+  BlogImageMap,
+  BlogStripMap,
+  getApiCall,
+  getCatApiCall,
+} from "./../../utils/Blogs";
+import style from "../../components/blogs/style.module.css";
+import BlogsBanner from "../../components/blogs/blogsBanner";
 
 export default function Blog() {
   const [post, setPost] = useState();
@@ -41,99 +45,96 @@ export default function Blog() {
       setPost(data.data);
     }
   };
-
   return (
-    <div>
-      <Herosection
-        title={"Lorem ipsum dolor sit amet"}
-        paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida."
-        images={heroImage}
-        ShowButton={true}
-        buttonText={"Learn More"}
-        buttonUrl={"/services/"}
+    <>
+      <BlogsBanner
+        title={`A Blog for Passionate People and Technical lovers`}
       />
-      <div class="blog-area ptb-80">
-        <div class="container" style={{ width: "80%" }}>
-          <div class="row">
-            <div class="col-lg-12 col-md-12">
-              <div class="row justify-content-center">
-                {post ? (
-                  post?.slice(0,4)?.map((items, key) => {
-                    return (
-                      <>
-                        <div class="col-xl-3 col-lg-4 col-md-6 mt-5">
-                          <div class="single-blog-post">
-                            <div class="blog-image">
-                              <img
-                                src={
-                                  items.jetpack_featured_media_url
-                                    ? items.jetpack_featured_media_url
-                                    : "https://thumbs.dreamstime.com/b/blog-information-website-concept-workplace-background-text-view-above-127465079.jpg"
-                                }
-                                class="animate__animated animate__zoomIn"
-                                alt="blog-img"
-                              />
-                            </div>
-                            <div class="blog-post-content">
-                              <h3>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                              </h3>
-                              <br />
-                              <p
-                                dangerouslySetInnerHTML={{
-                                  __html:
-                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
-                                }}
-                              ></p>
-                              <br />
-                              <Button
-                                title="Learn More"
-                                // link={`/blog-detail/${items.slug}/`}
-                                design={11}
-                                size={15}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </>
-                    );
-                  })
-                ) : (
-                  <ShimmerPostList
-                    postStyle="STYLE_FOUR"
-                    col={4}
-                    row={2}
-                    gap={30}
-                  />
-                )}
-                {/* <div class="col-lg-12 col-md-12 row">
-                  <div class="col-lg-6 col-md-6">
-                    <Button
-                      title="< Previous"
-                      onClick={() => prvPost()}
-                      design={3}
-                      disabled={count === 1 ? true : false}
-                    />
-                  </div>
-                  <div class="col-lg-6 col-md-6 text-right">
-                    <Button
-                      title="Next >"
-                      onClick={() => nextPost()}
-                      design={3}
-                      disabled={count === Number(totalPages) ? true : false}
-                    />
-                  </div>
-                </div> */}
-              </div>
-            </div>
-            {/* <div class="col-lg-4 col-md-12">
-              <BlogSideBar catagoryPosts={(e) => catPost(e)} />
-            </div> */}
+
+      <div className={`${style.one} row gx-2`}>
+        <div className={`container align-self-center d-flex`}>
+          <BlogCardMap
+            post={post}
+            sliceStart={0}
+            sliceEnd={2}
+            className="col-lg-4 col-md-6 col-sm-12"
+            col={2}
+            row={1}
+            gap={30}
+            shimmerClass="col-lg-8 col-md-12 col-sm-12"
+          />
+
+          <div className={`${style.scroll} col-lg-4 col-md-12 col-sm-12`}>
+            <BlogStripMap
+              post={post}
+              sliceStart={2}
+              sliceEnd={7}
+              shimmerCount={3}
+              shimmerClass="p-20 mx-10"
+            />
           </div>
         </div>
       </div>
-    </div>
+
+      <div className={`${style.two} row gx-2 `}>
+        <div className={`container align-self-center d-flex `}>
+          <BlogCardMap
+            post={post}
+            sliceStart={7}
+            sliceEnd={11}
+            className="col-lg-3 col-md-6 col-sm-12"
+            col={4}
+            row={1}
+            gap={30}
+            shimmerClass="col-lg-12 col-md-12 col-sm-12"
+          />
+        </div>
+      </div>
+
+      <div className={`${style.three} row gx-2 `}>
+        <div className={`container d-flex`}>
+          <div className="col-lg-5 col-md-12 col-sm-12 align-self-start">
+            <BlogStripMap
+              post={post}
+              sliceStart={11}
+              sliceEnd={14}
+              shimmerCount={3}
+              shimmerClass="p-20 mx-10"
+            />
+          </div>
+
+          <div className="col-lg-7 col-md-12 col-sm-12 align-self-start">
+             <BlogImageMap
+              post={post}
+              sliceStart={14}
+              sliceEnd={15}
+              shimmerCount={1}
+              shimmerClass="p-20 mx-10 col-lg-12 h-100"
+            />
+          </div>
+        </div>
+
+        <div className={`container d-flex`}>
+          <div className="col-lg-5 col-md-12 col-sm-12 align-self-start">
+            <BlogStripMap
+              post={post}
+              sliceStart={13}
+              sliceEnd={14}
+              shimmerCount={1}
+              shimmerClass="p-20 mx-10"
+            />
+          </div>
+          <div className="col-lg-7 col-md-12 col-sm-12 align-self-start">
+            <BlogStripMap
+              post={post}
+              sliceStart={14}
+              sliceEnd={15}
+              shimmerCount={1}
+              shimmerClass="p-20 mx-10"
+            />
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
