@@ -10,7 +10,7 @@
     position: absolute;
     width: 100%;
     height: 60vh;
-    background-color: #00A099;
+    background-color:var(--color-primary);
 }
 
 .imgWrapper{
@@ -38,7 +38,7 @@
 }
 
 .greenBox{
-    background-color: #00A099;
+    background-color: var(--color-primary);
 }
 
 .imgTag{
@@ -51,10 +51,10 @@
 }
 
 .ceoWrapper p {
-    color: #00A099;
+    color: var(--color-primary);
 }
 .ceoWrapper h1 {
-    color: #00A099;
+    color: var(--color-primary);
 }
 .imgWrapperDisplayNone{
     display: none;
@@ -87,7 +87,7 @@
     }
     
     .greenBox{
-        background-color: #00A099;
+        background-color: var(--color-primary);
     }
     
     .imgTag{
@@ -100,9 +100,9 @@
     }
     
     .ceoWrapper p {
-        color: #00A099;
+        color: var(--color-primary);
     }
     .ceoWrapper h1 {
-        color: #00A099;
+        color: var(--color-primary);
     }
   }

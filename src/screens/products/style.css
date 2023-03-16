@@ -27,14 +27,14 @@ button i {
 }
 
 .active {
-    background: #11A79c;
+    background: var(--color-primary);
     color: #fff;
 }
 
 .multi-button:hover button:hover {
-    background: #11A79c;
+    background: var(--color-primary);
     color: #fff;
-    box-shadow: 0 0 0.8em 0 #11A79c;
+    box-shadow: 0 0 0.8em 0 var(--color-primary);
     transform: translateY(-.2em);
 }
 
