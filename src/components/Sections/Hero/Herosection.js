@@ -29,7 +29,7 @@ function Herosection({
                 <h1 className={styles.heading}>{title}</h1>
 
                 <p
-                  className={styles.paraText}
+                  className={styles.paraTexts}
                   dangerouslySetInnerHTML={{
                     __html: paragraph,
                   }}

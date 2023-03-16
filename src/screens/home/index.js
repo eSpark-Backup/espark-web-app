@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
       <Herosection
-        title={"The Ultimate Partner for Software and Iot Solutions"}
+        title={"The Ultimate Partner for Iot and Software Solutions"}
         paragraph="eSpark Consulting Group is a software and embedded system design
                     company that specializes in delivering innovative and
                     high-quality solutions to our clients. Our team of experts has
