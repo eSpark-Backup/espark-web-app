@@ -42,7 +42,6 @@ import QAManualWebMobileApp from "../assets/images/services/qa-manual-web-mobile
 import LUAPluginDevelopment from "../assets/images/services/lua-plugin-development.svg";
 import DotNetMVVMDevelopment from "../assets/images/services/dot-net-mvvm-development.svg";
 
-
 const hash = () => {
   const s4 = () => {
     return Math.floor((1 + Math.random()) * 0x10000)
@@ -67,85 +66,208 @@ export const services = [
     id: hash(),
     name: "Web Application Development",
     path: "web-app-development",
-    content:"We have an experienced and professional Front End & Backend Developer Team to execute your defined requirements enthusiastically.",
+    content:
+      "eSpark Consulting Group offers comprehensive web app development services to help businesses create dynamic and responsive web applications. Our team of experienced developers has expertise in a wide range of technologies and platforms, including React/Vue development, ASP.NET development, Node.js development, WordPress/Shopify development, and more.",
     image: WebApplicationDevelopment,
-    quote: "We are a leading custom web app development company that creates scalable web applications, web portals and solutions with high-quality standards. Thoroughly examining your preferences, requirements and expectations, our community of 100+ developers deliver top-notch web app development services to enhance your customer retention and boost brand equity.",
+    quote:
+      "eSpark Consulting Group is dedicated to providing excellent database development services that cater to the specific needs of our clients. Our team of skilled database developers possess the necessary expertise and knowledge to create tailored solutions that are both efficient and reliable, while still remaining cost-effective.",
     quoteImage: WebApplicationDevelopmentQuote,
     icon: WebApplicationDevelopmentIcon,
     icon2: WebApplicationDevelopmentIconHover,
     childs: [
-      serviceItems(hash(), "React / Vue Development", "React / Vue Development", "Our Angular development service will provide you with a responsive, high-speed, and effortless web application to navigate. ​", ReactVueDevelopment),
-      serviceItems(hash(), "ASP.NET Development", "ASP.NET Development", "Our ASP.Net Development services will provide you with a responsive, high-speed, and effortless web application to navigate. Our professional developers have expertise in creating .Net Development Services exclusively for top-class customer satisfaction, helping businesses achieve higher revenue. We offer .Net Development Services for a wide range of leading industries like education, entertainment, retail, and much more.​` ​ ​", AspDotNetDevelopment),
-      serviceItems(hash(), "Node.JS Development", "Node.JS Development", "Our expert NodeJS Developers create scalable and real-time applications that operate efficiently in data-intensive environments.​ Our professional developers have expertise in NodeJS development giving your customers exclusive top-class customer satisfaction and helping businesses achieve higher revenue.​", NodeJSDevelopment),
-      serviceItems(hash(), "Wordpress / Shopify Development ", " Wordpress / Shopify Development ", "Our cost-effective Node.JS development services will assist your business in achieving its goals. Our experts will provide you with top-notch development services at competitive pricing, helping your business succeed. ​ ​", WordpressShopifyDevelopment),
-    ]
+      serviceItems(
+        hash(),
+        "React / Vue Development",
+        "React / Vue Development",
+        "Our React/Vue development services offer a cutting-edge and efficient method for creating online applications. React/Vue will be used by our skilled developers to create interactive and dynamic web applications that satisfy your business needs. We are experts at creating high-performance software that is quick and effective. Our React/Vue development services can help you accomplish your goals whether you need to create a simple web application or a complex one.",
+        ReactVueDevelopment
+      ),
+      serviceItems(
+        hash(),
+        "ASP.NET Development",
+        "ASP.NET Development",
+        "Our ASP.Net development services will provide you with a responsive, high-speed, and effortless web application to navigate. Our professional developers have expertise in creating .Net development services exclusively for top-class customer satisfaction, helping businesses achieve higher revenue. We offer .Net development services for a wide range of leading industries like education, entertainment, retail, and much more.",
+        AspDotNetDevelopment
+      ),
+      serviceItems(
+        hash(),
+        "Node.JS Development",
+        "Node.JS Development",
+        "Our expert NodeJS Developers create scalable and real-time applications that operate efficiently in data-intensive environments. Our professional developers have expertise in NodeJS development giving your customers exclusive top-class customer satisfaction and helping businesses achieve higher revenue.",
+        NodeJSDevelopment
+      ),
+      serviceItems(
+        hash(),
+        "Wordpress / Shopify Development",
+        " Wordpress / Shopify Development",
+        "We offer a flexible and user-friendly alternative for creating websites with our Wordpress/Shopify services.   Our Wordpress/Shopify services can assist you in achieving your objectives, whether you need to create an e-commerce website, corporate website, or portfolio website.",
+        WordpressShopifyDevelopment
+      ),
+    ],
   },
   {
     id: hash(),
     name: "Mobile App Development",
     path: "mobile-app-development",
-    content: "Lorem ipsum dolor sit amet consectetur. At in interdum ullamcorper maecenas arcu euismod amet. Venenatis id volutpat elit ultrices amet justo amet sem praesent.Lorem ipsum dolor sit amet consectetur. At in interdum ullamcorper maecenas arcu euismod amet. Venenatis id volutpat elit ultrices amet justo amet sem praesent.Lorem ipsum dolor sit amet consectetur.",
+    content:
+      "eSpark Consulting Group is fully committed to delivering outstanding web app development services that are specifically designed to meet the unique requirements of our clients. Our team of highly skilled developers has the expertise and knowledge required to develop customized solutions that are not only efficient and reliable, but also cost-effective.",
     image: MobileApplicationDevelopment,
-    quote: "We have perfected the art of mobile applications. With over a decade of experience under our belt, our technically trained iOS developers, Android developers, and designers deliver state-of-the-art, responsive, and engaging mobile applications. Here at eSpark, we excel at creating end-to-end tailor-made mobile solutions using the latest technologies with a seamless interface, frictionless navigation, and stunning visuals.",
+    quote:
+      "eSpark Consulting Group is dedicated to providing exceptional mobile app development services that are tailored to the individual needs of our clients. Our team of skilled developers possess the necessary expertise and knowledge to create customized solutions that are both efficient and reliable, while remaining cost-effective.",
     quoteImage: MobileApplicationDevelopmentQuote,
     icon: MobileApplicationDevelopmentIcon,
     icon2: MobileApplicationDevelopmentIconHover,
     childs: [
-      serviceItems(hash(), "Android App Development Service.​", "Android App​", "Build top-notch Android applications with eSpark, which will be completely designed for your business needs. Our group of professionals create innovative and user-friendly android applications with key features like exclusivity and customer satisfaction. We have the expertise to create android applications for various sectors including retail, fashion, healthcare, and much more.​​​​", AndroidAppDevelopment),
-      serviceItems(hash(), "iOS App Development Service.​", "iOS App​", "Build top-notch customizable iOS applications designed to boost your business’s potential and reach.​", IosAppDevelopment),
-      serviceItems(hash(), "React Native App Development Service.​", "React NAtive App​", "Do you want the end user to have the best performance and user experience? Our React Native App Development Service will provide you with exactly that. Our experts will develop a react native application which will not only help you modernize your business’s functionality but also generate higher revenue. Having top-notch performance and user experience will make your business stand out.​​ ​​", ReactNativeAppDevelopment),
-      serviceItems(hash(), "Flutter App Development Service.​", "React NAtive App​", "Our Flutter application development service is one of the best solutions for mobile application development, enabling smooth and easy cross-platform giving your application a uniform appearance. ​ ​", FlutterAppDevelopment),
-    ]
+      serviceItems(
+        hash(),
+        "Android App Development Service.",
+        "Android App",
+        "Build top-notch Android applications with eSpark, which will be completely designed for your business needs. Our group of professionals create innovative and user-friendly android applications with key features like exclusivity and customer satisfaction. We have the expertise to create android applications for various sectors including retail, fashion, healthcare, and much more.",
+        AndroidAppDevelopment
+      ),
+      serviceItems(
+        hash(),
+        "iOS App Development Service.",
+        "iOS App",
+        "Build top-notch customizable iOS applications designed to boost your business’s potential and reach.Our group of professionals create innovative and user-friendly iOS applications suitable for all iOS range of products offering easy accessibility and customer satisfaction. We have the expertise to create iOS applications for various industries like retail, fashion, healthcare, and much more.",
+        IosAppDevelopment
+      ),
+      serviceItems(
+        hash(),
+        "React Native App Development Service.",
+        "React Native App",
+        "Do you want the end user to have the best performance and user experience? Our React Native App Development Service will provide you with exactly that. Our experts will develop a react native application which will not only help you modernize your business’s functionality but also generate higher revenue. Having top-notch performance and user experience will make your business stand out.",
+        ReactNativeAppDevelopment
+      ),
+      serviceItems(
+        hash(),
+        "Flutter App Development Service.",
+        "React Native App",
+        "Our Flutter application development will provide you with easy functionality, and an exclusive UI design. Our Flutter application development service is one of the best solutions for mobile application development, enabling smooth and easy cross-platform giving your application a uniform appearance.",
+        FlutterAppDevelopment
+      ),
+    ],
   },
   {
     id: hash(),
-    name: "Database Development ",
+    name: "Database Development",
     path: "database-development",
-    content: "Lorem ipsum dolor sit amet consectetur. At in interdum ullamcorper maecenas arcu euismod amet. Venenatis id volutpat elit ultrices amet justo amet sem praesent.Lorem ipsum dolor sit amet consectetur. At in interdum ullamcorper maecenas arcu euismod amet. Venenatis id volutpat elit ultrices amet justo amet sem praesent.Lorem ipsum dolor sit amet consectetur.",
+    content:
+      "eSpark Consulting Group provides comprehensive database development services to help businesses manage their data effectively. Our team of experienced database developers has expertise in a wide range of technologies and platforms, including PostgreSQL, Microsoft SQL, PHP MySQL, NoSQL databases like Firebase and MongoDB.",
     image: DatabaseDevelopment,
-    quote: "Lorem ipsum dolor sit amet consectetur. At in interdum ullamcorper maecenas arcu euismod amet. Venenatis id volutpat elit ultrices amet justo amet sem praesent.Lorem ipsum dolor sit amet consectetur. At in interdum ullamcorper maecenas arcu euismod amet. Venenatis id volutpat elit ultrices amet justo amet sem praesent.Lorem ipsum dolor sit amet consectetur. At in interdum ullamcorper maecenas arcu euismod amet. Venenatis id volutpat elit ultrices amet justo amet sem praesent.",
+    quote:
+      "eSpark Consulting Group is dedicated to providing excellent database development services that cater to the specific needs of our clients. Our team of skilled database developers possess the necessary expertise and knowledge to create tailored solutions that are both efficient and reliable, while remaining cost-effective.",
     quoteImage: DatabaseDevelopmentQuote,
     icon: DatabaseDevelopmentIcon,
     icon2: DatabaseDevelopmentIconHover,
     childs: [
-      serviceItems(hash(), "Postgre SQL Database​", "Postgre SQL Database​", "Our PostGRES database development services will allow you to manage massive amounts of data while ensuring data security and integrity. Our team of expert developers will design and construct a scalable database that suits your company's requirements. We are experts at creating intricate, data-driven programmes with plenty of transactions. We provide quick data retrieval, simple maintenance, and enhanced performance with our PostGRES database building services.​", PostGreSQLDatabase),
-      serviceItems(hash(), "NoSQL / Firebase / MongoDB​", "NoSQL / Firebase / MongoDB​", "Your ability to store, handle, and retrieve data in a flexible and scalable manner is made possible by our NoSQL/Firebase/MongoDB development services. No matter if you require a database for a web application, IoT device, or mobile app, our skilled developers can offer a tailored solution that satisfies your requirements. We can assist you in selecting the ideal NoSQL database platform for your needs and price range. Our developers have experience developing highly scalable, fault-tolerant, and simple-to-maintain NoSQL databases.", NoSQLFirebaseMongoDB),
-      serviceItems(hash(), "Microsoft SQL​", "Microsoft SQL​", "You can get a dependable and secure data storage solution from our Microsoft SQL development services. Our skilled developers can create and implement a custom database that suits your needs, whether you need to manage data for a small business or an enterprise-level corporation. We specialise in creating highly accessible, secure, and scalable Microsoft SQL databases. Additionally, our experts can aid in the migration of your current databases to Microsoft SQL, assuring a seamless changeover with little downtime.", MicrosoftSQL),
-      serviceItems(hash(), "PHP mySQL​", "PHP mySQL​", "We provide a cost-effective method for managing data in web applications with our PHP mySQL development services. To match your business needs, a bespoke mySQL database can be designed and implemented by our talented experts. We specialise in creating web applications that are very responsive and have a PHP mySQL backend for quick data access and simple maintenance. Additionally, our experts can assist you with converting your current database to PHP mySQL, assuring a seamless transition with little downtime", PHPmySQL),
-    ]
+      serviceItems(
+        hash(),
+        "PostgreSQL Database",
+        "PostgreSQL Database",
+        "Our PostgreSQL database development services will allow you to manage massive amounts of data while ensuring data security and integrity. Our team of expert developers will design and construct a scalable database that suits your company's requirements. We are experts at creating intricate, data-driven programs with plenty of transactions. We provide quick data retrieval, simple maintenance, and enhanced performance with our PostgreSQL database building services.",
+        PostGreSQLDatabase
+      ),
+      serviceItems(
+        hash(),
+        "NoSQL / Firebase / MongoDB",
+        "NoSQL / Firebase / MongoDB",
+        "Your ability to store, handle, and retrieve data in a flexible and scalable manner is made possible by our NoSQL/Firebase/MongoDB development services. No matter if you require a database for a web application, IoT device, or mobile app, our skilled developers can offer a tailored solution that satisfies your requirements. We can assist you in selecting the ideal NoSQL database platform for your needs and price range. Our developers have experience developing highly scalable, fault-tolerant, and simple-to-maintain NoSQL databases.",
+        NoSQLFirebaseMongoDB
+      ),
+      serviceItems(
+        hash(),
+        "Microsoft SQL",
+        "Microsoft SQL",
+        "You can get a dependable and secure data storage solution from our Microsoft SQL development services. Our skilled developers can create and implement a custom database that suits your needs, whether you need to manage data for a small business or an enterprise-level corporation. We specialize in creating highly accessible, secure, and scalable Microsoft SQL databases. Additionally, our experts can aid in the migration of your current databases to Microsoft SQL, assuring a seamless changeover with little downtime.",
+        MicrosoftSQL
+      ),
+      serviceItems(
+        hash(),
+        "PHP MySQL",
+        "PHP MySQL",
+        "We provide a cost-effective method for managing data in web applications with our PHP MySQL development services. To match your business needs, a bespoke MySQL database can be designed and implemented by our talented experts. We specialize in creating web applications that are very responsive and have a PHP MySQL backend for quick data access and simple maintenance. Additionally, our experts can assist you with converting your current database to PHP MySQL, assuring a seamless transition with little downtime.",
+        PHPmySQL
+      ),
+    ],
   },
   {
     id: hash(),
-    name: "Embedded Systems Design ",
+    name: "Embedded Systems Design",
     path: "embedded-systems-design",
-    content: "Lorem ipsum dolor sit amet consectetur. At in interdum ullamcorper maecenas arcu euismod amet. Venenatis id volutpat elit ultrices amet justo amet sem praesent.Lorem ipsum dolor sit amet consectetur. At in interdum ullamcorper maecenas arcu euismod amet. Venenatis id volutpat elit ultrices amet justo amet sem praesent.Lorem ipsum dolor sit amet consectetur.",
+    content:
+      "eSpark Consulting Group provides a comprehensive suite of embedded design system services to help businesses develop cutting-edge hardware and software solutions for their unique needs. Our team of experienced engineers and designers has expertise in a wide range of technologies and platforms, including C/C++, Python/MATLAB, Raspberry Pi, and embedded Linux/RTOS (Zephyr, ESP-IDF).",
     image: EmbeddedSystemsDesign,
-    quote: "Lorem ipsum dolor sit amet consectetur. At in interdum ullamcorper maecenas arcu euismod amet. Venenatis id volutpat elit ultrices amet justo amet sem praesent.Lorem ipsum dolor sit amet consectetur. At in interdum ullamcorper maecenas arcu euismod amet. Venenatis id volutpat elit ultrices amet justo amet sem praesent.Lorem ipsum dolor sit amet consectetur. At in interdum ullamcorper maecenas arcu euismod amet. Venenatis id volutpat elit ultrices amet justo amet sem praesent.",
+    quote:
+      "At eSpark Consulting Group, we are committed to delivering high-quality embedded design system services that meet our clients' unique requirements. Our team of experienced engineers and designers has the expertise and knowledge needed to develop custom solutions that are efficient, reliable, and cost-effective.",
     quoteImage: EmbeddedSystemsDesignQuote,
     icon: EmbeddedSystemsDesignIcon,
     icon2: EmbeddedSystemsDesignIconHover,
     childs: [
-      serviceItems(hash(), "Firmware Development C / C++​", "Firmware Development C / C++​", "For developing firmware for embedded devices, we provide dependable C/C++ firmware development services. Custom firmware that satisfies your business requirements can be designed and implemented by our skilled experts. Our expertise lies in the creation of high-performance firmware that is tailored for embedded systems, resulting in quick boot times and effective resource management. Also, you can get assistance from our expertise with firmware testing and optimisation.​​", FirmwareDevelopment),
-      serviceItems(hash(), "PCB Design and Assembly", "PCB Design and Assembly", "For all of your circuit board requirements, you can rely on the excellent quality and dependability of our PCB design and assembly services. Custom PCBs can be designed and assembled by our skilled developers to match your company's needs. To guarantee the greatest level of quality and dependability for the circuit boards, we employ cutting-edge tools and methods. Our team can also help you with prototyping, testing, and optimisation services for PCBs", PCBDesignAssembly),
-      serviceItems(hash(), "Raspberry Pi Python / Matlab​", "Raspberry Pi Python / Matlab​", "For creating IoT solutions, our Raspberry Pi Python/Matlab development services provide a flexible and potent option. Our skilled developers can create and deploy unique Raspberry Pi solutions that satisfy your company's needs. For simple sensor and other peripheral integration, we specialise in creating high-performance solutions that interact with the Raspberry Pi's GPIO using Python/Matlab.", RaspberryPiPythonMatlab),
-      serviceItems(hash(), "Embedded Linux / RTOS (Zephyr, ESP-IDF)​", "Embedded Linux / RTOS (Zephyr, ESP-IDF)​", "Custom Embedded Linux/RTOS solutions that match your company's needs can be designed and implemented by our talented developers. We specialise in creating high-performance, embedded system-optimised solutions that guarantee quick boot times and effective resource use. Our team will assist you with the testing, optimisation, and porting of Embedded Linux/RTOS using well-liked platforms like Zephyr and ESP-IDF.", EmbeddedLinuxRTOS),
-    ]
+      serviceItems(
+        hash(),
+        "Firmware Development C / C++",
+        "Firmware Development C / C++",
+        "For developing firmware for embedded devices, we provide dependable C/C++ firmware development services. Custom firmware that satisfies your business requirements can be designed and implemented by our skilled experts. Our expertise lies in the creation of high-performance firmware that is tailored for embedded systems, resulting in quick boot times and effective resource management. Also, you can get assistance from our expertise with firmware testing and optimization.",
+        FirmwareDevelopment
+      ),
+      serviceItems(
+        hash(),
+        "PCB Design and Assembly",
+        "PCB Design and Assembly",
+        "For all of your circuit board requirements, you can rely on the excellent quality and dependability of our PCB design and assembly services. Custom PCBs can be designed and assembled by our skilled developers to match your company's needs. To guarantee the greatest level of quality and dependability for the circuit boards, we employ cutting-edge tools and methods. Our team can also help you with prototyping, testing, and optimization services for PCBs.",
+        PCBDesignAssembly
+      ),
+      serviceItems(
+        hash(),
+        "Raspberry Pi Python / MATLAB",
+        "Raspberry Pi Python / MATLAB",
+        "For creating IoT solutions, our Raspberry Pi Python/MATLAB development services provide a flexible and potent option. Our skilled developers can create and deploy unique Raspberry Pi solutions that satisfy your company's needs. For simple sensor and other peripheral integration, we specialize in creating high-performance solutions that interact with the Raspberry Pi's GPIO using Python/MATLAB.",
+        RaspberryPiPythonMatlab
+      ),
+      serviceItems(
+        hash(),
+        "Embedded Linux / RTOS (Zephyr, ESP-IDF)",
+        "Embedded Linux / RTOS (Zephyr, ESP-IDF)",
+        "Custom Embedded Linux/RTOS solutions that match your company's needs can be designed and implemented by our talented developers. We specialize in creating high-performance, embedded system-optimized solutions that guarantee quick boot times and effective resource use. Our team will assist you with the testing, optimization, and porting of Embedded Linux/RTOS using well-liked platforms like Zephyr and ESP-IDF.",
+        EmbeddedLinuxRTOS
+      ),
+    ],
   },
   {
     id: hash(),
     name: "QA and Web Plugin and Desktop Development",
-    path: "qa-Web-Plugin-desktop-development",
-    content: "Lorem ipsum dolor sit amet consectetur. At in interdum ullamcorper maecenas arcu euismod amet. Venenatis id volutpat elit ultrices amet justo amet sem praesent.Lorem ipsum dolor sit amet consectetur. At in interdum ullamcorper maecenas arcu euismod amet. Venenatis id volutpat elit ultrices amet justo amet sem praesent.Lorem ipsum dolor sit amet consectetur.",
+    path: "qa-web-plugin-desktop-development",
+    content:
+      "Our QA services include both manual and automated testing for web and mobile applications. Our expert QA team will help you identify any potential issues with your software, ensuring that it is running smoothly and meeting your business goals. We use the latest tools and techniques to provide comprehensive testing services that help our clients achieve optimal results.",
     image: QAWebPluginandDesktopDevelopment,
-    quote: "Lorem ipsum dolor sit amet consectetur. At in interdum ullamcorper maecenas arcu euismod amet. Venenatis id volutpat elit ultrices amet justo amet sem praesent.Lorem ipsum dolor sit amet consectetur. At in interdum ullamcorper maecenas arcu euismod amet. Venenatis id volutpat elit ultrices amet justo amet sem praesent.Lorem ipsum dolor sit amet consectetur. At in interdum ullamcorper maecenas arcu euismod amet. Venenatis id volutpat elit ultrices amet justo amet sem praesent.",
+    quote:
+      "At eSpark Consulting Group, we pride ourselves on our ability to deliver top-quality solutions to our clients. Our team of experts has years of experience in the industry and is committed to staying up to date with the latest trends and technologies. We work closely with our clients to understand their unique needs and develop customized solutions that address those needs in the most efficient and effective manner possible.",
     quoteImage: QAWebPluginandDesktopDevelopmentQuote,
-    icon:QAWebPluginandDesktopDevelopmentIcon,
-    icon2:QAWebPluginandDesktopDevelopmentIconHover,
+    icon: QAWebPluginandDesktopDevelopmentIcon,
+    icon2: QAWebPluginandDesktopDevelopmentIconHover,
     childs: [
-      serviceItems(hash(), "QA Manual Web and Mobile App​", "QA Manual Web and Mobile App​", "To ensure that your web and mobile applications satisfy high-quality requirements, use our manual QA testing services. Functional and non-functional testing will be carried out by our team of skilled QA testers to find any potential problems that might have an influence on the user experience. Together, we will create test plans, carry them out, and report on any difficulties that arise. Our aim is to guarantee that your mobile and online applications work as intended and deliver a great user experience​​", QAManualWebMobileApp),
-      serviceItems(hash(), "LUA Plugin Development", "LUA Plugin Development", "To ensure that your web and mobile applications satisfy high-quality requirements, use our manual QA testing services. Functional and non-functional testing will be carried out by our team of skilled QA testers to find any potential problems that might have an influence on the user experience. Together, we will create test plans, carry them out, and report on any difficulties that arise. Our aim is to guarantee that your mobile and online applications work as intended and deliver a great user experience", LUAPluginDevelopment),
-      serviceItems(hash(), ".Net MVVM Development​", ".NET MVVM Development​", "To ensure that your web and mobile applications satisfy high-quality requirements, use our manual QA testing services. Functional and non-functional testing will be carried out by our team of skilled QA testers to find any potential problems that might have an influence on the user experience. Together, we will create test plans, carry them out, and report on any difficulties that arise. Our aim is to guarantee that your mobile and online applications work as intended and deliver a great user experience", DotNetMVVMDevelopment),
-    ]
+      serviceItems(
+        hash(),
+        "QA Manual Web and Mobile App",
+        "QA Manual Web and Mobile App",
+        "To ensure that your web and mobile applications satisfy high-quality requirements, use our manual QA testing services. Functional and non-functional testing will be carried out by our team of skilled QA testers to find any potential problems that might have an influence on the user experience. Together, we will create test plans, carry them out, and report on any difficulties that arise. Our aim is to guarantee that your mobile and online applications work as intended and deliver a great user experience.",
+        QAManualWebMobileApp
+      ),
+      serviceItems(
+        hash(),
+        "LUA Plugin Development",
+        "LUA Plugin Development",
+        "Our LUA Plugin development services offer a versatile and portable way to increase the functionality of your applications. Our skilled team of developers will collaborate with you to build and deploy unique plugins that satisfy your company's needs. We are experts at creating high-performance plugins that are quick and effective. Our LUA Plugin development services can assist you in achieving your objectives, whether you need to interact with third-party software or add new capabilities.",
+        LUAPluginDevelopment
+      ),
+      serviceItems(
+        hash(),
+        ".Net MVVM Development",
+        ".NET MVVM Development",
+        "Our.Net MVVM development services offer a cutting-edge and effective method for creating software programmers. The Model-View-View Model (MVVM) pattern will be used by our team of skilled developers to create scalable and maintainable apps. We specialize in creating high-performance software programs that are tailored to your company's requirements. We create software solutions that are quick and effective using the most recent.Net frameworks and tools. Our.Net MVVM development services will assist you in achieving your objectives, regardless of whether you need to create a desktop, web, or mobile application.",
+        DotNetMVVMDevelopment
+      ),
+    ],
   },
-
-]
+];
