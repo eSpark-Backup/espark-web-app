@@ -4,7 +4,7 @@ import styles from "./style.module.css";
 
 const Portfolio = ({ data, title }) => {
   return (
-    <div className="container ptb-80">
+    <div className="container-fluid ptb-80">
       <SectionTitle
         heading={title}
       />

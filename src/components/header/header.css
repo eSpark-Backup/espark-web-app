@@ -107,9 +107,9 @@
 }
 #serve:hover #serveDrop {
   display: flex !important;
-  background: #fdfdfd;
+  background: #E8F1F2;
   opacity: 0.9;
-  margin-top: -15px;
+  margin-top: -20px;
 }
 #serve {
   position: static;
@@ -131,8 +131,8 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500 !important;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 16.8132px;
+  line-height: 35px;
   color: #2074b4;
   border-bottom: 2px solid black;
 }

@@ -47,7 +47,7 @@ const Header = () => {
   return (
     <header id="header" class="headroom is-sticky">
       <div class="startp-nav">
-        <div class="container">
+        <div class="container-fluid">
           <nav class="navbar navbar-expand-md navbar-light">
             <Link class="navbar-brand" to="/">
               <img
@@ -56,7 +56,7 @@ const Header = () => {
                   : "../../assets/images/logo.png")}
                 alt="logo"
                 className="logo"
-                width={120}
+                width={150}
                 height={isAppScreen && 60}
               />
             </Link>
@@ -142,11 +142,11 @@ const Header = () => {
                         return (
                           <div className="contents p-2 my-3">
                             <Link
-                              id="linkss "
+                              id="linkss"
                               className="linkClass"
                               to={`/services/${items.path}`}
                             >
-                              <p className="heading ">{items.name}</p>
+                              <p className="heading">{items.name}</p>
                             </Link>
                             {items.childs.map((item) => {
                               return (

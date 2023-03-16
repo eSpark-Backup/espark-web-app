@@ -706,13 +706,20 @@ progress {
 }
 
 .container,
-.container-fluid,
 .container-lg,
 .container-md,
 .container-sm,
 .container-xl,
 .container-xxl {
     width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto
+}
+
+.container-fluid{
+    width: 80%;
     padding-right: var(--bs-gutter-x, .75rem);
     padding-left: var(--bs-gutter-x, .75rem);
     margin-right: auto;
@@ -26885,8 +26892,8 @@ blockquote:after {
     position: relative;
     z-index: 1;
     background-image: url("../images/hero-section/hero-image.png");
-    padding-top: 100px;
-    padding-bottom: 150px;
+    padding-top: 50px;
+    padding-bottom: 180px;
     background-position: 100% 100%;
     background-size: cover;
     background-repeat: no-repeat

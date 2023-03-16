@@ -14,11 +14,9 @@ function Herosection({
   return (
     <>
       <div class="ml-main-section">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
-            <div
-              class={`${styles.headingColumn} col-lg-6 col-md-12 col-sm-12 `}
-            >
+            <div class={`${styles.headingColumn} col-lg-5 col-md-12 col-sm-12`}>
               <div
                 class={
                   serviceClass
@@ -36,24 +34,25 @@ function Herosection({
                 ></p>
 
                 {ShowButton ? (
-                  <Button title={buttonText} link={buttonUrl} design={13}/>
-                ):''}
+                  <Button title={buttonText} link={buttonUrl} design={13} />
+                ) : (
+                  ""
+                )}
               </div>
             </div>
-
-            <img
-              src={images}
-              alt="image"
+            <div
               class={
                 serviceClass
                   ? `${styles.service} animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-12 col-sm-12 text-center`
-                  : "col-lg-6 col-md-12 col-sm-12 text-center"
+                  : "animate__animated animate__fadeInDown animate__delay-1.5s col-lg-7 col-md-2 col-sm-12 text-right"
               }
-            />
+            >
+              <img src={images} alt="image" />
+            </div>
           </div>
         </div>
       </div>
-      <div class={`${styles.headingColumnMobile}   col-sm-12`}>
+      <div class={`${styles.headingColumnMobile} col-sm-12`}>
         <div class="ml-banner-content">
           <h1 className={styles.heading}>{title}</h1>
 
@@ -61,7 +60,9 @@ function Herosection({
           <div className="d-flex">
             {ShowButton ? (
               <Button title={buttonText} link={buttonUrl} design={2} />
-            ):''}
+            ) : (
+              ""
+            )}
           </div>
         </div>
       </div>
