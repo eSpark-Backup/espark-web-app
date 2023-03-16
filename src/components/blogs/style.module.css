@@ -180,3 +180,9 @@
   line-height: 1.2;
   color: #176fae;
 }
+.inputFieldsColor{
+  background-color: #F5F5F5!important;
+}
+.inputFieldsColor:focus{
+  outline: none;
+}

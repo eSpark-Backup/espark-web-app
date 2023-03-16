@@ -76,6 +76,7 @@ export const BlogCardMap = ({
     <>
       {post ? (
         post?.slice(sliceStart, sliceEnd)?.map((items) => {
+          console.log("blog",post?.slice(sliceStart, sliceEnd))
           return (
             <div className={className}>
               {" "}
@@ -83,7 +84,8 @@ export const BlogCardMap = ({
                 image={items.jetpack_featured_media_url}
                 title={items.title.rendered}
                 para={items.excerpt.rendered}
-                link={`/blogs/${items.slug}`}
+                // link={`/blogs/${items.slug}`}
+                link={`/blog-detail/${items.id}`}
                 btn_text={`Read more`}
               />
             </div>

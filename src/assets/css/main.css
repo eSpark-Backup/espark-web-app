@@ -24642,7 +24642,7 @@ bar-nav .nav-item .dropdown-menu li a.active,
 .comments-area .comment-respond input[type=url]:focus,
 .comments-area .comment-respond input[type=week]:focus,
 .comments-area .comment-respond textarea:focus {
-    border-color: #11A79c
+    border-color: none;
 }
 
 .comments-area .comment-respond .comment-form-author {

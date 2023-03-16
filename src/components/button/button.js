@@ -140,21 +140,11 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
 
   if (design === 12) {
     return (
-      <>
-        <a
-          href={link}
-          target="_blank"
-          className={style.btnMargin}
-          onClick={onClick}
-          disabled={disabled}
-        >
-          <button
-            className="roundbutton rounded-pill"
-            style={{ width: "236.18px", fontSize: 30, height: 46 }}
-          >
-            {title}
-          </button>
-        </a>
+      <> 
+        <div    onClick={onClick} className={`${style.blogDetailsButton}`}
+>
+          {title}
+        </div>
       </>
     );
   }
