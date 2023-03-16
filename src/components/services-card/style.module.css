@@ -3,7 +3,10 @@
     background: #F5F5F5;
     border-radius: 5px;
 }
-
+.mainCardWrapper:hover {
+    box-shadow: 0px 4px 10px #bbbbbb !important;
+    
+}
 .appDevWrapper {
     /* width: 100%; */
     width: 325px;
@@ -22,6 +25,7 @@
 .appDevWrapper:hover {
     background-color: var(--color-secondary);
     transition: background-color 1s ease-in-out;
+    
     
 }
 

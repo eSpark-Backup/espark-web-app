@@ -18,8 +18,7 @@ function ServiceSlider() {
           height="34"
           viewBox="0 0 22 34"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+          xmlns="http://www.w3.org/2000/svg">
           <path
             d="M1.92306 1.84619L18.0769 17.2977L1.92306 31.4616"
             stroke="white"
@@ -38,8 +37,7 @@ function ServiceSlider() {
           height="34"
           viewBox="0 0 22 34"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+          xmlns="http://www.w3.org/2000/svg">
           <path
             d="M20.0769 1.84616L3.9231 17.2977L20.0769 31.4615"
             stroke="white"
@@ -113,7 +111,7 @@ function ServiceSlider() {
                     image={item.icon}
                     image2={item.icon2}
                     title={item.name}
-                    para={item.content}
+                    para={item.discription}
                   />
                 </Link>
               </div>
@@ -122,14 +120,14 @@ function ServiceSlider() {
         </div>
         <div className="mobileResponsive">
           <div className="row">
-            {services.slice(1, 5).map((item) => (
+            {services.slice(0, 5).map((item) => (
               <div className="col-sm-12 col-md-3 col-lg-3 ">
                 <Link to={`/services/${item.path}`}>
                   <ServicesCard
                     image={item.icon}
                     image2={item.icon2}
                     title={item.name}
-                    para={item.content}
+                    para={item.discription}
                   />
                 </Link>
               </div>
