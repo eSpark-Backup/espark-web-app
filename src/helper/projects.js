@@ -35,12 +35,12 @@ const hash = () => {
   };
   return `${s4()}${s4()}-${s4()}-${s4()}-${s4()}-${s4()}${s4()}${s4()}`;
 };
-const projectItems = (name, image, projectUrl) => {
+const projectItems = (image, projectUrl, name) => {
   return {
     id: hash(),
-    name: name,
     image: image,
     projectUrl: projectUrl,
+    name: name,
   };
 };
 
@@ -51,14 +51,14 @@ export const projects = [
     path: "software-service",
     childs: [
       projectItems(
-        "Alternative Asset",
         img_1,
-        "https://alternative-asset.co.uk/"
+        "https://alternative-asset.co.uk/",
+        "Alternative Asset"
       ),
       projectItems(
-        "Appolos's Boxing & Fitness",
         img_2,
-        "https://www.apollosboxing.co.uk/"
+        "https://www.apollosboxing.co.uk/",
+        "Appolos's Boxing & Fitness"
       ),
       projectItems(img_3, "https://billadvice.co.uk/", "Bill Advice"),
       projectItems(img_4, "https://cbe-uk.com/", "Custom Built Exhibitions"),
@@ -138,14 +138,14 @@ export const projects = [
     path: "hardware-service",
     childs: [
       projectItems(
-        "Alternative Asset",
         img_1,
-        "https://alternative-asset.co.uk/"
+        "https://alternative-asset.co.uk/",
+        "Alternative Asset"
       ),
       projectItems(
-        "Appolos's Boxing & Fitness",
         img_2,
-        "https://www.apollosboxing.co.uk/"
+        "https://www.apollosboxing.co.uk/",
+        "Appolos's Boxing & Fitness"
       ),
       projectItems(img_3, "https://billadvice.co.uk/", "Bill Advice"),
       projectItems(img_4, "https://cbe-uk.com/", "Custom Built Exhibitions"),
@@ -225,14 +225,14 @@ export const projects = [
     path: "mechanical-service",
     childs: [
       projectItems(
-        "Alternative Asset",
         img_1,
-        "https://alternative-asset.co.uk/"
+        "https://alternative-asset.co.uk/",
+        "Alternative Asset"
       ),
       projectItems(
-        "Appolos's Boxing & Fitness",
         img_2,
-        "https://www.apollosboxing.co.uk/"
+        "https://www.apollosboxing.co.uk/",
+        "Appolos's Boxing & Fitness"
       ),
       projectItems(img_3, "https://billadvice.co.uk/", "Bill Advice"),
       projectItems(img_4, "https://cbe-uk.com/", "Custom Built Exhibitions"),
