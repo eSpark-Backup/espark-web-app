@@ -3,7 +3,7 @@
 }
 
 .section-p h2 {
-    color: #11A79c;
+    color: var(--color-primary);
 }
 
 .section-p h3 {
@@ -15,7 +15,7 @@
 }
 .notfound {
     text-align: center;
-    color: #0fa49d;
+    color: var(--color-primary);
     margin-bottom: 80px;
     margin-top: 60px;
     font-size: 30px;
