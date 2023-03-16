@@ -16,9 +16,9 @@ function Users() {
           heading={"Our Achievements"}
           paragraph={
             <p>
-              We offer complete product development solutions that fit your
+               We have satisfied all our foremost clients by engineering
               <br />
-              prduct's unique requirements.
+              efficacious projects through our dynamically established teams
             </p>
           }
           portFolio="portfolio"

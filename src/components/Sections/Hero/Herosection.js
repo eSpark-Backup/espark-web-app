@@ -29,15 +29,15 @@ function Herosection({
                 <h1 className={styles.heading}>{title}</h1>
 
                 <p
-                  className={styles.paraText}
+                  className={styles.paraTexts}
                   dangerouslySetInnerHTML={{
                     __html: paragraph,
                   }}
                 ></p>
 
-                {ShowButton ?? (
-                  <Button title={buttonText} link={buttonUrl} design={2} />
-                )}
+                {ShowButton ? (
+                  <Button title={buttonText} link={buttonUrl} design={13}/>
+                ):''}
               </div>
             </div>
 
@@ -59,9 +59,9 @@ function Herosection({
 
           <p className={styles.paraText}>{paragraph}</p>
           <div className="d-flex">
-            {ShowButton ?? (
+            {ShowButton ? (
               <Button title={buttonText} link={buttonUrl} design={2} />
-            )}
+            ):''}
           </div>
         </div>
       </div>

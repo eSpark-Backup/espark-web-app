@@ -30,6 +30,7 @@
    letter-spacing: 0em;
    text-align: left;
    padding: 10px 0;
+   color: #3A3A3A;
 }
 
 .heading {
@@ -58,7 +59,10 @@
 }
 
 .buttons {
-   margin-top: 100px !important;
+   margin-top: 70px !important;
+}
+.whyeSparksColumn{
+   margin-bottom: 110px;
 }
 
 #whypoints {
@@ -82,12 +86,10 @@
 }
 
 .image {
-   width: 100%;
+   width: 100% !important;
+   height: 505px;
+   margin-top: -40px !important;
 }
-
-/* .cont{
-   margin-left: -15px;
-} */
 
 #whylinksbtn {
    padding: 5px;
@@ -125,6 +127,12 @@
    .icon {
       padding-right: auto !important;
    }
+   .whyeSparksColumn{
+      margin-bottom: 0px;
+   }
+   .image {
+      width: 100%;
+   }
 
 }
 
@@ -136,5 +144,11 @@
 
    .button {
       width: 100% !important;
+   }
+   .whyeSparksColumn{
+      margin-bottom: 0px;
+   }
+   .image {
+      width: 100%;
    }
 }
