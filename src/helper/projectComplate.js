@@ -3,7 +3,7 @@ export const completedProject = [
         value : 66,
         numbers: '150+',
         title : 'Project Completed',
-        bgcolor : '#00A099'
+        bgcolor : '#11A79c'
     },
     {
         value : 85,
@@ -15,7 +15,7 @@ export const completedProject = [
         value : 70,
         numbers: '150+',
         title : 'Clients Served',
-        bgcolor : '#00A099'
+        bgcolor : '#11A79c'
     },
     {
         value : 45,

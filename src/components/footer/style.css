@@ -42,7 +42,7 @@
 }
 
 .copyright {
-  background: #2b4e89;
+  background: var(--color-secondary);
   padding: 5px;
 }
 
@@ -183,7 +183,7 @@ footer .social-links {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-  background: #11A79c;
+  background: var(--color-primary);
 }
 
 .rn-progress-parent::after {
@@ -191,7 +191,7 @@ footer .social-links {
   text-align: center;
   line-height: 46px;
   font-size: 24px;
-  color: #11A79c;
+  color: var(--color-primary);
   left: 0;
   top: 0;
   height: 46px;
@@ -207,5 +207,5 @@ footer .social-links {
   position: relative;
   left: 12px;
   top: 8px;
-  color: #2b4e89;
+  color: #000;
 }
