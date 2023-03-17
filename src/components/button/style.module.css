@@ -59,3 +59,16 @@ height: 72px;
 button:hover {
     box-shadow: 5px 5px 5px #11a79c;
 }
+
+.blogDetailsButton{
+    width: 181.29px;
+    height: 31.09px;
+    border: 2px solid #176FAE;
+    border-radius: 22px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}

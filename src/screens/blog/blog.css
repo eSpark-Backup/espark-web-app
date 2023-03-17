@@ -1,0 +1,113 @@
+.titleImg {
+  font-size: 14px;
+  height: 505px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+  transition: font-size 0.5s ease-in-out;
+}
+
+
+
+.paragraph p strong {
+  font-size: 18px;
+  line-height: 50px;
+}
+
+.paragraph h3 img {
+  margin-left: 50px;
+}
+.paragraph p img {
+  margin: 30px 10px;
+}
+
+.paragraph h4 span img {
+  margin-right: 50px;
+}
+.paragraph h4 img {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 10px;
+}
+
+.paragraph p:first-child {
+  margin-top: 20px;
+}
+.paragraph p:last-child {
+  margin-bottom: 30px;
+}
+
+.paragraph h2 {
+  line-height: 80px;
+
+}
+
+.paragraph h3 {
+  line-height: 80px;
+
+}
+
+.paragraph h4 {
+  line-height: 80px;
+
+}
+
+.titleImgLeft {
+  font-size: 14px;
+  height: 505px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  transition: font-size 0.5s ease-in-out;
+  padding-left: 20px;
+}
+
+.div-black-color-animation {
+  z-index: 2;
+  opacity: 0.2;
+  width: 100%;
+  height: 505px;
+  transition: background-color 0.5s;
+}
+
+.imgDiv {
+  z-index: 1;
+}
+
+.txtDiv {
+  z-index: 3;
+  width: 100%;
+}
+
+.mainDivWrapper:hover .div-black-color-animation {
+  opacity: 0.8;
+  background-color: black;
+  z-index: 2;
+}
+
+.mainDivWrapper:hover .titleImg {
+  font-size: 20px;
+}
+
+.mainDivWrapper:hover .titleImgLeft {
+  font-size: 22px;
+}
+
+.commetArea {
+  margin-top: 600px;
+}
+
+.shimmerDivMargin {
+  margin-top: 100px;
+}
+
+.imgBarMargin {
+  margin-top: 80px;
+}
+
+.divPosition {
+  position: absolute;
+}
