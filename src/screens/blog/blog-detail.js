@@ -36,7 +36,7 @@ function BlogDetail() {
             <div class="row">
               <div className="col-lg-12 col-md-12 ">
                 <div className="w-100 m-auto ">
-                  <Button design={12} title={"Lorem ipsum"}></Button>
+                  <Button design={8} title={"Lorem ipsum"}></Button>
                   <div className="w-100 m-auto my-5">
                     <h3 className="text-center text-black fw-bold">
                       {post && post[0]?.title.rendered}
@@ -44,14 +44,19 @@ function BlogDetail() {
                   </div>
                   <div className="w-100 h-100 imgBarMargin">
                     <img
-                      src={post && post[0]?.jetpack_featured_media_url}
+                      src={
+                        post && post[0]?.jetpack_featured_media_url
+                          ? post[0]?.jetpack_featured_media_url
+                          : "https://thumbs.dreamstime.com/b/blog-information-website-concept-workplace-background-text-view-above-127465079.jpg"
+                      }
                       width="100%"
                       alt="blog-details"
                     />
                   </div>
                   {post[0] && (
                     <p
-                      className={` my-auto text-justify `}
+                      className={` my-auto text-justify paragraph`}
+                      style={{ lineHeight:30 }}
                       dangerouslySetInnerHTML={{
                         __html: post[0]?.content.rendered,
                       }}
