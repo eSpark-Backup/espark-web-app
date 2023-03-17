@@ -5,33 +5,51 @@
 
 .titleWrapper {
   height: 60px;
-  background-color: #EBE9E9;
+  background-color: #ebe9e9;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .titleWrapper:hover {
-  background-color: #2074B4;
+  background-color: #2074b4;
 }
 
-
-.titleWrapper:hover>h3 {
+.titleWrapper:hover > h3 {
   color: #ffffff;
 }
 
 .titleText {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 21.2574px;
   line-height: 100%;
   text-align: center;
   text-transform: capitalize;
-  color: #2074B4;
+  color: #2074b4;
 }
-
+.filterTab {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #9B9B9B;
+  cursor: pointer;
+}
+.filterTabSelected {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #00A099;
+  cursor: pointer;
+  border-bottom: 3px solid #3359A2;
+}
 
 @media (max-width: 450px) {
   .wrapper {
@@ -40,7 +58,7 @@
   }
 }
 
-@media (min-width:451px) and (max-width:575px) {
+@media (min-width: 451px) and (max-width: 575px) {
   .wrapper {
     width: 60%;
     margin-left: 23%;
