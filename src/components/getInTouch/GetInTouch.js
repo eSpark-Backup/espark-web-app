@@ -284,8 +284,7 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
             <div
               class={`col-lg-${
                 modal || link?.includes("vacancies") ? "12" : 6
-              } col-md-12`}
-            >
+              } col-md-12`}>
               <form id="contactForm" ref={form} onSubmit={sendEmail}>
                 <div class="row">
                   <div class="col-lg-12 col-md-12">
@@ -322,11 +321,10 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                       !link?.includes("vacancies")
                         ? "col-lg-6 col-md-6"
                         : "col-lg-12 col-md-12"
-                    }
-                  >
+                    }>
                     <div class="form-group">
                       <input
-                        type="number"
+                        type="phone"
                         name="number"
                         required={true}
                         placeholder="Your phone number *"
@@ -345,8 +343,7 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                         !link?.includes("vacancies")
                           ? "col-lg-6 col-md-6"
                           : "col-lg-12 col-md-12"
-                      }
-                    >
+                      }>
                       <div class="form-group">
                         <input
                           type="text"
@@ -402,8 +399,7 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                         }
                         class="form-control"
                         value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                      ></textarea>
+                        onChange={(e) => setMessage(e.target.value)}></textarea>
                       <div class="invalid-feedback"></div>
                     </div>
                   </div>
@@ -415,8 +411,7 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                           !link?.includes("vacancies")
                             ? "col-lg-6 col-md-6"
                             : "col-lg-12 col-md-12"
-                        }
-                      >
+                        }>
                         <div class="form-group">
                           <input
                             type="file"
@@ -431,22 +426,21 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                         </div>
                       </div>
                       <br />
-                      <p>Allowed Type(s): .pdf, .doc, .docx</p> 
+                      <p>Allowed Type(s): .pdf, .doc, .docx</p>
                       <div class="form-group d-flex  justify-content-start align-items-start my-2">
                         <div className=" me-2">
-
-                        <input
-                          id="checkbox-1"
-                          type="checkbox"
-                          name="subject"
-                          required={true}
-                          className="w-100 h-25  my-1  "
+                          <input
+                            id="checkbox-1"
+                            type="checkbox"
+                            name="subject"
+                            required={true}
+                            className="w-100 h-25  my-1  "
                           />
-                          </div>
+                        </div>
 
                         <label for="checkbox-1">
-By using this form you agree with the storage
-                          and handling of your data by this website.{" "}
+                          By using this form you agree with the storage and
+                          handling of your data by this website.{" "}
                         </label>
                         <div class="invalid-feedback"></div>
                       </div>

@@ -1,28 +1,45 @@
 .section-p {
-    text-align: left;
+  text-align: left;
 }
 
 .section-p h2 {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .section-p h3 {
-    color: gray !important
+  color: gray !important;
 }
 
 .section-p p {
-    font-size: 16px;
+  font-size: 16px;
 }
 .notfound {
-    text-align: center;
-    color: var(--color-primary);
-    margin-bottom: 80px;
-    margin-top: 60px;
-    font-size: 30px;
+  text-align: center;
+  color: var(--color-primary);
+  margin-bottom: 80px;
+  margin-top: 60px;
+  font-size: 30px;
 }
-.containerMarginBottom{
-    margin-bottom:80px
+.containerMarginBottom {
+  margin-bottom: 80px;
 }
-.containerMarginTop{
-    margin-top:220px;
+.containerMarginTop {
+  margin-top: 220px;
+}
+.jobDetails {
+  padding-bottom: 50px;
+}
+.jobDetails > h2 {
+  line-height: 1.8;
+}
+.jobDetails > p {
+  line-height: 1.8;
+}
+.jobDetails > ul {
+  padding-left: 20px;
+  list-style-type: disc !important;
+}
+.jobDetails > ol {
+  padding-left: 20px;
+  list-style-type: decimal !important;
 }
