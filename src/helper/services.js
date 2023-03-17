@@ -68,6 +68,8 @@ export const services = [
     path: "web-app-development",
     content:
       "eSpark Consulting Group offers comprehensive web app development services to help businesses create dynamic and responsive web applications. Our team of experienced developers has expertise in a wide range of technologies and platforms, including React/Vue development, ASP.NET development, Node.js development, WordPress/Shopify development, and more.",
+    discription:
+      "We have an experienced and professional Front End & Backend Developer Team to execute your defined requirements enthusiastically.",
     image: WebApplicationDevelopment,
     quote:
       "eSpark Consulting Group is dedicated to providing excellent database development services that cater to the specific needs of our clients. Our team of skilled database developers possess the necessary expertise and knowledge to create tailored solutions that are both efficient and reliable, while still remaining cost-effective.",
@@ -111,6 +113,8 @@ export const services = [
     path: "mobile-app-development",
     content:
       "eSpark Consulting Group is fully committed to delivering outstanding web app development services that are specifically designed to meet the unique requirements of our clients. Our team of highly skilled developers has the expertise and knowledge required to develop customized solutions that are not only efficient and reliable, but also cost-effective.",
+    discription:
+      "We develop sleek looking native and hybrid mobile apps for iOS & Android to ensure the customer satisfaction and performance at the core.",
     image: MobileApplicationDevelopment,
     quote:
       "eSpark Consulting Group is dedicated to providing exceptional mobile app development services that are tailored to the individual needs of our clients. Our team of skilled developers possess the necessary expertise and knowledge to create customized solutions that are both efficient and reliable, while remaining cost-effective.",
@@ -154,6 +158,8 @@ export const services = [
     path: "database-development",
     content:
       "eSpark Consulting Group provides comprehensive database development services to help businesses manage their data effectively. Our team of experienced database developers has expertise in a wide range of technologies and platforms, including PostgreSQL, Microsoft SQL, PHP MySQL, NoSQL databases like Firebase and MongoDB.",
+    discription:
+      "We can build and manage your databases according to your requirements so that you can securely and efficiently control and process your data.",
     image: DatabaseDevelopment,
     quote:
       "eSpark Consulting Group is dedicated to providing excellent database development services that cater to the specific needs of our clients. Our team of skilled database developers possess the necessary expertise and knowledge to create tailored solutions that are both efficient and reliable, while remaining cost-effective.",
@@ -197,6 +203,8 @@ export const services = [
     path: "embedded-systems-design",
     content:
       "eSpark Consulting Group provides a comprehensive suite of embedded design system services to help businesses develop cutting-edge hardware and software solutions for their unique needs. Our team of experienced engineers and designers has expertise in a wide range of technologies and platforms, including C/C++, Python/MATLAB, Raspberry Pi, and embedded Linux/RTOS (Zephyr, ESP-IDF).",
+    discription:
+      "We Help You Build Embedded Systems From The Ground Up, Working With You Every Step Of The Way. We offer a range of related services.",
     image: EmbeddedSystemsDesign,
     quote:
       "At eSpark Consulting Group, we are committed to delivering high-quality embedded design system services that meet our clients' unique requirements. Our team of experienced engineers and designers has the expertise and knowledge needed to develop custom solutions that are efficient, reliable, and cost-effective.",
@@ -240,6 +248,8 @@ export const services = [
     path: "qa-web-plugin-desktop-development",
     content:
       "Our QA services include both manual and automated testing for web and mobile applications. Our expert QA team will help you identify any potential issues with your software, ensuring that it is running smoothly and meeting your business goals. We use the latest tools and techniques to provide comprehensive testing services that help our clients achieve optimal results.",
+    discription:
+      "We provides high quality QA services worldwide. We have an exceptional team of consultants that understand your requirements and consult you with the best solutions applicable.",
     image: QAWebPluginandDesktopDevelopment,
     quote:
       "At eSpark Consulting Group, we pride ourselves on our ability to deliver top-quality solutions to our clients. Our team of experts has years of experience in the industry and is committed to staying up to date with the latest trends and technologies. We work closely with our clients to understand their unique needs and develop customized solutions that address those needs in the most efficient and effective manner possible.",

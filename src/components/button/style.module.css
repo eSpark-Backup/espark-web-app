@@ -11,7 +11,7 @@
 }
 
 button {
-    background-color: #11A79c !important;
+    background-color: var(--color-primary)!important;
     color: #ffff !important;
     font-family: 'Poppins';
     font-size: 20px;
@@ -25,11 +25,11 @@ button {
 }
 
 button:hover {
-    box-shadow: 0px 0px 1px 2px #11a79c !important;
+    box-shadow: 0px 0px 1px 2px var(--color-primary) !important;
 }
 
 button {
-    background-color: #11A79c;
+    background-color: var(--color-primary);
     color: #ffff !important;
     font-family: 'Poppins';
     font-size: 20px;
@@ -57,18 +57,5 @@ height: 72px;
 
 
 button:hover {
-    box-shadow: 5px 5px 5px #11a79c;
-}
-
-.blogDetailsButton{
-    width: 181.29px;
-    height: 31.09px;
-    border: 2px solid #176FAE;
-    border-radius: 22px;
-    text-align: center;
-    margin: auto;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    padding: 2px;
+    box-shadow: 5px 5px 5px var(--color-primary);
 }

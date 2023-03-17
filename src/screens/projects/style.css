@@ -1,7 +1,7 @@
 .project-slider {
   position: relative;
   z-index: 1;
-  background-color: #11a79c;
+  background-color: var(--color-primary);
 }
 
 .project-slider .slick-center {

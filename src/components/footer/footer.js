@@ -153,9 +153,10 @@ const Footer = () => {
                       target="_blank"
                       style={{ width: "90%", textAlign: "left" }}
                     >
-                      <FaMapMarkerAlt /> 301/B 3rd Floor & 401/A 4th
-                      Floor,Blossom Trade Centre,Block 1, Gulistan-e-Johar
-                      Karachi,74300
+                      <FaMapMarkerAlt /> <span>301/B 3rd Floor & 401/A 4th
+                      Floor, Blossom &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trade Centre, Block 1, Gulistan-e-Johar
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Karachi, 74300</span>
+                        
                     </a>
                   </li>
                 </ul>
