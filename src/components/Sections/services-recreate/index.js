@@ -11,7 +11,7 @@ function ServicesRecreate() {
         paragraph={
           <p>
             We offer complete product development solutions that fit your <br />
-            product’s unique requirements"
+            product’s unique requirements
           </p>
         }
       />
