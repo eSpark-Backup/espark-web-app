@@ -16,7 +16,7 @@ export default function Projects() {
         images={heroImage}
         ShowButton={false}
       />
-      <Portfolio data={projects} title="Our Case Studies" />
+      <Portfolio data={projects} title="Our Portfolio" />
     </>
   );
 }
