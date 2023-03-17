@@ -4,7 +4,7 @@ import style from "./style.module.css";
 
 const BlogsStrip = ({ title, para, link, btn_text }) => {
   const words = para.split(" ");
-  const limitedPara = words.slice(0, 40).join(" ") + "...";
+  const limitedPara = words.slice(0, 25).join(" ") + "...";
   const heading = title.split(" ");
   const limitedtitle = heading.slice(0, 4).join(" ") + "...";
   return (

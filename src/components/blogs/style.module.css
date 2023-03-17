@@ -9,7 +9,7 @@
 
 .scroll {
   overflow: scroll !important;
-  height: 455px !important;
+  height: 555px !important;
 }
 
 .scroll .blogsStrip {
@@ -29,6 +29,8 @@
 }
 
 .one img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 35.8101px;
   height: 250px;
 }
 
@@ -50,6 +52,7 @@
   margin: 1rem;
   width: 100%;
   height: 500px !important;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .three img {
@@ -76,14 +79,14 @@
 }
 
 .topRow {
-  padding: 20px 0 !important;
+  padding-top: 40px !important;
+  padding: 20px 0;
 }
 
 .topContainer {
-  background: rgba(92, 97, 131, 0.73);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 0 0 2000px rgba(92, 97, 131, 0.73);
   border-radius: 39px;
-  height: 40vh;
+  height: 480px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("./topRowMedia.png");
@@ -112,8 +115,9 @@
 
 .blogsCardImg {
   width: 100%;
+  /* box-shadow: inset 0 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  border-radius: 15px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 30px;
 }
 
 .blogsCardHeading {

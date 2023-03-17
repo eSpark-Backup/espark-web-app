@@ -71,6 +71,7 @@ export const BlogCardMap = ({
   gap,
   className,
   shimmerClass,
+  word,
 }) => {
   return (
     <>
@@ -78,13 +79,13 @@ export const BlogCardMap = ({
         post?.slice(sliceStart, sliceEnd)?.map((items) => {
           return (
             <div className={className}>
-              {" "}
               <BlogsCard
                 image={items.jetpack_featured_media_url}
                 title={items.title.rendered}
                 para={items.excerpt.rendered}
                 link={`/blogs/${items.slug}`}
                 btn_text={`Read more`}
+                word={word}
               />
             </div>
           );

@@ -2,14 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import style from "./style.module.css";
 
-const BlogsCard = ({ image, title, para, link, btn_text }) => {
+const BlogsCard = ({ image, title, para, link, btn_text, word }) => {
   const words = para.split(" ");
-  const limitedPara = words.slice(0, 20).join(" ") + "...";
+  const limitedPara = words.slice(0, word ? word : 20).join(" ") + "...";
   const heading = title.split(" ");
   const limitedtitle = heading.slice(0, 4).join(" ") + "...";
   return (
     <div
-      className={`${style.blogsCard}  d-flex align-items-center flex-column justify-content-center`}>
+      className={`${style.blogsCard} d-flex align-items-center flex-column justify-content-center`}
+    >
       {/* <img className={`${style.blogsCardImg}`} src={image} alt={title} /> */}
       <Link to={link}>
         <img
