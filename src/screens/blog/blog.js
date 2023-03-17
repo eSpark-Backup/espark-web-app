@@ -52,8 +52,8 @@ export default function Blog() {
       <BlogsBanner
         title={`A Blog for Passionate People and Technical lovers`}
       />
-      <div className={`${style.one} row gx-2`}>
-        <div className={`container align-self-center d-flex`}>
+      <div className={`${style.one} row gx-2 mt-5`}>
+        <div className={`container-fluid align-self-center d-flex`}>
           <BlogCardMap
             post={post}
             sliceStart={0}
@@ -63,6 +63,7 @@ export default function Blog() {
             row={1}
             gap={30}
             shimmerClass="col-lg-8 col-md-12 col-sm-12"
+            word={50}
           />
 
           <div className={`${style.scroll} col-lg-4 col-md-12 col-sm-12`}>
@@ -77,8 +78,8 @@ export default function Blog() {
         </div>
       </div>
 
-      <div className={`${style.two} row gx-2 `}>
-        <div className={`container align-self-center d-flex `}>
+      <div className={`${style.two} row gx-2 mt-5`}>
+        <div className={`container-fluid align-self-center d-flex`}>
           <BlogCardMap
             post={post}
             sliceStart={7}
@@ -92,8 +93,8 @@ export default function Blog() {
         </div>
       </div>
 
-      <div className={`${style.three} row gx-2 `}>
-        <div className={`container d-flex`}>
+      <div className={`${style.three} row gx-2`}>
+        <div className={`container-fluid d-flex`}>
           <div className="col-lg-5 col-md-12 col-sm-12 align-self-start">
             <BlogStripMap
               post={post}
@@ -105,7 +106,7 @@ export default function Blog() {
           </div>
 
           <div className="col-lg-7 col-md-12 col-sm-12 align-self-start">
-             <BlogImageMap
+            <BlogImageMap
               post={post}
               sliceStart={14}
               sliceEnd={15}
@@ -115,7 +116,7 @@ export default function Blog() {
           </div>
         </div>
 
-        <div className={`container d-flex`}>
+        <div className={`container-fluid d-flex`}>
           <div className="col-lg-5 col-md-12 col-sm-12 align-self-start">
             <BlogStripMap
               post={post}

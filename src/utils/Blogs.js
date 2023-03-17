@@ -71,6 +71,7 @@ export const BlogCardMap = ({
   gap,
   className,
   shimmerClass,
+  word,
 }) => {
   return (
     <>
@@ -85,6 +86,7 @@ export const BlogCardMap = ({
                 // link={`/blogs/${items.slug}`}
                 link={`/blog-detail/${items.id}`}
                 btn_text={`Read more`}
+                word={word}
               />
             </div>
           );
