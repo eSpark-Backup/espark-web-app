@@ -14,6 +14,8 @@ export default function Blog() {
   const [count, setCount] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
 
+
+
   useEffect(() => {
     const main = async () => {
       const data = await getApiCall();
@@ -50,7 +52,6 @@ export default function Blog() {
       <BlogsBanner
         title={`A Blog for Passionate People and Technical lovers`}
       />
-
       <div className={`${style.one} row gx-2 mt-5`}>
         <div className={`container-fluid align-self-center d-flex`}>
           <BlogCardMap

@@ -26,7 +26,7 @@ const BlogsCard = ({ image, title, para, link, btn_text, word }) => {
           {limitedtitle}
         </h2>
       </Link>
-      <p
+      <div
         className={`${style.blogsCardPara} my-auto text-justify`}
         dangerouslySetInnerHTML={{
           __html: limitedPara,

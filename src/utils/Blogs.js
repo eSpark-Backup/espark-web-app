@@ -83,7 +83,8 @@ export const BlogCardMap = ({
                 image={items.jetpack_featured_media_url}
                 title={items.title.rendered}
                 para={items.excerpt.rendered}
-                link={`/blogs/${items.slug}`}
+                // link={`/blogs/${items.slug}`}
+                link={`/blog-detail/${items.id}`}
                 btn_text={`Read more`}
                 word={word}
               />
@@ -120,7 +121,7 @@ export const BlogStripMap = ({
             <BlogsStrip
               title={items.title.rendered}
               para={items.excerpt.rendered}
-              link={`/blogs/${items.slug}`}
+              link={`/blog-detail/${items.id}`}
               btn_text={`Read more`}
             />
           );
