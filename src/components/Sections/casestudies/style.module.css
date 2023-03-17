@@ -50,11 +50,78 @@
   cursor: pointer;
   border-bottom: 3px solid #3359A2;
 }
+@media (min-width: 575px) and (max-width: 1000px) {
+  .filterTab {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #9B9B9B;
+    cursor: pointer;
+  }
+  .filterTabSelected {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #00A099;
+    cursor: pointer;
+    border-bottom: 3px solid #3359A2;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .filterTab {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 20px;
+    text-align: center;
+    color: #9B9B9B;
+    cursor: pointer;
+  }
+  .filterTabSelected {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 20px;
+    text-align: center;
+    color: #00A099;
+    cursor: pointer;
+    border-bottom: 3px solid #3359A2;
+  }
+}
 
 @media (max-width: 450px) {
   .wrapper {
     width: 80%;
     margin-left: 15%;
+  }
+  .filterTab {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    color: #9B9B9B;
+    cursor: pointer;
+  }
+  .filterTabSelected {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    color: #00A099;
+    cursor: pointer;
+    border-bottom: 3px solid #3359A2;
   }
 }
 
@@ -62,5 +129,26 @@
   .wrapper {
     width: 60%;
     margin-left: 23%;
+  }
+  .filterTab {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    color: #9B9B9B;
+    cursor: pointer;
+  }
+  .filterTabSelected {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    color: #00A099;
+    cursor: pointer;
+    border-bottom: 3px solid #3359A2;
   }
 }

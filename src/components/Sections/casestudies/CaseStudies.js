@@ -19,7 +19,7 @@ const Portfolio = ({ data, title }) => {
   return (
     <div className="container ptb-80">
       <SectionTitle heading={title} />
-      <div className="d-flex justify-content-around">
+      <div className={`d-flex justify-content-around mx-5 px-5`}>
         {projects.map((items) => {
           return (
             <>
