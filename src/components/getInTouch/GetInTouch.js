@@ -1,17 +1,22 @@
 import React, { useRef, useState } from "react";
 import { services } from "../../helper/services";
-
+import "react-phone-number-input/style.css";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
 import Button from "../button/button";
 
 import { IMaskInput } from "react-imask";
+
+import PhoneInput from "react-phone-number-input";
+import "./GetInTouch.css";
+
 const ContactNumberMask = "+00(000)000-00000";
 
 const GetInTouch = ({ modal, modelClose, link, h1 }) => {
+
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
-  const [phone, setPhone] = useState("+92");
+  const [phone, setPhone] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [files, setFiles] = useState(null);
@@ -33,6 +38,7 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
       }
     }
   };
+
 
   const clearState = () => {
     setEmail("");
@@ -157,7 +163,8 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
             <div
               class={`col-lg-${
                 modal || link?.includes("vacancies") ? "12" : 6
-              } col-md-12`}>
+              } col-md-12`}
+            >
               <form id="contactForm" ref={form} onSubmit={sendEmail}>
                 <div class="row">
                   <div class="col-lg-12 col-md-12">
@@ -188,14 +195,31 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                       <div class="invalid-feedback"></div>
                     </div>
                   </div>
+                  <div class="col-lg-12 col-md-12">
+                    <div class="form-group ">
+                      <PhoneInput
+                        international
+                        defaultCountry="PK"
+                        placeholder="Enter phone number"
+                        maxlength  ={15}
+                        value={phone}
+                        onChange={(e)=>{if(e){
+                          setPhone(e.slice(0,limit))
+                        }
+                          }}
+                      />
+                      <div class="invalid-feedback"></div>
+                    </div>
+                  </div>
 
                   <div
                     class={
                       !link?.includes("vacancies")
                         ? "col-lg-6 col-md-6"
                         : "col-lg-12 col-md-12"
-                    }>
-                    <div class="form-group">
+                    }
+                  >
+                    {/* <div class="form-group">
                       <IMaskInput
                         className="form-control"
                         mask={ContactNumberMask}
@@ -207,7 +231,7 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                         }
                       />
                       <div class="invalid-feedback"></div>
-                    </div>
+                    </div> */}
                   </div>
                   {!link?.includes("vacancies") && (
                     <div
@@ -215,7 +239,8 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                         !link?.includes("vacancies")
                           ? "col-lg-6 col-md-6"
                           : "col-lg-12 col-md-12"
-                      }>
+                      }
+                    >
                       <div class="form-group">
                         <input
                           type="text"
@@ -271,7 +296,8 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                         }
                         class="form-control"
                         value={message}
-                        onChange={(e) => setMessage(e.target.value)}></textarea>
+                        onChange={(e) => setMessage(e.target.value)}
+                      ></textarea>
                       <div class="invalid-feedback"></div>
                     </div>
                   </div>
@@ -283,7 +309,8 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                           !link?.includes("vacancies")
                             ? "col-lg-6 col-md-6"
                             : "col-lg-12 col-md-12"
-                        }>
+                        }
+                      >
                         <div class="form-group">
                           <input
                             type="file"
