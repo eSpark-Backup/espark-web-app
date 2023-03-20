@@ -6,12 +6,12 @@ import { toast } from "react-hot-toast";
 import Button from "../button/button";
 
 import { IMaskInput } from "react-imask";
-const ContactNumberMask = "+92(000)000-00000";
+const ContactNumberMask = "+00(000)000-00000";
 
 const GetInTouch = ({ modal, modelClose, link, h1 }) => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
+  const [phone, setPhone] = useState("+92");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [files, setFiles] = useState(null);
