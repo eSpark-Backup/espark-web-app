@@ -24,6 +24,7 @@ const Home = () => {
         images={heroImage}
         ShowButton={true}
         buttonText={"Learn More"}
+        buttonDesign={13}
       />
       <WhyeSpark heading={"Why eSpark?"} />
       <ServicesRecreate link={currentRoute} />
