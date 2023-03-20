@@ -131,7 +131,8 @@ const Header = () => {
                     </span>
                     <div
                       id="serveDrop"
-                      className="container-fluid d-flex justify-content-between">
+                      className=" d-flex justify-content-between"
+                      style={{ width: "100%" }}>
                       {services.map((items) => {
                         return (
                           <div className="contents p-2 my-3">

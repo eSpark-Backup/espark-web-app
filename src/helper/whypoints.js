@@ -1,7 +1,7 @@
 export const whypoints = [
   {
     _id: 1,
-    name: "eSpark Expertise ",
+    name: "eSpark Expertise",
     content:
       "eSpark Consulting Group has a team of experts who have extensive knowledge and experience in delivering solutions for a wide range of industries. Their deep understanding technologies and methodologies allows them to provide high standard solutions that meet the unique needs of each client.",
   },

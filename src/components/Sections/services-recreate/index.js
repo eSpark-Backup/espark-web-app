@@ -10,8 +10,7 @@ function ServicesRecreate(title) {
         heading={"Our Services"}
         paragraph={
           <p>
-            We offer complete product development solutions that fit your
-            <br />
+            We offer complete product development solutions that fit your <br />
             product’s unique requirements
           </p>
         }

@@ -9,7 +9,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
   if (design === 0) {
     return (
       <div>
-        <button type={type} class="submit roundbutton rounded-pill">
+        <button type={type} class="submit roundbutton">
           {title}
         </button>
       </div>
@@ -106,7 +106,11 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
     );
   }
   if (design === 8) {
-    return <a onClick={link}>{title}</a>;
+    return (
+      <div onClick={onClick} className={`${style.blogDetailsButton}`}>
+        {title}
+      </div>
+    );
   }
   if (design === 9) {
     return (

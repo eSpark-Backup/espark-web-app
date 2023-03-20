@@ -705,6 +705,14 @@ progress {
     color: #6c757d
 }
 
+.container-fluid {
+    width: 80% !important;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto
+}
+
 .container,
 .container-lg,
 .container-md,
@@ -19080,6 +19088,7 @@ bar-nav .nav-item .dropdown-menu li a.active,
     visibility: visible;
     top: 100%
 }
+
 .startp-nav nav .navbar-nav .nav-item:hover div {
     opacity: 1;
     visibility: visible;
