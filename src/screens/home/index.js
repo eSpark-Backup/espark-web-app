@@ -6,7 +6,7 @@ import PartnerAbout from "../../components/partners-about/parternsAbout";
 import LetsTalk from "../../components/LetsTalk/LetsTalk";
 import Portfolio from "../../components/Sections/portfolio/Portfolio";
 import { projects } from "../../helper/projects";
-import heroImage from "../../../src/assets/images/hero-section/banner-image.png";
+import heroImage from "../../../src/assets/images/hero-section/banner-image.svg";
 import ServicesRecreate from "./../../components/Sections/services-recreate/index";
 
 const Home = () => {
