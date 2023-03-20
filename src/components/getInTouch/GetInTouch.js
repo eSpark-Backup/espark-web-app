@@ -6,7 +6,7 @@ import { toast } from "react-hot-toast";
 import Button from "../button/button";
 
 import { IMaskInput } from "react-imask";
-const ContactNumberMask = "+{00}(000)000-00000";
+const ContactNumberMask = "+92(000)000-00000";
 
 const GetInTouch = ({ modal, modelClose, link, h1 }) => {
   const [email, setEmail] = useState("");
@@ -196,17 +196,6 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                         : "col-lg-12 col-md-12"
                     }>
                     <div class="form-group">
-                      {/* <input
-                        type="tel"
-                        name="number"
-                        required={true}
-                        placeholder="Your phone number *"
-                        class="form-control"
-                        value={phone}
-                        onChange={(e) =>
-                          setPhone(e.target.value.slice(0, limit))
-                        }
-                      /> */}
                       <IMaskInput
                         className="form-control"
                         mask={ContactNumberMask}
