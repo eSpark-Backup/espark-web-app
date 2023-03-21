@@ -3,20 +3,22 @@ import Button from "../../button/button";
 import styles from "./style.module.css";
 function Herosection({
   buttonText,
-  buttonUrl,buttonDesign,
+  buttonUrl,
+  buttonDesign,
   ShowButton,
   paragraph,
   title,
   images,
   serviceClass,
-  homeclass
+  homeclass,
 }) {
   return (
     <>
       <div class="ml-main-section">
         <div class="container-fluid">
           <div class="row">
-            <div class={`${styles.headingColumn} col-lg-5 col-md-12 col-sm-12`}>
+            <div
+              class={`${styles.headingColumn} col-lg-6 col-md-12 col-sm-12 `}>
               <div
                 class={
                   serviceClass
@@ -32,7 +34,12 @@ function Herosection({
                   }}></p>
 
                 {ShowButton ? (
-                  <Button title={buttonText} link={buttonUrl} design={buttonDesign} />
+                  <Button
+                    className={styles.button}
+                    title={buttonText}
+                    link={buttonUrl}
+                    design={buttonDesign}
+                  />
                 ) : (
                   ""
                 )}
@@ -42,7 +49,7 @@ function Herosection({
               class={
                 serviceClass
                   ? `${styles.service} animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-12 col-sm-12 text-center `
-                  : `animate__animated animate__fadeInDown animate__delay-1.5s col-lg-7 col-md-2 col-sm-12 text-center `
+                  : `animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-2 col-sm-12 text-center `
               }>
               <img src={images} class={styles.image} alt="image" />
             </div>
