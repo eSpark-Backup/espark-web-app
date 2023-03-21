@@ -159,6 +159,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
               fontSize: 30,
               height: 46,
               boxShadow: "none",
+              fontWeight:600
             }}
           >
             {title}
@@ -176,7 +177,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
           onClick={onClick}
           disabled={disabled}
         >
-          <button className="roundbutton rounded-pill">{title}</button>
+          <button className="roundbutton rounded-pill" >{title}</button>
         </a>
       </>
     );
