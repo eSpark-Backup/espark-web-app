@@ -6,9 +6,9 @@ import Button from "../../button/button";
 import { sociallinks } from "../../../helper/sociallinks";
 import { whypoints } from "../../../helper/whypoints";
 import SectionTitle from "../../sectionTitle";
-function WhyeSpark({ heading, }) {
+function WhyeSpark({ heading }) {
   return (
-    <div className={`${styles.whyEsparkMargin}`}  >
+    <div className={`${styles.whyEsparkMargin}`}>
       <div className="solutions-area pt-80">
         <div className="container-fluid">
           <div className="row">
@@ -25,32 +25,40 @@ function WhyeSpark({ heading, }) {
               })}
             </div>
             <div
-              className={`col-lg-5  col-md-12 d-flex flex-column justify-content-space-between ${styles.whyeSparksColumn}`}>
+              className={`col-lg-5  col-md-12 d-flex flex-column justify-content-space-between ${styles.whyeSparksColumn}`}
+            >
               <SectionTitle
-                height ={'2px'}
-                width={'126px'}
+                height={"2px"}
+                width={"126px"}
                 heading={heading}
-                padding ={'0px'}
-                paragraph={<p className={`p-2  m-auto ${styles.whyEsparkContentColor}`}>We focus on custom tailored software and IoT based solutions for
-                our businesses. Through our broad range of services that can help clients and businesses to optimize their operations, save
-                cost and promote their businesses most effectively. Whether you
-                need help with software development, hardware design, or
-                technology consulting, eSpark Consultancy Group has the
-                expertise to help you achieve your goals.</p>}
+                padding={"0px"}
+                paragraph={
+                  <p className={`p-2  m-auto ${styles.whyEsparkContentColor}`}>
+                    We focus on custom tailored software and IoT based solutions
+                    for our businesses. Through our broad range of services that
+                    can help clients and businesses to optimize their
+                    operations, save cost and promote their businesses most
+                    effectively. Whether you need help with software
+                    development, hardware design, or technology consulting,
+                    eSpark Consultancy Group has the expertise to help you
+                    achieve your goals.
+                  </p>
+                }
               />
               <div className="mt-3 h-100  w-100">
-
-              <img src={whyesaprk} alt="" width={'100%'} height={"100%"}   />
+                <img src={whyesaprk} alt="" width={"100%"} height={"100%"} />
               </div>
             </div>
             <div
               id={styles["whylinksmobile"]}
-              className={`col-lg-3 col-sm-12 ${styles.buttons}`}>
+              className={`col-lg-3 col-sm-12 ${styles.buttons}`}
+            >
               {sociallinks.map((items) => {
                 return (
                   <div
                     id={styles["whylinksbtn"]}
-                    className={`col-lg-4 col-md-4 col-sm-12 col-xs-12 p-10`}>
+                    className={`col-lg-4 col-md-4 col-sm-12 col-xs-12 p-10`}
+                  >
                     <Button
                       title={items.name}
                       link={items.url}
@@ -63,17 +71,28 @@ function WhyeSpark({ heading, }) {
             </div>
             <div
               id={styles["whypoints"]}
-              className={`col-lg-6 col-md-12 col-sm-12`}>
-              {whypoints.map((items,index) => {
+              className={`col-lg-6 col-md-12 col-sm-12`}
+            >
+              {whypoints.map((items, index) => {
                 return (
-                  <div className={index == 0 ? `${styles.points} d-flex`:`${styles.points} d-flex ${styles.imgCustomMargin}`}>
+                  <div
+                    className={
+                      index == 0
+                        ? `${styles.points} d-flex`
+                        : `${styles.points} d-flex ${styles.imgCustomMargin}`
+                    }
+                  >
                     <div
-                      className={`${styles.icon} col-sm-1 col-md-1 col-lg-1`}>
+                      className={`${styles.icon} col-sm-1 col-md-1 col-lg-1`}
+                    >
                       <FaCheckCircle size={42} color={"#11A79c"} />
                     </div>
                     <div className={`col-sm-11 col-md-11 col-lg-11`}>
                       <h4 className={styles.whyPoints}>{items.name}</h4>
-                      <p className={styles.whyPointsPara}>{items.content}</p>
+                      <p
+                        className={styles.whyPointsPara}
+                        dangerouslySetInnerHTML={{ __html: items.content }}
+                      ></p>
                     </div>
                   </div>
                 );

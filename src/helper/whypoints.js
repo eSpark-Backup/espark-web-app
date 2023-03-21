@@ -27,7 +27,7 @@ export const whypoints = [
     _id: 5,
     name: "Broad range of services",
     content:
-      "eSpark offers a comprehensive range of services that can help companies optimize their operations and enhance their bottom line, including IoT solution, Embedded design, software development, UI/UX design and App Development.",
+      "eSpark offers a comprehensive range of services that can help companies optimize their operations and <span>enhance their bottom line</span>, including IoT solution, Embedded design, software development, UI/UX design and App Development.",
   },
   {
     _id: 6,
