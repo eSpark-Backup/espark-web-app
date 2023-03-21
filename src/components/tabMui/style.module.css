@@ -16,7 +16,7 @@
 }
 
 .selectedTab .txtColorTab {
-  color: #00a099;
+  color: var(--color-primary);
   font-size: 25px !important;
   font-weight: 600;
   text-align: center;
@@ -32,7 +32,7 @@
 }
 .bar{
   width: 50% !important;
-  background-color : #3359A2 !important;
+  background-color : var(--color-secondary) !important;
 }
 .barDiv{
   margin-top: 20px;
@@ -52,7 +52,7 @@
     line-height: 20px;
   }
   .selectedTab .txtColorTab {
-    color: #00a099;
+    color: var(--color-primary);
     font-size: 10px !important;
     font-weight: 600;
     font-family: "Inter";
@@ -63,7 +63,7 @@
   }
   .bar{
     width: 70% !important;
-    background-color : #3359A2 !important;
+    background-color : var(--color-secondary) !important;
     line-height: 20px !important;
   }
   .barDiv{
@@ -75,7 +75,7 @@
     line-height: 20px;
   }
   .selectedTab .txtColorTab {
-    color: #00a099;
+    color: var(--color-primary);
     font-size: auto !important;
     font-weight: 600;
     font-family: "Inter";

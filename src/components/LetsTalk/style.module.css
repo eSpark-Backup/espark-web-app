@@ -1,6 +1,6 @@
 .formbox {
     padding: 30px;
-    background-color: #2B4E89;
+    background-color: var(--color-secondary);
     border-radius: 30px;
 }
 

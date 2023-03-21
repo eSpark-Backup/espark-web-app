@@ -431,17 +431,21 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                         </div>
                       </div>
                       <br />
-                      <p>Allowed Type(s): .pdf, .doc, .docx</p>
-                      <div class="form-group">
+                      <p>Allowed Type(s): .pdf, .doc, .docx</p> 
+                      <div class="form-group d-flex  justify-content-start align-items-start my-2">
+                        <div className=" me-2">
+
                         <input
                           id="checkbox-1"
                           type="checkbox"
                           name="subject"
                           required={true}
-                        />
+                          className="w-100 h-25  my-1  "
+                          />
+                          </div>
 
                         <label for="checkbox-1">
-                          &nbsp; By using this form you agree with the storage
+By using this form you agree with the storage
                           and handling of your data by this website.{" "}
                         </label>
                         <div class="invalid-feedback"></div>

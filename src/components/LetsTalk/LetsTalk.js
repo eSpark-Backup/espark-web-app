@@ -165,7 +165,7 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                         <label className={`${style.label} d-flex`}>Name</label>
                         <input
                           type="text"
-                          required={true}
+                          required
                           name="name"
                           placeholder="Your Name *"
                           class="form-control"
@@ -177,10 +177,10 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                     </div>
                     <div class="col-lg-6 col-md-6">
                       <div class="form-group">
-                        <label className={`${style.label} d-flex`}>Email</label>
+                        <label className={`${style.label} d-flex`}>Email Address</label>
                         <input
                           type="email"
-                          required={true}
+                          required
                           name="email"
                           placeholder="Your email address *"
                           class="form-control"
@@ -201,7 +201,7 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                             name="subject"
                             placeholder="Your Subject *"
                             class="form-control"
-                            required={true}
+                            required
                             value={subject}
                             onChange={(e) => setSubject(e.target.value)}
                           />
@@ -216,7 +216,7 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                         </label>
                         <textarea
                           name="text"
-                          required={true}
+                          required
                           cols="30"
                           rows="5"
                           placeholder={"Write your message..."}
@@ -231,8 +231,8 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                       <Button
                         type="submit"
                         onClick={sendEmail}
-                        title="Send Message"
-                        design={1}
+                        title="SUBMIT"
+                        design={0}
                       />
                     </div>
                   </div>

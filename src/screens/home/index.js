@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
       <Herosection
-        title={"The Ultimate Partner for Software and Iot Solutions"}
+        title={"The Ultimate Partner for Software and IoT Solutions"}
         paragraph="eSpark Consulting Group is a software and embedded system design
                     company that specializes in delivering innovative and
                     high-quality solutions to our clients. Our team of experts has
@@ -24,8 +24,6 @@ const Home = () => {
         images={heroImage}
         ShowButton={true}
         buttonText={"Learn More"}
-        buttonUrl={"/services/"}
-        homeclass={"homeclass"}
       />
       <WhyeSpark heading={"Why eSpark?"} />
       <ServicesRecreate link={currentRoute} />

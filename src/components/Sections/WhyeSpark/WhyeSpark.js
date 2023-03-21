@@ -25,7 +25,7 @@ function WhyeSpark({ heading }) {
               })}
             </div>
             <div
-              className={`col-lg-5 col-md-12 d-flex flex-column justify-content-around`}
+              className={`col-lg-5 col-md-12 d-flex flex-column justify-content-space-between ${styles.whyeSparksColumn}`}
             >
               <SectionTitle
                 heading={heading}
@@ -48,7 +48,7 @@ function WhyeSpark({ heading }) {
                 return (
                   <div
                     id={styles["whylinksbtn"]}
-                    className={`col-lg-4 col-md-4 col-sm-12 col-xs-12 p-10 ${styles.button}`}
+                    className={`col-lg-4 col-md-4 col-sm-12 col-xs-12 p-10`}
                   >
                     <Button
                       title={items.name}
@@ -62,7 +62,7 @@ function WhyeSpark({ heading }) {
             </div>
             <div
               id={styles["whypoints"]}
-              className="col-lg-6 col-md-12 col-sm-12"
+              className={`col-lg-6 col-md-12 col-sm-12`}
             >
               {whypoints.map((items) => {
                 return (
@@ -73,7 +73,7 @@ function WhyeSpark({ heading }) {
                       <FaCheckCircle size={35} color={"#11A79c"} />
                     </div>
                     <div
-                      className={`col-sm-11 col-md-11 col-lg-11 ${styles.cont}`}
+                      className={`col-sm-11 col-md-11 col-lg-11`}
                     >
                       <h4 className={styles.whyPoints}>{items.name}</h4>
                       <p className={styles.whyPointsPara}>{items.content}</p>

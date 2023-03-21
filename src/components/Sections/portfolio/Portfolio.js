@@ -5,7 +5,7 @@ import styles from "./style.module.css";
 
 const Portfolio = ({ data, title }) => {
   return (
-    <div className="container ptb-80">
+    <div className="container ptb-80" id="newDiv_0">
       <SectionTitle
         heading={title}
         paragraph="Empowering decentralization, one project at a time"
