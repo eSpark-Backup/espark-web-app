@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { ShimmerText, ShimmerThumbnail } from "react-shimmer-effects";
 import GetInTouch from "../../components/getInTouch/GetInTouch";
 import Title from "../../components/title/title";
@@ -26,11 +26,10 @@ const JobDetail = () => {
       <div className="row">
         {singleJob?.title ? (
           <p
-            className="col-lg-6"
+            className="col-lg-6 jobDetails"
             dangerouslySetInnerHTML={{
               __html: singleJob?.content?.rendered,
-            }}
-          ></p>
+            }}></p>
         ) : (
           <div className="col-lg-6">
             {ShemarLengths.map((item) => {

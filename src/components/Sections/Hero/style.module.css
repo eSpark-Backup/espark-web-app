@@ -6,6 +6,10 @@
   line-height: 140%;
   color: #3a3a3a;
 }
+ .image {
+   height: 500px;
+   Width: 600px;
+ }
 @media (max-width: 768px) {
   .paraTexts {
     display: flex;
@@ -14,6 +18,7 @@
     justify-content: start;
     margin-left: 10px;
   }
+   
 
   .service {
     width: 100% !important;
@@ -46,10 +51,10 @@
   margin-top: 50px;
 }
 
-.ml-banner-image {
+/* .ml-banner-image {
   height: 600;
   width: 100vw;
-}
+} */
 
 .paraTexts {
   font-family: "Poppins";
@@ -91,10 +96,10 @@
     display: none !important;
   }
 
-  .ml-banner-image {
+  /* .ml-banner-image {
     height: 700;
     width: 100vw;
-  }
+  } */
 
   button {
     font-family: "Poppins";

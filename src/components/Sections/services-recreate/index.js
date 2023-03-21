@@ -3,7 +3,7 @@ import SectionTitle from "../../sectionTitle";
 import "./services.css";
 import ServiceSlider from "./slider/serviceSlider";
 
-function ServicesRecreate() {
+function ServicesRecreate(title) {
   return (
     <div className="ptb-80">
       <SectionTitle
