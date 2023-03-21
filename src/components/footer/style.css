@@ -65,6 +65,22 @@ footer .container {
 footer .social-links {
   padding-top: 10px;
 }
+.spaces {
+  margin-left: 23px;
+}
+.anchorss{
+  width: 100%;
+  text-align: left;
+}
+@media only screen and (min-width: 1350px) and (max-width: 3000px) {
+  .explores{
+    margin-left: 40%;
+  }
+  .contacts-det{
+    margin-left: 30%;
+  }
+
+}
 
 @media only screen and (min-width: 300px) and (max-width: 400px) {
   .footer_areas {
