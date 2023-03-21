@@ -6,9 +6,7 @@
   line-height: 140%;
   color: #3a3a3a;
 }
- .image {
-   height: 500px;
-   Width: 600px;
+ .image {Width: 500spx;
  }
 @media (max-width: 768px) {
   .paraTexts {
@@ -91,6 +89,7 @@
 }
 
 .ml-main-section {
+  padding-top:100px !important;
   background-repeat: no-repeat;
   margin-bottom: 100px !important;
 }
@@ -102,7 +101,6 @@
   line-height: 58px;
   letter-spacing: 0em;
   text-align: left;
-  margin-left: 10px;
 }
 
 .headingColumnMobile {
