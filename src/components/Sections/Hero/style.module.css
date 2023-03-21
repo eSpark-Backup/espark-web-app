@@ -56,16 +56,27 @@
   width: 100vw;
 } */
 
+.button{
+  width: 158px;
+    height: 52px;
+}
 .paraTexts {
-  font-family: "Poppins";
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #3A3A3A;
+  letter-spacing: 0em;
+  padding-top: 43px;
+  padding-bottom: 58px;
+  /* font-family: "Poppins";
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 0em;
   text-align: left;
-  padding-bottom: 30px;
   margin-left: 10px;
-  color: #3a3a3a;
+  color: #3a3a3a; */
 }
 .homePartText {
     font-family: 'Poppins';
@@ -81,6 +92,7 @@
 
 .ml-main-section {
   background-repeat: no-repeat;
+  margin-bottom: 100px !important;
 }
 
 .heading {
@@ -100,13 +112,14 @@
 .headingColumn {
   display: flex;
   align-items: center;
+  padding-right: 5%;
 }
 
 @media screen and (max-width: 750px) {
   .headingColumn {
     display: none !important;
   }
-
+ 
   /* .ml-banner-image {
     height: 700;
     width: 100vw;
