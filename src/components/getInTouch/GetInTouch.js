@@ -195,7 +195,7 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                       <div class="invalid-feedback"></div>
                     </div>
                   </div>
-                  <div class="col-lg-12 col-md-12">
+                  {/* <div class="col-lg-12 col-md-12">
                     <div class="form-group ">
                       <PhoneInput
                         international
@@ -210,7 +210,7 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                       />
                       <div class="invalid-feedback"></div>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div
                     class={
@@ -219,6 +219,20 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                         : "col-lg-12 col-md-12"
                     }
                   >
+                     <div class="form-group ">
+                      <PhoneInput
+                        international
+                        defaultCountry="PK"
+                        placeholder="Enter phone number"
+                        maxlength  ={15}
+                        value={phone}
+                        onChange={(e)=>{if(e){
+                          setPhone(e.slice(0,limit))
+                        }
+                          }}
+                      />
+                      <div class="invalid-feedback"></div>
+                    </div>
                     {/* <div class="form-group">
                       <IMaskInput
                         className="form-control"
