@@ -62,6 +62,17 @@
   margin-left: 10px;
   color: #3a3a3a;
 }
+.homePartText {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 30px;
+    margin-left: 10px;
+    color: #3A3A3A;
+}
 
 .ml-main-section {
   background-repeat: no-repeat;

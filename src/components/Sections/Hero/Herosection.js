@@ -10,6 +10,7 @@ function Herosection({
   title,
   images,
   serviceClass,
+  homeclass
 }) {
   return (
     <>
