@@ -128,7 +128,7 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
   return (
     <div>
       <div class={`contact-area ${!modal ? "pb-80" : null}`}>
-        <div className="container">
+        <div className="container-fluid">
           <div class={`${style.letsTalk} row`}>
             <div className="col-lg-8 text-center">
               <SectionTitle

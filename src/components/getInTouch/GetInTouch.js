@@ -4,6 +4,7 @@ import "react-phone-number-input/style.css";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
 import Button from "../button/button";
+import SectionTitle from "./../sectionTitle/index";
 
 import { IMaskInput } from "react-imask";
 
@@ -12,8 +13,7 @@ import "./GetInTouch.css";
 
 const ContactNumberMask = "+00(000)000-00000";
 
-const GetInTouch = ({ modal, modelClose, link, h1 }) => {
-
+const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -38,7 +38,6 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
       }
     }
   };
-
 
   const clearState = () => {
     setEmail("");
@@ -69,15 +68,15 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
     e.preventDefault();
     emailjs.init("bo0d42dcDbZL1U83o");
 
-    if (link?.includes("vacancies")) {
+    if (link?.includes("careers")) {
       emailjs
-        .send("service_0n1v6bm", "template_y6yzby6", {
+        .send("service_0n1v6bm", "template_88hqabf", {
           from_name: name,
           from_email: email,
           reply_to: email,
-          message: message,
+          // message: message,
           phone: phone,
-          content: files,
+          applied_for: appliedFor,
         })
         .then(
           (result) => {
@@ -140,15 +139,19 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
     <div>
       <div class={`contact-area pt-80 ${!modal ? "pb-80" : null}`}>
         <div class="container">
-          {!link?.includes("vacancies") ? (
+          {!link?.includes("careers") ? (
             <div class="section-title">
-              <h2>Get In Touch With Us</h2>
-              <div class="bar"></div>
-              <p>Anything On your Mind. We’ll Be Glad To Assist You!</p>
+              <SectionTitle
+                padding={10}
+                heading={"Get In Touch With Us"}
+                paragraph={
+                  "Anything On your Mind. We’ll Be Glad To Assist You!"
+                }
+              />
             </div>
           ) : (
             <div class="section-title">
-              <h2>Apply for this Position</h2>
+              <SectionTitle padding={10} heading={"Apply For This Position"} />
             </div>
           )}
           <div class="row align-items-center">
@@ -162,7 +165,7 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
             )}
             <div
               class={`col-lg-${
-                modal || link?.includes("vacancies") ? "12" : 6
+                modal || link?.includes("careers") ? "12" : 6
               } col-md-12`}
             >
               <form id="contactForm" ref={form} onSubmit={sendEmail}>
@@ -214,22 +217,23 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
 
                   <div
                     class={
-                      !link?.includes("vacancies")
+                      !link?.includes("careers")
                         ? "col-lg-6 col-md-6"
                         : "col-lg-12 col-md-12"
                     }
                   >
-                     <div class="form-group ">
+                    <div class="form-group ">
                       <PhoneInput
                         international
                         defaultCountry="PK"
                         placeholder="Enter phone number"
-                        maxlength  ={15}
+                        maxlength={15}
                         value={phone}
-                        onChange={(e)=>{if(e){
-                          setPhone(e.slice(0,limit))
-                        }
-                          }}
+                        onChange={(e) => {
+                          if (e) {
+                            setPhone(e.slice(0, limit));
+                          }
+                        }}
                       />
                       <div class="invalid-feedback"></div>
                     </div>
@@ -247,10 +251,10 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                       <div class="invalid-feedback"></div>
                     </div> */}
                   </div>
-                  {!link?.includes("vacancies") && (
+                  {!link?.includes("careers") && (
                     <div
                       class={
-                        !link?.includes("vacancies")
+                        !link?.includes("careers")
                           ? "col-lg-6 col-md-6"
                           : "col-lg-12 col-md-12"
                       }
@@ -296,31 +300,29 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                       </div>
                     </div>
                   )}
-                  <div class="col-lg-12 col-md-12">
-                    <div class="form-group">
-                      <textarea
-                        name="text"
-                        required={true}
-                        cols="30"
-                        rows="5"
-                        placeholder={
-                          link?.includes("vacancies")
-                            ? "Postion Applied For *"
-                            : "Write your message... *"
-                        }
-                        class="form-control"
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                      ></textarea>
-                      <div class="invalid-feedback"></div>
+                  {link?.includes("careers") ? null : (
+                    <div class="col-lg-12 col-md-12">
+                      <div class="form-group">
+                        <textarea
+                          name="text"
+                          required={true}
+                          cols="30"
+                          rows="5"
+                          placeholder={"Write your message... *"}
+                          class="form-control"
+                          value={message}
+                          onChange={(e) => setMessage(e.target.value)}
+                        ></textarea>
+                        <div class="invalid-feedback"></div>
+                      </div>
                     </div>
-                  </div>
-                  {link?.includes("vacancies") && (
+                  )}
+                  {/* {link?.includes("careers") && (
                     <>
                       <p>Upload CV/Resume *</p>
                       <div
                         class={
-                          !link?.includes("vacancies")
+                          !link?.includes("careers")
                             ? "col-lg-6 col-md-6"
                             : "col-lg-12 col-md-12"
                         }
@@ -358,14 +360,12 @@ const GetInTouch = ({ modal, modelClose, link, h1 }) => {
                         <div class="invalid-feedback"></div>
                       </div>
                     </>
-                  )}
+                  )} */}
                   <div class="col-lg-12 col-sm-12">
                     <Button
                       type="submit"
                       title={
-                        link?.includes("vacancies")
-                          ? "Apply Now"
-                          : "Send Message"
+                        link?.includes("careers") ? "Apply Now" : "Send Message"
                       }
                       design={0}
                     />

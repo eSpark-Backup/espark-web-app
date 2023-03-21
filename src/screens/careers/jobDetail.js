@@ -8,7 +8,7 @@ import Title from "../../components/title/title";
 import { getSingleOpeningJobs } from "../../utils/utils";
 import { ShemarLengths } from "./../../helper/Shemars";
 
-const JobDetail = () => {
+const JobDetail = ({ appliedFor }) => {
   const params = useParams();
   const [singleJob, setSingleJob] = useState([]);
 
@@ -21,15 +21,16 @@ const JobDetail = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container-fluid">
       <Title title={singleJob?.title?.rendered} />
       <div className="row">
         {singleJob?.title ? (
           <p
-            className="col-lg-6 jobDetails"
+            className="col-lg-6 paragraph"
             dangerouslySetInnerHTML={{
               __html: singleJob?.content?.rendered,
-            }}></p>
+            }}
+          ></p>
         ) : (
           <div className="col-lg-6">
             {ShemarLengths.map((item) => {
@@ -60,6 +61,7 @@ const JobDetail = () => {
             modal={true}
             link={window.location.pathname}
             h1={singleJob?.title?.rendered}
+            appliedFor={singleJob?.title?.rendered}
           />{" "}
         </div>
       </div>

@@ -9,12 +9,13 @@ import SectionTitle from "../../sectionTitle";
 function WhyeSpark({ heading }) {
   return (
     <div>
-      <div className="solutions-area pt-80 ">
-        <div className="container">
+      <div className="solutions-area pt-80">
+        <div className="container-fluid">
           <div className="row">
             <div
               id={styles["whylinks"]}
-              className={`col-lg-1 col-md-12 d-flex flex-column justify-content-around ${styles.buttons} `}>
+              className={`col-lg-1 col-md-12 d-flex flex-column justify-content-around mt-5`}
+            >
               {sociallinks.map((items) => {
                 return (
                   <div className={`col-lg-12 ${styles.sociallink}`}>

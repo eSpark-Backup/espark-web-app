@@ -1,14 +1,14 @@
-button {
+/* button {
     padding: .5em 1em;
     background: #fff;
     color: #4A5568;
     border: 0px solid #A0AEC0;
     margin: .1em !important;
     transition: background .2s ease, color .2s ease, box-shadow .2s ease, transform .2s ease;
-    box-shadow: 0 0 0 #BEE3F8;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
     transform: translateY(0);
     border-radius: 17px;
-}
+} */
 
 
 
@@ -20,11 +20,11 @@ button:last-of-type {
     border-radius: 0 .5em .5em 0;
 } */
 
-button i {
+/* button i {
     color: #A0AEC0;
     margin-right: .3em !important;
     transition: all .2s ease-out;
-}
+} */
 
 .active {
     background: var(--color-primary);

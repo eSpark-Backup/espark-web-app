@@ -1,8 +1,8 @@
 import React from "react";
 
-const SectionTitle = ({ heading, paragraph, width, portFolio }) => {
+const SectionTitle = ({ heading, paragraph, width, portFolio, padding }) => {
   return (
-    <div className="pb-80">
+    <div className={`pb-${padding ? padding : 80}`}>
       <hr style={{ width: width ? width : "200px" }} />
       <div className={"content"}>
         <h2>{heading ?? null}</h2>

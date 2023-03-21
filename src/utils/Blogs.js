@@ -84,7 +84,7 @@ export const BlogCardMap = ({
                 title={items.title.rendered}
                 para={items.excerpt.rendered}
                 // link={`/blogs/${items.slug}`}
-                link={`/blog-detail/${items.id}`}
+                link={`/blogs/${items.id}`}
                 btn_text={`Read more`}
                 word={word}
               />
@@ -121,7 +121,7 @@ export const BlogStripMap = ({
             <BlogsStrip
               title={items.title.rendered}
               para={items.excerpt.rendered}
-              link={`/blog-detail/${items.id}`}
+              link={`/blogs/${items.id}`}
               btn_text={`Read more`}
             />
           );

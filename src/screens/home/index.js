@@ -14,16 +14,16 @@ const Home = () => {
   return (
     <div>
       <Herosection
-        title={"The Ultimate Partner for Software and IoT Solutions"}
+        title={"The Ultimate Partner for IoT and Software Solutions"}
         paragraph="eSpark Consulting Group is a software and embedded system design
                     company that specializes in delivering innovative and
                     high-quality solutions to our clients. Our team of experts has
                     years of experience in the industry and a passion for technology
                     that drives us to stay ahead of the curve and deliver
-                    cutting-edge solutions"
+                    cutting-edge solutions."
         images={heroImage}
         ShowButton={true}
-        buttonText={"Learn More"}
+        buttonText={"Learn more"}
       />
       <WhyeSpark heading={"Why eSpark?"} />
       <ServicesRecreate link={currentRoute} />

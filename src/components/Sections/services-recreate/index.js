@@ -5,7 +5,7 @@ import ServiceSlider from "./slider/serviceSlider";
 
 function ServicesRecreate(title) {
   return (
-    <div className="ptb-80">
+    <div className="ptb-50">
       <SectionTitle
         heading={"Our Services"}
         paragraph={
@@ -16,7 +16,7 @@ function ServicesRecreate(title) {
         }
       />
 
-      <div className="sliderWrapper">
+      <div className="container-fluid sliderWrapper">
         <ServiceSlider />
       </div>
     </div>

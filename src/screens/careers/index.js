@@ -149,7 +149,7 @@ const Careers = () => {
                 <div class="col-lg-3 d-flex align-items-center justify-content-center">
                   <Button
                     title="Apply Now"
-                    link={`/vacancies/${item.id}`}
+                    link={`/careers/${item.id}`}
                     design={1}
                   />
                 </div>

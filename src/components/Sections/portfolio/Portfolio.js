@@ -5,7 +5,7 @@ import styles from "./style.module.css";
 
 const Portfolio = ({ data, title }) => {
   return (
-    <div className="container ptb-80" id="newDiv_0">
+    <div className="container-fluid ptb-80" id="newDiv_0">
       <SectionTitle
         heading={title}
         paragraph="Empowering decentralization, one project at a time"
@@ -31,7 +31,7 @@ const Portfolio = ({ data, title }) => {
             </div>
           );
         })}
-        <Button title="View More" link="/portfolio" design={1} />
+        {/* <Button title="View More" link="/portfolio" design={1} /> */}
       </div>
     </div>
   );

@@ -107,9 +107,9 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
   }
   if (design === 8) {
     return (
-      <div onClick={onClick} className={`${style.blogDetailsButton}`}>
+      <button onClick={onClick} className={`${style.blogDetailsButton}`}>
         {title}
-      </div>
+      </button>
     );
   }
   if (design === 9) {
@@ -154,7 +154,12 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
         >
           <button
             className="roundbutton rounded-pill"
-            style={{ width: "236.18px", fontSize: 30, height: 46 }}
+            style={{
+              width: "236.18px",
+              fontSize: 30,
+              height: 46,
+              boxShadow: "none",
+            }}
           >
             {title}
           </button>
@@ -165,17 +170,13 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
   if (design === 13) {
     return (
       <>
-         <a
+        <a
           href="#newDiv_0"
           className={style.btnMargin}
           onClick={onClick}
           disabled={disabled}
         >
-          <button
-            className="roundbutton rounded-pill"
-          >
-            {title}
-          </button>
+          <button className="roundbutton rounded-pill">{title}</button>
         </a>
       </>
     );

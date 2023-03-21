@@ -11,14 +11,14 @@ import SectionTitle from "../../sectionTitle";
 function Users() {
   return (
     <div>
-      <div className="container pb-80">
+      <div className="container-fluid ptb-80">
         <SectionTitle
           heading={"Our Achievements"}
           paragraph={
             <p>
               We have satisfied all our foremost clients by engineering
               <br />
-              efficacious projects through our dynamically established teams We
+              efficacious projects through our dynamically established teams
             </p>
           }
           portFolio="portfolio"
@@ -26,7 +26,7 @@ function Users() {
         <div className="row mt-3">
           {completedProject.map((item) => {
             return (
-              <div class="col-6 col-sm-6 col-md-6 col-lg-3  pt-5 ">
+              <div class="col-6 col-sm-6 col-md-6 col-lg-3 pt-5 d-flex align-items-center flex-column">
                 <CircularProgressbar
                   value={item.value}
                   text={`${item.numbers}`}

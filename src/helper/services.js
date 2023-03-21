@@ -232,8 +232,8 @@ export const services = [
       ),
       serviceItems(
         hash(),
-        "Raspberry Pi Python / MATLAB",
-        "Raspberry Pi Python / MATLAB",
+        "Raspberry Pi Python / Matlab",
+        "Raspberry Pi Python / Matlab",
         "For creating IoT solutions, our Raspberry Pi Python/MATLAB development services provide a flexible and potent option. Our skilled developers can create and deploy unique Raspberry Pi solutions that satisfy your company's needs. For simple sensor and other peripheral integration, we specialize in creating high-performance solutions that interact with the Raspberry Pi's GPIO using Python/MATLAB.",
         RaspberryPiPythonMatlab
       ),
