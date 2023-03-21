@@ -10,6 +10,7 @@ function Herosection({
   title,
   images,
   serviceClass,
+  homeclass
 }) {
   return (
     <>
@@ -27,13 +28,22 @@ function Herosection({
                 }
               >
                 <h1 className={styles.heading}>{title}</h1>
-
-                <p
-                  className={styles.paraText}
-                  dangerouslySetInnerHTML={{
-                    __html: paragraph,
-                  }}
-                ></p>
+                {
+                  homeclass ?
+                  <p
+                    className={styles.homePartText}
+                    dangerouslySetInnerHTML={{
+                      __html: paragraph,
+                    }}
+                  ></p> 
+                  :
+                  <p
+                    className={styles.paraText}
+                    dangerouslySetInnerHTML={{
+                      __html: paragraph,
+                    }}
+                  ></p> 
+                }
 
                 {ShowButton ?? (
                   <Button title={buttonText} link={buttonUrl} design={2} />
