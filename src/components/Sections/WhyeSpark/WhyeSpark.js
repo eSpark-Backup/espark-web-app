@@ -6,9 +6,9 @@ import Button from "../../button/button";
 import { sociallinks } from "../../../helper/sociallinks";
 import { whypoints } from "../../../helper/whypoints";
 import SectionTitle from "../../sectionTitle";
-function WhyeSpark({ heading }) {
+function WhyeSpark({ heading, }) {
   return (
-    <div>
+    <div className={`${styles.whyEsparkMargin}`}  >
       <div className="solutions-area pt-80">
         <div className="container-fluid">
           <div className="row">
