@@ -16,10 +16,11 @@ const Careers = () => {
   const [getCat, setGetCat] = useState([]);
   const [allData, setAllData] = useState([]);
   const [showMessage, setShowMessage] = useState(false);
+  const [currentFilter, setcurrentFilter] = useState("");
   const [filter, setFilter] = useState({
-    job_cat: "",
-    job_type: "Full Time",
-    job_location: "Pakistan",
+    job_category: "",
+    job_type: "",
+    job_location: "",
   });
 
   useEffect(() => {
@@ -44,15 +45,20 @@ const Careers = () => {
 
   const inputFeilds = (category, inputFor) => {
     return (
-      <div className="col-lg-4">
+      <div className="col-lg-12">
         <select
           class="form-select"
           aria-label="Default select example"
           onChange={(e) => {
             selectCategory(e);
-          }}>
+          }}
+        >
           {category?.map((item) => {
-            return <option value={item + "," + inputFor}>{item}</option>;
+            return (
+              <>
+                <option value={item + "," + inputFor}>{item}</option>
+              </>
+            );
           })}
         </select>
       </div>
@@ -61,45 +67,147 @@ const Careers = () => {
 
   const selectCategory = (e) => {
     const categories = e.target.value;
+    // console.log("categories", categories);
     const categorySplitArr = categories.split(",");
     const value = categorySplitArr[0];
     const name = categorySplitArr[1];
+    setFilter({ ...filter, [name]: value });
+    setcurrentFilter(name);
+    // if (name === "job_cat") {
+    //   let newData = applyFilter([...allData], {
+    //     ...filter,
+    //     [name]: value,
+    //   });
 
-    if (name === "job_cat") {
-      let newData = applyFilter([...allData], {
-        ...filter,
-        [name]: value,
-      });
+    //   setCareersData(newData);
 
-      setCareersData(newData);
+    //   setFilter({
+    //     job_cat: value,
+    //     job_type: "Full Time",
+    //     job_location: "Karachi",
+    //   });
+    // }
+    // if (name === "job_type") {
+    //   let newData = applyFilter([...allData], {
+    //     ...filter,
+    //     [name]: value,
+    //   });
 
-      setFilter({
-        job_cat: value,
-        job_type: "Full Time",
-        job_location: "Pakistan",
-      });
-    } else {
-      let newData = applyFilter([...allData], {
-        ...filter,
-        [name]: value,
-      });
+    //   setCareersData(newData);
 
-      setCareersData(newData);
-      setFilter({
-        ...filter,
-        [name]: value,
-      });
-    }
+    //   setFilter({
+    //     job_cat: value,
+    //     job_type: "Full Time",
+    //     job_location: "Karachi",
+    //   });
+    // }
+    // if (name === "job_location") {
+    //   let newData = applyFilter([...allData], {
+    //     ...filter,
+    //     [name]: value,
+    //   });
+
+    //   setCareersData(newData);
+
+    //   setFilter({
+    //     job_cat: value,
+    //     job_type: "Full Time",
+    //     job_location: "Karachi",
+    //   });
+    // }
+    //  else {
+
+    // setFilter({
+    //   ...filter,
+    //   [name]: value,
+    // });
+    // }
   };
 
-  const applyFilter = (jobs, filter) => {
-    return jobs.filter((job) => {
-      return (
-        job.acf.job_category.includes(filter.job_cat) &&
-        job.acf.job_type.includes(filter.job_type) &&
-        job.acf.job_location.includes(filter.job_location)
-      );
-    });
+  useEffect(() => {
+    let newData = applyFilter([...allData], filter, currentFilter);
+    // console.log(newData);
+
+    setCareersData(newData);
+  }, [filter]);
+
+  // const jobFunction = (jobs, filter) => {
+  //   if (filter.job_category) {
+  //     const job_category = jobs.filter((job) =>
+  //       job.acf[filter.job_category].includes(filter[filter.job_category])
+  //     );
+  //     console.log("job_category", job_category);
+  //   }
+  // };
+  // const typeFunction = (jobs, filter) => {
+  //   if (filter.job_type) {
+  //     const job_type = jobs.filter((job) =>
+  //       job.acf[filter.job_type].includes(filter[filter.job_type])
+  //     );
+  //     console.log("job_type", job_type);
+  //   }
+  // };
+  // const locaFunction = (jobs, filter) => {
+  //   if (filter.job_location) {
+  //     const job_location = jobs.filter((job) =>
+  //       job.acf[filter.job_location].includes(filter[filter.job_location])
+  //     );
+  //     console.log("job_location", job_location);
+  //     // console.log("asddddd");
+  //   }
+  // };
+  const applyFilter = (jobs, filter, currentFilter) => {
+    console.log("filter", currentFilter);
+
+    const job_category = jobs.filter((job) =>
+      job.acf[currentFilter].includes(filter[currentFilter])
+    );
+    return filter[currentFilter] === "All" ? jobs : job_category;
+    // const job_type = jobs.filter((job) =>
+    //   job.acf[filter.job_type].includes(filter[filter.job_type])
+    // );
+    // console.log("job_type", job_type);
+    // console.log("job_category", job_category);
+    // jobFunction(jobs, filter);
+    // locaFunction(jobs, filter);
+    // typeFunction(jobs, filter);
+    // if (filter.job_location) {
+    //   const job_location = jobs.filter((job) =>
+    //     job.acf[filter.job_location].includes(filter[filter.job_location])
+    //   );
+    //   console.log("job_location", job_location);
+    //   console.log("asddddd");
+    // }
+    //   return jobs;
+    // }
+    // if (
+    //   filter.job_category === "" &&
+    //   filter.job_type === "" &&
+    //   filter.job_location === ""
+    // ) {
+    //   console.log("asddddd");
+
+    //   return jobs;
+    // }
+    // else {
+    //   console.log("asd", filtration);
+    // return jobs.filter((job) => {
+    //   return (
+    //     job.acf.job_category.includes(filter.job_cat) &&
+    //     job.acf.job_type.includes(filter.job_type) &&
+    //     job.acf.job_location.includes(filter.job_location)
+    //   );
+    // });
+    // }
+    // if (filter.job_location !== "All") {
+    //   return jobs.filter((job) => {
+    //     return job.acf.job_location.includes(filter.job_location);
+    //   });
+    // } else if (filter.job_type) {
+    //   return jobs.filter((job) => {
+    //     return job.acf.job_type.includes(filter.job_type);
+    //   });
+    // }
   };
 
   return (
@@ -118,9 +226,9 @@ const Careers = () => {
         )}
 
         <div className="row">
-          {inputFeilds(getCat.category, "job_cat")}
-          {inputFeilds(getCat.type, "job_type")}
-          {inputFeilds(getCat.location, "job_location")}
+          {inputFeilds(getCat.category, "job_category")}
+          {/* {inputFeilds(getCat.type, "job_type")}
+          {inputFeilds(getCat.location, "job_location")} */}
         </div>
         <br />
 
@@ -144,7 +252,8 @@ const Careers = () => {
                   <p
                     dangerouslySetInnerHTML={{
                       __html: item?.excerpt.rendered,
-                    }}></p>
+                    }}
+                  ></p>
                 </div>
                 <div class="col-lg-3 d-flex align-items-center justify-content-center">
                   <Button
