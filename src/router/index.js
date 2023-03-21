@@ -19,6 +19,7 @@ import Careers from "../screens/careers";
 import JobDetail from "../screens/careers/jobDetail";
 import SEO from "./../utils/SEO";
 import Event from './../components/event/event';
+import Upcomming from '../screens/upcomming-page';
 
 const AppRoutes = () => {
   const data = window.scrollTo(0, 0);
@@ -40,6 +41,7 @@ const AppRoutes = () => {
     // { path: "/event", element: <Event /> },
     { path: "/appointments", element: <Contact /> },
     { path: "/careers", element: <Careers /> },
+    { path: "/upcomming", element: <Upcomming /> },
     { path: "/careers/:id", element: <JobDetail /> },
     { path: "/*", element: <NotFound /> },
   ]);

@@ -17,26 +17,28 @@
 .footer-area p {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 143.5%;
-  color: #353535;
+  color: #070707;
 }
 
 .footer-area p {
-  color: #353535;
+  color: #070707;
   padding-right: 20%;
 }
 
 .footer-area a {
   font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
   color: #070707 !important;
 }
 
-.FaAngleDoubleRight {
-  padding-right: 30px;
+.icon-margin{
+  margin-right: 5px;
 }
-
 .logoMargin {
   margin-top: 5px;
 }
@@ -63,14 +65,30 @@ footer .container {
 footer .social-links {
   padding-top: 10px;
 }
+.spaces {
+  margin-left: 23px;
+}
+.anchorss{
+  width: 100%;
+  text-align: left;
+}
+@media only screen and (min-width: 1350px) and (max-width: 3000px) {
+  .explores{
+    margin-left: 40%;
+  }
+  .contacts-det{
+    margin-left: 30%;
+  }
 
-@media only screen and (min-width:300px) and (max-width:400px) {
+}
+
+@media only screen and (min-width: 300px) and (max-width: 400px) {
   .footer_areas {
     padding: 0px 40px 0px 15px !important;
   }
 }
 
-@media only screen and (min-width:400px) and (max-width:500px) {
+@media only screen and (min-width: 400px) and (max-width: 500px) {
   .copyright {
     margin-bottom: 40px;
   }
@@ -80,13 +98,13 @@ footer .social-links {
   }
 }
 
-@media only screen and (min-width:500px) and (max-width:541px) {
+@media only screen and (min-width: 500px) and (max-width: 541px) {
   .footer_areas {
     padding: 0px 20px 0px 35px !important;
   }
 }
 
-@media only screen and (min-width:542px) and (max-width:786px) {
+@media only screen and (min-width: 542px) and (max-width: 786px) {
   .copyright {
     margin-bottom: 150px;
   }
@@ -96,7 +114,7 @@ footer .social-links {
   }
 }
 
-@media only screen and (min-width:769px) and (max-width:820px) {
+@media only screen and (min-width: 769px) and (max-width: 820px) {
   .copyright {
     margin-bottom: 310px;
   }
@@ -106,13 +124,13 @@ footer .social-links {
   }
 }
 
-@media only screen and (min-width:821px) and (max-width:991px) {
+@media only screen and (min-width: 821px) and (max-width: 991px) {
   .copyright {
     margin-bottom: 495px;
   }
 }
 
-@media only screen and (min-width:991px) and (max-width:1200px) {
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
   .copyright {
     margin-bottom: 495px;
   }
@@ -126,7 +144,6 @@ footer .social-links {
     Back To Top  
 ---------------------------*/
 @-webkit-keyframes border-transform {
-
   0%,
   100% {
     border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;

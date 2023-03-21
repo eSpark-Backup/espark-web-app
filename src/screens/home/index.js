@@ -8,6 +8,7 @@ import Portfolio from "../../components/Sections/portfolio/Portfolio";
 import { projects } from "../../helper/projects";
 import heroImage from "../../../src/assets/images/hero-section/banner-image.svg";
 import ServicesRecreate from "./../../components/Sections/services-recreate/index";
+import HashLinkObserver from "react-hash-link";
 
 const Home = () => {
   const currentRoute = window.location.pathname;
@@ -23,13 +24,18 @@ const Home = () => {
                     cutting-edge solutions."
         images={heroImage}
         ShowButton={true}
-        buttonText={"Learn more"}
+        buttonText={"Learn More"}
+        buttonUlr={"newDiv_0"}
+        buttonDesign={13}
       />
       <WhyeSpark heading={"Why eSpark?"} />
       <ServicesRecreate link={currentRoute} />
       <Users />
       <Portfolio data={projects.slice(0, 4)} title="OUR PORTFOLIO" />
-      <PartnerAbout />
+      <div id="Testimonials">
+        <HashLinkObserver />
+        <PartnerAbout />
+      </div>
       <LetsTalk />
     </div>
   );

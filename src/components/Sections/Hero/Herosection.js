@@ -3,9 +3,8 @@ import Button from "../../button/button";
 import styles from "./style.module.css";
 function Herosection({
   buttonText,
-  buttonUrl,
+  buttonUrl,buttonDesign,
   ShowButton,
-  heading1,
   paragraph,
   title,
   images,
@@ -32,7 +31,7 @@ function Herosection({
                   }}></p>
 
                 {ShowButton ? (
-                  <Button title={buttonText} link={buttonUrl} design={13} />
+                  <Button title={buttonText} link={buttonUrl} design={buttonDesign} />
                 ) : (
                   ""
                 )}

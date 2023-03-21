@@ -24,9 +24,6 @@
   top: 280px;
 }
 
-.testimonial .slick-dots li button:before {
-  font-size: 25px;
-}
 
 .testimonial .slick-dots li {
   top: 15px;
@@ -130,8 +127,19 @@
   width: 100%;
   text-Align: center;
 }
+@media (min-width: 575px) and (max-width: 1024px) {
+  .testimonial .slick-dots li button:before {
+    font-size: 20px;
+    border: 1px solid #000 !important;
+    right: 10px;
+  }
+
+}
 
 @media (min-width: 275px) and (max-width: 574px) {
+  .slick-dots li.slick-active button::before{
+    font-size: 15px;
+  }
   .testimonial .name {
     font-family: Poppins;
     font-style: normal;

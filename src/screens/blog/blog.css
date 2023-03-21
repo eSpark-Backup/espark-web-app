@@ -54,6 +54,16 @@
 
 }
 
+.paragraph li {
+  line-height: 30px;
+}
+.paragraph li p strong{
+  line-height: 20px;
+}
+.paragraph ul {
+  line-height: 30px
+}
+
 .titleImgLeft {
   font-size: 14px;
   height: 505px;
