@@ -6,7 +6,7 @@
   line-height: 140%;
   color: #3a3a3a;
 }
- .image {Width: 500spx;
+ .image {Width: 600px;
  }
 @media (max-width: 768px) {
   .paraTexts {
@@ -49,10 +49,7 @@
   margin-top: 50px;
 }
 
-/* .ml-banner-image {
-  height: 600;
-  width: 100vw;
-} */
+
 
 .button{
   width: 158px;
@@ -118,10 +115,7 @@
     display: none !important;
   }
  
-  /* .ml-banner-image {
-    height: 700;
-    width: 100vw;
-  } */
+  
 
   button {
     font-family: "Poppins";
