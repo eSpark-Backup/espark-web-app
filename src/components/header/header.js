@@ -136,17 +136,17 @@ const Header = () => {
                     </span>
                     <div
                       id="serveDrop"
-                      className="d-flex justify-content-between"
+                      className="d-flex justify-content-between "
                     >
-                      {services.map((items) => {
+                      {services.map((items,index) => {
                         return (
-                          <div className="contents w-100">
+                          <div className = {index == 0 ? "contents w-100 firstContent" : index == 2 ? "contents w-75  ps-5" : index == 4 ? "contents w-75  ps-5":"contents w-100"}>
                             <Link
                               id="linkss"
                               className="linkClass"
                               to={`/services/${items.path}`}
                             >
-                              <p className="heading">{items.title}</p>
+                              <p className="heading ">{items.title}</p>
                             </Link>
                             {items.childs.map((item) => {
                               return (
