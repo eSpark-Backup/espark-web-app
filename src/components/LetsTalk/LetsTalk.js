@@ -19,15 +19,11 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
   const [errors, setErrors] = useState({});
   const form = useRef();
 
-  let array = [];
-  let limit = 15;
-
   const clearState = () => {
     setEmail("");
     setMessage("");
     setName("");
     setSubject("");
-    array = [];
   };
 
   const sendEmail = (e) => {
@@ -56,73 +52,27 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
       return;
     }
 
-    // If there are no errors, submit the form
-    // (you can replace this with your own logic)
-    console.log("Form submitted:", { name, email, subject, message });
 
     emailjs.init("bo0d42dcDbZL1U83o");
 
-    if (link?.includes("vacancies")) {
-      emailjs
-        .send("service_0n1v6bm", "template_y6yzby6", {
-          from_name: name,
-          from_email: email,
-          reply_to: email,
-          message: message,
-        })
-        .then(
-          (result) => {
-            clearState();
-            toast.success("Thank you for Connecting");
-          },
-          (error) => {
-            toast.error("Something Went Wrong");
-          }
-        );
-    } else {
-      if (modal) {
-        emailjs
-          .send("service_0n1v6bm", "template_88hqabf", {
-            from_name: name,
-            from_email: email,
-            reply_to: email,
-            subject: subject,
-            message: message,
-            user_interests: null,
-          })
-          .then(
-            (result) => {
-              modelClose(false);
-              clearState();
-              toast.success("Thank you for Connecting");
-            },
-            (error) => {
-              modelClose(false);
-              toast.error("Something Went Wrong");
-            }
-          );
-      } else {
-        emailjs
-          .send("service_0n1v6bm", "template_88hqabf", {
-            from_name: name,
-            from_email: email,
-            reply_to: email,
-            subject: subject,
-            message: message,
-            user_interests: JSON.stringify(array),
-          })
-          .then(
-            (result) => {
-              modelClose(false);
-              toast.success("Thank you for Connecting");
-              clearState();
-            },
-            (error) => {
-              toast.error("Something Went Wrong");
-            }
-          );
+    emailjs
+    .send("service_0n1v6bm", "template_88hqabf", {
+      from_name: name,
+      from_email: "info@esparkconsultants.com",
+      reply_to: email,
+      subject: subject,
+      message: message,
+    })
+    .then(
+      (result) => {
+        toast.success("Thank you for Connecting");
+        clearState();
+      },
+      (error) => {
+        toast.error("Something Went Wrong");
       }
-    }
+    );
+
   };
 
   return (

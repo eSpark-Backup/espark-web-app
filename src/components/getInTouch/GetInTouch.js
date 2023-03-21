@@ -72,7 +72,7 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
       emailjs
         .send("service_0n1v6bm", "template_88hqabf", {
           from_name: name,
-          from_email: email,
+          from_email: "info@esparkconsultants.com",
           reply_to: email,
           // message: message,
           phone: phone,
@@ -92,7 +92,7 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
         emailjs
           .send("service_0n1v6bm", "template_88hqabf", {
             from_name: name,
-            from_email: email,
+            from_email: "info@esparkconsultants.com",
             reply_to: email,
             subject: subject,
             message: message,
@@ -114,7 +114,7 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
         emailjs
           .send("service_0n1v6bm", "template_88hqabf", {
             from_name: name,
-            from_email: email,
+            from_email: "info@esparkconsultants.com",
             reply_to: email,
             subject: subject,
             message: message,
