@@ -21,16 +21,14 @@ function Herosection({
                   serviceClass
                     ? `${styles.serviceText} ml-banner-content`
                     : "ml-banner-content"
-                }
-              >
+                }>
                 <h1 className={styles.heading}>{title}</h1>
 
                 <p
                   className={styles.paraTexts}
                   dangerouslySetInnerHTML={{
                     __html: paragraph,
-                  }}
-                ></p>
+                  }}></p>
 
                 {ShowButton ? (
                   <Button title={buttonText} link={buttonUrl} design={buttonDesign} />
@@ -39,16 +37,14 @@ function Herosection({
                 )}
               </div>
             </div>
-
-            <img
-              src={images}
-              alt="image"
+            <div
               class={
                 serviceClass
-                  ? `${styles.service} animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-12 col-sm-12 text-center`
-                  : "animate__animated animate__fadeInDown animate__delay-1.5s col-lg-7 col-md-2 col-sm-12 text-center"
-              }
-            />
+                  ? `${styles.service} animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-12 col-sm-12 text-center `
+                  : `animate__animated animate__fadeInDown animate__delay-1.5s col-lg-7 col-md-2 col-sm-12 text-center `
+              }>
+              <img src={images} class={styles.image} alt="image" />
+            </div>
           </div>
         </div>
       </div>

@@ -32,10 +32,10 @@ function BlogDetail() {
     <>
       {post[0] ? (
         <div class="blog-details-area ptb-80">
-          <div class="container">
+          <div class="container-fluid">
             <div class="row">
               <div className="col-lg-12 col-md-12 ">
-                <div className="w-100 m-auto ">
+                <div className="w-100 text-center">
                   <Button design={8} title={"Lorem ipsum"}></Button>
                   <div className="w-100 m-auto my-5">
                     <h3 className="text-center text-black fw-bold">
@@ -56,7 +56,7 @@ function BlogDetail() {
                   {post[0] && (
                     <p
                       className={` my-auto text-justify paragraph`}
-                      style={{ lineHeight:30 }}
+                      style={{ lineHeight: 30 }}
                       dangerouslySetInnerHTML={{
                         __html: post[0]?.content.rendered,
                       }}
@@ -93,7 +93,7 @@ function BlogDetail() {
               </div>
             ))}
           </div>
-          <div className="container my-1 position-relative  ">
+          <div className="container-fluid my-1 position-relative  ">
             <div className="commetArea">
               <CommentsArea />
             </div>
@@ -105,7 +105,7 @@ function BlogDetail() {
             {numbers.slice(0, 3).map((item) => {
               return (
                 <>
-                  <div className="container  shimmerDivMargin">
+                  <div className="container-fluid  shimmerDivMargin">
                     <ShimmerPostList
                       postStyle="STYLE_FOUR"
                       col={1}

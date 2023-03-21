@@ -64,6 +64,53 @@ const serviceItems = (id, title, name, content, image) => {
 export const services = [
   {
     id: hash(),
+    title: "Mobile App Development Service",
+    name: "Mobile App Development",
+    path: "mobile-app-development",
+    content:
+      "eSpark Consulting Group is fully committed to delivering outstanding web app development services that are specifically designed to meet the unique requirements of our clients. Our team of highly skilled developers has the expertise and knowledge required to develop customized solutions that are not only efficient and reliable, but also cost-effective.",
+    discription:
+      "We develop sleek looking native and hybrid mobile apps for iOS & Android to ensure the customer satisfaction and performance at the core.",
+    image: MobileApplicationDevelopment,
+    quote:
+      "eSpark Consulting Group is dedicated to providing exceptional mobile app development services that are tailored to the individual needs of our clients. Our team of skilled developers possess the necessary expertise and knowledge to create customized solutions that are both efficient and reliable, while remaining cost-effective.",
+    quoteImage: MobileApplicationDevelopmentQuote,
+    icon: MobileApplicationDevelopmentIcon,
+    icon2: MobileApplicationDevelopmentIconHover,
+    childs: [
+      serviceItems(
+        hash(),
+        "Android App Development Service",
+        "Android App",
+        "Build top-notch Android applications with eSpark, which will be completely designed for your business needs. Our group of professionals create innovative and user-friendly android applications with key features like exclusivity and customer satisfaction. We have the expertise to create android applications for various sectors including retail, fashion, healthcare, and much more.",
+        AndroidAppDevelopment
+      ),
+      serviceItems(
+        hash(),
+        "iOS App Development Service",
+        "iOS App",
+        "Build top-notch customizable iOS applications designed to boost your business’s potential and reach.Our group of professionals create innovative and user-friendly iOS applications suitable for all iOS range of products offering easy accessibility and customer satisfaction. We have the expertise to create iOS applications for various industries like retail, fashion, healthcare, and much more.",
+        IosAppDevelopment
+      ),
+      serviceItems(
+        hash(),
+        "React Native App Development Service",
+        "React Native App",
+        "Do you want the end user to have the best performance and user experience? Our React Native App Development Service will provide you with exactly that. Our experts will develop a react native application which will not only help you modernize your business’s functionality but also generate higher revenue. Having top-notch performance and user experience will make your business stand out.",
+        ReactNativeAppDevelopment
+      ),
+      serviceItems(
+        hash(),
+        "Flutter App Development Service",
+        "React Native App",
+        "Our Flutter application development will provide you with easy functionality, and an exclusive UI design. Our Flutter application development service is one of the best solutions for mobile application development, enabling smooth and easy cross-platform giving your application a uniform appearance.",
+        FlutterAppDevelopment
+      ),
+    ],
+  },
+  {
+    id: hash(),
+    title: "Web Application Development Service",
     name: "Web Application Development",
     path: "web-app-development",
     content:
@@ -109,51 +156,7 @@ export const services = [
   },
   {
     id: hash(),
-    name: "Mobile App Development",
-    path: "mobile-app-development",
-    content:
-      "eSpark Consulting Group is fully committed to delivering outstanding web app development services that are specifically designed to meet the unique requirements of our clients. Our team of highly skilled developers has the expertise and knowledge required to develop customized solutions that are not only efficient and reliable, but also cost-effective.",
-    discription:
-      "We develop sleek looking native and hybrid mobile apps for iOS & Android to ensure the customer satisfaction and performance at the core.",
-    image: MobileApplicationDevelopment,
-    quote:
-      "eSpark Consulting Group is dedicated to providing exceptional mobile app development services that are tailored to the individual needs of our clients. Our team of skilled developers possess the necessary expertise and knowledge to create customized solutions that are both efficient and reliable, while remaining cost-effective.",
-    quoteImage: MobileApplicationDevelopmentQuote,
-    icon: MobileApplicationDevelopmentIcon,
-    icon2: MobileApplicationDevelopmentIconHover,
-    childs: [
-      serviceItems(
-        hash(),
-        "Android App Development Service.",
-        "Android App",
-        "Build top-notch Android applications with eSpark, which will be completely designed for your business needs. Our group of professionals create innovative and user-friendly android applications with key features like exclusivity and customer satisfaction. We have the expertise to create android applications for various sectors including retail, fashion, healthcare, and much more.",
-        AndroidAppDevelopment
-      ),
-      serviceItems(
-        hash(),
-        "iOS App Development Service.",
-        "iOS App",
-        "Build top-notch customizable iOS applications designed to boost your business’s potential and reach.Our group of professionals create innovative and user-friendly iOS applications suitable for all iOS range of products offering easy accessibility and customer satisfaction. We have the expertise to create iOS applications for various industries like retail, fashion, healthcare, and much more.",
-        IosAppDevelopment
-      ),
-      serviceItems(
-        hash(),
-        "React Native App Development Service.",
-        "React Native App",
-        "Do you want the end user to have the best performance and user experience? Our React Native App Development Service will provide you with exactly that. Our experts will develop a react native application which will not only help you modernize your business’s functionality but also generate higher revenue. Having top-notch performance and user experience will make your business stand out.",
-        ReactNativeAppDevelopment
-      ),
-      serviceItems(
-        hash(),
-        "Flutter App Development Service.",
-        "React Native App",
-        "Our Flutter application development will provide you with easy functionality, and an exclusive UI design. Our Flutter application development service is one of the best solutions for mobile application development, enabling smooth and easy cross-platform giving your application a uniform appearance.",
-        FlutterAppDevelopment
-      ),
-    ],
-  },
-  {
-    id: hash(),
+    title: "Database Development",
     name: "Database Development",
     path: "database-development",
     content:
@@ -199,6 +202,7 @@ export const services = [
   },
   {
     id: hash(),
+    title: "Embedded Systems Design",
     name: "Embedded Systems Design",
     path: "embedded-systems-design",
     content:
@@ -228,8 +232,8 @@ export const services = [
       ),
       serviceItems(
         hash(),
-        "Raspberry Pi Python / MATLAB",
-        "Raspberry Pi Python / MATLAB",
+        "Raspberry Pi Python / Matlab",
+        "Raspberry Pi Python / Matlab",
         "For creating IoT solutions, our Raspberry Pi Python/MATLAB development services provide a flexible and potent option. Our skilled developers can create and deploy unique Raspberry Pi solutions that satisfy your company's needs. For simple sensor and other peripheral integration, we specialize in creating high-performance solutions that interact with the Raspberry Pi's GPIO using Python/MATLAB.",
         RaspberryPiPythonMatlab
       ),
@@ -244,6 +248,7 @@ export const services = [
   },
   {
     id: hash(),
+    title: "QA and Web Plugin and Desktop Development",
     name: "QA and Web Plugin and Desktop Development",
     path: "qa-web-plugin-desktop-development",
     content:

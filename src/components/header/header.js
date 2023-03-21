@@ -136,18 +136,17 @@ const Header = () => {
                     </span>
                     <div
                       id="serveDrop"
-                      className=" d-flex justify-content-between"
-                      style={{ width: "100%" }}
+                      className="d-flex justify-content-between"
                     >
                       {services.map((items) => {
                         return (
-                          <div className="contents p-2 my-3">
+                          <div className="contents w-100">
                             <Link
                               id="linkss"
                               className="linkClass"
                               to={`/services/${items.path}`}
                             >
-                              <p className="heading">{items.name}</p>
+                              <p className="heading">{items.title}</p>
                             </Link>
                             {items.childs.map((item) => {
                               return (
@@ -161,7 +160,7 @@ const Header = () => {
                                       localStorage.setItem("child_id", item.id)
                                     }
                                   >
-                                    {item.title}
+                                    {item.name}
                                   </Link>
                                   <br />
                                 </>
@@ -202,7 +201,7 @@ const Header = () => {
                   <Link class="nav-link" to="/careers">
                     <span
                       class={
-                        pathname === "/careers"
+                        pathname.includes("/careers")
                           ? "itemTxt selected"
                           : "itemTxt "
                       }
@@ -221,7 +220,9 @@ const Header = () => {
                   <Link class="nav-link" to="/blogs">
                     <span
                       class={
-                        pathname === "/blogs" ? "itemTxt selected" : "itemTxt "
+                        pathname.includes("/blogs")
+                          ? "itemTxt selected"
+                          : "itemTxt "
                       }
                     >
                       Blogs

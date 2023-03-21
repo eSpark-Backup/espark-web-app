@@ -25,7 +25,7 @@ const NextBtn = (props) => {
 
 const settings = {
   autoplay: false,
-  dots: false,
+  dots: true,
   initialSlide: 1,
   swipe: false,
   swipeToSlide: false,
@@ -36,7 +36,7 @@ const settings = {
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
         dots: false,

@@ -5,20 +5,10 @@ function ServicesCard({ image, image2, title, para }) {
   return (
     <div className="p-4">
       <div className={style.mainCardWrapper}>
-        <div className={`${style.appDevWrapper} btn`} >
-          <div
-            className={style.logoImg}
-          >
-            <img
-              className={style.image}
-              src={image}
-              alt={title}
-            />
-            <img
-              className={style.himage}
-              src={image2}
-              alt={title}
-            />
+        <div className={`${style.appDevWrapper}`}>
+          <div className={style.logoImg}>
+            <img className={style.image} src={image} alt={title} />
+            <img className={style.himage} src={image2} alt={title} />
           </div>
           <p className={style.txtCardService}>{title}</p>
           <p className={style.txtCardService_para}>{para}</p>
@@ -41,7 +31,7 @@ function ServicesCard({ image, image2, title, para }) {
           </p>
         </div>
       </div>
-    </div >
+    </div>
   );
 }
 

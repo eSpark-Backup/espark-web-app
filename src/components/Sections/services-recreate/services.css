@@ -23,9 +23,9 @@
 }
 
 .sliderWrapper {
-    width: 80%;
-    margin: auto;
-
+    /* width: 80%; */
+    /* margin: auto; */
+    text-align: center;
 }
 
 .txtpara {

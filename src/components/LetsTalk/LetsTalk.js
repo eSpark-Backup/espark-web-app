@@ -6,60 +6,60 @@ import { toast } from "react-hot-toast";
 import Button from "../button/button";
 import style from "./style.module.css";
 import SectionTitle from "../sectionTitle";
+import { IMaskInput } from "react-imask";
+const EmailAddressMask = /^\S*@?\S*$/;
+const ContactNumberMask = "+{00}(000)000-00000";
 
 const LetsTalk = ({ modal, modelClose, link, h1 }) => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [files, setFiles] = useState(null);
 
+  const [errors, setErrors] = useState({});
   const form = useRef();
 
   let array = [];
   let limit = 15;
 
-  const handleUpdateIntrestData = (e, index) => {
-    const data = array.find((item) => item === e);
-
-    if (data === undefined) {
-      array.push(e);
-    } else {
-      const indexx = array.indexOf(e);
-      if (indexx > -1) {
-        array.splice(indexx, 1);
-      }
-    }
-  };
-
   const clearState = () => {
     setEmail("");
     setMessage("");
     setName("");
-    setPhone("");
     setSubject("");
-    setFiles("");
     array = [];
-  };
-
-  const setfileData = (e) => {
-    const fileToLoad = e.target.files[0];
-
-    var fileReader = new FileReader();
-    var base64;
-    // Onload of file read the file content
-    fileReader.onload = function (fileLoadedEvent) {
-      base64 = fileLoadedEvent.target.result;
-      // Print data in console
-      setFiles(base64);
-    };
-    // Convert data to base64
-    fileReader.readAsDataURL(fileToLoad);
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    // Check for errors in form fields
+    let errors = {};
+    if (!name) {
+      errors.name = "Name is required";
+    }
+    if (!email) {
+      errors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      errors.email = "Invalid email format";
+    }
+    if (!subject) {
+      errors.subject = "Subject is required";
+    }
+    if (!message) {
+      errors.message = "Message is required";
+    }
+
+    // If there are errors, set them in state and exit
+    if (Object.keys(errors).length > 0) {
+      setErrors(errors);
+      return;
+    }
+
+    // If there are no errors, submit the form
+    // (you can replace this with your own logic)
+    console.log("Form submitted:", { name, email, subject, message });
+
     emailjs.init("bo0d42dcDbZL1U83o");
 
     if (link?.includes("vacancies")) {
@@ -69,8 +69,6 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
           from_email: email,
           reply_to: email,
           message: message,
-          phone: phone,
-          content: files,
         })
         .then(
           (result) => {
@@ -90,7 +88,6 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
             reply_to: email,
             subject: subject,
             message: message,
-            phone: phone,
             user_interests: null,
           })
           .then(
@@ -112,7 +109,6 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
             reply_to: email,
             subject: subject,
             message: message,
-            phone: phone,
             user_interests: JSON.stringify(array),
           })
           .then(
@@ -132,7 +128,7 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
   return (
     <div>
       <div class={`contact-area ${!modal ? "pb-80" : null}`}>
-        <div className="container">
+        <div className="container-fluid">
           <div class={`${style.letsTalk} row`}>
             <div className="col-lg-8 text-center">
               <SectionTitle
@@ -155,8 +151,7 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
           </div>
           <div className="row">
             <div
-              className={`${style.formcol} col-lg-8 col-md-12 col-sm-12  text-center`}
-            >
+              className={`${style.formcol} col-lg-8 col-md-12 col-sm-12  text-center`}>
               <div className={`${style.formbox} col-lg-12`}>
                 <form id="contactForm" ref={form} onSubmit={sendEmail}>
                   <div class="row">
@@ -177,7 +172,9 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                     </div>
                     <div class="col-lg-6 col-md-6">
                       <div class="form-group">
-                        <label className={`${style.label} d-flex`}>Email Address</label>
+                        <label className={`${style.label} d-flex`}>
+                          Email Address
+                        </label>
                         <input
                           type="email"
                           required
@@ -190,51 +187,46 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                         <div class="invalid-feedback"></div>
                       </div>
                     </div>
-                    {!link?.includes("vacancies") && (
-                      <div class="col-lg-12 col-md-12">
-                        <div class="form-group">
-                          <label className={`${style.label} d-flex`}>
-                            Subject
-                          </label>
-                          <input
-                            type="text"
-                            name="subject"
-                            placeholder="Your Subject *"
-                            class="form-control"
-                            required
-                            value={subject}
-                            onChange={(e) => setSubject(e.target.value)}
-                          />
-                          <div class="invalid-feedback"></div>
-                        </div>
-                      </div>
-                    )}
                     <div class="col-lg-12 col-md-12">
                       <div class="form-group">
                         <label className={`${style.label} d-flex`}>
-                          Message
+                          Subject
                         </label>
-                        <textarea
-                          name="text"
-                          required
-                          cols="30"
-                          rows="5"
-                          placeholder={"Write your message..."}
+                        <input
+                          type="text"
+                          name="subject"
+                          placeholder="Your Subject *"
                           class="form-control"
-                          value={message}
-                          onChange={(e) => setMessage(e.target.value)}
-                        ></textarea>
+                          required
+                          value={subject}
+                          onChange={(e) => setSubject(e.target.value)}
+                        />
                         <div class="invalid-feedback"></div>
                       </div>
                     </div>
-                    <div class="col-lg-12 col-sm-12 d-flex justify-content-center justify-content-sm-start ">
-                      <Button
-                        type="submit"
-                        onClick={sendEmail}
-                        title="SUBMIT"
-                        design={0}
-                      />
+                  </div>
+                  <div class="col-lg-12 col-md-12">
+                    <div class="form-group">
+                      <label className={`${style.label} d-flex`}>Message</label>
+                      <textarea
+                        name="text"
+                        required
+                        cols="30"
+                        rows="5"
+                        placeholder={"Write your message..."}
+                        class="form-control"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}></textarea>
+                      <div class="invalid-feedback"></div>
                     </div>
+                  </div>
+                  <div class="col-lg-12 col-sm-12 d-flex justify-content-center justify-content-sm-start ">
+                    <Button
+                      type="submit"
+                      onClick={sendEmail}
+                      title="SUBMIT"
+                      design={0}
+                    />
                   </div>
                 </form>
               </div>

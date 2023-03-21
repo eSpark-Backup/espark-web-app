@@ -10,6 +10,7 @@ import Button from "../../components/button/button";
 import Herosection from "../../components/Sections/Hero/Herosection";
 import CareerImg from "../../assets/images/hero-section/Careerherosection.svg";
 import SectionTitle from "../../components/sectionTitle";
+import { Link } from "react-router-dom";
 const Careers = () => {
   const [careersData, setCareersData] = useState([]);
   const [getCat, setGetCat] = useState([]);
@@ -49,8 +50,7 @@ const Careers = () => {
           aria-label="Default select example"
           onChange={(e) => {
             selectCategory(e);
-          }}
-        >
+          }}>
           {category?.map((item) => {
             return <option value={item + "," + inputFor}>{item}</option>;
           })}
@@ -132,6 +132,7 @@ const Careers = () => {
                   <h4 id="data_job_num1" data-job-num="1">
                     {item?.title?.rendered}
                   </h4>
+
                   <p>
                     Karachi
                     <br />
@@ -143,13 +144,12 @@ const Careers = () => {
                   <p
                     dangerouslySetInnerHTML={{
                       __html: item?.excerpt.rendered,
-                    }}
-                  ></p>
+                    }}></p>
                 </div>
                 <div class="col-lg-3 d-flex align-items-center justify-content-center">
                   <Button
                     title="Apply Now"
-                    link={`/vacancies/${item.id}`}
+                    link={`/careers/${item.id}`}
                     design={1}
                   />
                 </div>
