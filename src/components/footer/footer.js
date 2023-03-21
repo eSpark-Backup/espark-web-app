@@ -19,8 +19,8 @@ const Footer = () => {
   return (
     <>
       <div className="footers">
-        <footer className="footer-area ">
-          <div className="container footer_areas">
+        <footer className="footer-area">
+          <div className="container-fluid  footer_areas ">
             <div className="row">
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <div className="single-footer-widget">
@@ -39,12 +39,13 @@ const Footer = () => {
                     costs, and efficiently promote their operations.
                   </p>
                   <div>
-                    <ul className="social-links">
+                    <ul className="social-links ">
                       <li>
                         <a
                           href="https://www.facebook.com/eSparkConsGroup"
                           className="facebook"
-                          target="_blank">
+                          target="_blank"
+                        >
                           <FaFacebookF />
                         </a>
                       </li>
@@ -52,7 +53,8 @@ const Footer = () => {
                         <a
                           href="https://www.instagram.com/esparkconsultantsgroup"
                           className="instagram"
-                          target="_blank">
+                          target="_blank"
+                        >
                           <AiFillInstagram />
                         </a>
                       </li>
@@ -60,7 +62,8 @@ const Footer = () => {
                         <a
                           href="https://twitter.com/eSparkConsGroup"
                           className="twitter"
-                          target="_blank">
+                          target="_blank"
+                        >
                           <FaTwitter />
                         </a>
                       </li>
@@ -164,7 +167,8 @@ const Footer = () => {
                       <a
                         href="https://www.google.com/maps/dir//eSpark+Consulting+Group+301%2FB+3rd+Floor+%26+401%2FA+4th+Floor,+Blossom+Trade+Centre+Block+1+Gulistan-e-Johar,+Karachi,+74300/@24.929158,67.115604,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb33feab1c28595:0xa3b2a5dc2f97a82e"
                         target="_blank"
-                        className="anchorss">
+                        className="anchorss"
+                      >
                         <FaMapMarkerAlt className="icon-margin" />{" "}
                         <span>
                           eSpark Consulting Group, 301/B <br />{" "}
