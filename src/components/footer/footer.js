@@ -1,6 +1,5 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
 import "./style.css";
 import {
   FaFacebookF,
@@ -14,8 +13,7 @@ import { MdAttachEmail } from "react-icons/md";
 // import { HiChevronDoubleRight } from "react-icons/hi";
 
 import ScrollTopButton from "./ScrollTopButton";
-import { HashLink } from 'react-router-hash-link';
-
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -46,8 +44,7 @@ const Footer = () => {
                         <a
                           href="https://www.facebook.com/eSparkConsGroup"
                           className="facebook"
-                          target="_blank"
-                        >
+                          target="_blank">
                           <FaFacebookF />
                         </a>
                       </li>
@@ -55,8 +52,7 @@ const Footer = () => {
                         <a
                           href="https://www.instagram.com/esparkconsultantsgroup"
                           className="instagram"
-                          target="_blank"
-                        >
+                          target="_blank">
                           <AiFillInstagram />
                         </a>
                       </li>
@@ -64,8 +60,7 @@ const Footer = () => {
                         <a
                           href="https://twitter.com/eSparkConsGroup"
                           className="twitter"
-                          target="_blank"
-                        >
+                          target="_blank">
                           <FaTwitter />
                         </a>
                       </li>
@@ -99,11 +94,8 @@ const Footer = () => {
                       <Link to="/upcomming">FAQ Question</Link>
                     </li>
                     <li>
-                    {/* <HashLink smooth to='/#testimonials' > Testimonial </HashLink> */}
-                      <Link 
-                        to={`/#testimonials`}
-                      > Testimonial
-                      </Link>
+                      {/* <HashLink smooth to='/#testimonials' > Testimonial </HashLink> */}
+                      <Link to="/#Testimonials"> Testimonial</Link>
                     </li>
                     <li>
                       <Link to="/privacy-policy">privacy Policy</Link>
@@ -172,8 +164,7 @@ const Footer = () => {
                       <a
                         href="https://www.google.com/maps/dir//eSpark+Consulting+Group+301%2FB+3rd+Floor+%26+401%2FA+4th+Floor,+Blossom+Trade+Centre+Block+1+Gulistan-e-Johar,+Karachi,+74300/@24.929158,67.115604,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb33feab1c28595:0xa3b2a5dc2f97a82e"
                         target="_blank"
-                        className="anchorss"
-                      >
+                        className="anchorss">
                         <FaMapMarkerAlt className="icon-margin" />{" "}
                         <span>
                           eSpark Consulting Group, 301/B <br />{" "}
