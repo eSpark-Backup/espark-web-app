@@ -17,6 +17,14 @@ const Header = () => {
 
   const { pathname } = useLocation();
 
+  useEffect(() => {
+    if (!pathname.includes("/services")) {
+      console.log(pathname);
+      localStorage.clear("child_id");
+      setSelectTab("");
+    }
+  }, [pathname]);
+
   const [isNavCollapsed, setIsNavCollapsed] = useState(false);
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
   const location = useLocation();
@@ -111,11 +119,12 @@ const Header = () => {
                         pathname?.includes("services")
                           ? "itemTxt selected"
                           : "itemTxt "
-                      }>
-                      Services{" "}
+                      }
+                    >
+                      Services
                       <svg
-                        width="14"
-                        height="9"
+                        width="3"
+                        height="6"
                         viewBox="0 0 14 9"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -129,47 +138,55 @@ const Header = () => {
                         />
                       </svg>
                     </span>
-                    <div
-                      id="serveDrop"
-                      className="d-flex justify-content-between ">
-                      {services.map((items, index) => {
-                        return (
-                          <div
-                            className={
-                              index == 0
-                                ? "contents w-100 firstContent"
-                                : index == 2
-                                ? "contents w-75  ps-5"
-                                : index == 4
-                                ? "contents w-75  ps-5"
-                                : "contents w-100"
-                            }>
-                            <Link
-                              id="linkss"
-                              className="linkClass"
-                              to={`/services/${items.path}`}>
-                              <p className="heading ">{items.title}</p>
-                            </Link>
-                            {items.childs.map((item) => {
-                              return (
-                                <>
-                                  <Link
-                                    className={`my-2 ptag linkClass ${
-                                      item.id === tabSelect && "selectedColor"
-                                    }`}
-                                    to={`/services/${items.path}`}
-                                    onClick={() =>
-                                      localStorage.setItem("child_id", item.id)
-                                    }>
-                                    {item.name}
-                                  </Link>
-                                  <br />
-                                </>
-                              );
-                            })}
-                          </div>
-                        );
-                      })}
+                    <div id="serveDrop">
+                      <div className="serveDropInner d-flex justify-content-between">
+                        {services.map((items, index) => {
+                          return (
+                            <div
+                              className={
+                                index == 0
+                                  ? "contents w-75 ps-5"
+                                  : index === 1
+                                  ? "contents w-100 ps-5"
+                                  : index === 2
+                                  ? "contents w-75 "
+                                  : index === 3
+                                  ? "contents w-75"
+                                  : "contents w-100 pe-5"
+                              }
+                            >
+                              <Link
+                                id="linkss"
+                                className="linkClass"
+                                to={`/services/${items.path}`}
+                              >
+                                <p className="heading ">{items.title}</p>
+                              </Link>
+                              {items.childs.map((item) => {
+                                return (
+                                  <>
+                                    <Link
+                                      className={`my-2 ptag linkClass ${
+                                        item.id === tabSelect && "selectedColor"
+                                      }`}
+                                      to={`/services/${items.path}`}
+                                      onClick={() =>
+                                        localStorage.setItem(
+                                          "child_id",
+                                          item.id
+                                        )
+                                      }
+                                    >
+                                      {item.name}
+                                    </Link>
+                                    <br />
+                                  </>
+                                );
+                              })}
+                            </div>
+                          );
+                        })}
+                      </div>
                     </div>
                   </Link>
                 </li>

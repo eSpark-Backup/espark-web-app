@@ -28761,6 +28761,7 @@ blockquote:after {
 
 .footer-area {
     padding-top: 80px;
+    padding-bottom: 70px;
     position: relative;
     z-index: 1;
     background-color: #e8f1f2
