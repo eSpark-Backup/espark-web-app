@@ -12,19 +12,6 @@
 .customColor:hover {
   box-shadow: none;
 }
-.logo{
-  width: 209px;
-    height: 82px;
-}
-.nav-link{
-  font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 100%;
-  
-    color: #3359A2;
-}
 
 .list-bgrd {
   background-color: transparent !important;
@@ -115,60 +102,48 @@
     left: 230px !important;
   }
 }
-
 .navbar {
   position: static;
 }
-
 #serve:hover #serveDrop {
   display: flex !important;
   background: #E8F1F2;
   opacity: 0.9;
   margin-top: -20px;
 }
-
 #serve {
   position: static;
 }
 
 #serveDrop {
   position: absolute;
-  left: 0px;
+  width: 100%;
+  left: 0;
   display: none !important;
   padding: auto 100px;
   height: 260px;
 }
-
 .contents {
   padding: 30px 0px;
-  margin: 0px 5px;
-  /* border: 1px solid black; */
+  margin: 0px 10px;
 }
-.firstContent{
-  padding-left: 50px!important;
-}
-
 .heading {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500 !important;
-  font-size: 16px;
-  /* font-size: 16.8132px; */
+  font-size: 16.8132px;
   line-height: 35px;
   color: #2074b4;
   border-bottom: 2px solid black;
 }
-
 .linkClass {
   text-align: start;
   align-items: start;
 }
-
 .headroom a {
   text-align: start;
   align-items: start;
 }
-
 .ptag {
   font-family: "Poppins";
   font-style: normal;
@@ -177,20 +152,16 @@
   line-height: 22px;
   color: #000000 !important;
 }
-
 .selectedColor {
   color: var(--color-primary) !important;
 }
-
 .ptag:hover {
   color: var(--color-primary) !important;
 }
-
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .contents {
     padding: 30px 0px;
   }
-
   .heading {
     font-family: "Poppins";
     font-style: normal;
@@ -200,17 +171,14 @@
     color: #2074b4;
     border-bottom: 2px solid black;
   }
-
   .linkClass {
     text-align: start;
     align-items: start;
   }
-
   a {
     text-align: start;
     align-items: start;
   }
-
   .ptag {
     font-family: "Poppins";
     font-style: normal;
@@ -219,17 +187,14 @@
     line-height: 10px;
     color: #000000 !important;
   }
-
   .selectedColor {
     color: var(--color-primary) !important;
   }
 }
-
 @media only screen and (min-width: 1200px) and (max-width: 1480px) {
   .contents {
     padding: 30px 0px;
   }
-
   .heading {
     font-family: "Poppins";
     font-style: normal;
@@ -239,17 +204,14 @@
     color: #2074b4;
     border-bottom: 2px solid black;
   }
-
   .linkClass {
     text-align: start;
     align-items: start;
   }
-
   a {
     text-align: start;
     align-items: start;
   }
-
   .ptag {
     font-family: "Poppins";
     font-style: normal;
@@ -258,7 +220,6 @@
     line-height: 16px;
     color: #000000 !important;
   }
-
   .selectedColor {
     color: var(--color-primary) !important;
   }

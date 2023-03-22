@@ -6,8 +6,7 @@
   line-height: 140%;
   color: #3a3a3a;
 }
- .image {Width: 600px;
- }
+
 @media (max-width: 768px) {
   .paraTexts {
     display: flex;
@@ -63,8 +62,8 @@
     line-height: 140%;
     color: #3A3A3A;
   letter-spacing: 0em;
-  padding-top: 43px;
-  padding-bottom: 52px;
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 .homePartText {
     font-family: 'Poppins';
