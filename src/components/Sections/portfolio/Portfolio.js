@@ -5,12 +5,12 @@ import styles from "./style.module.css";
 
 const Portfolio = ({ data, title }) => {
   return (
-    <div className="container-fluid ptb-80" id="newDiv_0">
+    <div className="container-fluid ptb-80 text-center" id="newDiv_0">
       <SectionTitle
         heading={title}
-        paragraph="Empowering decentralization, one project at a time"
+        paragraph={<p className={styles.ourPortFolioColorContent}>Empowering decentralization, one project at a time</p>}
       />
-      <div className="row pt-5 mt-3 ">
+      <div className="row pt-2 m-0">
         {data?.map((item) => {
           return (
             <div className="col-sm-6 col-md-4 col-lg-3 mt-2 mb-30">
@@ -31,7 +31,6 @@ const Portfolio = ({ data, title }) => {
             </div>
           );
         })}
-        {/* <Button title="View More" link="/portfolio" design={1} /> */}
       </div>
     </div>
   );
