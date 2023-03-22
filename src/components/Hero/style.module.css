@@ -1,0 +1,141 @@
+.paraTexts {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px !important;
+    line-height: 140%;
+    color: #3a3a3a;
+}
+
+.image {
+    height: 500px;
+    Width: 600px;
+}
+
+@media (max-width: 768px) {
+    .paraTexts {
+        display: flex;
+        text-align: start;
+        align-items: flex-start;
+        justify-content: start;
+        margin-left: 10px;
+    }
+
+
+    .service {
+        width: 100% !important;
+        margin: 0px 0px 0px 0px !important;
+        padding: 5px 30px;
+    }
+
+    .serviceText {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (min-width: 786px) and (max-width: 1200px) {
+    .service {
+        width: 70% !important;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .serviceText {
+        margin-top: 0px;
+    }
+}
+
+.service {
+    width: 35%;
+    margin: 0px 0px 30px 100px;
+}
+
+.serviceText {
+    margin-top: 50px;
+}
+
+
+.paraTexts {
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 30px;
+    margin-left: 10px;
+    color: #3a3a3a;
+}
+
+.homePartText {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-bottom: 30px;
+    margin-left: 10px;
+    color: #3A3A3A;
+}
+
+.ml-main-section {
+    background-repeat: no-repeat;
+}
+
+.heading {
+    font-family: "Poppins";
+    font-size: 44px;
+    font-weight: 700 !important;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.headingColumnMobile {
+    display: none;
+}
+
+.headingColumn {
+    display: flex;
+    align-items: start;
+}
+
+@media screen and (max-width: 750px) {
+    .headingColumn {
+        display: none !important;
+    }
+
+    button {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px !important;
+        line-height: 100%;
+        color: #ffffff;
+    }
+
+    .ml-main-section {
+        background-position: 50%;
+        padding-top: 20px;
+        padding-bottom: 40px !important;
+    }
+
+    .headingColumnMobile {
+        display: block;
+        padding: 5%;
+    }
+
+    .paraTexts {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .heading {
+        font-size: 28px;
+        line-height: 37px;
+    }
+} 
