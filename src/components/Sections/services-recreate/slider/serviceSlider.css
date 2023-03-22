@@ -8,8 +8,8 @@
     align-items: center;
     cursor: pointer;
     position: absolute;
-    top: 195px;
-    left: 1550px;
+    top: 207px;
+    left: 1520px;
 }
 
 .btnPre {
@@ -22,8 +22,8 @@
     align-items: center;
     cursor: pointer;
     position: absolute;
-    top: 195px;
-    right: 1550px;
+    top: 207px;
+    right: 1510px;
 }
 
 .sliderMobileResponsive {
