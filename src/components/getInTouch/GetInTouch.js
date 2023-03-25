@@ -17,6 +17,7 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [isEdited, setIsEdited] = useState(false);
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [files, setFiles] = useState(null);
@@ -63,7 +64,6 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
     // Convert data to base64
     fileReader.readAsDataURL(fileToLoad);
   };
-
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.init("bo0d42dcDbZL1U83o");
@@ -135,10 +135,20 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
     }
   };
 
+  const handlePhoneOnChange = (e) => {
+    const value = e.slice(0, limit);
+    setPhone(value);
+
+    if (!isEdited && value.startsWith("+92")) {
+      setPhone("");
+    }
+
+    setIsEdited(true);
+  };
   return (
     <div>
       <div class={`contact-area pt-80 ${!modal ? "pb-80" : null}`}>
-        <div class="container">
+        {/* <div class="container"> */}
           {!link?.includes("careers") ? (
             <div class="section-title">
               <SectionTitle
@@ -151,7 +161,7 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
             </div>
           ) : (
             <div class="section-title">
-              <SectionTitle padding={10} heading={"Apply For This Position"} />
+              <SectionTitle padding={10} heading={"Apply For This Position"} my={2}/>
             </div>
           )}
           <div class="row align-items-center">
@@ -174,7 +184,7 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
                     <div class="form-group">
                       <input
                         type="text"
-                        required={true}
+                        required
                         name="name"
                         placeholder="Your Name *"
                         class="form-control"
@@ -188,7 +198,7 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
                     <div class="form-group">
                       <input
                         type="email"
-                        required={true}
+                        required
                         name="email"
                         placeholder="Your email address *"
                         class="form-control"
@@ -225,15 +235,17 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
                     <div class="form-group ">
                       <PhoneInput
                         international
+                        required
                         defaultCountry="PK"
                         placeholder="Enter phone number"
                         maxlength={15}
                         value={phone}
-                        onChange={(e) => {
+                        onChange={ (e) => {
                           if (e) {
                             setPhone(e.slice(0, limit));
                           }
-                        }}
+                        }
+                        }
                       />
                       <div class="invalid-feedback"></div>
                     </div>
@@ -367,6 +379,7 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
                       title={
                         link?.includes("careers") ? "Apply Now" : "Send Message"
                       }
+                      disabled={phone === "+92"}
                       design={0}
                     />
                   </div>
@@ -375,7 +388,6 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };

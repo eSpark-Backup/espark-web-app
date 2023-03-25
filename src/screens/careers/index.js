@@ -211,7 +211,7 @@ const Careers = () => {
   };
 
   return (
-    <div>
+    <>
       <Herosection
         title="CAREERS"
         paragraph="Our career pathways provide premium opportunities to establish dynamic skillset and talent. We structure productive roadmaps for our employees to start off their IT career with an endless spirit. Our teams are formed by passing each candidate through effective technical assessments. Join any of our productive teams based on your prerequisite expertise, and make your professional career a brilliance."
@@ -291,7 +291,7 @@ const Careers = () => {
           })
         )}
       </div>
-    </div>
+    </>
   );
 };
 

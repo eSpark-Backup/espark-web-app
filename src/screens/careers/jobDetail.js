@@ -21,12 +21,12 @@ const JobDetail = ({ appliedFor }) => {
   }, []);
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid paragraph">
       <Title title={singleJob?.title?.rendered} />
       <div className="row">
         {singleJob?.title ? (
           <p
-            className="col-lg-6 paragraph"
+            className="col-lg-6 jobDetails "
             dangerouslySetInnerHTML={{
               __html: singleJob?.content?.rendered,
             }}
