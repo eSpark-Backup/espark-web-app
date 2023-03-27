@@ -51,7 +51,7 @@ function Herosection({
                   ? `${styles.service} animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-12 col-sm-12 text-center `
                   : `animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-2 col-sm-12 text-center `
               }>
-              <img src={images} class={styles.image} alt="image" />
+              <img src={images} class={styles.images} alt="image" />
             </div>
           </div>
         </div>

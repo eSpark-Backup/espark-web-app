@@ -2,7 +2,7 @@
 
 :root {
     --color-primary: #11A79c;
-    --bs-secondary:#3359a2;
+    --bs-secondary: #3359a2;
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
@@ -307,7 +307,6 @@ a {
     font-weight: 500;
     line-height: 23px;
     letter-spacing: 0em;
-    text-align: center;
     font-family: 'Poppins' !important;
 }
 
@@ -726,7 +725,7 @@ progress {
     margin-left: auto
 }
 
-.container-fluid{
+.container-fluid {
     width: 80%;
     padding-right: var(--bs-gutter-x, .75rem);
     padding-left: var(--bs-gutter-x, .75rem);
@@ -26902,11 +26901,49 @@ blockquote:after {
     background-image: url("../images/hero-section/hero-image.png");
     padding-top: 100px;
     padding-bottom: 180px;
-    height:800px;
+    height: 800px;
     background-position: 100% 100%;
-    background-size:cover;
-        background-repeat: no-repeat;
-        /* background-position: center center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+}
+
+@media (max-width: 991.98px) {
+    .ml-main-section {
+        height: 1000px !important;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+}
+@media (min-width: 1024px) {
+    .ml-main-section {
+        height:950px !important;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+}
+
+@media (min-width: 768.98px) and (max-width: 1023.98px) {
+    .ml-main-section {
+        height: 1100px !important;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+}
+@media (min-width: 426px) and (max-width: 767.98px) {
+
+    .ml-main-section {
+        height: 400px !important;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+}
+@media (max-width: 425px) {
+    .ml-main-section {
+        height: 400px !important;
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
 }
 
 .ml-main-section .ml-banner-content h1 {
@@ -28771,10 +28808,11 @@ blockquote:after {
     color: var(--color-primary);
 }
 
-.logo{
+.logo {
     height: 62px !important;
     width: 160px !important;
 }
+
 .single-footer-widget .logo {
     margin-bottom: 20px;
 }
@@ -33743,7 +33781,7 @@ blockquote:after {
     font-weight: 700 !important;
     font-size: 44px;
     line-height: 100%;
-    color: var(--color-secondary)!important;
+    color: var(--color-secondary) !important;
     text-align: center;
     margin-top: 15px;
 }
@@ -33801,7 +33839,7 @@ blockquote:after {
         font-weight: 700 !important;
         font-size: 30px;
         line-height: 100%;
-        color: var(--color-secondary)!important;
+        color: var(--color-secondary) !important;
         text-align: center;
         margin-top: 15px;
     }

@@ -22,8 +22,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
           to={link}
           className={style.btnMargin}
           onClick={onClick}
-          disabled={disabled}
-        >
+          disabled={disabled}>
           <button className="roundbutton rounded-pill">
             {title}
             <FaLongArrowAltRight className={style.arrowSize} />
@@ -39,8 +38,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
           to={link}
           className={style.btnMargin}
           onClick={onClick}
-          disabled={disabled}
-        >
+          disabled={disabled}>
           <button className="roundbutton rounded-pill">{title}</button>
         </Link>
       </>
@@ -53,8 +51,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
           class="btn btn-light rounded-pill"
           to={link}
           onClick={onClick}
-          disabled={disabled}
-        >
+          disabled={disabled}>
           {title}
         </button>
       </>
@@ -67,8 +64,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
           class="btn btn-primary rounded-pill"
           to={link}
           onClick={onClick}
-          disabled={disabled}
-        >
+          disabled={disabled}>
           {title}
           {"  "}
           <FaRegArrowAltCircleRight margin={10} />
@@ -134,8 +130,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
           target="_blank"
           className={style.btnMargin}
           onClick={onClick}
-          disabled={disabled}
-        >
+          disabled={disabled}>
           <button className="roundbutton">{title}</button>
         </a>
       </>
@@ -150,8 +145,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
           target="_blank"
           className={style.btnMargin}
           onClick={onClick}
-          disabled={disabled}
-        >
+          disabled={disabled}>
           <button
             className="roundbutton rounded-pill"
             style={{
@@ -159,9 +153,8 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
               fontSize: 30,
               height: 46,
               boxShadow: "none",
-              fontWeight:600
-            }}
-          >
+              fontWeight: 600,
+            }}>
             {title}
           </button>
         </a>
@@ -175,9 +168,8 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
           href="#newDiv_0"
           className={style.btnMargin}
           onClick={onClick}
-          disabled={disabled}
-        >
-          <button className="roundbutton rounded-pill" >{title}</button>
+          disabled={disabled}>
+          <button className="roundbutton rounded-pill">{title}</button>
         </a>
       </>
     );

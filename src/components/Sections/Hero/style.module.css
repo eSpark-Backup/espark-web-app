@@ -119,11 +119,20 @@
     margin-top: 0px;
   }
 }
-@media only screen and (min-width: 786px) and (max-width: 1200px) {
-  .images {
+@media (min-width: 992px){
+ .images {
     height: auto;
     width: 400px !important;
   }
+}
+@media only screen and (min-width: 1024px) {
+.images{
+      height: auto;
+        width: 450px !important;
+}
+}
+@media only screen and (min-width: 786px) and (max-width: 1023.98px) {
+  
   .paraTexts{
     padding-top: 20px !important;
     padding-bottom: 20px !important;

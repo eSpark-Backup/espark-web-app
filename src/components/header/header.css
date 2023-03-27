@@ -94,36 +94,6 @@
   height: 5px;
 }
 
-@media screen and (max-width: 700px) {
-  .headerBtn {
-    width: 120px;
-    height: 40px;
-    margin-bottom: 150px;
-    margin-right: 40px;
-    display: none;
-  }
-
-  .list-bgrd {
-    background-color: white !important;
-    width: 230px !important;
-    left: 0px !important;
-  }
-
-  .ulItemsColor {
-    background-color: transparent;
-  }
-
-  .marginEnd {
-    margin-left: 0px !important;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .menuDropDown {
-    position: relative;
-    left: 230px !important;
-  }
-}
 .navbar {
   position: static;
 }
@@ -195,6 +165,35 @@
 }
 .ptag:hover {
   color: var(--color-primary) !important;
+}
+
+@media screen and (max-width: 787px) {
+  .headerBtn {
+    width: 120px;
+    height: 40px;
+    margin-bottom: 150px;
+    margin-right: 40px;
+    display: none;
+  }
+
+  .list-bgrd {
+    background-color: white !important;
+    width: 230px !important;
+    left: 0px !important;
+  }
+
+  .ulItemsColor {
+    background-color: transparent;
+  }
+
+  .marginEnd {
+    margin-left: 0px !important;
+  }
+
+  .menuDropDown {
+    position: relative;
+    left: 230px !important;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .contents {
