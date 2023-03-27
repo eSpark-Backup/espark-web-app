@@ -65,7 +65,7 @@ export const services = [
   {
     id: hash(),
     title: "Mobile App Development Service",
-    name: "Mobile App Development",
+    name: "App<br>Development",
     path: "mobile-app-development",
     content:
       "eSpark Consulting Group is fully committed to delivering outstanding web app development services that are specifically designed to meet the unique requirements of our clients. Our team of highly skilled developers has the expertise and knowledge required to develop customized solutions that are not only efficient and reliable, but also cost-effective.",
@@ -156,54 +156,8 @@ export const services = [
   },
   {
     id: hash(),
-    title: "Database Development",
-    name: "Database Development",
-    path: "database-development",
-    content:
-      "eSpark Consulting Group provides comprehensive database development services to help businesses manage their data effectively. Our team of experienced database developers has expertise in a wide range of technologies and platforms, including PostgreSQL, Microsoft SQL, PHP MySQL, NoSQL databases like Firebase and MongoDB.",
-    discription:
-      "We can build and manage your databases according to your requirements so that you can securely and efficiently control and process your data.",
-    image: DatabaseDevelopment,
-    quote:
-      "eSpark Consulting Group is dedicated to providing excellent database development services that cater to the specific needs of our clients. Our team of skilled database developers possess the necessary expertise and knowledge to create tailored solutions that are both efficient and reliable, while remaining cost-effective.",
-    quoteImage: DatabaseDevelopmentQuote,
-    icon: DatabaseDevelopmentIcon,
-    icon2: DatabaseDevelopmentIconHover,
-    childs: [
-      serviceItems(
-        hash(),
-        "PostgreSQL Database",
-        "PostgreSQL Database",
-        "Our PostgreSQL database development services will allow you to manage massive amounts of data while ensuring data security and integrity. Our team of expert developers will design and construct a scalable database that suits your company's requirements. We are experts at creating intricate, data-driven programs with plenty of transactions. We provide quick data retrieval, simple maintenance, and enhanced performance with our PostgreSQL database building services.",
-        PostGreSQLDatabase
-      ),
-      serviceItems(
-        hash(),
-        "NoSQL / Firebase / MongoDB",
-        "NoSQL / Firebase / MongoDB",
-        "Your ability to store, handle, and retrieve data in a flexible and scalable manner is made possible by our NoSQL/Firebase/MongoDB development services. No matter if you require a database for a web application, IoT device, or mobile app, our skilled developers can offer a tailored solution that satisfies your requirements. We can assist you in selecting the ideal NoSQL database platform for your needs and price range. Our developers have experience developing highly scalable, fault-tolerant, and simple-to-maintain NoSQL databases.",
-        NoSQLFirebaseMongoDB
-      ),
-      serviceItems(
-        hash(),
-        "Microsoft SQL",
-        "Microsoft SQL",
-        "You can get a dependable and secure data storage solution from our Microsoft SQL development services. Our skilled developers can create and implement a custom database that suits your needs, whether you need to manage data for a small business or an enterprise-level corporation. We specialize in creating highly accessible, secure, and scalable Microsoft SQL databases. Additionally, our experts can aid in the migration of your current databases to Microsoft SQL, assuring a seamless changeover with little downtime.",
-        MicrosoftSQL
-      ),
-      serviceItems(
-        hash(),
-        "PHP MySQL",
-        "PHP MySQL",
-        "We provide a cost-effective method for managing data in web applications with our PHP MySQL development services. To match your business needs, a bespoke MySQL database can be designed and implemented by our talented experts. We specialize in creating web applications that are very responsive and have a PHP MySQL backend for quick data access and simple maintenance. Additionally, our experts can assist you with converting your current database to PHP MySQL, assuring a seamless transition with little downtime.",
-        PHPmySQL
-      ),
-    ],
-  },
-  {
-    id: hash(),
     title: "Embedded Systems Design",
-    name: "Embedded Systems Design",
+    name: "Embedded<br>Systems Design",
     path: "embedded-systems-design",
     content:
       "eSpark Consulting Group provides a comprehensive suite of embedded design system services to help businesses develop cutting-edge hardware and software solutions for their unique needs. Our team of experienced engineers and designers has expertise in a wide range of technologies and platforms, including C/C++, Python/MATLAB, Raspberry Pi, and embedded Linux/RTOS (Zephyr, ESP-IDF).",
@@ -248,8 +202,55 @@ export const services = [
   },
   {
     id: hash(),
+    title: "Database Development",
+    name: "Database Development",
+    path: "database-development",
+    content:
+      "eSpark Consulting Group provides comprehensive database development services to help businesses manage their data effectively. Our team of experienced database developers has expertise in a wide range of technologies and platforms, including PostgreSQL, Microsoft SQL, PHP MySQL, NoSQL databases like Firebase and MongoDB.",
+    discription:
+      "We can build and manage your databases according to your requirements so that you can securely and efficiently control and process your data.",
+    image: DatabaseDevelopment,
+    quote:
+      "eSpark Consulting Group is dedicated to providing excellent database development services that cater to the specific needs of our clients. Our team of skilled database developers possess the necessary expertise and knowledge to create tailored solutions that are both efficient and reliable, while remaining cost-effective.",
+    quoteImage: DatabaseDevelopmentQuote,
+    icon: DatabaseDevelopmentIcon,
+    icon2: DatabaseDevelopmentIconHover,
+    childs: [
+      serviceItems(
+        hash(),
+        "PostgreSQL Database",
+        "PostgreSQL Database",
+        "Our PostgreSQL database development services will allow you to manage massive amounts of data while ensuring data security and integrity. Our team of expert developers will design and construct a scalable database that suits your company's requirements. We are experts at creating intricate, data-driven programs with plenty of transactions. We provide quick data retrieval, simple maintenance, and enhanced performance with our PostgreSQL database building services.",
+        PostGreSQLDatabase
+      ),
+      serviceItems(
+        hash(),
+        "NoSQL / Firebase / MongoDB",
+        "NoSQL / Firebase / MongoDB",
+        "Your ability to store, handle, and retrieve data in a flexible and scalable manner is made possible by our NoSQL/Firebase/MongoDB development services. No matter if you require a database for a web application, IoT device, or mobile app, our skilled developers can offer a tailored solution that satisfies your requirements. We can assist you in selecting the ideal NoSQL database platform for your needs and price range. Our developers have experience developing highly scalable, fault-tolerant, and simple-to-maintain NoSQL databases.",
+        NoSQLFirebaseMongoDB
+      ),
+      serviceItems(
+        hash(),
+        "Microsoft SQL",
+        "Microsoft SQL",
+        "You can get a dependable and secure data storage solution from our Microsoft SQL development services. Our skilled developers can create and implement a custom database that suits your needs, whether you need to manage data for a small business or an enterprise-level corporation. We specialize in creating highly accessible, secure, and scalable Microsoft SQL databases. Additionally, our experts can aid in the migration of your current databases to Microsoft SQL, assuring a seamless changeover with little downtime.",
+        MicrosoftSQL
+      ),
+      serviceItems(
+        hash(),
+        "PHP MySQL",
+        "PHP MySQL",
+        "We provide a cost-effective method for managing data in web applications with our PHP MySQL development services. To match your business needs, a bespoke MySQL database can be designed and implemented by our talented experts. We specialize in creating web applications that are very responsive and have a PHP MySQL backend for quick data access and simple maintenance. Additionally, our experts can assist you with converting your current database to PHP MySQL, assuring a seamless transition with little downtime.",
+        PHPmySQL
+      ),
+    ],
+  },
+ 
+  {
+    id: hash(),
     title: "QA and Web Plugin and Desktop Development",
-    name: "QA and Web Plugin and Desktop Development",
+    name: "QA and Desktop<br>Development",
     path: "qa-web-plugin-desktop-development",
     content:
       "Our QA services include both manual and automated testing for web and mobile applications. Our expert QA team will help you identify any potential issues with your software, ensuring that it is running smoothly and meeting your business goals. We use the latest tools and techniques to provide comprehensive testing services that help our clients achieve optimal results.",
