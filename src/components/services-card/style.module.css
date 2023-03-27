@@ -73,7 +73,7 @@
 
 .appDevWrapper .himage {
     display: none !important;
-    margin-top: -15px;
+    /* margin-top: -15px; */
     width: 80px;
     height: 80px;
 }
