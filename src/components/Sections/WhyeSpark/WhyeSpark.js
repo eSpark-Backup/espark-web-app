@@ -15,6 +15,7 @@ function WhyeSpark({ heading }) {
             <div
               id={styles["whylinks"]}
               className={`col-lg-1 col-md-12 d-flex flex-column justify-content-around mt-5 pb-3`}
+              style={{ marginLeft:-23 }}
             >
               {sociallinks.map((items) => {
                 return (
@@ -25,7 +26,7 @@ function WhyeSpark({ heading }) {
               })}
             </div>
             <div
-              className={`col-lg-5  col-md-12 d-flex flex-column justify-content-space-between ${styles.whyeSparksColumn}`}
+              className={`col-lg-5 col-md-12 d-flex flex-column justify-content-space-between ${styles.whyeSparksColumn}`}
             >
               <SectionTitle
                 height={"2px"}
@@ -45,7 +46,7 @@ function WhyeSpark({ heading }) {
                   </p>
                 }
               />
-              <div className="mt-3 h-100  w-100">
+              <div className="mt-5 h-100 w-100">
                 <img src={whyesaprk} alt="" width={"100%"} height={"100%"} />
               </div>
             </div>

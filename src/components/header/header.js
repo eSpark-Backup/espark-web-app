@@ -64,7 +64,7 @@ const Header = () => {
                   : "../../assets/images/logo.png")}
                 alt="logo"
                 className="logo"
-                width={150}
+                width={210}
                 height={isAppScreen && 60}
               />
             </Link>

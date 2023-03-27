@@ -1,6 +1,6 @@
 .formbox {
     padding: 30px;
-    background-color: var(--color-secondary);
+    background-color: #2B4E89;
     border-radius: 30px;
 }
 
@@ -50,10 +50,11 @@
 }
 
 .letsTalk {
-    background: #F4F6F9;
+    background: #F1F1F1;
     border-radius: 10px;
     padding-bottom: 100px !important;
     padding-top: 30px !important;
+    margin-top: -78px;
 }
 
 .letsTalk p {

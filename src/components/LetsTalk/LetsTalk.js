@@ -78,7 +78,7 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
   return (
     <div>
       <div class={`contact-area ${!modal ? "pb-80" : null}`}>
-        <div className="container-fluid">
+        <div className="container-fluid p-4">
           <div class={`${style.letsTalk} row`}>
             <div className="col-lg-8 text-center">
               <SectionTitle
@@ -101,7 +101,7 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
           </div>
           <div className="row">
             <div
-              className={`${style.formcol} col-lg-8 col-md-12 col-sm-12  text-center`}>
+              className={`${style.formcol} col-lg-8 col-md-12 col-sm-12  text-center`}> 
               <div className={`${style.formbox} col-lg-12`}>
                 <form id="contactForm" ref={form} onSubmit={sendEmail}>
                   <div class="row">

@@ -706,7 +706,7 @@ progress {
 }
 
 .container-fluid {
-    width: 79% !important;
+    width: 75% !important;
     padding-right: var(--bs-gutter-x, .75rem);
     padding-left: var(--bs-gutter-x, .75rem);
     margin-right: auto;
