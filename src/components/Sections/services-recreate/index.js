@@ -14,9 +14,10 @@ function ServicesRecreate(title) {
             product’s unique requirements
           </p>
         }
+        padding={"5"}
       />
 
-      <div className="container-fluid sliderWrapper">
+      <div className="container-fluid sliderWrapper tops">
         <ServiceSlider />
       </div>
     </div>

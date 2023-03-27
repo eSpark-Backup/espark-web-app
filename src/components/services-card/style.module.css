@@ -2,6 +2,7 @@
     background: #F5F5F5;
     border-radius: 8px;
     box-shadow: 0px 2px 1px 1px #bbbbbb;
+    margin-top: 16px;
 }
 
 .mainCardWrapper:hover {
@@ -24,7 +25,6 @@
     transition: all 1s ease;
     position: relative;
     z-index: 1;
-    padding-top: 80px; 
 }
 
 /* .appDevWrapper,
@@ -46,9 +46,9 @@
     background: var(--color-secondary);
     z-index: -1;
     -webkit-transition: all .5s ease-in;
-    transition: all .5s ease-in;
-    opacity: 0;    
-    
+    transition: none;
+    opacity: 0;  
+
 }
 
 
@@ -59,18 +59,21 @@
     left: 0;
     transform: translate(0px);
     border-radius: 4px 4px 4px 4px;
+    transition: .3s;
     
 }
 
 
 .appDevWrapper .image {
     display: block !important;
+    margin-top: 23px;
     width: 80px;
     height: 80px;
 }
 
 .appDevWrapper .himage {
     display: none !important;
+    margin-top: -15px;
     width: 80px;
     height: 80px;
 }
@@ -112,7 +115,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 27px;
     text-align: center;
     color: #949292;
@@ -235,7 +238,7 @@
     width: 0;
     background: var(--color-primary);
     z-index: -1;
-}
+} 
 
 .cardAnimation,
 .cardAnimation:after,

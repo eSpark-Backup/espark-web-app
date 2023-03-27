@@ -8,8 +8,8 @@ function ServicesCard({ image, image2, title, para }) {
       <div className={` ${style.mainCardWrapper}`}>
         <div className={`${style.appDevWrapper}`}>
           <div className={style.logoImg}>
-            <img className={style.image} src={image} alt={title} />
-            <img className={style.himage} src={image2} alt={title} />
+              <img className={style.image} src={image} alt={title} />
+              <img className={style.himage} src={image2} alt={title} />
           </div>
           <p className={style.txtCardService} dangerouslySetInnerHTML={{ __html: title }}></p>
           <p className={style.txtCardService_para}>{para}</p>
