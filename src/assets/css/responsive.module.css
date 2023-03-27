@@ -18,9 +18,7 @@
 /* 1921px to 2560px (Desktops) */
  @media (min-width: 1921px) and (max-width: 2560px) {
     /* Global Styling */
-.heading {
-        border: 1px solid black !important;
-    }
+
     /* Home Styling */
 
     /* Services Styling */
@@ -50,9 +48,7 @@
 /* 1025px to 1440px (Small Laptops and Tablets) */
 @media (min-width: 1025px) and (max-width: 1440px) {
     /* Global Styling */
-.heading {
-        border: 1px solid black !important;
-    }
+
     /* Home Styling */
 
     /* Services Styling */
@@ -67,9 +63,7 @@
 /* 767px to 1024px (Tablets and Mobile Devices in Landscape) */
 @media (min-width: 767px) and (max-width: 1024px) {
     /* Global Styling */
-.heading {
-        border: 1px solid black !important;
-    }
+
     /* Home Styling */
 
     /* Services Styling */

@@ -100,6 +100,16 @@
 .whyEsparkMargin {
    margin-top: 230px !important;
 }
+@media (max-width: 767.98px){
+  .whyEsparkMargin {
+   margin-top: 50px !important;
+}
+}
+@media (min-width: 767.98px)and (max-width:1024){
+  .whyEsparkMargin {
+   margin-top: 100px !important;
+}
+}
 
 #whylinksbtn {
    padding: 5px;
