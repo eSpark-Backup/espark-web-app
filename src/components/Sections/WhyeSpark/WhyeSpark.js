@@ -11,11 +11,28 @@ function WhyeSpark({ heading }) {
     <div className={`${styles.whyEsparkMargin}`}>
       <div className="solutions-area">
         <div className="container-fluid">
+          <div id={styles["whylinksmobile"]} className={`row`}>
+            {sociallinks.map((items) => {
+              return (
+                <div
+                  id={styles["whylinksbtn"]}
+                  className={`col-4`}
+                >
+                  <Button
+                    title={items.name}
+                    link={items.url}
+                    design={2}
+                    className={styles.button}
+                  />
+                </div>
+              );
+            })}
+          </div>
           <div className="row">
             <div
               id={styles["whylinks"]}
-              className={`col-lg-1 col-md-12 d-flex flex-column justify-content-around mt-5 pb-3`}
-              style={{ marginLeft:-23 }}
+              className={`col-lg-1 col-md-12 col-sm-12 d-flex flex-column justify-content-around mt-5 pb-3`}
+              style={{ marginLeft: -23 }}
             >
               {sociallinks.map((items) => {
                 return (
@@ -26,7 +43,7 @@ function WhyeSpark({ heading }) {
               })}
             </div>
             <div
-              className={`col-lg-5 col-md-12 d-flex flex-column justify-content-space-between ${styles.whyeSparksColumn}`}
+              className={`col-lg-5 col-md-6 col-sm-12 d-flex flex-column justify-content-space-between ${styles.whyeSparksColumn}`}
             >
               <SectionTitle
                 height={"2px"}
@@ -46,33 +63,14 @@ function WhyeSpark({ heading }) {
                   </p>
                 }
               />
-              <div className="mt-5 h-100 w-100">
-                <img src={whyesaprk} alt="" width={"100%"} height={"100%"} />
+              <div className="mt-5 image">
+                <img src={whyesaprk} alt="" width={"100%"} />
               </div>
             </div>
-            <div
-              id={styles["whylinksmobile"]}
-              className={`col-lg-3 col-sm-12 ${styles.buttons}`}
-            >
-              {sociallinks.map((items) => {
-                return (
-                  <div
-                    id={styles["whylinksbtn"]}
-                    className={`col-lg-4 col-md-4 col-sm-12 col-xs-12 p-10`}
-                  >
-                    <Button
-                      title={items.name}
-                      link={items.url}
-                      design={2}
-                      className={styles.button}
-                    />
-                  </div>
-                );
-              })}
-            </div>
+
             <div
               id={styles["whypoints"]}
-              className={`col-lg-6 col-md-12 col-sm-12`}
+              className={`col-lg-6 col-md-6 col-sm-12`}
             >
               {whypoints.map((items, index) => {
                 return (

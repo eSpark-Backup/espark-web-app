@@ -9,10 +9,14 @@ import { AiOutlineCaretRight } from "react-icons/ai";
 import "./header.css";
 import LayoutOne from "./../../layout/layoutOne";
 import Title from "./../title/title";
+import Button from "./../button/button";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const onOpenModal = () => setOpen(true);
+  const onOpenModal = () => {
+    setOpen(true);
+    setIsNavCollapsed(false);
+  };
   const onCloseModal = () => setOpen(false);
 
   const { pathname } = useLocation();
@@ -80,7 +84,8 @@ const Header = () => {
               aria-controls="navbarSupportedContent"
               aria-expanded={isNavCollapsed ? true : false}
               aria-label="Toggle navigation"
-              onClick={handleNavCollapse}>
+              onClick={handleNavCollapse}
+            >
               <span class="icon-bar top-bar tes"></span>
               <span class="icon-bar middle-bar tes"></span>
               <span class="icon-bar bottom-bar tes"></span>
@@ -88,10 +93,11 @@ const Header = () => {
             <div
               className={
                 isNavCollapsed
-                  ? "collapse navbar-collapse show d-flex autoSize"
+                  ? "collapse navbar-collapse show d-flex flex-column align-items-start"
                   : "collapse navbar-collapse"
               }
-              id="navbarSupportedContent">
+              id="navbarSupportedContent"
+            >
               <ul className="navbar-nav marginEnd">
                 <li className="nav-item">
                   <Link
@@ -100,11 +106,11 @@ const Header = () => {
                     onClick={() => {
                       setSelected(0);
                       setIsNavCollapsed(false);
-                    }}>
+                    }}
+                  >
                     <span
-                      class={
-                        pathname === "/" ? "itemTxt selected" : "itemTxt "
-                      }>
+                      class={pathname === "/" ? "itemTxt selected" : "itemTxt "}
+                    >
                       Home{" "}
                     </span>
                   </Link>
@@ -112,7 +118,8 @@ const Header = () => {
                 <li
                   class="services-items nav-item"
                   id="serve"
-                  onClick={() => setSelected(1)}>
+                  onClick={() => setSelected(1)}
+                >
                   <Link class="nav-link">
                     <span
                       class={
@@ -127,7 +134,8 @@ const Header = () => {
                         height="6"
                         viewBox="0 0 14 9"
                         fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <path
                           d="M-9.99769e-07 1.1762C0.141427 0.721149 0.482915 0.442572 0.799883 0.154746C1.05396 -0.0760532 1.45194 -0.032128 1.70992 0.201369C1.76216 0.248762 1.8112 0.300778 1.85917 0.35318C3.53001 2.16413 5.20049 3.97546 6.87026 5.78757C6.90863 5.82918 6.93706 5.8812 6.9758 5.9363C7.03727 5.87349 7.07707 5.83496 7.11438 5.79412C8.79836 3.96891 10.4816 2.14371 12.1653 0.318888C12.4662 -0.00708247 12.8365 -0.108418 13.1364 0.13394C13.4164 0.360116 13.6687 0.644088 13.8819 0.945014C14.0753 1.2182 14.0163 1.59503 13.813 1.86552C13.7757 1.91522 13.7352 1.96223 13.6936 2.00731C11.666 4.20626 9.6384 6.40522 7.61044 8.60379C7.29916 8.94131 6.94239 9.01568 6.61121 8.8053C6.53019 8.75367 6.45699 8.68277 6.39019 8.60995C4.35512 6.40522 2.31934 4.20087 0.290317 1.98997C0.167368 1.85588 0.0955877 1.66593 0.000354708 1.50178C-5.45965e-08 1.39313 -1.00403e-06 1.28486 -9.99769e-07 1.1762Z"
                           fill={
@@ -195,14 +203,16 @@ const Header = () => {
                   onClick={() => {
                     setSelected(2);
                     setIsNavCollapsed(false);
-                  }}>
+                  }}
+                >
                   <Link class="nav-link" to="/portfolio">
                     <span
                       class={
                         pathname === "/portfolio"
                           ? "itemTxt selected"
                           : "itemTxt"
-                      }>
+                      }
+                    >
                       Portfolio
                     </span>
                   </Link>
@@ -212,14 +222,16 @@ const Header = () => {
                   onClick={() => {
                     setSelected(3);
                     setIsNavCollapsed(false);
-                  }}>
+                  }}
+                >
                   <Link class="nav-link" to="/careers">
                     <span
                       class={
                         pathname.includes("/careers")
                           ? "itemTxt selected"
                           : "itemTxt "
-                      }>
+                      }
+                    >
                       Careers
                     </span>
                   </Link>
@@ -229,19 +241,28 @@ const Header = () => {
                   onClick={() => {
                     setSelected(4);
                     setIsNavCollapsed(false);
-                  }}>
+                  }}
+                >
                   <Link class="nav-link" to="/blogs">
                     <span
                       class={
                         pathname.includes("/blogs")
                           ? "itemTxt selected"
                           : "itemTxt "
-                      }>
+                      }
+                    >
                       Blogs
                     </span>
                   </Link>
                 </li>
               </ul>
+              <div className="d-none dropButton w-100">
+                <Button
+                  design={3}
+                  onClick={onOpenModal}
+                  title={"Let’s Talk"}
+                />
+              </div>
             </div>
 
             <div class="others-option">
@@ -249,7 +270,8 @@ const Header = () => {
                 <a
                   href="https://play.google.com/store/apps/details?id=com.commanddo"
                   class="btn btn-light"
-                  target="_blanks">
+                  target="_blanks"
+                >
                   Download Now
                 </a>
               ) : (
