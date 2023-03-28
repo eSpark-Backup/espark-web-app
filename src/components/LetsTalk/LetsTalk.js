@@ -7,6 +7,7 @@ import Button from "../button/button";
 import style from "./style.module.css";
 import SectionTitle from "../sectionTitle";
 import { IMaskInput } from "react-imask";
+import '../../assets/css/responsive.css'
 const EmailAddressMask = /^\S*@?\S*$/;
 const ContactNumberMask = "+{00}(000)000-00000";
 
@@ -77,9 +78,9 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
 
   return (
     <div>
-      <div class={`contact-area ${!modal ? "pb-80" : null}`}>
-        <div className="container-fluid p-4">
-          <div class={`${style.letsTalk} row`}>
+      <div class={`contact-area  ${!modal ? "pb-80" : null}`}>
+        <div className="container-fluid p-4  ">
+          <div class={`${style.letsTalk} row border sizeControl  `}>
             <div className="col-lg-8 text-center">
               <SectionTitle
                 heading={"Let’s Talk"}
@@ -93,18 +94,18 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                 width={"100px"}
               />
             </div>
-            <div className="col-lg-4 hidden-md hidden-sm">
+            <div className="col-lg-4 hidden-md hidden-sm   " >
               <div className={style.letsTalkImage}>
                 <img src={letsTalkImage} alt="" />
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row sizeControl ">
             <div
-              className={`${style.formcol} col-lg-8 col-md-12 col-sm-12  text-center`}> 
-              <div className={`${style.formbox} col-lg-12`}>
-                <form id="contactForm" ref={form} onSubmit={sendEmail}>
-                  <div class="row">
+              className={`${style.formcol} col-lg-8 col-md-12 col-sm-12   text-center`}> 
+              <div className={`${style.formbox} col-lg-12 `}>
+                <form id="contactForm" className="" ref={form} onSubmit={sendEmail}>
+                  <div class="row ">
                     <div class="col-lg-6 col-md-6">
                       <div class="form-group">
                         <label className={`${style.label} d-flex`}>Name</label>

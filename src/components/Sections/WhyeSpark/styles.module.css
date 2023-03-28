@@ -221,6 +221,9 @@
       padding-right: 10px !important;
 
    }
+   #whypoints {
+      padding: 25px 0px 10px 0px;
+   }
 
    .button {
       width: 100% !important;

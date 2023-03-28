@@ -29,6 +29,7 @@
   top: 15px;
 }
 
+
 .testimonial .arrowSize {
   width: 50px;
   margin-left: 20px;
@@ -83,7 +84,6 @@
   display: flex;
   justify-content: center;
 
-
 }
 
 .testimonial .testibox {
@@ -125,8 +125,10 @@
 
 .subtesti {
   width: 100%;
+  height: 675px;
   text-Align: center;
 }
+
 @media (min-width: 575px) and (max-width: 1024px) {
   .testimonial .slick-dots li button:before {
     font-size: 20px;

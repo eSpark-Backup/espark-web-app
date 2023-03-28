@@ -131,9 +131,6 @@ footer .social-links {
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
-  .copyright {
-    margin-bottom: 495px;
-  }
 
   .footer_areas {
     margin: 0px 155px 0px 35px !important;
