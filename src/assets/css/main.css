@@ -719,7 +719,9 @@ progress {
     margin-right: auto;
     margin-left: auto
 }
-
+textarea{
+    border-radius: 8px !important;
+}
 
 .container,
 .container-lg,
@@ -745,6 +747,11 @@ progress {
         width: 90% !important;
         /* border: 1px solid #000; */
     }
+    .sliderWrapper {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
 
     .logo {
         width: 120px;
@@ -763,6 +770,11 @@ progress {
     .container-fluid {
         width: 90% !important;
         /* border: 1px solid #000; */
+    }
+    .sliderWrapper {
+        width: 90% !important;
+        margin: auto;
+        text-align: center;
     }
 
 }
@@ -783,6 +795,11 @@ progress {
     .container-fluid {
         width: 90% !important;
         /* border: 1px solid #000; */
+    }
+    .sliderWrapper {
+        width: 90% !important;
+        margin: auto;
+        text-align: center;
     }
 }
 
@@ -811,6 +828,11 @@ progress {
     .container-fluid {
         width: 74.5% !important;
      
+    }
+    .sliderWrapper {
+        width: 74.5% !important;
+        margin: auto;
+        text-align: center;
     }
 
 }

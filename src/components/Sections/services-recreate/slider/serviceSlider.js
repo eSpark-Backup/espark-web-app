@@ -74,7 +74,8 @@ function ServiceSlider() {
             slidesToScroll: 1,
             infinite: true,
             dots: false,
-            centerPadding:20,
+            centerMode: true,
+            centerPadding:-10,
           },
         },
         {
