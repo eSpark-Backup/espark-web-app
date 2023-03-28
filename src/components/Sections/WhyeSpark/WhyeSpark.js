@@ -14,25 +14,79 @@ function WhyeSpark({ heading }) {
           <div id={styles["whylinksmobile"]} className={`row`}>
             {sociallinks.map((items) => {
               return (
-                <div
-                  id={styles["whylinksbtn"]}
-                  className={`col-4`}
-                >
-                  <Button
-                    title={items.name}
-                    link={items.url}
-                    design={2}
-                    className={styles.button}
-                  />
+                <div id={styles["whylinksbtn"]} className={`col-4`}>
+                  <a href={items.url} target="_blank">
+                    <button
+                      className="roundbutton rounded-pill"
+                      style={{
+                        fontSize: 30,
+                        height: 46,
+                        boxShadow: "none",
+                        fontWeight: 600,
+                      }}
+                    >
+                      {items.name}
+                    </button>
+                  </a>
                 </div>
               );
             })}
           </div>
-          <div className="row">
+          <div className={styles.mobile}>
+            <div className="row">
+              <div className="col-6 d-flex align-items-center">
+                <SectionTitle
+                  height={"2px"}
+                  width={"126px"}
+                  heading={heading}
+                  padding={"0px"}
+                  paragraph={
+                    <p
+                      className={`p-2  m-auto ${styles.whyEsparkContentColor}`}
+                    >
+                      We focus on custom tailored software and IoT based
+                      solutions for our businesses. Through our broad range of
+                      services that can help clients and businesses to optimize
+                      their operations, save cost and promote their businesses
+                      most effectively. Whether you need help with software
+                      development, hardware design, or technology consulting,
+                      eSpark Consultancy Group has the expertise to help you
+                      achieve your goals.
+                    </p>
+                  }
+                />
+              </div>
+              <div className="col-6">
+                <div className="mt-5 image">
+                  <img src={whyesaprk} alt="" width={"100%"} />
+                </div>
+              </div>
+            </div>
+            <div className="row mt-4">
+              {whypoints.map((items, index) => {
+                return (
+                  <div className="col-6">
+                    <div>
+                      <h4 className={styles.whyPoints}>
+                        {" "}
+                        <FaCheckCircle size={25} color={"#11A79c"} />{" "}
+                        {items.name}
+                      </h4>
+                      <p
+                        className={styles.whyPointsPara}
+                        dangerouslySetInnerHTML={{ __html: items.content }}
+                      ></p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className={`row ${styles.desktop} `}>
             <div
               id={styles["whylinks"]}
-              className={`col-lg-1 col-md-12 col-sm-12 d-flex flex-column justify-content-around mt-5 pb-3`}
-              style={{ marginLeft: -23 }}
+              className={`col-lg-1 col-md-12 col-sm-12 d-flex flex-column justify-content-around`}
+              style={{ marginLeft:-23 }}
             >
               {sociallinks.map((items) => {
                 return (
@@ -63,7 +117,7 @@ function WhyeSpark({ heading }) {
                   </p>
                 }
               />
-              <div className="mt-5 image">
+              <div className={`mt-5 ${styles.image}`}>
                 <img src={whyesaprk} alt="" width={"100%"} />
               </div>
             </div>
@@ -84,9 +138,9 @@ function WhyeSpark({ heading }) {
                     <div
                       className={`${styles.icon} col-sm-1 col-md-1 col-lg-1`}
                     >
-                      <FaCheckCircle size={42} color={"#11A79c"} />
+                      <FaCheckCircle size={38} color={"#11A79c"} />
                     </div>
-                    <div className={`col-sm-11 col-md-11 col-lg-11`}>
+                    <div>
                       <h4 className={styles.whyPoints}>{items.name}</h4>
                       <p
                         className={styles.whyPointsPara}

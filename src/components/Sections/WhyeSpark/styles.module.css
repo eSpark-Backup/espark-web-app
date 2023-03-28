@@ -4,17 +4,19 @@
    color: var(--color-primary);
 }
 
+
+
 .sociallink {
    font-family: 'Poppins';
    transform: rotate(270deg);
    display: flex;
-   align-items: flex-start;
-   /* height: 200px; */
+   align-items: end;
+   width: 100px;
 }
 
 .whyPoints {
    font-family: 'Poppins';
-   font-size: 22px;
+   font-size: 26px;
    font-weight: 600 !important;
    line-height: 22px;
    letter-spacing: 0em;
@@ -66,9 +68,15 @@
    margin-top: 70px !important;
 }
 
+.mobile {
+   display: none !important;
+}
+
 .whyeSparksColumn {
    margin-bottom: 110px;
 }
+
+
 
 #whypoints {
    padding: 20px;
@@ -92,7 +100,7 @@
 
 .image {
    width: 100% !important;
-   height: 505px;
+   height: 440px;
 }
 
 .imgCustomMargin {
@@ -109,10 +117,17 @@
    }
 }
 
-@media (min-width: 767.98px)and (max-width:1024) {
+@media (min-width: 767.98px)and (max-width:1440px) {
    .whyEsparkMargin {
       margin-top: 100px !important;
    }
+
+   .image {
+      display: flex;
+      align-items: end;
+      /* margin-top: 100px; */
+   }
+
 }
 
 #whylinksbtn {
@@ -128,6 +143,14 @@
 
 @media only screen and (max-width: 1024px) {
    #whylinks {
+      display: none !important;
+   }
+
+   .mobile {
+      display: block !important;
+   }
+
+   .desktop {
       display: none !important;
    }
 
@@ -210,10 +233,24 @@
       width: 30px;
    }
 
+   .whyEsparkMargin {
+      margin-top: 10px !important;
+   }
+
    .icon {
       padding-right: 40px !important;
       margin-top: 5px !important;
    }
+
+   .mobile {
+      display: block !important;
+   }
+
+   .desktop {
+      display: none;
+   }
+
+
 }
 
 @media (min-width: 275px) and (max-width: 574px) {
@@ -221,6 +258,15 @@
       padding-right: 10px !important;
 
    }
+
+   .mobile {
+      display: none !important;
+   }
+
+   .desktop {
+      display: block !important;
+   }
+
    #whypoints {
       padding: 25px 0px 10px 0px;
    }

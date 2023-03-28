@@ -9,7 +9,7 @@ const Portfolio = ({ data, title }) => {
       <SectionTitle
         heading={title}
         paragraph={
-          <p className={styles.ourPortFolioColorContent}>
+          <p >
             Empowering decentralization, one project at a time
           </p>
         }
@@ -17,7 +17,7 @@ const Portfolio = ({ data, title }) => {
       <div className="row pt-2">
         {data?.map((item) => {
           return (
-            <div className="col-sm-6 col-md-4 col-lg-3 mt-2 mb-30 ">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 mb-30 ">
               <a href={item?.projectUrl}>
                 <div className={styles.wrapper}>
                   <div className={styles.imagesWrapper}>

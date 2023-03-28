@@ -61,15 +61,27 @@ function ServiceSlider() {
       // speed: 3000,
       slidesToShow: 4,
       slidesToScroll: 4,
-      centerMode: true,
+      centerMode: false,
       centerPadding:0,
       nextArrow: <CustomNextArrow />,
       prevArrow: <CustomPrevArrow />,
       responsive: [
         {
+          breakpoint: 2560,
+          settings: {
+            slidesToShow: 4,
+            arrows: true,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            centerPadding:20,
+          },
+        },
+        {
           breakpoint: 1700,
           settings: {
             slidesToShow: 3,
+            arrows: false,
             slidesToScroll: 1,
             infinite: true,
             dots: false,
@@ -78,17 +90,29 @@ function ServiceSlider() {
         {
           breakpoint: 1500,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
             dots: false,
-            arrows: false,
+            arrows: true,
             draggable: true,
             swipe:true
           },
         },
         {
-          breakpoint: 1000,
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            arrows: true,
+            draggable: true,
+            swipe:true
+          },
+        },
+        {
+          breakpoint: 992,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -99,11 +123,24 @@ function ServiceSlider() {
             swipe:true
           },
         },
+        {
+          breakpoint: 786,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            arrows: true,
+            draggable: true,
+            swipe:true
+          },
+        },
+       
       ],
     };
     return (
       <>
-        <div className="sliderMobileResponsive">
+        <div className="sliderMobileResponsive ">
           <Slider {...settings}>
             {services.map((item) => (
               <div>
@@ -122,7 +159,7 @@ function ServiceSlider() {
         <div className="mobileResponsive">
           <div className="row">
             {services.slice(0, 5).map((item) => (
-              <div className="col-sm-12 col-md-3 col-lg-3 ">
+              <div className="col-12 col-sm-12 col-md-6 col-lg-3 ">
                 <Link to={`/services/${item.path}`}>
                   <ServicesCard
                     image={item.icon}

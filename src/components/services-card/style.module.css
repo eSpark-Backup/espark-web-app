@@ -251,3 +251,717 @@
 :before {
     box-sizing: border-box;
 }
+@media (min-width: 0px) and (max-width: 280px){
+    .mainCardWrapper {
+        background: #F5F5F5;
+        border-radius: 8px;
+        box-shadow: 0px 2px 1px 1px #bbbbbb;
+        margin-top: 16px;
+        margin-left: -90px ;
+    }
+    .appDevWrapper {
+        width: 240px;
+        height: 217px;
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        margin: auto;
+        padding: 20px;
+        border-radius: 5px;
+        transition: all 1s ease;
+        position: relative;
+        z-index: 1;
+    }
+    .txtCardService {
+        margin-top: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+        text-align: center;
+        color: #030303;
+        text-transform: capitalize;
+        transition: all 1s ease-in;
+        -webkit-transition: all .5s ease-in;
+    }
+    
+    .txtCardService_para {
+        display: none;
+        margin-top: 10px;
+        color: white !important;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: #949292;
+    }
+    
+    .readMoreTxt {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        color: #949292 !important;
+        margin-right: 25%;
+    }
+    
+    .readMoreDiv {
+        background: #F5F5F5;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        border-top: 2px solid #ffffff !important;
+        height: 65px;
+        border-radius: 0px 0px 5px 5px;
+    
+    }
+    .appDevWrapper .image {
+        display: block !important;
+        margin-top: 23px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .appDevWrapper .himage {
+        display: none !important;
+        /* margin-top: -15px; */
+        width: 40px;
+        height: 40px;
+    }
+    
+}
+@media (min-width: 281px) and (max-width: 321px){
+    .mainCardWrapper {
+        background: #F5F5F5;
+        border-radius: 8px;
+        box-shadow: 0px 2px 1px 1px #bbbbbb;
+        margin-top: 16px;
+        margin-left: -92px;
+    }
+    .appDevWrapper {
+        width: 240px;
+        height: 217px;
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        margin: auto;
+        padding: 20px;
+        border-radius: 5px;
+        transition: all 1s ease;
+        position: relative;
+        z-index: 1;
+    }
+    .txtCardService {
+        margin-top: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+        text-align: center;
+        color: #030303;
+        text-transform: capitalize;
+        transition: all 1s ease-in;
+        -webkit-transition: all .5s ease-in;
+    }
+    
+    .txtCardService_para {
+        display: none;
+        margin-top: 10px;
+        color: white !important;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: #949292;
+    }
+    
+    .readMoreTxt {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        color: #949292 !important;
+        margin-right: 25%;
+    }
+    
+    .readMoreDiv {
+        background: #F5F5F5;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        border-top: 2px solid #ffffff !important;
+        height: 65px;
+        border-radius: 0px 0px 5px 5px;
+    
+    }
+    .appDevWrapper .image {
+        display: block !important;
+        margin-top: 23px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .appDevWrapper .himage {
+        display: none !important;
+        /* margin-top: -15px; */
+        width: 40px;
+        height: 40px;
+    }
+    
+}
+@media (min-width: 322px) and (max-width: 375px){
+    .mainCardWrapper {
+        background: #F5F5F5;
+        border-radius: 8px;
+        box-shadow: 0px 2px 1px 1px #bbbbbb;
+        margin-top: 16px;
+        margin-left: -50px ;
+    }
+    .appDevWrapper {
+        width: 240px;
+        height: 217px;
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        margin: auto;
+        padding: 20px;
+        border-radius: 5px;
+        transition: all 1s ease;
+        position: relative;
+        z-index: 1;
+    }
+    .txtCardService {
+        margin-top: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+        text-align: center;
+        color: #030303;
+        text-transform: capitalize;
+        transition: all 1s ease-in;
+        -webkit-transition: all .5s ease-in;
+    }
+    
+    .txtCardService_para {
+        display: none;
+        margin-top: 10px;
+        color: white !important;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: #949292;
+    }
+    
+    .readMoreTxt {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        color: #949292 !important;
+        margin-right: 25%;
+    }
+    
+    .readMoreDiv {
+        background: #F5F5F5;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        border-top: 2px solid #ffffff !important;
+        height: 65px;
+        border-radius: 0px 0px 5px 5px;
+    
+    }
+    .appDevWrapper .image {
+        display: block !important;
+        margin-top: 23px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .appDevWrapper .himage {
+        display: none !important;
+        /* margin-top: -15px; */
+        width: 40px;
+        height: 40px;
+    }
+    
+}
+@media (min-width: 376px) and (max-width: 568px){
+    .mainCardWrapper {
+        background: #F5F5F5;
+        border-radius: 8px;
+        box-shadow: 0px 2px 1px 1px #bbbbbb;
+        margin-top: 16px;
+        margin-left: -40px ;
+    }
+    .appDevWrapper {
+        width: 240px;
+        height: 217px;
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        margin: auto;
+        padding: 20px;
+        border-radius: 5px;
+        transition: all 1s ease;
+        position: relative;
+        z-index: 1;
+    }
+    .txtCardService {
+        margin-top: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+        text-align: center;
+        color: #030303;
+        text-transform: capitalize;
+        transition: all 1s ease-in;
+        -webkit-transition: all .5s ease-in;
+    }
+    
+    .txtCardService_para {
+        display: none;
+        margin-top: 10px;
+        color: white !important;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: #949292;
+    }
+    
+    .readMoreTxt {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        color: #949292 !important;
+        margin-right: 25%;
+    }
+    
+    .readMoreDiv {
+        background: #F5F5F5;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        border-top: 2px solid #ffffff !important;
+        height: 65px;
+        border-radius: 0px 0px 5px 5px;
+    
+    }
+    .appDevWrapper .image {
+        display: block !important;
+        margin-top: 23px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .appDevWrapper .himage {
+        display: none !important;
+        /* margin-top: -15px; */
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (min-width: 568px) and (max-width: 768px){
+    .mainCardWrapper {
+        background: #F5F5F5;
+        border-radius: 8px;
+        box-shadow: 0px 2px 1px 1px #bbbbbb;
+        margin-top: 16px;
+        margin-left: 20px ;
+    }
+    .appDevWrapper {
+        width: 220px;
+        height: 227px;
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        margin: auto;
+        padding: 20px;
+        border-radius: 5px;
+        transition: all 1s ease;
+        position: relative;
+        z-index: 1;
+    }
+    .txtCardService {
+        margin-top: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+        text-align: center;
+        color: #030303;
+        text-transform: capitalize;
+        transition: all 1s ease-in;
+        -webkit-transition: all .5s ease-in;
+    }
+    
+    .txtCardService_para {
+        display: none;
+        margin-top: 10px;
+        color: white !important;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 27px;
+        text-align: center;
+        color: #949292;
+    }
+    
+    .readMoreTxt {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14.3333px;
+        color: #949292 !important;
+        margin-right: 25%;
+    }
+    
+    .readMoreDiv {
+        background: #F5F5F5;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        border-top: 2px solid #ffffff !important;
+        height: 65px;
+        border-radius: 0px 0px 5px 5px;
+    
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    .mainCardWrapper {
+        background: #F5F5F5;
+        border-radius: 8px;
+        box-shadow: 0px 2px 1px 1px #bbbbbb;
+        margin-top: 16px;
+        /* margin-left: 160px ; */
+    }
+    .appDevWrapper {
+        width: 242px;
+        height: 267px;
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        margin: auto;
+        padding: 20px;
+        border-radius: 5px;
+        transition: all 1s ease;
+        position: relative;
+        z-index: 1;
+    }
+    .txtCardService {
+        margin-top: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+        text-align: center;
+        color: #030303;
+        text-transform: capitalize;
+        transition: all 1s ease-in;
+        -webkit-transition: all .5s ease-in;
+    }
+    
+    .txtCardService_para {
+        display: none;
+        margin-top: 10px;
+        color: white !important;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 27px;
+        text-align: center;
+        color: #949292;
+    }
+    
+    .readMoreTxt {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14.3333px;
+        color: #949292 !important;
+        margin-right: 25%;
+    }
+    
+    .readMoreDiv {
+        background: #F5F5F5;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        border-top: 2px solid #ffffff !important;
+        height: 65px;
+        border-radius: 0px 0px 5px 5px;
+    
+    }
+    .appDevWrapper .image {
+        display: block !important;
+        margin-top: 23px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .appDevWrapper .himage {
+        display: none !important;
+        /* margin-top: -15px; */
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (min-width:992px) and (max-width: 1200px){
+    .mainCardWrapper {
+        background: #F5F5F5;
+        border-radius: 8px;
+        box-shadow: 0px 2px 1px 1px #bbbbbb;
+        margin-top: 16px;
+        margin-left: 20px ;
+    }
+    .appDevWrapper {
+        width: 240px;
+        height: 227px;
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        margin: auto;
+        padding: 20px;
+        border-radius: 5px;
+        transition: all 1s ease;
+        position: relative;
+        z-index: 1;
+    }
+    .txtCardService {
+        margin-top: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+        text-align: center;
+        color: #030303;
+        text-transform: capitalize;
+        transition: all 1s ease-in;
+        -webkit-transition: all .5s ease-in;
+    }
+    
+    .txtCardService_para {
+        display: none;
+        margin-top: 10px;
+        color: white !important;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 27px;
+        text-align: center;
+        color: #949292;
+    }
+    
+    .readMoreTxt {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14.3333px;
+        color: #949292 !important;
+        margin-right: 25%;
+    }
+    
+    .readMoreDiv {
+        background: #F5F5F5;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        border-top: 2px solid #ffffff !important;
+        height: 65px;
+        border-radius: 0px 0px 5px 5px;
+    
+    }
+}
+@media (min-width:1400px) and (max-width: 1441px){
+    .mainCardWrapper {
+        background: #F5F5F5;
+        border-radius: 8px;
+        box-shadow: 0px 2px 1px 1px #bbbbbb;
+        margin-top: 16px;
+    }
+    .appDevWrapper {
+        width: 260px !important;
+        height: 317px !important;
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        margin: auto;
+        padding: 20px;
+        border-radius: 5px;
+        transition: all 1s ease;
+        position: relative;
+        z-index: 1;
+    }
+    .txtCardService {
+        margin-top: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px !important;
+        line-height: 130%;
+        text-align: center;
+        color: #030303;
+        text-transform: capitalize;
+        transition: all 1s ease-in;
+        -webkit-transition: all .5s ease-in;
+    }
+    
+    .txtCardService_para {
+        display: none;
+        margin-top: 10px;
+        color: white !important;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px !important;
+        line-height: 27px;
+        text-align: center;
+        color: #949292;
+    }
+    
+    .readMoreTxt {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12.3333px !important;
+        color: #949292 !important;
+        margin-right: 25%;
+    }
+    
+    .readMoreDiv {
+        background: #F5F5F5;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        border-top: 2px solid #ffffff !important;
+        height: 65px;
+        border-radius: 0px 0px 5px 5px;
+    
+    }
+}
+@media (min-width:1400px) and (max-width: 2000px){
+    .mainCardWrapper {
+        background: #F5F5F5;
+        border-radius: 8px;
+        box-shadow: 0px 2px 1px 1px #bbbbbb;
+        margin-top: 16px;
+    }
+    .appDevWrapper {
+        width: 330px;
+        height: 357px;
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        margin: auto;
+        padding: 20px;
+        border-radius: 5px;
+        transition: all 1s ease;
+        position: relative;
+        z-index: 1;
+    }
+    .txtCardService {
+        margin-top: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 130%;
+        text-align: center;
+        color: #030303;
+        text-transform: capitalize;
+        transition: all 1s ease-in;
+        -webkit-transition: all .5s ease-in;
+    }
+    
+    .txtCardService_para {
+        display: none;
+        margin-top: 10px;
+        color: white !important;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        text-align: center;
+        color: #949292;
+    }
+    
+    .readMoreTxt {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15.3333px;
+        color: #949292 !important;
+        margin-right: 25%;
+    }
+    
+    .readMoreDiv {
+        background: #F5F5F5;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        border-top: 2px solid #ffffff !important;
+        height: 65px;
+        border-radius: 0px 0px 5px 5px;
+    
+    }
+}

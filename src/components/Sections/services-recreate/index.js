@@ -6,18 +6,17 @@ import ServiceSlider from "./slider/serviceSlider";
 function ServicesRecreate(title) {
   return (
     <div className="ptb-50">
-      <SectionTitle
-        heading={"Our Services"}
-        paragraph={
-          <p>
-            We offer complete product development solutions that fit your <br />
-            product’s unique requirements
-          </p>
-        }
-        padding={"5"}
-      />
-
       <div className="container-fluid sliderWrapper tops">
+        <SectionTitle
+          heading={"Our Services"}
+          paragraph={
+            <p>
+              We offer complete product development solutions that fit your{" "}
+              <br />
+              product’s unique requirements
+            </p>
+          }
+        />
         <ServiceSlider />
       </div>
     </div>

@@ -808,6 +808,10 @@ progress {
     .container-xxl {
         max-width: 1320px
     }
+    .container-fluid {
+        width: 74.5% !important;
+     
+    }
 
 }
 
@@ -26930,7 +26934,7 @@ blockquote:after {
     background-image: url("../images/hero-section/hero-image.png");
     padding-top: 100px;
     padding-bottom: 180px;
-    height: 800px;
+    height: 836px;
     background-position: 100% 100%;
     background-size: cover;
     background-repeat: no-repeat;
