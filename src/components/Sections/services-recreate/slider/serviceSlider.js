@@ -79,10 +79,10 @@ function ServiceSlider() {
           },
         },
         {
-          breakpoint: 1700,
+          breakpoint: 1900,
           settings: {
             slidesToShow: 3,
-            arrows: false,
+            arrows: true,
             slidesToScroll: 1,
             infinite: true,
             dots: false,
@@ -101,7 +101,7 @@ function ServiceSlider() {
           },
         },
         {
-          breakpoint: 1024,
+          breakpoint: 1074,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -115,11 +115,11 @@ function ServiceSlider() {
         {
           breakpoint: 992,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,
             dots: false,
-            arrows: false,
+            arrows: true,
             draggable: true,
             swipe:true
           },
@@ -136,13 +136,25 @@ function ServiceSlider() {
             swipe:true
           },
         },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            arrows: true,
+            draggable: true,
+            swipe:true
+          },
+        },
        
       ],
     };
     return (
       <>
         <div className="sliderMobileResponsive ">
-          <Slider {...settings}>
+          <Slider {...settings} >
             {services.map((item) => (
               <div>
                 <Link to={`/services/${item.path}`}>
