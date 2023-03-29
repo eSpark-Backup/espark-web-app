@@ -290,3 +290,15 @@
       padding-bottom: 20px !important;
       align-items: start;
     }
+         @media only screen and (min-width: 1366px) {
+           .images {
+             height: auto;
+             width: 550px !important;
+           }
+    
+           .headingColumn {
+             padding-top: 0px !important;
+             padding-bottom: 20px !important;
+             align-items: start;
+           }
+         }

@@ -5,13 +5,13 @@
 }
 
 
-
 .sociallink {
    font-family: 'Poppins';
    transform: rotate(270deg);
    display: flex;
    align-items: end;
    width: 100px;
+      margin-top: 40px;
 }
 
 .whyPoints {

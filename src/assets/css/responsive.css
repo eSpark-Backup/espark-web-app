@@ -1,388 +1,386 @@
 /* 2561px and above (Large Desktops) */
 @media (min-width: 2561px) {
-    /* Global Styling */
+  /* Global Styling */
 
-    /* Home Styling */
+  /* Home Styling */
 
-    /* Services Styling */
+  /* Services Styling */
 
-    /* Protfolio Styling */
+  /* Protfolio Styling */
 
-    /* Careers Styling */
+  /* Careers Styling */
 
-    /* Blogs Styling */
+  /* Blogs Styling */
 }
 
 /* 1921px to 2560px (Desktops) */
 @media (min-width: 1921px) and (max-width: 2560px) {
-    /* Global Styling */
+  /* Global Styling */
 
-    /* Home Styling */
+  /* Home Styling */
 
-    /* Services Styling */
+  /* Services Styling */
 
-    /* Protfolio Styling */
+  /* Protfolio Styling */
 
-    /* Careers Styling */
+  /* Careers Styling */
 
-    /* Blogs Styling */
+  /* Blogs Styling */
 
-    .container-fluid {
-        width: 75% !important;
-        /* border: 1px solid #000; */
-    }
-    .sliderWrapper {
-        width: 78% !important;
-        margin: auto;
-        text-align: center;
-    }
+  .container-fluid {
+    width: 75% !important;
+    /* border: 1px solid #000; */
+  }
+  .sliderWrapper {
+    width: 78% !important;
+    margin: auto;
+    text-align: center;
+  }
 
-    .ml-main-section {
-        height: 1200px;
-    }
+  .ml-main-section {
+    height: 1200px;
+  }
 
-    .ml-main-section h1 {
-        font-size: 80px !important;
-    }
+  .ml-main-section h1 {
+    font-size: 80px !important;
+  }
 
-    .ml-main-section p {
-        font-size: 30px !important;
-    }
+  .ml-main-section p {
+    font-size: 30px !important;
+  }
 
-    .style_images__5tuvY {
-        width: 900px !important;
-    }
+  .style_images__5tuvY {
+    width: 900px !important;
+  }
 
-    p {
-        font-size: 25px !important;
-        line-height: 1.3 !important;
-    }
+  p {
+    font-size: 25px !important;
+    line-height: 1.3 !important;
+  }
 
-    .content>h2 {
-        font-size: 80px !important;
-    }
+  .content > h2 {
+    font-size: 80px !important;
+  }
 
-    .styles_whyPoints__sAHvg {
-        font-size: 35px;
-        line-height: 1 !important;
-    }
+  .styles_whyPoints__sAHvg {
+    font-size: 35px;
+    line-height: 1 !important;
+  }
 
-    .itemTxt {
-        font-size: 30px !important;
-    }
+  .itemTxt {
+    font-size: 30px !important;
+  }
 
-    .itemTxt svg {
-        width: 10px !important;
-        height: 10px !important;
-    }
+  .itemTxt svg {
+    width: 10px !important;
+    height: 10px !important;
+  }
 
-    .logo {
-        width: 70%;
-        height: auto;
-    }
+  .logo {
+    width: 70%;
+    height: auto;
+  }
 
-    .headerBtn {
-        width: 220px !important;
-        height: 70px !important;
-        border-radius: 36px !important;
-    }
+  .headerBtn {
+    width: 220px !important;
+    height: 70px !important;
+    border-radius: 36px !important;
+  }
 
-    .btn-content {
-        font-size: 30px !important;
-    }
-
+  .btn-content {
+    font-size: 30px !important;
+  }
 }
 
 /* 1441px to 1920px (Laptops and Large Tablets) */
 @media (min-width: 1441px) and (max-width: 1920px) {
-    .container-fluid {
-        width: 75% !important;
-    }
-    .sliderWrapper {
-        width: 78% !important;
-        margin: auto;
-        text-align: center;
-    }
+  .container-fluid {
+    width: 75% !important;
+  }
+  .sliderWrapper {
+    width: 78% !important;
+    margin: auto;
+    text-align: center;
+  }
 
-    .styles_image__wGAui {
-        width: 100%;
-        height: auto;
-        margin-top: 40px !important;
-    }
+  .styles_image__wGAui {
+    width: 100%;
+    height: auto;
+    margin-top: 40px !important;
+  }
 
-    .styles_sociallink__usHjn {
-        display: flex;
-        align-items: end;
-        margin-right: 23px !important;
-        /* width: 110px; */
-    }
+  .styles_sociallink__usHjn {
+    display: flex;
+    align-items: end;
+    margin-right: 23px !important;
+    /* width: 110px; */
+  }
 
-    .style_images__HReD2 {
-        height: 200px !important;
-    }
+  .style_images__HReD2 {
+    height: 200px !important;
+  }
 
-    .style_titleText__jNp9Z {
-        font-size: 18px !important;
-    }
+  .style_titleText__jNp9Z {
+    font-size: 18px !important;
+  }
 
-    /* Global Styling */
+  /* Global Styling */
 
-    /* Home Styling */
+  /* Home Styling */
 
-    /* Services Styling */
+  /* Services Styling */
 
-    /* Protfolio Styling */
+  /* Protfolio Styling */
 
-    /* Careers Styling */
+  /* Careers Styling */
 
-    /* Blogs Styling */
+  /* Blogs Styling */
 }
 
 /* 1025px to 1440px (Small Laptops and Tablets) */
 @media (min-width: 1025px) and (max-width: 1440px) {
-    /* Global Styling */
+  /* Global Styling */
 
-    /* Home Styling */
+  /* Home Styling */
 
-    /* Services Styling */
+  /* Services Styling */
 
-    /* Protfolio Styling */
+  /* Protfolio Styling */
 
-    /* Careers Styling */
+  /* Careers Styling */
 
-    /* Blogs Styling */
+  /* Blogs Styling */
 }
 
 /* 767px to 1024px (Tablets and Mobile Devices in Landscape) */
 @media (min-width: 767px) and (max-width: 1024px) {
-    /* Global Styling */
+  /* Global Styling */
 
-    /* Home Styling */
-    /*Client Testimonials*/
-    .testimonial {
-        height: 550px !important;
-    }
+  /* Home Styling */
+  /*Client Testimonials*/
+  .testimonial {
+    height: 550px !important;
+  }
 
-    textarea {
-        height: 30px !important;
-        width: 97% !important;
-    }
+  textarea {
+    height: 30px !important;
+    width: 97% !important;
+  }
 
-    .content>h2 {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700 !important;
-        font-size: 30px;
-        line-height: 100%;
-        color: var(--color-secondary) !important;
-        text-align: center;
-        margin-top: 15px;
-    }
+  .content > h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 30px;
+    line-height: 100%;
+    color: var(--color-secondary) !important;
+    text-align: center;
+    margin-top: 15px;
+  }
 
-    .content>p {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 140%;
-        text-align: center;
-        margin-top: 10px;
-        color: #3A3A3A;
-    }
+  .content > p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    margin-top: 10px;
+    color: #3a3a3a;
+  }
 
-    .testimonial .name {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 100%;
-        text-align: center;
-        color: #00A099;
-    }
+  .testimonial .name {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    text-align: center;
+    color: #00a099;
+  }
 
-    .testimonial .designation {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        padding: 0px 50px;
-        font-size: 15px;
-        line-height: 27px;
-        text-align: center;
-        color: #2B4E89;
-    }
+  .testimonial .designation {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    padding: 0px 50px;
+    font-size: 15px;
+    line-height: 27px;
+    text-align: center;
+    color: #2b4e89;
+  }
 
-    .testimonial .testimonialText {
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 27px;
-        text-align: center;
-        color: #3A3A3A;
-        padding: 0px 50px;
-    }
+  .testimonial .testimonialText {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    text-align: center;
+    color: #3a3a3a;
+    padding: 0px 50px;
+  }
 
-    /* Services Styling */
+  /* Services Styling */
 
-    /* Protfolio Styling */
+  /* Protfolio Styling */
 
-    /* Careers Styling */
+  /* Careers Styling */
 
-    /* Blogs Styling */
+  /* Blogs Styling */
 }
 
 /* 426px to 766px (Most Mobile Devices) */
 @media (min-width: 426px) and (max-width: 766px) {
-    br {
-        display: none !important
-    }
+  br {
+    display: none !important;
+  }
 
-    /* Global Styling */
+  /* Global Styling */
 
-    /* Home Styling */
-    /*testimonial Section */
-    .testimonial {
-        height: 500px !important;
-    }
+  /* Home Styling */
+  /*testimonial Section */
+  .testimonial {
+    height: 500px !important;
+  }
 
-    .testimonial .image {
-        height: 148px !important;
-        border-radius: 50%;
-        text-align: center;
-        border: 2px solid rgb(221, 118, 118);
-    }
+  .testimonial .image {
+    height: 148px !important;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid rgb(221, 118, 118);
+  }
 
-    /*Lets Talk Section */
-    textarea {
-        height: 30px !important;
-        width: 96% !important;
-    }
+  /*Lets Talk Section */
+  textarea {
+    height: 30px !important;
+    width: 96% !important;
+  }
 
-    .content>h2 {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700 !important;
-        font-size: 30px;
-        line-height: 100%;
-        color: var(--color-secondary) !important;
-        text-align: center;
-        margin-top: 15px;
-    }
+  .content > h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 30px;
+    line-height: 100%;
+    color: var(--color-secondary) !important;
+    text-align: center;
+    margin-top: 15px;
+  }
 
-    .content>p {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px !important;
-        line-height: 140%;
-        text-align: center;
-        margin-top: 10px;
-        color: #3A3A3A;
-    }
+  .content > p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 140%;
+    text-align: center;
+    margin-top: 10px;
+    color: #3a3a3a;
+  }
 
+  /* Services Styling */
 
-    /* Services Styling */
+  /* Protfolio Styling */
 
-    /* Protfolio Styling */
+  /* Careers Styling */
 
-    /* Careers Styling */
-
-    /* Blogs Styling */
+  /* Blogs Styling */
 }
 
 /* 0px to 425px (Smaller Mobile Devices) */
 @media (max-width: 425px) {
-    br {
-        display: none !important
-    }
+  br {
+    display: none !important;
+  }
 
-    /* Global Styling */
+  /* Global Styling */
 
-    /* Home Styling */
-    /*testimonial Section */
+  /* Home Styling */
+  /*testimonial Section */
 
-    .testimonial {
-        height: 440px !important;
-        /* width: 340px !important; */
-        /* margin: auto; */
+  .testimonial {
+    height: 440px !important;
+    /* width: 340px !important; */
+    /* margin: auto; */
+  }
 
-    }
+  .style_formbox__R2I\+f {
+    padding-right: 15px !important;
+    padding-top: 0px;
+  }
 
-    .style_formbox__R2I\+f {
-        padding-right: 15px !important;
-        padding-top: 0px;
-    }
+  .sizeControl {
+    margin-top: 30px !important;
+    width: 360px !important;
+    /* margin: 0 auto!important; */
+  }
 
-    .sizeControl {
-        margin-top: 30px !important;
-        width: 360px !important;
-        /* margin: 0 auto!important; */
-    }
+  .content > h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 25px;
+    line-height: 100%;
+    color: var(--color-secondary) !important;
+    text-align: center;
+    margin-top: 15px;
+  }
 
-    .content>h2 {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700 !important;
-        font-size: 25px;
-        line-height: 100%;
-        color: var(--color-secondary) !important;
-        text-align: center;
-        margin-top: 15px;
-    }
+  .content > p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 140%;
+    text-align: center;
+    margin-top: 10px;
+    color: #3a3a3a;
+  }
 
-    .content>p {
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px !important;
-        line-height: 140%;
-        text-align: center;
-        margin-top: 10px;
-        color: #3A3A3A;
-    }
+  .form-control {
+    height: 36px !important;
+  }
 
+  textarea {
+    height: 30px !important;
+    width: 96% !important;
+    border-radius: 10px !important;
+  }
 
-    .form-control {
-        height: 36px !important;
-    }
+  /* Services Styling */
 
-    textarea {
-        height: 30px !important;
-        width: 96% !important;
-        border-radius: 10px !important;
-    }
+  /* Protfolio Styling */
 
-    /* Services Styling */
+  /* Careers Styling */
 
-    /* Protfolio Styling */
-
-    /* Careers Styling */
-
-    /* Blogs Styling */
+  /* Blogs Styling */
 }
 
 @media (max-width: 375px) {
-    .sizeControl {
-        margin-top: 30px !important;
-        width: 310px !important;
-        /* margin: 0 auto!important; */
-    }
+  .sizeControl {
+    margin-top: 30px !important;
+    width: 310px !important;
+    /* margin: 0 auto!important; */
+  }
 }
 
 @media (max-width: 320px) {
-    .container-fluid {
-        width: 99% !important;
-    }
+  .container-fluid {
+    width: 99% !important;
+  }
 
-    .sizeControl {
-        margin-top: 30px !important;
-        width: 290px !important;
-        /* margin: 0 auto!important; */
-    }
+  .sizeControl {
+    margin-top: 30px !important;
+    width: 250px !important;
+    /* margin: 0 auto!important; */
+  }
 
-    .mobileResponsive {
-        position: relative;
-        padding-left: 60px;
-    }
-
+  .mobileResponsive {
+    position: relative;
+    padding-left: 60px;
+  }
+  .contact-area .container-fluid {
+    width: auto;
+  }
 }
