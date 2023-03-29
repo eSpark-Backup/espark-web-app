@@ -48,7 +48,7 @@
 
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 767px) {
 
 
     .nextBtn {
@@ -85,12 +85,12 @@
         align-items: center;
         cursor: pointer;
         position: absolute;
-        top: 180px;
+        top: 180%;
         right: 657px;
     }
-}
+} */
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 422px) and (max-width: 500px) {
     .nextBtn {
         width: 50px;
         height: 50px;
@@ -102,7 +102,7 @@
         cursor: pointer;
         position: absolute;
         top: 180px;
-        left: 857px;
+        left: 96% !important;
     }
 
     .btnPre svg {
@@ -126,12 +126,132 @@
         cursor: pointer;
         position: absolute;
         top: 180px;
-        right: 857px;
+        right: 96% !important;
+    }
+
+}
+@media (min-width: 500px) and (max-width: 992px) {
+    .nextBtn {
+        width: 50px;
+        height: 50px;
+        background: var(--color-primary);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        top: 180px;
+        left: 96% !important;
+    }
+
+    .btnPre svg {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .nextBtn svg {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .btnPre {
+        width: 50px;
+        height: 50px;
+        background: var(--color-primary);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        top: 180px;
+        right: 96% !important;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1023px) {
+    .nextBtn {
+        width: 50px;
+        height: 50px;
+        background: var(--color-primary);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        top: 180px;
+        left: 93%   ;
+    }
+
+    .btnPre svg {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .nextBtn svg {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .btnPre {
+        width: 50px;
+        height: 50px;
+        background: var(--color-primary);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        top: 180px;
+        right: 93%;
+    }
+
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .nextBtn {
+        width: 50px;
+        height: 50px;
+        background: var(--color-primary);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        top: 180px;
+        left: 98%;
+    }
+
+    .btnPre svg {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .nextBtn svg {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .btnPre {
+        width: 50px;
+        height: 50px;
+        background: var(--color-primary);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        top: 180px;
+        right: 98%;
     }
 
 }
 
-@media (min-width: 1200px) and (max-width: 1440px) {
+@media (min-width: 1280px) and (max-width: 1370px) {
 
     .nextBtn {
         width: 70px;
@@ -144,7 +264,7 @@
         cursor: pointer;
         position: absolute;
         top: 180px;
-        left: 1050px;
+        left: 98%;
     }
 
     .btnPre {
@@ -158,7 +278,67 @@
         cursor: pointer;
         position: absolute;
         top: 180px;
-        right: 1050px;
+        right: 98%;
+    }
+}
+@media (min-width: 1371px) and (max-width: 1440px) {
+
+    .nextBtn {
+        width: 70px;
+        height: 70px;
+        background: var(--color-primary);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        top: 180px;
+        left: 99%;
+    }
+
+    .btnPre {
+        width: 70px;
+        height: 70px;
+        background: var(--color-primary);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        top: 180px;
+        right: 99%;
+    }
+}
+@media (min-width: 1441px) and (max-width: 1910px) {
+
+    .nextBtn {
+        width: 70px;
+        height: 70px;
+        background: var(--color-primary);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        top: 180px;
+        left: 100%;
+    }
+
+    .btnPre {
+        width: 70px;
+        height: 70px;
+        background: var(--color-primary);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        top: 180px;
+        right: 100%;
     }
 }
 
@@ -175,7 +355,7 @@
         cursor: pointer;
         position: absolute;
         top: 200px;
-        left: 2025px;
+        left: 100%;
     }
 
     .btnPre {
@@ -189,7 +369,7 @@
         cursor: pointer;
         position: absolute;
         top: 200px;
-        right: 2026px;
+        right: 100%;
     }
 
 }
