@@ -14,7 +14,7 @@ const Home = () => {
   const currentRoute = window.location.pathname;
   return (
     <div>
-      {/* <Herosection
+      <Herosection
         title={`The Ultimate Partner for
 Software and Iot Solutions`}
         paragraph="eSpark Consulting Group is a software and embedded system design
@@ -28,7 +28,7 @@ Software and Iot Solutions`}
         buttonText={"Learn More"}
         buttonUlr={"newDiv_0"}
         buttonDesign={13}
-      /> */}
+      />
       <WhyeSpark heading={"Why eSpark?"} />
       <ServicesRecreate link={currentRoute} />
       <Users />
