@@ -15,10 +15,18 @@ function WhyeSpark({ heading }) {
             {sociallinks.map((items) => {
               return (
                 <div id={styles["whylinksbtn"]} className={`col-4`}>
-                  <Button
-                    design={3}
-                    link={items.url}
-                    title={items.name}></Button>
+                  <a href={items.url} target="_blank">
+                    <button
+                      className="roundbutton rounded-pill"
+                      style={{
+                        fontSize: 30,
+                        height: 46,
+                        boxShadow: "none",
+                        fontWeight: 600,
+                      }}>
+                      {items.name}
+                    </button>
+                  </a>
                 </div>
               );
             })}
