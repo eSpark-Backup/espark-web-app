@@ -1,12 +1,11 @@
-.contact-table td{
+.contact-table td {
   padding: 0 5px;
   margin-bottom: 20px;
-
 }
-.contact-table a{font-size: 12px;
-  
+.contact-table a {
+  font-size: 12px;
 }
-.footer{
+.footer {
   display: flex;
   justify-content: center;
 }
@@ -41,7 +40,7 @@ ul.contact-details li .email-icon {
 .footer-about {
   text-align: left;
 }
-.footer-area{
+.footer-area {
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -110,17 +109,18 @@ footer .social-links {
   width: 100%;
   text-align: left;
 }
-.contact-details{
-    padding-right: 10%;
-  }
-  @media only screen and (min-width: 426px) and (max-width:786px){
-    .footer-area {
-    padding-top: 50px !important;
-    padding-bottom: 30px!important;
+.contact-details {
+  padding-right: 10%;
 }
+@media only screen and (min-width: 426px) and (max-width: 786px) {
+  .footer-area {
+    padding-top: 50px !important;
+    padding-bottom: 30px !important;
+  }
 }
 
-@media only screen and (max-width: 425px) {
+
+@media only screen and (min-width: 281px)and (max-width: 425px) {
   .footer-area {
     padding-top: 50px;
     padding-bottom: 30px;
@@ -146,7 +146,7 @@ footer .social-links {
     font-size: 16px;
     line-height: 30px;
   }
-  .footer{
+  .footer {
     display: flex;
     justify-content: flex-start;
   }
@@ -159,13 +159,40 @@ footer .social-links {
     color: #070707 !important;
   }
 }
-
-@media only screen and (min-width: 426px) and (max-width:786px){
+@media only screen and (max-width: 280px) {
   .footer-area {
     padding-top: 50px !important;
     padding-bottom: 30px !important;
   }
-  .contact-details{
+  .footer {
+    display: flex;
+    justify-content: left;
+  }
+  .footer-area a,.footer-area p { font-size: 14px;
+  }
+  .contact-table a {
+    width: 200px;
+  }
+  .contact-table tr {
+    width: 200px;
+  }
+  .contact-details {
+    padding-right: none;
+  }
+  .contact-table a {
+    font-size: 14px;
+  }
+  .contacts-det {
+    width: 200px !important;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 786px) {
+  .footer-area {
+    padding-top: 50px !important;
+    padding-bottom: 30px !important;
+  }
+  .contact-details {
     padding-right: none;
   }
   .single-footer-widget .logo a img {

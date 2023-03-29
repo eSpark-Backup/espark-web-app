@@ -735,7 +735,23 @@ textarea{
     margin-right: auto;
     margin-left: auto
 }
+    
+@media screen and (max-width: 320px) {
+    .container,
+    .container-sm {
+        max-width: 220px
+    }
 
+    .container-fluid {
+        width: 80% !important;
+        /* border: 1px solid #000; */
+    }
+
+    .logo {
+        width: 120px;
+        height: auto;
+    }
+  }
 @media (max-width:425px) and (min-width:375px) {
 
     .container,
@@ -27000,7 +27016,20 @@ blockquote:after {
         font-size: 25px !important;
     }
 }
-
+@media only screen and (max-width: 280px) {
+    .ml-main-section {
+        background-position: 0%;
+        background-position: 0%;
+        height: 300px !important;
+    }
+    .ml-banner-content p{
+        font-size: 14px !important;
+        margin-bottom: 15px;
+    }
+    .ml-banner-content h1{
+        font-size: 25px !important;
+    }
+}
 
 /* @media (max-width: 991.98px) {
     .ml-main-section {
