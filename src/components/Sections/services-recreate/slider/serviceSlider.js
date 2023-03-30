@@ -101,7 +101,7 @@ function ServiceSlider() {
           },
         },
         {
-          breakpoint: 1074,
+          breakpoint: 1196,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
