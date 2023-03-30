@@ -26965,10 +26965,8 @@ blockquote:after {
 .ml-banner-single-image {
     text-align: center
 }
-
 .ml-main-section {
     position: relative;
-    z-index: 1;
     background-image: url("../images/hero-section/hero-image.png");
     padding-top: 100px;
     padding-bottom: 180px;
@@ -26979,6 +26977,7 @@ blockquote:after {
     /* border: 1px solid #000; */
     background-position: center;
 }
+
 
 @media only screen and (max-width: 1440px) {
     .ml-main-section {

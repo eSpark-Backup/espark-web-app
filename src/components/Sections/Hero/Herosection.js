@@ -48,16 +48,16 @@ function Herosection({
             <div
               class={
                 serviceClass
-                  ? `${styles.service} animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-12 col-sm-12 text-center `
-                  : `animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-2 col-sm-12 text-center `
+                  ? `${styles.service} animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-12 col-sm-12 text-center img-fluid `
+                  : `animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-2 col-sm-12 text-center img-fluid`
               }>
-              <img src={images} class={styles.images} alt="image" />
+              <img src={images} class={`  ${styles.images}`} alt="image" />
             </div>
           </div>
         </div>
       </div>
-      <div class={`${styles.headingColumnMobile} col-sm-12`}>
-        <div class="ml-banner-content">
+      <div class={`${styles.headingColumnMobile} col-sm-12 col-md-12`}>
+        <div class="ml-banner-content p-20">
           <h1 className={styles.heading}>{title}</h1>
 
           <p className={styles.paraText}>{paragraph}</p>

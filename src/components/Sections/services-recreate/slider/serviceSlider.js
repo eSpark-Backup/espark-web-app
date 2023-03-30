@@ -18,8 +18,7 @@ function ServiceSlider() {
           height="34"
           viewBox="0 0 22 34"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+          xmlns="http://www.w3.org/2000/svg">
           <path
             d="M1.92306 1.84619L18.0769 17.2977L1.92306 31.4616"
             stroke="white"
@@ -38,8 +37,7 @@ function ServiceSlider() {
           height="34"
           viewBox="0 0 22 34"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+          xmlns="http://www.w3.org/2000/svg">
           <path
             d="M20.0769 1.84616L3.9231 17.2977L20.0769 31.4615"
             stroke="white"
@@ -62,7 +60,7 @@ function ServiceSlider() {
       slidesToShow: 4,
       slidesToScroll: 4,
       centerMode: false,
-      centerPadding:0,
+      centerPadding: 0,
       nextArrow: <CustomNextArrow />,
       prevArrow: <CustomPrevArrow />,
       responsive: [
@@ -75,7 +73,7 @@ function ServiceSlider() {
             infinite: true,
             dots: false,
             centerMode: true,
-            centerPadding:-10,
+            centerPadding: -10,
           },
         },
         {
@@ -97,7 +95,7 @@ function ServiceSlider() {
             dots: false,
             arrows: true,
             draggable: true,
-            swipe:true
+            swipe: true,
           },
         },
         {
@@ -109,7 +107,7 @@ function ServiceSlider() {
             dots: false,
             arrows: true,
             draggable: true,
-            swipe:true
+            swipe: true,
           },
         },
         {
@@ -121,7 +119,7 @@ function ServiceSlider() {
             dots: false,
             arrows: true,
             draggable: true,
-            swipe:true
+            swipe: true,
           },
         },
         {
@@ -133,7 +131,7 @@ function ServiceSlider() {
             dots: false,
             arrows: true,
             draggable: true,
-            swipe:true
+            swipe: true,
           },
         },
         {
@@ -145,23 +143,22 @@ function ServiceSlider() {
             dots: false,
             arrows: true,
             draggable: true,
-            swipe:true
+            swipe: true,
           },
         },
-       
       ],
     };
     return (
       <>
         <div className="sliderMobileResponsive ">
-          <Slider {...settings} >
+          <Slider {...settings}>
             {services.map((item) => (
               <div>
                 <Link to={`/services/${item.path}`}>
                   <ServicesCard
                     image={item.icon}
                     image2={item.icon2}
-                    title={item.name}
+                    title={item.hpname}
                     para={item.discription}
                   />
                 </Link>
@@ -177,7 +174,7 @@ function ServiceSlider() {
                   <ServicesCard
                     image={item.icon}
                     image2={item.icon2}
-                    title={item.name}
+                    title={item.hpname}
                     para={item.discription}
                   />
                 </Link>
