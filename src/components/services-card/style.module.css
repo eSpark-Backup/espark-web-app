@@ -638,7 +638,7 @@
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 130%;
         text-align: center;
         color: #030303;
@@ -654,7 +654,7 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 27px;
         text-align: center;
         color: #949292;
@@ -679,6 +679,19 @@
         height: 65px;
         border-radius: 0px 0px 5px 5px;
 
+    }
+    .appDevWrapper .image {
+        display: block !important;
+        margin-top: 23px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .appDevWrapper .himage {
+        display: none !important;
+        /* margin-top: -15px; */
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -712,7 +725,7 @@
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 130%;
         text-align: center;
         color: #030303;
@@ -728,8 +741,8 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 27px;
+        font-size: 12px;
+        line-height: 20px;
         text-align: center;
         color: #949292;
     }
@@ -800,7 +813,7 @@
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 130%;
         text-align: center;
         color: #030303;
@@ -816,7 +829,7 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 27px;
         text-align: center;
         color: #949292;
@@ -826,7 +839,7 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
-        font-size: 14.3333px;
+        font-size: 13.3333px;
         color: #949292 !important;
         margin-right: 25%;
     }
@@ -841,6 +854,18 @@
         height: 65px;
         border-radius: 0px 0px 5px 5px;
 
+    }
+    .appDevWrapper .image {
+        display: block !important;
+        margin-top: 23px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .appDevWrapper .himage {
+        display: none !important;
+        width: 60px;
+        height: 60px;
     }
 }
 @media (min-width:1280px) and (max-width: 1370px) {
@@ -915,6 +940,19 @@
         border-radius: 0px 0px 5px 5px;
 
     }
+    .appDevWrapper .image {
+        display: block !important;
+        margin-top: 23px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .appDevWrapper .himage {
+        display: none !important;
+        /* margin-top: -15px; */
+        width: 50px;
+        height: 50px;
+    }
 }
 
 @media (min-width:1371px) and (max-width: 1440px) {
@@ -947,7 +985,7 @@
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 600;
-        font-size: 16px !important;
+        font-size: 15px !important;
         line-height: 130%;
         text-align: center;
         color: #030303;
@@ -988,6 +1026,19 @@
         height: 65px;
         border-radius: 0px 0px 5px 5px;
 
+    }
+    .appDevWrapper .image {
+        display: block !important;
+        margin-top: 23px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .appDevWrapper .himage {
+        display: none !important;
+        /* margin-top: -15px; */
+        width: 50px;
+        height: 50px;
     }
 }
 

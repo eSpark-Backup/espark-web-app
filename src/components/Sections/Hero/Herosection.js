@@ -56,7 +56,7 @@ function Herosection({
           </div>
         </div>
       </div>
-      <div class={`${styles.headingColumnMobile} col-sm-12 col-md-12`}>
+      <div className={`${styles.headingColumnMobile} col-sm-12 col-md-12`}>
         <div class="ml-banner-content p-20">
           <h1 className={styles.heading}>{title}</h1>
 

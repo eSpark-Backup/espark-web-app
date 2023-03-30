@@ -15,6 +15,9 @@ ul.contact-details li {
   padding-left: 2em;
 }
 
+.exploreSectionWidth{
+  width: 155px;
+}
 ul.contact-details li svg {
   position: absolute;
   left: 0;

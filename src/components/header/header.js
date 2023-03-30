@@ -275,7 +275,7 @@ const Header = () => {
                   Download Now
                 </a>
               ) : (
-                <div className="headerBtn" onClick={onOpenModal}>
+                <div className="headerBtn smallNone" onClick={onOpenModal}>
                   <span className="btn-content ">Let’s Talk</span>
                 </div>
               )}

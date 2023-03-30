@@ -68,7 +68,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="col-lg-4 col-md-4 col-sm-6 footer">
-                <div className="single-footer-widget pl-5 explores">
+                <div className="single-footer-widget pl-5 explores exploreSectionWidth">
                   <h3>Explore</h3>
                   <ul className="list">
                     <li>

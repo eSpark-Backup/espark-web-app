@@ -174,9 +174,16 @@
   color: var(--color-primary) !important;
 }
 
+
+@media (min-width: 426px) and (max-width: 766px) {
+  .headerBtn {
+    display: none!important;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .headerBtn {
-    display: none;
+    display: none!important;
   }
 
   .dropButton {
