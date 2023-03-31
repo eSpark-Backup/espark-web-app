@@ -299,7 +299,7 @@
     justify-content: space-between;
     color: var(--color-secondary) !important;
   }
-
+    
   .mobileDrawerCollapse .a {
     padding: 10px 0px 0px 10px;
     width: 100%;
@@ -321,7 +321,6 @@
     font-size: 16px !important;
     color: var(--color-secondary);
     font-weight: 600;
-    border-bottom: 2px solid black;
     width: 100%;
 
   }
@@ -341,7 +340,7 @@
     height: 100% !important;
   }
 
-  .mobileSelectedCollapse {
+  .collapseChildSelected {
     /* background-color: var(--color-primary); */
     color: var(--color-primary) !important;
 
@@ -425,8 +424,8 @@
     flex-direction: row;
     justify-content: space-between;
     color: var(--color-secondary) !important;
-  }
-
+    }
+   
   .mobileDrawerCollapse .a {
     padding: 10px 0px 0px 10px;
     width: 100%;

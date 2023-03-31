@@ -12,7 +12,30 @@
 .customColor:hover {
   box-shadow: none;
 }
+ .serviceChild {
+   padding-left: 20px !important;
+ }
 
+ .serviceChildLink {
+   padding-left: 20px !important;
+ }
+ .mobileSelected{
+    background-color: rgba(17, 167, 156, 0.5);
+    box-shadow: 0 4px 4px -4px gray;
+ }
+ .mobileSelected .mobileheading {
+   color: black !important;
+ }
+
+ .mobileDrawerCollapse a {
+   padding-left: 40px !important;
+ }
+
+ .mobileSelectedCollapse {
+   background-color: rgba(17, 167, 156, 0.5);
+   color: #000000 !important;
+   padding: 10px !important;
+ }
 .list-bgrd {
   background-color: transparent !important;
   width: 300px !important;
@@ -169,11 +192,8 @@
 }
 
 
-@media (min-width: 426px) and (max-width: 766px) {
-  .headerBtn {
-    display: none!important;
-  }
-}
+
+
 
 @media screen and (max-width: 425px) {
   .headerBtn {
@@ -325,9 +345,9 @@
   }
 }
 @media screen and (max-width: 767px) {
-  #serveDrop {
-  
-  }
+  .headerBtn {
+      display: none !important;
+    }
   .navbar-collapse{
       display: none !important;
   }
@@ -336,7 +356,7 @@
   }
 }
 @media screen and (min-width: 768px) {
-  #serveDropMobile {
+  .serveDropMobile {
     display: none !important;
   }
   #serve:hover #serveDropMobile {
