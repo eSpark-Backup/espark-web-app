@@ -27013,6 +27013,14 @@ blockquote:after {
     }
 }
 
+@media (min-width: 280px) and (max-width: 540px) {
+    .ml-main-section {
+        background-position: 0%;
+        background-position: 0%;
+        height: 350px !important;
+    }
+ }
+
 @media only screen and (max-width: 425px) {
     .ml-main-section {
         background-position: 0%;

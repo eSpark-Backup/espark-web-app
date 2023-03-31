@@ -130,6 +130,7 @@
         right: 96% !important;
         margin-right: 6%;
     }
+
     .sliderMobileResponsive {
         width: 88%;
         margin-left: 6%;
@@ -137,6 +138,7 @@
     }
 
 }
+
 @media (min-width: 500px) and (max-width: 992px) {
     .nextBtn {
         width: 50px;
@@ -177,6 +179,7 @@
         right: 96% !important;
         margin-right: 5%;
     }
+
     .sliderMobileResponsive {
         width: 88%;
         margin-left: 6%;
@@ -184,6 +187,7 @@
     }
 
 }
+
 @media (min-width: 992px) and (max-width: 1023px) {
     .nextBtn {
         width: 50px;
@@ -198,7 +202,6 @@
         top: 180px;
         left: 93%;
         margin-left: 8%
-
     }
 
     .btnPre svg {
@@ -225,12 +228,14 @@
         right: 93%;
         margin-right: 8%
     }
+
     .sliderMobileResponsive {
         width: 88%;
         margin-left: 6%;
         /* display: block; */
     }
 }
+
 @media (min-width: 1024px) and (max-width: 1279px) {
     .nextBtn {
         width: 50px;
@@ -271,6 +276,7 @@
         right: 100%;
         margin-right: 1%;
     }
+
     .sliderMobileResponsive {
         width: 88%;
         margin-left: 6%;
@@ -293,7 +299,7 @@
         position: absolute;
         top: 180px;
         left: 100%;
-        margin-left:1%;
+        margin-left: 1%;
     }
 
     .btnPre {
@@ -310,12 +316,14 @@
         right: 100%;
         margin-right: 1%;
     }
+
     .sliderMobileResponsive {
         width: 88%;
         margin-left: 6%;
         /* display: block; */
     }
 }
+
 @media (min-width: 1371px) and (max-width: 1440px) {
 
     .nextBtn {
@@ -347,12 +355,14 @@
         right: 99%;
         margin-right: 2%;
     }
+
     .sliderMobileResponsive {
         width: 88%;
         margin-left: 6%;
         /* display: block; */
     }
 }
+
 @media (min-width: 1441px) and (max-width: 1910px) {
 
     .nextBtn {
@@ -384,6 +394,7 @@
         right: 100%;
         margin-right: 2%;
     }
+
     .sliderMobileResponsive {
         width: 92%;
         margin-left: 6%;
@@ -431,6 +442,14 @@
 
     .sliderMobileResponsive {
         display: none;
+
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .mobileResponsive {
+        display: flex !important;
+        justify-content: right !important;
 
     }
 }
