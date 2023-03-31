@@ -32,6 +32,7 @@ const Header = () => {
   const onOpenModal = () => {
     setOpen(true);
     setIsNavCollapsed(false);
+    toggleDrawer();
   };
   const onCloseModal = () => setOpen(false);
 
