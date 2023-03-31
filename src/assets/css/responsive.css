@@ -289,6 +289,63 @@
   /* Careers Styling */
 
   /* Blogs Styling */
+  /* Header Styling */
+  .mobileDrawer {
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--color-secondary) !important;
+  }
+
+  .mobileDrawerCollapse .a {
+    padding: 10px 0px 0px 10px;
+    width: 100%;
+    color: black;
+    font-size: 13px !important;
+  }
+
+  .mobileDrawerCollapse .a :last-child {
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+
+  }
+
+  .mobilelinks {
+    border: 1px solid #000;
+  }
+
+  .mobileheading {
+    font-size: 16px !important;
+    color: var(--color-secondary);
+    font-weight: 600;
+    border-bottom: 2px solid black;
+    width: 100%;
+
+  }
+
+  .mobileDrawer svg {
+    width: 15px;
+    height: 15px;
+    margin-top: 4px;
+  }
+
+  .mobileSelected {
+    background-color: var(--color-primary);
+    color: white !important;
+  }
+  .drawerScroll {
+    overflow: scroll;
+    height: 100% !important;
+  }
+
+  .mobileSelectedCollapse {
+    /* background-color: var(--color-primary); */
+    color: var(--color-primary) !important;
+
+  }
 }
 
 /* 0px to 425px (Smaller Mobile Devices) */
@@ -358,6 +415,70 @@
   /* Careers Styling */
 
   /* Blogs Styling */
+
+  /* Header Styling */
+  .mobileDrawer {
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--color-secondary) !important;
+  }
+
+  .mobileDrawerCollapse .a {
+    padding: 10px 0px 0px 10px;
+    width: 100%;
+    color: black;
+    font-size: 13px !important;
+  }
+
+  .mobileDrawerCollapse .a :last-child {
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+
+  }
+
+  .drawerScroll {
+    overflow: scroll;
+    height: 100% !important;
+  }
+
+  .mobilelinks {
+    border: 1px solid #000;
+  }
+
+  .mobileheading {
+    font-size: 16px !important;
+    color: var(--color-secondary);
+    font-weight: 600;
+    border-bottom: 2px solid black;
+    width: 100%;
+
+  }
+
+  .mobileDrawer svg {
+    width: 15px;
+    height: 15px;
+    margin-top: 4px;
+  }
+
+  .mobileSelected {
+    background-color: var(--color-primary);
+    color: white !important;
+  }
+
+  .mobileSelectedCollapse {
+    /* background-color: var(--color-primary); */
+    color: var(--color-primary) !important;
+
+  }
+
+  
+}
+.ReactCollapse--collapse {
+  transition: height 500ms;
 }
 
 

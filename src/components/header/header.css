@@ -28,7 +28,6 @@
   justify-content: center;
   align-items: center;
   font-family: Poppins;
-
 }
 
 .btn-content {
@@ -52,7 +51,6 @@
   font-size: 20px;
   color: var(--color-secondary);
   font-family: Poppins;
-
 }
 
 .menuDropDown {
@@ -99,11 +97,10 @@
 
 #serve:hover #serveDrop {
   display: flex !important;
-  background: #E8F1F2;
+  background: #e8f1f2;
   opacity: 0.9;
   margin-top: -38px;
   box-shadow: 0 8px 8px -4px gray;
-
 }
 
 #serve {
@@ -118,15 +115,12 @@
   padding: auto 100px;
   /* border: 1px solid #000; */
   top: 126px;
-
 }
 
 .serveDropInner {
   position: relative;
   left: 34px;
 }
-
-
 
 .firstContent {
   padding-left: 50px !important;
@@ -186,28 +180,84 @@
     display: none!important;
   }
 
-  .dropButton {
-    display: flex !important;
+  .heading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #2074b4;
+    border-bottom: 2px solid black;
   }
 
-  .collapsed {
-    box-shadow: none;
+  .linkClass {
+    text-align: start;
+    align-items: start;
+  }
+
+  a {
+    text-align: start;
+    align-items: start;
+  }
+
+  .ptag {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    line-height: 16px;
+    color: #000000 !important;
+  }
+
+  .selectedColor {
+    color: var(--color-primary) !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .contents {
+    padding: 30px 0px;
+  }
+
+  .heading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #2074b4;
+    border-bottom: 2px solid black;
+  }
+
+  .linkClass {
+    text-align: start;
+    align-items: start;
+  }
+
+  a {
+    text-align: start;
+    align-items: start;
+  }
+
+  .ptag {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 10px !important;
+    line-height: 10px;
+    color: #000000 !important;
+  }
+
+  .selectedColor {
+    color: var(--color-primary) !important;
   }
 
   .startp-nav nav .navbar-nav {
-    position: static !important;
-    width: 100%;
-    align-items: center;
-
+    font-weight: 500;
+    float: right;
+    margin-right: -50px;
   }
-
-  .itemTxt {
-    font-size: 20px !important;
-  }
-
 }
-
-@media screen and (max-width: 787px) {
+@media screen and (max-width: 768px) {
   .itemTxt {
     font-size: 14px;
     margin-top: 20px;
@@ -251,93 +301,45 @@
     height: 50px;
   }
 }
-
-@media only screen and (max-width: 1200px) {
-  .contents {
-    padding: 30px 0px;
+@media screen and (max-width: 425px) {
+  .headerBtn {
+    display: none;
   }
 
-  .heading {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 15px;
-    color: #2074b4;
-    border-bottom: 2px solid black;
-
+  .dropButton {
+    display: flex !important;
   }
 
-  .linkClass {
-    text-align: start;
-    align-items: start;
-  }
-
-  a {
-    text-align: start;
-    align-items: start;
-  }
-
-  .ptag {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400 !important;
-    font-size: 10px !important;
-    line-height: 10px;
-    color: #000000 !important;
-  }
-
-  .selectedColor {
-    color: var(--color-primary) !important;
+  .collapsed {
+    box-shadow: none;
   }
 
   .startp-nav nav .navbar-nav {
-    font-weight: 500;
-    float: right;
-    margin-right: -50px;
+    position: static !important;
+    width: 100%;
+    align-items: center;
+  }
+
+  .itemTxt {
+    font-size: 20px !important;
   }
 }
-
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
-  .contents {
-    padding: 30px 0px;
+@media screen and (max-width: 767px) {
+  #serveDrop {
+  
   }
-
-  .heading {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 20px;
-    color: #2074b4;
-    border-bottom: 2px solid black;
+  .navbar-collapse{
+      display: none !important;
   }
-
-  .linkClass {
-    text-align: start;
-    align-items: start;
-  }
-
-  a {
-    text-align: start;
-    align-items: start;
-  }
-
-  .ptag {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500 !important;
-    font-size: 12px !important;
-    line-height: 16px;
-    color: #000000 !important;
-  }
-
-  .selectedColor {
-    color: var(--color-primary) !important;
+  #serve:hover #serveDrop {
+    display: none !important;
   }
 }
-@media only screen and (min-width: 769px) and (max-width: 1440px) {
-  .heading {
-    height:40px ;
+@media screen and (min-width: 768px) {
+  #serveDropMobile {
+    display: none !important;
+  }
+  #serve:hover #serveDropMobile {
+    display: none !important;
   }
 }

@@ -103,7 +103,7 @@ export const services = [
       serviceItems(
         hash(),
         "Flutter App Development Service",
-        "React Native App",
+        "Flutter App",
         "Our Flutter application development will provide you with easy functionality, and an exclusive UI design. Our Flutter application development service is one of the best solutions for mobile application development, enabling smooth and easy cross-platform giving your application a uniform appearance.",
         FlutterAppDevelopment
       ),
