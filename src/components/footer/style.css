@@ -162,14 +162,14 @@ footer .social-links {
     color: #070707 !important;
   }
 }
-@media only screen and (max-width: 280px) {
+@media only screen and (max-width: 768px) {
   .footer-area {
     padding-top: 50px !important;
     padding-bottom: 30px !important;
   }
   .footer {
     display: flex;
-    justify-content: left;
+    justify-content: left !important;
   }
   .footer-area a,.footer-area p { font-size: 14px;
   }

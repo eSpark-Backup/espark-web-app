@@ -360,7 +360,22 @@
   /* Blogs Styling */
 }
 
-@media (max-width: 375px) {
+
+
+
+
+
+
+@media (max-width: 412px) {
+  .sizeControl {
+    margin-top: 30px !important;
+    width: 350px !important;
+    /* margin: 0 auto!important; */
+  }
+}
+
+
+@media  (max-width: 375px) {
   .sizeControl {
     margin-top: 30px !important;
     width: 310px !important;

@@ -90,6 +90,7 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                   </p>
                 }
                 width={"100px"}
+                padding={"0"}
               />
             </div>
             <div className="col-lg-4 hidden-md hidden-sm   ">

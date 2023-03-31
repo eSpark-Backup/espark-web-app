@@ -52,7 +52,7 @@
 .letsTalk {
     background: #F1F1F1;
     border-radius: 10px;
-    padding-bottom: 100px !important;
+    /* padding-bottom: 100px !important; */
     padding-top: 30px !important;
     margin-top: -78px;
 }
@@ -67,42 +67,94 @@
     color: #000000;
 }
 
-.formcol {
-    margin-top: -25% !important;
-    padding-left: 50px;
-}
+
 
 @media only screen and (max-width: 2560px) {
 
     .formcol {
-        margin-top: -20% !important;
+        margin-top: -16% !important;
         padding-left: 5%;
         padding-right: 5%;
     }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1440px) {
 
     .formcol {
-        margin-top: -50% !important;
+        margin-top: -14% !important;
         padding-left: 5%;
         padding-right: 5%;
     }
-
-    .letsTalk {
-        padding-bottom: 50% !important;
-    }
 }
 
-@media (min-width: 540px) and (max-width: 1180px) {
+
+@media (min-width: 982px) and (max-width: 1024px) {
     .letsTalkImage {
         width: 100%;
         text-align: center;
     }
 
     .letsTalkImage img {
-        width: 70%;
+        width: 100% !important;
         text-align: center;
     }
+    .letsTalk {
+        padding-bottom: 0% !important;
+    }
+    .formcol {
+        margin-top: -14% !important ;
+    }
 }
+
+@media (min-width: 540px) and (max-width: 982px) {
+    .letsTalkImage {
+        width: 100%;
+        text-align: center;
+    }
+
+    .letsTalkImage img {
+        width: 50% !important;
+        text-align: center;
+    }
+    .letsTalk {
+        padding-bottom: 0% !important;
+    }
+    .formcol {
+        margin-top: -5% !important ;
+    }
+}
+@media (min-width: 280px) and (max-width: 540px) {
+    .letsTalkImage {
+        width: 100%;
+        text-align: center;
+    }
+
+    .letsTalkImage img {
+        width: 100% ;
+    }
+    .letsTalk {
+        padding-bottom: 10% !important;
+    }
+    .formcol {
+        margin-top: -14% !important ;
+    }
+}
+
+
+@media only screen and (max-width: 280px) {
+
+    .letsTalkImage img {
+        width: 80% ;
+    }
+    .formcol {
+        margin-top: -18% !important ;
+        padding: 0px;
+        
+    }
+    .formbox{
+        border-radius: 15px;
+    }
+    
+}
+
 
