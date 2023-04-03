@@ -82,6 +82,7 @@ const Header = () => {
   };
   const toggleChildCollapse = (serviceId) => {
     setSelectedService((prev) => (prev === serviceId ? null : serviceId));
+    localStorage.clear("child_id");
   };
   return (
     <header id="header" class="headroom is-sticky">
@@ -194,6 +195,7 @@ const Header = () => {
                               <Link
                                 id="linkss"
                                 className="linkClass"
+                                onClick={() => localStorage.clear("child_id")}
                                 to={`/services/${items.path}`}
                               >
                                 <p className="heading ">{items.title}</p>
