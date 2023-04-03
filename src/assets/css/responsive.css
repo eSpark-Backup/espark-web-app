@@ -341,7 +341,7 @@
   }
   .drawerScroll {
     overflow: scroll;
-    height: 100% !important;
+    height: 80vh !important;
   }
 
   .collapseChildSelected {
@@ -445,7 +445,7 @@
 
   .drawerScroll {
     overflow: scroll;
-    height: 100% !important;
+    height: 80vh !important;
   }
 
   .mobilelinks {
