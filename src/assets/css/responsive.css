@@ -434,7 +434,6 @@
     padding: 10px 0px 0px 10px;
     width: 100%;
     color: black;
-    font-size: 13px !important;
   }
 
   .mobileDrawerCollapse .a :last-child {
@@ -454,7 +453,7 @@
 
   .mobileheading {
     font-size: 16px !important;
-    color: var(--color-secondary);
+    color: #2074b4;
     font-weight: 600;
     /* border-bottom: 2px solid black; */
     width: 100%;
@@ -469,7 +468,7 @@
 
   .mobileSelected {
     background-color: var(--color-primary);
-    color: white !important;
+    color: var(--color-primary);
   }
 
   .mobileSelectedCollapse {
