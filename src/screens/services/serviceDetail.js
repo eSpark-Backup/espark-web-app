@@ -29,16 +29,16 @@ const ServiceDetail = () => {
     setTabCard(item);
   };
   return (
-    <div>
-      <Herosection
+    <>
+      {/* <Herosection
         title={filterData[0]?.name}
         paragraph={filterData[0]?.content}
         images={filterData[0]?.image}
         ShowButton={false}
         serviceClass={"service"}
-      />
+      /> */}
       {/* <Title title={"WE HELP BRANDS AND MAKE NEW FANS"} data={shapes} /> */}
-      <div className={`container ptb-80 ${styles.gaps} `}>
+      {/* <div className={`container ptb-80 ${styles.gaps} `}>
         <SectionTitle
           heading={"Smart Services for Smarter Businesses​"}
           paragraph={<p></p>}
@@ -57,12 +57,9 @@ const ServiceDetail = () => {
             title={filterData.title}
           />
         </div>
-      </div>
-      <div className="container ptb-80 my-5">
-        <SectionTitle heading={"Our Process​"} />
-        <ProcessCircle />
-      </div>
-    </div>
+      </div> */}
+      <ProcessCircle />
+    </>
   );
 };
 
