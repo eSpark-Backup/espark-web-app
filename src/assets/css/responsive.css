@@ -183,6 +183,7 @@
   .drawerScroll{
     display: none;
     overflow: hidden;
+    height: 100vh;
   }
 
   .content>p {
@@ -323,7 +324,7 @@
 
   .mobileheading {
     font-size: 16px !important;
-    color: var(--color-secondary);
+    color: #2074b4;
     font-weight: 600;
     width: 100%;
 
@@ -337,8 +338,15 @@
 
   .mobileSelected {
     background-color: var(--color-primary);
-    color: white !important;
+    color: var(--color-primary);
   }
+
+  .mobileSelectedCollapse {
+    /* background-color: var(--color-primary); */
+    color: var(--color-primary) !important;
+
+  }
+
   .drawerScroll {
     overflow: scroll;
     height: 80vh !important;
