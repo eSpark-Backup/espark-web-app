@@ -6,7 +6,8 @@
   line-height: 140%;
   color: #3a3a3a;
 }
-
+ .paraText {color: black;
+font-size: ;}
 .service {
   width: 35%;
   margin: 0px 0px 30px 100px;
@@ -199,6 +200,7 @@
   .headingColumnMobile {
     padding: 5%;
   }
+ 
 
   .paraTexts {
     font-family: "Poppins";
