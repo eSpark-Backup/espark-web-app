@@ -1,104 +1,545 @@
 /* 2561px and above (Large Desktops) */
 @media (min-width: 2561px) {
-    /* Global Styling */
+  /* Global Styling */
 
-    /* Home Styling */
+  /* Home Styling */
 
-    /* Services Styling */
+  /* Services Styling */
 
-    /* Protfolio Styling */
+  /* Protfolio Styling */
 
-    /* Careers Styling */
+  /* Careers Styling */
 
-    /* Blogs Styling */
+  /* Blogs Styling */
 }
 
 /* 1921px to 2560px (Desktops) */
- @media (min-width: 1921px) and (max-width: 2560px) {
-    /* Global Styling */
+@media (min-width: 1921px) and (max-width: 2560px) {
+  /* Global Styling */
 
-    /* Home Styling */
+  /* Home Styling */
 
-    /* Services Styling */
+  /* Services Styling */
 
-    /* Protfolio Styling */
+  /* Protfolio Styling */
 
-    /* Careers Styling */
+  /* Careers Styling */
 
-    /* Blogs Styling */
+  /* Blogs Styling */
+
+  .container-fluid {
+    width: 75% !important;
+    /* border: 1px solid #000; */
+  }
+
+  .sliderWrapper {
+    width: 78% !important;
+    margin: auto;
+    text-align: center;
+  }
+
+  .ml-main-section {
+    height: 1200px;
+  }
+
+  .ml-main-section h1 {
+    font-size: 80px !important;
+  }
+
+  .ml-main-section p {
+    font-size: 30px !important;
+  }
+
+  .style_images__5tuvY {
+    width: 900px !important;
+  }
+
+  p {
+    font-size: 25px !important;
+    line-height: 1.3 !important;
+  }
+
+  .content>h2 {
+    font-size: 80px !important;
+  }
+
+  .styles_whyPoints__sAHvg {
+    font-size: 35px;
+    line-height: 1 !important;
+  }
+
+  .itemTxt {
+    font-size: 30px !important;
+  }
+
+  .itemTxt svg {
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  .logo {
+    width: 70%;
+    height: auto;
+  }
+
+  .headerBtn {
+    width: 220px !important;
+    height: 70px !important;
+    border-radius: 36px !important;
+  }
+
+  .btn-content {
+    font-size: 30px !important;
+  }
+
 }
 
 /* 1441px to 1920px (Laptops and Large Tablets) */
 @media (min-width: 1441px) and (max-width: 1920px) {
-    /* Global Styling */
+  .container-fluid {
+    width: 75% !important;
+  }
 
-    /* Home Styling */
+  .sliderWrapper {
+    width: 78% !important;
+    margin: auto;
+    text-align: center;
+  }
 
-    /* Services Styling */
+  .styles_image__wGAui {
+    width: 100%;
+    height: auto;
+    margin-top: 40px !important;
+  }
 
-    /* Protfolio Styling */
+  .styles_sociallink__usHjn {
+    display: flex;
+    align-items: end;
+    margin-right: 23px !important;
+    /* width: 110px; */
+  }
 
-    /* Careers Styling */
+  .style_images__HReD2 {
+    height: 200px !important;
+  }
 
-    /* Blogs Styling */
+  .style_titleText__jNp9Z {
+    font-size: 18px !important;
+  }
+
+  /* Global Styling */
+
+  /* Home Styling */
+
+  /* Services Styling */
+
+  /* Protfolio Styling */
+
+  /* Careers Styling */
+
+  /* Blogs Styling */
 }
 
 /* 1025px to 1440px (Small Laptops and Tablets) */
 @media (min-width: 1025px) and (max-width: 1440px) {
-    /* Global Styling */
+  /* Global Styling */
 
-    /* Home Styling */
+  /* Home Styling */
 
-    /* Services Styling */
+  /* Services Styling */
 
-    /* Protfolio Styling */
+  /* Protfolio Styling */
 
-    /* Careers Styling */
+  /* Careers Styling */
 
-    /* Blogs Styling */
+  /* Blogs Styling */
 }
 
 /* 767px to 1024px (Tablets and Mobile Devices in Landscape) */
 @media (min-width: 767px) and (max-width: 1024px) {
-    /* Global Styling */
+  /* Global Styling */
 
-    /* Home Styling */
+  /* Home Styling */
+  /*Client Testimonials*/
+  .testimonial {
+    height: 550px !important;
+  }
 
-    /* Services Styling */
+  textarea {
+    height: 30px !important;
+    width: 97% !important;
+  }
 
-    /* Protfolio Styling */
+  .content>h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 30px;
+    line-height: 100%;
+    color: var(--color-secondary) !important;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .drawerScroll{
+    display: none;
+    overflow: hidden;
+    height: 100vh;
+  }
 
-    /* Careers Styling */
+  .content>p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    margin-top: 10px;
+    color: #3a3a3a;
+  }
 
-    /* Blogs Styling */
+  .testimonial .name {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    text-align: center;
+    color: #00a099;
+  }
+
+  .testimonial .designation {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    padding: 0px 50px;
+    font-size: 15px;
+    line-height: 27px;
+    text-align: center;
+    color: #2b4e89;
+  }
+
+  .testimonial .testimonialText {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    text-align: center;
+    color: #3a3a3a;
+    padding: 0px 50px;
+  }
+
+  /* Services Styling */
+
+  /* Protfolio Styling */
+
+  /* Careers Styling */
+
+  /* Blogs Styling */
 }
 
 /* 426px to 766px (Most Mobile Devices) */
 @media (min-width: 426px) and (max-width: 766px) {
-    /* Global Styling */
+  br {
+    display: none !important;
+  }
 
-    /* Home Styling */
+  /* Global Styling */
 
-    /* Services Styling */
+  /* Home Styling */
+  /*testimonial Section */
+  .testimonial {
+    height: 500px !important;
+  }
 
-    /* Protfolio Styling */
+  .testimonial .image {
+    height: 148px !important;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid rgb(221, 118, 118);
+  }
 
-    /* Careers Styling */
+  /*Lets Talk Section */
+  textarea {
+    height: 30px !important;
+    width: 96% !important;
+  }
 
-    /* Blogs Styling */
+  .content>h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 30px;
+    line-height: 100%;
+    color: var(--color-secondary) !important;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .content>p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 140%;
+    text-align: center;
+    margin-top: 10px;
+    color: #3a3a3a;
+  }
+
+  /* Services Styling */
+
+  /* Protfolio Styling */
+
+  /* Careers Styling */
+
+  /* Blogs Styling */
+  /* Header Styling */
+  .mobileDrawer {
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--color-secondary) !important;
+  }
+    
+  .mobileDrawerCollapse .a {
+    padding: 10px 0px 0px 10px;
+    width: 100%;
+    color: black;
+    font-size: 13px !important;
+  }
+
+  .mobileDrawerCollapse .a :last-child {
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+
+  }
+
+  .mobilelinks {
+    border: 1px solid #000;
+  }
+
+  .mobileheading {
+    font-size: 16px !important;
+    color: #2074b4;
+    font-weight: 600;
+    width: 100%;
+
+  }
+
+  .mobileDrawer svg {
+    width: 15px;
+    height: 15px;
+    margin-top: 4px;
+  }
+
+  .mobileSelected {
+    background-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  .mobileSelectedCollapse {
+    /* background-color: var(--color-primary); */
+    color: var(--color-primary) !important;
+
+  }
+
+  .drawerScroll {
+    overflow: scroll;
+    height: 80vh !important;
+  }
+
+  .collapseChildSelected {
+    /* background-color: var(--color-primary); */
+    color: var(--color-primary) !important;
+
+  }
 }
 
 /* 0px to 425px (Smaller Mobile Devices) */
 @media (max-width: 425px) {
-    /* Global Styling */
+  br {
+    display: none !important;
+  }
 
-    /* Home Styling */
+  /* Global Styling */
 
-    /* Services Styling */
+  /* Home Styling */
+  /*testimonial Section */
 
-    /* Protfolio Styling */
+  .testimonial {
+    height: 440px !important;
+    /* width: 340px !important; */
+    /* margin: auto; */
+  }
 
-    /* Careers Styling */
+  .style_formbox__R2I\+f {
+    padding-right: 15px !important;
+    padding-top: 0px;
+  }
 
-    /* Blogs Styling */
+  .sizeControl {
+    margin-top: 30px !important;
+    width: 360px !important;
+    /* margin: 0 auto!important; */
+  }
+
+  .content>h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 25px;
+    line-height: 100%;
+    color: var(--color-secondary) !important;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .content>p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 140%;
+    text-align: center;
+    margin-top: 10px;
+    color: #3a3a3a;
+  }
+
+  .form-control {
+    height: 36px !important;
+  }
+
+  textarea {
+    height: 30px !important;
+    width: 96% !important;
+    border-radius: 10px !important;
+  }
+
+  /* Services Styling */
+
+  /* Protfolio Styling */
+
+  /* Careers Styling */
+
+  /* Blogs Styling */
+
+  /* Header Styling */
+  .mobileDrawer {
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--color-secondary) !important;
+    }
+   
+  .mobileDrawerCollapse .a {
+    padding: 10px 0px 0px 10px;
+    width: 100%;
+    color: black;
+  }
+
+  .mobileDrawerCollapse .a :last-child {
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+
+  }
+
+  .drawerScroll {
+    overflow: scroll;
+    height: 80vh !important;
+  }
+
+  .mobilelinks {
+    border: 1px solid #000;
+  }
+
+  .mobileheading {
+    font-size: 16px !important;
+    color: #2074b4;
+    font-weight: 600;
+    /* border-bottom: 2px solid black; */
+    width: 100%;
+
+  }
+
+  .mobileDrawer svg {
+    width: 15px;
+    height: 15px;
+    margin-top: 4px;
+  }
+
+  .mobileSelected {
+    background-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  .mobileSelectedCollapse {
+    /* background-color: var(--color-primary); */
+    color: var(--color-primary) !important;
+
+  }
+
+  
+}
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+
+
+
+
+
+
+
+@media (max-width: 412px) {
+  .sizeControl {
+    margin-top: 30px !important;
+    width: 350px !important;
+    /* margin: 0 auto!important; */
+  }
+}
+
+
+@media  (max-width: 375px) {
+  .sizeControl {
+    margin-top: 30px !important;
+    width: 310px !important;
+    /* margin: 0 auto!important; */
+  }
+}
+
+@media (max-width: 320px) {
+  .container-fluid {
+    width: 99% !important;
+  }
+
+  .sizeControl {
+    margin-top: 30px !important;
+    width: 290px !important;
+    /* margin: 0 auto!important; */
+  }
+
+  .mobileResponsive {
+    position: relative;
+    padding-left: 60px;
+  }
+
+  .contact-area .container-fluid {
+    width: auto;
+  }
+}
+
+
+@media only screen and (max-width: 280px) {
+  .sizeControl {
+    margin-top: 30px !important;
+    width: 250px !important;
+    /* margin: 0 auto!important; */
+  }
 }

@@ -53,6 +53,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
           class="btn btn-light rounded-pill"
           to={link}
           onClick={onClick}
+          style={{ width: "100%", boxShadow: "none" }}
           disabled={disabled}
         >
           {title}
@@ -88,10 +89,10 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
   if (design === 6) {
     return (
       <div>
-        <Link class="read-more-btn " to={link}>
+        <Link class="read-more-btn " to={link} onClick={onClick}>
           {title}
           {"  "}
-          <FaRegArrowAltCircleRight margin={10} />
+          <FaLongArrowAltRight style={{ marginTop: 0 }} margin={0} />
         </Link>
       </div>
     );
@@ -159,7 +160,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
               fontSize: 30,
               height: 46,
               boxShadow: "none",
-              fontWeight:600
+              fontWeight: 600,
             }}
           >
             {title}
@@ -177,8 +178,28 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
           onClick={onClick}
           disabled={disabled}
         >
-          <button className="roundbutton rounded-pill" >{title}</button>
+          <button className="roundbutton rounded-pill">{title}</button>
         </a>
+      </>
+    );
+  }
+
+  if (design === 14) {
+    return (
+      <>
+        <button
+          onClick={onClick}
+          className="roundbutton rounded-pill"
+          style={{
+            width: "100%",
+            fontSize: 50,
+            height: 46,
+            boxShadow: "none",
+            fontWeight: 600,
+          }}
+        >
+          {title}
+        </button>
       </>
     );
   }

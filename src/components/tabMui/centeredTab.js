@@ -18,14 +18,16 @@ function CenteredTabs({ cardHandler, tabSelect, tabData }) {
           >
             <p
               className={
-                tabSelect === item.id
+                tabSelect === item.name
                   ? `${styles.txtColorTab}`
                   : `${styles.txtColorTabs}`
               }
             >
               {item.title}
             </p>
-            <div className={styles.barDiv}>{tabSelect === item.id && <hr className={styles.bar} />}</div>
+            <div className={styles.barDiv}>
+              {tabSelect === item.name && <hr className={styles.bar} />}
+            </div>
           </div>
         );
       })}

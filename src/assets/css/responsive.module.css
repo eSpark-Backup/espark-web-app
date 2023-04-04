@@ -1,0 +1,106 @@
+/* 2561px and above (Large Desktops) */
+@media (min-width: 2561px) {
+    /* Global Styling */
+.heading{
+    border: 1px solid black !important;
+}
+    /* Home Styling */
+
+    /* Services Styling */
+
+    /* Protfolio Styling */
+
+    /* Careers Styling */
+
+    /* Blogs Styling */
+}
+
+/* 1921px to 2560px (Desktops) */
+ @media (min-width: 1921px) and (max-width: 2560px) {
+    /* Global Styling */
+
+    /* Home Styling */
+
+    /* Services Styling */
+
+    /* Protfolio Styling */
+
+    /* Careers Styling */
+
+    /* Blogs Styling */
+}
+
+/* 1441px to 1920px (Laptops and Large Tablets) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+    /* Global Styling */
+
+    /* Home Styling */
+
+    /* Services Styling */
+
+    /* Protfolio Styling */
+
+    /* Careers Styling */
+
+    /* Blogs Styling */
+}
+
+/* 1025px to 1440px (Small Laptops and Tablets) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /* Global Styling */
+
+    /* Home Styling */
+
+    /* Services Styling */
+
+    /* Protfolio Styling */
+
+    /* Careers Styling */
+
+    /* Blogs Styling */
+}
+
+/* 767px to 1024px (Tablets and Mobile Devices in Landscape) */
+@media (min-width: 767px) and (max-width: 1024px) {
+    /* Global Styling */
+
+    /* Home Styling */
+
+    /* Services Styling */
+
+    /* Protfolio Styling */
+
+    /* Careers Styling */
+
+    /* Blogs Styling */
+}
+
+/* 426px to 766px (Most Mobile Devices) */
+@media (min-width: 426px) and (max-width: 766px) {
+    /* Global Styling */
+
+    /* Home Styling */
+
+    /* Services Styling */
+
+    /* Protfolio Styling */
+
+    /* Careers Styling */
+
+    /* Blogs Styling */
+}
+
+/* 0px to 425px (Smaller Mobile Devices) */
+@media (max-width: 425px) {
+    /* Global Styling */
+
+    /* Home Styling */
+
+    /* Services Styling */
+
+    /* Protfolio Styling */
+
+    /* Careers Styling */
+
+    /* Blogs Styling */
+}

@@ -11,11 +11,79 @@ function WhyeSpark({ heading }) {
     <div className={`${styles.whyEsparkMargin}`}>
       <div className="solutions-area">
         <div className="container-fluid">
-          <div className="row">
+          <div id={styles["whylinksmobile"]} className={`row`}>
+            {sociallinks.map((items) => {
+              return (
+                <div id={styles["whylinksbtn"]} className={`col-4`}>
+                  <a href={items.url} target="_blank">
+                    <button
+                      className="roundbutton rounded-pill"
+                      style={{
+                        fontSize: 30,
+                        height: 46,
+                        boxShadow: "none",
+                        fontWeight: 600,
+                      }}>
+                      {items.name}
+                    </button>
+                  </a>
+                </div>
+              );
+            })}
+          </div>
+          <div className={styles.mobile}>
+            <div className="row">
+              <div className="col-6 d-flex align-items-center">
+                <SectionTitle
+                  height={"2px"}
+                  width={"126px"}
+                  heading={heading}
+                  padding={"0px"}
+                  paragraph={
+                    <p
+                      className={`p-2  m-auto ${styles.whyEsparkContentColor}`}>
+                      We focus on custom tailored software and IoT based
+                      solutions for our businesses. Through our broad range of
+                      services that can help clients and businesses to optimize
+                      their operations, save cost and promote their businesses
+                      most effectively. Whether you need help with software
+                      development, hardware design, or technology consulting,
+                      eSpark Consultancy Group has the expertise to help you
+                      achieve your goals.
+                    </p>
+                  }
+                />
+              </div>
+              <div className="col-6">
+                <div className="mt-5 image">
+                  <img src={whyesaprk} alt="" width={"100%"} />
+                </div>
+              </div>
+            </div>
+            <div className="row mt-4">
+              {whypoints.map((items, index) => {
+                return (
+                  <div className="col-6 mb-3">
+                    <div>
+                      <h4 className={styles.whyPoints}>
+                        {" "}
+                        <FaCheckCircle size={25} color={"#11A79c"} />{" "}
+                        {items.name}
+                      </h4>
+                      <p
+                        className={styles.whyPointsPara}
+                        dangerouslySetInnerHTML={{ __html: items.content }}></p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className={`row ${styles.desktop} `}>
             <div
               id={styles["whylinks"]}
-              className={`col-lg-1 col-md-12 d-flex flex-column justify-content-around mt-5 pb-3`}
-            >
+              className={`col-lg-1 col-md-12 col-sm-12 d-flex flex-column justify-content-around mx-auto`}
+              style={{ marginLeft: -23 }}>
               {sociallinks.map((items) => {
                 return (
                   <div className={`col-lg-12 ${styles.sociallink}`}>
@@ -25,8 +93,7 @@ function WhyeSpark({ heading }) {
               })}
             </div>
             <div
-              className={`col-lg-5  col-md-12 d-flex flex-column justify-content-space-between ${styles.whyeSparksColumn}`}
-            >
+              className={`col-lg-5 col-md-6 col-sm-12 d-flex flex-column justify-content-space-between ${styles.whyeSparksColumn}`}>
               <SectionTitle
                 height={"2px"}
                 width={"126px"}
@@ -45,34 +112,14 @@ function WhyeSpark({ heading }) {
                   </p>
                 }
               />
-              <div className="mt-3 h-100  w-100">
-                <img src={whyesaprk} alt="" width={"100%"} height={"100%"} />
+              <div className={`mt-5 ${styles.image}`}>
+                <img src={whyesaprk} alt="" width={"100%"} />
               </div>
             </div>
-            <div
-              id={styles["whylinksmobile"]}
-              className={`col-lg-3 col-sm-12 ${styles.buttons}`}
-            >
-              {sociallinks.map((items) => {
-                return (
-                  <div
-                    id={styles["whylinksbtn"]}
-                    className={`col-lg-4 col-md-4 col-sm-12 col-xs-12 p-10`}
-                  >
-                    <Button
-                      title={items.name}
-                      link={items.url}
-                      design={2}
-                      className={styles.button}
-                    />
-                  </div>
-                );
-              })}
-            </div>
+
             <div
               id={styles["whypoints"]}
-              className={`col-lg-6 col-md-12 col-sm-12`}
-            >
+              className={`col-lg-6 col-md-6 col-sm-12 ${styles.whypoints}`}>
               {whypoints.map((items, index) => {
                 return (
                   <div
@@ -80,19 +127,16 @@ function WhyeSpark({ heading }) {
                       index == 0
                         ? `${styles.points} d-flex`
                         : `${styles.points} d-flex ${styles.imgCustomMargin}`
-                    }
-                  >
+                    }>
                     <div
-                      className={`${styles.icon} col-sm-1 col-md-1 col-lg-1`}
-                    >
-                      <FaCheckCircle size={42} color={"#11A79c"} />
+                      className={`${styles.icon} col-sm-1 col-md-1 col-lg-1`}>
+                      <FaCheckCircle size={38} color={"#11A79c"} />
                     </div>
-                    <div className={`col-sm-11 col-md-11 col-lg-11`}>
+                    <div>
                       <h4 className={styles.whyPoints}>{items.name}</h4>
                       <p
                         className={styles.whyPointsPara}
-                        dangerouslySetInnerHTML={{ __html: items.content }}
-                      ></p>
+                        dangerouslySetInnerHTML={{ __html: items.content }}></p>
                     </div>
                   </div>
                 );

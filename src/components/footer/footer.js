@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-import {
-  FaFacebookF,
-  FaMapMarkerAlt,
-  FaPhoneAlt,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaFacebookF, FaMapMarkerAlt, FaTwitter } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { MdAttachEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
 
 // import { HiChevronDoubleRight } from "react-icons/hi";
 
@@ -22,17 +18,17 @@ const Footer = () => {
         <footer className="footer-area">
           <div className="container-fluid  footer_areas ">
             <div className="row">
-              <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="col-lg-4 col-md-4 col-sm-12">
                 <div className="single-footer-widget">
                   <div className="logo">
-                    <a href="/">
+                    <Link href="/">
                       <img
                         src={require("../../assets/images/logo.png")}
                         alt="logo"
                       />
-                    </a>
+                    </Link>
                   </div>
-                  <p>
+                  <p className="footer-about">
                     At eSpark Consulting Group, we provide customized and
                     innovative software IoT-based. Our broad range of services
                     is aimed to help businesses optimize their processes, reduce
@@ -67,21 +63,12 @@ const Footer = () => {
                           <FaTwitter />
                         </a>
                       </li>
-                      {/* <li>
-                      <a
-                        href="https://www.linkedin.com/company/esparkconsgroup"
-                        className="linkedin"
-                        target="_blank"
-                      >
-                        <FaLinkedinIn />
-                      </a>
-                    </li> */}
                     </ul>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6 col-sm-6 footer">
-                <div className="single-footer-widget pl-5 explores">
+              <div className="col-lg-4 col-md-4 col-sm-6 footer">
+                <div className="single-footer-widget pl-5 explores exploreSectionWidth">
                   <h3>Explore</h3>
                   <ul className="list">
                     <li>
@@ -143,48 +130,82 @@ const Footer = () => {
                 </ul>
               </div>
             </div> */}
-              <div className="col-lg-5 col-md-6 col-sm-12 footers">
+              <div className="col-lg-4 col-md-4 col-sm-12 footers">
                 <div className="single-footer-widget contacts-det">
                   <h3>Contact Detail</h3>
-                  <ul className="list">
-                    <li>
-                      <a href="tel:+923336006055">
-                        <FaPhoneAlt className="icon-margin" /> +92(333-6006055)
+
+                  <table className="contact-table">
+                    <tbody>
+                      <tr className="d-flex">
+                        <td>
+                          <FaPhoneAlt className="icon-margin" />
+                        </td>
+                        <td>
+                          <a href="tel:+923232788259">+92(323-2788259)</a>
+                        </td>
+                      </tr>
+
+                      <tr className="d-flex">
+                        <td>
+                          <MdAttachEmail className="icon-margin" />
+                        </td>
+                        <td>
+                          <a href="mailto:info@eSparkConsultingGroup.com">
+                            info@esparkconsultants.com
+                          </a>
+                        </td>
+                      </tr>
+                      <tr className="d-flex">
+                        <td>
+                          <FaMapMarkerAlt className="icon-margin" />
+                        </td>
+                        <td>
+                          <a
+                            href="https://www.google.com/maps/dir//eSpark+Consulting+Group+301%2FB+3rd+Floor+%26+401%2FA+4th+Floor,+Blossom+Trade+Centre+Block+1+Gulistan-e-Johar,+Karachi,+74300/@24.929158,67.115604,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb33feab1c28595:0xa3b2a5dc2f97a82e"
+                            target="_blank"
+                            className="anchorss"
+                          >
+                            eSpark Consulting Group,
+                            <br />
+                            301/B 3rd Floor & 401/A 4th Floor,
+                            <br /> Blossom Trade Centre,
+                            <br /> Block 1,Gulistan-e-Johar,
+                            <br /> Karachi, 74300
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  {/* <ul className="list ">
+                    <li className="phone">
+                      <a href="tel:+923232788259">
+                        <FaPhoneAlt className="icon-margin" />
+                        +92(323-2788259)
                       </a>
                     </li>
-                    <li>
+                    <li className="email">
                       <a href="mailto:info@eSparkConsultingGroup.com">
-                        <MdAttachEmail className="icon-margin" />{" "}
+                        <MdAttachEmail className="icon-margin" /> 
                         info@esparkconsultants.com
                       </a>
                     </li>
-                    {/* <li>
-                    <a href="/">
-                      <BsGlobe /> www.eSparkConsultingGroup.com
-                    </a>
-                  </li> */}
-                    <li>
+                    <li className="address">
                       <a
                         href="https://www.google.com/maps/dir//eSpark+Consulting+Group+301%2FB+3rd+Floor+%26+401%2FA+4th+Floor,+Blossom+Trade+Centre+Block+1+Gulistan-e-Johar,+Karachi,+74300/@24.929158,67.115604,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb33feab1c28595:0xa3b2a5dc2f97a82e"
                         target="_blank"
                         className="anchorss"
                       >
-                        <FaMapMarkerAlt className="icon-margin" />{" "}
-                        <span>
-                          eSpark Consulting Group, 301/B <br />{" "}
-                          <span className="spaces">
-                            3rd Floor & 401/A 4th Floor, Blossom
-                          </span>
-                          <br />
-                          <span className="spaces">
-                            Trade Centre, Block 1, Gulistan-e-Johar,
-                          </span>
-                          <br />
-                          <span className="spaces">Karachi, 74300</span>
-                        </span>
+                        <FaMapMarkerAlt className="icon-margin" /> eSpark
+                        Consulting Group, 301/B <br /> 3rd Floor & 401/A 4th
+                        Floor, Blossom
+                        <br />
+                        Trade Centre, Block 1, Gulistan-e-Johar,
+                        <br />
+                        Karachi, 74300
                       </a>
                     </li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             </div>
