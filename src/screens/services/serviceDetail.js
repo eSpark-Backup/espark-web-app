@@ -27,6 +27,7 @@ const ServiceDetail = () => {
   const cardHandler = (item) => {
     const { name } = item;
     setSelectTab(name);
+    localStorage?.setItem("child_id", name);
     setTabCard(item);
   };
   return (
