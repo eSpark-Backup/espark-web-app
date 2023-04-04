@@ -31,6 +31,7 @@
     width: 75% !important;
     /* border: 1px solid #000; */
   }
+
   .sliderWrapper {
     width: 78% !important;
     margin: auto;
@@ -58,7 +59,7 @@
     line-height: 1.3 !important;
   }
 
-  .content > h2 {
+  .content>h2 {
     font-size: 80px !important;
   }
 
@@ -90,6 +91,7 @@
   .btn-content {
     font-size: 30px !important;
   }
+
 }
 
 /* 1441px to 1920px (Laptops and Large Tablets) */
@@ -97,6 +99,7 @@
   .container-fluid {
     width: 75% !important;
   }
+
   .sliderWrapper {
     width: 78% !important;
     margin: auto;
@@ -167,7 +170,7 @@
     width: 97% !important;
   }
 
-  .content > h2 {
+  .content>h2 {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700 !important;
@@ -177,8 +180,13 @@
     text-align: center;
     margin-top: 15px;
   }
+  .drawerScroll{
+    display: none;
+    overflow: hidden;
+    height: 100vh;
+  }
 
-  .content > p {
+  .content>p {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -257,7 +265,7 @@
     width: 96% !important;
   }
 
-  .content > h2 {
+  .content>h2 {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700 !important;
@@ -268,7 +276,7 @@
     margin-top: 15px;
   }
 
-  .content > p {
+  .content>p {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -286,6 +294,69 @@
   /* Careers Styling */
 
   /* Blogs Styling */
+  /* Header Styling */
+  .mobileDrawer {
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--color-secondary) !important;
+  }
+    
+  .mobileDrawerCollapse .a {
+    padding: 10px 0px 0px 10px;
+    width: 100%;
+    color: black;
+    font-size: 13px !important;
+  }
+
+  .mobileDrawerCollapse .a :last-child {
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+
+  }
+
+  .mobilelinks {
+    border: 1px solid #000;
+  }
+
+  .mobileheading {
+    font-size: 16px !important;
+    color: #2074b4;
+    font-weight: 600;
+    width: 100%;
+
+  }
+
+  .mobileDrawer svg {
+    width: 15px;
+    height: 15px;
+    margin-top: 4px;
+  }
+
+  .mobileSelected {
+    background-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  .mobileSelectedCollapse {
+    /* background-color: var(--color-primary); */
+    color: var(--color-primary) !important;
+
+  }
+
+  .drawerScroll {
+    overflow: scroll;
+    height: 80vh !important;
+  }
+
+  .collapseChildSelected {
+    /* background-color: var(--color-primary); */
+    color: var(--color-primary) !important;
+
+  }
 }
 
 /* 0px to 425px (Smaller Mobile Devices) */
@@ -316,7 +387,7 @@
     /* margin: 0 auto!important; */
   }
 
-  .content > h2 {
+  .content>h2 {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700 !important;
@@ -327,7 +398,7 @@
     margin-top: 15px;
   }
 
-  .content > p {
+  .content>p {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -355,9 +426,87 @@
   /* Careers Styling */
 
   /* Blogs Styling */
+
+  /* Header Styling */
+  .mobileDrawer {
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--color-secondary) !important;
+    }
+   
+  .mobileDrawerCollapse .a {
+    padding: 10px 0px 0px 10px;
+    width: 100%;
+    color: black;
+  }
+
+  .mobileDrawerCollapse .a :last-child {
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+
+  }
+
+  .drawerScroll {
+    overflow: scroll;
+    height: 80vh !important;
+  }
+
+  .mobilelinks {
+    border: 1px solid #000;
+  }
+
+  .mobileheading {
+    font-size: 16px !important;
+    color: #2074b4;
+    font-weight: 600;
+    /* border-bottom: 2px solid black; */
+    width: 100%;
+
+  }
+
+  .mobileDrawer svg {
+    width: 15px;
+    height: 15px;
+    margin-top: 4px;
+  }
+
+  .mobileSelected {
+    background-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  .mobileSelectedCollapse {
+    /* background-color: var(--color-primary); */
+    color: var(--color-primary) !important;
+
+  }
+
+  
+}
+.ReactCollapse--collapse {
+  transition: height 500ms;
 }
 
-@media (max-width: 375px) {
+
+
+
+
+
+
+@media (max-width: 412px) {
+  .sizeControl {
+    margin-top: 30px !important;
+    width: 350px !important;
+    /* margin: 0 auto!important; */
+  }
+}
+
+
+@media  (max-width: 375px) {
   .sizeControl {
     margin-top: 30px !important;
     width: 310px !important;
@@ -380,7 +529,17 @@
     position: relative;
     padding-left: 60px;
   }
+
   .contact-area .container-fluid {
     width: auto;
+  }
+}
+
+
+@media only screen and (max-width: 280px) {
+  .sizeControl {
+    margin-top: 30px !important;
+    width: 250px !important;
+    /* margin: 0 auto!important; */
   }
 }

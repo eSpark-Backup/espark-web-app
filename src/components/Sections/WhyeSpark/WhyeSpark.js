@@ -63,7 +63,7 @@ function WhyeSpark({ heading }) {
             <div className="row mt-4">
               {whypoints.map((items, index) => {
                 return (
-                  <div className="col-6">
+                  <div className="col-6 mb-3">
                     <div>
                       <h4 className={styles.whyPoints}>
                         {" "}

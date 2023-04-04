@@ -15,17 +15,17 @@ import { useEffect } from "react";
 const ServiceDetail = () => {
   const params = useParams();
   const filterData = services.filter((item) => params.id === item.path);
-  const getId = localStorage.getItem('child_id');
+  const getId = localStorage.getItem("child_id");
 
   const [tabCard, setTabCard] = useState({});
   const [tabSelect, setSelectTab] = useState("");
-  useEffect(()=>{
-    setSelectTab(getId)
-  },  [getId])
+  useEffect(() => {
+    setSelectTab(getId);
+  }, [getId]);
 
   const cardHandler = (item) => {
-    const { id } = item;
-    setSelectTab(id);
+    const { name } = item;
+    setSelectTab(name);
     setTabCard(item);
   };
   return (
