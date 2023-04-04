@@ -239,33 +239,69 @@ const Careers = () => {
         {careersData && careersData.length > 0 ? (
           careersData.map((item) => {
             return (
-              <div className="row border-top p-3">
-                <div class="col-lg-3 col-12 col-sm-3 ">
-                  <h4 id="data_job_num1" data-job-num="1">
-                    {item?.title?.rendered}
-                  </h4>
+              <>
+                <div class="d-sm-none card">
+                  <div class="card-body">
+                    <div className="row border-top p-3">
+                      <div class="col-lg-3 col-12 col-sm-3 ">
+                        <h4 id="data_job_num1" data-job-num="1">
+                          {item?.title?.rendered}
+                        </h4>
 
-                  <p>
-                    Karachi
-                    <br />
-                    <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
-                  </p>
+                        <p>
+                          Karachi
+                          <br />
+                          <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
+                        </p>
+                      </div>
+                      <div class="col-lg-6 col-sm-6 ">
+                        <h4>Description</h4>
+                        <p
+                          dangerouslySetInnerHTML={{
+                            __html: item?.excerpt.rendered,
+                          }}></p>
+                      </div>
+                      <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                        <Button
+                          title="Apply Now"
+                          link={`/careers/${item.id}`}
+                          design={1}
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-6 col-sm-6 ">
-                  <h4>Description</h4>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: item?.excerpt.rendered,
-                    }}></p>
+
+                <div class="d-none d-sm-block">
+                  <div className="row border-top p-3">
+                    <div class="col-lg-3 col-12 col-sm-3 ">
+                      <h4 id="data_job_num1" data-job-num="1">
+                        {item?.title?.rendered}
+                      </h4>
+
+                      <p>
+                        Karachi
+                        <br />
+                        <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
+                      </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 ">
+                      <h4>Description</h4>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: item?.excerpt.rendered,
+                        }}></p>
+                    </div>
+                    <div class="col-lg-3 d-flex align-items-center justify-content-center">
+                      <Button
+                        title="Apply Now"
+                        link={`/careers/${item.id}`}
+                        design={1}
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-3 d-flex align-items-center justify-content-center">
-                  <Button
-                    title="Apply Now"
-                    link={`/careers/${item.id}`}
-                    design={1}
-                  />
-                </div>
-              </div>
+              </>
             );
           })
         ) : showMessage ? (
