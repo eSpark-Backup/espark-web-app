@@ -14,6 +14,8 @@ export default function Blog() {
   const [count, setCount] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
 
+
+
   useEffect(() => {
     const main = async () => {
       const data = await getApiCall();

@@ -15,7 +15,6 @@ import { useEffect } from "react";
 const ServiceDetail = () => {
   const params = useParams();
   const filterData = services.filter((item) => params.id === item.path);
-
   const getId = localStorage.getItem('child_id');
 
   const [tabCard, setTabCard] = useState({});

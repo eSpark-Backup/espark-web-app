@@ -16,10 +16,10 @@
     align-items: center;
 }
 
-.imgPlacement {
+.imgPlacement>img {
     position: absolute;
     width: 200px;
-    height: 200px;
+    height: auto;
     left: 0px;
     top: 250px;
 }
@@ -43,3 +43,19 @@
 
 /* @media screen and (min-width: 400px) and (max-width:749px) {} */
 
+@media screen and (min-width: 240px) and (max-width:399) {
+    .txtDescription {
+        font-size: 10px !important;
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        padding: 0px 50px;
+        color: #000000;
+        /* border: 2px solid red; */
+    }
+
+    .imgPlacement > img {
+        width: 140px;
+        top: 240px;
+    }
+}

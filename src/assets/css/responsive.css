@@ -138,13 +138,12 @@
 }
 
 /* 1025px to 1440px (Small Laptops and Tablets) */
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
   /* Global Styling */
 
   /* Home Styling */
 
   /* Services Styling */
-
 
   /* Protfolio Styling */
 
@@ -224,26 +223,6 @@
 
   /* Services Styling */
 
-      /*Below tab Card With Image Section start */
-      .txtDescription {
-        font-size: 21px !important;
-        display: flex;
-        align-items: center;
-        text-align: justify;
-        padding: 0px 50px;
-        color: #000000;
-        /* border: 2px solid red; */
-      }
-      .tabWrapper{
-        height: 310px;
-      }
-      .imgPlacement {
-          width: 140px;
-          top: 285px !important;
-      }
-    /*Below tab Card With Image Section End */
-
-
   /* Protfolio Styling */
 
   /* Careers Styling */
@@ -302,21 +281,6 @@
 
   /* Services Styling */
 
-  .txtDescription {
-    font-size: 10px !important;
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    padding: 0px 50px;
-    color: #000000;
-    /* border: 2px solid red; */
-}
-
-.imgPlacement>img {
-    width: 140px;
-    top: 240px;
-}
-
   /* Protfolio Styling */
 
   /* Careers Styling */
@@ -326,28 +290,72 @@
 
 /* 0px to 425px (Smaller Mobile Devices) */
 @media (max-width: 425px) {
-    /* Global Styling */
-
-    /* Home Styling */
-
-    /* Services Styling */
-    .txtDescription {
-      font-size: 8px !important;
-      display: flex;
-      align-items: center;
-      text-align: justify;
-      padding: 0px 50px;
-      color: #000000;
-      /* border: 2px solid red; */
+  br {
+    display: none !important;
   }
 
-  .imgPlacement {
-      width: 150px!important;
-      top: 225px!important;
-  }
-   
+  /* Global Styling */
 
-    /* Protfolio Styling */
+  /* Home Styling */
+  /*testimonial Section */
+
+  .testimonial {
+    height: 440px !important;
+    /* width: 340px !important; */
+    /* margin: auto; */
+  }
+
+  .style_formbox__R2I\+f {
+    padding-right: 15px !important;
+    padding-top: 0px;
+  }
+
+  .sizeControl {
+    margin-top: 30px !important;
+    width: 360px !important;
+    /* margin: 0 auto!important; */
+  }
+
+  .content > h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 25px;
+    line-height: 100%;
+    color: var(--color-secondary) !important;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .content > p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px !important;
+    line-height: 140%;
+    text-align: center;
+    margin-top: 10px;
+    color: #3a3a3a;
+  }
+
+  .form-control {
+    height: 36px !important;
+  }
+
+  textarea {
+    height: 30px !important;
+    width: 96% !important;
+    border-radius: 10px !important;
+  }
+
+  /* Services Styling */
+
+  /* Protfolio Styling */
+
+  /* Careers Styling */
+
+  /* Blogs Styling */
+}
 
 @media (max-width: 375px) {
   .sizeControl {
@@ -357,26 +365,22 @@
   }
 }
 
-    /* Blogs Styling */
-
-    .txtDescription {
-      font-size: 13px !important;
-      display: flex;
-      align-items: center;
-      text-align: justify;
-      padding: 0px 30px!important;
-      color: #000000;
-      /* border: 2px solid red; */
+@media (max-width: 320px) {
+  .container-fluid {
+    width: 99% !important;
   }
 
-
-  .tabWrapper{
-    height: 330px;
+  .sizeControl {
+    margin-top: 30px !important;
+    width: 290px !important;
+    /* margin: 0 auto!important; */
   }
 
-  .imgPlacement  {
-    width: 125px!important;
-    top: 270px!important;
+  .mobileResponsive {
+    position: relative;
+    padding-left: 60px;
+  }
+  .contact-area .container-fluid {
+    width: auto;
   }
 }
-
