@@ -5,7 +5,7 @@ import "./style.css";
 
 function ProcessCircle() {
   return (
-    <div className="container-fluid ptb-80 my-5">
+    <div className="container-fluid ptb-80 ">
       <SectionTitle heading={"Our Process​"} />
       <div className="row d-flex justify-content-around process-circle">
         {ourProcess?.map((item) => (

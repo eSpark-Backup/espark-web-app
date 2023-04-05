@@ -31828,9 +31828,10 @@ blockquote:after {
     .ml-main-section {
         background-position: 50%;
         padding-top: 20px;
-        padding-bottom: 140px
+        padding-bottom: 140px; 
+        height:700px !important;
     }
-
+.itemTxt{font-size: 16px !important;}
     .ml-main-section .ml-banner-content h1 {
         font-size: 30px
     }
