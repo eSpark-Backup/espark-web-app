@@ -15,3 +15,10 @@ input:focus {
     background-color: white!important;
 
   }
+    input{
+      height: 50px !important;
+      border-radius: 5px !important;
+    }
+                .PhoneInput{
+          border-radius: 5px;
+        }

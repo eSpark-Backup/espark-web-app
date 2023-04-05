@@ -31,25 +31,40 @@
 }
 .jobDetails > h2 {
   line-height: 1.8;
+  font-size: 24px;
+}
+.jobsInfo > p {
+  line-height: 1.2;
+  color: black;
+  height: 30px;
+  font-size: 16px !important;
+}
+.jobsInfo > strong {
+  line-height: 1.2;
+  color: var(--color-secondary) !important;
 }
 .jobDetails > p {
   line-height: 1.8;
+  color: black;
+  font-size: 16px !important;
 }
 .jobDetails > ul {
   padding-left: 20px;
   list-style-type: disc !important;
+  font-size: 16px;
 }
 .jobDetails > ol {
   padding-left: 20px;
   list-style-type: decimal !important;
+  font-size: 16px;
 }
-.paragraph .page-title-area{
-  font-family: 'Poppins';
+.paragraph .page-title-area {
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700 !important;
   font-size: 50px;
   line-height: 100%;
-  color: var(--color-secondary)!important;
+  color: var(--color-secondary) !important;
   text-align: center;
   margin-top: 15px;
 }

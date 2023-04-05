@@ -147,68 +147,69 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
   };
   return (
     <div>
-      <div class={`contact-area pt-80 ${!modal ? "pb-80" : null}`}>
+      <div class={`contact-area  ${!modal ? "pb-80 pt-80" : null}`}>
         {/* <div class="container"> */}
-          {!link?.includes("careers") ? (
-            <div class="section-title">
-              <SectionTitle
-                padding={10}
-                heading={"Get In Touch With Us"}
-                paragraph={
-                  "Anything On your Mind. We’ll Be Glad To Assist You!"
-                }
+        {!link?.includes("careers") ? (
+          <div class="section-title">
+            <SectionTitle
+              padding={10}
+              heading={"Get In Touch With Us"}
+              paragraph={"Anything On your Mind. We’ll Be Glad To Assist You!"}
+            />
+          </div>
+        ) : (
+          <div class="section-title">
+            <SectionTitle
+              padding={10}
+              heading={"Apply For This Position"}
+              my={2}
+            />
+          </div>
+        )}
+        <div class="row align-items-center">
+          {!modal && (
+            <div class="col-lg-6 col-md-12">
+              <img
+                src={require("../../assets/images/contact-img.png")}
+                alt="image"
               />
             </div>
-          ) : (
-            <div class="section-title">
-              <SectionTitle padding={10} heading={"Apply For This Position"} my={2}/>
-            </div>
           )}
-          <div class="row align-items-center">
-            {!modal && (
-              <div class="col-lg-6 col-md-12">
-                <img
-                  src={require("../../assets/images/contact-img.png")}
-                  alt="image"
-                />
-              </div>
-            )}
-            <div
-              class={`col-lg-${
-                modal || link?.includes("careers") ? "12" : 6
-              } col-md-12`}
-            >
-              <form id="contactForm" ref={form} onSubmit={sendEmail}>
-                <div class="row">
-                  <div class="col-lg-12 col-md-12">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        required
-                        name="name"
-                        placeholder="Your Name *"
-                        class="form-control"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                      />
-                      <div class="invalid-feedback"></div>
-                    </div>
+          <div
+            class={`col-lg-${
+              modal || link?.includes("careers") ? "12" : 6
+            } col-md-12`}>
+            <form id="contactForm" ref={form} onSubmit={sendEmail}>
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      required
+                      name="name"
+                      placeholder="Your Name *"
+                      class="form-control"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                    />
+                    <div class="invalid-feedback"></div>
                   </div>
-                  <div class="col-lg-12 col-md-12">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        required
-                        name="email"
-                        placeholder="Your email address *"
-                        class="form-control"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                      />
-                      <div class="invalid-feedback"></div>
-                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      required
+                      name="email"
+                      placeholder="Your email address *"
+                      class="form-control"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <div class="invalid-feedback"></div>
                   </div>
-                  {/* <div class="col-lg-12 col-md-12">
+                </div>
+                {/* <div class="col-lg-12 col-md-12">
                     <div class="form-group ">
                       <PhoneInput
                         international
@@ -225,31 +226,29 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
                     </div>
                   </div> */}
 
-                  <div
-                    class={
-                      !link?.includes("careers")
-                        ? "col-lg-6 col-md-6"
-                        : "col-lg-12 col-md-12"
-                    }
-                  >
-                    <div class="form-group ">
-                      <PhoneInput
-                        international
-                        required
-                        defaultCountry="PK"
-                        placeholder="Enter phone number"
-                        maxlength={15}
-                        value={phone}
-                        onChange={ (e) => {
-                          if (e) {
-                            setPhone(e.slice(0, limit));
-                          }
+                <div
+                  class={
+                    !link?.includes("careers")
+                      ? "col-lg-6 col-md-6"
+                      : "col-lg-12 col-md-12"
+                  }>
+                  <div class="form-group ">
+                    <PhoneInput
+                      international
+                      required
+                      defaultCountry="PK"
+                      placeholder="Enter phone number"
+                      maxlength={15}
+                      value={phone}
+                      onChange={(e) => {
+                        if (e) {
+                          setPhone(e.slice(0, limit));
                         }
-                        }
-                      />
-                      <div class="invalid-feedback"></div>
-                    </div>
-                    {/* <div class="form-group">
+                      }}
+                    />
+                    <div class="invalid-feedback"></div>
+                  </div>
+                  {/* <div class="form-group">
                       <IMaskInput
                         className="form-control"
                         mask={ContactNumberMask}
@@ -262,74 +261,72 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
                       />
                       <div class="invalid-feedback"></div>
                     </div> */}
+                </div>
+                {!link?.includes("careers") && (
+                  <div
+                    class={
+                      !link?.includes("careers")
+                        ? "col-lg-6 col-md-6"
+                        : "col-lg-12 col-md-12"
+                    }>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="subject"
+                        placeholder="Your Subject *"
+                        class="form-control"
+                        required={true}
+                        value={subject}
+                        onChange={(e) => setSubject(e.target.value)}
+                      />
+                      <div class="invalid-feedback"></div>
+                    </div>
                   </div>
-                  {!link?.includes("careers") && (
-                    <div
-                      class={
-                        !link?.includes("careers")
-                          ? "col-lg-6 col-md-6"
-                          : "col-lg-12 col-md-12"
-                      }
-                    >
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          name="subject"
-                          placeholder="Your Subject *"
-                          class="form-control"
-                          required={true}
-                          value={subject}
-                          onChange={(e) => setSubject(e.target.value)}
-                        />
-                        <div class="invalid-feedback"></div>
-                      </div>
-                    </div>
-                  )}
-                  {!modal && (
-                    <div>
-                      <div class="col-lg-12 col-md-6 ">
-                        <h2> Select your Inrest </h2>
-                        <div className="row">
-                          {services.map((item, index) => {
-                            return (
-                              <div class="items col-12 col-lg-6">
-                                <div class="checkbox-rect2 ">
-                                  <input
-                                    type="checkbox"
-                                    class="form-control"
-                                    id={item.id}
-                                    name="check"
-                                    onClick={() =>
-                                      handleUpdateIntrestData(item.name, index)
-                                    }
-                                  />
-                                  <label for={item.id}>{item.name}</label>
-                                </div>
+                )}
+                {!modal && (
+                  <div>
+                    <div class="col-lg-12 col-md-6 ">
+                      <h2> Select your Inrest </h2>
+                      <div className="row">
+                        {services.map((item, index) => {
+                          return (
+                            <div class="items col-12 col-lg-6">
+                              <div class="checkbox-rect2 ">
+                                <input
+                                  type="checkbox"
+                                  class="form-control"
+                                  id={item.id}
+                                  name="check"
+                                  onClick={() =>
+                                    handleUpdateIntrestData(item.name, index)
+                                  }
+                                />
+                                <label for={item.id}>{item.name}</label>
                               </div>
-                            );
-                          })}
-                        </div>
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
-                  )}
-                  {link?.includes("careers") ? null : (
-                    <div class="col-lg-12 col-md-12">
-                      <div class="form-group">
-                        <textarea
-                          name="text"
-                          required={true}
-                          cols="30"
-                          rows="5"
-                          placeholder={"Write your message... *"}
-                          class="form-control"
-                          value={message}
-                          onChange={(e) => setMessage(e.target.value)}
-                        ></textarea>
-                        <div class="invalid-feedback"></div>
-                      </div>
+                  </div>
+                )}
+                {link?.includes("careers") ? null : (
+                  <div class="col-lg-12 col-md-12">
+                    <div class="form-group">
+                      <textarea
+                        name="text"
+                        required={true}
+                        cols="30"
+                        rows="5"
+                        placeholder={"Write your message... *"}
+                        class="form-control"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}></textarea>
+                      <div class="invalid-feedback"></div>
                     </div>
-                  )}
-                  {/* {link?.includes("careers") && (
+                  </div>
+                )}
+                {/* {link?.includes("careers") && (
                     <>
                       <p>Upload CV/Resume *</p>
                       <div
@@ -373,21 +370,21 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
                       </div>
                     </>
                   )} */}
-                  <div class="col-lg-12 col-sm-12">
-                    <Button
-                      type="submit"
-                      title={
-                        link?.includes("careers") ? "Apply Now" : "Send Message"
-                      }
-                      disabled={phone === "+92"}
-                      design={0}
-                    />
-                  </div>
+                <div class="col-lg-12 col-sm-12">
+                  <Button
+                    type="submit"
+                    title={
+                      link?.includes("careers") ? "Apply Now" : "Send Message"
+                    }
+                    disabled={phone === "+92"}
+                    design={2}
+                  />
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
+      </div>
     </div>
   );
 };

@@ -21,18 +21,37 @@ const JobDetail = ({ appliedFor }) => {
   }, []);
 
   return (
-    <div className="container-fluid paragraph">
-      <Title title={singleJob?.title?.rendered} />
+    <div className="container-fluid ">
       <div className="row">
+        <Title title={singleJob?.title?.rendered} />
         {singleJob?.title ? (
-          <p
-            className="col-lg-6 jobDetails "
-            dangerouslySetInnerHTML={{
-              __html: singleJob?.content?.rendered,
-            }}
-          ></p>
+          <>
+            <div className="col-lg-7">
+              <div className="jobsInfo">
+                {" "}
+                <p>
+                  <strong>Job Category: </strong>{" "}
+                  {singleJob?.acf.job_category[0]}
+                </p>
+                <p>
+                  <strong>Job Type: </strong> {singleJob?.acf.job_type[0]},{" "}
+                  {singleJob?.acf.job_type[1]}
+                </p>
+                <p>
+                  <strong>Job Location: </strong>{" "}
+                  {singleJob?.acf.job_location[0]},{" "}
+                  {singleJob?.acf.job_location[1]}
+                </p>
+              </div>
+              <div
+                className=" jobDetails"
+                dangerouslySetInnerHTML={{
+                  __html: singleJob?.content?.rendered,
+                }}></div>
+            </div>
+          </>
         ) : (
-          <div className="col-lg-6">
+          <div className="col-lg-7">
             {ShemarLengths.map((item) => {
               return (
                 <div class="row">
@@ -56,7 +75,7 @@ const JobDetail = ({ appliedFor }) => {
             })}
           </div>
         )}
-        <div className="col-lg-6">
+        <div className="col-lg-5 py-4">
           <GetInTouch
             modal={true}
             link={window.location.pathname}
