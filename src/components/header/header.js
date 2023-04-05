@@ -62,7 +62,9 @@ const Header = () => {
   const [selected, setSelected] = useState(0);
 
   const getId = localStorage.getItem("child_id");
+  const getServiceId = localStorage.getItem("id");
   const [tabSelect, setSelectTab] = useState("");
+
   useEffect(() => {
     setSelectTab(getId);
   }, [getId]);
@@ -71,18 +73,21 @@ const Header = () => {
     handleNavCollapse();
     toggleDrawer();
   }
-  const mobileLink = (item) => {
-    toggleDrawer();
-    localStorage.setItem("child_id", item.name);
+  // const mobileLink = (item) => {
+  //   toggleDrawer();
+  //   localStorage.setItem("child_id", item.name);
+  // };
+
+  const removeChildId = (item) => {
+    localStorage.clear("child_id");
+    localStorage.setItem("id", item.path);
   };
 
-  const removeChildId = (items) => {
-    toggleDrawer();
-    localStorage.setItem("child_id", items.childs[0].name);
-  };
   const toggleChildCollapse = (serviceId) => {
     setSelectedService((prev) => (prev === serviceId ? null : serviceId));
     localStorage.clear("child_id");
+    localStorage.setItem("id", serviceId);
+    toggleDrawer();
   };
   return (
     <header id="header" class="headroom is-sticky">
@@ -144,11 +149,7 @@ const Header = () => {
                     </span>
                   </Link>
                 </li>
-                <li
-                  class="services-items nav-item"
-                  id="serve"
-                  onClick={() => setSelected(1)}
-                >
+                <li class="nav-item" onClick={() => setSelected(1)}>
                   <Link class="nav-link">
                     <span
                       class={
@@ -175,7 +176,45 @@ const Header = () => {
                         />
                       </svg>
                     </span>
-                    <div id="serveDrop">
+                    <ul class="dropdown-menu">
+                      {services.map((item) => {
+                        return (
+                          <li class={`nav-item`}>
+                            <i
+                              class="fa fa-envelope-square"
+                              aria-hidden="true"
+                            ></i>
+                            <Link
+                              class={"nav-link d-flex flex-column"}
+                              onClick={() => removeChildId(item)}
+                              to={`services/${item.path}`}
+                            >
+                              <span
+                                class={
+                                  item.path === getServiceId
+                                    ? "nav-selected"
+                                    : null
+                                }
+                              >
+                                {" "}
+                                {item.title}
+                              </span>
+
+                              <span
+                                style={{
+                                  color: "black",
+                                  fontSize: 10,
+                                  lineHeight: 1.1,
+                                }}
+                              >
+                                {"Lorem ipsum dolor sit amet ..."}
+                              </span>
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                    {/* <div id="serveDrop">
                       <div className="serveDropInner d-flex justify-content-between">
                         {services.map((items, index) => {
                           return (
@@ -226,7 +265,7 @@ const Header = () => {
                           );
                         })}
                       </div>
-                    </div>
+                    </div> */}
                   </Link>
                 </li>
                 <li
@@ -383,9 +422,17 @@ const Header = () => {
                       to={`/services/${items.path}`}
                       onClick={() => toggleChildCollapse(items.path)}
                     >
-                      <p className="mobileheading">{items.title}</p>
+                      <p
+                        class={
+                          items.path === getServiceId
+                            ? "nav-selected"
+                            : "mobileheading"
+                        }
+                      >
+                        {items.title}
+                      </p>
                     </Link>
-                    <Collapse isOpened={selectedService === items.path}>
+                    {/* <Collapse isOpened={selectedService === items.path}>
                       {items.childs.map((item, childIndex) => {
                         return (
                           <div
@@ -406,7 +453,7 @@ const Header = () => {
                           </div>
                         );
                       })}
-                    </Collapse>
+                    </Collapse> */}
                   </div>
                 );
               })}

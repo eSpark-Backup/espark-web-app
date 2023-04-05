@@ -64,7 +64,7 @@ const serviceItems = (id, title, name, content, image) => {
 export const services = [
   {
     id: hash(),
-    title: "Mobile App Development Service",
+    title: "Mobile App Development",
     name: "App Development",
     path: "mobile-app-development",
     content:
@@ -111,7 +111,7 @@ export const services = [
   },
   {
     id: hash(),
-    title: "Web Application Development Service",
+    title: "Web Application Development",
     name: "Web Application Development",
     path: "web-app-development",
     hpname: "Web Application Development",
@@ -253,7 +253,7 @@ export const services = [
 
   {
     id: hash(),
-    title: "QA and Web Plugin and Desktop Development",
+    title: "QA Plugin and Desktop Development",
     name: "QA and Desktop Development",
     hpname: "QA and Desktop<br> Development",
     path: "qa-web-plugin-desktop-development",
