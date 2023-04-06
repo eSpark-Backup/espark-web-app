@@ -151,6 +151,7 @@
 /* 1025px to 1440px (Small Laptops and Tablets) */
 @media (min-width: 1025px) and (max-width: 1440px) {
   /* Global Styling */
+  
 
   /* Home Styling */
 
@@ -169,11 +170,15 @@
 .contact-area .page-title-area h1 {
     font-size: 50px !important;
   }
+  .cardsBtn button{
+    font-size: 12px;
+  }
   /* Home Styling */
   /*Client Testimonials*/
   .testimonial {
     height: 550px !important;
   }
+
 
   textarea {
     height: 30px !important;
@@ -238,6 +243,9 @@
     color: #3a3a3a;
     padding: 0px 50px;
   }
+  .containerMarginTop {
+    margin-top:0px !important ;
+  }
 
   /* Services Styling */
 
@@ -246,6 +254,22 @@
   /* Careers Styling */
 
   /* Blogs Styling */
+}
+@media (max-width: 853px) {
+  .careers {
+    display: none !important;
+  }
+  .careerMobile{
+    display: block !important;
+  }
+}
+@media (min-width: 854px) {
+  .careers {
+    display: block !important;
+  }
+  .careerMobile{
+    display: none !important;
+  }
 }
 
 /* 426px to 766px (Most Mobile Devices) */
@@ -369,6 +393,9 @@
     color: var(--color-primary) !important;
 
   }
+  .containerMarginTop {
+    margin-top:0px !important ;
+  }
 }
 
 /* 0px to 425px (Smaller Mobile Devices) */
@@ -377,6 +404,9 @@
     display: none !important;
   }
 
+.containerMarginTop {
+    margin-top:0px !important ;
+  }
   /* Global Styling */
 
   /* Home Styling */

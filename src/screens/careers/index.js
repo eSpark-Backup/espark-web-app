@@ -229,7 +229,7 @@ const Careers = () => {
           </div>
         )}
 
-        <div className="row">
+        <div className=" ">
           {inputFeilds(getCat.category, "job_category")}
           {/* {inputFeilds(getCat.type, "job_type")}
           {inputFeilds(getCat.location, "job_location")} */}
@@ -240,41 +240,9 @@ const Careers = () => {
           careersData.map((item) => {
             return (
               <>
-                <div class="d-sm-none card">
-                  <div class="card-body">
-                    <div className="row border-top p-3">
-                      <div class="col-lg-3 col-12 col-sm-3 ">
-                        <h4 id="data_job_num1" data-job-num="1">
-                          {item?.title?.rendered}
-                        </h4>
-
-                        <p>
-                          Karachi
-                          <br />
-                          <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
-                        </p>
-                      </div>
-                      <div class="col-lg-6 col-sm-6 ">
-                        <h4>Description</h4>
-                        <p
-                          dangerouslySetInnerHTML={{
-                            __html: item?.excerpt.rendered,
-                          }}></p>
-                      </div>
-                      <div class="col-lg-3 d-flex align-items-center justify-content-center">
-                        <Button
-                          title="Apply Now"
-                          link={`/careers/${item.id}`}
-                          design={1}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="d-none d-sm-block">
-                  <div className="row border-top p-3">
-                    <div class="col-lg-3 col-12 col-sm-3 ">
+               <div class="careers p-5">
+                  <div className="row border-top p-5">
+                    <div class="col-lg-3  col-md-3 col-sm-12">
                       <h4 id="data_job_num1" data-job-num="1">
                         {item?.title?.rendered}
                       </h4>
@@ -285,19 +253,52 @@ const Careers = () => {
                         <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
                       </p>
                     </div>
-                    <div class="col-lg-6 col-sm-6 ">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
                       <h4>Description</h4>
                       <p
                         dangerouslySetInnerHTML={{
                           __html: item?.excerpt.rendered,
                         }}></p>
                     </div>
-                    <div class="col-lg-3 d-flex align-items-center justify-content-center">
-                      <Button
+                    <div class="col-lg-3 col-md-3 col-sm-12 d-flex align-items-center justify-content-center cardsBtn">
+                      <Button   
                         title="Apply Now"
                         link={`/careers/${item.id}`}
                         design={1}
                       />
+                    </div>
+                  </div>
+                </div>
+                {/* Mobile card sections */}
+                <div class="careerMobile card my-3">
+                  <div class="card-body ">
+                    <div className="row py-3">
+                      <div class=" col-12  ">
+                        <h4 id="data_job_num1" data-job-num="1">
+                          {item?.title?.rendered}
+                        </h4>
+
+                        <p className="cardtitle">
+                          {item?.acf.job_location[0]} {" "}
+                        </p>
+                        <p>
+                          <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
+                        </p>
+                      </div>
+                      <div class="col-12 ">
+                        <p
+                         className="cardDesc"
+                          dangerouslySetInnerHTML={{
+                            __html: item?.excerpt.rendered,
+                          }}></p>
+                      </div>
+                      <div class=" col-12 cardbtn">
+                        <Button
+                          title="Apply Now"
+                          link={`/careers/${item.id}`}
+                          design={1}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>

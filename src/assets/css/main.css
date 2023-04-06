@@ -27058,6 +27058,9 @@ blockquote:after {
     .ml-banner-content h1 {
         font-size: 25px !important;
     }
+    .paragraph .page-title-area > h1{
+        font-size: 30px !important;
+      }
 }
 
 @media only screen and (max-width: 280px) {

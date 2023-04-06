@@ -7,6 +7,7 @@ import GetInTouch from "../../components/getInTouch/GetInTouch";
 import Title from "../../components/title/title";
 import { getSingleOpeningJobs } from "../../utils/utils";
 import { ShemarLengths } from "./../../helper/Shemars";
+import SectionTitle from "../../components/sectionTitle";
 
 const JobDetail = ({ appliedFor }) => {
   const params = useParams();
@@ -23,7 +24,9 @@ const JobDetail = ({ appliedFor }) => {
   return (
     <div className="container-fluid ">
       <div className="row">
-        <Title title={singleJob?.title?.rendered} />
+        <div className="pt-80">
+        <SectionTitle heading={singleJob?.title?.rendered} width={0}/>
+        </div>
         {singleJob?.title ? (
           <>
             <div className="col-lg-7">
@@ -75,7 +78,7 @@ const JobDetail = ({ appliedFor }) => {
             })}
           </div>
         )}
-        <div className="col-lg-5 py-4">
+        <div className="col-lg-5 pb-80">
           <GetInTouch
             modal={true}
             link={window.location.pathname}

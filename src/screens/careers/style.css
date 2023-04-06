@@ -36,7 +36,7 @@
 .jobsInfo > p {
   line-height: 1.2;
   color: black;
-  height: 30px;
+  height: 50px;
   font-size: 16px !important;
 }
 .jobsInfo > strong {
@@ -62,9 +62,19 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700 !important;
-  font-size: 50px;
+  font-size: 5px !important;
   line-height: 100%;
   color: var(--color-secondary) !important;
   text-align: center;
   margin-top: 15px;
+}
+
+.card .cardbtn {
+  text-align: right !important;
+}
+.cardDesc > p{
+  text-align: justify;
+}
+.careerMobile{
+  display: none;
 }
