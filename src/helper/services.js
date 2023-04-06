@@ -81,28 +81,28 @@ export const services = [
     childs: [
       serviceItems(
         hash(),
-        "Android App Development Service",
+        "Android App Development",
         "Android App",
         "Build top-notch Android applications with eSpark, which will be completely designed for your business needs. Our group of professionals create innovative and user-friendly android applications with key features like exclusivity and customer satisfaction. We have the expertise to create android applications for various sectors including retail, fashion, healthcare, and much more.",
         AndroidAppDevelopment
       ),
       serviceItems(
         hash(),
-        "iOS App Development Service",
+        "iOS App Development",
         "iOS App",
         "Build top-notch customizable iOS applications designed to boost your business’s potential and reach.Our group of professionals create innovative and user-friendly iOS applications suitable for all iOS range of products offering easy accessibility and customer satisfaction. We have the expertise to create iOS applications for various industries like retail, fashion, healthcare, and much more.",
         IosAppDevelopment
       ),
       serviceItems(
         hash(),
-        "React Native App Development Service",
+        "React Native App Development",
         "React Native App",
         "Do you want the end user to have the best performance and user experience? Our React Native App Development Service will provide you with exactly that. Our experts will develop a react native application which will not only help you modernize your business’s functionality but also generate higher revenue. Having top-notch performance and user experience will make your business stand out.",
         ReactNativeAppDevelopment
       ),
       serviceItems(
         hash(),
-        "Flutter App Development Service",
+        "Flutter App Development",
         "Flutter App",
         "Our Flutter application development will provide you with easy functionality, and an exclusive UI design. Our Flutter application development service is one of the best solutions for mobile application development, enabling smooth and easy cross-platform giving your application a uniform appearance.",
         FlutterAppDevelopment
@@ -270,8 +270,8 @@ export const services = [
     childs: [
       serviceItems(
         hash(),
-        "QA Manual Web and Mobile App",
-        "QA Manual Web and Mobile App",
+        "SQA Web and Mobile Applications",
+        "SQA Web and Mobile Applications",
         "To ensure that your web and mobile applications satisfy high-quality requirements, use our manual QA testing services. Functional and non-functional testing will be carried out by our team of skilled QA testers to find any potential problems that might have an influence on the user experience. Together, we will create test plans, carry them out, and report on any difficulties that arise. Our aim is to guarantee that your mobile and online applications work as intended and deliver a great user experience.",
         QAManualWebMobileApp
       ),

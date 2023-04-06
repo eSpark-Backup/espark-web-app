@@ -416,8 +416,8 @@ const Header = () => {
                     <Link
                       className={
                         pathname?.includes(`/services/${items.path}`)
-                          ? " mobileDrawer serviceChild "
-                          : "mobileDrawer  serviceChild"
+                          ? "mobileDrawer serviceChild d-flex flex-column"
+                          : "mobileDrawer  serviceChild d-flex flex-column"
                       }
                       to={`/services/${items.path}`}
                       onClick={() => toggleChildCollapse(items.path)}
@@ -429,8 +429,19 @@ const Header = () => {
                             : "mobileheading"
                         }
                       >
+                        {" "}
                         {items.title}
                       </p>
+
+                      <span
+                        style={{
+                          color: "black",
+                          fontSize: 10,
+                          lineHeight: 1.0,
+                        }}
+                      >
+                        {"Lorem ipsum dolor sit amet ..."}
+                      </span>
                     </Link>
                     {/* <Collapse isOpened={selectedService === items.path}>
                       {items.childs.map((item, childIndex) => {
