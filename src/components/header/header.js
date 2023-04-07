@@ -207,7 +207,7 @@ const Header = () => {
                                   lineHeight: 1.1,
                                 }}
                               >
-                                {"Lorem ipsum dolor sit amet ..."}
+                                {item.slug}
                               </span>
                             </Link>
                           </li>
@@ -440,7 +440,7 @@ const Header = () => {
                           lineHeight: 1.0,
                         }}
                       >
-                        {"Lorem ipsum dolor sit amet ..."}
+                        {items.slug}
                       </span>
                     </Link>
                     {/* <Collapse isOpened={selectedService === items.path}>

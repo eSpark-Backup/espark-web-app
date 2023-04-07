@@ -64,6 +64,7 @@ const serviceItems = (id, title, name, content, image) => {
 export const services = [
   {
     id: hash(),
+    slug: "Turning your app ideas into reality.",
     title: "Mobile App Development",
     name: "App Development",
     path: "mobile-app-development",
@@ -111,6 +112,7 @@ export const services = [
   },
   {
     id: hash(),
+    slug: "Building dynamic web solutions for you.",
     title: "Web Application Development",
     name: "Web Application Development",
     path: "web-app-development",
@@ -158,6 +160,7 @@ export const services = [
   },
   {
     id: hash(),
+    slug: "Designing efficient embedded systems solutions.",
     title: "Embedded Systems Design",
     name: "Embedded Systems Design",
     hpname: "Embedded<br> Systems Design",
@@ -205,6 +208,7 @@ export const services = [
   },
   {
     id: hash(),
+    slug: "Creating efficient, scalable databases solutions.",
     title: "Database Development",
     name: "Database Development",
     hpname: "Database Development",
@@ -253,7 +257,8 @@ export const services = [
 
   {
     id: hash(),
-    title: "QA Plugin and Desktop Development",
+    slug: "Powerful desktop solutions for businesses.",
+    title: "QA / Plugin / Desktop Development",
     name: "QA and Desktop Development",
     hpname: "QA and Desktop<br> Development",
     path: "qa-web-plugin-desktop-development",
