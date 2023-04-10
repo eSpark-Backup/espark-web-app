@@ -19087,10 +19087,11 @@ gb-headline-efd0cee8 .gb-icon {
 }
 
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu {
-
+    background-color: #e8f1f2;
+    box-shadow: 0 8px 8px -4px gray;
     position: absolute;
     border: none;
-    width: 250px;
+    width: 300px;
     top: 80px;
     left: 0;
     display: block;
@@ -19126,18 +19127,18 @@ gb-headline-efd0cee8 .gb-icon {
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu li {
     position: relative;
     padding: 0;
-    border-radius: 16px;
+    /* border-radius: 16px; */
 
 }
 
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu li a {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     padding: 8px 15px;
     margin: 0;
     display: block;
     color: #4a6f8a;
-    border-radius: 16px;
+    /* border-radius: 16px; */
     text-align: left;
 
 }
@@ -19145,8 +19146,12 @@ gb-headline-efd0cee8 .gb-icon {
 bar-nav .nav-item .dropdown-menu li a.active,
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu li a:focus,
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover {
-    background-color: var(--color-primary);
-    color: white !important;
+    background-color: transparent;
+    color: var(--color-primary) !important;
+}
+
+.nav-selected {
+    color: var(--color-primary);
 }
 
 .startp-nav nav .navbar-nav .nav-item .dropdown-menu li a i,
@@ -27039,15 +27044,15 @@ blockquote:after {
     .ml-main-section {
         background-position: 0%;
         background-position: 0%;
-        height: 350px !important;
+        height: 380px !important;
     }
- }
+}
 
 @media only screen and (max-width: 425px) {
     .ml-main-section {
         background-position: 0%;
         background-position: 0%;
-        height: 350px !important;
+        height: 380px !important;
     }
 
     .ml-banner-content p {
@@ -31826,9 +31831,10 @@ blockquote:after {
     .ml-main-section {
         background-position: 50%;
         padding-top: 20px;
-        padding-bottom: 140px
+        padding-bottom: 140px; 
+        height:700px !important;
     }
-
+.itemTxt{font-size: 16px !important;}
     .ml-main-section .ml-banner-content h1 {
         font-size: 30px
     }
@@ -32118,9 +32124,6 @@ blockquote:after {
         margin-right: 6px
     }
 
-    .startp-nav nav .navbar-nav .nav-item .dropdown-menu {
-        width: 200px
-    }
 
     .startp-nav nav .navbar-nav .nav-item .dropdown-menu li a {
         padding: 6px 15px;
