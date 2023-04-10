@@ -45,13 +45,14 @@ const Careers = () => {
 
   const inputFeilds = (category, inputFor) => {
     return (
-      <div className="col-lg-12">
+      <div className="col-lg-12 col-md-12 col-sm-12   px-2">
         <select
           class="form-select"
           aria-label="Default select example"
           onChange={(e) => {
             selectCategory(e);
-          }}>
+          }}
+        >
           {category?.map((item) => {
             return (
               <>
@@ -73,7 +74,7 @@ const Careers = () => {
     setFilter({ ...filter, [name]: value });
     setcurrentFilter(name);
     // if (name === "job_cat") {
-    //   let newData = applyFilter([...allData], {
+    //   let newData = applyFilter([...allData],c
     //     ...filter,
     //     [name]: value,
     //   });
@@ -156,7 +157,7 @@ const Careers = () => {
   //   }
   // };
   const applyFilter = (jobs, filter, currentFilter) => {
-    console.log("filter", currentFilter);
+    // console.log("filter", currentFilter);
 
     const job_category = jobs.filter((job) =>
       job.acf[currentFilter].includes(filter[currentFilter])
@@ -229,7 +230,7 @@ const Careers = () => {
           </div>
         )}
 
-        <div className=" ">
+        <div className="d-lg-flex d-md-flex carrer-filter">
           {inputFeilds(getCat.category, "job_category")}
           {/* {inputFeilds(getCat.type, "job_type")}
           {inputFeilds(getCat.location, "job_location")} */}
@@ -240,7 +241,7 @@ const Careers = () => {
           careersData.map((item) => {
             return (
               <>
-               <div class="careers p-5">
+                <div class="careers">
                   <div className="row border-top p-5">
                     <div class="col-lg-3  col-md-3 col-sm-12">
                       <h4 id="data_job_num1" data-job-num="1">
@@ -258,10 +259,11 @@ const Careers = () => {
                       <p
                         dangerouslySetInnerHTML={{
                           __html: item?.excerpt.rendered,
-                        }}></p>
+                        }}
+                      ></p>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12 d-flex align-items-center justify-content-center cardsBtn">
-                      <Button   
+                    <div class="col-lg-3 col-md-3 col-sm-12 d-flex align-items-center justify-content-center cardsBtn ">
+                      <Button
                         title="Apply Now"
                         link={`/careers/${item.id}`}
                         design={1}
@@ -270,7 +272,7 @@ const Careers = () => {
                   </div>
                 </div>
                 {/* Mobile card sections */}
-                <div class="careerMobile card my-3">
+                <div class="careerMobile careerCard my-3">
                   <div class="card-body ">
                     <div className="row py-3">
                       <div class=" col-12  ">
@@ -279,21 +281,24 @@ const Careers = () => {
                         </h4>
 
                         <p className="cardtitle">
-                          {item?.acf.job_location[0]} {" "}
+                          {item?.acf.job_location[0]}{" "}
                         </p>
                         <p>
                           <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
                         </p>
+                        <hr className="career-hr my-2" />
                       </div>
                       <div class="col-12 ">
                         <p
-                         className="cardDesc"
+                          className="cardDesc"
                           dangerouslySetInnerHTML={{
                             __html: item?.excerpt.rendered,
-                          }}></p>
+                          }}
+                        ></p>
                       </div>
                       <div class=" col-12 cardbtn">
                         <Button
+                          careerSmallBtn
                           title="Apply Now"
                           link={`/careers/${item.id}`}
                           design={1}

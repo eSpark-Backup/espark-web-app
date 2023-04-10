@@ -69,12 +69,41 @@
   margin-top: 15px;
 }
 
-.card .cardbtn {
+.careerCard .cardbtn {
   text-align: right !important;
+  padding-top: 10px;
+  
+}
+.careerMobile {
+  width: 96%;
 }
 .cardDesc > p{
   text-align: justify;
 }
 .careerMobile{
   display: none;
+}
+.career-hr{
+  width: 100% !important;
+  height: 1px !important;
+  background-color:#000 !important;
+}
+
+@media (max-width: 567px) {
+  .careerCard .cardbtn > a{
+    width: 100% !important;
+    align-items: left !important;
+  } 
+}
+
+@media (min-width: 567px) and (max-width: 768px) {
+  .careerMobile {
+    width: 98%;
+  }
+
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .careerMobile {
+    width: 99%;
+  }
 }
