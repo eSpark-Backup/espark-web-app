@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
 import Button from "../button/button";
-import styles from "./style.module.css";
+import  './blogRedesign.css'
 
 function CommentsArea() {
   const [email, setEmail] = useState("");
@@ -80,7 +80,7 @@ function CommentsArea() {
                 maxLength={65525}
                 required={true}
                 // placeholder="Write your message... "
-                className={`form-control ${styles.inputFieldsColor}`}
+                className={`form-control inputFieldsColor`}
                 value={message}
                 onChange={(e) => setComment(e.target.value)}
               />
@@ -97,7 +97,7 @@ function CommentsArea() {
                     name="author"
                     required={true}
                     // placeholder="Your Name *"
-                    className={`form-control ${styles.inputFieldsColor}`}
+                    className={`form-control inputFieldsColor`}
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
@@ -115,7 +115,7 @@ function CommentsArea() {
                     value={email}
                     required={true}
                     // placeholder="Your email address "
-                    className={`form-control ${styles.inputFieldsColor}`}
+                    className={`form-control inputFieldsColor`}
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </p>
@@ -132,7 +132,7 @@ function CommentsArea() {
                     value={website}
                     required={true}
                     // placeholder="Your Website address *"
-                    className={`form-control ${styles.inputFieldsColor}`}
+                    className={`form-control inputFieldsColor`}
                     onChange={(e) => setWebsite(e.target.value)}
                   />
                 </p>

@@ -1,38 +1,43 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import style from "./style.module.css";
+import  './blogRedesign.css'
 
-const BlogsCard = ({ image, title, para, link, btn_text, word }) => {
+const BlogsCard = ({ image, title, para, link, btn_text, word, }) => {
   const words = para.split(" ");
   const limitedPara = words.slice(0, word ? word : 20).join(" ") + "...";
   const heading = title.split(" ");
   const limitedtitle = heading.slice(0, 4).join(" ") + "...";
   return (
     <div
-      className={`${style.blogsCard} d-flex align-items-center flex-column justify-content-center`}
+      className={`blogsCard d-flex align-items-center flex-column justify-content-left ` }
     >
-      {/* <img className={`${style.blogsCardImg}`} src={image} alt={title} /> */}
+      {/* <img className={`blogsCardImg}`} src={image} alt={title} /> */}
+
       <Link to={link}>
-        <img
-          className={`${style.blogsCardImg}`}
+      <div className={"blogCardWrapper"} style={{backgroundImage:`url(${image})`}}>
+
+        {/* <img
+          className={`blogsCardImg}`}
           src={
             image
               ? image
               : "https://thumbs.dreamstime.com/b/blog-information-website-concept-workplace-background-text-view-above-127465079.jpg"
           }
           alt={title}
-        />
-        <h2 className={`${style.blogsCardHeading} my-auto text-justify`}>
+        /> */}
+                    </div>
+
+        <h2 className={`blogsCardHeading} my-auto text-justify mt-3`}>
           {limitedtitle}
         </h2>
       </Link>
       <div
-        className={`${style.blogsCardPara} my-auto text-justify`}
+        className={`blogsCardPara my-auto text-justify mt-1  p-2`}
         dangerouslySetInnerHTML={{
           __html: limitedPara,
         }}
       />
-      <Link className={`${style.blogsCardbtn} mt-auto mr-auto `} to={link}>
+      <Link className={`blogsCardbtn mt-auto mr-auto `} to={link}>
         {btn_text}
       </Link>
     </div>

@@ -10,7 +10,7 @@ import {
 } from "react-shimmer-effects";
 import BlogsCard from "../components/blogs/blogsCard";
 import BlogsStrip from "../components/blogs/blogsStrip";
-import style from "../components/blogs/style.module.css";
+import "../components/blogs/blogRedesign.css";
 export const getApiCall = async (page) => {
   try {
     const pageCount = page ? page : 1;
@@ -151,9 +151,9 @@ export const BlogImageMap = ({ post, sliceStart, sliceEnd, shimmerClass }) => {
             items?.jetpack_featured_media_url ||
             "https://thumbs.dreamstime.com/b/blog-information-website-concept-workplace-background-text-view-above-127465079.jpg";
           return (
-            <>
-              <img className={style.images} src={imageUrl} alt="shape" />
-            </>
+            <div className="blogImageCard">
+              <img className="images" width={"100%"}  height={"100%"}src={imageUrl} alt="shape" />
+            </div>
           );
         })
       ) : (
