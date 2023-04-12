@@ -45,7 +45,7 @@ const Careers = () => {
 
   const inputFeilds = (category, inputFor) => {
     return (
-      <div className="col-lg-12">
+      <div className="col-lg-12 col-md-12 col-sm-12   px-2">
         <select
           class="form-select"
           aria-label="Default select example"
@@ -74,7 +74,7 @@ const Careers = () => {
     setFilter({ ...filter, [name]: value });
     setcurrentFilter(name);
     // if (name === "job_cat") {
-    //   let newData = applyFilter([...allData], {
+    //   let newData = applyFilter([...allData],c
     //     ...filter,
     //     [name]: value,
     //   });
@@ -157,7 +157,7 @@ const Careers = () => {
   //   }
   // };
   const applyFilter = (jobs, filter, currentFilter) => {
-    console.log("filter", currentFilter);
+    // console.log("filter", currentFilter);
 
     const job_category = jobs.filter((job) =>
       job.acf[currentFilter].includes(filter[currentFilter])
@@ -211,21 +211,26 @@ const Careers = () => {
   };
 
   return (
-    <div>
+    <>
       <Herosection
         title="CAREERS"
         paragraph="Our career pathways provide premium opportunities to establish dynamic skillset and talent. We structure productive roadmaps for our employees to start off their IT career with an endless spirit. Our teams are formed by passing each candidate through effective technical assessments. Join any of our productive teams based on your prerequisite expertise, and make your professional career a brilliance."
         images={CareerImg}
         ShowButton={false}
       />
-      <div class="container containerMarginBottom  containerMarginTop">
+      <div class="container-fluid containerMarginBottom  containerMarginTop">
         {careersData && (
           <div className="mb-3">
-            <SectionTitle heading={"Open Vacancies"} />
+            <SectionTitle
+              heading={"Open Vacancies"}
+              height="2px"
+              width="158px"
+              my={2}
+            />
           </div>
         )}
 
-        <div className="row">
+        <div className="d-lg-flex d-md-flex carrer-filter">
           {inputFeilds(getCat.category, "job_category")}
           {/* {inputFeilds(getCat.type, "job_type")}
           {inputFeilds(getCat.location, "job_location")} */}
@@ -235,34 +240,74 @@ const Careers = () => {
         {careersData && careersData.length > 0 ? (
           careersData.map((item) => {
             return (
-              <div className="row border-top p-3">
-                <div class="col-12 col-sm-3 ">
-                  <h4 id="data_job_num1" data-job-num="1">
-                    {item?.title?.rendered}
-                  </h4>
+              <>
+                <div class="careers">
+                  <div className="row border-top p-5">
+                    <div class="col-lg-3  col-md-3 col-sm-12">
+                      <h4 id="data_job_num1" data-job-num="1">
+                        {item?.title?.rendered}
+                      </h4>
 
-                  <p>
-                    Karachi
-                    <br />
-                    <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
-                  </p>
+                      <p>
+                        Karachi
+                        <br />
+                        <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
+                      </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                      <h4>Description</h4>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: item?.excerpt.rendered,
+                        }}
+                      ></p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 d-flex align-items-center justify-content-center cardsBtn ">
+                      <Button
+                        title="Apply Now"
+                        link={`/careers/${item.id}`}
+                        design={1}
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div class="col-12 col-sm-6 ">
-                  <h4>Description</h4>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: item?.excerpt.rendered,
-                    }}
-                  ></p>
+                {/* Mobile card sections */}
+                <div class="careerMobile careerCard my-3">
+                  <div class="card-body ">
+                    <div className="row py-3">
+                      <div class=" col-12  ">
+                        <h4 id="data_job_num1" data-job-num="1">
+                          {item?.title?.rendered}
+                        </h4>
+
+                        <p className="cardtitle">
+                          {item?.acf.job_location[0]}{" "}
+                        </p>
+                        <p>
+                          <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
+                        </p>
+                        <hr className="career-hr my-2" />
+                      </div>
+                      <div class="col-12 ">
+                        <p
+                          className="cardDesc"
+                          dangerouslySetInnerHTML={{
+                            __html: item?.excerpt.rendered,
+                          }}
+                        ></p>
+                      </div>
+                      <div class=" col-12 cardbtn">
+                        <Button
+                          careerSmallBtn
+                          title="Apply Now"
+                          link={`/careers/${item.id}`}
+                          design={1}
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-3 d-flex align-items-center justify-content-center">
-                  <Button
-                    title="Apply Now"
-                    link={`/careers/${item.id}`}
-                    design={1}
-                  />
-                </div>
-              </div>
+              </>
             );
           })
         ) : showMessage ? (
@@ -291,7 +336,7 @@ const Careers = () => {
           })
         )}
       </div>
-    </div>
+    </>
   );
 };
 
