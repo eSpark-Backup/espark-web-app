@@ -1,6 +1,67 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.Gallery {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
 .images {
   height: 217px;
   width: 100%;
+  opacity: 1;
+}
+.middleText {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.middleImg {
+  transition: 0.5s ease;
+  opacity: 0;
+  /* position: absolute;   */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center; */
+}
+.middleImage {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
+  /* text-align: center; */
+}
+.imagesWrapper {
+  position: relative;
+  width: 100%;
+}
+.imagesWrapper:hover .images {
+  opacity: 0.6;
+}
+
+.imagesWrapper:hover .middleText {
+  opacity: 1;
+}
+.OverlayText {
+  /* background-color: var(--color-primary); */
+  color: #000;
+  font-size: 20px;
+  padding: 16px 32px;
+  font-weight: 500;
+}
+.OverlayImage {
+  opacity: 0.7;
+  /* height: 217px;
+  width: 100%; */
 }
 
 .titleWrapper {
@@ -18,6 +79,10 @@
 .titleWrapper:hover > h3 {
   color: #ffffff;
 }
+/* .modals {
+  align-items: center;
+  padding-top: 240px;
+} */
 
 .titleText {
   font-family: "Poppins";
@@ -30,125 +95,170 @@
   color: #2074b4;
 }
 .filterTab {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  color: #9B9B9B;
+  color: #9b9b9b;
   cursor: pointer;
 }
 .filterTabSelected {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  color: #00A099;
+  color: #00a099;
   cursor: pointer;
-  border-bottom: 3px solid #3359A2;
+  border-bottom: 3px solid #3359a2;
   padding-bottom: 10px;
+}
+
+/* @media (max-width: 575px) {
+  .wrapper {
+    padding-right: 15%;
+  }
+}
+@media (max-width: 475px) {
+  .wrapper {
+    padding-right: 20%;
+  }
+} */
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .filterTab {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 20px;
+    text-align: center;
+    color: #9b9b9b;
+    cursor: pointer;
+  }
+  .filterTabSelected {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 20px;
+    text-align: center;
+    color: #00a099;
+    cursor: pointer;
+    border-bottom: 3px solid #3359a2;
+  }
 }
 @media (min-width: 575px) and (max-width: 1000px) {
   .filterTab {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
     text-align: center;
-    color: #9B9B9B;
+    color: #9b9b9b;
     cursor: pointer;
   }
   .filterTabSelected {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
     text-align: center;
-    color: #00A099;
+    color: #00a099;
     cursor: pointer;
-    border-bottom: 3px solid #3359A2;
-  }
-}
-@media (min-width: 1000px) and (max-width: 1400px) {
-  .filterTab {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 20px;
-    text-align: center;
-    color: #9B9B9B;
-    cursor: pointer;
-  }
-  .filterTabSelected {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 20px;
-    text-align: center;
-    color: #00A099;
-    cursor: pointer;
-    border-bottom: 3px solid #3359A2;
+    border-bottom: 3px solid #3359a2;
   }
 }
 
 @media (min-width: 451px) and (max-width: 575px) {
   .wrapper {
-    width: 70%;
-    margin-left: 23%;
+    width: 100%;
+    /* margin-left: 15%;
+    align-items: center !important; */
   }
   .filterTab {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 600;
-    font-size: 9px;
+    font-size: 13px;
     line-height: 10px;
     text-align: center;
-    color: #9B9B9B;
+    color: #9b9b9b;
     cursor: pointer;
   }
   .filterTabSelected {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
-    font-size: 9px;
+    font-size: 13px;
     line-height: 10px;
     text-align: center;
-    color: #00A099;
+    color: #00a099;
     cursor: pointer;
-    border-bottom: 3px solid #3359A2;
+    border-bottom: 3px solid #3359a2;
   }
 }
 @media (min-width: 280px) and (max-width: 450px) {
   .wrapper {
-    width: 60%;
-    margin-left: 23%;
+    width: 100%;
+    /* margin-left: 20%; */
   }
   .filterTab {
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     font-weight: 500;
-    font-size: 8px;
+    font-size: 10px;
     line-height: 10px;
     text-align: center;
-    color: #9B9B9B;
+    color: #9b9b9b;
     cursor: pointer;
   }
   .filterTabSelected {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
-    font-size: 8px;
+    font-size: 10px;
     line-height: 10px;
     text-align: center;
-    color: #00A099;
+    color: #00a099;
     cursor: pointer;
-    border-bottom: 3px solid #3359A2;
+    border-bottom: 3px solid #3359a2;
+  }
+}
+@media (max-width: 570px) {
+  .MyGallery {
+    border: 2px solid rgb(0, 42, 255);
+    width: 90%;
+  }
+  .MyGallery > button {
+    background-color: none !important;
+  }
+  .modalsss {
+    max-width: 400px !important;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    background: #7e1111 !important;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25);
+    margin: 6.2rem;
+    padding: 1.2rem;
+    position: relative;
+    overflow-y: auto;
+  }
+  .react-responsive-modal-modal {
+    max-width: 400px !important;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    background: #7e1111 !important;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25);
+    margin: 6.2rem;
+    padding: 1.2rem;
+    position: relative;
+    overflow-y: auto;
   }
 }
