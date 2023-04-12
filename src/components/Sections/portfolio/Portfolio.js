@@ -20,7 +20,7 @@ const Portfolio = ({ data, title }) => {
                     <img
                       src={item?.image}
                       className={styles.images}
-                      alt={"image"}
+                      alt={"images"}
                     />
                   </div>
                   <div className={styles.titleWrapper}>

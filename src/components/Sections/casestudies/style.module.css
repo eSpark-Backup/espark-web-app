@@ -1,10 +1,3 @@
-@import "~react-image-gallery/styles/css/image-gallery.css";
-
-.Gallery {
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
 .images {
   height: 217px;
   width: 100%;
@@ -19,26 +12,6 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-}
-.middleImg {
-  transition: 0.5s ease;
-  opacity: 0;
-  /* position: absolute;   */
-  /* top: 50%;
-  left: 50%; */
-  /* transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center; */
-}
-.middleImage {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  /* top: 50%;
-  left: 50%; */
-  /* transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); */
-  /* text-align: center; */
 }
 .imagesWrapper {
   position: relative;
@@ -58,11 +31,6 @@
   padding: 16px 32px;
   font-weight: 500;
 }
-.OverlayImage {
-  opacity: 0.7;
-  /* height: 217px;
-  width: 100%; */
-}
 
 .titleWrapper {
   height: 60px;
@@ -79,10 +47,6 @@
 .titleWrapper:hover > h3 {
   color: #ffffff;
 }
-/* .modals {
-  align-items: center;
-  padding-top: 240px;
-} */
 
 .titleText {
   font-family: "Poppins";
@@ -117,16 +81,6 @@
   padding-bottom: 10px;
 }
 
-/* @media (max-width: 575px) {
-  .wrapper {
-    padding-right: 15%;
-  }
-}
-@media (max-width: 475px) {
-  .wrapper {
-    padding-right: 20%;
-  }
-} */
 @media (min-width: 1000px) and (max-width: 1400px) {
   .filterTab {
     font-family: "Inter";
@@ -177,8 +131,6 @@
 @media (min-width: 451px) and (max-width: 575px) {
   .wrapper {
     width: 100%;
-    /* margin-left: 15%;
-    align-items: center !important; */
   }
   .filterTab {
     font-family: "Inter";
@@ -205,8 +157,40 @@
 @media (min-width: 280px) and (max-width: 450px) {
   .wrapper {
     width: 100%;
-    /* margin-left: 20%; */
   }
+  .filterTab {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 10px;
+    text-align: center;
+    color: #9b9b9b;
+    cursor: pointer;
+  }
+  .filterTabSelected {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 10px;
+    text-align: center;
+    color: #00a099;
+    cursor: pointer;
+    border-bottom: 3px solid #3359a2;
+  }
+  .titleText {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2074b4;
+  }
+}
+@media(max-width:279px){
   .filterTab {
     font-family: "Inter";
     font-style: normal;
@@ -228,37 +212,14 @@
     cursor: pointer;
     border-bottom: 3px solid #3359a2;
   }
-}
-@media (max-width: 570px) {
-  .MyGallery {
-    border: 2px solid rgb(0, 42, 255);
-    width: 90%;
-  }
-  .MyGallery > button {
-    background-color: none !important;
-  }
-  .modalsss {
-    max-width: 400px !important;
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle;
-    background: #7e1111 !important;
-    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25);
-    margin: 6.2rem;
-    padding: 1.2rem;
-    position: relative;
-    overflow-y: auto;
-  }
-  .react-responsive-modal-modal {
-    max-width: 400px !important;
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle;
-    background: #7e1111 !important;
-    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.25);
-    margin: 6.2rem;
-    padding: 1.2rem;
-    position: relative;
-    overflow-y: auto;
+  .titleText {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.2574px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2074b4;
   }
 }

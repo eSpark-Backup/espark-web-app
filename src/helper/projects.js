@@ -106,6 +106,7 @@ export const projects = [
         "ios",
         imageArray
       ),
+      projectItems(img_55, "https://shop-dnd.com/", "Shop Dnd", "wordpress"),
       projectItems(
         img_53,
         "https://www.im4l.co.uk/",
@@ -113,7 +114,6 @@ export const projects = [
         "React Native",
         imageArray
       ),
-      projectItems(img_55, "https://shop-dnd.com/", "Shop Dnd", "wordpress"),
       projectItems(
         img_56,
         "https://www.themailingroom.com/",

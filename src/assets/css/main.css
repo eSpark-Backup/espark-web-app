@@ -34370,6 +34370,14 @@ blockquote:after {
 
   .react-responsive-modal-modal {
     margin-top: 100px !important;
+    width: 90% !important;
+  }
+}
+@media (max-width: 384px) {
+  .react-responsive-modal-modal {
+    margin-top: 100px !important;
+    width: 87% !important;
+    margin-top: 450px !important;
   }
 }
 
@@ -34380,6 +34388,16 @@ blockquote:after {
 
   .react-responsive-modal-modal {
     margin-top: 100px !important;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .react-responsive-modal-modal {
+    margin-bottom: 200px !important;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .react-responsive-modal-modal {
+    margin-bottom: 300px !important;
   }
 }
 
@@ -34666,4 +34684,12 @@ blockquote:after {
     text-align: center;
     margin-top: 15px;
   }
+}
+.image-gallery-content button {
+  background-color: none !important;
+  background: none !important;
+  box-shadow: none;
+}
+.image-gallery-content button:hover {
+  box-shadow: none;
 }
