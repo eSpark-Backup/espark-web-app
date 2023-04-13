@@ -18616,8 +18616,8 @@ a:hover {
 }
 
 p {
-  color: #6084a4;
-  line-height: 1.8;
+    color: #000;
+    line-height: 1.8
 }
 
 .textDiv p {
@@ -27497,9 +27497,13 @@ blockquote:after {
     margin-bottom: 15px;
   }
 
-  .ml-banner-content h1 {
-    font-size: 25px !important;
-  }
+    .ml-banner-content h1 {
+        font-size: 25px !important;
+    }
+
+    .paragraph .page-title-area>h1 {
+        font-size: 30px !important;
+    }
 }
 
 @media only screen and (max-width: 280px) {
