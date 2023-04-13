@@ -2,19 +2,22 @@ import ImageGallery from "react-image-gallery";
 import { projects } from "../../../helper/projects";
 import styles from "./style.module.css";
 
-const images = [
-  ...projects[0]?.childs?.map((items) => {
-    return {
-      original: items.image,
-      thumbnail: items.image,
-    };
-  }),
-];
-
-function MyGallery() {
+function MyGallery({ images }) {
+  const updateimages = [
+    images?.map((items) => {
+      return {
+        original: items,
+        thumbnail: items,
+      };
+    }),
+  ];
   return (
     <div>
-      <ImageGallery items={images} />
+      <ImageGallery
+        items={updateimages[0]}
+        showThumbnails={false}
+        showNav={true}
+      />
     </div>
   );
 }

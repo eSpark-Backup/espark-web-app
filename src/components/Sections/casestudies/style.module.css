@@ -1,8 +1,22 @@
 .images {
-  height: 217px;
+  height: auto !important;
   width: 100%;
   opacity: 1;
 }
+
+
+.badge {
+  box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  width: 27%;
+  color: white;
+  background: var(--color-primary);
+  padding: 5px;
+  /* display: none; */
+  opacity: 0;
+  right: 0px;
+  border-radius: 3px;
+}
+
 .middleText {
   transition: 0.5s ease;
   opacity: 0;
@@ -13,17 +27,28 @@
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+
+
+
 .imagesWrapper {
   position: relative;
   width: 100%;
 }
-.imagesWrapper:hover .images {
-  opacity: 0.6;
+
+
+
+.imagesWrapper:hover .badge {
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  right: 10px;
 }
 
 .imagesWrapper:hover .middleText {
   opacity: 1;
 }
+
 .OverlayText {
   /* background-color: var(--color-primary); */
   color: #000;
@@ -41,10 +66,10 @@
 }
 
 .titleWrapper:hover {
-  background-color: #2074b4;
+  background-color: var(--color-primary);
 }
 
-.titleWrapper:hover > h3 {
+.titleWrapper:hover>h3 {
   color: #ffffff;
 }
 
@@ -55,9 +80,10 @@
   font-size: 21.2574px;
   line-height: 100%;
   text-align: center;
-  text-transform: capitalize;
-  color: #2074b4;
+  /*  */
+  color: var(--color-primary);
 }
+
 .filterTab {
   font-family: "Inter";
   font-style: normal;
@@ -68,6 +94,7 @@
   color: #9b9b9b;
   cursor: pointer;
 }
+
 .filterTabSelected {
   font-family: "Poppins";
   font-style: normal;
@@ -82,6 +109,11 @@
 }
 
 @media (min-width: 1000px) and (max-width: 1400px) {
+
+  .badge {
+    width: 40%;
+  }
+
   .filterTab {
     font-family: "Inter";
     font-style: normal;
@@ -92,6 +124,7 @@
     color: #9b9b9b;
     cursor: pointer;
   }
+
   .filterTabSelected {
     font-family: "Poppins";
     font-style: normal;
@@ -102,9 +135,18 @@
     color: #00a099;
     cursor: pointer;
     border-bottom: 3px solid #3359a2;
+  }
+
+  .titleText {
+    font-size: 15px;
   }
 }
+
 @media (min-width: 575px) and (max-width: 1000px) {
+  .badge {
+    width: 40%;
+  }
+
   .filterTab {
     font-family: "Inter";
     font-style: normal;
@@ -115,6 +157,7 @@
     color: #9b9b9b;
     cursor: pointer;
   }
+
   .filterTabSelected {
     font-family: "Poppins";
     font-style: normal;
@@ -125,6 +168,9 @@
     color: #00a099;
     cursor: pointer;
     border-bottom: 3px solid #3359a2;
+  }
+  .titleText {
+    font-size: 15px;
   }
 }
 
@@ -132,6 +178,11 @@
   .wrapper {
     width: 100%;
   }
+
+  .badge {
+    width: 40%;
+  }
+
   .filterTab {
     font-family: "Inter";
     font-style: normal;
@@ -142,6 +193,7 @@
     color: #9b9b9b;
     cursor: pointer;
   }
+
   .filterTabSelected {
     font-family: "Poppins";
     font-style: normal;
@@ -153,11 +205,21 @@
     cursor: pointer;
     border-bottom: 3px solid #3359a2;
   }
+
+  .titleText {
+    font-size: 15px;
+  }
 }
+
 @media (min-width: 280px) and (max-width: 450px) {
   .wrapper {
     width: 100%;
   }
+
+  .badge {
+    width: 40%;
+  }
+
   .filterTab {
     font-family: "Inter";
     font-style: normal;
@@ -168,6 +230,7 @@
     color: #9b9b9b;
     cursor: pointer;
   }
+
   .filterTabSelected {
     font-family: "Poppins";
     font-style: normal;
@@ -179,18 +242,13 @@
     cursor: pointer;
     border-bottom: 3px solid #3359a2;
   }
+
   .titleText {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 100%;
-    text-align: center;
-    text-transform: capitalize;
-    color: #2074b4;
+    font-size: 16px;
   }
 }
-@media(max-width:279px){
+
+@media(max-width:279px) {
   .filterTab {
     font-family: "Inter";
     font-style: normal;
@@ -201,6 +259,7 @@
     color: #9b9b9b;
     cursor: pointer;
   }
+
   .filterTabSelected {
     font-family: "Poppins";
     font-style: normal;
@@ -212,6 +271,7 @@
     cursor: pointer;
     border-bottom: 3px solid #3359a2;
   }
+
   .titleText {
     font-family: "Poppins";
     font-style: normal;
@@ -219,7 +279,6 @@
     font-size: 16.2574px;
     line-height: 100%;
     text-align: center;
-    text-transform: capitalize;
-    color: #2074b4;
+
   }
 }

@@ -10,6 +10,7 @@ const Portfolio = ({ data, title }) => {
   const getPortfolioId = localStorage.getItem("portfolio_id");
 
   const [openDrawer, setOpenDrawer] = useState(false);
+  const [imageArray, setImageArray] = useState([]);
 
   const [open, setOpen] = useState(false);
   const toggleDrawer = () => {
@@ -24,14 +25,15 @@ const Portfolio = ({ data, title }) => {
   useEffect(() => {
     filterData("Software Service");
   }, []);
-  const onOpenModal = () => {
+  const onOpenModal = (item) => {
     setOpen(true);
     toggleDrawer();
+    setImageArray(item.imageArray);
   };
   const onCloseModal = () => setOpen(false);
 
   return (
-    <div className="container ptb-80">
+    <div className="container-fluid ptb-80">
       <SectionTitle heading={title} />
       <div className={`d-flex justify-content-around `}>
         {projects.map((items) => {
@@ -58,16 +60,22 @@ const Portfolio = ({ data, title }) => {
               <div className="col-12 col-sm-6 col-md-6 col-lg-4 mt-2 mb-30">
                 {/* <a href={item?.projectUrl} target="_blank"> */}
                 <div className={styles.wrapper}>
-                  <div className={styles.imagesWrapper} onClick={onOpenModal}>
+                  <div
+                    className={styles.imagesWrapper}
+                    onClick={() => onOpenModal(item)}
+                  >
+                    <div
+                      className={`position-absolute w-100 p-3 d-flex flex-row justify-content-end `}
+                    >
+                      <div className={`${styles.badge} text-center `}>
+                        {item?.category}
+                      </div>
+                    </div>
                     <img
                       src={item?.image}
                       className={styles.images}
                       alt={"imagess"}
                     />
-                    <div className={`${styles.middleText}`}>
-                      <div className={styles.OverlayText}>{item?.category}</div>
-                    </div>
-
                   </div>
                   <div className={styles.titleWrapper}>
                     <h3 className={` ${styles.titleText}`}>{item?.name}</h3>
@@ -79,10 +87,13 @@ const Portfolio = ({ data, title }) => {
                   open={open}
                   onClose={onCloseModal}
                   center
-                  className={styles.modalsss}
+                  // classNames={{ modal: styles.myGalleryModle }}
                 >
-                  <MyGallery modal={true} modelClose={(e) => setOpen(e)} />
-                  &nbsp;
+                  <MyGallery
+                    modal={true}
+                    modelClose={(e) => setOpen(e)}
+                    images={imageArray}
+                  />
                 </Modal>
               </div>
             );

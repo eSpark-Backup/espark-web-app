@@ -1,0 +1,9 @@
+iot based app
+ble
+light/dark theming
+sensor reading
+sensor controlling
+Screen wake
+graph analytics
+file system
+password checking security
