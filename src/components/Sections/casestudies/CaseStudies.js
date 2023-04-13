@@ -62,7 +62,7 @@ const Portfolio = ({ data, title }) => {
                 <div className={styles.wrapper}>
                   <div
                     className={styles.imagesWrapper}
-                    onClick={() => onOpenModal(item)}
+                    // onClick={() => onOpenModal(item)}
                   >
                     <div
                       className={`position-absolute w-100 p-3 d-flex flex-row justify-content-end `}
