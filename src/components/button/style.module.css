@@ -41,6 +41,9 @@ button {
     line-height: 20px;
     letter-spacing: 0em;
 }
+.careerSmallBtn{
+    width: 100%;
+}
 
 .button_11_size {
     width: 242px;

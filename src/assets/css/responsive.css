@@ -1,6 +1,9 @@
 /* 2561px and above (Large Desktops) */
 @media (min-width: 2561px) {
   /* Global Styling */
+.contact-area .section-title h2{
+  font-size: 60px !important;
+}
 
   /* Home Styling */
 
@@ -16,7 +19,9 @@
 /* 1921px to 2560px (Desktops) */
 @media (min-width: 1921px) and (max-width: 2560px) {
   /* Global Styling */
-
+.contact-area .section-title h2 {
+    font-size: 60px !important;
+  }
   /* Home Styling */
 
   /* Services Styling */
@@ -96,6 +101,9 @@
 
 /* 1441px to 1920px (Laptops and Large Tablets) */
 @media (min-width: 1441px) and (max-width: 1920px) {
+  .contact-area .section-title h2 {
+      font-size: 45px !important;
+    }
   .container-fluid {
     width: 75% !important;
   }
@@ -143,6 +151,7 @@
 /* 1025px to 1440px (Small Laptops and Tablets) */
 @media (min-width: 1025px) and (max-width: 1440px) {
   /* Global Styling */
+  
 
   /* Home Styling */
 
@@ -158,12 +167,19 @@
 /* 767px to 1024px (Tablets and Mobile Devices in Landscape) */
 @media (min-width: 767px) and (max-width: 1024px) {
   /* Global Styling */
-
+.contact-area .page-title-area h1 {
+    font-size: 50px !important;
+  }
+  .cardsBtn button{
+    font-size: 12px;
+  }
+  
   /* Home Styling */
   /*Client Testimonials*/
   .testimonial {
     height: 550px !important;
   }
+
 
   textarea {
     height: 30px !important;
@@ -228,6 +244,9 @@
     color: #3a3a3a;
     padding: 0px 50px;
   }
+  .containerMarginTop {
+    margin-top:0px !important ;
+  }
 
   /* Services Styling */
 
@@ -237,15 +256,33 @@
 
   /* Blogs Styling */
 }
+@media (max-width: 853px) {
+  .careers {
+    display: none !important;
+  }
+  .careerMobile{
+    display: block !important;
+  }
+}
+@media (min-width: 854px) {
+  .careers {
+    display: block !important;
+  }
+  .careerMobile{
+    display: none !important;
+  }
+}
 
 /* 426px to 766px (Most Mobile Devices) */
 @media (min-width: 426px) and (max-width: 766px) {
   br {
     display: none !important;
   }
-
   /* Global Styling */
-
+.contact-area .page-title-area {
+  padding-top: 100px !important;
+  padding-bottom: 50px !important;
+}
   /* Home Styling */
   /*testimonial Section */
   .testimonial {
@@ -357,6 +394,9 @@
     color: var(--color-primary) !important;
 
   }
+  .containerMarginTop {
+    margin-top:0px !important ;
+  }
 }
 
 /* 0px to 425px (Smaller Mobile Devices) */
@@ -365,6 +405,9 @@
     display: none !important;
   }
 
+.containerMarginTop {
+    margin-top:0px !important ;
+  }
   /* Global Styling */
 
   /* Home Styling */
