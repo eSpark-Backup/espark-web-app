@@ -4,18 +4,16 @@ import styles from "./style.module.css";
 import { projects } from "./../../../helper/projects";
 import { Modal } from "react-responsive-modal";
 import MyGallery from "./index";
+import Galleryimages from "./indeximages";
+import { ImageGallery } from 'react-image-gallery';
 
 const Portfolio = ({ data, title }) => {
   const [newstate, setNewstate] = useState(projects[0]);
   const getPortfolioId = localStorage.getItem("portfolio_id");
 
-  const [openDrawer, setOpenDrawer] = useState(false);
   const [imageArray, setImageArray] = useState([]);
 
   const [open, setOpen] = useState(false);
-  const toggleDrawer = () => {
-    setOpenDrawer(!openDrawer);
-  };
 
   const filterData = (name) => {
     let filtered = projects.filter((item) => item.name === name);
@@ -25,12 +23,10 @@ const Portfolio = ({ data, title }) => {
   useEffect(() => {
     filterData("Software Service");
   }, []);
-  const onOpenModal = (item) => {
-    setOpen(true);
-    toggleDrawer();
+  const openGallery = (item) =>{
     setImageArray(item.imageArray);
-  };
-  const onCloseModal = () => setOpen(false);
+    setOpen(true);
+  }
 
   return (
     <div className="container-fluid ptb-80">
@@ -58,11 +54,10 @@ const Portfolio = ({ data, title }) => {
           newstate[0]?.childs?.map((item) => {
             return (
               <div className="col-12 col-sm-6 col-md-6 col-lg-4 mt-2 mb-30">
-                {/* <a href={item?.projectUrl} target="_blank"> */}
                 <div className={styles.wrapper}>
                   <div
                     className={styles.imagesWrapper}
-                    // onClick={() => onOpenModal(item)}
+                    onClick={() => openGallery(item)}
                   >
                     <div
                       className={`position-absolute w-100 p-3 d-flex flex-row justify-content-end `}
@@ -81,24 +76,11 @@ const Portfolio = ({ data, title }) => {
                     <h3 className={` ${styles.titleText}`}>{item?.name}</h3>
                   </div>
                 </div>
-                {/* </a> */}
-                <div className={styles.modals}></div>
-                <Modal
-                  open={open}
-                  onClose={onCloseModal}
-                  center
-                  // classNames={{ modal: styles.myGalleryModle }}
-                >
-                  <MyGallery
-                    modal={true}
-                    modelClose={(e) => setOpen(e)}
-                    images={imageArray}
-                  />
-                </Modal>
               </div>
             );
           })}
       </div>
+      <Galleryimages images={imageArray} open={open} setOpen={setOpen} />
     </div>
   );
 };

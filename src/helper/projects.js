@@ -1,142 +1,142 @@
 import PanayamaImg from "../assets/images/projects/Andriod/Panayama App.jpg";
-import PanayamaImg1 from "../assets/images/projects/Andriod/Pranayama-breathing-app(Category).jpeg";
-import PanayamaImg2 from "../assets/images/projects/Andriod/Pranayama-breathing-app(Dashboard).jpeg";
-import PanayamaImg3 from "../assets/images/projects/Andriod/Pranayama-breathing-app(Feature).jpeg";
+import PanayamaImg1 from "../assets/images/projects/Andriod/1.jpg";
+import PanayamaImg2 from "../assets/images/projects/Andriod/2.jpg";
+import PanayamaImg3 from "../assets/images/projects/Andriod/3.jpg";
 
 import PtzKeyboard from "../assets/images/projects/hardware/PTZkeyboard.jpg";
-import PtzKeyboard1 from "../assets/images/projects/hardware/Mahmood PTZkeyboard/2D_Top.PNG";
-import PtzKeyboard2 from "../assets/images/projects/hardware/Mahmood PTZkeyboard/3D_Bottom.PNG";
-import PtzKeyboard3 from "../assets/images/projects/hardware/Mahmood PTZkeyboard/3D_Isometric.PNG";
-import PtzKeyboard4 from "../assets/images/projects/hardware/Mahmood PTZkeyboard/3D_Top.PNG";
+import PtzKeyboard1 from "../assets/images/projects/hardware/Mahmood PTZkeyboard/1.jpg";
+import PtzKeyboard2 from "../assets/images/projects/hardware/Mahmood PTZkeyboard/2.jpg";
+import PtzKeyboard3 from "../assets/images/projects/hardware/Mahmood PTZkeyboard/3.jpg";
+import PtzKeyboard4 from "../assets/images/projects/hardware/Mahmood PTZkeyboard/4.jpg";
 
 import Sleepenhencer from "../assets/images/projects/hardware/Sleepenhencer.jpg";
-import Sleepenhencer1 from "../assets/images/projects/hardware/Xponent-Tech Sleepenhencer/2D_Bottom.PNG";
-import Sleepenhencer2 from "../assets/images/projects/hardware/Xponent-Tech Sleepenhencer/2D_C_View.PNG";
-import Sleepenhencer3 from "../assets/images/projects/hardware/Xponent-Tech Sleepenhencer/2D_Top.PNG";
-import Sleepenhencer4 from "../assets/images/projects/hardware/Xponent-Tech Sleepenhencer/3D_Bottom.PNG";
-import Sleepenhencer5 from "../assets/images/projects/hardware/Xponent-Tech Sleepenhencer/3D_Isometric.PNG";
-import Sleepenhencer6 from "../assets/images/projects/hardware/Xponent-Tech Sleepenhencer/3D_Top.PNG";
+import Sleepenhencer1 from "../assets/images/projects/hardware/Xponent-Tech Sleepenhencer/1.jpg";
+import Sleepenhencer2 from "../assets/images/projects/hardware/Xponent-Tech Sleepenhencer/2.jpg";
+import Sleepenhencer3 from "../assets/images/projects/hardware/Xponent-Tech Sleepenhencer/3.jpg";
+import Sleepenhencer4 from "../assets/images/projects/hardware/Xponent-Tech Sleepenhencer/4.jpg";
+import Sleepenhencer5 from "../assets/images/projects/hardware/Xponent-Tech Sleepenhencer/5.jpg";
+import Sleepenhencer6 from "../assets/images/projects/hardware/Xponent-Tech Sleepenhencer/6.jpg";
 
 import SoundSensor from "../assets/images/projects/hardware/Sound Sensor.jpg";
-import SoundSensor1 from "../assets/images/projects/hardware/Ezlo Sound Sensor/2D_Bottom_View.PNG";
-import SoundSensor3 from "../assets/images/projects/hardware/Ezlo Sound Sensor/2D_Top_View.PNG";
-import SoundSensor2 from "../assets/images/projects/hardware/Ezlo Sound Sensor/2D_C_View.PNG";
-import SoundSensor4 from "../assets/images/projects/hardware/Ezlo Sound Sensor/3D_Bottom_View.PNG";
-import SoundSensor6 from "../assets/images/projects/hardware/Ezlo Sound Sensor/3D_Top_View.PNG";
-import SoundSensor5 from "../assets/images/projects/hardware/Ezlo Sound Sensor/Isometric_View.PNG";
+import SoundSensor1 from "../assets/images/projects/hardware/Ezlo Sound Sensor/1.jpg";
+import SoundSensor3 from "../assets/images/projects/hardware/Ezlo Sound Sensor/2.jpg";
+import SoundSensor2 from "../assets/images/projects/hardware/Ezlo Sound Sensor/3.jpg";
+import SoundSensor4 from "../assets/images/projects/hardware/Ezlo Sound Sensor/4.jpg";
+import SoundSensor6 from "../assets/images/projects/hardware/Ezlo Sound Sensor/5.jpg";
+import SoundSensor5 from "../assets/images/projects/hardware/Ezlo Sound Sensor/6.jpg";
 
 import YougaApp from "../assets/images/projects/iOS/Yoga App.jpg";
-import YougaApp1 from "../assets/images/projects/iOS/YogaApp(Categories).jpg";
-import YougaApp2 from "../assets/images/projects/iOS/YogaApp(Dashboard).jpg";
-import YougaApp3 from "../assets/images/projects/iOS/YogaApp(Home-page).jpg";
+import YougaApp1 from "../assets/images/projects/iOS/1.jpg";
+import YougaApp2 from "../assets/images/projects/iOS/2.jpg";
+import YougaApp3 from "../assets/images/projects/iOS/3.jpg";
 
 import FogScreen from "../assets/images/projects/Mechanical/Fog Screen Main Structure Design.jpg";
-import FogScreen1 from "../assets/images/projects/Mechanical/Fog Screen Main Structure Design/FAN Support Assembly.JPG";
-import FogScreen2 from "../assets/images/projects/Mechanical/Fog Screen Main Structure Design/Fog Screen 3D-1.JPG";
-import FogScreen3 from "../assets/images/projects/Mechanical/Fog Screen Main Structure Design/Fog Screen Aluminum Casing.JPG";
-import FogScreen4 from "../assets/images/projects/Mechanical/Fog Screen Main Structure Design/Inner Section view.JPG";
-import FogScreen5 from "../assets/images/projects/Mechanical/Fog Screen Main Structure Design/Section from front with Dimensions.JPG";
-import FogScreen6 from "../assets/images/projects/Mechanical/Fog Screen Main Structure Design/Side section view with Dimensions.JPG";
+import FogScreen1 from "../assets/images/projects/Mechanical/Fog Screen Main Structure Design/1.jpg";
+import FogScreen2 from "../assets/images/projects/Mechanical/Fog Screen Main Structure Design/2.jpg";
+import FogScreen3 from "../assets/images/projects/Mechanical/Fog Screen Main Structure Design/3.jpg";
+import FogScreen4 from "../assets/images/projects/Mechanical/Fog Screen Main Structure Design/4.jpg";
+import FogScreen5 from "../assets/images/projects/Mechanical/Fog Screen Main Structure Design/5.jpg";
+import FogScreen6 from "../assets/images/projects/Mechanical/Fog Screen Main Structure Design/6.jpg";
 
 import InDoor from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug.jpg";
-import InDoor1 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug 2D-Exploded View-1.png";
-import InDoor2 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug 2D-Exploded View-2.png";
-import InDoor3 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug Exploded View-1.png";
-import InDoor4 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug Exploded View-2.png";
-import InDoor5 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug Exploded View-3.png";
-import InDoor6 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug Exploded View-4.png";
-import InDoor7 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug-3D-1.png";
-import InDoor8 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug-3D-3.png";
-import InDoor9 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug-3D-4.png";
-import InDoor10 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug-3D-5.png";
-import InDoor11 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug-3D-6.png";
-import InDoor12 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug-3D-7.png";
-import InDoor13 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug-3D-8.png";
-import InDoor14 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug-3D-Inner-View.png";
-import InDoor15 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/Indoor Monitoring Device.png";
+import InDoor1 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/1.jpg";
+import InDoor2 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/2.jpg";
+import InDoor3 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/3.jpg";
+import InDoor4 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/4.jpg";
+import InDoor5 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/5.jpg";
+import InDoor6 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/6.jpg";
+import InDoor7 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/7.jpg";
+// import InDoor8 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug-3D-3.png";
+// import InDoor9 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug-3D-4.png";
+// import InDoor10 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug-3D-5.png";
+// import InDoor11 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug-3D-6.png";
+// import InDoor12 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug-3D-7.png";
+// import InDoor13 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug-3D-8.png";
+// import InDoor14 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/American Plug-3D-Inner-View.png";
+// import InDoor15 from "../assets/images/projects/Mechanical/In-Door Monitor Device with American Plug/Indoor Monitoring Device.png";
 
 import OutDoor from "../assets/images/projects/Mechanical/OutDoor Monitor Device.jpg";
-import OutDoor1 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/3D_View-1.jpg";
-import OutDoor2 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/3D_View-2.jpg";
-import OutDoor3 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/3D_View-3.jpg";
-import OutDoor4 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/3D_View-4.jpg";
-import OutDoor5 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/3D_View-5.jpg";
-import OutDoor6 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/3D_View-6.jpg";
-import OutDoor7 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/3D_View-7.jpg";
-import OutDoor8 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/3D_View-8.jpg";
-import OutDoor9 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/Inner  View-1.jpg";
-import OutDoor10 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/Inner View-2.jpg";
-import OutDoor11 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/Inner View-3.jpg";
-import OutDoor12 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/Inner_ View-4.jpg";
+// import OutDoor1 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/3D_View-1.jpg";
+// import OutDoor2 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/3D_View-2.jpg";
+// import OutDoor3 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/3D_View-3.jpg";
+// import OutDoor4 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/3D_View-4.jpg";
+// import OutDoor5 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/3D_View-5.jpg";
+// import OutDoor6 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/3D_View-6.jpg";
+// import OutDoor7 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/3D_View-7.jpg";
+// import OutDoor8 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/3D_View-8.jpg";
+// import OutDoor9 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/Inner  View-1.jpg";
+// import OutDoor10 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/Inner View-2.jpg";
+// import OutDoor11 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/Inner View-3.jpg";
+// import OutDoor12 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/Jpeg/Inner_ View-4.jpg";
 
-import OutDoor13 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/OutDoor Monitor With Mounting/3D-View-2.jpg";
-import OutDoor14 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/OutDoor Monitor With Mounting/3D-View-3.jpg";
-import OutDoor15 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/OutDoor Monitor With Mounting/3D-View-4.jpg";
-import OutDoor16 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/OutDoor Monitor With Mounting/3D-View-5.jpg";
-import OutDoor17 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/OutDoor Monitor With Mounting/3D-View-6.jpg";
-import OutDoor18 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/OutDoor Monitor With Mounting/3D-View-7.jpg";
-import OutDoor19 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/OutDoor Monitor With Mounting/Mounting-1.jpg";
-import OutDoor20 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/OutDoor Monitor With Mounting/Mounting-2.jpg";
-import OutDoor21 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/OutDoor Monitor With Mounting/Outdoor Monitoring Device.jpg";
+import OutDoor13 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/OutDoor Monitor With Mounting/1.jpg";
+import OutDoor14 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/OutDoor Monitor With Mounting/2.jpg";
+import OutDoor15 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/OutDoor Monitor With Mounting/3.jpg";
+import OutDoor16 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/OutDoor Monitor With Mounting/4.jpg";
+import OutDoor17 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/OutDoor Monitor With Mounting/5.jpg";
+import OutDoor18 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/OutDoor Monitor With Mounting/6.jpg";
+// import OutDoor19 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/OutDoor Monitor With Mounting/Mounting-1.jpg";
+// import OutDoor20 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/OutDoor Monitor With Mounting/Mounting-2.jpg";
+// import OutDoor21 from "../assets/images/projects/Mechanical/OutDoor Monitor Device Images/OutDoor Monitor With Mounting/Outdoor Monitoring Device.jpg";
 
 import Tracking from "../assets/images/projects/Mechanical/Tracking Device.jpg";
-import Tracking1 from "../assets/images/projects/Mechanical/Tracking Device/Tracker Section View 3D.JPG";
-import Tracking2 from "../assets/images/projects/Mechanical/Tracking Device/Tracker Section View with Dimensions-1.JPG";
-import Tracking3 from "../assets/images/projects/Mechanical/Tracking Device/Tracking Device for Children.JPG";
+import Tracking1 from "../assets/images/projects/Mechanical/Tracking Device/1.jpg";
+import Tracking2 from "../assets/images/projects/Mechanical/Tracking Device/2.jpg";
+import Tracking3 from "../assets/images/projects/Mechanical/Tracking Device/3.jpg";
 
 import FitnessTracker from "../assets/images/projects/React Native/Fitness Tracker App.jpg";
-import FitnessTracker1 from "../assets/images/projects/React Native/Fitness Tracker App/FitnessTracker(Activity-page).jpg";
-import FitnessTracker2 from "../assets/images/projects/React Native/Fitness Tracker App/FitnessTracker(Dashboard).jpeg";
-import FitnessTracker3 from "../assets/images/projects/React Native/Fitness Tracker App/FitnessTracker(Form-page).jpg";
+import FitnessTracker1 from "../assets/images/projects/React Native/Fitness Tracker App/1.jpg";
+import FitnessTracker2 from "../assets/images/projects/React Native/Fitness Tracker App/2.jpg";
+import FitnessTracker3 from "../assets/images/projects/React Native/Fitness Tracker App/3.jpg";
 
 import Incubator from "../assets/images/projects/React Native/Incubator App.jpg";
-import Incubator1 from "../assets/images/projects/React Native/Incubator App/Incubator(Dashboard).png";
-import Incubator2 from "../assets/images/projects/React Native/Incubator App/Incubator(Settings).png";
+import Incubator1 from "../assets/images/projects/React Native/Incubator App/1.jpg";
+import Incubator2 from "../assets/images/projects/React Native/Incubator App/2.jpg";
 
 import VanController from "../assets/images/projects/React Native/Van Controller.jpg";
-import VanController1 from "../assets/images/projects/React Native/Van Controller/VanControllerApp(Dashboard).jpeg";
-import VanController2 from "../assets/images/projects/React Native/Van Controller/VanControllerApp(Home-page).jpeg";
-import VanController3 from "../assets/images/projects/React Native/Van Controller/VanControllerApp(Settings).png";
+import VanController1 from "../assets/images/projects/React Native/Van Controller/1.jpg";
+import VanController2 from "../assets/images/projects/React Native/Van Controller/2.jpg";
+import VanController3 from "../assets/images/projects/React Native/Van Controller/3.jpg";
 
 import eSparkInstitue from "../assets/images/projects/React Projects/eSpark Institute.jpg";
-import eSparkInstitue1 from "../assets/images/projects/React Projects/react 1.png";
-import eSparkInstitue2 from "../assets/images/projects/React Projects/react 2.png";
-import eSparkInstitue3 from "../assets/images/projects/React Projects/react 3.png";
-import eSparkInstitue4 from "../assets/images/projects/React Projects/react 4.png";
+import eSparkInstitue1 from "../assets/images/projects/React Projects/1.jpg";
+import eSparkInstitue2 from "../assets/images/projects/React Projects/2.jpg";
+import eSparkInstitue3 from "../assets/images/projects/React Projects/3.jpg";
+import eSparkInstitue4 from "../assets/images/projects/React Projects/4.jpg";
 
 import BeOneSolutions from "../assets/images/projects/Wordpresss/Be One Solutions.jpg";
-import BeOneSolutions1 from "../assets/images/projects/Wordpresss/Be One Solutions/wp1.png";
-import BeOneSolutions2 from "../assets/images/projects/Wordpresss/Be One Solutions/wp2.png";
-import BeOneSolutions3 from "../assets/images/projects/Wordpresss/Be One Solutions/wp3.png";
-import BeOneSolutions4 from "../assets/images/projects/Wordpresss/Be One Solutions/wp4.png";
+import BeOneSolutions1 from "../assets/images/projects/Wordpresss/Be One Solutions/1.jpg";
+import BeOneSolutions2 from "../assets/images/projects/Wordpresss/Be One Solutions/2.jpg";
+import BeOneSolutions3 from "../assets/images/projects/Wordpresss/Be One Solutions/3.jpg";
+import BeOneSolutions4 from "../assets/images/projects/Wordpresss/Be One Solutions/4.jpg";
 
 import IonEnergy from "../assets/images/projects/Wordpresss/ion Energy Solutions.jpg";
-import IonEnergy1 from "../assets/images/projects/Wordpresss/ion energyu solutions/wp 2.png";
-import IonEnergy2 from "../assets/images/projects/Wordpresss/ion energyu solutions/wp 3.png";
-import IonEnergy3 from "../assets/images/projects/Wordpresss/ion energyu solutions/wp 4.png";
-import IonEnergy4 from "../assets/images/projects/Wordpresss/ion energyu solutions/wp1.png";
+import IonEnergy1 from "../assets/images/projects/Wordpresss/ion energyu solutions/1.jpg";
+import IonEnergy2 from "../assets/images/projects/Wordpresss/ion energyu solutions/2.jpg";
+import IonEnergy3 from "../assets/images/projects/Wordpresss/ion energyu solutions/3.jpg";
+import IonEnergy4 from "../assets/images/projects/Wordpresss/ion energyu solutions/4.jpg";
 
 import TravelTrade from "../assets/images/projects/Wordpresss/Travel Trade Ready.jpg";
-import TravelTrade1 from "../assets/images/projects/Wordpresss/travel trade ready/wp1.png";
-import TravelTrade2 from "../assets/images/projects/Wordpresss/travel trade ready/wp2.png";
-import TravelTrade3 from "../assets/images/projects/Wordpresss/travel trade ready/wp3.png";
-import TravelTrade4 from "../assets/images/projects/Wordpresss/travel trade ready/wp4.png";
+import TravelTrade1 from "../assets/images/projects/Wordpresss/travel trade ready/1.jpg";
+import TravelTrade2 from "../assets/images/projects/Wordpresss/travel trade ready/2.jpg";
+import TravelTrade3 from "../assets/images/projects/Wordpresss/travel trade ready/3.jpg";
+import TravelTrade4 from "../assets/images/projects/Wordpresss/travel trade ready/4.jpg";
 
 import IonMeter from "../assets/images/projects/Vue.js/ION Meter.jpg";
-import IonMeter1 from "../assets/images/projects/Vue.js/vie 1.png";
-import IonMeter2 from "../assets/images/projects/Vue.js/vue 2.png";
-import IonMeter3 from "../assets/images/projects/Vue.js/vue 3.png";
-import IonMeter4 from "../assets/images/projects/Vue.js/vue 4.png";
-import IonMeter5 from "../assets/images/projects/Vue.js/vue 5.png";
+import IonMeter1 from "../assets/images/projects/Vue.js/1.jpg";
+import IonMeter2 from "../assets/images/projects/Vue.js/2.jpg";
+import IonMeter3 from "../assets/images/projects/Vue.js/3.jpg";
+import IonMeter4 from "../assets/images/projects/Vue.js/4.jpg";
+import IonMeter5 from "../assets/images/projects/Vue.js/5.jpg";
 
 import Flexmold from "../assets/images/projects/desktop app/Flexmold.jpg";
-import Flexmold1 from "../assets/images/projects/desktop app/image_2023_03_30T05_05_53_640Z.png";
-import Flexmold2 from "../assets/images/projects/desktop app/image_2023_03_30T05_06_52_349Z.png";
-import Flexmold3 from "../assets/images/projects/desktop app/image_2023_03_30T05_07_14_567Z.png";
-import Flexmold4 from "../assets/images/projects/desktop app/image_2023_03_30T05_07_32_849Z.png";
-import Flexmold5 from "../assets/images/projects/desktop app/image_2023_03_30T05_09_40_670Z.png";
-import Flexmold6 from "../assets/images/projects/desktop app/image_2023_03_30T05_08_40_098Z.png";
-import Flexmold7 from "../assets/images/projects/desktop app/image_2023_03_30T05_10_10_229Z.png";
+import Flexmold1 from "../assets/images/projects/desktop app/1.jpg";
+import Flexmold2 from "../assets/images/projects/desktop app/2.jpg";
+import Flexmold3 from "../assets/images/projects/desktop app/3.jpg";
+import Flexmold4 from "../assets/images/projects/desktop app/4.jpg";
+import Flexmold5 from "../assets/images/projects/desktop app/5.jpg";
+import Flexmold6 from "../assets/images/projects/desktop app/6.jpg";
+import Flexmold7 from "../assets/images/projects/desktop app/7.jpg";
 
 const hash = () => {
   const s4 = () => {
@@ -285,38 +285,38 @@ export const projects = [
           InDoor5,
           InDoor6,
           InDoor7,
-          InDoor8,
-          InDoor9,
-          InDoor10,
-          InDoor11,
-          InDoor12,
-          InDoor13,
-          InDoor14,
-          InDoor15,
+          // InDoor8,
+          // InDoor9,
+          // InDoor10,
+          // InDoor11,
+          // InDoor12,
+          // InDoor13,
+          // InDoor14,
+          // InDoor15,
         ]
       ),
       projectItems(OutDoor, "", "Outdoor Monitor Device", "Mechanical", [
-        OutDoor1,
-        OutDoor2,
-        OutDoor3,
-        OutDoor4,
-        OutDoor5,
-        OutDoor6,
-        OutDoor7,
-        OutDoor8,
-        OutDoor9,
-        OutDoor10,
-        OutDoor11,
-        OutDoor12,
+        // OutDoor1,
+        // OutDoor2,
+        // OutDoor3,
+        // OutDoor4,
+        // OutDoor5,
+        // OutDoor6,
+        // OutDoor7,
+        // OutDoor8,
+        // OutDoor9,
+        // OutDoor10,
+        // OutDoor11,
+        // OutDoor12,
         OutDoor13,
         OutDoor14,
         OutDoor15,
         OutDoor16,
         OutDoor17,
         OutDoor18,
-        OutDoor19,
-        OutDoor20,
-        OutDoor21,
+        // OutDoor19,
+        // OutDoor20,
+        // OutDoor21,
       ]),
       projectItems(
         Tracking,
