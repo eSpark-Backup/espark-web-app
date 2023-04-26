@@ -34697,3 +34697,19 @@ blockquote:after {
 .image-gallery-content button:hover {
   box-shadow: none;
 }
+.yarl__navigation_next{
+  box-shadow: none;
+}
+.yarl__navigation_next:hover{
+  box-shadow: none;
+}
+.yarl__navigation_prev{
+  box-shadow: none ;
+}
+.yarl__button{
+  box-shadow: none ;
+}
+.yarl__navigation_prev:hover{
+  box-shadow: none ;
+}
+

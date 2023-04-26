@@ -186,7 +186,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
-    line-height: 10px;
+    line-height: 11px;
     text-align: center;
     color: #9b9b9b;
     cursor: pointer;
@@ -197,7 +197,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
-    line-height: 10px;
+    line-height: 11px;
     text-align: center;
     cursor: pointer;
     border-bottom: 3px solid #3359a2;
@@ -221,8 +221,8 @@
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
-    font-size: 11px;
-    line-height: 10px;
+    font-size: 14px;
+    line-height: 13px;
     text-align: center;
     color: #9b9b9b;
     cursor: pointer;
@@ -232,8 +232,8 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
-    font-size: 11px;
-    line-height: 10px;
+    font-size: 14px;
+    line-height: 13px;
     text-align: center;
     cursor: pointer;
     border-bottom: 3px solid #3359a2;

@@ -2,10 +2,7 @@ import React, { useState, useEffect } from "react";
 import SectionTitle from "../../sectionTitle";
 import styles from "./style.module.css";
 import { projects } from "./../../../helper/projects";
-import { Modal } from "react-responsive-modal";
-import MyGallery from "./index";
 import Galleryimages from "./indeximages";
-import { ImageGallery } from 'react-image-gallery';
 
 const Portfolio = ({ data, title }) => {
   const [newstate, setNewstate] = useState(projects[0]);
