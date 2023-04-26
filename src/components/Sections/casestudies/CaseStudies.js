@@ -20,10 +20,10 @@ const Portfolio = ({ data, title }) => {
   useEffect(() => {
     filterData("Software Service");
   }, []);
-  const openGallery = (item) =>{
+  const openGallery = (item) => {
     setImageArray(item.imageArray);
     setOpen(true);
-  }
+  };
 
   return (
     <div className="container-fluid ptb-80">
@@ -46,16 +46,16 @@ const Portfolio = ({ data, title }) => {
           );
         })}
       </div>
-      <div className="row pt-5 mt-3 ">
+      <div className="row pt-5 mt-3" style={{ cursor: "pointer" }}>
         {newstate[0] &&
           newstate[0]?.childs?.map((item) => {
             return (
-              <div className="col-12 col-sm-6 col-md-6 col-lg-4 mt-2 mb-30">
+              <div
+                className="col-12 col-sm-6 col-md-6 col-lg-4 mt-2 mb-30"
+                onClick={() => openGallery(item)}
+              >
                 <div className={styles.wrapper}>
-                  <div
-                    className={styles.imagesWrapper}
-                    onClick={() => openGallery(item)}
-                  >
+                  <div className={styles.imagesWrapper}>
                     <div
                       className={`position-absolute w-100 p-3 d-flex flex-row justify-content-end `}
                     >
