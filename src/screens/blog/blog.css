@@ -19,22 +19,61 @@
   color: #000000;
   font-weight: 500;
 }
-
-.paragraph h3 img {
-  margin-left: 50px;
-}
-.paragraph p img {
-  margin: 30px 10px;
-}
-
 .paragraph h4 span img {
   margin-right: 50px;
 }
-.paragraph h4 img {
+.paragraph h3 img {
+width: 100%;
+height: auto;
+
+}
+.paragraph p img {
+  margin: 30px 0px;
+  width: 100%;
+  height: 400px   !important;
+}
+.paragraph p > img {
+  display: block;
+  margin: 30px 0px;
+  width: 40%;
+  height: auto;
+
+}
+
+.paragraph h2 > img{
+  display: block;
+  width: 40% !important;
+  height: auto;
+}
+.paragraph h3 > img{
+  display: block;
+  width: 40% !important;
+  height: auto;
+
+
+}
+.paragraph h4  > img {
   display: flex;
   flex-direction: column;
   margin: 30px 10px;
+  width: 40%;
+  height: auto;
+
 }
+.paragraph h5  > img {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 10px;
+  width: 40%;
+  height: auto;
+}
+.paragraph > img{
+  display: block;
+  width: 40% !important;
+  height: auto;
+  width: 100%;
+}
+
 
 .paragraph p:first-child {
   margin-top: 20px;
@@ -98,7 +137,7 @@
 
 .mainDivWrapper:hover .div-black-color-animation {
   opacity: 0.8;
-  background-color: black;
+  background-color: black;  
   z-index: 2;
 }
 
@@ -126,7 +165,8 @@
   position: absolute;
 }
 .blogThirdSection{
-  width: 79%;
+  width: 78%;
+  padding-right: 18px;
 }
 .blogFirstSectionMargin{
   width: 75%;
@@ -144,4 +184,189 @@
 .marginBottomImg {
   margin-top: 522px;
 }
+.padingBotom{
+  padding-bottom:400px !important ;
+}
 
+@media (max-width: 768px) {
+  .blogThirdSection {
+    width: 100%;
+    padding:0px 7px 40px 0px !important;
+  }
+  .blogSecondSection{
+    width: 100% !important;
+  }
+  .blogFirstSectionMargin {
+    width: 100%;
+  }
+  .blogsBaners{
+    width: 100% !important;
+  }
+  .mainDivWrapper:hover .titleImg {
+    font-size: 12px;
+    padding-left: 20px !important ;
+  }
+  .mainDivWrapper:hover .titleImgLeft {
+    font-size: 12px;
+  }
+  .blogFirstSectionMargin {
+    width: 96%;
+  }
+  .blogSecondSection{
+    width: 96% !important;
+  }
+}
+@media only screen and (min-width:1201px) and (max-width: 1440px) {
+  .blogThirdSection {
+    width: 100%;
+    padding:0px 7px 40px 0px !important;
+  }
+  .blogSecondSection{
+    width: 97% !important;
+  }
+  .blogFirstSectionMargin {
+    width: 97%;
+  }
+  .blogsBaners{
+    width: 100% !important;
+  }
+  .mainDivWrapper:hover .titleImg {
+    font-size: 12px;
+    padding-left: 20px !important ;
+  }
+  
+  .mainDivWrapper:hover .titleImgLeft {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width:769px) and (max-width: 1200px) {
+  .blogThirdSection {
+    width: 96%;
+    padding:0px 7px 40px 0px !important;
+  }
+  .blogSecondSection{
+    width: 97% !important;
+  }
+  .blogFirstSectionMargin {
+    width: 97%;
+  }
+  .blogsBaners{
+    width: 100% !important;
+  }
+  .mainDivWrapper:hover .titleImg {
+    font-size: 12px;
+    padding-left: 20px !important ;
+  }
+  
+  .mainDivWrapper:hover .titleImgLeft {
+    font-size: 12px;
+  }
+  .paragraph p img {
+    margin: 0px 0px !important;
+    width: 100%;
+  } 
+  .paragraph p > img {
+    display: block;
+    margin: 30px 0px;
+    width: 40%;
+    height: auto;
+  
+  }
+  
+  .paragraph h2 > img{
+    display: block;
+    width: 40% !important;
+    height: auto;
+  }
+  .paragraph h3 > img{
+    display: block;
+    width: 40% !important;
+    height: auto;
+  }
+  .paragraph h4  > img {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 10px;
+    width: 40%;
+    height: auto;
+  
+  }
+  .paragraph h5  > img {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 10px;
+    width: 40%;
+    height: auto;
+  
+  }
+  .paragraph > img{
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .blogThirdSection {
+    width: 95%;
+    padding:0px 7px 40px 0px !important;
+  }
+  .blogSecondSection{
+    width: 85% !important;
+  }
+  .blogFirstSectionMargin {
+    width: 85%;
+  }
+  .blogsBaners{
+    width: 100% ;
+  }
+  .mainDivWrapper:hover .titleImg {
+    font-size: 12px;
+    padding-left: 20px !important ;
+  }
+  
+  .mainDivWrapper:hover .titleImgLeft {
+    font-size: 12px;
+  }
+  .paragraph h4 img {
+    width: 100% !important;
+  }
+  .paragraph p img {
+    margin: 0px 0px !important;
+    width: 100% !important;
+  }
+  .paragraph h3 img {
+    width: 100% !important;
+  }
+  .paragraph h2 > img{
+    width: 100% !important;
+    height: auto;
+  }
+  .paragraph img{
+    width: 100% !important;
+    margin: 10px 0px;
+  }
+  .paragraph p img {
+    margin: 30px 0px;
+    width: 100%;
+    height: auto !important;
+  }
+  .blogThirdSection {
+    width: 95%;
+    padding:0px 7px 40px 0px !important;
+  }
+  .blogSecondSection{
+    width: 90% !important;
+  }
+  .blogFirstSectionMargin {
+    width: 90%;
+  }
+}
+
+
+
+@media only screen and (min-width:300px) and (max-width: 330px) {
+
+ .blogsBaners{
+    width: 90% !important;
+  }
+}

@@ -94,13 +94,15 @@
     /* padding-top: 40px !important; */
     padding: 20px 0;
     margin-top: 123px !important;
+    width: 99%;
+    margin-right: 20px !important;
   }
   
   .topContainer {
     box-shadow: inset 0 0 0 2000px rgba(92, 97, 131, 0.73);
     border-radius: 39px;
     /* width: 1568px!important; */
-    width: 82%!important;
+    width: 82% !important;
     height: 487px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -331,7 +333,6 @@
     }
     .blogsCardPara>p{
       font-size: 13px;
-      height: 234px;
     }
     .blogsCardHeading{
       font-size: 15px;
@@ -367,6 +368,9 @@
       line-height: 1;
       padding-right: 10%;
       color: #ffffff;
+    }
+    .topContainer {
+      width: 78% !important;
     }
   }
 
@@ -423,6 +427,14 @@
       padding-bottom: 35px !important;
 
     }
+    .topText{
+      font-size: 43px;
+      line-height: 115%;
+      align-items: center;
+    }
+    .topContainer {
+      width: 77% !important;
+    }
   }
   
   @media (max-width:425px){
@@ -430,7 +442,8 @@
       font-size: 17px;
     }
     .topText{
-      font-size: 37px;
+      font-size: 32px;
+      line-height: 115%;
     }
     .redesignBlogCardWrapper{
       margin-top: 10px;
@@ -439,11 +452,13 @@
       height: auto;
     } */
   }
-
-  @media only screen and (width: 820px) and (height: 1180px) {
-    .blogsCardPara>p{
-      height: 138px!important;
+  @media only screen and (min-width: 200px) and (max-width: 320px) {
+    .topText{
+      font-size: 25px !important;
+      line-height: 115%;
     }
+  }
+  @media only screen and (width: 820px) and (height: 1180px) {
     .blogFirstSectionMargin div:nth-child(2){
       margin-top: 25px;
     }
@@ -501,4 +516,44 @@
       font-size: 25px!important;
     }
     
+  }
+  @media (max-width: 1440px) {
+    .topContainer{
+      width: 97% !important;
+    }
+    .comment-form{
+      padding: 38px 10px 45px !important  ;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .topContainer {
+      width: 96% !important;
+    }
+  }
+  @media (min-width: 568px) and (max-width: 991px) {
+    .topContainer {
+      width: 95% !important;
+    }
+    .blogImageCard > img{
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+  @media (min-width: 425px) and (max-width: 568px) {
+    .topContainer {
+      width: 76% !important;
+    }
+    .blogImageCard > img{
+      width: 97%;
+      height: 100% !important;
+    }
+  }
+  @media (max-width: 425px){
+    .blogImageCard > img{
+      width: 97%;
+      height: 100% !important;
+    }
+    .topContainer {
+      width: 86% !important;
+    }
   }

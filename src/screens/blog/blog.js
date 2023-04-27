@@ -52,6 +52,7 @@ export default function Blog() {
     <div >
       <BlogsBanner
         title={`A Blog for Passionate People <br/> and  Technical lovers`}
+        className="blogsBaners"
       />
       <div className="row blogFirstSectionMargin">
         {post ? (

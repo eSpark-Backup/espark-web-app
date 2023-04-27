@@ -36,7 +36,7 @@ function BlogDetail() {
             <div class="row">
               <div className="col-lg-12 col-md-12 ">
                 <div className="w-100 text-center">
-                  <Button design={8} title={"Lorem ipsum"}></Button>
+                  <Button design={8} title={"Category"}></Button>
                   <div className="w-100 m-auto my-5">
                     <h3 className="text-center text-black fw-bold">
                       {post && post[0]?.title.rendered}
@@ -66,9 +66,9 @@ function BlogDetail() {
               </div>
             </div>
           </div>
-          <div className="row imagesWrapper">
+          <div className="row imagesWrapper padingBotom">
             {blog?.map((item, index) => (
-              <div className="col-12 col-md-6 p-0 m-0">
+              <div className="col-6 col-sm-6 col-md-6 p-0 m-0">
                 <div className="w-100 h-100  position-relative mainDivWrapper">
                   <div className="divPosition imgDiv">
                     <img
@@ -93,11 +93,11 @@ function BlogDetail() {
               </div>
             ))}
           </div>
-          <div className="container-fluid my-1 position-relative  ">
+          {/* <div className="container-fluid my-1 position-relative  ">
             <div className="commetArea">
               <CommentsArea />
             </div>
-          </div>
+          </div> */}
         </div>
       ) : (
         <div className="row">
