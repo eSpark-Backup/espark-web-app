@@ -21,10 +21,21 @@ export default function Blog() {
       const data = await getApiCall();
       setTotalPages(data.headers["x-wp-totalpages"]);
       setPost(data.data);
-      console.log("post", post);
     };
     main();
   }, []);
+
+  // const getUpdatedPost = (posts) => {
+  //  const updated = posts?.map((post, i =0)=>{
+  //     return {
+  //       ...post,
+  //       postid: i+1
+  //     }
+  //   })
+  //   return updated
+  // }
+  // const updatedPost = getUpdatedPost(post); 
+
 
   const catPost = async (e) => {
     const data = await getCatApiCall(e);
@@ -57,7 +68,7 @@ export default function Blog() {
       <div className="row blogFirstSectionMargin">
         {post ? (
           post?.slice(0, 2)?.map((items) => (
-            <div className="col-sm-12 col-md-12 col-lg-4 ps-1  ">
+            <div className="col-sm-12 col-md-4 col-lg-4 ps-1  ">
               <BlogCardRedesign
                 cardSelection="largeCards"
                 para={items.excerpt.rendered}
@@ -70,12 +81,12 @@ export default function Blog() {
             </div>
           ))
         ) : (
-          <div className=" col-sm-12 col-md-12 col-lg-8  ">
+          <div className=" col-sm-12 col-md-4 col-lg-8  ">
             <ShimmerPostList postStyle="STYLE_FOUR" col={2} row={1} gap={30} />
           </div>
         )}
         <div
-          className={`scroll col-lg-4  col-md-12 col-sm-12    d-flex flex-direction-column justify-content-between  `}
+          className={`scroll col-lg-4  col-md-4 col-sm-12    d-flex flex-direction-column justify-content-between  `}
         >
           <BlogStripMap
             post={post}
@@ -89,7 +100,7 @@ export default function Blog() {
       <div className="row  w-75 m-auto blogSecondSection">
         {post ? (
           post?.slice(7, 11)?.map((items) => (
-            <div className=" col-sm-12 col-md-6 col-lg-3  mt-5">
+            <div className=" col-sm-6 col-md-6 col-lg-3  mt-5">
               <BlogCardRedesign
                 cardSelection="smallCards"
                 para={items.excerpt.rendered}
@@ -102,7 +113,7 @@ export default function Blog() {
             </div>
           ))
         ) : (
-          <div className=" col-sm-12 col-md-12 col-lg-8  ">
+          <div className=" col-sm-6 col-md-12 col-lg-8  ">
             <ShimmerPostList postStyle="STYLE_FOUR" col={4} row={1} gap={30} />
           </div>
         )}

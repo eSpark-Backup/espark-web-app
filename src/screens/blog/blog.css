@@ -8,6 +8,16 @@
   padding-right: 20px;
   transition: font-size 0.5s ease-in-out;
 }
+.imagesWrapper{
+  border: 2px solid red;
+  /* width: 60% !important; */
+  /* height: auto; */
+  margin-bottom: 60px;
+}
+.hoverImages{
+  width: 100%;
+  height: 100%;
+}
 
 .paragraph p{
   color: #000000;
@@ -55,7 +65,7 @@ height: auto;
 .paragraph h4  > img {
   display: flex;
   flex-direction: column;
-  margin: 30px 10px;
+  margin-top: 30px;
   width: 40%;
   height: auto;
 
@@ -63,7 +73,7 @@ height: auto;
 .paragraph h5  > img {
   display: flex;
   flex-direction: column;
-  margin: 30px 10px;
+  margin-top: 30px;
   width: 40%;
   height: auto;
 }
@@ -163,6 +173,7 @@ height: auto;
 
 .divPosition {
   position: absolute;
+  /* border: 2px solid greenyellow; */
 }
 .blogThirdSection{
   width: 78%;
@@ -286,7 +297,7 @@ height: auto;
   .paragraph h4  > img {
     display: flex;
     flex-direction: column;
-    margin: 30px 10px;
+    margin-top: 30px;
     width: 40%;
     height: auto;
   
@@ -294,7 +305,7 @@ height: auto;
   .paragraph h5  > img {
     display: flex;
     flex-direction: column;
-    margin: 30px 10px;
+    margin-top: 30px;
     width: 40%;
     height: auto;
   

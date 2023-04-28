@@ -3,7 +3,11 @@
     justify-content: center;
     align-items: center;
 }
-
+.disabled {
+    pointer-events: none;
+    background-color: #cccccc !important;
+    color: #666666 !important;
+  }
 .arrowSize {
     width: 15px;
     margin-left: 15px;
