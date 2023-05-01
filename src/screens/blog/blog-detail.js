@@ -1,9 +1,7 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import CommentsArea from "../../components/blogs/commentsArea";
-import { Navigate, useParams,useNavigate } from "react-router-dom";
+import { Navigate, useParams,useNavigate, useHistory  } from "react-router-dom";
 import { getApiCall } from "../../utils/Blogs";
-import { useEffect } from "react";
-import { useState } from "react";
 import Button from "../../components/button/button";
 import "./blog.css";
 import {
@@ -18,7 +16,7 @@ function BlogDetail() {
   const [post, setPost] = useState([]);
   const [blog, setBlog] = useState([]);
   const [posts, setPosts] = useState([]);
-  const [route, setRoute] = useState('');
+  const [route, setRoute] = useState();
   const [isNextButtonDisabled, setIsNextButtonDisabled] = useState(false);
   const [isPreveButtonDisabled, setIsPreveButtonDisabled] = useState(false);
   const numbers = [1, 2, 3, 4, 5];
@@ -47,24 +45,31 @@ function BlogDetail() {
   }, []);
 
 
-  useEffect(()=>{
-    console.log(post, "post")
-    console.log(post[0]?.postid, "postLength 1")
-    console.log(posts.length , "lenght")
-    if(posts.length  == post[0]?.postid){
-      setIsNextButtonDisabled(true)
-      setIsPreveButtonDisabled(false)
+  // useEffect(()=>{
+  //   navigate(route)
+  //   if(posts.length  == post[0]?.postid){
+  //     setIsNextButtonDisabled(true)
+  //     setIsPreveButtonDisabled(false)
 
-    }
-    else if(1 == post[0]?.postid){
-      setIsPreveButtonDisabled(true)
-    }
-    
-  console.log("route......1",route)
+  //   }
+  //   else if(1 == post[0]?.postid){
+  //     setIsPreveButtonDisabled(true)
+  //   }
+  // setRoute(`/blogs/${post[0]?.id}`);
+  // },[post,route])
 
-  setRoute(`/blogs/${post[0]?.id}`);
-  },[post,route])
-  console.log("route......",route)
+  useEffect(() => {
+    if (post.length > 0) {
+      navigate(`/blogs/${post[0]?.id}`);
+      if (posts.length == post[0]?.postid) {
+        setIsNextButtonDisabled(true);
+        setIsPreveButtonDisabled(false);
+      } else if (1 == post[0]?.postid) {
+        setIsPreveButtonDisabled(true);
+      }
+      setRoute(`/blogs/${post[0]?.id}`);
+    }
+  }, [post, posts]);
 
   
   const nextBtn = (post)=>{
@@ -73,7 +78,6 @@ function BlogDetail() {
     let postDetails = posts.filter((item) => item.postid === postId);
     setPost(postDetails)
     setIsPreveButtonDisabled(false)
-    console.log("ids",post[0].id)
   }
   const preveBtn = (post)=>{
     const postId = post[0].postid - 1;
@@ -81,6 +85,7 @@ function BlogDetail() {
     navigate(route)
     setPost(postDetails)
     setIsNextButtonDisabled(false)
+
   }
   return (
     <>

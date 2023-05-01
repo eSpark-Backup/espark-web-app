@@ -9,7 +9,6 @@
   transition: font-size 0.5s ease-in-out;
 }
 .imagesWrapper{
-  border: 2px solid red;
   /* width: 60% !important; */
   /* height: auto; */
   margin-bottom: 60px;
@@ -30,16 +29,20 @@
   font-weight: 500;
 }
 .paragraph h4 span img {
+  display: block;
+  width: 40%;
   margin-right: 50px;
 }
 .paragraph h3 img {
-width: 100%;
+  display: block;
+width: 40%;
 height: auto;
 
 }
 .paragraph p img {
+  display: block;
   margin: 30px 0px;
-  width: 100%;
+  width: 40%;
   height: 400px   !important;
 }
 .paragraph p > img {
@@ -274,7 +277,8 @@ height: auto;
   }
   .paragraph p img {
     margin: 0px 0px !important;
-    width: 100%;
+    width: 40%;
+    display: block;
   } 
   .paragraph p > img {
     display: block;
@@ -360,6 +364,9 @@ height: auto;
     margin: 30px 0px;
     width: 100%;
     height: auto !important;
+  }
+  .paragraph h4 span img {
+    width: 100% !important;
   }
   .blogThirdSection {
     width: 95%;

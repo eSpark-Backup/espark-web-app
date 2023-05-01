@@ -34023,7 +34023,7 @@ blockquote:after {
     }
 }
 
-/* .btn-primary:hover{
-    background-color: green !important;
-    text-decoration: none;
-} */
+.btn.btn-primary:disabled{
+    background-color: gray !important;
+    box-shadow: none !important;
+}
