@@ -1,3 +1,39 @@
+.nextButon{
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  font-size: 100%;
+}
+.nextButon:disabled{
+  background-color: gray !important;
+  
+}
+.prevButon{
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  font-size: 100%;
+
+}
+.prevButon:disabled{
+  background-color: gray !important;
+  
+}
+.nextButon .icon {
+  font-size: 24px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.prevButon .icon {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.iconwrappers{
+  margin-left: -2px !important;
+}
 .titleImg {
   font-size: 14px;
   height: 440px;
@@ -32,11 +68,14 @@
   display: block;
   width: 40%;
   margin-right: 50px;
+  margin-bottom: 20px
+
 }
 .paragraph h3 img {
   display: block;
-width: 40%;
-height: auto;
+  width: 40%;
+  height: auto;
+  margin-bottom: 20px
 
 }
 .paragraph p img {
@@ -44,12 +83,16 @@ height: auto;
   margin: 30px 0px;
   width: 40%;
   height: 400px   !important;
+  margin-bottom: 20px;
+
 }
 .paragraph p > img {
   display: block;
   margin: 30px 0px;
   width: 40%;
   height: auto;
+  margin-bottom: 20px;
+
 
 }
 
@@ -57,11 +100,15 @@ height: auto;
   display: block;
   width: 40% !important;
   height: auto;
+  margin-bottom: 20px;
+
 }
 .paragraph h3 > img{
   display: block;
   width: 40% !important;
   height: auto;
+  margin-bottom: 20px;
+
 
 
 }
@@ -85,11 +132,13 @@ height: auto;
   width: 40% !important;
   height: auto;
   width: 100%;
+  margin-bottom: 20px;
+
 }
 
 
 .paragraph p:first-child {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .paragraph p:last-child {
   margin-bottom: 30px;
@@ -105,10 +154,10 @@ height: auto;
 
 }
 
-.paragraph h4 {
+/* .paragraph h4 {
   line-height: 80px;
 
-}
+} */
 
 .paragraph li {
   line-height: 30px;
@@ -203,6 +252,53 @@ height: auto;
 }
 
 @media (max-width: 768px) {
+  .prevButon{
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    font-size: 100%;
+  
+  }
+  .nextButon{
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    font-size: 100%;
+  
+  }
+  .nextButon .icon{
+    font-size: 15px !important;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .prevButon .icon{
+    font-size: 15px !important;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }  
+  
+  .paragraph h2 {
+    line-height: 120% !important;
+}
+  .paragraph h3 {
+    line-height: 120% !important;
+}
+  .paragraph h4 {
+    line-height: 120% !important;
+}
+  .paragraph h5 {
+    line-height: 120% !important;
+}
+h1 > span {
+  font-size: 32px;
+  line-height: 100%;
+}
+p > h1 {
+  font-size: 28px;
+  line-height: 100%;
+}
   .blogThirdSection {
     width: 100%;
     padding:0px 7px 40px 0px !important;
@@ -230,7 +326,56 @@ height: auto;
     width: 96% !important;
   }
 }
+
+@media only screen and (min-width:1441px) and (max-width: 1900px) {
+  .nextButon .icon{
+    font-size: 18px !important;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .prevButon .icon{
+    font-size: 18px !important;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .iconwrappers{
+    margin-left: 0px !important;
+  }
+}
 @media only screen and (min-width:1201px) and (max-width: 1440px) {
+  .nextButon .icon{
+    font-size: 18px !important;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .prevButon .icon{
+    font-size: 18px !important;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .iconwrappers{
+    margin-left: 0px !important;
+  } 
+  .paragraph h2 {
+    line-height: 120% !important;
+}
+  .paragraph h3 {
+    line-height: 120% !important;
+}
+  .paragraph h4 {
+    line-height: 120% !important;
+}
+  .paragraph h5 {
+    line-height: 120% !important;
+}
+  p > strong {
+    line-height: 120% !important;
+}
+
   .blogThirdSection {
     width: 100%;
     padding:0px 7px 40px 0px !important;
@@ -252,8 +397,63 @@ height: auto;
   .mainDivWrapper:hover .titleImgLeft {
     font-size: 12px;
   }
+  h1 > span {
+    font-size: 32px;
+    line-height: 100%;
+  }
+  p > h1 {
+    font-size: 28px;
+    line-height: 100%;
+  }
 }
 @media only screen and (min-width:769px) and (max-width: 1200px) {
+  .nextButon .icon{
+    font-size: 18px !important;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .prevButon .icon{
+    font-size: 18px !important;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+ 
+  .prevButon{
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    font-size: 100%;
+  
+  }
+  .nextButon{
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    font-size: 100%;
+  
+  }
+  .paragraph h2 {
+    line-height: 120% !important;
+}
+  .paragraph h3 {
+    line-height: 120% !important;
+}
+  .paragraph h4 {
+    line-height: 120% !important;
+}
+  .paragraph h5 {
+    line-height: 120% !important;
+}
+h1 > span {
+  font-size: 30px;
+  line-height: 100%;
+}
+p > h1 {
+  font-size: 25px;
+  line-height: 100%;
+}
   .blogThirdSection {
     width: 96%;
     padding:0px 7px 40px 0px !important;
@@ -319,8 +519,68 @@ height: auto;
     height: auto;
     width: 100%;
   }
+  p > strong {
+    line-height: 120% !important;
+}
+h1 > span {
+  font-size: 32px;
+  line-height: 100%;
+}
+p > h1 {
+  font-size: 28px;
+  line-height: 100%;
+}
 }
 @media (max-width: 576px) {
+  .prevButon{
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+     font-size: 100% !important;
+  
+  }
+  .nextButon{
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px !important;
+  
+  }
+  .nextButon .icon{
+    font-size: 15px !important;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .prevButon .icon{
+    font-size: 15px !important;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  p > strong {
+    line-height: 120% !important;
+}
+  .paragraph h2 {
+    line-height: 120% !important;
+}
+  .paragraph h3 {
+    line-height: 120% !important;
+}
+  .paragraph h4 {
+    line-height: 120% !important;
+}
+  .paragraph h5 {
+    line-height: 120% !important;
+}
+  h1 > span {
+    font-size: 25px;
+    line-height: 100%;
+  }
+  p > h1 {
+    font-size: 25px;
+    line-height: 100%;
+  }
   .blogThirdSection {
     width: 95%;
     padding:0px 7px 40px 0px !important;

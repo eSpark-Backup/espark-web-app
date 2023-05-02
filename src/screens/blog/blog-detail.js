@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from "react";
 import CommentsArea from "../../components/blogs/commentsArea";
-import { Navigate, useParams,useNavigate, useHistory  } from "react-router-dom";
+import { useParams,useNavigate  } from "react-router-dom";
 import { getApiCall } from "../../utils/Blogs";
 import Button from "../../components/button/button";
 import "./blog.css";
+import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import {
   ShimmerPostList,
   ShimmerText,
@@ -44,19 +45,6 @@ function BlogDetail() {
     main();
   }, []);
 
-
-  // useEffect(()=>{
-  //   navigate(route)
-  //   if(posts.length  == post[0]?.postid){
-  //     setIsNextButtonDisabled(true)
-  //     setIsPreveButtonDisabled(false)
-
-  //   }
-  //   else if(1 == post[0]?.postid){
-  //     setIsPreveButtonDisabled(true)
-  //   }
-  // setRoute(`/blogs/${post[0]?.id}`);
-  // },[post,route])
 
   useEffect(() => {
     if (post.length > 0) {
@@ -125,50 +113,24 @@ function BlogDetail() {
               </div>
             </div>
             <div className="d-flex justify-content-between">
-              <div>
-              <button type="button" class="btn btn-primary" disabled={isPreveButtonDisabled} onClick={()=> preveBtn(post)}>Previous</button>
-                {/* <Button design={2} title={"Previous"} onClick={()=> preveBtn(post)}/> */}
+              <div >
+              <button type="button" class="prevButon d-flex align-items-center" disabled={isPreveButtonDisabled} onClick={()=> preveBtn(post)}>
+                <div className="ms-auto iconwrappers">
+                  <BsArrowLeft className="icon ms-auto"/>  
+                </div>
+               </button>
+
               </div>
-              <div>
-              <button type="button" class="btn btn-primary" disabled={isNextButtonDisabled} onClick={()=> nextBtn(post)}>Next</button>
-                {/* <Button design={2} title={"Next"} disabled={isButtonDisabled} onClick={()=> nextBtn(post)}/> */}
+              <div >
+              <button type="button" class="nextButon d-flex align-items-center" disabled={isNextButtonDisabled} onClick={()=> nextBtn(post)}>
+                <div className="ms-auto iconwrappers" >
+                 <BsArrowRight  className="icon ms-auto"/>
+                </div>
+              </button>
               </div>
             </div>
           </div>
-          {/* <div className="row imagesWrapper padingBotom">
-            {blog?.map((item, index) => (
-              <div className="col-6 col-sm-6 col-md-6 p-0 m-0 ">
-                <div className="w-100 h-100  position-relative mainDivWrapper">
-                  <div className="divPosition imgDiv ">
-                    <img
-                      width="100%"
-                      height="100%"
-                      className="hoverImages"
-                      src={item.jetpack_featured_media_url}
-                    ></img>
-                    <img src="" />
-                  </div>
-                  <div className="divPosition txtDiv ">
-                    <h6
-                      className={
-                        index == 0
-                          ? "text-white titleImg"
-                          : "text-white titleImgLeft "
-                      }
-                    >
-                      {item.title.rendered}
-                    </h6>
-                  </div>
-                  <div className="div-black-color-animation divPosition"></div>
-                </div>
-              </div>
-            ))}
-          </div> */}
-          {/* <div className="container-fluid my-1 position-relative  ">
-            <div className="commetArea">
-              <CommentsArea />
-            </div>
-          </div> */}
+
         </div>
       ) : (
         <div className="row">
