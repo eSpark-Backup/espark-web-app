@@ -65,7 +65,7 @@ export default function Blog() {
         title={`A Blog for Passionate People <br/> and  Technical lovers`}
         className="blogsBaners"
       />
-      <div className="row blogFirstSectionMargin">
+      <div className="container-fluid row blogFirstSectionMargin">
         {post ? (
           post?.slice(0, 2)?.map((items) => (
             <div className="col-sm-12 col-md-4 col-lg-4 ps-1  ">

@@ -92,17 +92,19 @@
   
   .topRow {
     /* padding-top: 40px !important; */
-    padding: 20px 0;
+    /* padding: 20px 0; */
     margin-top: 123px !important;
-    width: 99%;
-    margin-right: 20px !important;
+    margin-bottom: 50px;
+
+    /* width: 99%; */
+    /* margin-right: 20px !important; */
   }
   
   .topContainer {
     box-shadow: inset 0 0 0 2000px rgba(92, 97, 131, 0.73);
     border-radius: 39px;
     /* width: 1568px!important; */
-    width: 82% !important;
+    /* width: 82% !important; */
     height: 487px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -257,9 +259,9 @@
   }
   
   @media screen and (min-width: 1940px) and (max-width: 2560px) {
-    .heightAdjustLargeCard{
+    /* .heightAdjustLargeCard{
       height: 15vh;
-    }
+    } */
     .blogsStripPara > p {
       padding: 0px;
       font-family: "Poppins";
@@ -271,6 +273,9 @@
       text-align: justify;
       color: #212121;
     }
+    /* .blogsStripHeading{
+        padding-top: 3rem;
+    } */
     .redesignBlogSmallCards{
       width: 100%;
       height: 223.1px;
@@ -385,8 +390,6 @@
       padding: 0px!important;
       margin:0px
     }
-    .singleCardMargin{
-    }
     .paddingMbleScreen{
       padding-left: 22px!important;
     }
@@ -453,6 +456,7 @@
     } */
     .scroll{
       padding-right: 15px;
+      padding-left: 5px !important;
     }
     .blogFirstSectionMargin{
       padding-bottom: 0px!important;
@@ -471,9 +475,13 @@
       line-height: 115%;
       align-items: center;
     }
-    .topContainer {
-      width: 77% !important;
+    .topRow{
+      width: 96% !important;
+
     }
+    /* .topContainer {
+      width: 77% !important;
+    } */
   }
   
   @media (max-width:425px){
@@ -557,22 +565,27 @@
     
   }
   @media (max-width: 1440px) {
-    .topContainer{
+    /* .topContainer{
       width: 97% !important;
-    }
+    } */
     .comment-form{
       padding: 38px 10px 45px !important  ;
     }
   }
   @media (min-width: 992px) and (max-width: 1200px) {
     .topContainer {
-      width: 96% !important;
+      width: 100% !important;
     }
   }
   @media (min-width: 568px) and (max-width: 991px) {
-    .topContainer {
-      width: 95% !important;
+    .topRow{
+      width: 98% !important;
+
     }
+    
+    /* .topContainer {
+      width: 95% !important;
+    } */
     .blogImageCard > img{
       width: 100% !important;
       height: 100% !important;
@@ -580,9 +593,13 @@
   }
   @media (min-width: 425px) and (max-width: 568px) {
     .topContainer {
-      width: 76% !important;
+      /* width: 100% !important; */
       border-radius: 26px;
       height: 317px;
+    }
+    .topRow{
+      width: 92% !important;
+
     }
     .blogImageCard > img{
       width: 97%;
@@ -599,7 +616,7 @@
       height: 100% !important;
     }
     .topContainer {
-      width: 86% !important;
+      width: 98% !important;
       border-radius: 26px;
       height: 317px;
     }

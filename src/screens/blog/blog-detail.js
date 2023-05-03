@@ -4,12 +4,12 @@ import { useParams,useNavigate  } from "react-router-dom";
 import { getApiCall } from "../../utils/Blogs";
 import Button from "../../components/button/button";
 import "./blog.css";
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import {
   ShimmerPostList,
   ShimmerText,
   ShimmerTitle,
 } from "react-shimmer-effects";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 function BlogDetail() {
   let { id } = useParams();
@@ -116,7 +116,7 @@ function BlogDetail() {
               <div >
               <button type="button" class="prevButon d-flex align-items-center" disabled={isPreveButtonDisabled} onClick={()=> preveBtn(post)}>
                 <div className="ms-auto iconwrappers">
-                  <BsArrowLeft className="icon ms-auto"/>  
+                  <FaArrowLeft className="icon ms-auto"/>  
                 </div>
                </button>
 
@@ -124,7 +124,7 @@ function BlogDetail() {
               <div >
               <button type="button" class="nextButon d-flex align-items-center" disabled={isNextButtonDisabled} onClick={()=> nextBtn(post)}>
                 <div className="ms-auto iconwrappers" >
-                 <BsArrowRight  className="icon ms-auto"/>
+                 <FaArrowRight  className="icon ms-auto"/>
                 </div>
               </button>
               </div>

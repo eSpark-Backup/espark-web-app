@@ -63,6 +63,7 @@
   line-height: 50px;
   color: #000000;
   font-weight: 500;
+  margin: 10px 0px;
 }
 .paragraph h4 span img {
   display: block;
@@ -146,12 +147,13 @@
 
 .paragraph h2 {
   line-height: 80px;
+  margin-bottom: 10px;
 
 }
 
 .paragraph h3 {
   line-height: 80px;
-
+  margin-bottom: 10px;
 }
 
 /* .paragraph h4 {
@@ -228,11 +230,11 @@
   /* border: 2px solid greenyellow; */
 }
 .blogThirdSection{
-  width: 78%;
+  width: 78% !important;
   padding-right: 18px;
 }
 .blogFirstSectionMargin{
-  width: 75%;
+  width: 76.5% !important;
   margin-top: 78px;
   margin-left: auto;
   margin-right: auto;
@@ -281,15 +283,23 @@
   
   .paragraph h2 {
     line-height: 120% !important;
+    margin: 10px 0px;
+
 }
   .paragraph h3 {
     line-height: 120% !important;
+    margin: 10px 0px;
+
 }
   .paragraph h4 {
     line-height: 120% !important;
+    margin: 10px 0px;
+
 }
   .paragraph h5 {
     line-height: 120% !important;
+    margin: 10px 0px;
+
 }
 h1 > span {
   font-size: 32px;
@@ -300,15 +310,11 @@ p > h1 {
   line-height: 100%;
 }
   .blogThirdSection {
-    width: 100%;
-    padding:0px 7px 40px 0px !important;
-  }
-  .blogSecondSection{
     width: 100% !important;
+    padding:0px 18px 49px 0px !important;
+    margin-left: -2px !important;
   }
-  .blogFirstSectionMargin {
-    width: 100%;
-  }
+
   .blogsBaners{
     width: 100% !important;
   }
@@ -320,13 +326,41 @@ p > h1 {
     font-size: 12px;
   }
   .blogFirstSectionMargin {
-    width: 96%;
+    width: 100% !important;
+    padding: 0px 17px;
   }
   .blogSecondSection{
-    width: 96% !important;
+    width: 98% !important;
+    padding-left: 2px;
+  }
+}
+@media screen and (min-width:2201px) and (max-width: 2600px)  {
+  .topRow{
+    margin-top: 180px !important;
+
   }
 }
 
+@media only screen and (min-width:1901px) and (max-width: 2800px) {
+  /* .topRow{
+    margin-top: 140px !important;
+
+  } */
+  .blogThirdSection {
+    width: 76% ;
+    padding:0px 0px 0px 0px !important;
+
+  }
+  .blogSecondSection{
+    width: 75% !important;
+  }
+  .blogFirstSectionMargin {
+    width: 76% !important;
+    margin-top: 20px;
+    
+
+  } 
+}
 @media only screen and (min-width:1441px) and (max-width: 1900px) {
   .nextButon .icon{
     font-size: 18px !important;
@@ -376,15 +410,20 @@ p > h1 {
     line-height: 120% !important;
 }
 
+ 
   .blogThirdSection {
-    width: 100%;
-    padding:0px 7px 40px 0px !important;
-  }
-  .blogSecondSection{
-    width: 97% !important;
+    width: 100% !important;
+    padding:0px 18px 49px 0px !important;
+    margin-left: -10px !important;
+  
   }
   .blogFirstSectionMargin {
-    width: 97%;
+    width: 99% !important;
+    padding: 0px 19px;
+  
+  }
+  .blogSecondSection{
+    width: 97.5% !important;
   }
   .blogsBaners{
     width: 100% !important;
@@ -454,16 +493,21 @@ p > h1 {
   font-size: 25px;
   line-height: 100%;
 }
-  .blogThirdSection {
-    width: 96%;
-    padding:0px 7px 40px 0px !important;
-  }
-  .blogSecondSection{
-    width: 97% !important;
-  }
-  .blogFirstSectionMargin {
-    width: 97%;
-  }
+.blogThirdSection {
+  width: 100% !important;
+  padding:0px 18px 49px 0px !important;
+  /* margin-left: -2px !important; */
+
+}
+.blogFirstSectionMargin {
+  width: 100% !important;
+  padding: 0px 19px;
+
+}
+.blogSecondSection{
+  width: 98% !important;
+}
+ 
   .blogsBaners{
     width: 100% !important;
   }
@@ -582,7 +626,7 @@ p > h1 {
     line-height: 100%;
   }
   .blogThirdSection {
-    width: 95%;
+    width: 95% !important;
     padding:0px 7px 40px 0px !important;
   }
   .blogSecondSection{
@@ -629,22 +673,54 @@ p > h1 {
     width: 100% !important;
   }
   .blogThirdSection {
-    width: 95%;
+    width: 95% !important;
     padding:0px 7px 40px 0px !important;
+    margin-left: 4px !important;
+
   }
   .blogSecondSection{
-    width: 90% !important;
+    width: 92.5% !important;
   }
   .blogFirstSectionMargin {
-    width: 90%;
+    width: 95.5% !important;
+    margin-top: 20px;
+    
+
+  }
+  .blogsCardPara>p{
+    padding-bottom: 0px;
+  }
+  .singleCardMargin  {
+    padding-bottom: 15px;
   }
 }
 
 
 
-@media only screen and (min-width:300px) and (max-width: 330px) {
+@media  (max-width: 330px) {
 
  .blogsBaners{
     width: 90% !important;
+  }
+  .blogThirdSection {
+    width: 100% !important;
+    padding:0px 7px 20px 0px !important;
+    margin-left: -2px !important;
+
+  }
+  .blogSecondSection{
+    width: 94.5% !important;
+  }
+  .blogFirstSectionMargin {
+    width: 98.5% !important;
+    margin-top: 20px;
+    
+
+  }
+  .blogsCardPara>p{
+    padding-bottom: 0px;
+  }
+  .singleCardMargin  {
+    padding-bottom: 15px;
   }
 }
