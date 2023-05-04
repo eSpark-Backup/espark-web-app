@@ -1,76 +1,77 @@
 .txtCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .arrowSize {
-    width: 15px;
-    margin-left: 15px;
-    height: 20px;
+  width: 15px;
+  margin-left: 15px;
+  height: 20px;
 }
 
 button {
-    background-color: var(--color-primary) !important;
-    color: #ffff !important;
-    font-family: 'Poppins';
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0em;
-    height: 52px;
-    padding: .5em 1em;
-    background: #fff;
-    border: 0px solid #A0AEC0;
-    transition: background .2s ease, color .2s ease, box-shadow .2s ease, transform .2s ease;
-    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
-    transform: translateY(0);
+  background-color: var(--color-primary);
+  color: #ffff !important;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  height: 52px;
+  padding: 0.5em 1em;
+  background: #fff;
+  border: 0px solid #a0aec0;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease,
+    transform 0.2s ease;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
+  transform: translateY(0);
 }
 
 button:hover {
-    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
 }
 
 button {
-    background-color: var(--color-primary);
-    color: #ffff !important;
-    font-family: 'Poppins';
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 20px !important;
-    line-height: 20px;
-    letter-spacing: 0em;
+  background-color: var(--color-primary);
+  color: #ffff !important;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 20px !important;
+  line-height: 20px;
+  letter-spacing: 0em;
 }
 .careerSmallBtn{
     width: 100%;
 }
 
 .button_11_size {
-    width: 242px;
-    height: 72px;
+  width: 242px;
+  height: 72px;
 }
 
 .button_12_size {
-    width: 382px;
-    height: 72px;
+  width: 382px;
+  height: 72px;
 }
 
 .button_13_size {
-    width: 314px;
-    height: 71.86px;
+  width: 314px;
+  height: 71.86px;
 }
 
 .button_14_size {
-    width: 325.5px;
-    height: 71.86px;
+  width: 325.5px;
+  height: 71.86px;
 }
 
 .blogDetailsButton {
-    border: 2px solid var(--color-secondary);
-    background: transparent !important;
-    color: black !important;
-    border-radius: 50px;
-    width: 20%;
-    font-size: 16px;
-    box-shadow: none;
+  border: 2px solid var(--color-secondary);
+  background: transparent !important;
+  color: black !important;
+  border-radius: 50px;
+  width: 20%;
+  font-size: 16px;
+  box-shadow: none;
 }
