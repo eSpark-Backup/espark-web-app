@@ -100,7 +100,7 @@ export default function Blog() {
       <div className="row  w-75 m-auto blogSecondSection">
         {post ? (
           post?.slice(7, 11)?.map((items) => (
-            <div className=" col-sm-6 col-md-6 col-lg-3  mt-5">
+            <div className=" col-sm-6 col-md-6 col-lg-3 mt-5">
               <BlogCardRedesign
                 cardSelection="smallCards"
                 para={items.excerpt.rendered}
@@ -135,21 +135,21 @@ export default function Blog() {
       </div> */}
 
       <div className="row blogThirdSection m-auto mt-5">
-        <div className="col-lg-5 col-md-12 col-sm-12   d-flex flex-direction-column justify-content-between ps-4 pb-3 ">
+        <div className="col-lg-5 col-md-12 col-sm-12 d-flex flex-direction-column justify-content-evenly ps-4">
           <BlogStripMap
             post={post}
             sliceStart={11}
-            sliceEnd={14}
+            sliceEnd={15}
             shimmerCount={3}
             shimmerClass="p-20 mx-10"
           />
         </div>
 
-        <div className="col-lg-7 col-md-12 col-sm-12   d-flex justify-content-center">
+        <div className="col-lg-7 col-md-12 col-sm-12 d-flex justify-content-center ">
           <BlogImageMap
             post={post}
-            sliceStart={14}
-            sliceEnd={15}
+            sliceStart={15}
+            sliceEnd={16}
             shimmerCount={1}
             shimmerClass="p-20 mx-10 col-lg-12 h-100"
           />
@@ -160,8 +160,8 @@ export default function Blog() {
         <div className="col-lg-5 col-md-12 col-sm-12 ps-4">
           <BlogStripMap
             post={post}
-            sliceStart={13}
-            sliceEnd={14}
+            sliceStart={16}
+            sliceEnd={17}
             shimmerCount={1}
             shimmerClass="p-20 mx-10"
           />
@@ -169,8 +169,8 @@ export default function Blog() {
         <div className="col-lg-7 col-md-12 col-sm-12 p-0 paddingMbleScreen">
           <BlogStripMap
             post={post}
-            sliceStart={14}
-            sliceEnd={15}
+            sliceStart={17}
+            sliceEnd={18}
             shimmerCount={1}
             shimmerClass="p-20 mx-10"
           />
