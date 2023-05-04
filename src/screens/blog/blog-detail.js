@@ -83,7 +83,7 @@ function BlogDetail() {
             <div class="row">
               <div className="col-lg-12 col-md-12 ">
                 <div className="w-100 text-center">
-                  <Button design={8} title={"Category"}></Button>
+                  {/* <Button design={8} title={"Category"}></Button> */}
                   <div className="w-100 m-auto my-5">
                     <h3 className="text-center text-black fw-bold">
                       {post && post[0]?.title.rendered}
@@ -112,7 +112,7 @@ function BlogDetail() {
                 </div>
               </div>
             </div>
-            <div className="d-flex justify-content-between">
+            {/* <div className="d-flex justify-content-between">
               <div >
               <button type="button" class="prevButon d-flex align-items-center" disabled={isPreveButtonDisabled} onClick={()=> preveBtn(post)}>
                 <div className="ms-auto iconwrappers">
@@ -128,7 +128,7 @@ function BlogDetail() {
                 </div>
               </button>
               </div>
-            </div>
+            </div> */}
           </div>
 
         </div>

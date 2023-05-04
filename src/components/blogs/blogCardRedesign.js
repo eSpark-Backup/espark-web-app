@@ -21,7 +21,7 @@ function BlogCardRedesign({image,limitedtitle,wordLimit,btn_text,link,para,cardS
 
         <div   className= {cardSelection == "largeCards" ?  'd-flex    heightAdjustLargeCard' :' heightAdjustSmallCard'} >
           <div
-            className={`blogsCardPara  mt-3 p-1 `}
+            className={`blogsCardPara  mt-3  `}
             dangerouslySetInnerHTML={{
               __html: limitedPara,
             }}

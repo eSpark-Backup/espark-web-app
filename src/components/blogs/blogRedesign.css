@@ -16,7 +16,7 @@
   }
   
   .scroll .blogsStrip {
-    /* height: 180px; */
+    /* height: 80px; */
   }
   
   .scroll::-webkit-scrollbar {
@@ -147,7 +147,7 @@
     font-weight: 600 !important;
     font-size: 20px;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.1rem;
     line-height: 1.02;
     color: #212121;
     /* height: 51px; */
@@ -318,6 +318,9 @@
     .blogsStripHeading {
       padding-top: 0rem;
     }
+    .scroll .blogsStrip{
+      padding-bottom: 10px;
+    }
   }
   @media screen and (min-width: 1024px) and (max-width: 1440px) {
  
@@ -348,12 +351,26 @@
     .blogsStripHeading {
       padding-top: 0rem;
     }
+    
+    .scroll .blogsStrip{
+      padding-bottom: 10px;
+    }
+    .blogsCardHeading {
+      padding-bottom: 0px;
+      line-height: 100%;
+      
   }
+}
   
 
 
   @media screen and (min-width: 769px) and (max-width: 1024px) {
     /* Add your styles here */
+    .blogsCardHeading {
+      padding-bottom: 0px;
+      line-height: 100%;
+      
+  }
     .scrol{
       padding-right:0px!important;
     }
@@ -387,8 +404,8 @@
       color: #212121;
     }
     .blogsStrip{
-      padding: 0px!important;
-      margin:0px
+      padding-bottom: 25px!important;
+      margin:0px 0px 20px 0px !important;
     }
     .paddingMbleScreen{
       padding-left: 22px!important;
@@ -428,7 +445,8 @@
       padding-left: 21px !important;
     }
     .blogsStrip{
-      margin: 0px;
+      padding-bottom: 25px!important;
+      margin:0px 0px 20px 0px !important;
     }
     .redesignBlogSmallCards{
       width: 100%;
