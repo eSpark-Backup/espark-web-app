@@ -6,15 +6,15 @@ import {
   getApiCall,
   getCatApiCall,
 } from "./../../utils/Blogs";
-import style from "../../components/blogs/style.module.css";
+import "../../components/blogs/blogRedesign.css";
 import BlogsBanner from "../../components/blogs/blogsBanner";
+import BlogCardRedesign from "../../components/blogs/blogCardRedesign";
+import { ShimmerPostList } from "react-shimmer-effects";
 
 export default function Blog() {
   const [post, setPost] = useState();
   const [count, setCount] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
-
-
 
   useEffect(() => {
     const main = async () => {
@@ -24,6 +24,18 @@ export default function Blog() {
     };
     main();
   }, []);
+
+  // const getUpdatedPost = (posts) => {
+  //  const updated = posts?.map((post, i =0)=>{
+  //     return {
+  //       ...post,
+  //       postid: i+1
+  //     }
+  //   })
+  //   return updated
+  // }
+  // const updatedPost = getUpdatedPost(post); 
+
 
   const catPost = async (e) => {
     const data = await getCatApiCall(e);
@@ -48,37 +60,66 @@ export default function Blog() {
     }
   };
   return (
-    <>
+    <div >
       <BlogsBanner
-        title={`A Blog for Passionate People and Technical lovers`}
+        title={`A Blog for Passionate People <br/> and  Technical lovers`}
+        className="blogsBaners"
       />
-      <div className={`${style.one} row gx-2 mt-5`}>
-        <div className={`container-fluid align-self-center d-flex`}>
-          <BlogCardMap
-            post={post}
-            sliceStart={0}
-            sliceEnd={2}
-            className="col-lg-4 col-md-6 col-sm-12"
-            col={2}
-            row={1}
-            gap={30}
-            shimmerClass="col-lg-8 col-md-12 col-sm-12"
-            word={50}
-          />
-
-          <div className={`${style.scroll} col-lg-4 col-md-12 col-sm-12`}>
-            <BlogStripMap
-              post={post}
-              sliceStart={2}
-              sliceEnd={7}
-              shimmerCount={3}
-              shimmerClass="p-20 mx-10"
-            />
+      <div className="container-fluid row blogFirstSectionMargin">
+        {post ? (
+          post?.slice(0, 2)?.map((items) => (
+            <div className="col-sm-12 col-md-4 col-lg-4 ps-1  blogFirstCard">
+              <BlogCardRedesign
+                cardSelection="largeCards"
+                para={items.excerpt.rendered}
+                link={`/blogs/${items.id}`}
+                wordLimit={46}
+                image={items.jetpack_featured_media_url}
+                limitedtitle={items.title.rendered}
+                btn_text={`Read more`}
+              />
+            </div>
+          ))
+        ) : (
+          <div className=" col-sm-12 col-md-4 col-lg-8  ">
+            <ShimmerPostList postStyle="STYLE_FOUR" col={2} row={1} gap={30} />
           </div>
+        )}
+        <div
+          className={`scroll col-lg-4  col-md-4 col-sm-12    d-flex flex-direction-column justify-content-between  `}
+        >
+          <BlogStripMap
+            post={post}
+            sliceStart={2}
+            sliceEnd={6}
+            shimmerCount={3}
+            shimmerClass="p-20 mx-10"
+          />
         </div>
       </div>
+      <div className="row  w-75 m-auto blogSecondSection">
+        {post ? (
+          post?.slice(7, 11)?.map((items) => (
+            <div className=" col-sm-6 col-md-6 col-lg-3 mt-5">
+              <BlogCardRedesign
+                cardSelection="smallCards"
+                para={items.excerpt.rendered}
+                link={`/blogs/${items.id}`}
+                wordLimit={46}
+                image={items.jetpack_featured_media_url}
+                limitedtitle={items.title.rendered}
+                btn_text={`Read more`}
+              />
+            </div>
+          ))
+        ) : (
+          <div className=" col-sm-6 col-md-12 col-lg-8  ">
+            <ShimmerPostList postStyle="STYLE_FOUR" col={4} row={1} gap={30} />
+          </div>
+        )}
+      </div>
 
-      <div className={`${style.two} row gx-2 mt-5`}>
+      {/* <div className={`${style.two} row gx-2 mt-5`}>
         <div className={`container-fluid align-self-center d-flex`}>
           <BlogCardMap
             post={post}
@@ -91,52 +132,50 @@ export default function Blog() {
             shimmerClass="col-lg-12 col-md-12 col-sm-12"
           />
         </div>
-      </div>
+      </div> */}
 
-      <div className={`${style.three} row gx-2`}>
-        <div className={`container-fluid d-flex`}>
-          <div className="col-lg-5 col-md-12 col-sm-12 align-self-start">
-            <BlogStripMap
-              post={post}
-              sliceStart={11}
-              sliceEnd={14}
-              shimmerCount={3}
-              shimmerClass="p-20 mx-10"
-            />
-          </div>
-
-          <div className="col-lg-7 col-md-12 col-sm-12 align-self-start">
-            <BlogImageMap
-              post={post}
-              sliceStart={14}
-              sliceEnd={15}
-              shimmerCount={1}
-              shimmerClass="p-20 mx-10 col-lg-12 h-100"
-            />
-          </div>
+      <div className="row blogThirdSection m-auto mt-5">
+        <div className="col-lg-5 col-md-12 col-sm-12 d-flex flex-direction-column justify-content-evenly ps-4">
+          <BlogStripMap
+            post={post}
+            sliceStart={11}
+            sliceEnd={15}
+            shimmerCount={3}
+            shimmerClass="p-20 mx-10"
+          />
         </div>
 
-        <div className={`container-fluid d-flex`}>
-          <div className="col-lg-5 col-md-12 col-sm-12 align-self-start">
-            <BlogStripMap
-              post={post}
-              sliceStart={13}
-              sliceEnd={14}
-              shimmerCount={1}
-              shimmerClass="p-20 mx-10"
-            />
-          </div>
-          <div className="col-lg-7 col-md-12 col-sm-12 align-self-start">
-            <BlogStripMap
-              post={post}
-              sliceStart={14}
-              sliceEnd={15}
-              shimmerCount={1}
-              shimmerClass="p-20 mx-10"
-            />
-          </div>
+        <div className="col-lg-7 col-md-12 col-sm-12 d-flex justify-content-center ">
+          <BlogImageMap
+            post={post}
+            sliceStart={15}
+            sliceEnd={16}
+            shimmerCount={1}
+            shimmerClass="p-20 mx-10 col-lg-12 h-100"
+          />
         </div>
       </div>
-    </>
+
+      <div className={`row m-auto  blogThirdSection  my-4`}>
+        <div className="col-lg-5 col-md-12 col-sm-12 ps-4">
+          <BlogStripMap
+            post={post}
+            sliceStart={16}
+            sliceEnd={17}
+            shimmerCount={1}
+            shimmerClass="p-20 mx-10"
+          />
+        </div>
+        <div className="col-lg-7 col-md-12 col-sm-12 p-0 paddingMbleScreen">
+          <BlogStripMap
+            post={post}
+            sliceStart={17}
+            sliceEnd={18}
+            shimmerCount={1}
+            shimmerClass="p-20 mx-10"
+          />
+        </div>
+      </div>
+    </div>
   );
 }

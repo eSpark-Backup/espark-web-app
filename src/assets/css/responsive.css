@@ -558,9 +558,9 @@
 }
 
 @media (max-width: 320px) {
-  .container-fluid {
+  /* .container-fluid {
     width: 99% !important;
-  }
+  } */
 
   .sizeControl {
     margin-top: 30px !important;
