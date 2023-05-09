@@ -1,0 +1,30 @@
+.newhexagon {
+    position: relative;
+    height: 315px;
+    width: 100%;
+    background: #fff;
+
+  }
+  .newhexagon:before, .double:after {
+    position: absolute;
+    content: '';
+  }
+  .newhexagon:before {
+    top: 4px;  
+    left: 4px; 
+    height: calc(100% - 8px);
+    width: calc(100% - 8px);  
+    background: #176FAE;
+  }
+  .newhexagon, .newhexagon:before, .double:after {
+    -webkit-clip-path: polygon(0% 50%, 6%  0% , 94%  0%, 100% 50%, 94%  100%, 6% 100% ) ;
+  }
+
+  .double:after {
+    top: 8px;
+    left: 8px;
+    height: calc(100% - 16px);
+    width: calc(100% - 16px);
+    background: #fff;
+
+  }
