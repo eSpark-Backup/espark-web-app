@@ -23,6 +23,7 @@ import aboutImage from "../../../src/assets/images/About-us-image/aboutUs.svg";
 import SectionTitle from "../../components/sectionTitle";
 import { aboutData } from "../../helper/aboutus";
 import "./style.css";
+import OurJourney from "../../components/aboutComponents/ourJourney";
 
 export default function About() {
   return (
@@ -123,37 +124,26 @@ export default function About() {
           </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <SectionTitle heading={"Our Executives"} />
-
-
-
+      <div>
+        <SectionTitle heading={"Our Journey"} paddingTop={80} /> 
+          <OurJourney />
+        <SectionTitle heading={"Our Executives"} paddingTop={80} />
+      </div>
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
             <div class="row">
-              <div class="col-4">
-                
-              </div>
-              <div class="col-8">
-
-              </div>
+              <div class="col-4"></div>
+              <div class="col-8"></div>
             </div>
-            <div class="newhexagon double">
-            </div>
+            <div class="newhexagon double"></div>
           </div>
         </div>
       </div>
 
-
       {/* <div class="newhexagon"></div>
           <div class="hexagon image"></div>
           <div class="newhexagon double"></div> */}
-
-
-
 
       <div className={styles.mainContainer}>
         <div className="container-fluid my-2 py-5">
@@ -184,7 +174,6 @@ export default function About() {
             </div>
           </div>
         </div>
-
       </div>
       {/* <div className={styles.mainContainer}>
           <div className="container-fluid my-2">

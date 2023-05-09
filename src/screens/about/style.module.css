@@ -3,6 +3,9 @@
   width: 60%;
   padding: 10px;
 }
+
+
+
 /* .partne {
   width: 100%;
   border: 1px solid red;
@@ -12,15 +15,18 @@
 .partnerImages {
   width: 80%;
 }
+
 .lines {
   width: 100%;
   height: 0px;
   margin-top: 10px;
   border: 1px solid #c2c3c3cc;
 }
+
 .aboutText {
   padding: 0px 80px;
 }
+
 .aboutLorem {
   font-family: "Poppins";
   font-style: normal;
@@ -32,6 +38,7 @@
   color: #000000;
   /* padding: 0px 60px; */
 }
+
 .review {
   border: 1px solid #2074b4;
   padding: 10px 80px;
@@ -42,9 +49,11 @@
   line-height: 100%;
   color: #2074b4;
 }
+
 .lineBottom {
   padding-bottom: 80px;
 }
+
 .hrText:after {
   content: attr("data-content");
   position: relative;
@@ -82,6 +91,7 @@
   color: #000;
   transition: color 500ms ease, text-shadow 500ms ease;
 }
+
 .hexgonText {
   font-family: "Poppins";
   font-style: normal;
@@ -106,6 +116,7 @@
   /* Keeps borders smooth in webkit */
   backface-visibility: hidden;
 }
+
 .hexagon .face1:before,
 .hexagon .face2:before {
   content: "";
@@ -118,6 +129,7 @@
 .hexagon .face1 {
   transform: rotate(60deg);
 }
+
 .hexagon .face1:before {
   left: 0;
   transform-origin: left top;
@@ -127,6 +139,7 @@
 .hexagon .face2 {
   transform: rotate(-60deg);
 }
+
 .hexagon .face2:before {
   right: 0;
   transform-origin: right top;
@@ -138,15 +151,18 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 57px 40px 70px 80px;
 }
+
 /* .aboutRows {
   padding: 0px 50px 50px 50px;
 } */
 .aboutCol {
   padding: 15px;
 }
+
 .ourValue {
   /* padding: 50px; */
 }
+
 .our {
   font-family: "Poppins";
   font-style: normal;
@@ -157,6 +173,7 @@
   color: #ffffff;
   padding: 0px 0px 16px 0px;
 }
+
 .value {
   padding: 0px 0px 50px 0px;
   font-family: "Poppins";
@@ -167,6 +184,7 @@
   text-transform: capitalize;
   color: #ffffff;
 }
+
 .ours {
   font-family: "Poppins";
   font-style: normal;
@@ -177,6 +195,7 @@
   color: #3359a2;
   padding: 0px 0px 16px 10%;
 }
+
 .Vision {
   padding: 0px 0px 50px 10%;
   font-family: "Poppins";
@@ -188,6 +207,7 @@
   color: #3359a2;
   /* padding-left: 10% ; */
 }
+
 .aboutHeading {
   padding: 50px;
   font-family: "Poppins";
@@ -202,6 +222,7 @@
 .ourVisionContainer {
   padding-top: 57px;
 }
+
 .HexaTitle {
   font-family: "Inter";
   font-style: normal;
@@ -211,6 +232,7 @@
 
   color: #ffffff;
 }
+
 .HexaContent {
   font-family: "Inter";
   font-style: normal;
@@ -219,6 +241,7 @@
   line-height: 15px;
   color: #ffffff;
 }
+
 .ourVissions {
   padding-left: 10%;
   font-family: "Poppins";
@@ -232,6 +255,7 @@
 
   color: #3359a2;
 }
+
 .aboutParagraph {
   font-family: "Inter";
   font-style: normal;
@@ -250,32 +274,37 @@
     /* padding: 57px 0px 0px 10px ; */
     border: 2px solid red;
     margin: 0px 0px !important;
-     margin-left: 0px !important;
-    margin-right: 0px !important; 
+    margin-left: 0px !important;
+    margin-right: 0px !important;
   }
+
   .ourVisionContainer {
     width: 100%;
-    padding: 57px 0px 0px 10px ;
+    padding: 57px 0px 0px 10px;
   }
 
 }
+
 @media screen and (max-width: 768px) {
   .ourValueContainer {
     width: 100% !important;
     max-width: 100% !important;
-    padding: 57px 0px 0px 10px ;
+    padding: 57px 0px 0px 10px;
   }
+
   .our {
-    padding: 0px 0px 16px 6% ;
+    padding: 0px 0px 16px 6%;
   }
+
   .value {
-    padding: 0px 0px 50px 6% ;
-   
+    padding: 0px 0px 50px 6%;
+
   }
+
   /* .paraIndex{
     display: none;
   } */
-   /* .hexBackground {
+  /* .hexBackground {
     position: absolute;
     background-color: rgb(255, 106, 0); 
     top: 2px; 
@@ -286,7 +315,7 @@
     -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
     
   } */
-/* .exactiveImage{
+  /* .exactiveImage{
   width: 100% !important;
   height: 100% !important;
  
@@ -294,6 +323,7 @@
 
 } */
 }
+
 /* @media (min-width:568px) {
   .container {
     max-width: 100% !important;
@@ -304,45 +334,54 @@
   .ourValueContainer {
     background: linear-gradient(180deg, #176fae 0%, #089e97 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 57px 0px 0px 10px ;
+    padding: 57px 0px 0px 10px;
   }
-  .hexagon{
+
+  .hexagon {
     border: 1px solid black;
   }
+
   .aboutParagraph {
     padding-left: 0%
   }
+
   .ours {
-    padding: 0px 0px 16px 3% ;
+    padding: 0px 0px 16px 3%;
   }
+
   .Vision {
-    padding: 0px 0px 50px 3% ;
-  
+    padding: 0px 0px 50px 3%;
+
   }
+
   .our {
-    padding: 0px 0px 16px 3% ;
+    padding: 0px 0px 16px 3%;
   }
+
   .value {
-    padding: 0px 0px 50px 3% ;
-   
+    padding: 0px 0px 50px 3%;
+
   }
-  .containerWraper{
+
+  .containerWraper {
     padding-right: 0px;
   }
 
- 
+
 }
+
 @media screen and (max-width: 360px) {
+
   /* .container,
   .container-sm{
     width: 100% !important;
     max-width: 400px !important;
     margin-left: 0px !important;
   } */
-  .containerWraper{
-    width: 100% ;
-    max-width: 100% ;
-    margin: 0px ;
+  .containerWraper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0px;
     padding-right: 0px;
   }
 
@@ -354,7 +393,7 @@
   margin: 0 auto;
   position: relative;
   width: 320px;
-  height: 277.12px; 
+  height: 277.12px;
   box-sizing: border-box;
   -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
   -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
@@ -365,15 +404,16 @@
   margin: 0 auto;
   /* position: relative; */
   width: 100%;
-  height: 315px !important; 
+  height: 315px !important;
   /* padding: 10px; */
   background: #176FAE;
   box-sizing: border-box;
   /* padding-left: 40%; */
   /* -webkit-clip-path: polygon(0% 50%, 25% 0%, 85% 0%, 100% 50%, 85% 100%, 25% 100%); */
-  -webkit-clip-path: polygon(0% 50%, 6%  0% , 94%  0%, 100% 50%, 94%  100%, 6% 100% ) ;
+  -webkit-clip-path: polygon(0% 50%, 6% 0%, 94% 0%, 100% 50%, 94% 100%, 6% 100%);
 
 }
+
 /* .hex1:before, .double:after {
   position: absolute;
   content: '';
@@ -402,21 +442,32 @@
   width: 150px;
   background: black;
 }
-.newhexagon:before, .double:after {
+
+.newhexagon:before,
+.double:after {
   position: absolute;
   content: '';
 }
+
 .newhexagon:before {
-  top: 4px;  /* border width */
-  left: 4px;  /* border width */
-  height: calc(100% - 8px);  /* 100% - (2 * border width) */
-  width: calc(100% - 8px);  /* 100% - (2 * border width) */
+  top: 4px;
+  /* border width */
+  left: 4px;
+  /* border width */
+  height: calc(100% - 8px);
+  /* 100% - (2 * border width) */
+  width: calc(100% - 8px);
+  /* 100% - (2 * border width) */
   background: #6c6;
 }
-.newhexagon, .newhexagon:before, .double:after {
+
+.newhexagon,
+.newhexagon:before,
+.double:after {
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
+
 /* .image:before {
   background: url(http://lorempixel.com/150/150/nature/1);
 } */
@@ -440,10 +491,10 @@
 .hexBackground1 {
   /* position: absolute; */
   top: 2px;
-  left: 2px; 
-  width: 80%; 
-  height: 315px; 
-margin: 0px auto !important;
+  left: 2px;
+  width: 80%;
+  height: 315px;
+  margin: 0px auto !important;
   -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
   -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
   /* margin-left: 5%; */
@@ -451,16 +502,16 @@ margin: 0px auto !important;
 
 .hex img {
   position: absolute;
-  width: 100%; 
-  height: 100%; 
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
   -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
 }
 
-.exactiveImage{
-  width: 100% ;
-  height: 100% ;
+.exactiveImage {
+  width: 100%;
+  height: 100%;
   padding: 10px;
-  z-index: 1 !important ;
+  z-index: 1 !important;
 }
