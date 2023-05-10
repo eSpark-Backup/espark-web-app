@@ -5,12 +5,12 @@ import { OurJourneyData } from "../../helper/aboutus";
 const OurJourney = () => {
   return (
     <div className="container-fluid">
+      <div className={styles.sapratorLine}></div>
       {OurJourneyData.map((items) => {
         return (
-          <div className="">
-            <div className={styles.sapratorLine}></div>
-            <div className="row d-flex align-items-center text-left ">
-              <div className={`col-5`}>
+          <>
+            <div className="row d-flex align-items-center ptb-80">
+              <div className={`col-5 d-flex justify-content-end`}>
                 <div className={styles.descriptionBox}>
                   <h1>{items.titleLeft}</h1>
                   <p>{items.descriptionLeft}</p>
@@ -49,16 +49,18 @@ const OurJourney = () => {
               </div>
               <div className="col-5">
                 <div class={styles.hexagon}>
-                  <span className={styles.hexgonText}>{items.hexagonLeft}</span>
+                  <span className={styles.hexgonText2}>
+                    {items.hexagonLeft}
+                  </span>
                   <div class={styles.face1}></div>
                   <div class={styles.face2}></div>
                 </div>
               </div>
             </div>
-            <div className="row d-flex align-items-center text-left">
-              <div className="col-5">
+            <div className="row d-flex align-items-center ptb-80">
+              <div className="col-5 d-flex justify-content-end">
                 <div class={styles.hexagon}>
-                  <span className={styles.hexgonText}>
+                  <span className={styles.hexgonText2}>
                     {items.hexagonRight}
                   </span>
                   <div class={styles.face1}></div>
@@ -96,14 +98,14 @@ const OurJourney = () => {
                   />
                 </svg>
               </div>
-              <div className={`col-5`}>
+              <div className={`col-5 d-flex justify-content-start`}>
                 <div className={styles.descriptionBox}>
                   <h1>{items.titleRight}</h1>
                   <p>{items.descriptionRight}</p>
                 </div>
               </div>
             </div>
-          </div>
+          </>
         );
       })}
     </div>

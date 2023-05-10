@@ -42,7 +42,7 @@ export default function About() {
 
       <div>
         <OurPartner />
-        <SectionTitle heading={"Our Goal Statement"} paddingTop={80}/>
+        <SectionTitle heading={"Our Goal Statement"} paddingTop={80} />
         <OurGoalStatement />
         <SectionTitle heading={"Our Journey"} paddingTop={80} />
         <OurJourney />
