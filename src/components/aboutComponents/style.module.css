@@ -178,6 +178,12 @@
 }
 
 @media only screen and (min-width: 280px) and (max-width: 425px) {
+  .memberContens {
+    height: auto !important;
+  }
+
+
+
   .desktop {
     display: none;
   }
@@ -240,6 +246,14 @@
 }
 
 @media only screen and (min-width: 425px) and (max-width: 576px) {
+  .memberContens {
+    height: auto !important;
+  }
+
+  .memberContens {
+    height: auto !important;
+  }
+
   .desktop {
     display: none;
   }
@@ -275,7 +289,6 @@
   }
 
   .secondDivHexagon {
-    /* border: 1px solid red; */
     padding-left: 20%;
   }
 
@@ -301,6 +314,10 @@
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
+  .memberContens {
+    height: auto !important;
+  }
+
   .desktop {
     display: none;
   }
@@ -315,24 +332,11 @@
     align-items: center;
   }
 
-  .last {
-    /* border: 1px solid green; */
-    /* align-items: flex-end;
-    text-align: flex-end;
-    justify-content: flex-end; */
-    /* padding-left: 30%; */
-  }
-
   .sapratorLine {
     right: 12px;
     margin-top: 20px;
     border: 2px solid rgb(202, 202, 202);
     height: 2500px;
-  }
-
-  .midle {
-    /* padding-left: 20%; */
-    /* border: 1px solid; */
   }
 
   .descriptionLeft {
@@ -349,19 +353,6 @@
     font-size: 14px;
     text-align: center !important;
   }
-
-  .midle {
-    /* padding-right: 10%; */
-    /* display: none; */
-  }
-
-  /* .svgIcon {
-    text-align: center;
-    position: relative;
-    top: 25px;
-    right: -56% !important;
-    width: 100% !important;
-  } */
 
   .secondDivHexagon {
     /* border: 1px solid red; */
@@ -384,6 +375,8 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+
+
   .sapratorLine {
     z-index: -1 !important;
   }
@@ -424,6 +417,11 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .memberContens {
+    height: 520px !important;
+
+  }
+
   .sapratorLine {
     z-index: -1 !important;
   }
@@ -507,11 +505,6 @@
 
 /* -------------------------Ourteam work begins------------------------  */
 
-/* .containerFluid{
-  margin-bottom: 900px !important;
-  border: 1px solid red !important;
-} */
-
 .memberContens {
   height: 637px;
   padding-bottom: 10px;
@@ -519,9 +512,9 @@
 
 .teamContent {
   background-color: #e8f1f2;
-  width: 99%;
+  width: 97%;
   height: auto;
-  margin: -5px 0px 0px 1%;
+  margin: -15px 0px 0px 1.5%;
   box-shadow: 0 4px 4px -2px rgb(142, 141, 141);
 }
 
@@ -694,23 +687,27 @@
   padding: 0px 9% 10px 0px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .exactiveImageRight {
     width: 100%;
     height: 100%;
     padding: 10px 0px !important;
   }
+
   .exactivePra {
     font-size: 16px;
   }
+
   .exactivePraRight {
     font-size: 16px;
   }
+
   .aboutParaRight {
     padding: 40px 0px 10px 10%;
   }
+
   .aboutParaLeft {
     padding: 0px 8% 10px 0px;
   }
@@ -804,9 +801,11 @@
     width: 100%;
     height: 100%;
   }
+
   .aboutParaRight {
     padding: 0px 0px 0px 0%;
   }
+
   .aboutParaLeft {
     padding: 0px 0% 0px 0px;
   }
@@ -817,6 +816,7 @@
     width: 200px;
     height: auto;
   }
+
   .exactiveImage {
     width: 200px;
     height: auto;
@@ -836,24 +836,28 @@
     text-align: center;
     justify-content: center;
   }
+
   .exactivePra {
     font-size: 12px;
     align-items: center;
     text-align: center;
     justify-content: center;
   }
+
   .exactiveHeadingRight {
     align-items: center;
     text-align: center;
     justify-content: center;
     font-size: 20px;
   }
+
   .exactivePraRight {
     font-size: 12px;
     align-items: center;
     text-align: center;
     justify-content: center;
   }
+
   /* .hexagoneBackground {
     position: absolute;
     background-color: #fff;
@@ -896,6 +900,7 @@
     box-sizing: border-box;
     -webkit-clip-path: none;
   }
+
   .hexagone {
     display: block;
     margin: 0 auto;
@@ -909,9 +914,11 @@
     box-sizing: border-box;
     -webkit-clip-path: none;
   }
+
   .aboutParaRight {
     padding: 0px 0px 0px 0%;
   }
+
   .aboutParaLeft {
     padding: 0px 0% 0px 0px;
   }
