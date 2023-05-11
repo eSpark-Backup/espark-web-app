@@ -264,11 +264,17 @@
   .descriptionLeft {
     font-size: 14px;
     text-align: center !important;
+    margin-top: 0px !important;      
+    line-height: auto !important;
   }
 
   .titleRight {
     font-size: 20.3695px !important;
     text-align: center;
+  }
+  .titleLeft{
+    font-size: 18px !important;
+    padding-top: 10px;
   }
 
   .descriptionRight {
@@ -380,6 +386,10 @@
   .hexagon {
     top: 0px;
   }
+  .titleLeft{
+    font-size: 20px !important;
+    padding-top: 10px;
+  }
 
   .sapratorLine {
     right: 12px;
@@ -390,6 +400,8 @@
 
   .descriptionLeft {
     font-size: 14px;
+    margin-top: 0px !important;
+    line-height: auto !important;
     text-align: center !important;
   }
 
@@ -428,64 +440,7 @@
   }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 768px) {
-
-  .hexagone {
-    height: 600px !important;
-    width: 100% !important;
-    -webkit-clip-path: none !important;
-    box-shadow: 0 4px 4px -2px rgb(142, 141, 141);
-    border-radius: 10px;
-  }
-
-  .exactiveHeading {
-    text-align: center;
-  }
-
-  .exactivePra {
-    text-align: center;
-
-  }
-
-  .exactiveImage {
-    width: 50% !important;
-  }
-
-  .aboutParaLeft {
-    padding: 10px !important;
-  }
-
-  .hexagoneRight {
-    height: 600px !important;
-    width: 100% !important;
-    -webkit-clip-path: none !important;
-    box-shadow: 0 4px 4px -2px rgb(142, 141, 141);
-    border-radius: 10px;
-  }
-
-  .exactiveHeadingRight {
-    text-align: center;
-  }
-
-  .exactivePraRight {
-    text-align: center;
-
-  }
-
-  .exactiveImageRight {
-    width: 50% !important;
-  }
-
-  .aboutParaRight {
-    padding: 10px !important;
-  }
-
-  .hexagoneBackground {
-    background-color: transparent !important;
-    -webkit-clip-path: none !important;
-    padding: 20px !important;
-  }
-
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .memberContens {
     height: auto !important;
   }
