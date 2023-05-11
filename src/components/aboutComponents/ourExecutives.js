@@ -7,13 +7,17 @@ const OurExecutives = () => {
   return (
     <div>
       <div className={`container-fluid  my-2 ${styles.fullscreen} `}>
-        <div class={`${styles.hexagone}  my-4`}>
-          <div class={styles.hexagoneBackgroundccc}>
+        <div class={`${styles.hexagone} my-4`}>
+          <div class={styles.hexagoneBackground}>
             <div class="row ">
-              <div class={`col-sm-12 col-md-4 col-lg-4 ${styles.aboutImgDiv}`}>
+              <div
+                class={`col-12 col-sm-12 col-md-12 col-lg-4 ${styles.aboutImgDiv}`}
+              >
                 <img src={exactive4} className={styles.exactiveImage} />
               </div>
-              <div class={` col-sm-12 col-md-8 col-lg-8 ${styles.aboutParaLeft}`} >
+              <div
+                class={` col-12 col-sm-12 col-md-12 col-lg-8 ${styles.aboutParaLeft}`}
+              >
                 <p className={styles.exactiveHeading}>Lorem Ipsom</p>
                 <p className={styles.exactivePra}>
                   at, tincidunt ac nec Praesent non. Donec urna lacus, leo.
@@ -30,24 +34,8 @@ const OurExecutives = () => {
             </div>
           </div>
         </div>
-        {/* <div class="row ">
-          <div class={` col-sm-6 col-md-8 col-lg-8 ${styles.aboutParaLeft1}`}>
-            <p className={styles.exactiveHeading}>Lorem Ipsom</p>
-            <p className={styles.exactivePra}>
-              at, tincidunt ac nec Praesent non. Donec urna lacus, leo. Quisque
-              sit nisi non. elit Nullam fringilla fringilla elementum quis
-              tincidunt faucibus ullamcorper <br /> <br /> orci sit non Nam
-              Quisque eget Donec Cras tempor id turpis lobortis, Lorem eget in
-              consectetur Sed eu in ipsum convallis. Praesent eget lobortis, nec
-              tincidunt at, tincidunt ac nec Praesent non. Donec urna lacus,
-              leo. Quisque sit nisi non. elit Nullam fringilla fringilla
-              elementum quis tincidunt faucibus ullamcorper
-            </p>
-          </div>
-        </div> */}
-        <div class={styles.hexagoneBackgroundccc}></div>
-        <div class={styles.hexagoneRight}>
-          <div class={styles.hexagoneBackgroundccc}>
+        <div class={`${styles.hexagoneRight} `}>
+          <div class={styles.hexagoneBackground}>
             <div class="row ">
               <div
                 class={` col-sm-12 col-md-8 col-lg-8 ${styles.aboutParaRight}`}
@@ -74,25 +62,6 @@ const OurExecutives = () => {
           </div>
         </div>
       </div>
-      {/* <div className={`container-fluid  my-2 ${styles.mobileScreen} `}>
-        <div class={styles.hexagoneBackgroundccc}>
-          <div class="row ">
-            <div class={` col-sm-6 col-md-8 col-lg-8 ${styles.aboutParaLeft1}`}>
-              <p className={styles.exactiveHeading}>Lorem Ipsom</p>
-              <p className={styles.exactivePra}>
-                at, tincidunt ac nec Praesent non. Donec urna lacus, leo.
-                Quisque sit nisi non. elit Nullam fringilla fringilla elementum
-                quis tincidunt faucibus ullamcorper <br /> <br /> orci sit non
-                Nam Quisque eget Donec Cras tempor id turpis lobortis, Lorem
-                eget in consectetur Sed eu in ipsum convallis. Praesent eget
-                lobortis, nec tincidunt at, tincidunt ac nec Praesent non. Donec
-                urna lacus, leo. Quisque sit nisi non. elit Nullam fringilla
-                fringilla elementum quis tincidunt faucibus ullamcorper
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

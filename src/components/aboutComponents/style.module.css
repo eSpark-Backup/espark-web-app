@@ -178,11 +178,69 @@
 }
 
 @media only screen and (min-width: 280px) and (max-width: 425px) {
+
+  .hexagone {
+    height: 500px !important;
+    width: 100% !important;
+    -webkit-clip-path: none !important;
+    box-shadow: 0 4px 4px -2px rgb(142, 141, 141);
+    border-radius: 10px;
+  }
+
+  .exactiveHeading {
+    font-size: 14px !important;
+    text-align: center;
+  }
+
+  .exactivePra {
+    text-align: center;
+    font-size: 12px !important;
+  }
+
+  .exactiveImage {
+    width: 50% !important;
+  }
+
+  .aboutParaLeft {
+    padding: 10px !important;
+  }
+
+  .hexagoneRight {
+    height: 500px !important;
+    width: 100% !important;
+    -webkit-clip-path: none !important;
+    box-shadow: 0 4px 4px -2px rgb(142, 141, 141);
+    border-radius: 10px;
+  }
+
+  .exactiveHeadingRight {
+    font-size: 14px !important;
+    text-align: center;
+  }
+
+  .exactivePraRight {
+    text-align: center;
+    font-size: 12px !important;
+
+  }
+
+  .exactiveImageRight {
+    width: 50% !important;
+  }
+
+  .aboutParaRight {
+    padding: 10px !important;
+  }
+
+  .hexagoneBackground {
+    background-color: transparent !important;
+    -webkit-clip-path: none !important;
+    padding: 20px !important;
+  }
+
   .memberContens {
     height: auto !important;
   }
-
-
 
   .desktop {
     display: none;
@@ -246,6 +304,63 @@
 }
 
 @media only screen and (min-width: 425px) and (max-width: 576px) {
+  .hexagone {
+    height: 650px !important;
+    width: 100% !important;
+    -webkit-clip-path: none !important;
+    box-shadow: 0 4px 4px -2px rgb(142, 141, 141);
+    border-radius: 10px;
+  }
+
+  .exactiveHeading {
+    text-align: center;
+  }
+
+  .exactivePra {
+    text-align: center;
+
+  }
+
+  .exactiveImage {
+    width: 50% !important;
+  }
+
+  .aboutParaLeft {
+    padding: 10px !important;
+  }
+
+  .hexagoneRight {
+    height: 650px !important;
+    width: 100% !important;
+    -webkit-clip-path: none !important;
+    box-shadow: 0 4px 4px -2px rgb(142, 141, 141);
+    border-radius: 10px;
+  }
+
+  .exactiveHeadingRight {
+    text-align: center;
+  }
+
+  .exactivePraRight {
+    text-align: center;
+
+  }
+
+  .exactiveImageRight {
+    width: 50% !important;
+  }
+
+  .aboutParaRight {
+    padding: 10px !important;
+  }
+
+  .hexagoneBackground {
+    background-color: transparent !important;
+    -webkit-clip-path: none !important;
+    padding: 20px !important;
+  }
+
+
   .memberContens {
     height: auto !important;
   }
@@ -314,6 +429,63 @@
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
+
+  .hexagone {
+    height: 600px !important;
+    width: 100% !important;
+    -webkit-clip-path: none !important;
+    box-shadow: 0 4px 4px -2px rgb(142, 141, 141);
+    border-radius: 10px;
+  }
+
+  .exactiveHeading {
+    text-align: center;
+  }
+
+  .exactivePra {
+    text-align: center;
+
+  }
+
+  .exactiveImage {
+    width: 50% !important;
+  }
+
+  .aboutParaLeft {
+    padding: 10px !important;
+  }
+
+  .hexagoneRight {
+    height: 600px !important;
+    width: 100% !important;
+    -webkit-clip-path: none !important;
+    box-shadow: 0 4px 4px -2px rgb(142, 141, 141);
+    border-radius: 10px;
+  }
+
+  .exactiveHeadingRight {
+    text-align: center;
+  }
+
+  .exactivePraRight {
+    text-align: center;
+
+  }
+
+  .exactiveImageRight {
+    width: 50% !important;
+  }
+
+  .aboutParaRight {
+    padding: 10px !important;
+  }
+
+  .hexagoneBackground {
+    background-color: transparent !important;
+    -webkit-clip-path: none !important;
+    padding: 20px !important;
+  }
+
   .memberContens {
     height: auto !important;
   }
@@ -376,6 +548,45 @@
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
 
+  .hexagoneBackground {
+    top: 0.2em !important;
+    left: 0.2em !important;
+    height: 97.5%;
+  }
+
+  .exactiveHeadingRight {
+    font-size: 18px !important;
+  }
+
+  .exactiveHeading {
+    font-size: 15px !important;
+  }
+
+  .exactivePraRight {
+    font-size: 12px !important;
+
+  }
+
+  .exactivePra {
+    font-size: 12px !important;
+
+  }
+
+  .aboutParaLeft {
+    padding: 25px 9% 10px 0px !important;
+  }
+
+  .aboutParaRight {
+    padding: 25px 0px 10px 10% !important;
+  }
+
+  .hexagone {
+    height: 260px !important;
+  }
+
+  .hexagoneRight {
+    height: 260px !important;
+  }
 
   .sapratorLine {
     z-index: -1 !important;
@@ -417,9 +628,48 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .hexagoneBackground {
+    top: 0.2em !important;
+    left: 0.2em !important;
+    height: 97.5% !important;
+  }
+
+  .exactiveHeadingRight {
+    font-size: 18px !important;
+  }
+
+  .exactiveHeading {
+    font-size: 15px !important;
+  }
+
+  .exactivePraRight {
+    font-size: 12px !important;
+
+  }
+
+  .exactivePra {
+    font-size: 12px !important;
+
+  }
+
+  .aboutParaLeft {
+    padding: 25px 9% 10px 0px !important;
+  }
+
+  .aboutParaRight {
+    padding: 25px 0px 10px 10% !important;
+  }
+
+  .hexagone {
+    height: 260px !important;
+  }
+
+  .hexagoneRight {
+    height: 260px !important;
+  }
+
   .memberContens {
     height: 520px !important;
-
   }
 
   .sapratorLine {
@@ -546,28 +796,20 @@
 /* -------------------------******* Ourteam work ends here *******------------------------  */
 /* -----------------------------Our exactive biging------------------------ */
 
-/* .aboutImgDiv {
+.aboutImgDiv {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
 
-.exactiveImage1 {
-  width: 320px !important;
-  height: 360px !important;
-  border: 1px solid red;
-  padding: 10px 10px 10px 30px;
-} */
 .exactiveImage {
   width: 100%;
-  height: 100%;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .exactiveImageRight {
   width: 100%;
-  height: 100%;
   padding: 10px;
 }
 
@@ -576,18 +818,16 @@
   margin: 0 auto;
   position: relative;
   width: 90%;
-  height: auto;
+  height: 355px;
   margin-left: 0%;
   background: #176fae;
   box-sizing: border-box;
-  -webkit-clip-path: polygon(
-    0% 50%,
-    8% 0%,
-    92% 0%,
-    100% 50%,
-    92% 100%,
-    8% 100%
-  );
+  -webkit-clip-path: polygon(0% 50%,
+      8% 0%,
+      92% 0%,
+      100% 50%,
+      92% 100%,
+      8% 100%);
 }
 
 .hexagoneRight {
@@ -595,18 +835,16 @@
   margin: 0 auto;
   position: relative;
   width: 90%;
-  height: auto;
+  height: 355px;
   margin-right: 0%;
   background: #176fae;
   box-sizing: border-box;
-  -webkit-clip-path: polygon(
-    0% 50%,
-    8% 0%,
-    92% 0%,
-    100% 50%,
-    92% 100%,
-    8% 100%
-  );
+  -webkit-clip-path: polygon(0% 50%,
+      8% 0%,
+      92% 0%,
+      100% 50%,
+      92% 100%,
+      8% 100%);
 }
 
 .hexagoneBackground {
@@ -615,15 +853,13 @@
   top: 0.2rem;
   left: 0.3rem;
   width: 99.3%;
-  height: 98% !important;
-  -webkit-clip-path: polygon(
-    0% 50%,
-    8% 0%,
-    92% 0%,
-    100% 50%,
-    92% 100%,
-    8% 100%
-  );
+  height: 98%;
+  -webkit-clip-path: polygon(0% 50%,
+      8% 0%,
+      92% 0%,
+      100% 50%,
+      92% 100%,
+      8% 100%);
 }
 
 /* .hexagone img {
@@ -687,242 +923,8 @@
   padding: 0px 9% 10px 0px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {}
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .exactiveImageRight {
-    width: 100%;
-    height: 100%;
-    padding: 10px 0px !important;
-  }
 
-  .exactivePra {
-    font-size: 16px;
-  }
-
-  .exactivePraRight {
-    font-size: 16px;
-  }
-
-  .aboutParaRight {
-    padding: 40px 0px 10px 10%;
-  }
-
-  .aboutParaLeft {
-    padding: 0px 8% 10px 0px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  .exactivePra {
-    font-size: 16px;
-  }
-
-  .exactiveHeading {
-    font-size: 20px;
-  }
-
-  .exactivePra {
-    font-size: 12px;
-  }
-
-  .exactiveHeadingRight {
-    font-size: 20px;
-  }
-
-  .exactivePraRight {
-    font-size: 12px;
-  }
-
-  /* .hexagoneBackground {
-    position: absolute;
-    background-color: #fff;
-    top: 0.2rem;
-    left: 0.3rem;
-    width: 98.5%;
-    height: 98% !important;
-    -webkit-clip-path: polygon(0% 50%,
-        8% 0%,
-        92% 0%,
-        100% 50%,
-        92% 100%,
-        8% 100%);
-  }
-  .hexagoneBackgroundRight {
-    position: absolute;
-    background-color: #fff;
-    border: 1px solid black !important;
-    top: 0.2rem;
-    left: 0.3rem;
-    width: 98.5%;
-    height: 540px !important;
-    -webkit-clip-path: polygon(0% 50%,
-        8% 0%,
-        92% 0%,
-        100% 50%,
-        92% 100%,
-        8% 100%);
-  } */
-  .hexagoneRight {
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 30px;
-    border-radius: 7px;
-    box-shadow: 0 0 5px 2px #888888;
-    background: #176fae;
-    box-sizing: border-box;
-    -webkit-clip-path: none;
-  }
-
-  .hexagone {
-    display: block;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 7px;
-    box-shadow: 0 0 5px 2px #888888;
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-left: 0%;
-    background: #176fae;
-    box-sizing: border-box;
-    -webkit-clip-path: none;
-  }
-
-  .exactiveImage {
-    width: 100%;
-    height: 100%;
-  }
-
-  .exactiveImageRight {
-    width: 100%;
-    height: 100%;
-  }
-
-  .aboutParaRight {
-    padding: 0px 0px 0px 0%;
-  }
-
-  .aboutParaLeft {
-    padding: 0px 0% 0px 0px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .exactiveImageRight {
-    width: 200px;
-    height: auto;
-  }
-
-  .exactiveImage {
-    width: 200px;
-    height: auto;
-
-    /* padding: 10px 0px !important; */
-  }
-  .aboutImgDiv {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .exactiveHeading {
-    font-size: 20px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .exactivePra {
-    font-size: 12px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .exactiveHeadingRight {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-size: 20px;
-  }
-
-  .exactivePraRight {
-    font-size: 12px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-
-  /* .hexagoneBackground {
-    position: absolute;
-    background-color: #fff;
-    top: 0.2rem;
-    left: 0.3rem;
-    width: 98.5%;
-    height: 98% !important;
-    -webkit-clip-path: polygon(0% 50%,
-        8% 0%,
-        92% 0%,
-        100% 50%,
-        92% 100%,
-        8% 100%);
-  }
-  .hexagoneBackgroundRight {
-    position: absolute;
-    background-color: #fff;
-    border: 1px solid black !important;
-    top: 0.2rem;
-    left: 0.3rem;
-    width: 98.5%;
-    height: 540px !important;
-    -webkit-clip-path: polygon(0% 50%,
-        8% 0%,
-        92% 0%,
-        100% 50%,
-        92% 100%,
-        8% 100%);
-  } */
-  .hexagoneRight {
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 30px;
-    border-radius: 7px;
-    box-shadow: 0 0 5px 2px #888888;
-    background: #176fae;
-    box-sizing: border-box;
-    -webkit-clip-path: none;
-  }
-
-  .hexagone {
-    display: block;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 7px;
-    position: relative;
-    box-shadow: 0 0 5px 2px #888888;
-    width: 100%;
-    height: auto;
-    background: #176fae;
-    box-sizing: border-box;
-    -webkit-clip-path: none;
-  }
-
-  .aboutParaRight {
-    padding: 0px 0px 0px 0%;
-  }
-
-  .aboutParaLeft {
-    padding: 0px 0% 0px 0px;
-  }
-}
 
 /* -----------------------------******* Our exactive ends here********------------------------ */
 
@@ -1237,6 +1239,7 @@
 }
 
 @media screen and (max-width: 360px) {
+
   /* .container,
         .container-sm{
           width: 100% !important;
@@ -1263,11 +1266,13 @@
   margin-right: auto !important;
   float: none !important;
 }
+
 .wd_partnerlogos_title {
   text-align: center;
   position: relative;
   margin-bottom: 9px;
 }
+
 .wd_partnerlogos_title:before {
   content: "";
   background: #cbd6e2;
@@ -1280,6 +1285,7 @@
   transform: translate(0, -50%);
   z-index: -1;
 }
+
 .wd_partnerlogos_title h5 {
   margin: 0;
   display: inline-block;
@@ -1288,7 +1294,8 @@
   background: #fff;
   letter-spacing: 1px;
 }
- .wd_partnerlogos_list {
+
+.wd_partnerlogos_list {
   padding: 15px 0;
   /* background-image: url(https://www.webdew.com/hubfs/dotted-bg.svg); */
   background-repeat: no-repeat;
@@ -1302,9 +1309,11 @@
   justify-content: center;
   align-items: center;
 }
+
 .wd_partnerlogos_list ul li {
   padding: 12px 15px;
 }
+
 .wd_partnerlogos_list .grey_icon img {
   max-width: 100%;
   height: 20px;
@@ -1314,18 +1323,22 @@
 .wd_partnerlogos_btn {
   margin-top: 10px;
   text-align: center;
-    position: relative;
+  position: relative;
 }
+
 .wd_partnerlogos_btn .Button_cta {
-  color: var(--color-secondary)!important;
+  color: var(--color-secondary) !important;
   border-color: var(--color-secondary);
 }
+
 a.Button_cta {
   font-size: 13px;
 }
+
 .Button_cta {
   outline: 0;
 }
+
 .Button_cta {
   border-radius: 3px;
   cursor: pointer;
@@ -1343,6 +1356,7 @@ a.Button_cta {
   display: inline-block;
   border: 2px solid #007FFF;
 }
+
 .wd_partnerlogos_btn:before {
   content: "";
   background: #cbd6e2;
@@ -1352,11 +1366,12 @@ a.Button_cta {
   left: 0;
   right: 0;
   top: 50%;
-  transform: translate(0,-50%);
+  transform: translate(0, -50%);
   z-index: -1;
   margin: 0 auto;
 }
- .wd_partnerlogos_btn .Button_cta {
+
+.wd_partnerlogos_btn .Button_cta {
   background: #fff;
   color: #00a9fa;
 }
