@@ -27,8 +27,6 @@
   z-index: -1;
 }
 
-
-
 .arrowImage,
 .secondDivHexagon {
   /* width: 100%; */
@@ -199,8 +197,6 @@
     height: 2500px;
   }
 
-
-
   .descriptionLeft {
     font-size: 14px;
     text-align: center !important;
@@ -240,10 +236,7 @@
     height: 280px;
     align-items: center;
     padding: 15px;
-
-
   }
-
 }
 
 @media only screen and (min-width: 425px) and (max-width: 576px) {
@@ -265,7 +258,6 @@
     border: 2px solid rgb(202, 202, 202);
     height: 2500px;
   }
-
 
   .descriptionLeft {
     font-size: 14px;
@@ -305,14 +297,10 @@
     width: 100%;
     height: 300px;
     align-items: center;
-
-
   }
-
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
-
   .desktop {
     display: none;
   }
@@ -325,7 +313,6 @@
     width: 100%;
     height: 300px;
     align-items: center;
-
   }
 
   .last {
@@ -347,10 +334,6 @@
     /* padding-left: 20%; */
     /* border: 1px solid; */
   }
-
-
-
-
 
   .descriptionLeft {
     font-size: 14px;
@@ -401,11 +384,9 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-
   .sapratorLine {
     z-index: -1 !important;
   }
-
 
   .titleLeft {
     font-size: 20.3695px !important;
@@ -447,7 +428,6 @@
     z-index: -1 !important;
   }
 
-
   .titleLeft {
     font-size: 20.3695px !important;
   }
@@ -463,7 +443,6 @@
   .descriptionRight {
     font-size: 14px;
   }
-
 
   .secondDivHexagon {
     padding-left: 20%;
@@ -489,7 +468,6 @@
     z-index: -1 !important;
   }
 
-
   .titleLeft {
     font-size: 20.3695px !important;
   }
@@ -505,7 +483,6 @@
   .descriptionRight {
     font-size: 14px;
   }
-
 
   .secondDivHexagon {
     padding-left: 20%;
@@ -607,15 +584,17 @@
   position: relative;
   width: 90%;
   height: auto;
-  margin-left: 0% ;
+  margin-left: 0%;
   background: #176fae;
   box-sizing: border-box;
-  -webkit-clip-path: polygon(0% 50%,
-      8% 0%,
-      92% 0%,
-      100% 50%,
-      92% 100%,
-      8% 100%);
+  -webkit-clip-path: polygon(
+    0% 50%,
+    8% 0%,
+    92% 0%,
+    100% 50%,
+    92% 100%,
+    8% 100%
+  );
 }
 
 .hexagoneRight {
@@ -624,15 +603,17 @@
   position: relative;
   width: 90%;
   height: auto;
-  margin-right: 0% ;
+  margin-right: 0%;
   background: #176fae;
   box-sizing: border-box;
-  -webkit-clip-path: polygon(0% 50%,
-      8% 0%,
-      92% 0%,
-      100% 50%,
-      92% 100%,
-      8% 100%);
+  -webkit-clip-path: polygon(
+    0% 50%,
+    8% 0%,
+    92% 0%,
+    100% 50%,
+    92% 100%,
+    8% 100%
+  );
 }
 
 .hexagoneBackground {
@@ -642,12 +623,14 @@
   left: 0.3rem;
   width: 99.3%;
   height: 98% !important;
-  -webkit-clip-path: polygon(0% 50%,
-      8% 0%,
-      92% 0%,
-      100% 50%,
-      92% 100%,
-      8% 100%);
+  -webkit-clip-path: polygon(
+    0% 50%,
+    8% 0%,
+    92% 0%,
+    100% 50%,
+    92% 100%,
+    8% 100%
+  );
 }
 
 /* .hexagone img {
@@ -712,7 +695,6 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
- 
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .exactiveImageRight {
@@ -732,7 +714,6 @@
   .aboutParaLeft {
     padding: 0px 8% 10px 0px;
   }
-  
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -808,7 +789,7 @@
     position: relative;
     width: 100%;
     height: auto;
-    margin-left: 0% ;
+    margin-left: 0%;
     background: #176fae;
     box-sizing: border-box;
     -webkit-clip-path: none;
@@ -839,15 +820,14 @@
   .exactiveImage {
     width: 200px;
     height: auto;
-    
+
     /* padding: 10px 0px !important; */
   }
-  .aboutImgDiv{
+  .aboutImgDiv {
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-
   }
 
   .exactiveHeading {
@@ -1250,7 +1230,6 @@
 }
 
 @media screen and (max-width: 360px) {
-
   /* .container,
         .container-sm{
           width: 100% !important;
@@ -1268,83 +1247,116 @@
 /* -----------------------------******* Our Goal Statement ends here ******-------------------------------- */
 
 /* --------------------------------Our partner begins here-------------------------------- */
-.partners {
-  margin: auto;
-  width: 60%;
-  padding: 10px;
+
+
+.newContainer {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none !important;
 }
-
-/* .partne {
-        width: 100%;
-        border: 1px solid red;
-        align-items: center !important;
-        text-align: center !important;
-      } */
-.partnerImages {
-  width: 80%;
-}
-
-.lines {
-  width: 100%;
-  height: 0px;
-  margin-top: 10px;
-  border: 1px solid #c2c3c3cc;
-}
-
-.aboutText {
-  padding: 0px 20px;
-}
-
-.aboutTextLorem {
-  padding: 0px 20px;
-  margin: -10px 0px;
-}
-
-.aboutLorem {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 100%;
-  margin-top: -15px !important;
-  padding-top: -10px !important;
-  /* identical to box height, or 36px */
-
-  color: #000000;
-  /* padding: 0px -70px !important; */
-}
-
-.review {
-  border: 1px solid #2074b4;
-  padding: 10px 80px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 100%;
-  color: #2074b4;
-}
-
-.lineBottom {
-  padding-bottom: 80px;
-}
-
-.hrText:after {
-  content: attr("data-content");
+.wd_partnerlogos_title {
+  text-align: center;
   position: relative;
+  margin-bottom: 9px;
+}
+.wd_partnerlogos_title:before {
+  content: "";
+  background: #cbd6e2;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: -1;
+}
+.wd_partnerlogos_title h5 {
+  margin: 0;
   display: inline-block;
-  color: black;
-  padding: 0 0.5em;
-  line-height: 1.5em;
-  color: #818078;
-  background-color: #fcfcfa;
-  /* content: ${props => `"${props['data-content']}"`}; Add this line */
+  vertical-align: middle;
+  padding: 0 30px;
+  background: #fff;
+  letter-spacing: 1px;
+}
+ .wd_partnerlogos_list {
+  padding: 15px 0;
+  /* background-image: url(https://www.webdew.com/hubfs/dotted-bg.svg); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-@media screen and (max-width: 768px) {
-  .partners {
-    margin: auto;
-    width: 100%;
-    padding: 10px;
+.wd_partnerlogos_list ul {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wd_partnerlogos_list ul li {
+  padding: 12px 15px;
+}
+.wd_partnerlogos_list .grey_icon img {
+  max-width: 100%;
+  height: 20px;
+}
+
+
+.wd_partnerlogos_btn {
+  margin-top: 10px;
+  text-align: center;
+    position: relative;
+}
+.wd_partnerlogos_btn .Button_cta {
+  color: var(--color-secondary)!important;
+  border-color: var(--color-secondary);
+}
+a.Button_cta {
+  font-size: 13px;
+}
+.Button_cta {
+  outline: 0;
+}
+.Button_cta {
+  border-radius: 3px;
+  cursor: pointer;
+  background: 0;
+  height: 45px;
+  text-transform: none;
+  color: #007FFF;
+  font-size: 16px;
+  font-family: proxima_nova_rgregular;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .45px;
+  line-height: 43px;
+  padding: 0 30px;
+  display: inline-block;
+  border: 2px solid #007FFF;
+}
+.wd_partnerlogos_btn:before {
+  content: "";
+  background: #cbd6e2;
+  width: 80%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translate(0,-50%);
+  z-index: -1;
+  margin: 0 auto;
+}
+ .wd_partnerlogos_btn .Button_cta {
+  background: #fff;
+  color: #00a9fa;
+}
+
+@media screen and (max-width: 639px) {
+  .wd_partnerlogos_title h5 {
+    padding: 0 20px;
+    letter-spacing: normal;
   }
 }

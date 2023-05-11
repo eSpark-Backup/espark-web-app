@@ -1,40 +1,30 @@
-import React from 'react'
+import React from "react";
 import styles from "./style.module.css";
-import { partnerLogs } from '../../helper/aboutus';
+import { partnerLogs } from "../../helper/aboutus";
 const OurPartner = () => {
   return (
-    <div>
-         <div className="container-fluid my-3 d-flex">
-        <div className={styles.lines}></div>
-        <div className={styles.aboutTextLorem}>
-          <span className={styles.aboutLorem}>LoremIpsum</span>
-        </div>
-        <div className={styles.lines}></div>
+    <div className={`container-flued ${styles.newContainer}`}>
+      <div className={styles.wd_partnerlogos_title}>
+        <h5>LoremIpsum</h5>
       </div>
-      <div className={` ${styles.partners}`}>
-        <div className={`d-flex justify-content-between  ${styles.partne}`}>
-            {
-                partnerLogs.map((partnerLog) =>{
-                    return (
-                        <div>
-                            <img src={partnerLog.images} className={styles.partnerImages} />
-                        </div>
-
-                    )
-                })
-
-            }
-        </div>
+      <div className={styles.wd_partnerlogos_list}>
+        <ul>
+          {partnerLogs.map((items) => {
+            return (
+              <li>
+                <img src={items.images} className={styles.grey_icon} />
+              </li>
+            );
+          })}
+        </ul>
       </div>
-      <div className={`container my-4 d-flex ${styles.lineBottom}`}>
-        <div className={styles.lines}></div>
-        <div className={styles.aboutText}>
-          <span className={styles.review}>Review</span>
-        </div>
-        <div className={styles.lines}></div>
+      <div className={styles.wd_partnerlogos_btn}>
+        <a id={styles.wd_videos_1} className={styles.Button_cta}>
+          Reviwes
+        </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default OurPartner
+export default OurPartner;
