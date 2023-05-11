@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./style.module.css";
 import { OurJourneyData } from "../../helper/aboutus";
+import  leftRightArrows from "../../assets/images/About-us-image/leftRight.png"
 
 const OurJourney = () => {
   return (
@@ -9,15 +10,16 @@ const OurJourney = () => {
       {OurJourneyData.map((items) => {
         return (
           <>
-            <div className="row d-flex align-items-center ptb-80">
-              <div className={`col-5 d-flex justify-content-end`}>
+            <div className={`row d-flex align-items-center  ptb-80 ${styles.journeyContainer} `} >
+              <div className={`col-5 col-md-5 col-lg-5 d-flex justify-content-end `}>
                 <div className={styles.descriptionBox}>
-                  <h1>{items.titleLeft}</h1>
-                  <p>{items.descriptionLeft}</p>
+                  <h1 className={styles.titleLeft}>{items.titleLeft}</h1>
+                  <p className={styles.descriptionLeft}>{items.descriptionLeft}</p>
                 </div>
               </div>
-              <div className="col-2 ">
-                <div className={styles.svgIcon}>
+              <div className={`col-2 col-md-2 col-lg-2 ${styles.midle}  `}>
+                <img src={leftRightArrows} className={styles.arrowImage} />
+                {/* <div className={styles.svgIcon}>
                   <svg
                     width="23"
                     height="23"
@@ -45,9 +47,9 @@ const OurJourney = () => {
                     d="M0.708496 12.6353L20.9196 24.3041V0.96636L0.708496 12.6353ZM201.395 12.6353L181.184 0.96636V24.3041L201.395 12.6353ZM7.87586 14.6564C8.99209 14.6564 9.89697 13.7515 9.89697 12.6353C9.89697 11.519 8.99209 10.6141 7.87586 10.6141V14.6564ZM22.2106 10.6141C21.0944 10.6141 20.1895 11.519 20.1895 12.6353C20.1895 13.7515 21.0944 14.6564 22.2106 14.6564V10.6141ZM36.5453 14.6564C37.6615 14.6564 38.5664 13.7515 38.5664 12.6353C38.5664 11.519 37.6615 10.6141 36.5453 10.6141V14.6564ZM50.8801 10.6141C49.7638 10.6141 48.8589 11.519 48.8589 12.6353C48.8589 13.7515 49.7638 14.6564 50.8801 14.6564V10.6141ZM65.2148 14.6564C66.331 14.6564 67.2359 13.7515 67.2359 12.6353C67.2359 11.519 66.331 10.6141 65.2148 10.6141V14.6564ZM79.5495 10.6141C78.4333 10.6141 77.5284 11.519 77.5284 12.6353C77.5284 13.7515 78.4333 14.6564 79.5495 14.6564V10.6141ZM93.8842 14.6564C95.0005 14.6564 95.9054 13.7515 95.9054 12.6353C95.9054 11.519 95.0005 10.6141 93.8842 10.6141V14.6564ZM108.219 10.6141C107.103 10.6141 106.198 11.519 106.198 12.6353C106.198 13.7515 107.103 14.6564 108.219 14.6564V10.6141ZM122.554 14.6564C123.67 14.6564 124.575 13.7515 124.575 12.6353C124.575 11.519 123.67 10.6141 122.554 10.6141V14.6564ZM136.888 10.6141C135.772 10.6141 134.867 11.519 134.867 12.6353C134.867 13.7515 135.772 14.6564 136.888 14.6564V10.6141ZM151.223 14.6564C152.339 14.6564 153.244 13.7515 153.244 12.6353C153.244 11.519 152.339 10.6141 151.223 10.6141V14.6564ZM165.558 10.6141C164.442 10.6141 163.537 11.519 163.537 12.6353C163.537 13.7515 164.442 14.6564 165.558 14.6564V10.6141ZM179.893 14.6564C181.009 14.6564 181.914 13.7515 181.914 12.6353C181.914 11.519 181.009 10.6141 179.893 10.6141V14.6564ZM194.227 10.6141C193.111 10.6141 192.206 11.519 192.206 12.6353C192.206 13.7515 193.111 14.6564 194.227 14.6564V10.6141ZM22.2106 14.6564H36.5453V10.6141H22.2106V14.6564ZM50.8801 14.6564H65.2148V10.6141H50.8801V14.6564ZM79.5495 14.6564H93.8842V10.6141H79.5495V14.6564ZM108.219 14.6564H122.554V10.6141H108.219V14.6564ZM136.888 14.6564H151.223V10.6141H136.888V14.6564ZM165.558 14.6564H179.893V10.6141H165.558V14.6564Z"
                     fill="#176FAE"
                   />
-                </svg>
+                </svg> */}
               </div>
-              <div className="col-5">
+              <div className={`col-5 col-md-5 col-lg-5 ${styles.last} `}>
                 <div class={styles.hexagon}>
                   <span className={styles.hexgonText2}>
                     {items.hexagonLeft}
@@ -57,8 +59,8 @@ const OurJourney = () => {
                 </div>
               </div>
             </div>
-            <div className="row d-flex align-items-center ptb-80">
-              <div className="col-5 d-flex justify-content-end">
+            <div className={`row d-flex align-items-center ptb-80 ${styles.journeyContainer}`}>
+              <div className={`col-5 col-md-5 d-flex justify-content-end ${styles.secondDivHexagon}`}>
                 <div class={styles.hexagon}>
                   <span className={styles.hexgonText2}>
                     {items.hexagonRight}
@@ -67,8 +69,10 @@ const OurJourney = () => {
                   <div class={styles.face2}></div>
                 </div>
               </div>
-              <div className="col-2 ">
-                <div className={styles.svgIcon}>
+              <div className="col-2 col-md-2 ">
+              <img src={leftRightArrows} className={styles.secondDivarrowImage} />
+
+                {/* <div className={styles.svgIcon}>
                   <svg
                     width="23"
                     height="23"
@@ -84,8 +88,8 @@ const OurJourney = () => {
                       stroke-width="5.05278"
                     />
                   </svg>
-                </div>
-                <svg
+                </div> */}
+                {/* <svg
                   width="202"
                   height="25"
                   viewBox="0 0 202 25"
@@ -96,12 +100,12 @@ const OurJourney = () => {
                     d="M0.708496 12.6353L20.9196 24.3041V0.96636L0.708496 12.6353ZM201.395 12.6353L181.184 0.96636V24.3041L201.395 12.6353ZM7.87586 14.6564C8.99209 14.6564 9.89697 13.7515 9.89697 12.6353C9.89697 11.519 8.99209 10.6141 7.87586 10.6141V14.6564ZM22.2106 10.6141C21.0944 10.6141 20.1895 11.519 20.1895 12.6353C20.1895 13.7515 21.0944 14.6564 22.2106 14.6564V10.6141ZM36.5453 14.6564C37.6615 14.6564 38.5664 13.7515 38.5664 12.6353C38.5664 11.519 37.6615 10.6141 36.5453 10.6141V14.6564ZM50.8801 10.6141C49.7638 10.6141 48.8589 11.519 48.8589 12.6353C48.8589 13.7515 49.7638 14.6564 50.8801 14.6564V10.6141ZM65.2148 14.6564C66.331 14.6564 67.2359 13.7515 67.2359 12.6353C67.2359 11.519 66.331 10.6141 65.2148 10.6141V14.6564ZM79.5495 10.6141C78.4333 10.6141 77.5284 11.519 77.5284 12.6353C77.5284 13.7515 78.4333 14.6564 79.5495 14.6564V10.6141ZM93.8842 14.6564C95.0005 14.6564 95.9054 13.7515 95.9054 12.6353C95.9054 11.519 95.0005 10.6141 93.8842 10.6141V14.6564ZM108.219 10.6141C107.103 10.6141 106.198 11.519 106.198 12.6353C106.198 13.7515 107.103 14.6564 108.219 14.6564V10.6141ZM122.554 14.6564C123.67 14.6564 124.575 13.7515 124.575 12.6353C124.575 11.519 123.67 10.6141 122.554 10.6141V14.6564ZM136.888 10.6141C135.772 10.6141 134.867 11.519 134.867 12.6353C134.867 13.7515 135.772 14.6564 136.888 14.6564V10.6141ZM151.223 14.6564C152.339 14.6564 153.244 13.7515 153.244 12.6353C153.244 11.519 152.339 10.6141 151.223 10.6141V14.6564ZM165.558 10.6141C164.442 10.6141 163.537 11.519 163.537 12.6353C163.537 13.7515 164.442 14.6564 165.558 14.6564V10.6141ZM179.893 14.6564C181.009 14.6564 181.914 13.7515 181.914 12.6353C181.914 11.519 181.009 10.6141 179.893 10.6141V14.6564ZM194.227 10.6141C193.111 10.6141 192.206 11.519 192.206 12.6353C192.206 13.7515 193.111 14.6564 194.227 14.6564V10.6141ZM22.2106 14.6564H36.5453V10.6141H22.2106V14.6564ZM50.8801 14.6564H65.2148V10.6141H50.8801V14.6564ZM79.5495 14.6564H93.8842V10.6141H79.5495V14.6564ZM108.219 14.6564H122.554V10.6141H108.219V14.6564ZM136.888 14.6564H151.223V10.6141H136.888V14.6564ZM165.558 14.6564H179.893V10.6141H165.558V14.6564Z"
                     fill="#176FAE"
                   />
-                </svg>
+                </svg> */}
               </div>
-              <div className={`col-5 d-flex justify-content-start`}>
+              <div className={`col-5 col-md-5 d-flex justify-content-start`}>
                 <div className={styles.descriptionBox}>
-                  <h1>{items.titleRight}</h1>
-                  <p>{items.descriptionRight}</p>
+                  <h1 className={styles.titleRight}>{items.titleRight}</h1>
+                  <p className={styles.descriptionRight}>{items.descriptionRight}</p>
                 </div>
               </div>
             </div>

@@ -15,11 +15,11 @@ const OurTeam = () => {
   };
 
   return (
-    <div className='container-fluid'>
+    <div className={`container-fluid ${styles.containerFluid}}`}>
       <div className={`row ${styles.memberContens}`}> 
         {teamMembers.map((member, index) => {
           return (
-            <div className='col-lg-3' key={index}> 
+            <div className='col-lg-3 col-md-6 col-sm-6 col-12' key={index}> 
               <div className={styles.teamMember} onMouseEnter={() => handleMouseEnter(index)} onMouseLeave={() => handleMouseLeave()}>
                 <img src={member.images} className={styles.teamImages}/>
                 {hoveredIndex === index &&

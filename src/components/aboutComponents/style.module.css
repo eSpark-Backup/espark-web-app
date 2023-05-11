@@ -2,18 +2,17 @@
 .descriptionBox {
   width: 470.33px;
   height: 238.77px;
-  background: #E8F1F2;
+  background: #e8f1f2;
   box-shadow: 0px 4.04222px 4.04222px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 50px;
-
 }
 
 .sapratorLine {
-  border: 5.1056px solid #E8F1F2;
+  border: 5.1056px solid #e8f1f2;
   box-shadow: 0px 4.04222px 4.04222px rgba(0, 0, 0, 0.25);
   width: 0px;
   height: 2400px;
@@ -25,6 +24,14 @@
   left: 0;
   right: 10px;
   text-align: center;
+  z-index: -1;
+}
+.arrowImage,
+.secondDivHexagon {
+  /* width: 100%; */
+  /* height: 100%; */
+  /* padding-left: 5%; */
+  z-index: 1;
 }
 
 .descriptionBox h1 {
@@ -39,12 +46,12 @@
   font-weight: 400 !important;
 }
 
-
 .svgIcon {
   text-align: center;
   position: relative;
   top: 25px;
   right: 6px;
+  width: 100% !important;
 }
 
 .hexagon {
@@ -53,7 +60,7 @@
   width: 150px;
   height: 85px;
   top: 10px;
-  background-color: #089E97;
+  background-color: #089e97;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
   z-index: 1;
   display: flex;
@@ -79,7 +86,6 @@
   text-transform: uppercase;
   color: white !important;
 }
-
 
 .hexagon .face1,
 .hexagon .face2 {
@@ -123,27 +129,240 @@
   transform-origin: right top;
   transform: rotate(60deg) translate(110px, 0);
 }
+.titleLeft {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35.3695px;
+  line-height: 43px;
 
+  color: #212121;
+}
+.descriptionLeft {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #212121;
+}
+.titleRight {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35.3695px;
+  line-height: 43px;
+
+  color: #212121;
+}
+.descriptionRight {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #212121;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .last {
+    /* border: 1px solid green; */
+    /* align-items: flex-end;
+    text-align: flex-end;
+    justify-content: flex-end; */
+    /* padding-left: 30%; */
+  }
+  .sapratorLine {
+    /* margin-left: 55%; */
+    z-index: -1 !important;
+  }
+ 
+  .midle {
+    /* padding-left: 20%; */
+    /* border: 1px solid; */
+  }
+  .journeyContainer {
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+  .titleLeft {
+    font-size: 20.3695px !important;
+  }
+  .descriptionLeft {
+    font-size: 14px;
+  }
+  .titleRight {
+    font-size: 20.3695px !important;
+  }
+  .descriptionRight {
+    font-size: 14px;
+  }
+  .midle {
+    /* padding-right: 10%; */
+    /* display: none; */
+  }
+  /* .svgIcon {
+    text-align: center;
+    position: relative;
+    top: 25px;
+    right: -56% !important;
+    width: 100% !important;
+  } */
+
+  .secondDivHexagon {
+    /* border: 1px solid red; */
+    padding-left: 20%;
+  }
+  .secondDivarrowImage {
+    width: 100%;
+    height: 100%;
+    z-index: 1 !important;
+    padding-left: 12%;
+  }
+  .arrowImage {
+    width: 100%;
+    height: 100%;
+    z-index: 1 !important;
+    padding-left: 12%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+ 
+  .sapratorLine {
+    z-index: -1 !important;
+  }
+  .journeyContainer {
+    width: 100%;
+  }
+  .titleLeft {
+    font-size: 20.3695px !important;
+  }
+  .descriptionLeft {
+    font-size: 14px;
+  }
+  .titleRight {
+    font-size: 20.3695px !important;
+  }
+  .descriptionRight {
+    font-size: 14px;
+  }
+  .secondDivHexagon {
+    padding-left: 20%;
+  }
+  .secondDivarrowImage {
+    width: 100%;
+    height: 100%;
+    z-index: 1 !important;
+    padding-left: 12%;
+  }
+  .arrowImage {
+    width: 100%;
+    height: 100%;
+    z-index: 1 !important;
+    padding-left: 12%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .sapratorLine {
+    z-index: -1 !important;
+  }
+
+
+  .journeyContainer {
+    width: 100%;
+  }
+  .titleLeft {
+    font-size: 20.3695px !important;
+  }
+  .descriptionLeft {
+    font-size: 14px;
+  }
+  .titleRight {
+    font-size: 20.3695px !important;
+  }
+  .descriptionRight {
+    font-size: 14px;
+  }
+ 
+
+  .secondDivHexagon {
+    padding-left: 20%;
+  }
+  .secondDivarrowImage {
+    width: 100%;
+    height: 100%;
+    z-index: 1 !important;
+    padding-left: 10%;
+  }
+  .arrowImage {
+    width: 100%;
+    height: 100%;
+    z-index: 1 !important;
+    padding-left: 10%;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .sapratorLine {
+    z-index: -1 !important;
+  }
+
+
+  .journeyContainer {
+    width: 100%;
+  }
+  .titleLeft {
+    font-size: 20.3695px !important;
+  }
+  .descriptionLeft {
+    font-size: 14px;
+  }
+  .titleRight {
+    font-size: 20.3695px !important;
+  }
+  .descriptionRight {
+    font-size: 14px;
+  }
+ 
+
+  .secondDivHexagon {
+    padding-left: 20%;
+  }
+  .secondDivarrowImage {
+    width: 100%;
+    height: 100%;
+    z-index: 1 !important;
+    padding-left: 8%;
+  }
+  .arrowImage {
+    width: 100%;
+    height: 100%;
+    z-index: 1 !important;
+    padding-left: 8%;
+  }
+}
 
 /* --------------------------******* Our Journey is ends here *******----------------------------- */
 
 /* -------------------------Ourteam work begins------------------------  */
 
+/* .containerFluid{
+  margin-bottom: 900px !important;
+  border: 1px solid red !important;
+} */
+
 .memberContens {
-  height: 660px;
-
+  height: 637px;
+  padding-bottom: 10px;
 }
-
 .teamContent {
-  background-color: #E8F1F2;
+  background-color: #e8f1f2;
   width: 99%;
   height: auto;
   margin: -5px 0px 0px 1%;
-
+  box-shadow: 0 4px 4px -2px rgb(142, 141, 141);
 }
 
 .teamName {
-
   padding: 25px 20px 2px 20px;
   font-weight: 800;
   font-size: 25px;
@@ -151,24 +370,43 @@
   text-align: center;
   align-items: center;
 }
-
 .teamDescription {
-  padding: 10px 22px 5px 25px;
+  padding: 10px 22px 30px 25px;
   align-items: center;
   text-align: center;
-
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 }
-
+.teamImages {
+  width: 100%;
+  height: auto;
+}
 
 /* -------------------------******* Ourteam work ends here *******------------------------  */
 /* -----------------------------Our exactive biging------------------------ */
 
-.aboutImgDiv {
+/* .aboutImgDiv {
   display: flex;
   align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
+.exactiveImage1 {
+  width: 320px !important;
+  height: 360px !important;
+  border: 1px solid red;
+  padding: 10px 10px 10px 30px;
+} */
 .exactiveImage {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.exactiveImageRight {
   width: 100%;
   height: 100%;
   padding: 10px;
@@ -179,16 +417,18 @@
   margin: 0 auto;
   position: relative;
   width: 90%;
-  height: 365px;
+  height: auto;
   margin-left: 0% !important;
   background: #176fae;
   box-sizing: border-box;
-  -webkit-clip-path: polygon(0% 50%,
-      8% 0%,
-      92% 0%,
-      100% 50%,
-      92% 100%,
-      8% 100%);
+  -webkit-clip-path: polygon(
+    0% 50%,
+    8% 0%,
+    92% 0%,
+    100% 50%,
+    92% 100%,
+    8% 100%
+  );
 }
 
 .hexagoneRight {
@@ -196,16 +436,18 @@
   margin: 0 auto;
   position: relative;
   width: 90%;
-  height: 365px;
+  height: auto;
   margin-right: 0% !important;
   background: #176fae;
   box-sizing: border-box;
-  -webkit-clip-path: polygon(0% 50%,
-      8% 0%,
-      92% 0%,
-      100% 50%,
-      92% 100%,
-      8% 100%);
+  -webkit-clip-path: polygon(
+    0% 50%,
+    8% 0%,
+    92% 0%,
+    100% 50%,
+    92% 100%,
+    8% 100%
+  );
 }
 
 .hexagoneBackground {
@@ -215,30 +457,43 @@
   left: 0.3rem;
   width: 99.3%;
   height: 98% !important;
-  -webkit-clip-path: polygon(0% 50%,
-      8% 0%,
-      92% 0%,
-      100% 50%,
-      92% 100%,
-      8% 100%);
+  -webkit-clip-path: polygon(
+    0% 50%,
+    8% 0%,
+    92% 0%,
+    100% 50%,
+    92% 100%,
+    8% 100%
+  );
 }
 
-.hexagone img {
-  /* position: absolute; */
+/* .hexagone img {
+  position: absolute;
   width: 100%;
   height: auto;
   clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
-}
+} */
 
-.imageDiv>img {
+/* .imageDiv>img {
   width: 100% !important;
-}
+} */
 
 .aboutPara {
   padding: 40px 8% 10px 0px;
 }
-
+.aboutParaLeft1 {
+  display: none;
+}
+.aboutParaRight1 {
+  display: none;
+}
 .exactiveHeading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #089e97;
+}
+.exactiveHeadingRight {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -251,13 +506,288 @@
   font-size: 20px;
   line-height: 24px;
   color: #212121;
-
+}
+.exactivePraRight {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #212121;
 }
 
 .aboutParaRight {
   padding: 40px 0px 10px 10%;
 }
+.aboutParaLeft {
+  padding: 40px 10% 10px 0px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .exactivePra {
+    font-size: 16px;
+    /* border: 2px solid red; */
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .exactivePra {
+    font-size: 16px;
+  }
+  .exactiveHeading {
+    padding-right: 10px;
+    font-size: 20px;
+  }
+  .exactivePra {
+    padding-right: 10px;
+    font-size: 12px;
+  }
+  .exactiveHeadingRight {
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  .exactivePraRight {
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  /* .hexagoneBackground {
+    position: absolute;
+    background-color: #fff;
+    top: 0.2rem;
+    left: 0.3rem;
+    width: 98.5%;
+    height: 98% !important;
+    -webkit-clip-path: polygon(0% 50%,
+        8% 0%,
+        92% 0%,
+        100% 50%,
+        92% 100%,
+        8% 100%);
+  }
+  .hexagoneBackgroundRight {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid black !important;
+    top: 0.2rem;
+    left: 0.3rem;
+    width: 98.5%;
+    height: 540px !important;
+    -webkit-clip-path: polygon(0% 50%,
+        8% 0%,
+        92% 0%,
+        100% 50%,
+        92% 100%,
+        8% 100%);
+  } */
+  .hexagoneRight {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin-right: 0% !important;
+    background: #176fae;
+    box-sizing: border-box;
+    -webkit-clip-path: polygon(
+      0% 50%,
+      7% 0%,
+      92% 0%,
+      100% 50%,
+      92% 100%,
+      7% 100%
+    );
+  }
+  .hexagone {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin-left: 0% !important;
+    background: #176fae;
+    box-sizing: border-box;
+    -webkit-clip-path: polygon(
+      0% 50%,
+      7% 0%,
+      92% 0%,
+      100% 50%,
+      92% 100%,
+      7% 100%
+    );
+  }
+  /* .exactiveImage {
+    width: 100%;
+    height: 100%;
+    padding: 5px 0px 5px 0px !important;
+  } */
+  .exactiveImageRight {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px !important;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .exactiveImageRight {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px !important;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .exactiveImageRight {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px !important;
+  }
 
+  .exactivePra {
+    font-size: 12px;
+  }
+  .exactiveHeading {
+    padding-right: 10px;
+    font-size: 20px;
+  }
+  .exactivePra {
+    padding-right: 10px;
+    font-size: 12px;
+  }
+  .exactiveHeadingRight {
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  .exactivePraRight {
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  /* .hexagoneBackground {
+    position: absolute;
+    background-color: #fff;
+    top: 0.2rem;
+    left: 0.3rem;
+    width: 98.5%;
+    height: 98% !important;
+    -webkit-clip-path: polygon(0% 50%,
+        8% 0%,
+        92% 0%,
+        100% 50%,
+        92% 100%,
+        8% 100%);
+  }
+  .hexagoneBackgroundRight {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid black !important;
+    top: 0.2rem;
+    left: 0.3rem;
+    width: 98.5%;
+    height: 540px !important;
+    -webkit-clip-path: polygon(0% 50%,
+        8% 0%,
+        92% 0%,
+        100% 50%,
+        92% 100%,
+        8% 100%);
+  } */
+  .hexagoneRight {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin-right: 0% !important;
+    background: #176fae;
+    box-sizing: border-box;
+    -webkit-clip-path: polygon(
+      0% 50%,
+      9% 0%,
+      88% 0%,
+      100% 50%,
+      88% 100%,
+      9% 100%
+    );
+  }
+  .hexagone {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin-left: 0% !important;
+    background: #176fae;
+    box-sizing: border-box;
+    -webkit-clip-path: polygon(
+      0% 50%,
+      11% 0%,
+      88% 0%,
+      100% 50%,
+      88% 100%,
+      11% 100%
+    );
+  }
+}
+@media screen and (max-width: 576px) {
+  .aboutParaRight {
+    display: none;
+  }
+  .aboutParaLeft {
+    display: none;
+  }
+  .aboutParaLeft1 {
+    display: block;
+  }
+  .aboutParaRight1 {
+    display: block;
+  }
+  .hexagoneRight {
+    -webkit-clip-path: polygon(
+      0% 50%,
+      25% 0%,
+      74% 0%,
+      100% 50%,
+      74% 100%,
+      25% 100%
+    );
+  }
+  .exactiveImageRight {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px 10px 10px !important;
+  }
+  .exactiveImage {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px 10px 10px !important;
+  }
+  .hexagoneRight {
+    -webkit-clip-path: polygon(
+      0% 50%,
+      25% 0%,
+      74.5% 0%,
+      100% 50%,
+      74.5% 100%,
+      25% 100%
+    );
+  }
+  .exactiveImageRight {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px 10px 10px !important;
+  }
+  .hexagone {
+    -webkit-clip-path: polygon(
+      0% 50%,
+      25% 0%,
+      74.5% 0%,
+      100% 50%,
+      74.5% 100%,
+      25% 100%
+    );
+  }
+}
+/* .fullscreen{
+  border: 1px solid red;
+  display: none;
+} */
+.mobileScreen {
+  display: block;
+}
 
 /* -----------------------------******* Our exactive ends here********------------------------ */
 
@@ -289,7 +819,6 @@
   text-transform: uppercase;
   color: #272323;
 }
-
 
 .ourGoalStatHexagon .face1,
 .ourGoalStatHexagon .face2 {
@@ -427,7 +956,6 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-
   color: #ffffff;
 }
 
@@ -464,13 +992,16 @@
   padding-left: 10%;
   color: #000000;
 }
+.HexaContenta {
+  padding-top: 10px;
+}
 
-@media only screen and (min-width:992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
   .ourValueContainer {
     width: 100% !important;
     max-width: 100% !important;
     /* padding: 57px 0px 0px 10px ; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: 0px 0px !important;
     margin-left: 0px !important;
     margin-right: 0px !important;
@@ -480,7 +1011,6 @@
     width: 100%;
     padding: 57px 0px 0px 10px;
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -496,7 +1026,6 @@
 
   .value {
     padding: 0px 0px 50px 6%;
-
   }
 
   /* .paraIndex{
@@ -540,7 +1069,7 @@
   }
 
   .aboutParagraph {
-    padding-left: 0%
+    padding-left: 0%;
   }
 
   .ours {
@@ -549,7 +1078,6 @@
 
   .Vision {
     padding: 0px 0px 50px 3%;
-
   }
 
   .our {
@@ -558,18 +1086,21 @@
 
   .value {
     padding: 0px 0px 50px 3%;
-
   }
 
   .containerWraper {
     padding-right: 0px;
   }
 
-
+  /* --------ourTeams work ------- */
+  /* .memberContens{
+          height: 100% !important;
+          padding-bottom: 10px;
+       
+       } */
 }
 
 @media screen and (max-width: 360px) {
-
   /* .container,
         .container-sm{
           width: 100% !important;
@@ -582,9 +1113,7 @@
     margin: 0px;
     padding-right: 0px;
   }
-
 }
-
 
 /* -----------------------------******* Our Goal Statement ends here ******-------------------------------- */
 
@@ -594,8 +1123,6 @@
   width: 60%;
   padding: 10px;
 }
-
-
 
 /* .partne {
         width: 100%;

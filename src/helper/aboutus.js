@@ -13,22 +13,22 @@ export const aboutData = [
     },
     {
         icon : 'icons',
-        title : 'Integrity',
+        title : 'Lorem Ipsum',
         description : 'elit tortor. sodales. viverra Cras nulla, commodo luctus quis lacus ullamcorper tincidunt consectetur In placerat tincidunt luctus faucibus hendrerit ex Nam '
     },
     {
         icon : 'icons',
-        title : 'titles',
-        description : 'descriptions'
-    },
-    {
-        icon : 'icons',
-        title : 'Integrity',
+        title : 'Lorem Ipsum',
         description : 'elit tortor. sodales. viverra Cras nulla, commodo luctus quis lacus ullamcorper tincidunt consectetur In placerat tincidunt luctus faucibus hendrerit ex Nam '
     },
     {
         icon : 'icons',
-        title : 'titles',
+        title : 'Lorem Ipsum',
+        description : 'elit tortor. sodales. viverra Cras nulla, commodo luctus quis lacus ullamcorper tincidunt consectetur In placerat tincidunt luctus faucibus hendrerit ex Nam '
+    },
+    {
+        icon : 'icons',
+        title : 'Lorem Ipsum',
         description : 'elit tortor. sodales. viverra Cras nulla, commodo luctus quis lacus ullamcorper tincidunt consectetur In placerat tincidunt luctus faucibus hendrerit ex Nam '
     },
     
@@ -38,22 +38,22 @@ export const teamMembers = [
     {
         images : teamImage,
         name : "lorem Ipsum ",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.F"
+        description: "elit tortor. sodales. viverra Cras nulla, commodo luctus quis lacus ullamcorper tincidunt consectetur In placerat tincidunt luctus faucibus hendrerit ex Nam"
     },
     {
         images : teamImage,
         name : "lorem Ipsum",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.F"
+        description: "elit tortor. sodales. viverra Cras nulla, commodo luctus quis lacus ullamcorper tincidunt consectetur In placerat tincidunt luctus faucibus hendrerit ex Nam"
     },
     {
         images : teamImage,
         name: "lorem Ipsum",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.F"
+        description: "elit tortor. sodales. viverra Cras nulla, commodo luctus quis lacus ullamcorper tincidunt consectetur In placerat tincidunt luctus faucibus hendrerit ex Nam"
     },
     {
         images : teamImage,
         name: "lorem Ipsum",
-        description: "Lorem Ipsum is simply  dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.F"
+        description: "elit tortor. sodales. viverra Cras nulla, commodo luctus quis lacus ullamcorper tincidunt consectetur In placerat tincidunt luctus faucibus hendrerit ex Nam"
     },
 ] 
 
