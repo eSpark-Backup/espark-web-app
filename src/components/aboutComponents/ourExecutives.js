@@ -37,8 +37,13 @@ const OurExecutives = () => {
         <div class={`${styles.hexagoneRight} `}>
           <div class={styles.hexagoneBackground}>
             <div class="row ">
+            <div
+                className={`col-sm-12 col-md-12 col-lg-4 ${styles.aboutImgDivReverse}`}
+              >
+                <img src={exactive3} className={styles.exactiveImageRight} />
+              </div>
               <div
-                class={` col-sm-12 col-md-8 col-lg-8 ${styles.aboutParaRight}`}
+                class={` col-sm-12 col-md-12 col-lg-8 ${styles.aboutParaRight}`}
               >
                 <p className={styles.exactiveHeadingRight}>Lorem Ipsom</p>
                 <p className={styles.exactivePraRight}>
@@ -54,7 +59,7 @@ const OurExecutives = () => {
                 </p>
               </div>
               <div
-                className={`col-sm-12 col-md-4 col-lg-4 ${styles.aboutImgDiv}`}
+                className={`col-sm-12 col-md-12 col-lg-4 ${styles.aboutImgDivRight}`}
               >
                 <img src={exactive3} className={styles.exactiveImageRight} />
               </div>
