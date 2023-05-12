@@ -72,7 +72,7 @@ const Footer = () => {
                   <h3>Explore</h3>
                   <ul className="list">
                     <li>
-                      <Link to="/upcomming">About us</Link>
+                      <Link to="/about">About us</Link>
                     </li>
                     <li>
                       <Link to="/upcomming">Upcoming Events</Link>
