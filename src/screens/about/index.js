@@ -33,9 +33,8 @@ export default function About() {
   return (
     <React.Fragment>
       <Herosection
-        title="About page data"
-        paragraph="eSpark Consultants is a complete solution provider for modern software development imparting the latest methods and techniques to tackle the increasing software advancements. We began our journey in 2015 and have been working hard since then to bring a big smile to the face of our customers by making them visible among their competitors. We are passionate about providing solutions that represent real value for money. We understand and believe you can’t afford to waste your investment for such a crucial aspect of your business by leaving it in the hands of amateurs.
-      You are investing not only money but your time when you decide to design and develop your project with us."
+        title="Why eSpark?"
+        paragraph="We focus on custom tailored software and IoT based solutions for our businesses. Through our broad range of services that can help clients and businesses to optimize their operations, save cost and promote their businesses most effectively. Whether you need help with software development, hardware design, or technology consulting, eSpark Consulting Group has the expertise to help you achieve your goals."
         ShowButton={false}
         images={aboutImage}
       />

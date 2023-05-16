@@ -37,7 +37,7 @@
 
 .descriptionBox h1 {
   color: black;
-  font-size: 35.37px;
+  font-size: 30.37px;
   font-weight: 700 !important;
 }
 
@@ -146,7 +146,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 22.5px;
   color: #212121;
 }
 
@@ -165,7 +165,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 22.5px;
   color: #212121;
 }
 
@@ -201,6 +201,12 @@
     font-size: 14px !important;
     text-align: center;
   }
+  .exactiveSubHeading {
+    font-size: 10px !important;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 100% !important;
+  }
 
   .exactivePra {
     text-align: center;
@@ -233,7 +239,7 @@
   .exactivePraRight {
     text-align: center;
     font-size: 10px !important;
-
+    line-height: 20px !important;
   }
 
   .exactiveImageRight {
@@ -270,9 +276,9 @@
   }
 
   .descriptionLeft {
-    font-size: 14px;
+    font-size: 12px;
     text-align: center !important;
-    margin-top: 0px !important;      
+    margin-top: 0px !important;
     line-height: auto !important;
   }
 
@@ -280,9 +286,13 @@
     font-size: 20.3695px !important;
     text-align: center;
   }
-  .titleLeft{
-    font-size: 18px !important;
-    padding-top: 10px;
+  .titleLeft {
+    font-size: 15px !important;
+    padding-top: 30px;
+    line-height: 100%;
+  }
+  .descriptionBox{
+    height: 315px !important;
   }
 
   .descriptionRight {
@@ -324,7 +334,6 @@
     display: none !important;
   }
 
-
   .hexagone {
     height: 500px !important;
     width: 100% !important;
@@ -338,6 +347,12 @@
   .exactiveHeading {
     font-size: 14px !important;
     text-align: center;
+  }
+  .exactiveSubHeading {
+    font-size: 11px !important;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 100% !important;
   }
 
   .exactivePra {
@@ -371,7 +386,7 @@
   .exactivePraRight {
     text-align: center;
     font-size: 11px !important;
-
+    line-height: 20px !important;
   }
 
   .exactiveImageRight {
@@ -412,28 +427,29 @@
   }
 
   .descriptionLeft {
-    font-size: 14px;
+    font-size: 12px;
     text-align: center !important;
-    margin-top: 0px !important;      
+    margin-top: 0px !important;
     line-height: auto !important;
   }
 
   .titleRight {
-    font-size: 20.3695px !important;
+    font-size: 16px !important;
     text-align: center;
   }
-  .titleLeft{
-    font-size: 18px !important;
-    padding-top: 10px;
+  .titleLeft {
+    font-size: 16px !important;
   }
 
   .descriptionRight {
-    font-size: 14px;
+    font-size: 12px;
     text-align: center !important;
+  }
+  .descriptionBox{
+    height: 315px !important;
   }
 
   .secondDivHexagon {
-    /* border: 1px solid red; */
     padding-left: 20%;
   }
 
@@ -480,11 +496,16 @@
     text-align: center;
     font-size: 20px !important;
   }
+  .exactiveSubHeading {
+    text-align: center;
+    font-size: 16px !important;
+    margin-top: 15px;
+    line-height: 100% !important;
+  }
 
   .exactivePra {
     text-align: center;
     font-size: 16px !important;
-
   }
 
   .exactiveImage {
@@ -513,8 +534,6 @@
   .exactivePraRight {
     text-align: center;
     font-size: 16px !important;
-
-
   }
 
   .exactiveImageRight {
@@ -530,7 +549,6 @@
     -webkit-clip-path: none !important;
     padding: 20px !important;
   }
-
 
   .memberContens {
     height: auto !important;
@@ -551,9 +569,10 @@
   .hexagon {
     top: 0px;
   }
-  .titleLeft{
-    font-size: 20px !important;
-    padding-top: 10px;
+  .titleLeft {
+    font-size: 16px !important;
+    line-height: 100%;
+    padding-top: 15px;
   }
 
   .sapratorLine {
@@ -564,19 +583,19 @@
   }
 
   .descriptionLeft {
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 0px !important;
     line-height: auto !important;
     text-align: center !important;
   }
 
   .titleRight {
-    font-size: 20.3695px !important;
+    font-size: 16.3695px !important;
     text-align: center;
   }
 
   .descriptionRight {
-    font-size: 14px;
+    font-size: 12px;
     text-align: center !important;
   }
 
@@ -625,10 +644,14 @@
   .exactiveHeading {
     text-align: center;
   }
+  .exactiveSubHeading {
+    text-align: center;
+    margin-top: 5px;
+
+  }
 
   .exactivePra {
     text-align: center;
-
   }
 
   .exactiveImage {
@@ -655,7 +678,6 @@
 
   .exactivePraRight {
     text-align: center;
-
   }
 
   .exactiveImageRight {
@@ -712,7 +734,6 @@
   }
 
   .secondDivHexagon {
-    /* border: 1px solid red; */
     padding-left: 20%;
   }
 
@@ -751,10 +772,12 @@
   .exactiveHeading {
     text-align: center;
   }
+  .exactiveSubHeading{
+    text-align: center;
+  }
 
   .exactivePra {
     text-align: center;
-
   }
 
   .exactiveImage {
@@ -781,7 +804,6 @@
 
   .exactivePraRight {
     text-align: center;
-
   }
 
   .exactiveImageRight {
@@ -797,52 +819,35 @@
     -webkit-clip-path: none !important;
     padding: 20px !important;
   }
-
-
-  /* .hexagoneBackground {
-    top: 0.2em !important;
-    left: 0.2em !important;
-    height: 97.5%;
-  }
-
-  .exactiveHeadingRight {
-    font-size: 18px !important;
-  }
-
-  .exactiveHeading {
-    font-size: 15px !important;
-  }
-
-  .exactivePraRight {
-    font-size: 12px !important;
-
-  }
-
-  .exactivePra {
-    font-size: 12px !important;
-
-  }
-
-  .aboutParaLeft {
-    padding: 25px 9% 10px 0px !important;
-  }
-
-  .aboutParaRight {
-    padding: 25px 0px 10px 10% !important;
-  }
-
-  .hexagone {
-    height: 260px !important;
-  }
-
-  .hexagoneRight {
-    height: 260px !important;
+  .descriptionBox {
+    width: 100%;
+    height: 300px;
   }
 
   .sapratorLine {
-    z-index: -1 !important;
-  } */
+    right: 12px;
+    margin-top: 20px;
+    border: 2px solid rgb(202, 202, 202);
+    height: 2660px;
+  }
 
+  .descriptionLeft {
+    font-size: 14px;
+  }
+  .titleRight {
+    font-size: 20.3695px !important;
+  }
+
+  .descriptionRight {
+    font-size: 14px;
+  }
+  .descriptionBox h1 {
+    color: black;
+    font-size: 16px !important;
+    line-height: 100%;
+
+    font-weight: 700 !important;
+  }
   .titleLeft {
     font-size: 20.3695px !important;
   }
@@ -867,14 +872,14 @@
     width: 100%;
     height: 100%;
     z-index: 1 !important;
-    padding-left: 12%;
+    /* padding-left: 12%; */
   }
 
   .arrowImage {
     width: 100%;
     height: 100%;
     z-index: 1 !important;
-    padding-left: 12%;
+    /* padding-left: 4%; */
   }
 }
 
@@ -892,15 +897,17 @@
   .exactiveHeading {
     font-size: 15px !important;
   }
+  .exactiveSubHeading{
+    font-size: 13px !important;
+    margin-top: 5px;
+  }
 
   .exactivePraRight {
     font-size: 12px !important;
-
   }
 
   .exactivePra {
     font-size: 12px !important;
-
   }
 
   .aboutParaLeft {
@@ -1093,12 +1100,14 @@
   margin-left: 0%;
   background: #176fae;
   box-sizing: border-box;
-  -webkit-clip-path: polygon(0% 50%,
-      8% 0%,
-      92% 0%,
-      100% 50%,
-      92% 100%,
-      8% 100%);
+  -webkit-clip-path: polygon(
+    0% 50%,
+    8% 0%,
+    92% 0%,
+    100% 50%,
+    92% 100%,
+    8% 100%
+  );
 }
 
 .hexagoneRight {
@@ -1110,12 +1119,14 @@
   margin-right: 0%;
   background: #176fae;
   box-sizing: border-box;
-  -webkit-clip-path: polygon(0% 50%,
-      8% 0%,
-      92% 0%,
-      100% 50%,
-      92% 100%,
-      8% 100%);
+  -webkit-clip-path: polygon(
+    0% 50%,
+    8% 0%,
+    92% 0%,
+    100% 50%,
+    92% 100%,
+    8% 100%
+  );
 }
 
 .hexagoneBackground {
@@ -1125,24 +1136,16 @@
   left: 0.3rem;
   width: 99.3%;
   height: 98%;
-  -webkit-clip-path: polygon(0% 50%,
-      8% 0%,
-      92% 0%,
-      100% 50%,
-      92% 100%,
-      8% 100%);
+  -webkit-clip-path: polygon(
+    0% 50%,
+    8% 0%,
+    92% 0%,
+    100% 50%,
+    92% 100%,
+    8% 100%
+  );
 }
 
-/* .hexagone img {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
-} */
-
-/* .imageDiv>img {
-  width: 100% !important;
-} */
 
 .aboutPara {
   padding: 40px 8% 10px 0px;
@@ -1157,17 +1160,30 @@
 }
 
 .exactiveHeading {
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   color: #089e97;
+  margin-bottom: -15px ;
+}
+.exactiveSubHeading {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #176fae;
+  margin-bottom: 15px ;
 }
 
 .exactiveHeadingRight {
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   color: #089e97;
+  margin-bottom: -15px ;
 }
 
 .exactivePra {
@@ -1191,11 +1207,8 @@
 }
 
 .aboutParaLeft {
-  padding: 0px 9% 10px 0px;
+  padding: 35px 9% 10px 0px;
 }
-
-
-
 
 /* -----------------------------******* Our exactive ends here********------------------------ */
 
@@ -1207,13 +1220,11 @@
   height: 52px;
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
-  /* background-position: center center; */
   z-index: 1;
   line-height: 50px;
   text-align: center;
   font-size: 8px;
   font-weight: bold;
-  /* letter-spacing: 6px; */
   color: #000;
   transition: color 500ms ease, text-shadow 500ms ease;
 }
@@ -1238,7 +1249,6 @@
   overflow: hidden;
   background: inherit;
   z-index: -1;
-  /* Keeps borders smooth in webkit */
   backface-visibility: hidden;
 }
 
@@ -1276,27 +1286,17 @@
 }
 
 .ourValueContainer {
-  /* border: 1px solid red; */
-  /* margin-left: 1%; */
-  /* width: 50%; */
   background: linear-gradient(180deg, #176fae 0%, #089e97 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 57px 40px 70px 80px;
   --bs-gutter-x: 0rem !important;
 }
 
-/* .aboutRows {
-        padding: 0px 50px 50px 50px;
-        width: 10% !important;
 
-      } */
 .aboutCol {
   padding: 15px;
 }
 
-.ourValue {
-  /* padding: 50px; */
-}
 
 .our {
   font-family: "Poppins";
@@ -1306,11 +1306,11 @@
   line-height: 100%;
   text-transform: capitalize;
   color: #ffffff;
-  padding: 0px 0px 16px 0px;
+  padding: 0px 0px 16px 10px;
 }
 
 .value {
-  padding: 0px 0px 50px 0px;
+  padding: 0px 0px 50px 10px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -1328,11 +1328,32 @@
   line-height: 100%;
   text-transform: capitalize;
   color: #3359a2;
-  padding: 0px 0px 16px 10%;
+  padding: 0px 0px 10px 10%;
+}
+.Vision {
+  padding: 0px 0px 22px 10%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #3359a2;
+  /* padding-left: 10% ; */
+}
+.ourss {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #3359a2;
+  padding: 53px 0px 0px 0%;
 }
 
-.Vision {
-  padding: 0px 0px 50px 10%;
+.Mission {
+  padding: 8px 0px 15px 0%;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -1359,16 +1380,16 @@
 }
 
 .HexaTitle {
-  font-family: "Inter";
+  font-family: "Poppins";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
 }
 
 .HexaContent {
-  font-family: "Inter";
+  font-family: "Poppins" !important;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1421,6 +1442,15 @@
     padding: 57px 0px 0px 10px;
   }
 }
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .our {
+    padding: 0px 0px 16px 8%;
+  }
+
+  .value {
+    padding: 0px 0px 50px 8%;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .ourValueContainer {
@@ -1430,54 +1460,32 @@
   }
 
   .our {
-    padding: 0px 0px 16px 6%;
+    padding: 0px 0px 16px 8%;
   }
 
   .value {
-    padding: 0px 0px 50px 6%;
+    padding: 0px 0px 50px 8%;
   }
   .aboutParagraph {
     font-size: 17px;
     line-height: 24px;
-
-
   }
-
-  /* .paraIndex{
-          display: none;
-        } */
-  /* .hexBackground {
-          position: absolute;
-          background-color: rgb(255, 106, 0); 
-          top: 2px; 
-          left: 2px;
-          width: 260px !important; 
-          height: 227.12px !important; 
-          -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
-          -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
-          
-        } */
-  /* .exactiveImage{
-        width: 100% !important;
-        height: 100% !important;
-       
-        padding: 60px;
-      
-      } */
 }
-
-/* @media (min-width:568px) {
-        .container {
-          max-width: 100% !important;
-          width: 100% !important;
-      }
-      } */
 @media screen and (max-width: 576px) {
   .ourValueContainer {
     background: linear-gradient(180deg, #176fae 0%, #089e97 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 57px 0px 0px 10px;
   }
+  .Vision {
+    padding: 0px 0px 10px 0% !important;
+  }
+.ours{
+  padding: 0px 0px 10px 0% !important;
+}
+/* .titleLeft{
+  padding-top: 80px !important;
+} */
 
   .ourGoalStatHexagon {
     border: 1px solid black;
@@ -1507,16 +1515,11 @@
     padding-right: 0px;
   }
 
-  /* --------ourTeams work ------- */
-  /* .memberContens{
-          height: 100% !important;
-          padding-bottom: 10px;
-       
-       } */
+
 }
 
 @media screen and (max-width: 360px) {
-
+  
   /* .container,
         .container-sm{
           width: 100% !important;
@@ -1534,7 +1537,6 @@
 /* -----------------------------******* Our Goal Statement ends here ******-------------------------------- */
 
 /* --------------------------------Our partner begins here-------------------------------- */
-
 
 .newContainer {
   padding-right: 15px;
@@ -1592,9 +1594,8 @@
 }
 
 .wd_partnerlogos_list img {
-  width: 100% ;
+  width: 100%;
 }
-
 
 .wd_partnerlogos_btn {
   margin-top: 10px;
@@ -1621,16 +1622,16 @@ a.Button_cta {
   background: 0;
   height: 45px;
   text-transform: none;
-  color: #007FFF;
+  color: #007fff;
   font-size: 16px;
   font-family: proxima_nova_rgregular;
   font-weight: 400;
   font-style: normal;
-  letter-spacing: .45px;
+  letter-spacing: 0.45px;
   line-height: 43px;
   padding: 0 30px;
   display: inline-block;
-  border: 2px solid #007FFF;
+  border: 2px solid #007fff;
 }
 
 .wd_partnerlogos_btn:before {
@@ -1657,10 +1658,8 @@ a.Button_cta {
     padding: 0 20px;
     letter-spacing: normal;
   }
-  
-.wd_partnerlogos_list img {
-  width: 90%;
-}
 
-  
+  .wd_partnerlogos_list img {
+    width: 90%;
+  }
 }

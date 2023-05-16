@@ -18,7 +18,7 @@ const OurJourney = () => {
                   className={`col-5 col-md-5 col-lg-5 d-flex justify-content-end `}
                 >
                   <div className={styles.descriptionBox}>
-                    <h1 className={styles.titleLeft}>{items.titleLeft}</h1>
+                    <h1 className={styles.titleLeft}>{items.titleLeft.toUpperCase()}</h1>
                     <p className={styles.descriptionLeft}>
                       {items.descriptionLeft}
                     </p>
@@ -64,7 +64,7 @@ const OurJourney = () => {
                 </div>
                 <div className={`col-5 col-md-5 d-flex justify-content-start`}>
                   <div className={styles.descriptionBox}>
-                    <h1 className={styles.titleRight}>{items.titleRight}</h1>
+                    <h1 className={styles.titleRight}>{items.titleRight.toUpperCase()}</h1>
                     <p className={styles.descriptionRight}>
                       {items.descriptionRight}
                     </p>

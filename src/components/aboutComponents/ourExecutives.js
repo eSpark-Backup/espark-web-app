@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./style.module.css";
-import exactive4 from "../../assets/images/About-us-image/exective 4.png";
-import exactive3 from "../../assets/images/About-us-image/exective 3.png";
+import exactive4 from "../../assets/images/About-us-image/Boss.png";
+import exactive3 from "../../assets/images/About-us-image/CTO.png";
 
 const OurExecutives = () => {
   return (
@@ -18,17 +18,19 @@ const OurExecutives = () => {
               <div
                 class={` col-12 col-sm-12 col-md-12 col-lg-8 ${styles.aboutParaLeft}`}
               >
-                <p className={styles.exactiveHeading}>Lorem Ipsom</p>
+                <p className={styles.exactiveHeading}>HUZAIFA ALI</p>
+                <p className={styles.exactiveSubHeading}>
+                  CEO of eSpark Counsulting Group
+                </p>
                 <p className={styles.exactivePra}>
-                  at, tincidunt ac nec Praesent non. Donec urna lacus, leo.
-                  Quisque sit nisi non. elit Nullam fringilla fringilla
-                  elementum quis tincidunt faucibus ullamcorper <br /> <br />{" "}
-                  orci sit non Nam Quisque eget Donec Cras tempor id turpis
-                  lobortis, Lorem eget in consectetur Sed eu in ipsum convallis.
-                  Praesent eget lobortis, nec tincidunt at, tincidunt ac nec
-                  Praesent non. Donec urna lacus, leo. Quisque sit nisi non.
-                  elit Nullam fringilla fringilla elementum quis tincidunt
-                  faucibus ullamcorper
+                  From alone freelancer to a leader of a thriving team, my
+                  journey as a Embedded Developer has been one of passion and
+                  perseverance. I've had the privilege of working with startups
+                  and big names in the industry, and now, I've taken the plunge
+                  and founded eSpark Consulting Group <br /> <br />
+                  Join me on this journey to turn your startup ideas into
+                  reality. Let's push boundaries, take risks, and inspire the
+                  world with our innovation
                 </p>
               </div>
             </div>
@@ -37,7 +39,7 @@ const OurExecutives = () => {
         <div class={`${styles.hexagoneRight} `}>
           <div class={styles.hexagoneBackground}>
             <div class="row ">
-            <div
+              <div
                 className={`col-sm-12 col-md-12 col-lg-4 ${styles.aboutImgDivReverse}`}
               >
                 <img src={exactive3} className={styles.exactiveImageRight} />
@@ -45,17 +47,20 @@ const OurExecutives = () => {
               <div
                 class={` col-sm-12 col-md-12 col-lg-8 ${styles.aboutParaRight}`}
               >
-                <p className={styles.exactiveHeadingRight}>Lorem Ipsom</p>
+                <p className={styles.exactiveHeadingRight}>Faizan Ur Rahman</p>
+                <p className={styles.exactiveSubHeading}>
+                  CTO of eSpark Counsulting Group
+                </p>
                 <p className={styles.exactivePraRight}>
-                  at, tincidunt ac nec Praesent non. Donec urna lacus, leo.
-                  Quisque sit nisi non. elit Nullam fringilla fringilla
-                  elementum quis tincidunt faucibus ullamcorper <br /> <br />{" "}
-                  orci sit non Nam Quisque eget Donec Cras tempor id turpis
-                  lobortis, Lorem eget in consectetur Sed eu in ipsum convallis.
-                  Praesent eget lobortis, nec tincidunt at, tincidunt ac nec
-                  Praesent non. Donec urna lacus, leo. Quisque sit nisi non.
-                  elit Nullam fringilla fringilla elementum quis tincidunt
-                  faucibus ullamcorper
+                  Seven-year journey as a senior Hardware Developer Designer has
+                  been one of passion and hard work. Starting out with the goal
+                  to meet modern standards, I gained technical skills and
+                  expertise in the field through every project I took on. I have
+                  always had the drive to accomplish challenging tasks and use
+                  my resources to it’s fullest form And despite working under
+                  time constraint conditions and handling pressure efficiently,
+                  I have never lost my ability to plan things in a
+                  well-organized manner.
                 </p>
               </div>
               <div
