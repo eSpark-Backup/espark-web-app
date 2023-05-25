@@ -12,15 +12,15 @@ const OurPartner = () => {
           {partnerLogs.map((items) => {
             return (
               <li>
-                <img src={items.images} className={styles.grey_icon} />
+                <img src={items.images} alt="ourPartner-images" className={styles.grey_icon} />
               </li>
             );
           })}
         </ul>
       </div>
       <div className={styles.wd_partnerlogos_btn}>
-        <a id={styles.wd_videos_1} className={styles.Button_cta}>
-          Reviwes
+        <a href="" id={styles.wd_videos_1} className={styles.Button_cta}>
+          Reviwe
         </a>
       </div>
     </div>

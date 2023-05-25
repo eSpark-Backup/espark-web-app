@@ -9,28 +9,29 @@ import OurJourney from './../components/aboutComponents/ourJourney';
 export const aboutData = [
     {
         icon : OurGoalIcon,
-        title : 'eSpark Expertise ',
-        description : 'eSpark Consulting Group has a team of experts who have extensive knowledge and experience in delivering solutions for a wide range of industries. Their deep understanding technologies and methodologies allows them to provide high standard solutions that meet the unique needs of each client.'
+        title : 'eSpark Expertise',
+        description : 'eSpark Consulting Group has a team of experts who have extensive knowledge and experience in delivering solutions for a wide range of industries.'
+    },
+   
+    {
+        icon : OurGoalIcon,
+        title : 'Strong Project Management',
+        description : 'eSpark Consulting Group has a team of experts who have extensive knowledge and experience in delivering solutions for a wide range of industries. '
+    },
+    // {
+    //     icon : OurGoalIcon,
+    //     title : 'Quality focused',
+    //     description : 'eSpark Consulting Group has a team of experts who have extensive knowledge and experience in delivering solutions for a wide range of industries. Their deep understanding technologies and methodologies allows them to provide high standard solutions that meet the unique needs of each client.'
+    // },
+    {
+        icon : OurGoalIcon,
+        title : 'Broad range of services',
+        description : 'eSpark offers a comprehensive range of services that can help companies optimize their operations and enhance their bottom line, including IoT solution. '
     },
     {
         icon : OurGoalIcon,
         title : 'Custom Solutions',
-        description : 'eSpark takes a customized approach to delivering Software and hardware solutions, working closely with each client to understand their specific requirements and delivering solutions that are tailored to their needs.'
-    },
-    {
-        icon : OurGoalIcon,
-        title : 'Strong Project Management',
-        description : 'eSpark Consulting Group has a team of experts who have extensive knowledge and experience in delivering solutions for a wide range of industries. Their deep understanding technologies '
-    },
-    {
-        icon : OurGoalIcon,
-        title : 'Quality focused',
-        description : 'eSpark Consulting Group has a team of experts who have extensive knowledge and experience in delivering solutions for a wide range of industries. Their deep understanding technologies and methodologies allows them to provide high standard solutions that meet the unique needs of each client.'
-    },
-    {
-        icon : OurGoalIcon,
-        title : 'Broad range of services',
-        description : 'eSpark offers a comprehensive range of services that can help companies optimize their operations and enhance their bottom line, including IoT solution, Embedded design, software development, UI/UX design and App Development. '
+        description : 'eSpark takes a customized approach in delivering Software and hardware solutions, working closely with each client to understand their specific requirements and delivering solutions. '
     },
     
 
