@@ -56,12 +56,14 @@ function Herosection({
                   : `animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-2 col-sm-12 text-center img-fluid  ${styles.imageHero}`
               }
             >
-              <p
-                className={styles.paraTexts}
-                dangerouslySetInnerHTML={{
-                  __html: animation,
-                }}
-              ></p>
+              {animation && (
+                <p
+                  className={styles.paraTexts}
+                  dangerouslySetInnerHTML={{
+                    __html: animation,
+                  }}
+                ></p>
+              )}
               <img src={images} class={`${styles.images}`} alt="image" />
             </div>
           </div>
