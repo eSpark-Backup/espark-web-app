@@ -1,27 +1,26 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import Moment from "react-moment";
-import Title from "../../components/title/title";
 import { getOpeningJobs } from "../../utils/utils";
-import HeroSectionThree from "./../../components/Hero/HeroSectionThree";
-import About from "./../../components/Sections/About/About";
 import "./style.css";
-import { Link } from "react-router-dom";
 import { ShimmerText, ShimmerThumbnail } from "react-shimmer-effects";
 import { ShemarLength } from "./../../helper/Shemars";
 import { optionData } from "./../../utils/utils";
 import Button from "../../components/button/button";
 import Herosection from "../../components/Sections/Hero/Herosection";
-import CareerImg from "../../assets/images/hero-section/Careerherosection.svg"
+import CareerImg from "../../assets/images/hero-section/Careerherosection.svg";
+import SectionTitle from "../../components/sectionTitle";
+import { Link } from "react-router-dom";
 const Careers = () => {
   const [careersData, setCareersData] = useState([]);
   const [getCat, setGetCat] = useState([]);
   const [allData, setAllData] = useState([]);
   const [showMessage, setShowMessage] = useState(false);
+  const [currentFilter, setcurrentFilter] = useState("");
   const [filter, setFilter] = useState({
-    job_cat: "",
-    job_type: "Full Time",
-    job_location: "Pakistan",
+    job_category: "",
+    job_type: "",
+    job_location: "",
   });
 
   useEffect(() => {
@@ -33,7 +32,7 @@ const Careers = () => {
       setAllData(data);
     };
     main();
-  },[]);
+  }, []);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -46,7 +45,7 @@ const Careers = () => {
 
   const inputFeilds = (category, inputFor) => {
     return (
-      <div className="col-lg-4">
+      <div className="col-lg-12 col-md-12 col-sm-12   px-2">
         <select
           class="form-select"
           aria-label="Default select example"
@@ -55,7 +54,11 @@ const Careers = () => {
           }}
         >
           {category?.map((item) => {
-            return <option value={item + "," + inputFor}>{item}</option>;
+            return (
+              <>
+                <option value={item + "," + inputFor}>{item}</option>
+              </>
+            );
           })}
         </select>
       </div>
@@ -64,127 +67,276 @@ const Careers = () => {
 
   const selectCategory = (e) => {
     const categories = e.target.value;
+    // console.log("categories", categories);
     const categorySplitArr = categories.split(",");
     const value = categorySplitArr[0];
     const name = categorySplitArr[1];
+    setFilter({ ...filter, [name]: value });
+    setcurrentFilter(name);
+    // if (name === "job_cat") {
+    //   let newData = applyFilter([...allData],c
+    //     ...filter,
+    //     [name]: value,
+    //   });
 
-    if (name === "job_cat") {
-      let newData = applyFilter([...allData], {
-        ...filter,
-        [name]: value,
-      });
+    //   setCareersData(newData);
 
-      setCareersData(newData);
+    //   setFilter({
+    //     job_cat: value,
+    //     job_type: "Full Time",
+    //     job_location: "Karachi",
+    //   });
+    // }
+    // if (name === "job_type") {
+    //   let newData = applyFilter([...allData], {
+    //     ...filter,
+    //     [name]: value,
+    //   });
 
-      setFilter({
-        job_cat: value,
-        job_type: "Full Time",
-        job_location: "Pakistan",
-      });
-    } else {
-      let newData = applyFilter([...allData], {
-        ...filter,
-        [name]: value,
-      });
+    //   setCareersData(newData);
 
-      setCareersData(newData);
-      setFilter({
-        ...filter,
-        [name]: value,
-      });
-    }
+    //   setFilter({
+    //     job_cat: value,
+    //     job_type: "Full Time",
+    //     job_location: "Karachi",
+    //   });
+    // }
+    // if (name === "job_location") {
+    //   let newData = applyFilter([...allData], {
+    //     ...filter,
+    //     [name]: value,
+    //   });
+
+    //   setCareersData(newData);
+
+    //   setFilter({
+    //     job_cat: value,
+    //     job_type: "Full Time",
+    //     job_location: "Karachi",
+    //   });
+    // }
+    //  else {
+
+    // setFilter({
+    //   ...filter,
+    //   [name]: value,
+    // });
+    // }
   };
 
-  const applyFilter = (jobs, filter) => {
-    return jobs.filter((job) => {
-      return (
-        job.acf.job_category.includes(filter.job_cat) &&
-        job.acf.job_type.includes(filter.job_type) &&
-        job.acf.job_location.includes(filter.job_location)
-      );
-    });
+  useEffect(() => {
+    let newData = applyFilter([...allData], filter, currentFilter);
+    // console.log(newData);
+
+    setCareersData(newData);
+  }, [filter]);
+
+  // const jobFunction = (jobs, filter) => {
+  //   if (filter.job_category) {
+  //     const job_category = jobs.filter((job) =>
+  //       job.acf[filter.job_category].includes(filter[filter.job_category])
+  //     );
+  //     console.log("job_category", job_category);
+  //   }
+  // };
+  // const typeFunction = (jobs, filter) => {
+  //   if (filter.job_type) {
+  //     const job_type = jobs.filter((job) =>
+  //       job.acf[filter.job_type].includes(filter[filter.job_type])
+  //     );
+  //     console.log("job_type", job_type);
+  //   }
+  // };
+  // const locaFunction = (jobs, filter) => {
+  //   if (filter.job_location) {
+  //     const job_location = jobs.filter((job) =>
+  //       job.acf[filter.job_location].includes(filter[filter.job_location])
+  //     );
+  //     console.log("job_location", job_location);
+  //     // console.log("asddddd");
+  //   }
+  // };
+  const applyFilter = (jobs, filter, currentFilter) => {
+    // console.log("filter", currentFilter);
+
+    const job_category = jobs.filter((job) =>
+      job.acf[currentFilter].includes(filter[currentFilter])
+    );
+    return filter[currentFilter] === "All" ? jobs : job_category;
+    // const job_type = jobs.filter((job) =>
+    //   job.acf[filter.job_type].includes(filter[filter.job_type])
+    // );
+    // console.log("job_type", job_type);
+    // console.log("job_category", job_category);
+    // jobFunction(jobs, filter);
+    // locaFunction(jobs, filter);
+    // typeFunction(jobs, filter);
+    // if (filter.job_location) {
+    //   const job_location = jobs.filter((job) =>
+    //     job.acf[filter.job_location].includes(filter[filter.job_location])
+    //   );
+    //   console.log("job_location", job_location);
+    //   console.log("asddddd");
+    // }
+    //   return jobs;
+    // }
+    // if (
+    //   filter.job_category === "" &&
+    //   filter.job_type === "" &&
+    //   filter.job_location === ""
+    // ) {
+    //   console.log("asddddd");
+
+    //   return jobs;
+    // }
+    // else {
+    //   console.log("asd", filtration);
+    // return jobs.filter((job) => {
+    //   return (
+    //     job.acf.job_category.includes(filter.job_cat) &&
+    //     job.acf.job_type.includes(filter.job_type) &&
+    //     job.acf.job_location.includes(filter.job_location)
+    //   );
+    // });
+    // }
+    // if (filter.job_location !== "All") {
+    //   return jobs.filter((job) => {
+    //     return job.acf.job_location.includes(filter.job_location);
+    //   });
+    // } else if (filter.job_type) {
+    //   return jobs.filter((job) => {
+    //     return job.acf.job_type.includes(filter.job_type);
+    //   });
+    // }
   };
 
   return (
-    <div>
-      <Herosection 
-      title="CAREERS"
-      paragraph="eSpark Consulting Group has been delivering premium IT-enabled business solutions to a wide array of client organizations for over four decades. We have remained at the cutting edge of enterprise technology by making employee excellence our top"
-      images={CareerImg}
-      ShowButton={false}
+    <>
+      <Herosection
+        title="CAREERS"
+        paragraph="Our career pathways provide premium opportunities to establish dynamic skillset and talent. We structure productive roadmaps for our employees to start off their IT career with an endless spirit. Our teams are formed by passing each candidate through effective technical assessments. Join any of our productive teams based on your prerequisite expertise, and make your professional career a brilliance."
+        images={CareerImg}
+        ShowButton={false}
       />
-     
-      <div class="container">
-       
-
+      <div class="container-fluid containerMarginBottom  containerMarginTop">
         {careersData && (
-          <Title title={"Open Vacancies"} link={window.location.pathname} />
+          <div className="mb-3">
+            <SectionTitle
+              heading={"Open Vacancies"}
+              height="2px"
+              width="158px"
+              my={2}
+            />
+          </div>
         )}
 
-        <div className="row">
-          {inputFeilds(getCat.category, "job_cat")}
-          {inputFeilds(getCat.type, "job_type")}
-          {inputFeilds(getCat.location, "job_location")}
+        <div className="d-lg-flex d-md-flex carrer-filter">
+          {inputFeilds(getCat.category, "job_category")}
+          {/* {inputFeilds(getCat.type, "job_type")}
+          {inputFeilds(getCat.location, "job_location")} */}
         </div>
         <br />
 
         {careersData && careersData.length > 0 ? (
-        careersData.map((item) => {
-          return (
-            <div className="row border-top p-3">
-              <div class="col-12 col-sm-3 ">
-                <h4 id="data_job_num1" data-job-num="1">
-                  {item?.title?.rendered}
-                </h4>
-                <p>
-                  Karachi
-                  <br />
-                  <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
-                </p>
+          careersData.map((item) => {
+            return (
+              <>
+                <div class="careers">
+                  <div className="row border-top p-5">
+                    <div class="col-lg-3  col-md-3 col-sm-12">
+                      <h4 id="data_job_num1" data-job-num="1">
+                        {item?.title?.rendered}
+                      </h4>
+
+                      <p>
+                        Karachi
+                        <br />
+                        <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
+                      </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                      <h4>Description</h4>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: item?.excerpt.rendered,
+                        }}
+                      ></p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 d-flex align-items-center justify-content-center cardsBtn ">
+                      <Button
+                        title="Apply Now"
+                        link={`/careers/${item.id}`}
+                        design={1}
+                      />
+                    </div>
+                  </div>
+                </div>
+                {/* Mobile card sections */}
+                <div class="careerMobile careerCard my-3">
+                  <div class="card-body ">
+                    <div className="row py-3">
+                      <div class=" col-12  ">
+                        <h4 id="data_job_num1" data-job-num="1">
+                          {item?.title?.rendered}
+                        </h4>
+
+                        <p className="cardtitle">
+                          {item?.acf.job_location[0]}{" "}
+                        </p>
+                        <p>
+                          <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
+                        </p>
+                        <hr className="career-hr my-2" />
+                      </div>
+                      <div class="col-12 ">
+                        <p
+                          className="cardDesc"
+                          dangerouslySetInnerHTML={{
+                            __html: item?.excerpt.rendered,
+                          }}
+                        ></p>
+                      </div>
+                      <div class=" col-12 cardbtn">
+                        <Button
+                          careerSmallBtn
+                          title="Apply Now"
+                          link={`/careers/${item.id}`}
+                          design={1}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </>
+            );
+          })
+        ) : showMessage ? (
+          <div className="notfound">Not found try another filter</div>
+        ) : (
+          ShemarLength.map((item) => {
+            return (
+              <div class="row">
+                <div class="col-lg-4">
+                  <ShimmerThumbnail
+                    height={150}
+                    width={300}
+                    categoryStyle="STYLE_THREE"
+                  />
+                </div>
+                <div class="col-lg-8">
+                  <ShimmerText
+                    line={5}
+                    gap={10}
+                    items={3}
+                    categoryStyle="STYLE_THREE"
+                  />
+                </div>
               </div>
-              <div class="col-12 col-sm-6 ">
-                <h4>Description</h4>
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: item?.excerpt.rendered,
-                  }}
-                ></p>
-              </div>
-              <div class="col-lg-3 d-flex align-items-center justify-content-center">
-                <Button title="Apply Now" link={`/vacancies/${item.id}`} design={1} />
-              </div>
-            </div>
-          );
-        })
-      ) : showMessage ? (
-        <div className="notfound" >
-          Not found try another filter 
-        </div>
-      ) : (
-         ShemarLength.map((item) => {
-          return (
-            <div class="row">
-              <div class="col-lg-4">
-                <ShimmerThumbnail
-                  height={150}
-                  width={300}
-                  categoryStyle="STYLE_THREE"
-                />
-              </div>
-              <div class="col-lg-8">
-                <ShimmerText
-                  line={5}
-                  gap={10}
-                  items={3}
-                  categoryStyle="STYLE_THREE"
-                />
-              </div>
-            </div>
-          );
-        })
-      )}
+            );
+          })
+        )}
       </div>
-    </div>
+    </>
   );
 };
 

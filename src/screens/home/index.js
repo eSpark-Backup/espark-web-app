@@ -6,31 +6,37 @@ import PartnerAbout from "../../components/partners-about/parternsAbout";
 import LetsTalk from "../../components/LetsTalk/LetsTalk";
 import Portfolio from "../../components/Sections/portfolio/Portfolio";
 import { projects } from "../../helper/projects";
-import heroImage from "../../../src/assets/images/hero-section/banner-image.png";
+import heroImage from "../../../src/assets/images/hero-section/test-image.png";
 import ServicesRecreate from "./../../components/Sections/services-recreate/index";
+import HashLinkObserver from "react-hash-link";
 
 const Home = () => {
   const currentRoute = window.location.pathname;
   return (
     <div>
       <Herosection
-        title={"The Ultimate Partner for Software and Iot Solutions"}
+        title={`The Ultimate Partner for
+Software and IoT Solutions`}
         paragraph="eSpark Consulting Group is a software and embedded system design
                     company that specializes in delivering innovative and
                     high-quality solutions to our clients. Our team of experts has
                     years of experience in the industry and a passion for technology
                     that drives us to stay ahead of the curve and deliver
-                    cutting-edge solutions"
+                    cutting-edge solutions."
         images={heroImage}
         ShowButton={true}
         buttonText={"Learn More"}
-        buttonUrl={"/services/"}
+        buttonUlr={"newDiv_0"}
+        buttonDesign={13}
       />
       <WhyeSpark heading={"Why eSpark?"} />
       <ServicesRecreate link={currentRoute} />
       <Users />
-      <Portfolio data={projects.slice(0, 4)} title="OUR PORTFOLIO" />
-      <PartnerAbout />
+      <Portfolio data={projects[0].childs.slice(0, 4)} title="OUR PORTFOLIO" />
+      <div id="Testimonials">
+        <HashLinkObserver />
+        <PartnerAbout />
+      </div>
       <LetsTalk />
     </div>
   );

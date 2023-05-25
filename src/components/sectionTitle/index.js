@@ -1,11 +1,20 @@
 import React from "react";
 
-const SectionTitle = ({ heading, paragraph, width, portFolio }) => {
+const SectionTitle = ({
+  heading,
+  paragraph,
+  width,
+  portFolio,
+  padding,
+  height,
+  margin,
+  my,
+}) => {
   return (
-    <div className="pb-80">
-      <hr style={{ width: width ? width : "200px" }} />
+    <div className={`my-2  pb-${padding ? padding : 80}`}>
+      <hr style={{ width: width ? width : "200px", height: height }} />
       <div className={"content"}>
-        <h2>{heading ?? null}</h2>
+        <h2 className={`my-${my ? my : "4"}`}>{heading ?? null}</h2>
         {paragraph?.type === "p" ? (
           paragraph ?? null
         ) : (

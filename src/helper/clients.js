@@ -1,3 +1,5 @@
+import upWork from "../assets/images/upwork.png";
+
 const hash = () => {
   const s4 = () => {
     return Math.floor((1 + Math.random()) * 0x10000)
@@ -10,24 +12,21 @@ const hash = () => {
 export const clients = [
   {
     _id: hash(),
-    image:
-      "https://pbs.twimg.com/profile_images/1389671445953921029/8D3jABqV_400x400.jpg",
+    image: upWork,
     name: "Julie King",
     designation: "Web developer needed to do a website build-out",
     testimonial: "Excellent experience, hope to hire again",
   },
   {
     _id: hash(),
-    image:
-      "https://pbs.twimg.com/profile_images/1389671445953921029/8D3jABqV_400x400.jpg",
+    image: upWork,
     name: "Zealous SEO",
     designation: "WordPress Customization Help",
     testimonial: "Great WordPress builder, will work again",
   },
   {
     _id: hash(),
-    image:
-      "https://pbs.twimg.com/profile_images/1389671445953921029/8D3jABqV_400x400.jpg",
+    image: upWork,
     name: "Briana Olson",
     designation: "Website WordPress specialist",
     testimonial:
@@ -35,8 +34,7 @@ export const clients = [
   },
   {
     _id: hash(),
-    image:
-      "https://pbs.twimg.com/profile_images/1389671445953921029/8D3jABqV_400x400.jpg",
+    image: upWork,
     name: "jesper bendsen",
     designation: "Woocommerce",
     testimonial:
@@ -44,8 +42,7 @@ export const clients = [
   },
   {
     _id: hash(),
-    image:
-      "https://pbs.twimg.com/profile_images/1389671445953921029/8D3jABqV_400x400.jpg",
+    image: upWork,
     name: "Gross2net",
     designation: "WordPress Site - CMS platform",
     testimonial:
@@ -53,8 +50,7 @@ export const clients = [
   },
   {
     _id: hash(),
-    image:
-      "https://pbs.twimg.com/profile_images/1389671445953921029/8D3jABqV_400x400.jpg",
+    image: upWork,
     name: "Conti di San Bonifacio",
     designation: "Ecommerce",
     testimonial:

@@ -64,10 +64,63 @@ const serviceItems = (id, title, name, content, image) => {
 export const services = [
   {
     id: hash(),
+    slug: "Turning your app ideas into reality.",
+    title: "Mobile App Development",
+    name: "App Development",
+    path: "mobile-app-development",
+    content:
+      "eSpark Consulting Group is fully committed to delivering outstanding web app development services that are specifically designed to meet the unique requirements of our clients. Our team of highly skilled developers has the expertise and knowledge required to develop customized solutions that are not only efficient and reliable, but also cost-effective.",
+    hpname: "App<br> Development",
+    discription:
+      "We develop sleek looking native and hybrid mobile apps for iOS & Android to ensure the customer satisfaction and performance at the core.",
+    image: MobileApplicationDevelopment,
+    quote:
+      "eSpark Consulting Group is dedicated to providing exceptional mobile app development services that are tailored to the individual needs of our clients. Our team of skilled developers possess the necessary expertise and knowledge to create customized solutions that are both efficient and reliable, while remaining cost-effective.",
+    quoteImage: MobileApplicationDevelopmentQuote,
+    icon: MobileApplicationDevelopmentIcon,
+    icon2: MobileApplicationDevelopmentIconHover,
+    childs: [
+      serviceItems(
+        hash(),
+        "Android App Development",
+        "Android App",
+        "Build top-notch Android applications with eSpark, which will be completely designed for your business needs. Our group of professionals create innovative and user-friendly android applications with key features like exclusivity and customer satisfaction. We have the expertise to create android applications for various sectors including retail, fashion, healthcare, and much more.",
+        AndroidAppDevelopment
+      ),
+      serviceItems(
+        hash(),
+        "iOS App Development",
+        "iOS App",
+        "Build top-notch customizable iOS applications designed to boost your business’s potential and reach.Our group of professionals create innovative and user-friendly iOS applications suitable for all iOS range of products offering easy accessibility and customer satisfaction. We have the expertise to create iOS applications for various industries like retail, fashion, healthcare, and much more.",
+        IosAppDevelopment
+      ),
+      serviceItems(
+        hash(),
+        "React Native App Development",
+        "React Native App",
+        "Do you want the end user to have the best performance and user experience? Our React Native App Development Service will provide you with exactly that. Our experts will develop a react native application which will not only help you modernize your business’s functionality but also generate higher revenue. Having top-notch performance and user experience will make your business stand out.",
+        ReactNativeAppDevelopment
+      ),
+      serviceItems(
+        hash(),
+        "Flutter App Development",
+        "Flutter App",
+        "Our Flutter application development will provide you with easy functionality, and an exclusive UI design. Our Flutter application development service is one of the best solutions for mobile application development, enabling smooth and easy cross-platform giving your application a uniform appearance.",
+        FlutterAppDevelopment
+      ),
+    ],
+  },
+  {
+    id: hash(),
+    slug: "Building dynamic web solutions for you.",
+    title: "Web Application Development",
     name: "Web Application Development",
     path: "web-app-development",
+    hpname: "Web Application Development",
     content:
       "eSpark Consulting Group offers comprehensive web app development services to help businesses create dynamic and responsive web applications. Our team of experienced developers has expertise in a wide range of technologies and platforms, including React/Vue development, ASP.NET development, Node.js development, WordPress/Shopify development, and more.",
+    discription:
+      "We have an experienced and professional Front End & Backend Developer Team to execute your defined requirements enthusiastically.",
     image: WebApplicationDevelopment,
     quote:
       "eSpark Consulting Group is dedicated to providing excellent database development services that cater to the specific needs of our clients. Our team of skilled database developers possess the necessary expertise and knowledge to create tailored solutions that are both efficient and reliable, while still remaining cost-effective.",
@@ -107,53 +160,63 @@ export const services = [
   },
   {
     id: hash(),
-    name: "Mobile App Development",
-    path: "mobile-app-development",
+    slug: "Designing efficient embedded systems solutions.",
+    title: "Embedded Systems Design",
+    name: "Embedded Systems Design",
+    hpname: "Embedded<br> Systems Design",
+    path: "embedded-systems-design",
     content:
-      "eSpark Consulting Group is fully committed to delivering outstanding web app development services that are specifically designed to meet the unique requirements of our clients. Our team of highly skilled developers has the expertise and knowledge required to develop customized solutions that are not only efficient and reliable, but also cost-effective.",
-    image: MobileApplicationDevelopment,
+      "eSpark Consulting Group provides a comprehensive suite of embedded design system services to help businesses develop cutting-edge hardware and software solutions for their unique needs. Our team of experienced engineers and designers has expertise in a wide range of technologies and platforms, including C/C++, Python/MATLAB, Raspberry Pi, and embedded Linux/RTOS (Zephyr, ESP-IDF).",
+    discription:
+      "We Help You Build Embedded Systems From The Ground Up, Working With You Every Step Of The Way. We offer a range of related services.",
+    image: EmbeddedSystemsDesign,
     quote:
-      "eSpark Consulting Group is dedicated to providing exceptional mobile app development services that are tailored to the individual needs of our clients. Our team of skilled developers possess the necessary expertise and knowledge to create customized solutions that are both efficient and reliable, while remaining cost-effective.",
-    quoteImage: MobileApplicationDevelopmentQuote,
-    icon: MobileApplicationDevelopmentIcon,
-    icon2: MobileApplicationDevelopmentIconHover,
+      "At eSpark Consulting Group, we are committed to delivering high-quality embedded design system services that meet our clients' unique requirements. Our team of experienced engineers and designers has the expertise and knowledge needed to develop custom solutions that are efficient, reliable, and cost-effective.",
+    quoteImage: EmbeddedSystemsDesignQuote,
+    icon: EmbeddedSystemsDesignIcon,
+    icon2: EmbeddedSystemsDesignIconHover,
     childs: [
       serviceItems(
         hash(),
-        "Android App Development Service.",
-        "Android App",
-        "Build top-notch Android applications with eSpark, which will be completely designed for your business needs. Our group of professionals create innovative and user-friendly android applications with key features like exclusivity and customer satisfaction. We have the expertise to create android applications for various sectors including retail, fashion, healthcare, and much more.",
-        AndroidAppDevelopment
+        "Firmware Development C / C++",
+        "Firmware Development C / C++",
+        "For developing firmware for embedded devices, we provide dependable C/C++ firmware development services. Custom firmware that satisfies your business requirements can be designed and implemented by our skilled experts. Our expertise lies in the creation of high-performance firmware that is tailored for embedded systems, resulting in quick boot times and effective resource management. Also, you can get assistance from our expertise with firmware testing and optimization.",
+        FirmwareDevelopment
       ),
       serviceItems(
         hash(),
-        "iOS App Development Service.",
-        "iOS App",
-        "Build top-notch customizable iOS applications designed to boost your business’s potential and reach.Our group of professionals create innovative and user-friendly iOS applications suitable for all iOS range of products offering easy accessibility and customer satisfaction. We have the expertise to create iOS applications for various industries like retail, fashion, healthcare, and much more.",
-        IosAppDevelopment
+        "PCB Design and Assembly",
+        "PCB Design and Assembly",
+        "For all of your circuit board requirements, you can rely on the excellent quality and dependability of our PCB design and assembly services. Custom PCBs can be designed and assembled by our skilled developers to match your company's needs. To guarantee the greatest level of quality and dependability for the circuit boards, we employ cutting-edge tools and methods. Our team can also help you with prototyping, testing, and optimization services for PCBs.",
+        PCBDesignAssembly
       ),
       serviceItems(
         hash(),
-        "React Native App Development Service.",
-        "React Native App",
-        "Do you want the end user to have the best performance and user experience? Our React Native App Development Service will provide you with exactly that. Our experts will develop a react native application which will not only help you modernize your business’s functionality but also generate higher revenue. Having top-notch performance and user experience will make your business stand out.",
-        ReactNativeAppDevelopment
+        "Raspberry Pi Python / Matlab",
+        "Raspberry Pi Python / Matlab",
+        "For creating IoT solutions, our Raspberry Pi Python/MATLAB development services provide a flexible and potent option. Our skilled developers can create and deploy unique Raspberry Pi solutions that satisfy your company's needs. For simple sensor and other peripheral integration, we specialize in creating high-performance solutions that interact with the Raspberry Pi's GPIO using Python/MATLAB.",
+        RaspberryPiPythonMatlab
       ),
       serviceItems(
         hash(),
-        "Flutter App Development Service.",
-        "React Native App",
-        "Our Flutter application development will provide you with easy functionality, and an exclusive UI design. Our Flutter application development service is one of the best solutions for mobile application development, enabling smooth and easy cross-platform giving your application a uniform appearance.",
-        FlutterAppDevelopment
+        "Embedded Linux / RTOS (Zephyr, ESP-IDF)",
+        "Embedded Linux / RTOS (Zephyr, ESP-IDF)",
+        "Custom Embedded Linux/RTOS solutions that match your company's needs can be designed and implemented by our talented developers. We specialize in creating high-performance, embedded system-optimized solutions that guarantee quick boot times and effective resource use. Our team will assist you with the testing, optimization, and porting of Embedded Linux/RTOS using well-liked platforms like Zephyr and ESP-IDF.",
+        EmbeddedLinuxRTOS
       ),
     ],
   },
   {
     id: hash(),
+    slug: "Creating efficient, scalable databases solutions.",
+    title: "Database Development",
     name: "Database Development",
+    hpname: "Database Development",
     path: "database-development",
     content:
       "eSpark Consulting Group provides comprehensive database development services to help businesses manage their data effectively. Our team of experienced database developers has expertise in a wide range of technologies and platforms, including PostgreSQL, Microsoft SQL, PHP MySQL, NoSQL databases like Firebase and MongoDB.",
+    discription:
+      "We can build and manage your databases according to your requirements so that you can securely and efficiently control and process your data.",
     image: DatabaseDevelopment,
     quote:
       "eSpark Consulting Group is dedicated to providing excellent database development services that cater to the specific needs of our clients. Our team of skilled database developers possess the necessary expertise and knowledge to create tailored solutions that are both efficient and reliable, while remaining cost-effective.",
@@ -191,55 +254,18 @@ export const services = [
       ),
     ],
   },
+
   {
     id: hash(),
-    name: "Embedded Systems Design",
-    path: "embedded-systems-design",
-    content:
-      "eSpark Consulting Group provides a comprehensive suite of embedded design system services to help businesses develop cutting-edge hardware and software solutions for their unique needs. Our team of experienced engineers and designers has expertise in a wide range of technologies and platforms, including C/C++, Python/MATLAB, Raspberry Pi, and embedded Linux/RTOS (Zephyr, ESP-IDF).",
-    image: EmbeddedSystemsDesign,
-    quote:
-      "At eSpark Consulting Group, we are committed to delivering high-quality embedded design system services that meet our clients' unique requirements. Our team of experienced engineers and designers has the expertise and knowledge needed to develop custom solutions that are efficient, reliable, and cost-effective.",
-    quoteImage: EmbeddedSystemsDesignQuote,
-    icon: EmbeddedSystemsDesignIcon,
-    icon2: EmbeddedSystemsDesignIconHover,
-    childs: [
-      serviceItems(
-        hash(),
-        "Firmware Development C / C++",
-        "Firmware Development C / C++",
-        "For developing firmware for embedded devices, we provide dependable C/C++ firmware development services. Custom firmware that satisfies your business requirements can be designed and implemented by our skilled experts. Our expertise lies in the creation of high-performance firmware that is tailored for embedded systems, resulting in quick boot times and effective resource management. Also, you can get assistance from our expertise with firmware testing and optimization.",
-        FirmwareDevelopment
-      ),
-      serviceItems(
-        hash(),
-        "PCB Design and Assembly",
-        "PCB Design and Assembly",
-        "For all of your circuit board requirements, you can rely on the excellent quality and dependability of our PCB design and assembly services. Custom PCBs can be designed and assembled by our skilled developers to match your company's needs. To guarantee the greatest level of quality and dependability for the circuit boards, we employ cutting-edge tools and methods. Our team can also help you with prototyping, testing, and optimization services for PCBs.",
-        PCBDesignAssembly
-      ),
-      serviceItems(
-        hash(),
-        "Raspberry Pi Python / MATLAB",
-        "Raspberry Pi Python / MATLAB",
-        "For creating IoT solutions, our Raspberry Pi Python/MATLAB development services provide a flexible and potent option. Our skilled developers can create and deploy unique Raspberry Pi solutions that satisfy your company's needs. For simple sensor and other peripheral integration, we specialize in creating high-performance solutions that interact with the Raspberry Pi's GPIO using Python/MATLAB.",
-        RaspberryPiPythonMatlab
-      ),
-      serviceItems(
-        hash(),
-        "Embedded Linux / RTOS (Zephyr, ESP-IDF)",
-        "Embedded Linux / RTOS (Zephyr, ESP-IDF)",
-        "Custom Embedded Linux/RTOS solutions that match your company's needs can be designed and implemented by our talented developers. We specialize in creating high-performance, embedded system-optimized solutions that guarantee quick boot times and effective resource use. Our team will assist you with the testing, optimization, and porting of Embedded Linux/RTOS using well-liked platforms like Zephyr and ESP-IDF.",
-        EmbeddedLinuxRTOS
-      ),
-    ],
-  },
-  {
-    id: hash(),
-    name: "QA and Web Plugin and Desktop Development",
+    slug: "Powerful desktop solutions for businesses.",
+    title: "QA / Plugin / Desktop Development",
+    name: "QA and Desktop Development",
+    hpname: "QA and Desktop<br> Development",
     path: "qa-web-plugin-desktop-development",
     content:
       "Our QA services include both manual and automated testing for web and mobile applications. Our expert QA team will help you identify any potential issues with your software, ensuring that it is running smoothly and meeting your business goals. We use the latest tools and techniques to provide comprehensive testing services that help our clients achieve optimal results.",
+    discription:
+      "We provides high quality QA services worldwide. We have an exceptional team of consultants that understand your requirements and consult you with the best solutions applicable.",
     image: QAWebPluginandDesktopDevelopment,
     quote:
       "At eSpark Consulting Group, we pride ourselves on our ability to deliver top-quality solutions to our clients. Our team of experts has years of experience in the industry and is committed to staying up to date with the latest trends and technologies. We work closely with our clients to understand their unique needs and develop customized solutions that address those needs in the most efficient and effective manner possible.",
@@ -249,8 +275,8 @@ export const services = [
     childs: [
       serviceItems(
         hash(),
-        "QA Manual Web and Mobile App",
-        "QA Manual Web and Mobile App",
+        "SQA Web and Mobile Applications",
+        "SQA Web and Mobile Applications",
         "To ensure that your web and mobile applications satisfy high-quality requirements, use our manual QA testing services. Functional and non-functional testing will be carried out by our team of skilled QA testers to find any potential problems that might have an influence on the user experience. Together, we will create test plans, carry them out, and report on any difficulties that arise. Our aim is to guarantee that your mobile and online applications work as intended and deliver a great user experience.",
         QAManualWebMobileApp
       ),

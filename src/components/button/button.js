@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaLongArrowAltRight, FaRegArrowAltCircleRight } from "react-icons/fa";
 import style from "./style.module.css";
-const Button = ({ title, link, design, type, onClick, disabled }) => {
+const Button = ({ title, link, design, type, onClick, disabled ,careerSmallBtn}) => {
   if (design === null) {
     return null;
   }
   if (design === 0) {
     return (
       <div>
-        <button type={type} class="submit roundbutton rounded-pill">
+        <button type={type} class="submit roundbutton" disabled={disabled}>
           {title}
         </button>
       </div>
@@ -24,7 +24,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
           onClick={onClick}
           disabled={disabled}
         >
-          <button className="roundbutton rounded-pill">
+          <button className={careerSmallBtn ? `roundbutton rounded-pill ${style.careerSmallBtn}` : 'roundbutton rounded-pill'}>
             {title}
             <FaLongArrowAltRight className={style.arrowSize} />
           </button>
@@ -53,6 +53,7 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
           class="btn btn-light rounded-pill"
           to={link}
           onClick={onClick}
+          style={{ width: "100%", boxShadow: "none" }}
           disabled={disabled}
         >
           {title}
@@ -88,10 +89,10 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
   if (design === 6) {
     return (
       <div>
-        <Link class="read-more-btn " to={link}>
+        <Link class="read-more-btn " to={link} onClick={onClick}>
           {title}
           {"  "}
-          <FaRegArrowAltCircleRight margin={10} />
+          <FaLongArrowAltRight style={{ marginTop: 0 }} margin={0} />
         </Link>
       </div>
     );
@@ -106,7 +107,11 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
     );
   }
   if (design === 8) {
-    return <a onClick={link}>{title}</a>;
+    return (
+      <button onClick={onClick} className={`${style.blogDetailsButton}`}>
+        {title}
+      </button>
+    );
   }
   if (design === 9) {
     return (
@@ -150,11 +155,51 @@ const Button = ({ title, link, design, type, onClick, disabled }) => {
         >
           <button
             className="roundbutton rounded-pill"
-            style={{ width: "236.18px", fontSize: 30, height: 46 }}
+            style={{
+              width: "236.18px",
+              fontSize: 30,
+              height: 46,
+              boxShadow: "none",
+              fontWeight: 600,
+            }}
           >
             {title}
           </button>
         </a>
+      </>
+    );
+  }
+  if (design === 13) {
+    return (
+      <>
+        <a
+          href="#newDiv_0"
+          className={style.btnMargin}
+          onClick={onClick}
+          disabled={disabled}
+        >
+          <button className="roundbutton rounded-pill">{title}</button>
+        </a>
+      </>
+    );
+  }
+
+  if (design === 14) {
+    return (
+      <>
+        <button
+          onClick={onClick}
+          className="roundbutton rounded-pill"
+          style={{
+            width: "100%",
+            fontSize: 50,
+            height: 46,
+            boxShadow: "none",
+            fontWeight: 600,
+          }}
+        >
+          {title}
+        </button>
       </>
     );
   }

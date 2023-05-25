@@ -1,5 +1,6 @@
 import Slider from "react-slick";
 import "./style.css";
+import '../../assets/css/responsive.css'
 import { clients } from "../../helper/clients";
 import {
   MdOutlineArrowForwardIos,
@@ -25,7 +26,7 @@ const NextBtn = (props) => {
 
 const settings = {
   autoplay: false,
-  dots: false,
+  dots: true,
   initialSlide: 1,
   swipe: false,
   swipeToSlide: false,
@@ -36,10 +37,11 @@ const settings = {
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: false,
+        dots: true,
+        arrows: true,
       },
     },
     {
@@ -48,7 +50,18 @@ const settings = {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: false,
+        dots: true,
+        arrows: true,
+      },
+    },
+    {
+      breakpoint: 426,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+        arrows: false,
       },
     },
   ],
@@ -56,20 +69,21 @@ const settings = {
 
 const Testimonial = () => {
   return (
-    <div className="testimonial">
-      <div className="subtesti">
+    <div className="testimonial " >
+      <div className="subtesti ">
         <Slider {...settings}>
           {clients?.map((item) => {
             return (
               <>
-                <div className="imgbox  ">
+                <div className="imgbox ">
                   <img
+
                     className="image "
                     src={item.image}
                     alt={item.testimonial}
                   />
                 </div>
-                <div className="testibox">
+                <div className="testibox ">
                   <p className="name">{item.name}</p>
                   <p className="designation">{item.designation}</p>
                   <p className="testimonialText">{item.testimonial}</p>

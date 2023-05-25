@@ -1,0 +1,9 @@
+iot based App
+fitness
+json data
+ble
+bluetooth classic
+serial connection/data transmission
+time tracker
+stopwatch
+auto screenshots

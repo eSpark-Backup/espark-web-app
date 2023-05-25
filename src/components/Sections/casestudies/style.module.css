@@ -1,48 +1,280 @@
 .images {
-  height: 217px;
+  height: auto !important;
   width: 100%;
+  opacity: 1;
+}
+
+
+.badge {
+  box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  width: 27%;
+  color: white;
+  background: var(--color-primary);
+  padding: 5px;
+  /* display: none; */
+  opacity: 0;
+  right: 0px;
+  border-radius: 3px;
+}
+
+.middleText {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+.imagesWrapper {
+  position: relative;
+  width: 100%;
+}
+
+
+
+.imagesWrapper:hover .badge {
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  right: 10px;
+}
+
+.imagesWrapper:hover .middleText {
+  opacity: 1;
+}
+
+.OverlayText {
+  /* background-color: var(--color-primary); */
+  color: #000;
+  font-size: 20px;
+  padding: 16px 32px;
+  font-weight: 500;
 }
 
 .titleWrapper {
   height: 60px;
-  background-color: #EBE9E9;
+  background-color: #ebe9e9;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .titleWrapper:hover {
-  background-color: #2074B4;
+  background-color: var(--color-primary);
 }
-
 
 .titleWrapper:hover>h3 {
   color: #ffffff;
 }
 
 .titleText {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 21.2574px;
   line-height: 100%;
   text-align: center;
-  text-transform: capitalize;
-  color: #2074B4;
+  /*  */
+  color: var(--color-primary);
 }
 
+.filterTab {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #9b9b9b;
+  cursor: pointer;
+}
 
-@media (max-width: 450px) {
-  .wrapper {
-    width: 80%;
-    margin-left: 15%;
+.filterTabSelected {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: var(--color-primary);
+  cursor: pointer;
+  border-bottom: 3px solid #3359a2;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+
+  .badge {
+    width: 40%;
+  }
+
+  .filterTab {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 20px;
+    text-align: center;
+    color: #9b9b9b;
+    cursor: pointer;
+  }
+
+  .filterTabSelected {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 3px solid #3359a2;
+  }
+
+  .titleText {
+    font-size: 15px;
   }
 }
 
-@media (min-width:451px) and (max-width:575px) {
+@media (min-width: 575px) and (max-width: 1000px) {
+  .badge {
+    width: 40%;
+  }
+
+  .filterTab {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #9b9b9b;
+    cursor: pointer;
+  }
+
+  .filterTabSelected {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 3px solid #3359a2;
+  }
+  .titleText {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 575px) {
   .wrapper {
-    width: 60%;
-    margin-left: 23%;
+    width: 100%;
+  }
+
+  .badge {
+    width: 40%;
+  }
+
+  .filterTab {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #9b9b9b;
+    cursor: pointer;
+  }
+
+  .filterTabSelected {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 3px solid #3359a2;
+  }
+
+  .titleText {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 450px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .badge {
+    width: 40%;
+  }
+
+  .filterTab {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #9b9b9b;
+    cursor: pointer;
+  }
+
+  .filterTabSelected {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 3px solid #3359a2;
+  }
+
+  .titleText {
+    font-size: 16px;
+  }
+  
+}
+
+@media(max-width:279px) {
+  .filterTab {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #9b9b9b;
+    cursor: pointer;
+  }
+
+  .filterTabSelected {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 3px solid #3359a2;
+  }
+
+  .titleText {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.2574px;
+    line-height: 100%;
+    text-align: center;
+
   }
 }

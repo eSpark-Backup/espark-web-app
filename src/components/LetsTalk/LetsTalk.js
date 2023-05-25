@@ -6,134 +6,79 @@ import { toast } from "react-hot-toast";
 import Button from "../button/button";
 import style from "./style.module.css";
 import SectionTitle from "../sectionTitle";
+import { IMaskInput } from "react-imask";
+import "../../assets/css/responsive.css";
+const EmailAddressMask = /^\S*@?\S*$/;
+const ContactNumberMask = "+{00}(000)000-00000";
 
 const LetsTalk = ({ modal, modelClose, link, h1 }) => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [files, setFiles] = useState(null);
 
+  const [errors, setErrors] = useState({});
   const form = useRef();
-
-  let array = [];
-  let limit = 15;
-
-  const handleUpdateIntrestData = (e, index) => {
-    const data = array.find((item) => item === e);
-
-    if (data === undefined) {
-      array.push(e);
-    } else {
-      const indexx = array.indexOf(e);
-      if (indexx > -1) {
-        array.splice(indexx, 1);
-      }
-    }
-  };
 
   const clearState = () => {
     setEmail("");
     setMessage("");
     setName("");
-    setPhone("");
     setSubject("");
-    setFiles("");
-    array = [];
-  };
-
-  const setfileData = (e) => {
-    const fileToLoad = e.target.files[0];
-
-    var fileReader = new FileReader();
-    var base64;
-    // Onload of file read the file content
-    fileReader.onload = function (fileLoadedEvent) {
-      base64 = fileLoadedEvent.target.result;
-      // Print data in console
-      setFiles(base64);
-    };
-    // Convert data to base64
-    fileReader.readAsDataURL(fileToLoad);
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    // Check for errors in form fields
+    let errors = {};
+    if (!name) {
+      errors.name = "Name is required";
+    }
+    if (!email) {
+      errors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      errors.email = "Invalid email format";
+    }
+    if (!subject) {
+      errors.subject = "Subject is required";
+    }
+    if (!message) {
+      errors.message = "Message is required";
+    }
+
+    // If there are errors, set them in state and exit
+    if (Object.keys(errors).length > 0) {
+      setErrors(errors);
+      return;
+    }
+
     emailjs.init("bo0d42dcDbZL1U83o");
 
-    if (link?.includes("vacancies")) {
-      emailjs
-        .send("service_0n1v6bm", "template_y6yzby6", {
-          from_name: name,
-          from_email: email,
-          reply_to: email,
-          message: message,
-          phone: phone,
-          content: files,
-        })
-        .then(
-          (result) => {
-            clearState();
-            toast.success("Thank you for Connecting");
-          },
-          (error) => {
-            toast.error("Something Went Wrong");
-          }
-        );
-    } else {
-      if (modal) {
-        emailjs
-          .send("service_0n1v6bm", "template_88hqabf", {
-            from_name: name,
-            from_email: email,
-            reply_to: email,
-            subject: subject,
-            message: message,
-            phone: phone,
-            user_interests: null,
-          })
-          .then(
-            (result) => {
-              modelClose(false);
-              clearState();
-              toast.success("Thank you for Connecting");
-            },
-            (error) => {
-              modelClose(false);
-              toast.error("Something Went Wrong");
-            }
-          );
-      } else {
-        emailjs
-          .send("service_0n1v6bm", "template_88hqabf", {
-            from_name: name,
-            from_email: email,
-            reply_to: email,
-            subject: subject,
-            message: message,
-            phone: phone,
-            user_interests: JSON.stringify(array),
-          })
-          .then(
-            (result) => {
-              modelClose(false);
-              toast.success("Thank you for Connecting");
-              clearState();
-            },
-            (error) => {
-              toast.error("Something Went Wrong");
-            }
-          );
-      }
-    }
+    emailjs
+      .send("service_0n1v6bm", "template_88hqabf", {
+        from_name: name,
+        from_email: "info@esparkconsultants.com",
+        reply_to: email,
+        subject: subject,
+        message: message,
+      })
+      .then(
+        (result) => {
+          toast.success("Thank you for Connecting");
+          clearState();
+        },
+        (error) => {
+          toast.error("Something Went Wrong");
+        }
+      );
   };
 
   return (
     <div>
-      <div class={`contact-area ${!modal ? "pb-80" : null}`}>
-        <div className="container">
-          <div class={`${style.letsTalk} row`}>
+      <div class={`contact-area  ${!modal ? "pb-80" : null}`}>
+        <div className="container-fluid p-4  ">
+          <div class={`${style.letsTalk} row border sizeControl  `}>
             <div className="col-lg-8 text-center">
               <SectionTitle
                 heading={"Let’s Talk"}
@@ -145,27 +90,31 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                   </p>
                 }
                 width={"100px"}
+                padding={"0"}
               />
             </div>
-            <div className="col-lg-4 hidden-md hidden-sm">
+            <div className="col-lg-4 hidden-md hidden-sm   ">
               <div className={style.letsTalkImage}>
                 <img src={letsTalkImage} alt="" />
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row sizeControl ">
             <div
-              className={`${style.formcol} col-lg-8 col-md-12 col-sm-12  text-center`}
-            >
-              <div className={`${style.formbox} col-lg-12`}>
-                <form id="contactForm" ref={form} onSubmit={sendEmail}>
-                  <div class="row">
+              className={`${style.formcol} col-lg-8 col-md-12 col-sm-12   text-center`}>
+              <div className={`${style.formbox} col-lg-12 `}>
+                <form
+                  id="contactForm"
+                  className=""
+                  ref={form}
+                  onSubmit={sendEmail}>
+                  <div class="row ">
                     <div class="col-lg-6 col-md-6">
                       <div class="form-group">
                         <label className={`${style.label} d-flex`}>Name</label>
                         <input
                           type="text"
-                          required={true}
+                          required
                           name="name"
                           placeholder="Your Name *"
                           class="form-control"
@@ -177,10 +126,12 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                     </div>
                     <div class="col-lg-6 col-md-6">
                       <div class="form-group">
-                        <label className={`${style.label} d-flex`}>Email</label>
+                        <label className={`${style.label} d-flex`}>
+                          Email Address
+                        </label>
                         <input
                           type="email"
-                          required={true}
+                          required
                           name="email"
                           placeholder="Your email address *"
                           class="form-control"
@@ -190,51 +141,46 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                         <div class="invalid-feedback"></div>
                       </div>
                     </div>
-                    {!link?.includes("vacancies") && (
-                      <div class="col-lg-12 col-md-12">
-                        <div class="form-group">
-                          <label className={`${style.label} d-flex`}>
-                            Subject
-                          </label>
-                          <input
-                            type="text"
-                            name="subject"
-                            placeholder="Your Subject *"
-                            class="form-control"
-                            required={true}
-                            value={subject}
-                            onChange={(e) => setSubject(e.target.value)}
-                          />
-                          <div class="invalid-feedback"></div>
-                        </div>
-                      </div>
-                    )}
                     <div class="col-lg-12 col-md-12">
                       <div class="form-group">
                         <label className={`${style.label} d-flex`}>
-                          Message
+                          Subject
                         </label>
-                        <textarea
-                          name="text"
-                          required={true}
-                          cols="30"
-                          rows="5"
-                          placeholder={"Write your message..."}
+                        <input
+                          type="text"
+                          name="subject"
+                          placeholder="Your Subject *"
                           class="form-control"
-                          value={message}
-                          onChange={(e) => setMessage(e.target.value)}
-                        ></textarea>
+                          required
+                          value={subject}
+                          onChange={(e) => setSubject(e.target.value)}
+                        />
                         <div class="invalid-feedback"></div>
                       </div>
                     </div>
-                    <div class="col-lg-12 col-sm-12 d-flex justify-content-center justify-content-sm-start ">
-                      <Button
-                        type="submit"
-                        onClick={sendEmail}
-                        title="Send Message"
-                        design={1}
-                      />
+                  </div>
+                  <div class="col-lg-12 col-md-12">
+                    <div class="form-group">
+                      <label className={`${style.label} d-flex`}>Message</label>
+                      <textarea
+                        name="text"
+                        required
+                        cols="30"
+                        rows="5"
+                        placeholder={"Write your message ...*"}
+                        class="form-control"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}></textarea>
+                      <div class="invalid-feedback"></div>
                     </div>
+                  </div>
+                  <div class="col-lg-12 col-sm-12 d-flex justify-content-center justify-content-sm-start ">
+                    <Button
+                      type="submit"
+                      onClick={sendEmail}
+                      title="SUBMIT"
+                      design={0}
+                    />
                   </div>
                 </form>
               </div>

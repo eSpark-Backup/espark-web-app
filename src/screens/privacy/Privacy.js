@@ -9,9 +9,9 @@ const Privacy = () => {
   return (
     <div>
       <Title title={"Privacy Policy "} data={shapes} />
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
-          <div class="entry-content" itemprop="text">
+          <div class="entry-content paragraph" itemprop="text">
             <p>Last updated: December 21, 2022</p>
             <p>
               This Privacy Policy describes Our policies and procedures on the
@@ -26,6 +26,7 @@ const Privacy = () => {
               Policy has been created with the help of the Free Privacy Policy
               Generator.
             </p>
+            <br/>
             <div
               className="col-sm-12 col-lg-4"
               id="ez-toc-container"

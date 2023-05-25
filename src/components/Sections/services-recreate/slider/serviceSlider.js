@@ -18,8 +18,7 @@ function ServiceSlider() {
           height="34"
           viewBox="0 0 22 34"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+          xmlns="http://www.w3.org/2000/svg">
           <path
             d="M1.92306 1.84619L18.0769 17.2977L1.92306 31.4616"
             stroke="white"
@@ -38,8 +37,7 @@ function ServiceSlider() {
           height="34"
           viewBox="0 0 22 34"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+          xmlns="http://www.w3.org/2000/svg">
           <path
             d="M20.0769 1.84616L3.9231 17.2977L20.0769 31.4615"
             stroke="white"
@@ -48,14 +46,6 @@ function ServiceSlider() {
         </svg>
       </div>
     );
-  };
-
-  const handleNext = () => {
-    sliderRef.current.slickNext();
-  };
-
-  const handlePrev = () => {
-    sliderRef.current.slickPrev();
   };
   {
     const settings = {
@@ -66,17 +56,31 @@ function ServiceSlider() {
       swipe: false,
       swipeToSlide: false,
       infinite: true,
-      speed: 3000,
+      // speed: 3000,
       slidesToShow: 4,
       slidesToScroll: 4,
       centerMode: false,
+      centerPadding: 0,
       nextArrow: <CustomNextArrow />,
       prevArrow: <CustomPrevArrow />,
       responsive: [
         {
-          breakpoint: 1700,
+          breakpoint: 2560,
+          settings: {
+            slidesToShow: 4,
+            arrows: true,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            centerMode: true,
+            centerPadding: -10,
+          },
+        },
+        {
+          breakpoint: 1900,
           settings: {
             slidesToShow: 3,
+            arrows: true,
             slidesToScroll: 1,
             infinite: true,
             dots: false,
@@ -85,26 +89,68 @@ function ServiceSlider() {
         {
           breakpoint: 1500,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
             dots: false,
+            arrows: true,
+            draggable: true,
+            swipe: true,
           },
         },
         {
-          breakpoint: 1000,
+          breakpoint: 1196,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
             infinite: true,
             dots: false,
+            arrows: true,
+            draggable: true,
+            swipe: true,
+          },
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            arrows: true,
+            draggable: true,
+            swipe: true,
+          },
+        },
+        {
+          breakpoint: 786,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            arrows: true,
+            draggable: true,
+            swipe: true,
+          },
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            arrows: true,
+            draggable: true,
+            swipe: true,
           },
         },
       ],
     };
     return (
       <>
-        <div className="sliderMobileResponsive">
+        <div className="sliderMobileResponsive ">
           <Slider {...settings}>
             {services.map((item) => (
               <div>
@@ -112,8 +158,8 @@ function ServiceSlider() {
                   <ServicesCard
                     image={item.icon}
                     image2={item.icon2}
-                    title={item.name}
-                    para={item.content}
+                    title={item.hpname}
+                    para={item.discription}
                   />
                 </Link>
               </div>
@@ -122,14 +168,14 @@ function ServiceSlider() {
         </div>
         <div className="mobileResponsive">
           <div className="row">
-            {services.slice(1, 5).map((item) => (
-              <div className="col-sm-12 col-md-3 col-lg-3 ">
+            {services.slice(0, 5).map((item) => (
+              <div className="col-12 col-sm-12 col-md-6 col-lg-3 ">
                 <Link to={`/services/${item.path}`}>
                   <ServicesCard
                     image={item.icon}
                     image2={item.icon2}
-                    title={item.name}
-                    para={item.content}
+                    title={item.hpname}
+                    para={item.discription}
                   />
                 </Link>
               </div>

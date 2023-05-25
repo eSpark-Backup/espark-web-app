@@ -3,8 +3,8 @@
 :root {
   --font-primary: "Barlow", sans-serif;
   --font-secondary: "Raleway", sans-serif;
-  --color-primary: #2d373c;
-  --color-secondary: #ce1446;
+  --color-primary:#11A79c;
+  --color-secondary:#3359a2;
   --color-tertiary: #515154;
 }
 
@@ -92,7 +92,7 @@ input {
 
 input:focus {
   outline: none !important;
-  border: 1px solid #c27c7c;
+  border: 1px solid #11A79c;
 }
 
 input[type="submit"] {
@@ -3086,10 +3086,9 @@ header .header-style-two .main-nav ul li a.active span {
 
 .comment-form {
   background: #fff;
-  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  
   border-radius: 5px;
-  padding: 38px 45px 45px;
+  padding: 38px 0px 0px;
   margin-top: 100px;
 }
 

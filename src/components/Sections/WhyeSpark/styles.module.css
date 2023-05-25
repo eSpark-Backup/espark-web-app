@@ -1,35 +1,42 @@
 .arrowSize {
    width: 30px;
    height: 20px;
-   color: #11A79c;
+   color: var(--color-primary);
 }
+
 
 .sociallink {
    font-family: 'Poppins';
    transform: rotate(270deg);
    display: flex;
-   align-items: start;
-   height: 200px;
+   align-items: end;
+   width: 100px;
+   margin-top: 40px !important;
 }
 
 .whyPoints {
    font-family: 'Poppins';
-   font-size: 22px;
+   font-size: 26px;
    font-weight: 600 !important;
    line-height: 22px;
    letter-spacing: 0em;
    text-align: left;
-   color: #3359A2 !important;
+   color: var(--color-secondary) !important;
 }
 
 .whyPointsPara {
    font-family: 'Poppins';
    font-size: 16px;
-   font-weight: 400 !important;
+   font-weight: 430 !important;
    line-height: 22px;
    letter-spacing: 0em;
    text-align: left;
-   padding: 10px 0;
+   padding: 7px 0;
+   color: #3A3A3A;
+}
+
+.whyPointsPara>span {
+   color: #A76868;
 }
 
 .heading {
@@ -39,7 +46,7 @@
    line-height: 44px;
    letter-spacing: 0em;
    text-align: center;
-   color: #3359A2 !important;
+   color: var(--color-secondary) !important;
 }
 
 .whyPara {
@@ -58,8 +65,18 @@
 }
 
 .buttons {
-   margin-top: 100px !important;
+   margin-top: 70px !important;
 }
+
+.mobile {
+   display: none !important;
+}
+
+.whyeSparksColumn {
+   margin-bottom: 110px;
+}
+
+
 
 #whypoints {
    padding: 20px;
@@ -82,39 +99,84 @@
 }
 
 .image {
-   width: 100%;
+   width: 100% !important;
+   height: 440px;
 }
 
-/* .cont{
-   margin-left: -15px;
-} */
+.imgCustomMargin {
+   margin-top: 11px !important;
+}
+
+.whyEsparkMargin {
+   margin-top: 230px !important;
+}
+
+@media (max-width: 767.98px) {
+   .whyEsparkMargin {
+      margin-top: 50px !important;
+   }
+}
+
+@media (min-width: 767.98px)and (max-width:1440px) {
+   .whyEsparkMargin {
+      margin-top: 100px !important;
+   }
+
+   .image {
+      display: flex;
+      align-items: end;
+      /* margin-top: 100px; */
+   }
+
+}
 
 #whylinksbtn {
    padding: 5px;
 }
+
+.whyEsparkContentColor {
+   color: #3A3A3A !important;
+   width: 77% !important;
+   font-weight: 430 !important;
+}
+
 
 @media only screen and (max-width: 1024px) {
    #whylinks {
       display: none !important;
    }
 
+   .mobile {
+      display: block !important;
+   }
 
+   .desktop {
+      display: none !important;
+   }
 
    #whylinksmobile button {
       font-size: 22px !important;
       width: 163.09px;
    }
 
+   .image {
+      width: 100% !important;
+      height: 705px !important;
+   }
+
+   .whyEsparkMargin {
+      margin-top: 100px !important;
+   }
+
    #whylinksmobile {
-      display: block;
+      display: flex !important;
+      flex-direction: row !important;
+      text-align: center !important;
+      margin-bottom: 20px;
    }
 
    .arrowSize {
       margin-right: 30px;
-   }
-
-   #whylinksmobile {
-      margin: 20px;
    }
 
    .buttons {
@@ -126,15 +188,152 @@
       padding-right: auto !important;
    }
 
+   .whyeSparksColumn {
+      margin-bottom: 0px;
+   }
+
+   .image {
+      width: 100%;
+   }
+
+   .whyEsparkContentColor {
+      color: #3A3A3A !important;
+      width: 100% !important;
+      font-weight: 430 !important;
+      font-size: 14px !important;
+   }
+
+   .whyPointsPara {
+      font-family: 'Poppins';
+      font-size: 14px;
+      font-weight: 430 !important;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding: 7px 0;
+      color: #3A3A3A;
+   }
+
 }
 
-@media (min-width: 275px) and (max-width: 574px) {
+@media only screen and (max-width: 786px) {
+   .whyPoints {
+      font-family: 'Poppins';
+      font-size: 18px;
+      font-weight: 430 !important;
+      line-height: 22px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding: 7px 0;
+      color: #3A3A3A;
+   }
+
+   .icon svg {
+      height: 30px;
+      width: 30px;
+   }
+
+   .whyEsparkMargin {
+      margin-top: 10px !important;
+   }
+
+   .icon {
+      padding-right: 40px !important;
+      margin-top: 5px !important;
+   }
+
+   
+
+   .mobile {
+      display: block !important;
+   }
+
+   .desktop {
+      display: none;
+   }
+
+
+}
+
+@media (min-width: 540px) and (max-width: 786px) {
    .icon {
       padding-right: 10px !important;
 
    }
 
+   .mobile {
+      display: block !important;
+   }
+
+   .desktop {
+      display: none !important;
+   }
+
+   #whypoints {
+      padding: 25px 0px 10px 0px;
+   }
+
    .button {
       width: 100% !important;
+   }
+
+   #whylinksmobile {
+      display: flex;
+      flex-direction: row !important;
+      align-items: center;
+      /* margin-left: -50px !important; */
+   }
+
+   .whyeSparksColumn {
+      margin-bottom: 0px;
+   }
+
+   .image {
+      width: 100%;
+      height: 400px !important;
+   }
+}
+
+@media (min-width: 280px) and (max-width: 540px) {
+   .icon {
+      padding-right: 10px !important;
+
+   }
+
+   .style_images__5tuvY {
+      height: auto;
+      width: 300px !important;
+   }
+
+   .mobile {
+      display: none !important;
+   }
+
+   .desktop {
+      display: block !important;
+   }
+
+   #whypoints {
+      padding: 25px 0px 10px 0px;
+   }
+
+   .button {
+      width: 100% !important;
+   }
+
+   #whylinksmobile {
+      display: flex;
+      flex-direction: column !important;
+      align-items: center;
+      margin-left: -50px !important;
+   }
+
+   .whyeSparksColumn {
+      margin-bottom: 0px;
+   }
+
+   .image {
+      width: 100%;
+      height: 300px !important;
    }
 }

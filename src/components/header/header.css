@@ -4,7 +4,7 @@
   width: 100%;
   background-color: #d9d9d9;
 }
-
+.read-more-btn {color:var(--color-secondary) ;}
 .customColor {
   background-color: transparent !important;
 }
@@ -12,7 +12,30 @@
 .customColor:hover {
   box-shadow: none;
 }
+ .serviceChild {
+   padding-left: 20px !important;
+ }
 
+ .serviceChildLink {
+   padding-left: 20px !important;
+ }
+  .mobileSelected{
+    background-color: rgba(17, 167, 156, 0.5);
+    box-shadow: 0 4px 4px -4px gray;
+ }
+ /* .mobileSelected .mobileheading {
+   color: black !important;
+ } */
+
+ .mobileDrawerCollapse a {
+   padding-left: 40px !important;
+ }
+
+ .mobileSelectedCollapse {
+   background-color: rgba(17, 167, 156, 0.5);
+   color: #000000 !important;
+   padding: 10px !important;
+ }
 .list-bgrd {
   background-color: transparent !important;
   width: 300px !important;
@@ -21,7 +44,7 @@
 .headerBtn {
   width: 147px;
   height: 52px;
-  background: #00a099;
+  background: var(--color-primary);
   border-radius: 26px;
   text-align: center;
   display: flex;
@@ -31,25 +54,25 @@
 }
 
 .btn-content {
-  width: 92px;
-  height: 17px;
-  margin-bottom: 5px;
+  position: absolute;
+  /* margin-bottom: 5px; */
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 500 !important;
   font-size: 20px;
   line-height: 100%;
   color: #ffffff;
   cursor: pointer;
   font-family: Poppins;
+  z-index: 9999 !important;
 }
 
 .itemTxt {
-  width: 62px;
-  height: 17px;
+  /* width: 62px;
+  height: 17px; */
   font-weight: 600;
   font-size: 20px;
-  color: #3359a2;
+  color: var(--color-secondary);
   font-family: Poppins;
 }
 
@@ -66,19 +89,207 @@
 }
 
 .selected {
-  border-bottom: 5px solid #00a099;
-  width: 80px;
-  padding: 2px;
-  color: #00a099;
+  border-bottom: 5px solid var(--color-primary);
+  width: 100%;
+  color: var(--color-primary);
 }
 
-@media screen and (max-width: 700px) {
+.selected svg {
+  width: 20px !important;
+  margin-right: -4px;
+}
+
+.itemTxt svg {
+  width: 20px !important;
+  margin-right: -4px;
+}
+
+.serviceSelected {
+  /* border-bottom: 5px solid var(--color-primary); */
+  position: relative;
+  top: 4px;
+  bottom: 0px;
+  width: 95%;
+  background-color: var(--color-primary);
+  height: 5px;
+}
+
+.navbar {
+  position: static;
+}
+
+#serve:hover #serveDrop {
+  display: flex !important;
+  background: #e8f1f2;
+  opacity: 0.9;
+  margin-top: -38px;
+  box-shadow: 0 8px 8px -4px gray;
+}
+
+#serve {
+  position: static;
+}
+
+#serveDrop {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  display: none !important;
+  padding: auto 100px;
+  /* border: 1px solid #000; */
+  top: 126px;
+}
+
+.serveDropInner {
+  position: relative;
+  left: 34px;
+}
+
+.firstContent {
+  padding-left: 50px !important;
+}
+
+.contents {
+  padding: 30px 0px;
+  margin: 0px 10px;
+}
+
+.heading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 16.8132px;
+  line-height: 35px;
+  color: #2074b4;
+  border-bottom: 2px solid black;
+}
+
+.linkClass {
+  text-align: start;
+  align-items: start;
+}
+
+.headroom a {
+  text-align: start;
+  align-items: start;
+}
+
+.ptag {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 17px !important;
+  line-height: 22px;
+  color: black !important;
+}
+
+.selectedColor {
+  color: var(--color-primary) !important;
+}
+
+.ptag:hover {
+  color: var(--color-primary) !important;
+}
+
+
+
+
+
+@media screen and (max-width: 425px) {
   .headerBtn {
-    width: 120px;
-    height: 40px;
-    margin-bottom: 150px;
-    margin-right: 40px;
-    display: none;
+    display: none!important;
+  }
+
+  .heading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #2074b4;
+    border-bottom: 2px solid black;
+  }
+
+  .linkClass {
+    text-align: start;
+    align-items: start;
+  }
+
+  a {
+    text-align: start;
+    align-items: start;
+  }
+
+  .ptag {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    line-height: 16px;
+    color: #000000 !important;
+  }
+
+  .selectedColor {
+    color: var(--color-primary) !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .contents {
+    padding: 30px 0px;
+  }
+
+  .heading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #2074b4;
+    border-bottom: 2px solid black;
+  }
+
+  .linkClass {
+    text-align: start;
+    align-items: start;
+  }
+
+  a {
+    text-align: start;
+    align-items: start;
+  }
+
+  .ptag {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 10px !important;
+    line-height: 10px;
+    color: #000000 !important;
+  }
+
+  .selectedColor {
+    color: var(--color-primary) !important;
+  }
+
+  .startp-nav nav .navbar-nav {
+    font-weight: 500;
+    float: right;
+    margin-right: -50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .itemTxt {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .headerBtn {
+    height: 30px;
+    width: 100px;
+  }
+
+  .btn-content {
+    font-size: 14px !important;
   }
 
   .list-bgrd {
@@ -94,133 +305,69 @@
   .marginEnd {
     margin-left: 0px !important;
   }
-}
 
-@media screen and (max-width: 700px) {
   .menuDropDown {
     position: relative;
     left: 230px !important;
   }
-}
-.navbar {
-  position: static;
-}
-#serve:hover #serveDrop {
-  display: flex !important;
-  background: #fdfdfd;
-  opacity: 0.9;
-  margin-top: -15px;
-}
-#serve {
-  position: static;
-}
 
-#serveDrop {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  display: none !important;
-  padding: auto 100px;
-  height: 260px;
-}
-.contents {
-  padding: 30px 0px;
-  margin: 0px 10px;
-}
-.heading {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500 !important;
-  font-size: 15px;
-  line-height: 20px;
-  color: #2074b4;
-  border-bottom: 2px solid black;
-}
-.linkClass {
-  text-align: start;
-  align-items: start;
-}
-.headroom a {
-  text-align: start;
-  align-items: start;
-}
-.ptag {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500 !important;
-  font-size: 15px !important;
-  line-height: 22px;
-  color: #000000 !important;
-}
-.selectedColor {
-  color: #00a099 !important;
-}
-.ptag:hover {
-  color: #00a099 !important;
-}
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .contents {
-    padding: 30px 0px;
+  .startp-nav nav .navbar-nav {
+    position: relative;
+    left: 40px !important;
   }
-  .heading {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 15px;
-    color: #2074b4;
-    border-bottom: 2px solid black;
-  }
-  .linkClass {
-    text-align: start;
-    align-items: start;
-  }
-  a {
-    text-align: start;
-    align-items: start;
-  }
-  .ptag {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400 !important;
-    font-size: 10px !important;
-    line-height: 10px;
-    color: #000000 !important;
-  }
-  .selectedColor {
-    color: #00a099 !important;
+
+  .logo {
+    width: 130px;
+    height: 50px;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1480px) {
-  .contents {
-    padding: 30px 0px;
+@media screen and (max-width: 425px) {
+  .headerBtn {
+    display: none;
   }
-  .heading {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 20px;
-    color: #2074b4;
-    border-bottom: 2px solid black;
+
+  .dropButton {
+    display: flex !important;
   }
-  .linkClass {
-    text-align: start;
-    align-items: start;
+
+  .collapsed {
+    box-shadow: none;
   }
-  a {
-    text-align: start;
-    align-items: start;
+
+  .startp-nav nav .navbar-nav {
+    position: static !important;
+    width: 100%;
+    align-items: center;
   }
-  .ptag {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500 !important;
-    font-size: 12px !important;
-    line-height: 16px;
-    color: #000000 !important;
+
+  .itemTxt {
+    font-size: 20px !important;
   }
-  .selectedColor {
-    color: #00a099 !important;
+}
+@media screen and (max-width: 767px) {
+  .headerBtn {
+      display: none !important;
+    }
+  .navbar-collapse{
+      display: none !important;
   }
+  #serve:hover #serveDrop {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .drawer{
+    display: none;
+  }
+  .serveDropMobile {
+    display: none !important;
+  }
+  #serve:hover #serveDropMobile {
+    display: none !important;
+  }
+}
+.letsTalk svg {
+  width: 15px;
+  height: 15px;
+  margin-top: 0px;
 }

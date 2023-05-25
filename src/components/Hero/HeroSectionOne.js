@@ -13,8 +13,7 @@ const HeroSectionOne = ({ filterData }) => {
                 <p
                   dangerouslySetInnerHTML={{
                     __html: filterData[0]?.data?.shortDescription,
-                  }}
-                ></p>
+                  }}></p>
                 <Button title="Quote Now" link="/contact" design={2} />
               </div>
             </div>
@@ -23,11 +22,11 @@ const HeroSectionOne = ({ filterData }) => {
                 {filterData[0]?.data?.image?.map((item, index) => {
                   return (
                     <>
-                      {
-                        index === 0 ?
-                          <img src={item} alt="images" className="mainPics" />
-                          : <img src={item} alt="images" />
-                      }
+                      {index === 0 ? (
+                        <img src={item} alt="images" className="mainPics" />
+                      ) : (
+                        <img src={item} alt="images" />
+                      )}
                     </>
                   );
                 })}

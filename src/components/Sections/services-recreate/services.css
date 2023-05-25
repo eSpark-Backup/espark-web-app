@@ -2,11 +2,11 @@
     width: 158.08px;
     height: 0px;
 
-    border: 2px solid #00A099;
+    border: 2px solid var(--color-primary);
 }
 
 .servicesColor {
-    color: #3359A2;
+    color: var(--color-secondary);
     font-size: 44px;
     margin-top: 15px;
 }
@@ -23,9 +23,9 @@
 }
 
 .sliderWrapper {
-    width: 80%;
+    width: 78%;
     margin: auto;
-
+    text-align: center;
 }
 
 .txtpara {
@@ -33,4 +33,7 @@
     font-size: 16px;
     text-align: center;
     color: #000000;
+}
+.tops{
+    margin-top: -14px;
 }
