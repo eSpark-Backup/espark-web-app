@@ -1,0 +1,78 @@
+.animation {
+    margin-top: 70px;
+    display: inline-block;
+    margin-bottom: 40px;
+    position: absolute;
+    /* right: 0px; */
+    z-index: -9999;
+}
+
+.one,
+.two,
+.three {
+    display: block;
+    float: left;
+}
+
+.one {
+    background: url('../../assets/images/gear\ icon2.svg');
+    width: 180px;
+    height: 180px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-right: 8px;
+    opacity: 0.5;
+}
+
+.two {
+    background: url('../../assets/images/gear\ icon.svg');
+    width: 100px;
+    height: 100px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.three {
+    background: url('../../assets/images/gear\ icon2.svg');
+    width: 150px;
+    height: 150px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: -95px;
+    margin-left: -25px;
+}
+
+.spin-one {
+    -webkit-animation: spin-one 4s infinite linear;
+    animation: spin-one 4s infinite linear;
+}
+
+@keyframes spin-one {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-359deg);
+        transform: rotate(-359deg);
+    }
+}
+
+.spin-two {
+    -webkit-animation: spin-two 4s infinite linear;
+    animation: spin-two 4s infinite linear;
+}
+
+@keyframes spin-two {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-359deg);
+        transform: rotate(359deg);
+    }
+}

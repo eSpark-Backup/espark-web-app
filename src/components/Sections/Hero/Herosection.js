@@ -11,6 +11,7 @@ function Herosection({
   images,
   serviceClass,
   homeclass,
+  animation,
 }) {
   return (
     <>
@@ -18,20 +19,23 @@ function Herosection({
         <div class="container-fluid">
           <div class="row">
             <div
-              class={`${styles.headingColumn} col-lg-6 col-md-12 col-sm-12 `}>
+              class={`${styles.headingColumn} col-lg-6 col-md-12 col-sm-12 `}
+            >
               <div
                 class={
                   serviceClass
                     ? `${styles.serviceText} ml-banner-content`
                     : "ml-banner-content"
-                }>
+                }
+              >
                 <h1 className={styles.heading}>{title}</h1>
 
                 <p
                   className={styles.paraTexts}
                   dangerouslySetInnerHTML={{
                     __html: paragraph,
-                  }}></p>
+                  }}
+                ></p>
 
                 {ShowButton ? (
                   <Button
@@ -50,7 +54,14 @@ function Herosection({
                 serviceClass
                   ? `animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-12 col-sm-12 text-center img-fluid `
                   : `animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-2 col-sm-12 text-center img-fluid  ${styles.imageHero}`
-              }>
+              }
+            >
+              <p
+                className={styles.paraTexts}
+                dangerouslySetInnerHTML={{
+                  __html: animation,
+                }}
+              ></p>
               <img src={images} class={`${styles.images}`} alt="image" />
             </div>
           </div>

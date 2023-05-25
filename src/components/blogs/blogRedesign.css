@@ -9,7 +9,7 @@
   
   .scroll {
     overflow: scroll !important;
-    padding-right: 58px;
+    /* padding-right: 58px; */
     display: flex;
     justify-content: left;
     align-items: left;
