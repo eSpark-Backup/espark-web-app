@@ -21,15 +21,13 @@ export default function About() {
 
       <div>
         {/* <OurPartner /> */}
-        <SectionTitle heading={"Our Goal Statement"} paddingTop={80} />
+        <SectionTitle heading={"Our Goal Statement"} paddingTop={80}/>
         <OurGoalStatement />
-        <SectionTitle heading={"Our Journey"} paddingTop={80} />
+        <SectionTitle heading={"Our Journey"} paddingTop={80}/> 
         <OurJourney />
-        <SectionTitle heading={"Our Executives"} paddingTop={80} />
+        <SectionTitle heading={"Our Executives"} paddingTop={80}/>
         <OurExecutives />
-        <SectionTitle  paddingTop={80} />
-
-        <SectionTitle heading={"Meet The Team"} paddingTop={80} />
+        <SectionTitle heading={"Meet The Team"} paddingTop={80}/>
         <OurTeam />
       </div>
     </React.Fragment>

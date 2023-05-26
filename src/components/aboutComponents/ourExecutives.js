@@ -7,42 +7,42 @@ const OurExecutives = () => {
   return (
     <div>
       <div className={`container-fluid  my-2 ${styles.fullscreen} `}>
-        <div class={`${styles.hexagone} my-4`}>
-          <div class={styles.hexagoneBackground}>
-            <div class="row ">
-              <div
-                class={`col-12 col-sm-12 col-md-12 col-lg-4 ${styles.aboutImgDiv}`}
-              >
-                <img src={exactive4} className={styles.exactiveImage} />
-              </div>
-              <div
-                class={` col-12 col-sm-12 col-md-12 col-lg-8 ${styles.aboutParaLeft}`}
-              >
-                <p className={styles.exactiveHeading}>HUZAIFA ALI</p>
-                <p className={styles.exactiveSubHeading}>
-                  CEO of eSpark Counsulting Group
-                </p>
-                <p className={styles.exactivePra}>
-                  From alone freelancer to a leader of a thriving team, my
-                  journey as a Embedded Developer has been one of passion and
-                  perseverance. I've had the privilege of working with startups
-                  and big names in the industry, and now, I've taken the plunge
-                  and founded eSpark Consulting Group <br /> <br />
-                  Join me on this journey to turn your startup ideas into
-                  reality. Let's push boundaries, take risks, and inspire the
-                  world with our innovation
-                </p>
+          <div class={`${styles.hexagone} my-4`}>
+            <div class={styles.hexagoneBackground}>
+              <div class="row ">
+                <div
+                  class={`col-12 col-sm-12 col-md-12 col-lg-4 ${styles.aboutImgDiv}`}
+                >
+                  <img src={exactive4} className={styles.exactiveImage} alt="exactiveImage" />
+                </div>
+                <div
+                  class={` col-12 col-sm-12 col-md-12 col-lg-8 ${styles.aboutParaLeft}`}
+                >
+                  <p className={styles.exactiveHeading}>HUZAIFA ALI</p>
+                  <p className={styles.exactiveSubHeading}>
+                    CEO of eSpark Counsulting Group
+                  </p>
+                  <p className={styles.exactivePra}>
+                    From alone freelancer to a leader of a thriving team, my
+                    journey as a Embedded Developer has been one of passion and
+                    perseverance. I've had the privilege of working with startups
+                    and big names in the industry, and now, I've taken the plunge
+                    and founded eSpark Consulting Group <br /> <br />
+                    Join me on this journey to turn your startup ideas into
+                    reality. Let's push boundaries, take risks, and inspire the
+                    world with our innovation
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
         <div class={`${styles.hexagoneRight} `}>
           <div class={styles.hexagoneBackground}>
             <div class="row ">
               <div
                 className={`col-sm-12 col-md-12 col-lg-4 ${styles.aboutImgDivReverse}`}
               >
-                <img src={exactive3} className={styles.exactiveImageRight} />
+                <img src={exactive3} className={styles.exactiveImageRight} alt="exactiveImage" />
               </div>
               <div
                 class={` col-sm-12 col-md-12 col-lg-8 ${styles.aboutParaRight}`}
@@ -66,7 +66,7 @@ const OurExecutives = () => {
               <div
                 className={`col-sm-12 col-md-12 col-lg-4 ${styles.aboutImgDivRight}`}
               >
-                <img src={exactive3} className={styles.exactiveImageRight} />
+                <img src={exactive3} className={styles.exactiveImageRight} alt="exactiveImage" />
               </div>
             </div>
           </div>

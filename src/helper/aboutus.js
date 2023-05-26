@@ -5,6 +5,14 @@ import yourLogo from "../../src/assets/images/About-us-image/yourlogo.png"
 import hexa from "../../src/assets/images/About-us-image/hexa.png"
 import frams from "../../src/assets/images/About-us-image/frams.png"
 import OurGoalIcon from "../../src/assets/images/About-us-image/OurGoalIcon.svg"
+
+import webappLead from "../../src/assets/images/About-us-image/webappLead.png"
+import SQALead from "../../src/assets/images/About-us-image/SQALead.png"
+import MarketingLead from "../../src/assets/images/About-us-image/MarketingLead.png"
+import HRLead from "../../src/assets/images/About-us-image/HRHead.png"
+import NodeLead from "../../src/assets/images/About-us-image/NodeLead.png"
+import DesignerLead from "../../src/assets/images/About-us-image/DesignerLead.png"
+import COO from "../../src/assets/images/About-us-image/COO.png"
 import OurJourney from './../components/aboutComponents/ourJourney';
 export const aboutData = [
     {
@@ -38,25 +46,41 @@ export const aboutData = [
 ]
 export const teamMembers = [
     {
-        images : teamImage,
-        name : "lorem Ipsum ",
-        description: "elit tortor. sodales. viverra Cras nulla, commodo luctus quis lacus ullamcorper tincidunt consectetur In placerat tincidunt luctus faucibus hendrerit ex Nam"
+        images : DesignerLead,
+        name : "M. Waqar",
+        description: "COO"
     },
     {
-        images : teamImage,
-        name : "lorem Ipsum",
-        description: "elit tortor. sodales. viverra Cras nulla, commodo luctus quis lacus ullamcorper tincidunt consectetur In placerat tincidunt luctus faucibus hendrerit ex Nam"
+        images : HRLead,
+        name : "Ambreen Azeem",
+        description: "HR Head"
     },
     {
-        images : teamImage,
-        name: "lorem Ipsum",
-        description: "elit tortor. sodales. viverra Cras nulla, commodo luctus quis lacus ullamcorper tincidunt consectetur In placerat tincidunt luctus faucibus hendrerit ex Nam"
+        images : MarketingLead,
+        name: "Arman Khan",
+        description: "Marketing Director"
+    },
+    // {
+    //     images : COO,
+    //     name: "Mars",
+    //     description: "COO"
+    // },
+    {
+        images : webappLead,
+        name : "Rohail Zafar",
+        description: "Application Department(HOD)"
     },
     {
-        images : teamImage,
-        name: "lorem Ipsum",
-        description: "elit tortor. sodales. viverra Cras nulla, commodo luctus quis lacus ullamcorper tincidunt consectetur In placerat tincidunt luctus faucibus hendrerit ex Nam"
+        images : NodeLead,
+        name: "M. Ovais",
+        description: "Node JS Lead"
     },
+    {
+        images : SQALead,
+        name: "Hassan Ahmed Khan",
+        description: "SQA Lead"
+    },
+
 ] 
 
 export const partnerLogs = [
@@ -79,8 +103,8 @@ export const partnerLogs = [
 
 export const OurJourneyData = [
     {
-        titleLeft: "Our journey ",
-        descriptionLeft: "Our begin with the vision of our esteemed CEO, who as freelancers took the reins and nurtured the company with their dedication",
+        titleLeft: "Our journey",
+        descriptionLeft: "Our Journey begin with the vision of our esteemed CEO, who as freelancer took the reins and nurtured the company with his dedication",
         hexagonLeft : "2015",
         titleRight: "Foundation",
         descriptionRight: "Marks the foundation of our software house with a team of ten talented individuals",
@@ -88,20 +112,20 @@ export const OurJourneyData = [
 
     },
     {
-        titleLeft: "Dedication ",
-        descriptionLeft: "With untiring dedication and hard work our team expanded to 25 skilled professionals. During this time, we were focused to make our mark as industry leaders and poured our hearts to every project for establishing a goodwill.",
+        titleLeft: "Dedication",
+        descriptionLeft: "With our dedication & hard work we expanded to 25 skilled professionals. During this time, we were focused to make our mark as industry leaders",
         hexagonLeft : "2019",
-        titleRight: "Year of Growth ",
-        descriptionRight: "Marks our team expansion to 50 exceptionally talented individuals and with their expertise and capabilities we embarked on a mission to make our mark in the tech-industry.",
+        titleRight: "Year of Growth",
+        descriptionRight: "Marks our team expansion to 50 exceptionally talented individuals and with their expertise and capabilities we embarked on a mission to make our mark in the tech-industry ",
         hexagonRight : "2020",
 
     },
     {
-        titleLeft: "Achievement Year ",
-        descriptionLeft: "our team is continuously flourishing and now we proudly stand as a thriving and successful group of 100+ employees, encompassing a diverse range of full-time professionals, freelancers, and remote workers hailing from different corners of the globe.",
+        titleLeft: "Achievement Year",
+        descriptionLeft: "Our team is continuously flourishing & now we  proudly stand as a thriving & successful group of 100+ employees",
         hexagonLeft : "2021",
         titleRight: "MORE GOALS FOR 2023",
-        descriptionRight: "we have the honor of working with esteemed international names, partnering with industry giants who trusted us to bring their visions to life Join us on this exciting journey as we continue to innovate, inspire, and shape the future of software development!",
+        descriptionRight: "We have the honour of working with esteemed international names & partnering with industry giants. Join us on this exciting journey to innovate, inspire & shape the future of software development",
         hexagonRight : "2023",
 
     },
