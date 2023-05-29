@@ -60,7 +60,7 @@
   /* margin-left: 150px; */
   width: 150px;
   height: 86px;
-  background-color: #089e97;
+  background-color: var(--color-primary);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
   z-index: 1;
   display: flex;
@@ -68,12 +68,13 @@
   justify-content: center;
   transition: color 500ms ease, text-shadow 500ms ease;
 }
-.hexagon:hover {
-  background: linear-gradient(var(--color-primary), #176fae);
-}
 .icon {
   width: 60%;
   height: auto;
+}
+
+.hexagon:hover{
+  background: linear-gradient(180deg, var(--color-primary) -50%, #176fae 50%);
 }
 
 .hexgonText {
@@ -106,7 +107,16 @@
   z-index: -1;
   /* Keeps borders smooth in webkit */
   backface-visibility: hidden;
+  box-shadow: none !important;
+ 
 }
+
+/* .hexagon .face1:hover,
+.hexagon .face2:hover{
+  background: linear-gradient(87.57deg, var(--color-primary) 0%, #176fae 99.61%);
+  
+} */
+
 
 .hexagon .face1:before,
 .hexagon .face2:before {
@@ -115,26 +125,32 @@
   width: 220px;
   height: 220px;
   background: inherit;
+  box-shadow: none !important;
+
 }
 
 .hexagon .face1 {
   transform: rotate(60deg);
+  
 }
 
 .hexagon .face1:before {
   left: 0;
   transform-origin: left top;
   transform: rotate(-60deg) translate(-110px, 0);
+  
 }
 
 .hexagon .face2 {
   transform: rotate(-60deg);
+
 }
 
 .hexagon .face2:before {
   right: 0;
   transform-origin: right top;
   transform: rotate(60deg) translate(110px, 0);
+  
 }
 
 .titleLeft {
@@ -1128,6 +1144,7 @@
   height: 320px;
   -moz-clip-path: none;
   -webkit-clip-path: none;
+
 }
 
 .profileCard .img {
@@ -1139,6 +1156,7 @@
 }
 .profileCard:hover .img {
   transform: translateY(-60px);
+  margin-left: -3px;
 }
 
 .img img {
