@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 50px;
+  padding: 40px;
 }
 
 .sapratorLine {
@@ -36,15 +36,28 @@
 }
 
 .descriptionBox h1 {
-  color: black;
+  /* color: black;
   font-size: 30.37px;
-  font-weight: 700 !important;
+  font-weight: 700 !important; */
+
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700 !important;
+font-size: 30px;
+line-height: 42px;
+
+color: #212121;
+
 }
 
 .descriptionBox p {
-  margin-top: 10px;
-  text-align: justify;
-  font-weight: 400 !important;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20.2111px;
+  line-height: 24px;
+
+  color: #212121;
 }
 
 .svgIcon {
@@ -73,8 +86,11 @@
   height: auto;
 }
 
-.hexagon:hover{
-  background: linear-gradient(180deg, var(--color-primary) -50%, #176fae 50%);
+.hexagon:hover {
+  background: linear-gradient(-340deg, var(--color-primary) 0%, #176fae 200%);
+  /* background: linear-gradient(-340deg, var(--color-primary) 10%, #176fae 110%); */
+  box-shadow: none !important;
+  border: none !important;
 }
 
 .hexgonText {
@@ -108,7 +124,6 @@
   /* Keeps borders smooth in webkit */
   backface-visibility: hidden;
   box-shadow: none !important;
- 
 }
 
 /* .hexagon .face1:hover,
@@ -116,7 +131,6 @@
   background: linear-gradient(87.57deg, var(--color-primary) 0%, #176fae 99.61%);
   
 } */
-
 
 .hexagon .face1:before,
 .hexagon .face2:before {
@@ -126,31 +140,26 @@
   height: 220px;
   background: inherit;
   box-shadow: none !important;
-
 }
 
 .hexagon .face1 {
   transform: rotate(60deg);
-  
 }
 
 .hexagon .face1:before {
   left: 0;
   transform-origin: left top;
   transform: rotate(-60deg) translate(-110px, 0);
-  
 }
 
 .hexagon .face2 {
   transform: rotate(-60deg);
-
 }
 
 .hexagon .face2:before {
   right: 0;
   transform-origin: right top;
   transform: rotate(60deg) translate(110px, 0);
-  
 }
 
 .titleLeft {
@@ -471,6 +480,7 @@
   }
   .descriptionBox {
     height: 315px !important;
+    margin-left: 10px;
   }
 
   .secondDivHexagon {
@@ -648,6 +658,16 @@
     align-items: center;
   }
 }
+@media only screen and (min-width: 1921px) and (max-width: 2560px) {
+  .descriptionBox {
+    width: 100%;
+    height: 300px;
+  }
+  .exactiveSubHeading {
+    margin-top: 7px;
+  }
+}
+
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .aboutImgDivReverse {
@@ -1034,6 +1054,71 @@
 
 /* -------------------------Ourteam work begins------------------------  */
 
+.teamProfileCard {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 22px #3336;
+  transition: .6s;
+  margin: 25px 25px;
+}
+
+.teamProfileCard:hover {
+  border-radius: 10px;
+  height: 260px;
+}
+
+
+.teamProfileCard .teamImages {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: .6s;
+  z-index: 99;
+}
+.teamProfileCard:hover .teamImages {
+  transform: translateY(-60px);
+}
+
+.teamImages img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 22px #3336;
+  transition: .6s;
+}
+
+.teamProfileCard:hover img {
+  border-radius: 10px;
+}
+
+.teamCaption {
+  text-align: center;
+  transform: translateY(-80px);
+  opacity: 0;
+  transition: .6s;
+}
+
+.teamProfileCard:hover .teamCaption {
+  opacity: 1;
+}
+
+.teamCaption h3 {
+  color: var(--color-primary) ;
+  font-size: 17px;
+  font-weight: 700 !important;
+}
+
+.teamCaption p {
+  font-size: 14px;
+  color: var(--color-secondary) ;
+  font-weight: 700 !important;
+  margin: 2px 0 9px 0;
+  text-align: center;
+}
+
 .memberContens {
   height: 637px;
   margin-bottom: 140px;
@@ -1144,7 +1229,6 @@
   height: 320px;
   -moz-clip-path: none;
   -webkit-clip-path: none;
-
 }
 
 .profileCard .img {
@@ -1240,13 +1324,13 @@
 .exactiveImage {
   width: 100%;
   height: 100%;
-  padding: 10px;
+  padding: 17px;
 }
 
 .exactiveImageRight {
   width: 100%;
   height: 100%;
-  padding: 10px;
+  padding: 17px;
 }
 
 .hexagone {
@@ -1479,10 +1563,10 @@
   line-height: 100%;
   text-transform: capitalize;
   color: #3359a2;
-  padding: 0px 0px 17px 10%;
+  padding: 0px 0px 17px 16%;
 }
 .Vision {
-  padding: 0px 0px 12px 10%;
+  padding: 0px 0px 12px 16%;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -1569,9 +1653,11 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
-  text-align: justify;
-  padding-left: 10%;
+  /* text-align: justify; */
+  padding-left: 16%;
   color: #000000;
+
+  
 }
 
 .HexaContenta {
@@ -1624,6 +1710,11 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .titleLeft {
+   padding-top: 30px;
+  }
+}
 @media screen and (max-width: 576px) {
   .ourValueContainer {
     background: linear-gradient(180deg, #176fae 0%, #089e97 100%);
@@ -1640,9 +1731,7 @@
   padding-top: 80px !important;
 } */
 
-  .ourGoalStatHexagon {
-    border: 1px solid black;
-  }
+ 
 
   .aboutParagraph {
     padding-left: 0%;
@@ -1670,9 +1759,7 @@
 }
 
 @media screen and (max-width: 360px) {
-  .ourGoalStatHexagon {
-    border: 1px solid black;
-  }
+
 
   .containerWraper {
     width: 100%;

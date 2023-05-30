@@ -30,6 +30,23 @@ const OurTeam = () => {
         <div className={`row ${styles.memberContens}`}>
           {teamMembers.map((member, index) => {
             return (
+              <div className={`col-lg-3 ${styles.teamProfileCard}`}>
+             <div className={styles.teamImages}>
+                <img src={member.images} alt='' />
+               </div>
+              <div className={styles.teamCaption}>
+                 <h3>{member.name}</h3>
+                <p>{member.description}</p>
+               </div>
+            </div>
+            );
+          })}
+        </div>
+      </div>
+      {/* <div className={`container-fluid ${styles.containerFluid}}`}>
+        <div className={`row ${styles.memberContens}`}>
+          {teamMembers.map((member, index) => {
+            return (
               <div 
                 className={`col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 py-2 ${styles.profileCardContaner} `}
                 key={index}
@@ -56,7 +73,7 @@ const OurTeam = () => {
             );
           })}
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

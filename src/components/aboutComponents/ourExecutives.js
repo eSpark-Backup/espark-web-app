@@ -20,7 +20,7 @@ const OurExecutives = () => {
                 >
                   <p className={styles.exactiveHeading}>HUZAIFA ALI</p>
                   <p className={styles.exactiveSubHeading}>
-                    CEO of eSpark Counsulting Group
+                    Chief Executive Officer (CEO)
                   </p>
                   <p className={styles.exactivePra}>
                     From alone freelancer to a leader of a thriving team, my
@@ -49,7 +49,7 @@ const OurExecutives = () => {
               >
                 <p className={styles.exactiveHeadingRight}>Faizan Ur Rahman</p>
                 <p className={styles.exactiveSubHeading}>
-                  CTO of eSpark Counsulting Group
+                  Chief Technology Officer (CTO)
                 </p>
                 <p className={styles.exactivePraRight}>
                   Seven-year journey as a senior Hardware Developer Designer has
