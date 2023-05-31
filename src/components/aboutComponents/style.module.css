@@ -240,7 +240,7 @@ color: #212121;
 
   .exactivePra {
     text-align: center;
-    font-size: 10px !important;
+    font-size: 12px !important;
   }
 
   .exactiveImage {
@@ -270,7 +270,7 @@ color: #212121;
 
   .exactivePraRight {
     text-align: center;
-    font-size: 10px !important;
+    font-size: 12px !important;
     line-height: 20px !important;
   }
 
@@ -376,11 +376,11 @@ color: #212121;
   }
 
   .exactiveHeading {
-    font-size: 14px !important;
+    font-size: 17px !important;
     text-align: center;
   }
   .exactiveSubHeading {
-    font-size: 11px !important;
+    font-size: 15px !important;
     text-align: center;
     margin-top: 15px;
     line-height: 100% !important;
@@ -388,7 +388,7 @@ color: #212121;
 
   .exactivePra {
     text-align: center;
-    font-size: 11px !important;
+    font-size: 16px !important;
   }
 
   .exactiveImage {
@@ -412,13 +412,13 @@ color: #212121;
   }
 
   .exactiveHeadingRight {
-    font-size: 14px !important;
+    font-size: 17px !important;
     text-align: center;
   }
 
   .exactivePraRight {
     text-align: center;
-    font-size: 11px !important;
+    font-size: 16px !important;
     line-height: 20px !important;
   }
 
@@ -689,12 +689,15 @@ color: #212121;
     text-align: center;
   }
   .exactiveSubHeading {
+     font-size: 16px !important;
     text-align: center;
     margin-top: 5px;
   }
 
   .exactivePra {
     text-align: center;
+    font-size: 16px !important;
+
   }
 
   .exactiveImage {
@@ -723,6 +726,7 @@ color: #212121;
 
   .exactivePraRight {
     text-align: center;
+    font-size: 16px !important;
   }
 
   .exactiveImageRight {
@@ -817,12 +821,16 @@ color: #212121;
     text-align: center;
   }
   .exactiveSubHeading {
+     font-size: 16px !important;
     text-align: center;
   }
 
   .exactivePra {
     text-align: center;
+    font-size: 16px !important;
   }
+    
+
 
   .exactiveImage {
     width: 50% !important;
@@ -850,6 +858,8 @@ color: #212121;
 
   .exactivePraRight {
     text-align: center;
+    font-size: 16px !important;
+
   }
 
   .exactiveImageRight {
@@ -947,16 +957,17 @@ color: #212121;
     font-size: 15px !important;
   }
   .exactiveSubHeading {
-    font-size: 13px !important;
+     font-size: 16px !important;
     margin-top: 5px;
   }
 
   .exactivePraRight {
-    font-size: 12px !important;
+    font-size: 16px !important;
+    
   }
 
   .exactivePra {
-    font-size: 12px !important;
+    font-size: 16px !important;
   }
 
   .aboutParaLeft {
@@ -1772,6 +1783,18 @@ color: #212121;
     max-width: 100%;
     margin: 0px;
     padding-right: 0px;
+  }
+  .descriptionRight{
+    font-size: 14px !important;
+  }
+  .descriptionLeft{
+    font-size: 14px !important;
+  }
+  .titleLeft{
+    font-size: 16px !important;
+  }
+  .titleRight{
+    font-size: 16px !important;
   }
 }
 
