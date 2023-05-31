@@ -878,14 +878,14 @@ color: #212121;
   }
 
   .descriptionLeft {
-    font-size: 14px;
+    font-size: 16px.8 !important;
   }
   .titleRight {
     font-size: 20.3695px !important;
   }
 
   .descriptionRight {
-    font-size: 14px;
+    font-size: 16.8px !important;
   }
   .descriptionBox h1 {
     color: black;
@@ -1727,9 +1727,15 @@ color: #212121;
   .ours {
     padding: 0px 0px 10px 0% !important;
   }
-  /* .titleLeft{
-  padding-top: 80px !important;
-} */
+  .titleLeft{
+  font-size: 19px !important;
+  
+}
+  .titleRight {
+  font-size: 19px !important;
+  
+}
+
 
  
 
