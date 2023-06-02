@@ -22,8 +22,6 @@ import Event from "./../components/event/event";
 import Upcomming from "../screens/upcomming-page";
 import Talent from "../screens/talent";
 
-
-
 const AppRoutes = () => {
   const data = window.scrollTo(0, 0);
 
@@ -59,10 +57,7 @@ const AppWraper = () => {
         <SEO />
         <AppRoutes />
       </LayoutOne>
-
     </Router>
-
   );
 };
-
 export default AppWraper;
