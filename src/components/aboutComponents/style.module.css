@@ -1,4 +1,12 @@
 /* --------------------------Our Journey is begins ----------------------------- */
+.imageWrapper{
+  width: 390px;
+  /* height: 340px; */
+}
+.imageWrapperRight{
+  width: 390px;
+  /* height: 340px; */
+}
 .descriptionBox {
   width: 470.33px;
   height: 238.77px;
@@ -10,28 +18,54 @@
   align-items: flex-start;
   padding: 40px;
 }
+.midle{
+  margin: 0px auto !important;
+}
+.OurJourneyMain{
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+/* @media (min-width: 1441px) and (max-width: 1920px) {
+  .journyWrapper .container-fluid {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
 
+} */
+
+.hexagone{
+  /* margin: 0px auto !important; */
+  /* margin-bottom: 200px !important; */
+}
+.hexagoneRight{
+
+  /* margin: 0px auto !important; */
+}
 .sapratorLine {
   border: 5.1056px solid #e8f1f2;
   box-shadow: 0px 4.04222px 4.04222px rgba(0, 0, 0, 0.25);
   width: 0px;
   height: 2400px;
   border-radius: 20px;
-  margin: auto;
+  margin: 0px auto !important;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
+  align-items: center !important;
+  justify-content: center !important;
   left: 0;
   right: 0px;
-  text-align: center;
+  /* text-align: center; */
   z-index: -1;
 }
 
 .arrowImage,
 .secondDivHexagon {
-  /* width: 100%; */
-  /* height: 100%; */
+  /* width: 100%;
+  height: 100%; */
   /* padding-left: 5%; */
+
   z-index: 1;
 }
 
@@ -209,8 +243,30 @@ color: #212121;
 }
 
 @media screen and (max-width: 279px) {
+  .exactiveRow{
+    margin: 0px !important;
+  }
+  .exactiveImage {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .exactiveImageRight{
+    width: 100% !important;
+    height: auto !important;
+    margin: 0px auto !important;
+
+  }
+  .imageWrapper{
+    width: 270px !important;
+    height: 160px !important;
+  }
+  .imageWrapperRight{
+    width: 270px !important;
+    height: 160px !important;
+    margin: 0px auto !important;
+  }
   .aboutImgDivReverse {
-    display: block !important;
+    display: flex !important;
   }
   .aboutImgDivRight {
     display: none !important;
@@ -243,12 +299,12 @@ color: #212121;
     font-size: 12px !important;
   }
 
-  .exactiveImage {
-    width: 50% !important;
-  }
-  .exactiveImageRight {
-    width: 50% !important;
-  }
+  /* .exactiveImage {
+    width: 80% !important;
+  } */
+  /* .exactiveImageRight {
+    width: 80% !important;
+  } */
 
   .aboutParaLeft {
     padding: 10px !important;
@@ -274,9 +330,6 @@ color: #212121;
     line-height: 20px !important;
   }
 
-  .exactiveImageRight {
-    width: 50% !important;
-  }
 
   .aboutParaRight {
     padding: 10px !important;
@@ -302,9 +355,9 @@ color: #212121;
 
   .sapratorLine {
     right: 12px;
-    margin-top: 20px;
+    margin-top: 20px !important;
     border: 2px solid rgb(202, 202, 202);
-    height: 2500px;
+    height: 2600px;
   }
 
   .descriptionLeft {
@@ -334,21 +387,23 @@ color: #212121;
 
   .secondDivHexagon {
     /* border: 1px solid red; */
-    padding-left: 20%;
+    /* padding-left: 20%; */
   }
 
   .secondDivarrowImage {
     width: 100%;
     height: 100%;
     z-index: 1 !important;
-    padding-left: 12%;
+
+    /* padding-left: 12%; */
   }
 
   .arrowImage {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     z-index: 1 !important;
-    padding-left: 12%;
+
+    /* padding-left: 12%; */
   }
 
   .descriptionBox {
@@ -358,9 +413,37 @@ color: #212121;
     padding: 15px;
   }
 }
-@media only screen and (min-width: 280px) and (max-width: 425px) {
+@media only screen and (min-width: 280px) and (max-width: 424px) {
+  .exactiveRow{
+    margin: 0px !important;
+  }
+  .exactiveImage {
+    width: 100% !important;
+    height: auto !important;
+    /* margin-left: 2% !important; */
+    /* border: 1px solid red; */
+  }
+  .exactiveImageRight{
+    width: 100% !important;
+    height: auto !important;
+   
+    /* margin: 0px auto !important; */
+
+  }
+  .imageWrapper{
+    width: 270px !important;
+    height: 230px !important;
+  }
+  .imageWrapperRight{
+    width: 270px !important; ;
+    height: 230px !important;
+    /* margin: 0px auto !important; */
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
   .aboutImgDivReverse {
-    display: block !important;
+    display: flex !important;
   }
   .aboutImgDivRight {
     display: none !important;
@@ -391,12 +474,12 @@ color: #212121;
     font-size: 16px !important;
   }
 
-  .exactiveImage {
-    width: 50% !important;
-  }
-  .exactiveImageRight {
-    width: 50% !important;
-  }
+  /* .exactiveImage {
+    width: 90% !important;
+  } */
+  /* .exactiveImageRight {
+    width: 90% !important;
+  } */
 
   .aboutParaLeft {
     padding: 10px !important;
@@ -420,10 +503,6 @@ color: #212121;
     text-align: center;
     font-size: 16px !important;
     line-height: 20px !important;
-  }
-
-  .exactiveImageRight {
-    width: 50% !important;
   }
 
   .aboutParaRight {
@@ -453,52 +532,58 @@ color: #212121;
   }
 
   .sapratorLine {
-    right: 12px;
-    margin-top: 20px;
+    right: 12.5px;
+    margin-top: 30px !important;
     border: 2px solid rgb(202, 202, 202);
-    height: 2500px;
+    height: 2300px;
   }
 
-  .descriptionLeft {
-    font-size: 12px;
-    text-align: center !important;
-    margin-top: 0px !important;
-    line-height: auto !important;
-  }
 
   .titleRight {
     font-size: 16px !important;
     text-align: center;
   }
-  .titleLeft {
-    font-size: 16px !important;
-  }
-
   .descriptionRight {
     font-size: 12px;
     text-align: center !important;
   }
-  .descriptionBox {
-    height: 315px !important;
-    margin-left: 10px;
+  .titleLeft {
+    font-size: 16px !important;
+    padding-top: 50px !important;
   }
 
+  .descriptionBox {
+    height: auto !important;
+    margin-left: 10px;
+  }
+  .descriptionLeft {
+    font-size: 14px !important;
+    text-align: center !important;
+    margin-top: 0px !important;
+    line-height: auto !important;
+    padding-bottom: 20px;
+  }
+  
+
   .secondDivHexagon {
-    padding-left: 20%;
+    /* padding-left: 20%; */
   }
 
   .secondDivarrowImage {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     z-index: 1 !important;
-    padding-left: 12%;
+ 
+    /* padding-left: 12%; */
   }
 
   .arrowImage {
     width: 100%;
     height: 100%;
     z-index: 1 !important;
-    padding-left: 12%;
+    /* align-items: center !important;
+    text-align: center !important; */
+    /* padding-left: 12%; */
   }
 
   .descriptionBox {
@@ -510,8 +595,31 @@ color: #212121;
 }
 
 @media only screen and (min-width: 425px) and (max-width: 576px) {
+  .exactiveRow{
+    margin: 0px !important;
+  }
+  .exactiveImage {
+    width: 100% !important;
+    height: auto !important;
+
+  }
+  .exactiveImageRight{
+    width: 100% !important;
+    height: auto !important;
+
+  }
+  .imageWrapper{
+    width: 270px !important;
+    height: 240px !important;
+  }
+  .imageWrapperRight{
+    width: 270px !important;
+    height: 240px !important;
+    margin: 0px auto !important;
+
+  }
   .aboutImgDivReverse {
-    display: block !important;
+    display: flex !important;
   }
   .aboutImgDivRight {
     display: none !important;
@@ -541,12 +649,12 @@ color: #212121;
     font-size: 16px !important;
   }
 
-  .exactiveImage {
-    width: 50% !important;
-  }
-  .exactiveImageRight {
-    width: 50% !important;
-  }
+  /* .exactiveImage {
+    width: 90% !important;
+  } */
+  /* .exactiveImageRight {
+    width: 90% !important;
+  } */
 
   .aboutParaLeft {
     padding: 10px !important;
@@ -571,9 +679,7 @@ color: #212121;
     font-size: 16px !important;
   }
 
-  .exactiveImageRight {
-    width: 50% !important;
-  }
+
 
   .aboutParaRight {
     padding: 10px !important;
@@ -612,20 +718,25 @@ color: #212121;
 
   .sapratorLine {
     right: 12px;
-    margin-top: 20px;
+    margin-top: 20px !important;
     border: 2px solid rgb(202, 202, 202);
-    height: 2500px;
+    height: 2300px;
   }
 
   .descriptionLeft {
-    font-size: 12px;
+    font-size: 14px !important ;
     margin-top: 0px !important;
     line-height: auto !important;
     text-align: center !important;
   }
 
+  .titleLeft {
+    font-size: 12.3695px ;
+    text-align: center;
+    /* line-height: 25px !important; */
+  }
   .titleRight {
-    font-size: 16.3695px !important;
+    font-size: 14.3695px !important;
     text-align: center;
   }
 
@@ -635,30 +746,39 @@ color: #212121;
   }
 
   .secondDivHexagon {
-    padding-left: 20%;
+    /* padding-left: 20%; */
   }
 
   .secondDivarrowImage {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     z-index: 1 !important;
-    padding-left: 12%;
+ 
+    /* padding-left: 12%; */
   }
 
   .arrowImage {
     width: 100%;
     height: 100%;
     z-index: 1 !important;
-    padding-left: 12%;
+    /* align-items: center !important;
+    text-align: center !important; */
+    /* padding-left: 12%; */
   }
 
   .descriptionBox {
-    width: 100%;
-    height: 300px;
+    height: auto;
     align-items: center;
   }
 }
 @media only screen and (min-width: 1921px) and (max-width: 2560px) {
+  .teamCaption p {
+    font-size: 17px !important;
+    color: var(--color-secondary) ;
+    font-weight: 700 !important;
+    margin: 2px 0 9px 0;
+    text-align: center;
+  }
   .descriptionBox {
     width: 100%;
     height: 300px;
@@ -666,10 +786,58 @@ color: #212121;
   .exactiveSubHeading {
     margin-top: 7px;
   }
+  .sapratorLine {
+    /* right: 12px; */
+    /* margin-top: 20px;
+    border: 2px solid rgb(202, 202, 202); */
+    height: 2750px;
+  }
+  .hexagoneRight {
+    width: 100% !important;
+  }
+  .exactiveImage {
+    min-width: 290px !important;
+    height: 100% !important;
+  }
+
+  .exactiveImageRight {
+    min-width: 290px !important;
+    height: 100% !important;
+  }
+  .hexagone{
+    width: 100% !important;
+  }
+  .exactivePra{
+    font-size: 20px !important;
+  }
+  .exactivePraRight{
+    font-size: 20px !important;
+  }
 }
 
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .exactiveRow{
+    margin: 0px !important;
+  }
+  .exactiveImage {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .exactiveImageRight{
+    width: 100% !important;
+    height: auto !important;
+  }
+  .imageWrapper{
+    width: 270px !important;
+    height: 240px !important;
+  }
+  .imageWrapperRight{
+    width: 270px !important;
+    height: 240px !important;
+    margin: 0px auto !important;
+  }
+
   .aboutImgDivReverse {
     display: block !important;
   }
@@ -685,8 +853,15 @@ color: #212121;
     border: 5px solid #176fae;
   }
 
+  .exactiveHeadingRight {
+    text-align: center;
+    font-size: 19px !important;
+    padding-bottom: 10px;
+  }
   .exactiveHeading {
     text-align: center;
+    font-size: 19px !important;
+    padding-bottom: 10px;
   }
   .exactiveSubHeading {
      font-size: 16px !important;
@@ -699,14 +874,6 @@ color: #212121;
     font-size: 16px !important;
 
   }
-
-  .exactiveImage {
-    width: 50% !important;
-  }
-  .exactiveImageRight {
-    width: 50% !important;
-  }
-
   .aboutParaLeft {
     padding: 10px !important;
   }
@@ -729,9 +896,7 @@ color: #212121;
     font-size: 16px !important;
   }
 
-  .exactiveImageRight {
-    width: 50% !important;
-  }
+
 
   .aboutParaRight {
     padding: 10px !important;
@@ -755,25 +920,37 @@ color: #212121;
   }
 
   .descriptionBox {
-    width: 100%;
-    height: 300px;
+    /* width: 100%; */
+    height: auto;
     align-items: center;
   }
 
   .sapratorLine {
-    right: 12px;
-    margin-top: 20px;
+    right: 12px !important;
+    margin-top: 20px !important;
     border: 2px solid rgb(202, 202, 202);
-    height: 2500px;
+    height: 2330px;
   }
 
   .descriptionLeft {
-    font-size: 14px;
+    font-size: 16px !important;
     text-align: center !important;
   }
 
+  .descriptionBox {
+    height: auto !important;
+    margin-left: 10px;
+  }
+
+  .titleLeft {
+    font-size: 19.3695px !important;
+    font-weight: 600 !important;
+    text-align: center;
+    padding-top: 20px;
+  }
   .titleRight {
-    font-size: 20.3695px !important;
+    font-size: 17.3695px !important;
+    font-weight: 600 !important;
     text-align: center;
   }
 
@@ -783,29 +960,50 @@ color: #212121;
   }
 
   .secondDivHexagon {
-    padding-left: 20%;
+    /* padding-left: 20%; */
   }
 
   .secondDivarrowImage {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     z-index: 1 !important;
-    padding-left: 12%;
+
+    /* padding-left: 12%; */
   }
 
   .arrowImage {
     width: 100%;
     height: 100%;
     z-index: 1 !important;
-    padding-left: 12%;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+  .aboutParagraph{
+    padding-left:10% !important ;
+  }
+  .ours{
+    padding-left:10% !important ;
+  }
+  .Vision{
+    padding-left:10% !important ;
+
+  }
+  .imageWrapper{
+    width: 270px !important;
+    height: 240px !important;
+  }
+  .imageWrapperRight {
+    width: 270px !important;
+    height: 240px !important;
+  } 
   .aboutImgDivReverse {
     display: block !important;
   }
   .aboutImgDivRight {
+    /* display:  !important; */
+  }
+  .aboutImgDivReverse{
     display: none !important;
   }
   .hexagone {
@@ -833,10 +1031,13 @@ color: #212121;
 
 
   .exactiveImage {
-    width: 50% !important;
+    min-width: 260px !important;
+    height: 100% !important;
+    padding: none !important;
   }
   .exactiveImageRight {
-    width: 50% !important;
+    min-width: 260px !important;
+    height: 100% !important;
   }
 
   .aboutParaLeft {
@@ -854,6 +1055,13 @@ color: #212121;
 
   .exactiveHeadingRight {
     text-align: center;
+    font-size: 19px !important;
+    padding-bottom: 10px;
+  }
+  .exactiveHeading {
+    text-align: center;
+    font-size: 19px !important;
+    padding-bottom: 10px;
   }
 
   .exactivePraRight {
@@ -862,9 +1070,6 @@ color: #212121;
 
   }
 
-  .exactiveImageRight {
-    width: 50% !important;
-  }
 
   .aboutParaRight {
     padding: 10px !important;
@@ -909,7 +1114,7 @@ color: #212121;
   }
 
   .descriptionLeft {
-    font-size: 14px;
+    font-size: 16px !important;
   }
 
   .titleRight {
@@ -921,40 +1126,50 @@ color: #212121;
   }
 
   .secondDivHexagon {
-    padding-left: 20%;
+    /* padding-left: 20%; */
   }
 
   .secondDivarrowImage {
     width: 100%;
     height: 100%;
     z-index: 1 !important;
+   
   }
 
   .arrowImage {
     width: 100%;
     height: 100%;
     z-index: 1 !important;
+    /* align-items: center !important;
+    text-align: center !important; */
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .exactiveImage {
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .hexagoneRight {
     width: 100% !important;
+  }
+  .exactiveImage {
+    min-width: 290px !important;
     height: 100% !important;
   }
 
   .exactiveImageRight {
-    width: 100% !important;
+    min-width: 290px !important;
     height: 100% !important;
-    padding: 7px 0px !important;
+    padding: 15px 7px !important;
+  }
+  .hexagone{
+    width: 100% !important;
   }
 
   .exactiveHeadingRight {
-    font-size: 18px !important;
+    font-size: 19px !important;
   }
 
   .exactiveHeading {
-    font-size: 15px !important;
+    font-size: 19px !important;
   }
   .exactiveSubHeading {
      font-size: 16px !important;
@@ -962,20 +1177,20 @@ color: #212121;
   }
 
   .exactivePraRight {
-    font-size: 16px !important;
+    font-size: 18px !important;
     
   }
 
   .exactivePra {
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
 
   .aboutParaLeft {
-    padding: 25px 9% 10px 0px !important;
+    padding: 18px 7% 6px 0px !important
   }
 
   .aboutParaRight {
-    padding: 25px 0px 10px 10% !important;
+    padding: 18px 0px 10px 10% !important;
   }
 
   .memberContens {
@@ -983,6 +1198,7 @@ color: #212121;
   }
 
   .sapratorLine {
+    right: 12px !important;
     z-index: -1 !important;
   }
 
@@ -1003,25 +1219,54 @@ color: #212121;
   }
 
   .secondDivHexagon {
-    padding-left: 20%;
+    /* padding-left: 20%; */
   }
 
   .secondDivarrowImage {
     width: 100%;
     height: 100%;
     z-index: 1 !important;
-    padding-left: 10%;
+  
+    /* padding-left: 10%; */
+  }
+  .aboutParagraph{
+    padding-left:10% !important ;
+  }
+  .ours{
+    padding-left:10% !important ;
+  }
+  .Vision{
+    padding-left:10% !important ;
+
   }
 
   .arrowImage {
     width: 100%;
     height: 100%;
     z-index: 1 !important;
-    padding-left: 10%;
+    /* align-items: center !important;
+    text-align: center !important; */
+    /* padding-left: 10%; */
   }
 }
 
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .hexagoneRight {
+    width: 100% !important;
+  }
+  .exactiveImage {
+    min-width: 290px !important;
+    height: 340px !important;
+  }
+
+  .exactiveImageRight {
+    min-width: 290px !important;
+    min-height: 320px !important;
+    /* padding: 15px 7px !important; */
+  }
+  .hexagone{
+    width: 100% !important;
+  }
   .sapratorLine {
     z-index: -1 !important;
   }
@@ -1041,27 +1286,104 @@ color: #212121;
   .descriptionRight {
     font-size: 14px;
   }
+  .exactiveHeadingRight {
+    font-size: 19px !important;
+    padding-bottom: 10px;
+  }
+  .exactiveSubHeading{
+    font-size: 16px !important;
+  }
+  .exactiveHeading {
+    font-size: 19px !important;
+    padding-bottom: 10px;
+  }
 
   .secondDivHexagon {
-    padding-left: 20%;
+    /* padding-left: 20%; */
+  }
+  .exactivePra{
+    font-size: 19px;
+  }
+  .exactivePraRight{
+    font-size: 19px;
   }
 
   .secondDivarrowImage {
     width: 100%;
     height: 100%;
     z-index: 1 !important;
-    padding-left: 8%;
+  
+    /* padding-left: 8%; */
   }
 
   .arrowImage {
     width: 100%;
     height: 100%;
     z-index: 1 !important;
-    padding-left: 8%;
+    /* align-items: center !important;
+    text-align: center !important; */
+    /* padding-left: 8%; */
   }
 }
+@media only screen and (min-width: 1401px) and (max-width: 1920px) {
+  .hexagoneRight {
+    width: 100% !important;
+  }
+  .exactiveImage {
+    min-width: 290px !important;
+    min-height: 330px !important;
+  }
+
+  .exactiveImageRight {
+    min-width: 290px !important;
+    min-height: 330px !important;
+    /* padding: 15px 7px !important; */
+  }
+  .hexagone{
+    width: 100% !important;
+  }
+  .exactiveHeadingRight {
+    font-size: 19px !important;
+    padding-bottom: 10px;
+  }
+  .exactiveHeading {
+    font-size: 19px !important;
+    padding-bottom: 10px;
+  }
+  .exactiveSubHeading{
+    font-size: 16px !important;
+
+  }
+
+}
+
+/* @media screen and (max-width: 767px) {
+  .exactiveImage {
+    width: 60% !important;
+    height: auto !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .exactiveImage {
+    width: 80% !important;
+    height: auto !important;
+  }
+} */
 
 /* --------------------------******* Our Journey is ends here *******----------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* -------------------------Ourteam work begins------------------------  */
 
@@ -1305,6 +1627,16 @@ color: #212121;
 }
 
 /* -------------------------******* Ourteam work ends here *******------------------------  */
+
+
+
+
+
+
+
+
+
+
 /* -----------------------------Our exactive biging------------------------ */
 
 .aboutImgDiv {
@@ -1333,13 +1665,13 @@ color: #212121;
   display: none;
 }
 .exactiveImage {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   padding: 17px;
 }
 
 .exactiveImageRight {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   padding: 17px;
 }
@@ -1348,6 +1680,8 @@ color: #212121;
   display: block;
   /* margin: 0 auto; */
   width: 90%;
+  max-width: 1200px;
+  /* min-width: 800px !important; */
   padding: 5px;
   background: #176fae;
   box-sizing: border-box;
@@ -1365,6 +1699,7 @@ color: #212121;
   display: block;
   margin: 0 auto;
   width: 90%;
+  max-width: 1200px;
   padding: 5px;
   background: #176fae;
   margin-right: 0%;
@@ -1460,6 +1795,12 @@ color: #212121;
 }
 
 /* -----------------------------******* Our exactive ends here********------------------------ */
+
+
+
+
+
+
 
 /* -----------------------------Our Goal Statement begins here-------------------------------- */
 .ourGoalStatHexagon {
@@ -1739,13 +2080,14 @@ color: #212121;
     padding: 0px 0px 10px 0% !important;
   }
   .titleLeft{
-  font-size: 19px !important;
+  font-size: 16px !important;
   
 }
   .titleRight {
-  font-size: 19px !important;
+  font-size: 16px !important;
   
 }
+
 
 
  
@@ -1785,10 +2127,10 @@ color: #212121;
     padding-right: 0px;
   }
   .descriptionRight{
-    font-size: 14px !important;
+    font-size: 13px !important;
   }
   .descriptionLeft{
-    font-size: 14px !important;
+    font-size: 13px !important;
   }
   .titleLeft{
     font-size: 16px !important;
@@ -1799,6 +2141,16 @@ color: #212121;
 }
 
 /* -----------------------------******* Our Goal Statement ends here ******-------------------------------- */
+
+
+
+
+
+
+
+
+
+
 
 /* --------------------------------Our partner begins here-------------------------------- */
 
@@ -1927,3 +2279,13 @@ a.Button_cta {
     width: 90%;
   }
 }
+.ceoIntro .container-fluid{
+  width: 100% !important;
+}
+.fullscreen{
+  max-width: 1600px;
+}
+.containerWraper{
+  max-width: 1600px;
+}
+
