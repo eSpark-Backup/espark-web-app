@@ -64,7 +64,7 @@ function Herosection({
                   }}
                 ></p>
               )}
-              <img src={images} class={`${styles.images}`} alt="image" />
+              <img src={images} class={`${styles.images}`} alt="image"/>
             </div>
           </div>
         </div>
