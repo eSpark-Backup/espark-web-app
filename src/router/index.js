@@ -60,5 +60,4 @@ const AppWraper = () => {
     </Router>
   );
 };
-
 export default AppWraper;
