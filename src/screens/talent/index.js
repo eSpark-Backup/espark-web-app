@@ -1,10 +1,13 @@
-import React from 'react'
-import Herosection from '../../components/Sections/Hero/Herosection';
+import React from "react";
+import Herosection from "../../components/Sections/Hero/Herosection";
 import heroImage from "../../assets/images/talent-image/DASH BOARD.svg";
+import WhyeSparks from "../../components/Talent-component/whyEsparks";
+import SectionTitle from "../../components/sectionTitle";
+import style from "./style.module.css";
 
 const Talent = () => {
   return (
-    <div>   
+    <div>
       <Herosection
         title={`Hire employees in Pakistan, hassle-free`}
         paragraph="With eSpark, your business can easily hire employees in Pakistan.
@@ -14,9 +17,24 @@ const Talent = () => {
         ShowButton={true}
         buttonText={"Hire a Talent"}
         buttonUlr={"newDiv_0"}
-        buttonDesign={13}     
-      />   
+        buttonDesign={13}
+      />
+      <SectionTitle
+        heading={"Why eSpark?"}
+        paragraph={<p>We Have Completed 100+ Projects Successfully</p>}
+      />
+      <WhyeSparks />
+      <div className={style.hiretalent}>
+        <p className={style.para}>
+          eSpark makes growing remote and international
+          <br />
+          teams effortless{" "}
+        </p>
+        <div className={style.button}>
+          <button className={style.butntext}>Schedule Event</button>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 export default Talent;
