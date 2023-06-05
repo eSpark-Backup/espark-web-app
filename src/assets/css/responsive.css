@@ -540,6 +540,30 @@
 
 
 
+@media (max-width: 768px) {
+  .startContents{
+  font-size: 28.7684px;
+
+  }
+  .startProjects{
+    font-size: 22.6246px !important;
+
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .startContents{
+  font-size: 28.7684px;
+
+  }
+  .startProjects{
+
+    font-size: 24.6246px !important;
+
+  }
+
+}
 @media (max-width: 412px) {
   .sizeControl {
     margin-top: 30px !important;
