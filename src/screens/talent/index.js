@@ -2,6 +2,7 @@ import React from 'react'
 import Herosection from '../../components/Sections/Hero/Herosection';
 import heroImage from "../../assets/images/talent-image/DASH BOARD.svg";
 import HowItWorks from '../../components/Talent-component/HowItWorks/HowItWorks';
+import Benefit from '../../components/Talent-component/benefit';
 
 const Talent = () => {
   return (
@@ -17,6 +18,7 @@ const Talent = () => {
         buttonUlr={"newDiv_0"}
         buttonDesign={13}     
       />   
+      <Benefit />
       <HowItWorks />
     </div>
   )
