@@ -1,6 +1,7 @@
 import React from "react";
 import Herosection from "../../components/Sections/Hero/Herosection";
 import heroImage from "../../assets/images/talent-image/DASH BOARD.svg";
+import HowItWorks from '../../components/Talent-component/HowItWorks/HowItWorks';
 import WhyeSparks from "../../components/Talent-component/whyEsparks";
 import SectionTitle from "../../components/sectionTitle";
 import style from "./style.module.css";
@@ -17,9 +18,10 @@ const Talent = () => {
         ShowButton={true}
         buttonText={"Hire a Talent"}
         buttonUlr={"newDiv_0"}
-        buttonDesign={13}
-      />
-      <SectionTitle
+        buttonDesign={13}     
+      />   
+       <HowItWorks />
+        <SectionTitle
         heading={"Why eSpark?"}
         paragraph={<p>We Have Completed 100+ Projects Successfully</p>}
       />
@@ -34,6 +36,7 @@ const Talent = () => {
           <button className={style.butntext}>Schedule Event</button>
         </div>
       </div>
+     
     </div>
   );
 };
