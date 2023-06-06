@@ -22,11 +22,13 @@
     width: 100%;
     padding-top:70px;
   }
-  .benefitUl{
+  /* .benefitUl{
     max-width: 740px;
-  }
+  } */
 
-
+.icondiv{
+  width: 60px;
+}
  
  
 

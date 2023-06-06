@@ -13,16 +13,20 @@ const Benefit = () => {
         </div>
         <div className="col-lg-6 col-md-12">
           <div className={styles.benefitUl}>
-            <p className={`benefitPara ${styles.benefitPara}`}>Enjoy the benefits of<br /> having everything in a <br />single platform</p>
+            <p className={`benefitPara ${styles.benefitPara}`}>Enjoy the benefits of having everything in a single platform</p>
             <ul className={`${styles.benefitsList} list-unstyled`}>
               {benefit.map((items) => {
                 return (
 
                  <>
                   <div className="col-sm-12 d-flex my-2">
-                    <div className="col-sm-1 trueIcons"> <img src={icons} className={`${styles.ticks}`} alt="" /> </div>
+                    <div className="col-sm-1 trueIcons"> <img src={icons} className={`ticks ${styles.ticks}`} alt="" /> </div>
                     <div className={`col-sm-11 benefits ${styles.benefits}`}>{items.contents}</div>
                   </div>
+                  {/* <div className={ `d-flex my-2 ${styles.mainWraparr}` }>
+                    <div className={styles.icondiv}> <img src={icons} className={`tick ${styles.tics}`} alt="" /> </div>
+                    <div className={`  ${styles.benefis}`}>{items.contents}</div>
+                  </div> */}
                 
                  </>
                 );
