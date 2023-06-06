@@ -1,0 +1,38 @@
+.benefits {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160.02%;
+    color: #3A3A3A ;
+    margin-top:-2px;
+
+  }
+
+  .benefitPara {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 160.02%;
+    color:#3359A2;
+    padding-top: 80px;
+    padding-bottom:20px;
+  
+  }
+  .benefitsImage{
+    width: 100%;
+    padding-top:70px;
+  }
+  /* .benefitUl{
+    max-width: 740px;
+  } */
+
+.icondiv{
+  margin-right: 13px;
+}
+
+ 
+ 
+
+ 
+ 
+          
