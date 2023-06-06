@@ -4,7 +4,7 @@ import heroImage from "../../assets/images/talent-image/DASH BOARD.svg";
 import HowItWorks from "../../components/Talent-component/HowItWorks/HowItWorks";
 import HirATalentCard from "../../components/Talent-component/HireATalentCard/HireATalentCard";
 import SaveTimeBudget from "../../components/Talent-component/SaveTimeBudget";
-import HashLinkObserver from "react-hash-link";
+import StartProject from "../../components/Talent-component/Start-Projects/StartProject";
 
 const Talent = () => {
   return (
@@ -23,6 +23,7 @@ const Talent = () => {
       <HowItWorks />
       <SaveTimeBudget />
       <HirATalentCard />
+      <StartProject />
     </div>
   );
 };
