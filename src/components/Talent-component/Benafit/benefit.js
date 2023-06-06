@@ -4,9 +4,6 @@ import { benefit } from "../../../helper/Talent";
 import styles from './style.module.css';
 import icons from '../../../assets/images/why-espark/icons.svg';
 import '../../../assets/css/responsive.css';
-// import '../../assets/css/responsive.css';
-// import { ReactSVG } from 'react-svg'
-
 const Benefit = () => {
   return (
     <div className="container-fluid">
@@ -28,10 +25,6 @@ const Benefit = () => {
                   </div>
                 
                  </>
-                  // <li className={`benefits ${styles.benefits} ${styles.responsiveBenefits} d-flex align-items-center mb-2`}>
-                  //   <img src={icons} className={styles.ticks} alt="" /> 
-                  //   <span className="ms-2">{items.contents}</span>
-                  // </li>
                 );
               })}
             </ul>
