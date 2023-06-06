@@ -1,0 +1,24 @@
+.hrPlateformImage {
+  width: 100%;
+  height: auto;
+}
+
+.hrPlatformTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px ;
+  line-height: 160.02%;
+  color: #3359a2;
+}
+.hrPlateformPara {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160.02%;
+  color: #3a3a3a;
+}
+/* .hrContainer{
+  max-width: 100%;
+} */
