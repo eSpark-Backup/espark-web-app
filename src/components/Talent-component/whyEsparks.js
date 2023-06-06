@@ -39,12 +39,14 @@ const WhyeSparks = () => {
 
   return (
     <div>
-      <div className={`container-fluid ${styles.hiringContainer}`}>
+      <div
+        className={`container-fluid ${styles.hiringContainer} hiringContainer`}
+      >
         {hiringWhyEspark.map((items) => {
           return (
             <div>
-              <div className={` ${styles.box}`}>
-                <div className="pb-3" >
+              <div className={` ${styles.box} hiringContainerBox`}>
+                <div className="pb-3">
                   <img src={items.icon} className={styles.boxImage} alt="" />
                 </div>
                 <div>
@@ -62,7 +64,7 @@ const WhyeSparks = () => {
         })}
       </div>
 
-      <div className={styles.hiringContainerMobile}>
+      <div className={`${styles.hiringContainerMobile} hiringContainerMobile`}>
         <Slider {...settings} fade={true}>
           {hiringWhyEspark.map((items) => {
             return (
