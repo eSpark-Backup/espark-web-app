@@ -10,14 +10,14 @@ export const hiringWhyEspark  = [
     ends: 1000,
     text: "Projects Completed",
   },
-  {
+  { 
     icon: search,
     starts: 300,
     ends: 400,
     text: "Positive Reviews",
   },
   {
-    icon: man,
+   icon: man,
     starts: 80,
     ends: 100,
     text: "Team Members",

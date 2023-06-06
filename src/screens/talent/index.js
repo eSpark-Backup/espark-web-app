@@ -38,12 +38,14 @@ const Talent = () => {
       />
       <WhyeSparks />
       <div className={style.hiretalent}>
-        <p className={style.para}>
-          eSpark makes growing remote and international
-          <br />
-          teams effortless{" "}
-        </p>
-        <div className={style.button}>
+        <SectionTitle
+          height={0}
+          padding={3}
+          heading={
+            "eSpark makes growing remote and international teams effortless"
+          }
+        />
+        <div className={style.whyButton}>
           <button className={style.butntext}>Schedule Event</button>
         </div>
       </div>

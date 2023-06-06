@@ -182,7 +182,7 @@ color: rebeccapurple;
     /* flex-grow: 1; */
   }
   .style_box__ZdyFk {
-    margin: 20px 20px 0px 20px ;
+    margin: 20px 20px 0px 20px;
   }
   .style_para__LS0z6 {
     font-size: 19px;
@@ -310,11 +310,11 @@ color: rebeccapurple;
     width: 100% !important;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly !important;
+    justify-content: space-evenly !important;
     /* flex-grow: 1; */
   }
   .style_box__ZdyFk {
-    margin: 20px 10px 20px 10px ;
+    margin: 20px 10px 20px 10px;
   }
   .style_para__LS0z6 {
     font-size: 10px;
@@ -439,10 +439,42 @@ color: rebeccapurple;
 
 /* 0px to 425px (Smaller Mobile Devices) */
 @media (max-width: 425px) {
+  .hrPlatformTitle {
+    font-size: 28px !important;
+    line-height: 132.4% !important;
+  }
+  .benefitPara {
+    font-size: 28px !important;
+    line-height: 132.02% !important;
+    padding-right: 5px !important;
+  }
+  .benefits {
+    font-family: "Poppins" !important;
+    font-style: normal !important;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 140% !important;
+  }
+  .hrPlateformPara {
+    font-family: "Poppins" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    color: #3a3a3a;
+    margin: 30px 0px !important;
+  }
   br {
     display: none !important;
   }
-
+  .style_butntext__YxEPq {
+    font-size: 20px !important;
+  }
+  .style_hiringContainer__\+ZaSq {
+    display: none !important;
+  }
+  .style_hiringContainerMobile__VD5Cv {
+    display: block !important;
+  }
   .containerMarginTop {
     margin-top: 0px !important ;
   }
@@ -628,47 +660,42 @@ color: rebeccapurple;
     margin-top: 30px !important;
     width: 350px !important;
   }
-  .benefitPara {
+  /* .benefitPara {
     font-size: 28px !important;
     line-height: 132.02% !important;
-  }
-  .hrPlatformTitle {
-    font-size: 28px !important;
-    line-height: 132.4% !important;
-  }
-  .benefitPara {
+  } */
+  
+  /* .benefitPara {
     padding-right: 10px !important;
-  }
+  } */
 }
 
 @media (max-width: 375px) {
+  .carousel-indicators {
+    display: none;
+  }
+
   .sizeControl {
     margin-top: 30px !important;
     width: 310px !important;
   }
-  .hrPlatformTitle {
+  /* .hrPlatformTitle {
     padding-right: 40px !important;
-  }
-  .benefitPara {
+  } */
+  /* .benefitPara {
     font-size: 28px !important;
     line-height: 132.02% !important;
     padding-right: 70px !important;
-  }
-  .benefits {
-    font-family: "Poppins" !important;
-    font-style: normal !important;
-    font-weight: 400;
-    font-size: 16px !important;
-    line-height: 140% !important;
-  }
+  } */
+  
 }
 
 @media (max-width: 320px) {
-  .benefitPara {
+  /* .benefitPara {
     font-size: 28px !important;
     line-height: 132.02% !important;
     padding-right: 5px !important;
-  }
+  } */
 
   .sizeControl {
     margin-top: 30px !important;
