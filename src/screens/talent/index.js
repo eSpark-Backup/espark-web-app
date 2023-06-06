@@ -5,7 +5,6 @@ import HowItWorks from "../../components/Talent-component/HowItWorks/HowItWorks"
 import WhyeSparks from "../../components/Talent-component/whyEsparks";
 import SectionTitle from "../../components/sectionTitle";
 import style from "./style.module.css";
-import HowItWorks from "../../components/Talent-component/HowItWorks/HowItWorks";
 import HirATalentCard from "../../components/Talent-component/HireATalentCard/HireATalentCard";
 import SaveTimeBudget from "../../components/Talent-component/SaveTimeBudget";
 import StartProject from "../../components/Talent-component/Start-Projects/StartProject";
