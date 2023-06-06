@@ -2,7 +2,8 @@ import React from 'react'
 import Herosection from '../../components/Sections/Hero/Herosection';
 import heroImage from "../../assets/images/talent-image/DASH BOARD.svg";
 import HowItWorks from '../../components/Talent-component/HowItWorks/HowItWorks';
-import Benefit from '../../components/Talent-component/benefit';
+import Benefit from '../../components/Talent-component/Benafit/benefit';
+import Hrplatform from '../../components/Talent-component/HrPlatform/HrPlatform';
 
 const Talent = () => {
   return (
@@ -20,6 +21,7 @@ const Talent = () => {
       />   
       <Benefit />
       <HowItWorks />
+      <Hrplatform />
     </div>
   )
 }
