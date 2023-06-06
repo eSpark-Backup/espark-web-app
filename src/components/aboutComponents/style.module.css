@@ -121,8 +121,8 @@ color: #212121;
 }
 
 .hexagon:hover {
-  background: linear-gradient(-340deg, var(--color-primary) 0%, #176fae 200%);
-  /* background: linear-gradient(-340deg, var(--color-primary) 10%, #176fae 110%); */
+  background-color: #0d9587;
+  /* background: linear-gradient(-340deg, var(--color-primary) 0%, #176fae 200%); */
   box-shadow: none !important;
   border: none !important;
 }
