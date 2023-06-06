@@ -19,14 +19,10 @@ const Benefit = () => {
                 return (
 
                  <>
-                  <div className="col-sm-12 d-flex my-2">
-                    <div className="col-sm-1 trueIcons"> <img src={icons} className={`ticks ${styles.ticks}`} alt="" /> </div>
-                    <div className={`col-sm-11 benefits ${styles.benefits}`}>{items.contents}</div>
+                  <div className={ `d-flex my-2 ${styles.mainWraparr}` }>
+                    <div className={` ${styles.icondiv}`}> <img src={icons} className={`tick ${styles.tick}`} alt="" /> </div>
+                    <div className={` benefits ${styles.benefits}`}>{items.contents}</div>
                   </div>
-                  {/* <div className={ `d-flex my-2 ${styles.mainWraparr}` }>
-                    <div className={styles.icondiv}> <img src={icons} className={`tick ${styles.tics}`} alt="" /> </div>
-                    <div className={`  ${styles.benefis}`}>{items.contents}</div>
-                  </div> */}
                 
                  </>
                 );
