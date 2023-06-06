@@ -172,7 +172,7 @@
     font-size: 12px;
   }
   .benefits {
-    font-size: 15px !important; 
+    font-size: 15px !important;
   }
 
   /* Home Styling */
@@ -555,181 +555,31 @@
   }
 }
 
-@media (min-width: 1440px) and (max-width: 1560px) {
-  /* .trueIconsPic {
-    width: 70%;
-  } */
-  .trueIcons {
-    margin-right: -5px !important;
-    /* border: 1px solid rgb(16, 233, 222); */
-    padding-top: 2px;
-  }
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  .trueIcons {
-    margin-right: -16px;
-  }
-  .ticks {
-    width: 50%;
-    height: auto !important;
-    margin-top: -2px;
-  }
-}
-@media (min-width: 769px) and (max-width: 892px) {
-  .trueIcons {
-    margin-right: -28px;
-  }
-  .ticks {
-    width: 40%;
-    height: auto !important;
-    margin-top: -2px;
-  }
-}
-@media (min-width: 893px) and (max-width: 991px) {
-  .trueIcons {
-    margin-right: -34px;
-  }
-  .ticks {
-    width: 35%;
-    height: auto !important;
-    margin-top: -3px;
-  }
-}
-@media (min-width: 993px) and (max-width: 1440px) {
-  .trueIcons {
-    margin-right: -5px !important;
-    padding-top: 2px;
-  }
-  .ticks {
-    width: 60%;
-    height: auto !important;
-    margin-top: -2px;
-  }
-}
-@media (min-width: 993px) {
-  .trueIcons {
-    margin-right: -17px;
-    padding-top: 2px;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1200px) {
-  .benefitPara {
-    font-size: 40px !important;
-  }
-  .hrPlatformTitle {
-    font-size: 40px !important;
-  }
-  .ticks {
-    width: 60%;
-    height: auto;
-  }
-
-}
-@media (min-width: 576px) and (max-width: 1024px) {
-  .hrPlateformPara {
-    font-size: 15px !important;
-  }
-  
-}
-@media (min-width: 1020px) and (max-width: 1024px) {
-  .ticks {
-    width: 55%;
-    height: auto;
-    margin-top: -4px;
-  }
- 
-
-  .benefits {
-    font-size: 15px !important;
-  }
-  .benefitPara {
-    font-size: 30px !important;
-  }
-  .hrPlatformTitle {
-    font-size: 30px !important;
-  }
-}
-@media (min-width: 576px) and (max-width: 991px) {
-  .hrPlateformPara {
-    padding-bottom: 40px !important ;
-  }
-  .hrPlatformTitle {
-    padding-bottom: 40px !important ;
-  }
-  .benefits {
-    font-size: 15px !important; 
-  }
-  /* .ticks{
-    width: 35%;
-    padding-top: -16px !important;
-  } */
-}
-@media (max-width: 576px) {
-  .benefitPara {
-    font-size: 28px !important;
-    line-height: 132.4% !important;
-    padding-bottom: 40px !important ;
-  }
-  .hrPlatformTitle {
-    font-size: 28px !important;
-    line-height: 132.4% !important;
-  }
-  .hrPlateformPara {
-    font-family: "Poppins" !important;
-    font-style: normal !important;
-    font-weight: 400 !important;
-    font-size: 16px !important;
-    line-height: 140% !important;
-    padding: 40px 0px;
-  }
-  .benefits {
-    font-family: "Poppins";
-    font-style: normal !important;
-    font-weight: 400;
-    font-size: 16px !important;
-    line-height: 140% !important;
-    color: #3a3a3a !important;
-    margin-top: 0px !important;
-
-  }
-  .trueIcons {
-    margin-right: 14px;
-  }
-}
-
 @media (min-width: 576px) and (max-width: 767px) {
-  .startContents{
-  font-size: 28.7684px;
-
+  .startContents {
+    font-size: 28.7684px;
   }
-  .startProjects{
+  .startProjects {
     font-size: 42px !important;
-
   }
-
 }
 @media (max-width: 575px) {
-  .startContents{
+  .startContents {
     font-size: 26px !important;
     font-weight: 400 !important;
   }
-  .startProjects{
+  .startProjects {
     font-size: 42px !important;
   }
-
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .startContents{
-  font-size: 23.7684px !important;
-
+  .startContents {
+    font-size: 23.7684px !important;
   }
-  .startProjects{
-
+  .startProjects {
     font-size: 42.6246px !important;
-
   }
-
 }
 @media (max-width: 412px) {
   .sizeControl {
