@@ -521,26 +521,6 @@
 .ReactCollapse--collapse {
   transition: height 500ms;
 }
-/* @media (min-width: 993px) and (max-width: 1200px) {
-  .benefitPara {
-    font-size: 35px !important;
-    line-height: 130.02% !important;
-  }
-  .hrPlatformTitle {
-    font-size: 35px !important;
-    line-height: 130.02% !important;
-  }
-}
-@media (min-width: 769px) and (max-width: 992px) {
-  .benefitPara {
-    font-size: 35px !important;
-    line-height: 130.02% !important;
-  }
-  .hrPlatformTitle {
-    font-size: 35px !important;
-    line-height: 130.02% !important;
-  }
-} */
 @media (min-width: 1920px) and (max-width: 2560px) {
   .hrPlatformTitle {
     font-family: "Poppins" !important;
@@ -568,30 +548,15 @@
   }
 
 }
-@media (min-width: 577px) and (max-width: 1200px) {
-  .benefitPara {
-    font-size: 35px !important;
-    line-height: 130.02% !important;
-  }
-  .hrPlatformTitle {
-    font-size: 35px !important;
-    line-height: 130.02% !important;
-  }
-}
-/* @media (max-width: 768px) {
-  .benefitPara {
-    font-size: 30px !important;
-    line-height: 130.02% !important;
-  }
-  .hrPlatformTitle {
-    font-size: 30px !important;
-    line-height: 130.02% !important;
-  }
-} */
 
 @media (min-width: 1440px) and (max-width: 1560px) {
-  .trueIconsPic {
+  /* .trueIconsPic {
     width: 70%;
+  } */
+  .trueIcons {
+    margin-right: -5px !important;
+    /* border: 1px solid rgb(16, 233, 222); */
+    padding-top: 2px;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -612,7 +577,7 @@
 }
 @media (min-width: 993px) and (max-width: 1440px) {
   .trueIcons {
-    margin-right: -1px;
+    margin-right: -5px !important;
     padding-top: 2px;
   }
 }
@@ -622,15 +587,52 @@
     padding-top: 2px;
   }
 }
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .benefitPara {
+    font-size: 40px !important;
+  }
+  .hrPlatformTitle {
+    font-size: 40px !important;
+  }
+
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .hrPlateformPara {
+    font-size: 15px !important;
+ 
+
+  }
+  .benefits {
+    font-size: 15px !important;
+  }
+  .benefitPara {
+    font-size: 30px !important;
+  }
+  .hrPlatformTitle {
+    font-size: 30px !important;
+  }
+
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .hrPlateformPara {
+    padding-bottom:40px !important ;
+
+  }
+  .hrPlatformTitle {
+    padding-bottom:40px !important ;
+  }
+
+}
 @media (max-width: 576px) {
   .benefitPara {
     font-size: 28px !important;
     line-height: 132.4% !important;
-    /* padding-right: 90px !important; */
+    padding-bottom:40px !important ;
+
   }
   .hrPlatformTitle {
     font-size: 28px !important;
-    line-height: 132.4% !important;
+    line-height: 132.4% !important;  
   }
   .hrPlateformPara {
     font-family: "Poppins" !important;
@@ -638,7 +640,7 @@
     font-weight: 400 !important;
     font-size: 16px !important;
     line-height: 140% !important;
-    /* border: 1px solid red; */
+    padding: 40px 0px;
   }
   .benefits {
     font-family: "Poppins";
@@ -657,12 +659,10 @@
   .sizeControl {
     margin-top: 30px !important;
     width: 350px !important;
-    /* margin: 0 auto!important; */
   }
   .benefitPara {
     font-size: 28px !important;
     line-height: 132.02% !important;
-    /* border: 2px solid blue; */
   }
   .hrPlatformTitle {
     font-size: 28px !important;
@@ -677,7 +677,6 @@
   .sizeControl {
     margin-top: 30px !important;
     width: 310px !important;
-    /* margin: 0 auto!important; */
   }
   .hrPlatformTitle {
     padding-right: 40px !important;
@@ -685,7 +684,6 @@
   .benefitPara {
     font-size: 28px !important;
     line-height: 132.02% !important;
-    /* border: 2px solid blue; */
     padding-right: 70px !important;
   }
   .benefits {
@@ -701,17 +699,12 @@
   .benefitPara {
     font-size: 28px !important;
     line-height: 132.02% !important;
-    /* border: 2px solid blue; */
     padding-right: 5px !important;
   }
-  /* .container-fluid {
-    width: 99% !important;
-  } */
 
   .sizeControl {
     margin-top: 30px !important;
     width: 290px !important;
-    /* margin: 0 auto!important; */
   }
 
   .mobileResponsive {
@@ -728,6 +721,5 @@
   .sizeControl {
     margin-top: 30px !important;
     width: 250px !important;
-    /* margin: 0 auto!important; */
   }
 }
