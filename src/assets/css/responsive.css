@@ -1,9 +1,9 @@
 /* 2561px and above (Large Desktops) */
 @media (min-width: 2561px) {
   /* Global Styling */
-.contact-area .section-title h2{
-  font-size: 60px !important;
-}
+  .contact-area .section-title h2 {
+    font-size: 60px !important;
+  }
 
   /* Home Styling */
 
@@ -19,7 +19,7 @@
 /* 1921px to 2560px (Desktops) */
 @media (min-width: 1921px) and (max-width: 2560px) {
   /* Global Styling */
-.contact-area .section-title h2 {
+  .contact-area .section-title h2 {
     font-size: 60px !important;
   }
   /* Home Styling */
@@ -64,7 +64,7 @@
     line-height: 1.3 !important;
   }
 
-  .content>h2 {
+  .content > h2 {
     font-size: 80px !important;
   }
 
@@ -96,14 +96,13 @@
   .btn-content {
     font-size: 30px !important;
   }
-
 }
 
 /* 1441px to 1920px (Laptops and Large Tablets) */
 @media (min-width: 1441px) and (max-width: 1920px) {
   .contact-area .section-title h2 {
-      font-size: 45px !important;
-    }
+    font-size: 45px !important;
+  }
   .container-fluid {
     width: 75% !important;
   }
@@ -151,7 +150,6 @@
 /* 1025px to 1440px (Small Laptops and Tablets) */
 @media (min-width: 1025px) and (max-width: 1440px) {
   /* Global Styling */
-  
 
   /* Home Styling */
 
@@ -167,26 +165,25 @@
 /* 767px to 1024px (Tablets and Mobile Devices in Landscape) */
 @media (min-width: 767px) and (max-width: 1024px) {
   /* Global Styling */
-.contact-area .page-title-area h1 {
+  .contact-area .page-title-area h1 {
     font-size: 50px !important;
   }
-  .cardsBtn button{
+  .cardsBtn button {
     font-size: 12px;
   }
-  
+
   /* Home Styling */
   /*Client Testimonials*/
   .testimonial {
     height: 550px !important;
   }
 
-
   textarea {
     height: 30px !important;
     width: 97% !important;
   }
 
-  .content>h2 {
+  .content > h2 {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700 !important;
@@ -196,13 +193,13 @@
     text-align: center;
     margin-top: 15px;
   }
-  .drawerScroll{
+  .drawerScroll {
     display: none;
     overflow: hidden;
     height: 100vh;
   }
 
-  .content>p {
+  .content > p {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -245,7 +242,7 @@
     padding: 0px 50px;
   }
   .containerMarginTop {
-    margin-top:0px !important ;
+    margin-top: 0px !important ;
   }
 
   /* Services Styling */
@@ -260,7 +257,7 @@
   .careers {
     display: none !important;
   }
-  .careerMobile{
+  .careerMobile {
     display: block !important;
   }
 }
@@ -268,7 +265,7 @@
   .careers {
     display: block !important;
   }
-  .careerMobile{
+  .careerMobile {
     display: none !important;
   }
 }
@@ -279,10 +276,10 @@
     display: none !important;
   }
   /* Global Styling */
-.contact-area .page-title-area {
-  padding-top: 100px !important;
-  padding-bottom: 50px !important;
-}
+  .contact-area .page-title-area {
+    padding-top: 100px !important;
+    padding-bottom: 50px !important;
+  }
   /* Home Styling */
   /*testimonial Section */
   .testimonial {
@@ -302,7 +299,7 @@
     width: 96% !important;
   }
 
-  .content>h2 {
+  .content > h2 {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700 !important;
@@ -313,7 +310,7 @@
     margin-top: 15px;
   }
 
-  .content>p {
+  .content > p {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -341,7 +338,7 @@
     justify-content: space-between;
     color: var(--color-secondary) !important;
   }
-    
+
   .mobileDrawerCollapse .a {
     padding: 10px 0px 0px 10px;
     width: 100%;
@@ -352,7 +349,6 @@
   .mobileDrawerCollapse .a :last-child {
     padding: 10px 0px 10px 10px;
     width: 100%;
-
   }
 
   .mobilelinks {
@@ -364,7 +360,6 @@
     color: #2074b4;
     font-weight: 600;
     width: 100%;
-
   }
 
   .mobileDrawer svg {
@@ -381,7 +376,6 @@
   .mobileSelectedCollapse {
     /* background-color: var(--color-primary); */
     color: var(--color-primary) !important;
-
   }
 
   .drawerScroll {
@@ -392,10 +386,9 @@
   .collapseChildSelected {
     /* background-color: var(--color-primary); */
     color: var(--color-primary) !important;
-
   }
   .containerMarginTop {
-    margin-top:0px !important ;
+    margin-top: 0px !important ;
   }
 }
 
@@ -405,8 +398,8 @@
     display: none !important;
   }
 
-.containerMarginTop {
-    margin-top:0px !important ;
+  .containerMarginTop {
+    margin-top: 0px !important ;
   }
   /* Global Styling */
 
@@ -430,7 +423,7 @@
     /* margin: 0 auto!important; */
   }
 
-  .content>h2 {
+  .content > h2 {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700 !important;
@@ -441,7 +434,7 @@
     margin-top: 15px;
   }
 
-  .content>p {
+  .content > p {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -479,8 +472,8 @@
     flex-direction: row;
     justify-content: space-between;
     color: var(--color-secondary) !important;
-    }
-   
+  }
+
   .mobileDrawerCollapse .a {
     padding: 10px 0px 0px 10px;
     width: 100%;
@@ -490,7 +483,6 @@
   .mobileDrawerCollapse .a :last-child {
     padding: 10px 0px 10px 10px;
     width: 100%;
-
   }
 
   .drawerScroll {
@@ -508,7 +500,6 @@
     font-weight: 600;
     /* border-bottom: 2px solid black; */
     width: 100%;
-
   }
 
   .mobileDrawer svg {
@@ -525,20 +516,11 @@
   .mobileSelectedCollapse {
     /* background-color: var(--color-primary); */
     color: var(--color-primary) !important;
-
   }
-
-  
 }
 .ReactCollapse--collapse {
   transition: height 500ms;
 }
-
-
-
-
-
-
 
 @media (max-width: 412px) {
   .sizeControl {
@@ -548,8 +530,7 @@
   }
 }
 
-
-@media  (max-width: 375px) {
+@media (max-width: 375px) {
   .sizeControl {
     margin-top: 30px !important;
     width: 310px !important;
@@ -577,7 +558,6 @@
     width: auto;
   }
 }
-
 
 @media only screen and (max-width: 280px) {
   .sizeControl {
