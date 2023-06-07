@@ -168,7 +168,6 @@ const HirATalentCard = () => {
                     onClick={() => onOpenModal(items)}
                     
                   >
-      
                     Hire a Talent
                   </button>
                 </div>
