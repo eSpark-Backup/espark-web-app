@@ -7,7 +7,7 @@ import SectionTitle from "../../sectionTitle";
 const StartProject = () => {
   return (
     <div className="container-fluid">
-      <div className={styles.hiretalent}>
+      <div className={`hiretalent ${styles.hiretalent}`}>
         <SectionTitle
           height={0}
           padding={3}

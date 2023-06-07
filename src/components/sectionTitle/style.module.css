@@ -1,6 +1,11 @@
 .lhData{
     line-height: 160% !important;
   }
+  @media (min-width: 992px) {
+  .paddTop{
+    padding-top: 75px !important;
+  }
+}
   @media (max-width: 576px) {
   .margintop{
     margin-top: -5px !important;

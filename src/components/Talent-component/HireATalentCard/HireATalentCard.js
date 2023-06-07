@@ -4,9 +4,25 @@ import { hireDevelopers } from "../../../helper/hireATalent";
 import styles from "./style.module.css";
 import LeftSwipe from "../../../assets/images/hire-a-developer/LeftSwipe.svg";
 import RightSwipe from "../../../assets/images/hire-a-developer/RightSwipe.svg";
+import { Modal } from "react-responsive-modal";
+import GetInTouch from "../../getInTouch/GetInTouch";
 
 const HirATalentCard = () => {
   const [index, setIndex] = useState(0);
+  const [open, setOpen] = useState(false);
+  const onOpenModal = () => {
+    setOpen(true);
+    // setIsNavCollapsed(false);
+    // setOpenDrawer(false);
+  };
+  const onCloseModal = () => setOpen(false);
+
+  const hireTalent = (item) =>{
+    <Modal open={open} onClose={onCloseModal} center>
+    <GetInTouch modal={true} modelClose={(e) => setOpen(e)} />
+  </Modal>
+    console.log('hireTalent' , item);
+  }
 
   const changeSlider = (sum) => {
     if (index == 5 && sum == 1) {
@@ -149,8 +165,10 @@ const HirATalentCard = () => {
                 <div className={styles.hireTalent}>
                   <button
                     className={styles.hireDevButton}
-                    onClick={() => console.log(items)}
+                    onClick={() => onOpenModal(items)}
+                    
                   >
+      
                     Hire a Talent
                   </button>
                 </div>
@@ -171,7 +189,7 @@ const HirATalentCard = () => {
                 <div className={styles.hireTalent}>
                   <button
                     className={styles.hireDevButton}
-                    onClick={() => console.log(item)}
+                    onClick={() => onOpenModal(item)}
                   >
                     Hire a Talent
                   </button>

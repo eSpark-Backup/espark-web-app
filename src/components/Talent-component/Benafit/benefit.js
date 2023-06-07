@@ -26,6 +26,7 @@ const Benefit = () => {
             padding={"40px"}
             sectionHeading={"text-start"}
             lh={true}
+            paddTop={true}
           />
             <ul className={`${styles.benefitsList} list-unstyled`}>
               {benefit.map((items) => {

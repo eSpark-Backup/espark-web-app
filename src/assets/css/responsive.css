@@ -688,9 +688,14 @@ color: rebeccapurple;
   .benefits {
     font-size: 15px !important; 
   }
+.hiretalent {
+    padding-top: 7%;
+  } 
 }
 @media (max-width: 576px) {
-
+  .hiretalent {
+    padding-top: 7%;
+  } 
   .benefitPara {
     font-size: 28px !important;
     line-height: 132.4% !important;

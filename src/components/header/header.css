@@ -68,6 +68,9 @@
   font-family: Poppins;
   z-index: 9999 !important;
 }
+.btn-content:hover {
+  color: white;
+}
 
 .btn-content:focus {
   color: #ffffff;
