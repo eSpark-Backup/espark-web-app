@@ -11,8 +11,8 @@ const HowItWorks = () => {
       <div className="container-fluid">
         <div className={styles.desktop}>
           <SectionTitle
-            height={"2px"}
-            width={"126px"}
+            // height={"2px"}
+            // width={"126px"}
             heading={"How It Works?"}
             padding={"40px"}
           />

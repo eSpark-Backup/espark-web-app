@@ -15,6 +15,8 @@ const StartProject = () => {
             "eSpark makes growing remote and international teams effortless"
           }
           lh={true}
+          alignRight={true}
+
         />
         <div className={styles.whyButton}>
           <button className={styles.butntext}>Schedule Event</button>

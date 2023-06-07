@@ -7,8 +7,8 @@ const SaveTimeBudget = () => {
   return (
     <div id="hire-talent" className="container-fluid">
       <SectionTitle
-        height={"2px"}
-        width={"130px"}
+        // height={"2px"}
+        // width={"130px"}
         heading={"Save Your Time & Budget"}
         padding={"80px"}
         paragraph={`Experience the best global tech talent and enjoy the tech world

@@ -15,13 +15,14 @@ const SectionTitle = ({
   sectionHeading,
   lh,
   margintop,
-  paddTop
+  paddTop,
+  alignRight
 }) => {
   return (
-    <div className={`my-2  pb-${padding ? padding : 80} ${style.margintop} `} >
+    <div className={`my-2  pb-${padding ? padding : 80} ${margintop ? style.margintop : ''} `} >
       <hr style={{ width: width ? width : "200px", height: height }} />
       <div className={"content"}>
-        <h2 className={`my-${my ? my : "4"} ${sectionHeading ? sectionHeading : ''}  ${lh ? style.lhData : ''} ${style.paddTop} `}   >{heading ?? null}</h2>
+        <h2 className={`my-${my ? my : "4"} ${sectionHeading ? sectionHeading : ''}  ${lh ? style.lhData : ''} ${paddTop ? style.paddTop : ''} ${alignRight ? style.alignRight : ''}`}   >{heading ?? null}</h2>
         {paragraph?.type === "p" ? (
           paragraph ?? null
         ) : (
