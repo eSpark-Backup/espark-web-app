@@ -162,6 +162,33 @@
   /* Blogs Styling */
 }
 
+/* @media (max-width: 1440px) {
+.custom-section-title{
+  margin: 100px;
+  font-size: 50px !important;  
+color: rebeccapurple;
+}
+.para{
+
+}
+} */
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .hiringContainer {
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly !important;
+    /* flex-grow: 1; */
+  }
+  .hiringContainerBox {
+    margin: 20px 20px 0px 20px;
+  }
+  .para {
+    font-size: 19px;
+  }
+}
+
 /* 767px to 1024px (Tablets and Mobile Devices in Landscape) */
 @media (min-width: 767px) and (max-width: 1024px) {
   /* Global Styling */
@@ -210,7 +237,7 @@
     line-height: 140%;
     text-align: center;
     margin-top: 10px;
-    color: #3a3a3a;
+    color: #1c0404;
   }
 
   .testimonial .name {
@@ -278,6 +305,21 @@
   br {
     display: none !important;
   }
+
+  .hiringContainer {
+    width: 100% !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly !important;
+    /* flex-grow: 1; */
+  }
+  .hiringContainerBox {
+    margin: 20px 10px 20px 10px;
+  }
+  .para {
+    font-size: 10px;
+  }
+
   /* Global Styling */
   .contact-area .page-title-area {
     padding-top: 100px !important;
@@ -397,10 +439,42 @@
 
 /* 0px to 425px (Smaller Mobile Devices) */
 @media (max-width: 425px) {
+  .hrPlatformTitle {
+    font-size: 28px !important;
+    line-height: 132.4% !important;
+  }
+  .benefitPara {
+    font-size: 28px !important;
+    line-height: 132.02% !important;
+    padding-right: 5px !important;
+  }
+  .benefits {
+    font-family: "Poppins" !important;
+    font-style: normal !important;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 140% !important;
+  }
+  .hrPlateformPara {
+    font-family: "Poppins" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    color: #3a3a3a;
+    margin: 30px 0px !important;
+  }
   br {
     display: none !important;
   }
-
+  .butntext {
+    font-size: 20px !important;
+  }
+  .hiringContainer {
+    display: none !important;
+  }
+  .hiringContainerMobile {
+    display: block !important;
+  }
   .containerMarginTop {
     margin-top: 0px !important ;
   }
@@ -586,47 +660,41 @@
     margin-top: 30px !important;
     width: 350px !important;
   }
-  .benefitPara {
+  /* .benefitPara {
     font-size: 28px !important;
     line-height: 132.02% !important;
-  }
-  .hrPlatformTitle {
-    font-size: 28px !important;
-    line-height: 132.4% !important;
-  }
-  .benefitPara {
+  } */
+
+  /* .benefitPara {
     padding-right: 10px !important;
-  }
+  } */
 }
 
 @media (max-width: 375px) {
+  .carousel-indicators {
+    display: none;
+  }
+
   .sizeControl {
     margin-top: 30px !important;
     width: 310px !important;
   }
-  .hrPlatformTitle {
+  /* .hrPlatformTitle {
     padding-right: 40px !important;
-  }
-  .benefitPara {
+  } */
+  /* .benefitPara {
     font-size: 28px !important;
     line-height: 132.02% !important;
     padding-right: 70px !important;
-  }
-  .benefits {
-    font-family: "Poppins" !important;
-    font-style: normal !important;
-    font-weight: 400;
-    font-size: 16px !important;
-    line-height: 140% !important;
-  }
+  } */
 }
 
 @media (max-width: 320px) {
-  .benefitPara {
+  /* .benefitPara {
     font-size: 28px !important;
     line-height: 132.02% !important;
     padding-right: 5px !important;
-  }
+  } */
 
   .sizeControl {
     margin-top: 30px !important;
@@ -676,5 +744,11 @@
   .trueIcons {
     margin-right: -100px;
     padding-top: 2px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 766px) {
+  .para {
+    font-size: 16px;
   }
 }
