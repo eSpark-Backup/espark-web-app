@@ -9,7 +9,7 @@ const SaveTimeBudget = () => {
       <SectionTitle
         height={"2px"}
         width={"130px"}
-        heading={"Save your Time & Budget"}
+        heading={"Save Your Time & Budget"}
         padding={"80px"}
         paragraph={`Experience the best global tech talent and enjoy the tech world
         without getting exhausted through the hiring process. Hire an expert

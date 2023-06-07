@@ -31,7 +31,6 @@
 .hiringContainer {
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
 }
 .box:hover {
   background-color: var(--color-primary);

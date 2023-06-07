@@ -35,7 +35,7 @@ export const howitworkspoints = [
     },
     {
         _id: 4,
-        name: "Step back & Grow",
+        name: "Step Back & Grow",
         content:
             "Your future begins to meet the expectations you've set for yourself.",
         image: GrowthLogo,

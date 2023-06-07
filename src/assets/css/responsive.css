@@ -67,6 +67,30 @@
   .content > h2 {
     font-size: 80px !important;
   }
+  .benefitPara {
+    font-size: 80px !important;
+    /* border: 1px solid rgb(14, 87, 3); */
+
+  }
+  .hrPlatformTitle {
+    font-size: 80px !important;
+    /* border: 1px solid peru; */
+  }
+  .hrPlateformPara {
+    font-size: 30px !important;
+  }
+  .benefits {
+    font-size: 30px !important;
+    margin-top: -10px !important;
+    /* border: 1px solid red; */
+  }
+  .startContents{
+    font-size: 30px !important;
+  }
+  .startProjects{
+    font-size: 50px !important;
+
+  }
 
   .styles_whyPoints__sAHvg {
     font-size: 35px;
@@ -462,6 +486,7 @@ color: rebeccapurple;
     font-size: 16px !important;
     color: #3a3a3a;
     margin: 30px 0px !important;
+    line-height: 140% !important;
   }
   br {
     display: none !important;
@@ -598,13 +623,14 @@ color: rebeccapurple;
 .ReactCollapse--collapse {
   transition: height 500ms;
 }
-@media (min-width: 1920px) and (max-width: 2560px) {
+/* @media (min-width: 1920px) and (max-width: 2560px) {
   .hrPlatformTitle {
     font-family: "Poppins" !important;
     font-style: normal !important;
     font-weight: 700 !important;
     font-size: 44px !important;
     line-height: 160.02% !important;
+    border: 1px solid pink;
   }
   .hrPlateformPara {
     font-family: "Poppins" !important;
@@ -613,6 +639,7 @@ color: rebeccapurple;
     font-size: 20px !important;
     line-height: 160.02% !important;
     color: #3a3a3a;
+    border: 1px solid red;
   }
   .benefitPara {
     font-style: normal !important;
@@ -623,9 +650,83 @@ color: rebeccapurple;
     padding-top: 80px;
     padding-bottom: 20px;
   }
-  .trueIcons {
-    margin-right: -25px !important;
-    padding-top: 2px;
+} */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .benefitPara {
+    font-size: 40px !important;
+
+  }
+  .hrPlatformTitle {
+    font-size: 40px !important;
+  }
+
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+  .hrPlateformPara {
+    font-size: 15px !important;
+  }
+  .benefitPara {
+    font-size: 30px !important;
+  }
+  .hrPlatformTitle {
+    font-size: 30px !important;
+  }
+  .hireDevPara{
+    font-size: 15px !important;
+  }
+
+  
+}
+@media (min-width: 577px) and (max-width: 991px) {
+  .hrPlateformPara {
+    padding-bottom: 40px !important ;
+  }
+  .hrPlatformTitle {
+    padding-bottom: 40px !important ;
+  }
+  .benefits {
+    font-size: 15px !important; 
+  }
+}
+@media (max-width: 576px) {
+
+  .benefitPara {
+    font-size: 28px !important;
+    line-height: 132.4% !important;
+    padding-bottom: 40px !important ;
+  }
+  .hrPlatformTitle {
+    font-size: 28px !important;
+    line-height: 132.4% !important;
+  }
+  .hrPlateformPara {
+    font-family: "Poppins" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 140% !important;
+    padding: 4px 0px 30px 0px !important;
+  }
+  .benefits {
+    font-family: "Poppins";
+    font-style: normal !important;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 140% !important;
+    color: #3a3a3a !important;
+    margin-top: 0px !important;
+
+  }
+  .startContents{
+    font-size: 26px !important;
+    font-weight: 400 !important;
+  }
+  .startProjects{
+    font-size: 42px !important;
+  }
+  .benefitContainer{
+    margin-top: -8px !important;
   }
 }
 
@@ -637,17 +738,36 @@ color: rebeccapurple;
     font-size: 42px !important;
   }
 }
-@media (max-width: 575px) {
-  .startContents {
-    font-size: 26px !important;
-    font-weight: 400 !important;
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .hrsec{
+    margin-top: -80px !important;
+  }
+  
+  .startContents{
+  font-size: 28.7684px;
+
   }
   .startProjects {
     font-size: 42px !important;
+
+  }
+  .hrPlateformImageDiv{
+    width: 75%;
+    height: auto;
+    margin: 0px auto;
+  }
+  .benefitsImageDiv{
+    width: 75%;
+    height: auto;
+    margin: 0px auto; 
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+  .hrsec{
+    margin-top: -80px !important;
+  }
   .startContents {
     font-size: 23.7684px !important;
   }
@@ -715,40 +835,5 @@ color: rebeccapurple;
   .sizeControl {
     margin-top: 30px !important;
     width: 250px !important;
-  }
-}
-
-@media (min-width: 2561px) and (max-width: 2700px) {
-  .trueIcons {
-    margin-right: -75px;
-
-    padding-top: 2px;
-  }
-}
-@media (min-width: 2701px) and (max-width: 3000px) {
-  .trueIcons {
-    margin-right: -80px;
-
-    padding-top: 2px;
-  }
-}
-@media (min-width: 3001px) and (max-width: 3300px) {
-  .trueIcons {
-    margin-right: -90px;
-
-    padding-top: 2px;
-  }
-}
-
-@media (min-width: 3301px) {
-  .trueIcons {
-    margin-right: -100px;
-    padding-top: 2px;
-  }
-}
-
-@media (min-width: 426px) and (max-width: 766px) {
-  .para {
-    font-size: 16px;
   }
 }

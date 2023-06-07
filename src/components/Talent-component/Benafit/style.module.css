@@ -21,10 +21,8 @@
   .benefitsImage{
     width: 100%;
     padding-top:70px;
+    /* border: 1px solid blueviolet; */
   }
-  /* .benefitUl{
-    max-width: 740px;
-  } */
 
 .icondiv{
   margin-right: 13px;

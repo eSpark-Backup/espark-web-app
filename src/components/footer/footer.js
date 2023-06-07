@@ -214,7 +214,7 @@ const Footer = () => {
         <div className="copyright">
           <div className="col-lg-12 col-md-12">
             <div className="">
-              <p>2023 eSpark Consulting Group . All Rights Reserved</p>
+              <p>2023 eSpark Consulting Group All Rights Reserved.</p>
             </div>
           </div>
         </div>

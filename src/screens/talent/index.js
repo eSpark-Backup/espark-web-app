@@ -37,18 +37,7 @@ const Talent = () => {
         paragraph={<p>We Have Completed 100+ Projects Successfully</p>}
       />
       <WhyeSparks />
-      <div className={style.hiretalent}>
-        <SectionTitle
-          height={0}
-          padding={3}
-          heading={
-            "eSpark makes growing remote and international teams effortless"
-          }
-        />
-        <div className={style.whyButton}>
-          <button className={style.butntext}>Schedule Event</button>
-        </div>
-      </div>
+      
       <StartProject />
     </div>
   );

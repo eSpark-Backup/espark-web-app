@@ -144,7 +144,7 @@ const HirATalentCard = () => {
               <div className={`my-2 mx-auto ${styles.hireDevContainer}`}>
                 <div className={styles.hireDevContents}>
                   <p className={styles.hireDevHeading}>{items.title}</p>
-                  <p className={styles.hireDevPara}>{items.descriptions}</p>
+                  <p className={`hireDevPara ${styles.hireDevPara}`}>{items.descriptions}</p>
                 </div>
                 <div className={styles.hireTalent}>
                   <button
