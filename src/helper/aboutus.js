@@ -50,11 +50,11 @@ export const teamMembers = [
         name : "M. Waqar",
         description: "COO"
     },
-    {
-        images : HRLead,
-        name : "Ambreen Azeem",
-        description: "HR Head"
-    },
+    // {
+    //     images : HRLead,
+    //     name : "Ambreen Azeem",
+    //     description: "HR Head"
+    // },
     {
         images : MarketingLead,
         name: "Arman Khan",
