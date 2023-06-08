@@ -8,11 +8,7 @@ const Portfolio = ({ data, title }) => {
     <div className="container-fluid pb-80 text-center  pt-3" id="newDiv_0">
       <SectionTitle
         heading={title}
-        paragraph={
-          <p >
-            Empowering decentralization, one project at a time
-          </p>
-        }
+        paragraph={<p>Empowering decentralization, one project at a time</p>}
       />
       <div className="row pt-2">
         {data?.map((item) => {
@@ -24,7 +20,7 @@ const Portfolio = ({ data, title }) => {
                     <img
                       src={item?.image}
                       className={styles.images}
-                      alt={"image"}
+                      alt={"images"}
                     />
                   </div>
                   <div className={styles.titleWrapper}>

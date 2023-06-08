@@ -1,0 +1,6 @@
+iot based app
+android file system
+alarm audio
+ble
+ble sensor reading
+child locking

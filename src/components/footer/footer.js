@@ -78,7 +78,7 @@ const Footer = () => {
                       <Link to="/upcomming">Upcoming Events</Link>
                     </li>
                     <li>
-                      <Link to="/blogs">Blog & News</Link>
+                      <Link to="/upcomming">Blog & News</Link>
                     </li>
                     <li>
                       <Link to="/upcomming">FAQ Question</Link>

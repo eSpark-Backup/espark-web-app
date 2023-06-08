@@ -1,9 +1,11 @@
 /* 2561px and above (Large Desktops) */
 @media (min-width: 2561px) {
+
     /* Global Styling */
-.heading{
-    border: 1px solid black !important;
-}
+    .heading {
+        border: 1px solid black !important;
+    }
+
     /* Home Styling */
 
     /* Services Styling */
@@ -16,7 +18,7 @@
 }
 
 /* 1921px to 2560px (Desktops) */
- @media (min-width: 1921px) and (max-width: 2560px) {
+@media (min-width: 1921px) and (max-width: 2560px) {
     /* Global Styling */
 
     /* Home Styling */
@@ -62,6 +64,40 @@
 
 /* 767px to 1024px (Tablets and Mobile Devices in Landscape) */
 @media (min-width: 767px) and (max-width: 1024px) {
+
+    .spin-two,
+    .spin-one {
+        display: none !important;
+    }
+
+    .upcommingPage-heading {
+        font-size: 25px;
+    }
+
+    .upcommingPage-image {
+        width: 60%;
+    }
+
+    .wrapper .container .one1 .content,
+    .wrapper .container .two2 .content,
+    .wrapper .container .three3 .content,
+    .wrapper .container .circle .content,
+    .wrapper .container .p404 .content {
+        left: 50% !important;
+    }
+
+    .wrapper .container .one1,
+    .wrapper .container .two2,
+    .wrapper .container .three3,
+    .wrapper .container .circle,
+    .wrapper .container .p404{
+        left: 20% !important;
+    }
+
+    .wrapper .container .text article {
+        bottom: -10%;
+        left: 50% !important
+    }
     /* Global Styling */
 
     /* Home Styling */
@@ -77,7 +113,20 @@
 
 /* 426px to 766px (Most Mobile Devices) */
 @media (min-width: 426px) and (max-width: 766px) {
+
     /* Global Styling */
+    .spin-two,
+    .spin-one {
+        display: none !important;
+    }
+
+    .upcommingPage-heading {
+        font-size: 20px;
+    }
+
+    .upcommingPage-image {
+        width: 60%;
+    }
 
     /* Home Styling */
 
@@ -92,6 +141,30 @@
 
 /* 0px to 425px (Smaller Mobile Devices) */
 @media (max-width: 425px) {
+
+    .spin-two,
+    .spin-one {
+        display: none !important;
+    }
+
+    .upcommingPage-heading {
+        font-size: 20px;
+    }
+
+    .upcommingPage-image {
+        width: 100%;
+    }
+    .wrapper .container .text article {
+        bottom: -10%;
+        left: 50% !important;
+        width: 300px !important;
+    }
+
+    .wrapper .container .text article p {
+     font-size: 15px !important;
+     
+    }
+
     /* Global Styling */
 
     /* Home Styling */
