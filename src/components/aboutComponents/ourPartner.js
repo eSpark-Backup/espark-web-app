@@ -20,7 +20,7 @@ const OurPartner = () => {
       </div>
       <div className={styles.wd_partnerlogos_btn}>
         <a href="" id={styles.wd_videos_1} className={styles.Button_cta}>
-          Reviwe
+          Review
         </a>
       </div>
     </div>

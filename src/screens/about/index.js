@@ -1,7 +1,7 @@
 import React from "react";
 
 import Herosection from "../../components/Sections/Hero/Herosection";
-import aboutImage from "../../../src/assets/images/About-us-image/aboutUs.svg";
+import AboutImage from "../../../src/assets/images/About-us-image/aboutUs.svg";
 import SectionTitle from "../../components/sectionTitle";
 import OurJourney from "../../components/aboutComponents/ourJourney";
 import OurTeam from "../../components/aboutComponents/ourTeam";
@@ -16,7 +16,7 @@ export default function About() {
         title="Why eSpark?"
         paragraph="We focus on custom tailored software and IoT based solutions for our businesses. Through our broad range of services that can help clients and businesses to optimize their operations, save cost and promote their businesses most effectively. Whether you need help with software development, hardware design, or technology consulting, eSpark Consulting Group has the expertise to help you achieve your goals."
         ShowButton={false}
-        images={aboutImage}
+        images={AboutImage}
       />
 
       <div>
