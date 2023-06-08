@@ -5,7 +5,7 @@ import styles from "./style.module.css";
 const OurTeam = () => {
   return (
     <>
-      <div className={`container-fluid ${styles.containerFluid}}`}>
+      <div className={`${styles.containerFluid} container-fluid }`}>
         <div className={`row ${styles.memberContens}`}>
           {teamMembers.map((member, index) => {
             return (

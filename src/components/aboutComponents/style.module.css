@@ -1452,8 +1452,11 @@ color: #212121;
   text-align: center;
 }
 
+.containerFluid{
+  height: 360px;
+}
 .memberContens {
-  height: 637px;
+  /* height: 100px; */
   margin-bottom: 140px;
   justify-content: center;
 }
@@ -1600,14 +1603,9 @@ color: #212121;
 .caption h3 {
   font-size: 21px;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  .memberContens {
-    margin-bottom: 440px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1100px) {
-  .memberContens {
-    margin-bottom: 240px;
+@media (max-width:1900px){
+  .containerFluid{
+    height: auto 
   }
 }
 @media only screen and (min-width: 1441px) {
