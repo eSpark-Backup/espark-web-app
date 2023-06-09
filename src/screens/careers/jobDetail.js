@@ -35,30 +35,37 @@ const JobDetail = ({ appliedFor }) => {
         </div>
         {singleJob?.title ? (
           <>
-            <div className="col-lg-7">
-              <div className="jobsInfo">
-                {" "}
-                <p>
-                  <strong>Job Category: </strong>{" "}
-                  {singleJob?.acf.job_category[0]}
-                </p>
-                <p>
-                  <strong>Job Type: </strong> {singleJob?.acf.job_type[0]},{" "}
-                  {singleJob?.acf.job_type[1]}
-                </p>
-                <p>
-                  <strong>Job Location: </strong>{" "}
-                  {singleJob?.acf.job_location[0]},{" "}
-                  {singleJob?.acf.job_location[1]}
-                </p>
-              </div>
-              <div
-                className=" jobDetails"
-                dangerouslySetInnerHTML={{
-                  __html: singleJob?.content?.rendered,
-                }}
-              ></div>
-            </div>
+          <div className="col-lg-7">
+  {singleJob?.acf.job_category && singleJob?.acf.job_type && singleJob?.acf.job_location ? (
+    <div className="jobsInfo">
+      {singleJob.acf.job_category[0] && (
+        <p>
+          <strong>Job Category: </strong>
+          {singleJob.acf.job_category[0]}
+        </p>
+      )}
+      {singleJob.acf.job_type[0] && singleJob.acf.job_type[1] && (
+        <p>
+          <strong>Job Type: </strong>
+          {singleJob.acf.job_type[0]}, {singleJob.acf.job_type[1]}
+        </p>
+      )}
+      {singleJob.acf.job_location[0] && singleJob.acf.job_location[1] && (
+        <p>
+          <strong>Job Location: </strong>
+          {singleJob.acf.job_location[0]}, {singleJob.acf.job_location[1]}
+        </p>
+      )}
+    </div>
+  ) : null}
+  <div
+    className="jobDetails"
+    dangerouslySetInnerHTML={{
+      __html: singleJob?.content?.rendered,
+    }}
+  ></div>
+</div>
+
           </>
         ) : (
           <div className="col-lg-7">
