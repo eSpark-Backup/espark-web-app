@@ -15,7 +15,7 @@ export const getApiCall = async (page) => {
   try {
     const pageCount = page ? page : 1;
     const { data, headers } = await Axios.get(
-      `https://esparkconsultants.com/test/wp-json/wp/v2/posts?per_page=20&page=${pageCount}`
+      `https://esparkconsultants.com/old/wp-json/wp/v2/posts?per_page=20&page=${pageCount}`
     );
     if(typeof data?.data === 'string'){
       return [];
@@ -30,7 +30,7 @@ export const getApiCall = async (page) => {
 export const getCategoriesApiCall = async () => {
   try {
     const { data } = await Axios.get(
-      `https://esparkconsultants.com/test/wp-json/wp/v2/categories`
+      `https://esparkconsultants.com/old/wp-json/wp/v2/categories`
     );
     return data;
   } catch (error) {
@@ -40,7 +40,7 @@ export const getCategoriesApiCall = async () => {
 export const getTagsApiCall = async () => {
   try {
     const { data } = await Axios.get(
-      `https://esparkconsultants.com/test/wp-json/wp/v2/tags`
+      `https://esparkconsultants.com/old/wp-json/wp/v2/tags`
     );
     return data;
   } catch (error) {
@@ -51,7 +51,7 @@ export const getTagsApiCall = async () => {
 export const getCatApiCall = async (id) => {
   try {
     const { data, headers } = await Axios.get(
-      `https://esparkconsultants.com/test/wp-json/wp/v2/posts?categories=${id}`
+      `https://esparkconsultants.com/old/wp-json/wp/v2/posts?categories=${id}`
     );
     return { data: data, headers: headers };
   } catch (error) {
