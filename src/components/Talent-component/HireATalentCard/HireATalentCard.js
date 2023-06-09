@@ -6,23 +6,26 @@ import LeftSwipe from "../../../assets/images/hire-a-developer/LeftSwipe.svg";
 import RightSwipe from "../../../assets/images/hire-a-developer/RightSwipe.svg";
 import { Modal } from "react-responsive-modal";
 import GetInTouch from "../../getInTouch/GetInTouch";
+import GetModal from "../../getInTouch/getModal";
 
 const HirATalentCard = () => {
   const [index, setIndex] = useState(0);
   const [open, setOpen] = useState(false);
-  const onOpenModal = () => {
+  const [getid, setGetid] = useState('');
+  const onOpenModal = (items) => {
     setOpen(true);
+    // console.log("onclick ---->>" , items)
+    setGetid(items.id)
+
+
     // setIsNavCollapsed(false);
     // setOpenDrawer(false);
   };
+  console.log(getid, "onclick <<------");
+
   const onCloseModal = () => setOpen(false);
 
-  const hireTalent = (item) =>{
-    <Modal open={open} onClose={onCloseModal} center>
-    <GetInTouch modal={true} modelClose={(e) => setOpen(e)} />
-  </Modal>
-    console.log('hireTalent' , item);
-  }
+
 
   const changeSlider = (sum) => {
     if (index == 5 && sum == 1) {
@@ -152,6 +155,7 @@ const HirATalentCard = () => {
   };
 
   return (
+    <>
     <div className="my-5">
       <div className="container-fluid">
         <div className={`row ${styles.desktop}`}>
@@ -165,12 +169,14 @@ const HirATalentCard = () => {
                 <div className={styles.hireTalent}>
                   <button
                     className={styles.hireDevButton}
+                    // onClick={() => onOpenModal(items)}
                     onClick={() => onOpenModal(items)}
                     
                   >
                     Hire a Talent
                   </button>
                 </div>
+      
               </div>
             );
           })}
@@ -188,6 +194,7 @@ const HirATalentCard = () => {
                 <div className={styles.hireTalent}>
                   <button
                     className={styles.hireDevButton}
+                    // onClick={() => onOpenModal(item)}
                     onClick={() => onOpenModal(item)}
                   >
                     Hire a Talent
@@ -199,6 +206,11 @@ const HirATalentCard = () => {
         </Slider>
       </div>
     </div>
+        <Modal open={open} onClose={onCloseModal}  showCloseIcon={false} center>
+        {/* <GetInTouch modal={true} modelClose={(e) => setOpen(e)} /> */}
+        <GetModal  modal={true} modelClose={(e) => setOpen(e)}  getid={getid}/>
+      </Modal>
+      </>
   );
 };
 

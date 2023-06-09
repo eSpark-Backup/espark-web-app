@@ -5,9 +5,9 @@
     margin-top: -15px !important;
   }
   @media (min-width: 992px) {
-  .paddTop{
+  /* .paddTop{
     padding-top: 75px !important;
-  }
+  } */
 }
   @media (max-width: 576px) {
   .margintop{
