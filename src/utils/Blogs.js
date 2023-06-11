@@ -17,7 +17,12 @@ export const getApiCall = async (page) => {
     const { data, headers } = await Axios.get(
       `https://esparkconsultants.com/old/wp-json/wp/v2/posts?per_page=20&page=${pageCount}`
     );
-    return { data: data, headers: headers };
+    if(typeof data?.data === 'string'){
+      return [];
+    }
+    else{
+      return {data: data, headers: headers};
+    }
   } catch (error) {
     console.log("API Error: ", error);
   }

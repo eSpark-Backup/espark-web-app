@@ -72,7 +72,7 @@ const Footer = () => {
                   <h3>Explore</h3>
                   <ul className="list">
                     <li>
-                      <Link to="/upcomming">About us</Link>
+                      <Link to="/about-us">About Us</Link>
                     </li>
                     <li>
                       <Link to="/upcomming">Upcoming Events</Link>
@@ -88,7 +88,7 @@ const Footer = () => {
                       <Link to="/#Testimonials"> Testimonial</Link>
                     </li>
                     <li>
-                      <Link to="/privacy-policy">privacy Policy</Link>
+                      <Link to="/privacy-policy">Privacy Policy</Link>
                     </li>
                   </ul>
                 </div>

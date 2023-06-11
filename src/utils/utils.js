@@ -1,10 +1,15 @@
 import Axios from "axios";
 export const getOpeningJobs = async () => {
   try {
-    const { data } = await Axios.get(
+    const data = await Axios.get(
       "https://esparkconsultants.com/old/wp-json/wp/v2/jober"
     );
-    return data;
+    if(typeof data?.data === 'string'){
+      return [];
+    }
+    else{
+      return data?.data;
+    }
   } catch (error) {
     console.log("Data not Found: ", error);
   }
@@ -22,14 +27,20 @@ export const getSingleOpeningJobs = async (id) => {
 };
 
 export const optionData = (data) => {
-  const jobCategory = data.map((item) => {
-    return item.acf.job_category[0];
+  const jobCategory = data?.map((item) => {
+   if(item?.acf) {
+     return item?.acf?.job_category[0];
+   }
+  //  return jobCategory
   });
-  const jobType = data.map((item) => {
-    return item.acf.job_type;
+  const jobType = data?.map((item) => {
+    return item?.acf?.job_type;
   });
-  const jobLocation = data.map((item) => {
-    return item.acf.job_location[0];
+  const jobLocation = data?.map((item) => {
+    if(item?.acf){
+      return item?.acf?.job_location[0];
+    }
+    // return jobLocation;
   });
 
   const getMergeArrayCat = mergeArray(jobCategory);
@@ -46,7 +57,7 @@ export const optionData = (data) => {
 
 const mergeArray = (jobCategory) => {
   const arrays = jobCategory;
-  const finalArray = arrays.flat(1);
+  const finalArray = arrays?.flat(1);
   let s = new Set(finalArray);
   let it = s.values();
   return Array.from(it);

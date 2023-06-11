@@ -26,10 +26,12 @@ const Careers = () => {
   useEffect(() => {
     const main = async () => {
       const data = await getOpeningJobs();
+    if(data){
       setCareersData(data);
       const getDatafromJobs = optionData(data);
       setGetCat(getDatafromJobs);
       setAllData(data);
+    }
     };
     main();
   }, []);
@@ -159,8 +161,8 @@ const Careers = () => {
   const applyFilter = (jobs, filter, currentFilter) => {
     // console.log("filter", currentFilter);
 
-    const job_category = jobs.filter((job) =>
-      job.acf[currentFilter].includes(filter[currentFilter])
+    const job_category = jobs?.filter((job) =>
+      job?.acf[currentFilter]?.includes(filter[currentFilter])
     );
     return filter[currentFilter] === "All" ? jobs : job_category;
     // const job_type = jobs.filter((job) =>
@@ -219,7 +221,7 @@ const Careers = () => {
         ShowButton={false}
       />
       <div class="container-fluid containerMarginBottom  containerMarginTop">
-        {careersData && (
+        {/* {careersData && (
           <div className="mb-3">
             <SectionTitle
               heading={"Open Vacancies"}
@@ -228,7 +230,7 @@ const Careers = () => {
               my={2}
             />
           </div>
-        )}
+        )} */}
 
         <div className="d-lg-flex d-md-flex carrer-filter">
           {inputFeilds(getCat.category, "job_category")}
@@ -238,7 +240,7 @@ const Careers = () => {
         <br />
 
         {careersData && careersData.length > 0 ? (
-          careersData.map((item) => {
+           careersData?.map((item) => {
             return (
               <>
                 <div class="careers">
@@ -281,7 +283,7 @@ const Careers = () => {
                         </h4>
 
                         <p className="cardtitle">
-                          {item?.acf.job_location[0]}{" "}
+                          {item?.acf ? item?.acf.job_location[0] : ''}{" "}
                         </p>
                         <p>
                           <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
@@ -313,7 +315,7 @@ const Careers = () => {
         ) : showMessage ? (
           <div className="notfound">Not found try another filter</div>
         ) : (
-          ShemarLength.map((item) => {
+          ShemarLength?.map((item) => {
             return (
               <div class="row">
                 <div class="col-lg-4">
