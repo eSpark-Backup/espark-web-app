@@ -2,6 +2,8 @@ import React from "react";
 import { hireDevelopersDetails } from "../../helper/Talent";
 
 const GetModal = ({ items, getid }) => {
+  console.log("opened", getid);
+
   const final = hireDevelopersDetails.filter((item) => {
     return item.id === getid;
   });
