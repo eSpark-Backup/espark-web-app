@@ -7,11 +7,14 @@ import RightSwipe from "../../../assets/images/hire-a-developer/RightSwipe.svg";
 import { Modal } from "react-responsive-modal";
 import GetInTouch from "../../getInTouch/GetInTouch";
 import GetModal from "../../getInTouch/getModal";
+import HubSpotMeeting from "../../HubSpotMeeting/hubSpotMeeting";
 
 const HirATalentCard = () => {
   const [index, setIndex] = useState(0);
   const [open, setOpen] = useState(false);
   const [getid, setGetid] = useState('');
+  const [showMeetingModal, setShowMeetingModal] = useState(false);
+
   const onOpenModal = (items) => {
     setOpen(true);
     // console.log("onclick ---->>" , items)
@@ -23,7 +26,7 @@ const HirATalentCard = () => {
   };
   console.log(getid, "onclick <<------");
 
-  const onCloseModal = () => setOpen(false);
+  const onCloseModal = () => { setOpen(false); setShowMeetingModal(false); }
 
 
 
@@ -51,6 +54,11 @@ const HirATalentCard = () => {
         <img src={LeftSwipe} className={styles.leftSlideBtn} />
       </div>
     );
+  };
+
+  const handleDevTypeClick = () => {
+    // setOpen(false);
+    setShowMeetingModal(true);
   };
 
   const settings = {
@@ -156,61 +164,61 @@ const HirATalentCard = () => {
 
   return (
     <>
-    <div className="my-5">
-      <div className="container-fluid">
-        <div className={`row ${styles.desktop}`}>
-          {hireDevelopers.map((items) => {
-            return (
-              <div className={`my-2 mx-auto ${styles.hireDevContainer}`}>
-                <div className={styles.hireDevContents}>
-                  <p className={styles.hireDevHeading}>{items.title}</p>
-                  <p className={`hireDevPara ${styles.hireDevPara}`}>{items.descriptions}</p>
+      <div className="my-5">
+        <div className="container-fluid">
+          <div className={`row ${styles.desktop}`}>
+            {hireDevelopers.map((items) => {
+              return (
+                <div className={`my-2 mx-auto ${styles.hireDevContainer}`}>
+                  <div className={styles.hireDevContents}>
+                    <p className={styles.hireDevHeading}>{items.title}</p>
+                    <p className={`hireDevPara ${styles.hireDevPara}`}>{items.descriptions}</p>
+                  </div>
+                  <div className={styles.hireTalent}>
+                    <button
+                      className={styles.hireDevButton}
+                      // onClick={() => onOpenModal(items)}
+                      onClick={() => onOpenModal(items)}
+
+                    >
+                      Hire a Talent
+                    </button>
+                  </div>
+
                 </div>
-                <div className={styles.hireTalent}>
-                  <button
-                    className={styles.hireDevButton}
-                    // onClick={() => onOpenModal(items)}
-                    onClick={() => onOpenModal(items)}
-                    
-                  >
-                    Hire a Talent
-                  </button>
+              );
+            })}
+          </div>
+        </div>
+        <div className={`${styles.mobile}`}>
+          <Slider {...settings}>
+            {hireDevelopers.map((item) => (
+              <div>
+                <div className={styles.hireDevContainer}>
+                  <div className={styles.hireDevContents}>
+                    <p className={styles.hireDevHeading}>{item.title}</p>
+                    <p className={styles.hireDevPara}>{item.descriptions}</p>
+                  </div>
+                  <div className={styles.hireTalent}>
+                    <button
+                      className={styles.hireDevButton}
+                      // onClick={() => onOpenModal(item)}
+                      onClick={() => onOpenModal(item)}
+                    >
+                      Hire a Talent
+                    </button>
+                  </div>
                 </div>
-      
               </div>
-            );
-          })}
+            ))}
+          </Slider>
         </div>
       </div>
-      <div className={`${styles.mobile}`}>
-        <Slider {...settings}>
-          {hireDevelopers.map((item) => (
-            <div>
-              <div className={styles.hireDevContainer}>
-                <div className={styles.hireDevContents}>
-                  <p className={styles.hireDevHeading}>{item.title}</p>
-                  <p className={styles.hireDevPara}>{item.descriptions}</p>
-                </div>
-                <div className={styles.hireTalent}>
-                  <button
-                    className={styles.hireDevButton}
-                    // onClick={() => onOpenModal(item)}
-                    onClick={() => onOpenModal(item)}
-                  >
-                    Hire a Talent
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </Slider>
-      </div>
-    </div>
-        <Modal open={open} onClose={onCloseModal}  showCloseIcon={false} center>
+      <Modal open={open} onClose={onCloseModal} showCloseIcon={false} center>
         {/* <GetInTouch modal={true} modelClose={(e) => setOpen(e)} /> */}
-        <GetModal  modal={true} modelClose={(e) => setOpen(e)}  getid={getid}/>
+        {showMeetingModal ? <HubSpotMeeting /> : <GetModal modal={true} modelClose={(e) => setOpen(e)} getid={getid} handleDevTypeClick={handleDevTypeClick} />}
       </Modal>
-      </>
+    </>
   );
 };
 
