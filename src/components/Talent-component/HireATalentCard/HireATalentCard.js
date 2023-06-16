@@ -15,19 +15,10 @@ const HirATalentCard = () => {
   const onOpenModal = (items) => {
     setGetid(items.id);
     setOpen(true);
-    console.log("onclick ---->>", items);
-
-    // setIsNavCollapsed(false);
-    // setOpenDrawer(false);
   };
-  // console.log(getid, "onclick <<------");
 
   const onCloseModal = () => {
-    if (open) {
-      setOpen(false);
-    }
-    // setOpen(false);
-    // console.log("onclose ---->>", open);
+    setOpen(false);
   };
 
   const changeSlider = (sum) => {
@@ -174,7 +165,6 @@ const HirATalentCard = () => {
                   <div className={styles.hireTalent}>
                     <button
                       className={styles.hireDevButton}
-                      // onClick={() => onOpenModal(items)}
                       onClick={() => onOpenModal(items)}
                     >
                       Hire a Talent
@@ -197,7 +187,6 @@ const HirATalentCard = () => {
                   <div className={styles.hireTalent}>
                     <button
                       className={styles.hireDevButton}
-                      // onClick={() => onOpenModal(item)}
                       onClick={() => onOpenModal(item)}
                     >
                       Hire a Talent
@@ -211,7 +200,6 @@ const HirATalentCard = () => {
       </div>
       {open && (
         <Modal open={open} onClose={onCloseModal} showCloseIcon={false} center>
-          {/* <GetInTouch modal={true} modelClose={(e) => setOpen(e)} /> */}
           <GetModal modal={true} modelClose={(e) => setOpen(e)} getid={getid} />
         </Modal>
       )}
