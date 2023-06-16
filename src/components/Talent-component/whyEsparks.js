@@ -3,6 +3,7 @@ import styles from "./style.module.css";
 import { hiringWhyEspark } from "../../helper/whyEsparkTalent";
 import CountUp, { useCountUp } from "react-countup";
 import Slider from "react-slick";
+import { FaPlus } from "react-icons/fa";
 
 const WhyeSparks = () => {
   useCountUp({
@@ -55,6 +56,7 @@ const WhyeSparks = () => {
                     end={items.ends}
                     enableScrollSpy
                     className={styles.boxText}
+                    suffix="+"
                   />
                 </div>
               </div>
