@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 
-const HubSpotMeeting = () => {
-
+const Calendly = () => {
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://assets.calendly.com/assets/external/widget.js';
@@ -13,8 +12,8 @@ const HubSpotMeeting = () => {
     };
   }, []);
 
-  return <div className="calendly-inline-widget" data-url="https://calendly.com/shahdurranaq/30min" style={{ minWidth: '350px',height: '700px', overflowY:"hidden"}}></div>
+  return <div className="calendly-inline-widget" data-url="https://calendly.com/hr--1312/strategic-session?hide_gdpr_banner=1" style={{ minWidth: '350px', height: '700px', overflowY: "hidden" }}></div>
 };
 
 
-export default HubSpotMeeting;
+export default Calendly;

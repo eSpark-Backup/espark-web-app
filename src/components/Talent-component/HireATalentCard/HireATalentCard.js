@@ -7,7 +7,7 @@ import RightSwipe from "../../../assets/images/hire-a-developer/RightSwipe.svg";
 import { Modal } from "react-responsive-modal";
 import GetInTouch from "../../getInTouch/GetInTouch";
 import GetModal from "../../getInTouch/getModal";
-import HubSpotMeeting from "../../HubSpotMeeting/hubSpotMeeting";
+import Calendly from "../../CalendlyMeeting/calendly";
 
 const HirATalentCard = () => {
   const [index, setIndex] = useState(0);
@@ -216,7 +216,7 @@ const HirATalentCard = () => {
       </div>
       <Modal open={open} onClose={onCloseModal} showCloseIcon={false} center>
         {/* <GetInTouch modal={true} modelClose={(e) => setOpen(e)} /> */}
-        {showMeetingModal ? <HubSpotMeeting /> : <GetModal modal={true} modelClose={(e) => setOpen(e)} getid={getid} handleDevTypeClick={handleDevTypeClick} />}
+        {showMeetingModal ? <Calendly /> : <GetModal modal={true} modelClose={(e) => setOpen(e)} getid={getid} handleDevTypeClick={handleDevTypeClick} />}
       </Modal>
     </>
   );
