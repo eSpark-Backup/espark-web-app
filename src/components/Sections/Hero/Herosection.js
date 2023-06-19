@@ -12,6 +12,7 @@ function Herosection({
   serviceClass,
   homeclass,
   animation,
+  imgResize = false,
 }) {
   return (
     <>
@@ -64,7 +65,11 @@ function Herosection({
                   }}
                 ></p>
               )}
-              <img src={images} class={`${styles.images}`} alt="image"/>
+              <img
+                src={images}
+                class={imgResize ? `${styles.hireimage} ` : `${styles.images}`}
+                alt="image"
+              />
             </div>
           </div>
         </div>

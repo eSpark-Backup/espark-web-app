@@ -22,6 +22,7 @@ const Talent = () => {
          No more worrying about local laws, complex tax systems, or managing international payroll. 
          eSpark takes care of everything in 50+ countries."
         images={heroImage}
+        imgResize={true}
         ShowButton={true}
         buttonText={"Hire a Talent"}
         buttonUrl={"#hire-talent"}
@@ -37,7 +38,7 @@ const Talent = () => {
         paragraph={<p>We Have Completed 100+ Projects Successfully</p>}
       />
       <WhyeSparks />
-      
+
       <StartProject />
     </div>
   );

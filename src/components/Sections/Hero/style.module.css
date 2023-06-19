@@ -6,7 +6,7 @@
   line-height: 140%;
   color: #3a3a3a;
 }
- /* .paraText {color: black;
+/* .paraText {color: black;
 font-size: ;} */
 .service {
   width: 35%;
@@ -79,12 +79,21 @@ font-size: ;} */
     height: auto;
     width: 550px !important;
   }
+  .hireimage {
+    height: auto;
+    width: 712px !important;
+  }
 }
 
 @media (max-width: 768px) {
   .images {
     height: auto;
     width: 400px !important;
+  }
+  .hireimage {
+    height: auto;
+    max-width: 500px !important;
+    min-width: 450px !important;
   }
 
   button {
@@ -133,12 +142,21 @@ font-size: ;} */
     height: auto;
     width: 400px !important;
   }
+  .hireimage {
+    height: auto;
+    min-width: 400px !important;
+    max-width: 490px !important;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .images {
     height: auto;
     width: 500px !important;
+  }
+  .hireimage {
+    height: auto;
+    width: 712px !important;
   }
 }
 
@@ -165,7 +183,6 @@ font-size: ;} */
   .serviceText {
     margin-top: 0px;
   }
-
 }
 
 @media only screen and (max-width: 986px) {
@@ -187,6 +204,10 @@ font-size: ;} */
     height: auto;
     width: 300px !important;
   }
+  .hireimage {
+    height: auto;
+    width: 350px !important;
+  }
 
   button {
     font-family: "Poppins";
@@ -200,7 +221,6 @@ font-size: ;} */
   .headingColumnMobile {
     padding: 5%;
   }
- 
 
   .paraTexts {
     font-family: "Poppins";
@@ -223,7 +243,6 @@ font-size: ;} */
 }
 
 @media screen and (max-width: 786px) {
-
   .paraTexts {
     font-size: 16px;
   }
@@ -236,6 +255,10 @@ font-size: ;} */
     height: auto;
     width: 450px !important;
   }
+  .hireimage {
+    height: auto;
+    width: 500px !important;
+  }
 
   button {
     font-family: "Poppins";
@@ -245,13 +268,9 @@ font-size: ;} */
     line-height: 100%;
     color: #ffffff;
   }
-
-
 }
 
 @media screen and (max-width: 425px) {
-
-
   .paraTexts {
     font-size: 16px;
   }
@@ -263,6 +282,10 @@ font-size: ;} */
   .images {
     height: auto;
     width: 300px !important;
+  }
+  .hireimage {
+    height: auto;
+    width: 350px !important;
   }
 
   button {
@@ -291,6 +314,11 @@ font-size: ;} */
     height: auto;
     width: 550px !important;
   }
+  .hireimage {
+    height: auto;
+    max-width: 712px !important;
+    min-width: 675px !important;
+  }
 
   .headingColumn {
     padding-top: 0px !important;
@@ -299,9 +327,7 @@ font-size: ;} */
   }
 }
 
-
 @media only screen and (min-width: 992px) {
-
   .headingColumn {
     display: block !important;
   }
@@ -325,20 +351,23 @@ font-size: ;} */
   }
 }
 
-
-
-
 @media (min-width: 280px) and (max-width: 540px) {
-
   .images {
     width: 300px !important;
   }
+  .hireimage {
+    height: auto;
+    width: 350px !important;
+  }
 }
-
 
 @media only screen and (max-width: 280px) {
   .images {
     height: auto;
     width: 250px !important;
+  }
+  .hireimage {
+    height: auto;
+    width: 300px !important;
   }
 }
