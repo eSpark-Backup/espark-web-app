@@ -1,1 +1,12 @@
-
+.para {
+  font-family: "Inter" !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  line-height: 32.3px !important;
+  letter-spacing: 0em !important;
+  text-align: center !important;
+  padding: 7px 0 !important;
+  color: #3a3a3a !important;
+  max-width: 60em;
+  margin: 0 auto;
+}

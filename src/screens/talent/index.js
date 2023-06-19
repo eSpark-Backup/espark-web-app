@@ -8,10 +8,9 @@ import style from "./style.module.css";
 import HirATalentCard from "../../components/Talent-component/HireATalentCard/HireATalentCard";
 import SaveTimeBudget from "../../components/Talent-component/SaveTimeBudget";
 import StartProject from "../../components/Talent-component/Start-Projects/StartProject";
-// import HowItWorks from '../../components/Talent-component/HowItWorks/HowItWorks';
+
 import Benefit from "../../components/Talent-component/Benafit/benefit";
 import Hrplatform from "../../components/Talent-component/HrPlatform/HrPlatform";
-// import StartProject from '../../components/Talent-component/Start-Projects/StartProject';
 
 const Talent = () => {
   return (
@@ -37,7 +36,6 @@ const Talent = () => {
         paragraph={<p>We Have Completed 100+ Projects Successfully</p>}
       />
       <WhyeSparks />
-      
       <StartProject />
     </div>
   );

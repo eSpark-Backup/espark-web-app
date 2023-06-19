@@ -19,7 +19,7 @@ export const hireDevelopers = [
   },
   {
     id: 4,
-    title: "Hire a Embedded System Designer",
+    title: "Hire a Embedded Designer",
     descriptions:
       "Are you looking for an expert Embedded System Designer for your hardware Projects? eSpark Consulting Group has over 10+ years of experience working on various Embedded System Projects, that includes PCB design, Firmware Development, Embedded Linux development, and more.",
   },
