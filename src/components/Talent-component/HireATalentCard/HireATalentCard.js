@@ -14,6 +14,7 @@ const HirATalentCard = () => {
   const [open, setOpen] = useState(false);
   const [getid, setGetid] = useState('');
   const [showMeetingModal, setShowMeetingModal] = useState(false);
+  const [devSelected, setDevSelected] = useState();
 
   const onOpenModal = (items) => {
     setOpen(true);
@@ -56,8 +57,8 @@ const HirATalentCard = () => {
     );
   };
 
-  const handleDevTypeClick = () => {
-    // setOpen(false);
+  const handleDevTypeClick = (devTitle) => {
+    setDevSelected(devTitle);
     setShowMeetingModal(true);
   };
 
@@ -216,7 +217,7 @@ const HirATalentCard = () => {
       </div>
       <Modal open={open} onClose={onCloseModal} showCloseIcon={false} center>
         {/* <GetInTouch modal={true} modelClose={(e) => setOpen(e)} /> */}
-        {showMeetingModal ? <Calendly /> : <GetModal modal={true} modelClose={(e) => setOpen(e)} getid={getid} handleDevTypeClick={handleDevTypeClick} />}
+        {showMeetingModal ? <Calendly devSelected={devSelected}/> : <GetModal modal={true} modelClose={(e) => setOpen(e)} getid={getid} handleDevTypeClick={handleDevTypeClick} />}
       </Modal>
     </>
   );

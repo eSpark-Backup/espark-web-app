@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-
-const Calendly = () => {
+const Calendly = ({devSelected}) => {
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://assets.calendly.com/assets/external/widget.js';
@@ -12,7 +11,7 @@ const Calendly = () => {
     };
   }, []);
 
-  return <div className="calendly-inline-widget" data-url="https://calendly.com/hr--1312/strategic-session?hide_gdpr_banner=1" style={{ minWidth: '350px', height: '700px', overflowY: "hidden" }}></div>
+  return <div className="calendly-inline-widget" data-url={`https://calendly.com/esparkconsgroup/30min?primary_color=11a79c&a2=${devSelected}`} style={{ minWidth: '350px', height: '700px', overflowY: "hidden" }}></div>
 };
 
 

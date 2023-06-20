@@ -18,7 +18,7 @@ const GetModal = ({ items, getid, handleDevTypeClick }) => {
                 {item.btns &&
                   item.btns.map((btnItem, index) => (
                     <div className=" col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 ">
-                      <button key={index} onClick={handleDevTypeClick} className="developerBtn">
+                      <button key={index} onClick={() => handleDevTypeClick(btnItem.btn1)} className="developerBtn">
                         {btnItem.btn1}
                       </button>
                     </div>
