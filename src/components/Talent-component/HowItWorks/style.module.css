@@ -191,7 +191,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .Logo {
     width: 110px;
     height: 110px;
@@ -222,7 +222,15 @@
   .leftContentHeading {
     font-size: 23px;
     font-weight: 600 !important;
+    /* white-space: pre-line !important; */
+    white-space: normal; /* Allow line breaks for item.name on smaller screens */
+    display: inline-block; /* Make the element behave like a block but respect line breaks */
+    max-width: 100%;
   }
+  /* .leftContentHeading::before {
+    content: "\a";
+    white-space: pre;
+  } */
 
   .leftContentPara {
     font-size: 18px;

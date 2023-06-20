@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="container-fluid  footer_areas ">
             <div className="row">
               <div className="col-lg-4 col-md-4 col-sm-12">
-                <div className="single-footer-widget">
+                <div className="single-footer-widget single-footer-widget-mobile ">
                   <div className="logo">
                     <Link href="/">
                       <img
@@ -28,7 +28,7 @@ const Footer = () => {
                       />
                     </Link>
                   </div>
-                  <p className="footer-about">
+                  <p className="footer-about footer-about-mobile ">
                     At eSpark Consulting Group, we provide customized and
                     innovative software IoT-based. Our broad range of services
                     is aimed to help businesses optimize their processes, reduce
