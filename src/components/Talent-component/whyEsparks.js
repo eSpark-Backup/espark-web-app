@@ -3,17 +3,8 @@ import styles from "./style.module.css";
 import { hiringWhyEspark } from "../../helper/whyEsparkTalent";
 import CountUp, { useCountUp } from "react-countup";
 import Slider from "react-slick";
-import { FaPlus } from "react-icons/fa";
 
 const WhyeSparks = () => {
-  useCountUp({
-    ref: "counter",
-    start: 10,
-    end: 1234567,
-    enableScrollSpy: true,
-    scrollSpyDelay: 1000,
-  });
-
   const settings = {
     autoplay: true,
     autoplaySpeed: 2000,
@@ -45,7 +36,7 @@ const WhyeSparks = () => {
       >
         {hiringWhyEspark.map((items) => {
           return (
-            <div>
+            <div key={items.id}>
               <div className={` ${styles.box} hiringContainerBox`}>
                 <div className="pb-3">
                   <img src={items.icon} className={styles.boxImage} alt="" />
@@ -54,9 +45,13 @@ const WhyeSparks = () => {
                   <CountUp
                     start={items.starts}
                     end={items.ends}
-                    enableScrollSpy
+                    target={items.ends}
+                    enableScrollSpy={true}
+                    // duration={3}
+                    // redraw={false}
+                    useEasing
                     className={styles.boxText}
-                    suffix="+"
+                    suffix={items.text === "Customer Satisfaction" ? "%" : "+"}
                   />
                 </div>
               </div>
