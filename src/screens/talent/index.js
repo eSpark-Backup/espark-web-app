@@ -4,7 +4,7 @@ import heroImage from "../../assets/images/talent-image/DASH BOARD.svg";
 import HowItWorks from "../../components/Talent-component/HowItWorks/HowItWorks";
 import WhyeSparks from "../../components/Talent-component/whyEsparks";
 import SectionTitle from "../../components/sectionTitle";
-import style from "./style.module.css";
+
 import HirATalentCard from "../../components/Talent-component/HireATalentCard/HireATalentCard";
 import SaveTimeBudget from "../../components/Talent-component/SaveTimeBudget";
 import StartProject from "../../components/Talent-component/Start-Projects/StartProject";
@@ -12,17 +12,22 @@ import StartProject from "../../components/Talent-component/Start-Projects/Start
 import Benefit from "../../components/Talent-component/Benafit/benefit";
 import Hrplatform from "../../components/Talent-component/HrPlatform/HrPlatform";
 
+import * as constants from "../../constants/constants";
+
 const Talent = () => {
+  const title = constants.HIRE_TALENT_TITLE;
+  const para = constants.HIRE_TALENT_PARA;
+  const hireATalent = constants.HIRE_TALENT;
+  const whyEsparks = constants.WHY_ESPARK;
+  const completedProjects = constants.COMPLETED_PROJECTS;
   return (
     <div>
       <Herosection
-        title={`Hire employees in Pakistan, hassle-free`}
-        paragraph="With eSpark, your business can easily hire employees in Pakistan.
-         No more worrying about local laws, complex tax systems, or managing international payroll. 
-         eSpark takes care of everything in 50+ countries."
+        title={title}
+        paragraph={para}
         images={heroImage}
         ShowButton={true}
-        buttonText={"Hire a Talent"}
+        buttonText={hireATalent}
         buttonUrl={"#hire-talent"}
         buttonDesign={13}
       />
@@ -32,8 +37,8 @@ const Talent = () => {
       <HirATalentCard />
       <Hrplatform />
       <SectionTitle
-        heading={"Why eSpark?"}
-        paragraph={<p>We Have Completed 100+ Projects Successfully</p>}
+        heading={whyEsparks}
+        paragraph={<p>{completedProjects}</p>}
       />
       <WhyeSparks />
       <StartProject />
