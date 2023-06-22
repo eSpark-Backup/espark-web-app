@@ -90,11 +90,6 @@ font-size: ;} */
     height: auto;
     width: 400px !important;
   }
-  .hireimage {
-    height: auto;
-    max-width: 500px !important;
-    min-width: 450px !important;
-  }
 
   button {
     font-family: "Poppins";
@@ -153,10 +148,6 @@ font-size: ;} */
   .images {
     height: auto;
     width: 500px !important;
-  }
-  .hireimage {
-    height: auto;
-    width: 712px !important;
   }
 }
 
@@ -255,10 +246,6 @@ font-size: ;} */
     height: auto;
     width: 450px !important;
   }
-  .hireimage {
-    height: auto;
-    width: 500px !important;
-  }
 
   button {
     font-family: "Poppins";
@@ -308,16 +295,47 @@ font-size: ;} */
   padding-bottom: 20px !important;
   align-items: start;
 }
+@media (max-width: 2560px) and (min-width: 1930px) {
+  .hireimage {
+    height: auto;
+
+    min-width: 950px !important ;
+  }
+}
+@media (max-width: 1920px) and (min-width: 1441px) {
+  .hireimage {
+    height: auto;
+
+    min-width: 715px !important ;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1200px) {
+  .hireimage {
+    height: auto;
+
+    min-width: 590px !important ;
+  }
+}
+@media (max-width: 768px) and (min-width: 576px) {
+  .hireimage {
+    height: auto;
+    max-width: 560px !important ;
+    min-width: 500px !important ;
+  }
+}
+@media (min-width: 540px) and (max-width: 576px) {
+  .hireimage {
+    height: auto;
+
+    max-width: 450px !important ;
+    min-width: 400px !important ;
+  }
+}
 
 @media only screen and (min-width: 1366px) {
   .images {
     height: auto;
     width: 550px !important;
-  }
-  .hireimage {
-    height: auto;
-    max-width: 712px !important;
-    min-width: 675px !important;
   }
 
   .headingColumn {
@@ -357,7 +375,8 @@ font-size: ;} */
   }
   .hireimage {
     height: auto;
-    width: 350px !important;
+    min-width: 240px !important;
+    max-width: 336px !important;
   }
 }
 

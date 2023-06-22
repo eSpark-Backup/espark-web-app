@@ -20,7 +20,7 @@ function Herosection({
         <div class="container-fluid">
           <div class="row">
             <div
-              class={`${styles.headingColumn} col-lg-6 col-md-12 col-sm-12 `}
+              class={`${styles.headingColumn} col-lg-6 col-md-12 col-sm-12 .col-xl-4 `}
             >
               <div
                 class={
@@ -54,7 +54,7 @@ function Herosection({
               class={
                 serviceClass
                   ? `animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-12 col-sm-12 text-center img-fluid `
-                  : `animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-2 col-sm-12 text-center img-fluid  ${styles.imageHero}`
+                  : `animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-2 col-sm-12 .col-xl-8 text-center img-fluid  ${styles.imageHero}`
               }
             >
               {animation && (
@@ -67,7 +67,7 @@ function Herosection({
               )}
               <img
                 src={images}
-                class={imgResize ? `${styles.hireimage} ` : `${styles.images}`}
+                class={imgResize ? `${styles.hireimage}` : `${styles.images}`}
                 alt="image"
               />
             </div>
