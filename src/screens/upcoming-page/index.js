@@ -4,7 +4,7 @@ import commingSoon from "../../assets/images/comming-soon.png";
 import "./style.css";
 import Button from "../../components/button/button";
 
-const Upcomming = () => {
+const Upcoming = () => {
   return (
     <div className="container-fluid text-center ptb-80">
       <div class="animation">
@@ -24,4 +24,4 @@ const Upcomming = () => {
   );
 };
 
-export default Upcomming;
+export default Upcoming;

@@ -9592,6 +9592,10 @@ fieldset:disabled .btn {
   font-weight: 400 !important;
 }
 
+.fw-semibold {
+  font-weight: 600 !important;
+}
+
 .fw-bold {
   font-weight: 700 !important;
 }
@@ -29538,7 +29542,6 @@ blockquote:after {
 }
 
 .footer-area {
-  padding-top: 80px;
   padding-bottom: 70px;
   position: relative;
   z-index: 1;
@@ -29640,10 +29643,7 @@ blockquote:after {
 }
 
 .single-footer-widget ul.social-links li a {
-  width: 50px;
   text-align: center;
-  line-height: 50px;
-  height: 50px;
   border: 1px solid var(--color-secondary);
   background: var(--color-secondary);
   border-radius: 10px;
