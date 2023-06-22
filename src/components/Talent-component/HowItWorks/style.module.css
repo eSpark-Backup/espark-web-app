@@ -328,11 +328,14 @@
   .rightContentHeading {
     font-size: 20px;
     font-weight: 600 !important;
+    padding-right: 30px !important ;
   }
 
   .leftContentHeading {
     font-size: 20px;
     font-weight: 600 !important;
+    line-height: 130%;
+    padding-left: 30px !important ;
   }
 
   .mainContainer {
@@ -383,14 +386,14 @@
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1200px) {
+/* @media (min-width: 1025px) and (max-width: 1200px) {
   .leftContentHeading {
     font-size: 40px;
   }
   .rightContentHeading {
     font-size: 40px;
   }
-}
+} */
 @media (min-width: 575px) and (max-width: 1024px) {
   .leftContentPara {
     font-size: 15px;

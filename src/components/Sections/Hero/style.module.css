@@ -1,12 +1,4 @@
-.paraTexts {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px !important;
-  line-height: 140%;
-  color: #3a3a3a;
-}
- /* .paraText {color: black;
+/* .paraText {color: black;
 font-size: ;} */
 .service {
   width: 35%;
@@ -32,7 +24,7 @@ font-size: ;} */
 }
 
 .paraTexts {
-  font-family: "Poppins";
+  font-family: "Poppins" !important;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -150,7 +142,7 @@ font-size: ;} */
   }
 
   .paraTexts {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 
   .heading {
@@ -165,7 +157,6 @@ font-size: ;} */
   .serviceText {
     margin-top: 0px;
   }
-
 }
 
 @media only screen and (max-width: 986px) {
@@ -177,10 +168,6 @@ font-size: ;} */
 @media screen and (max-width: 425px) {
   .paraTexts {
     font-size: 16px;
-  }
-
-  .heading {
-    font-size: 30px;
   }
 
   .images {
@@ -200,18 +187,17 @@ font-size: ;} */
   .headingColumnMobile {
     padding: 5%;
   }
- 
 
   .paraTexts {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 16px !important;
     line-height: 140%;
   }
 
   .heading {
-    font-size: 28px;
+    font-size: 28px !important;
     line-height: 37px;
   }
 }
@@ -223,9 +209,8 @@ font-size: ;} */
 }
 
 @media screen and (max-width: 786px) {
-
   .paraTexts {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 
   .heading {
@@ -245,19 +230,11 @@ font-size: ;} */
     line-height: 100%;
     color: #ffffff;
   }
-
-
 }
 
-@media screen and (max-width: 425px) {
-
-
+@media only screen and (max-width: 425px) {
   .paraTexts {
     font-size: 16px;
-  }
-
-  .heading {
-    font-size: 30px;
   }
 
   .images {
@@ -268,8 +245,9 @@ font-size: ;} */
   button {
     font-family: "Poppins";
     font-style: normal;
-    font-weight: 500;
-    font-size: 15px !important;
+    font-weight: 600;
+    font-size: 16px !important;
+    line-height: 12px !important;
     line-height: 100%;
     color: #ffffff;
   }
@@ -299,9 +277,7 @@ font-size: ;} */
   }
 }
 
-
 @media only screen and (min-width: 992px) {
-
   .headingColumn {
     display: block !important;
   }
@@ -325,16 +301,11 @@ font-size: ;} */
   }
 }
 
-
-
-
 @media (min-width: 280px) and (max-width: 540px) {
-
   .images {
     width: 300px !important;
   }
 }
-
 
 @media only screen and (max-width: 280px) {
   .images {
