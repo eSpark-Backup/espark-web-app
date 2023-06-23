@@ -93,7 +93,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="col-xl-9 col-lg-8 col-sm-12 flex">
-                <div className="row justify-content-start ">
+                <div className="row justify-content-start align-items-center">
                   <div className="col-auto">
                     <h3>Email Us</h3>
                   </div>
