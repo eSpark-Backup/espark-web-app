@@ -7,13 +7,15 @@ const SaveTimeBudget = () => {
   return (
     <div id="hire-talent" className="container-fluid">
       <SectionTitle
-        // height={"3px"}
-        // width={"130px"}
         heading={"Save Your Time & Budget"}
         padding={"80px"}
-        paragraph={`Experience the best global tech talent and enjoy the tech world
-        without getting exhausted through the hiring process. Hire an expert
-        developer, designer and an engineer now.`}
+        paragraph={
+          <p className={styles.para}>
+            Experience the best global tech talent and enjoy the tech world
+            without getting exhausted through the hiring process. Hire an expert
+            developer, designer and an engineer now.
+          </p>
+        }
       />
     </div>
   );

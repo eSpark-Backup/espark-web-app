@@ -7,7 +7,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 44px ;
+  font-size: 44px;
   line-height: 160.02%;
   color: #3359a2;
 }
@@ -22,6 +22,24 @@
 /* .hrContainer{
   max-width: 100%;
 } */
-.hrsec{
+.hrsec {
   margin-top: -20px;
+}
+
+@media screen and (min-width: 570px) and (max-width: 660px) {
+  .hrsec {
+    margin-top: 1rem !important;
+  }
+}
+
+@media screen and (min-width: 661px) and (max-width: 992px) {
+  .hrsec {
+    margin-top: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hrContainer {
+    order: 5 !important;
+  }
 }

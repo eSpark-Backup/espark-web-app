@@ -5,17 +5,9 @@ import CountUp, { useCountUp } from "react-countup";
 import Slider from "react-slick";
 
 const WhyeSparks = () => {
-  useCountUp({
-    ref: "counter",
-    start: 10,
-    end: 1234567,
-    enableScrollSpy: true,
-    scrollSpyDelay: 1000,
-  });
-
   const settings = {
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -44,7 +36,7 @@ const WhyeSparks = () => {
       >
         {hiringWhyEspark.map((items) => {
           return (
-            <div>
+            <div key={items.id}>
               <div className={` ${styles.box} hiringContainerBox`}>
                 <div className="pb-3">
                   <img src={items.icon} className={styles.boxImage} alt="" />
@@ -53,8 +45,11 @@ const WhyeSparks = () => {
                   <CountUp
                     start={items.starts}
                     end={items.ends}
-                    enableScrollSpy
+                    target={items.ends}
+                    enableScrollSpy={true}
+                    useEasing
                     className={styles.boxText}
+                    suffix={items.text === "Customer Satisfaction" ? "%" : "+"}
                   />
                 </div>
               </div>

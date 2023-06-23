@@ -44,11 +44,7 @@ const HowItWorks = () => {
                     item.type == "odd" ? styles.leftPoint : styles.rightPoint
                   }
                 >
-                  <div
-                    className={item._id > 2 ? styles.bigPoint : styles.point}
-                  >
-                    {item._id}
-                  </div>
+                  <div className={styles.point}>{item._id}</div>
                 </div>
               </div>
               <div
