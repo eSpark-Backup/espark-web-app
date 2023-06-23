@@ -14,9 +14,22 @@ const ButtonMailto = ({ mailto, label, showIcon }) => {
       }}
     >
       {showIcon && (
-        <MdAttachEmail className="icon" style={{ marginRight: "5px" }} />
+        <MdAttachEmail
+          className="icon"
+          size={22}
+          style={{ marginRight: "5px" }}
+        />
       )}
-      <span>{label}</span>
+      <span
+        style={{
+          color: "#070707",
+          fontSize: "18px",
+          fontFamily: "Poppins",
+          lineHeight: "100%",
+        }}
+      >
+        {label}
+      </span>
     </Link>
   );
 };

@@ -55,8 +55,8 @@ const Footer = () => {
         phone: "+92(333-6006055)",
         tel: "tel:+92333-6006055",
       },
-      address: `301/B 3rd Floor & 401/A 4th Floor, Blossom \b
-      Trade Centre, Block 1 Gulistan-e-Johar, \b
+      address: `301/B 3rd Floor & 401/A 4th Floor, Blossom 
+      Trade Centre, Block 1 Gulistan-e-Johar, 
       Karachi, 74300`,
       location:
         "https://www.google.com/maps/dir//eSpark+Consulting+Group+301%2FB+3rd+Floor+%26+401%2FA+4th+Floor,+Blossom+Trade+Centre+Block+1+Gulistan-e-Johar,+Karachi,+74300/@24.929158,67.115604,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb33feab1c28595:0xa3b2a5dc2f97a82e",
@@ -67,7 +67,7 @@ const Footer = () => {
         phone: "+44(20 3286 5975)",
         tel: "tel:+442032865975",
       },
-      address: `27 Old Gloucester Street, London, \b
+      address: `27 Old Gloucester Street, London, 
       WC1N 3AX.`,
       location:
         "https://www.google.com/maps/dir//eSpark+Consulting+Group+301%2FB+3rd+Floor+%26+401%2FA+4th+Floor,+Blossom+Trade+Centre+Block+1+Gulistan-e-Johar,+Karachi,+74300/@24.929158,67.115604,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb33feab1c28595:0xa3b2a5dc2f97a82e",
@@ -79,7 +79,7 @@ const Footer = () => {
       <div className="footers">
         <footer className="footer-area pt-4">
           <div className="container-fluid">
-            <div className="row align-items-center">
+            <div className="row ">
               <div className="col-xl-3 col-lg-4 col-sm-12">
                 <div className="single-footer-widget">
                   <div className="logo">
@@ -92,8 +92,8 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-9 col-lg-8 col-sm-12">
-                <div className="row justify-content-end align-items-center">
+              <div className="col-xl-9 col-lg-8 col-sm-12 flex">
+                <div className="row justify-content-start ">
                   <div className="col-auto">
                     <h3>Email Us</h3>
                   </div>
@@ -146,7 +146,7 @@ const Footer = () => {
                   className="col-lg-4 col-md-4 col-sm-12 footers"
                 >
                   <div className="row">
-                    <div className="col-auto px-4"></div>
+                    <div className="col-auto "></div>
                     <div className="col-auto d-flex flex-row align-items-center">
                       <img
                         className="flag me-2"
@@ -159,32 +159,36 @@ const Footer = () => {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-auto">
-                      <FaMapMarkerAlt className="icon-margin font-14" />
-                    </div>
-                    <div className="col-auto">
-                      <a
-                        href={location.location}
-                        target="_blank"
-                        rel="noreferrer"
-                        style={{ whiteSpace: "pre-line" }}
-                      >
-                        {location.address}
-                      </a>
+                    <div className="col-auto d-flex ">
+                      <div className="d-flex justify-content-right py-1">
+                        <FaMapMarkerAlt className="icon-margin font-14 " />
+                      </div>
+                      <div>
+                        <a
+                          href={location.location}
+                          target="_blank"
+                          rel="noreferrer"
+                          style={{ whiteSpace: "pre-line" }}
+                        >
+                          {location.address}
+                        </a>
+                      </div>
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-auto">
-                      <FaPhoneAlt className="icon-margin font-14" />
-                    </div>
-                    <div className="col-auto">
-                      <a
-                        href={location.contact.tel}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        {location.contact.phone}
-                      </a>
+                    <div className="col-auto d-flex">
+                      <div className="d-flex justify-content-right py-1">
+                        <FaPhoneAlt className="icon-margin font-14 px-4" />
+                      </div>
+                      <div>
+                        <a
+                          href={location.contact.tel}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {location.contact.phone}
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>

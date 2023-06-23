@@ -19,17 +19,17 @@
 .footer-area h3 {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 100%;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  line-height: 100% !important;
 }
 
 .footer-area p {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 143.5%;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 143.5% !important;
   color: #070707;
   text-align: left !important;
   padding-top: 20px;
@@ -41,7 +41,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   color: #070707 !important;
 }
 
@@ -79,8 +79,7 @@ footer .container {
   }
 }
 
-
-@media only screen and (min-width: 281px)and (max-width: 425px) {
+@media only screen and (min-width: 281px) and (max-width: 425px) {
   .footer-area {
     padding-top: 50px;
     padding-bottom: 30px;
@@ -128,7 +127,9 @@ footer .container {
     display: flex;
     justify-content: left !important;
   }
-  .footer-area a,.footer-area p { font-size: 14px;
+  .footer-area a,
+  .footer-area p {
+    font-size: 14px;
   }
   .contact-table a {
     width: 200px;
