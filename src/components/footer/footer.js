@@ -10,8 +10,20 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 import ScrollTopButton from "./ScrollTopButton";
 import { HashLink } from "react-router-hash-link";
+import * as constants from "../../constants/constants";
 
 const Footer = () => {
+  const FOOTER_ABOUT = constants.FOOTER_ABOUT;
+  const ABOUT_US = constants.ABOUT_US;
+  const UPCOMING_EVENTS = constants.UPCOMING_EVENTS;
+  const BLOG_NEWS = constants.BLOG_NEWS;
+  const FAQ_QUESTION = constants.FAQ_QUESTION;
+  const TESTIMONIAL = constants.TESTIMONIAL;
+  const PRIVACY_POLICY = constants.PRIVACY_POLICY;
+  const CONTACT_DETAIL_TITLE = constants.CONTACT_DETAIL_TITLE;
+  const PHONE_NUMBER = constants.PHONE_NUMBER;
+  const EMAIL_ADDRESS = constants.EMAIL_ADDRESS;
+  const ADDRESS = constants.ADDRESS;
   return (
     <>
       <div className="footers">
@@ -19,7 +31,7 @@ const Footer = () => {
           <div className="container-fluid  footer_areas ">
             <div className="row">
               <div className="col-lg-4 col-md-4 col-sm-12">
-                <div className="single-footer-widget">
+                <div className="single-footer-widget single-footer-widget-mobile ">
                   <div className="logo">
                     <Link href="/">
                       <img
@@ -28,11 +40,8 @@ const Footer = () => {
                       />
                     </Link>
                   </div>
-                  <p className="footer-about">
-                    At eSpark Consulting Group, we provide customized and
-                    innovative software IoT-based. Our broad range of services
-                    is aimed to help businesses optimize their processes, reduce
-                    costs, and efficiently promote their operations.
+                  <p className="footer-about footer-about-mobile ">
+                    {FOOTER_ABOUT}
                   </p>
                   <div>
                     <ul className="social-links ">
@@ -72,67 +81,30 @@ const Footer = () => {
                   <h3>Explore</h3>
                   <ul className="list">
                     <li>
-                      <Link to="/upcomming">About us</Link>
+                      <Link to="/upcomming">{ABOUT_US}</Link>
                     </li>
                     <li>
-                      <Link to="/upcomming">Upcoming Events</Link>
+                      <Link to="/upcomming">{UPCOMING_EVENTS}</Link>
                     </li>
                     <li>
-                      <Link to="/upcomming">Blog & News</Link>
+                      <Link to="/upcomming">{BLOG_NEWS}</Link>
                     </li>
                     <li>
-                      <Link to="/upcomming">FAQ Question</Link>
+                      <Link to="/upcomming">{FAQ_QUESTION}</Link>
                     </li>
                     <li>
-                      {/* <HashLink smooth to='/#testimonials' > Testimonial </HashLink> */}
-                      <Link to="/#Testimonials"> Testimonial</Link>
+                      <Link to="/#Testimonials">{TESTIMONIAL}</Link>
                     </li>
                     <li>
-                      <Link to="/privacy-policy">privacy Policy</Link>
+                      <Link to="/privacy-policy">{PRIVACY_POLICY}</Link>
                     </li>
                   </ul>
                 </div>
               </div>
-              {/* <div className="col-lg-2 col-md-6 col-sm-6 footers">
-              <div className="single-footer-widget">
-                <h3>Useful Links</h3>
-                <ul className="list">
-                <li>
-                    <Link to="/contact">
-                      <HiChevronDoubleRight className="icon-margin" /> Contact Us
-                    </Link>
-                  </li>
-                <li>
-                    <Link to="/upcomming">
-                      <HiChevronDoubleRight  className="icon-margin"/> Pricing Plan
-                    </Link>
-                  </li>
-                <li>
-                    <Link to="/upcomming">
-                      <HiChevronDoubleRight className="icon-margin" /> Instruction Profile
-                    </Link>
-                  </li>
-                <li>
-                    <Link to="/upcomming">
-                      <HiChevronDoubleRight className="icon-margin" /> Purchase Guide
-                    </Link>
-                  </li>
-                <li>
-                    <Link to="/upcomming">
-                      <HiChevronDoubleRight className="icon-margin" /> Popular Course
-                    </Link>
-                  </li>
-                <li>
-                    <Link to="/upcomming">
-                      <HiChevronDoubleRight className="icon-margin" /> Event Details
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div> */}
+
               <div className="col-lg-4 col-md-4 col-sm-12 footers">
                 <div className="single-footer-widget contacts-det">
-                  <h3>Contact Detail</h3>
+                  <h3>{CONTACT_DETAIL_TITLE}</h3>
 
                   <table className="contact-table">
                     <tbody>
@@ -141,7 +113,7 @@ const Footer = () => {
                           <FaPhoneAlt className="icon-margin" />
                         </td>
                         <td>
-                          <a href="tel:+923232788259">+92(323-2788259)</a>
+                          <a href="tel:+923232788259">{PHONE_NUMBER}</a>
                         </td>
                       </tr>
 
@@ -151,7 +123,7 @@ const Footer = () => {
                         </td>
                         <td>
                           <a href="mailto:info@eSparkConsultingGroup.com">
-                            info@esparkconsultants.com
+                            {EMAIL_ADDRESS}
                           </a>
                         </td>
                       </tr>
@@ -165,47 +137,12 @@ const Footer = () => {
                             target="_blank"
                             className="anchorss"
                           >
-                            eSpark Consulting Group,
-                            <br />
-                            301/B 3rd Floor & 401/A 4th Floor,
-                            <br /> Blossom Trade Centre,
-                            <br /> Block 1,Gulistan-e-Johar,
-                            <br /> Karachi, 74300
+                            {ADDRESS}
                           </a>
                         </td>
                       </tr>
                     </tbody>
                   </table>
-
-                  {/* <ul className="list ">
-                    <li className="phone">
-                      <a href="tel:+923232788259">
-                        <FaPhoneAlt className="icon-margin" />
-                        +92(323-2788259)
-                      </a>
-                    </li>
-                    <li className="email">
-                      <a href="mailto:info@eSparkConsultingGroup.com">
-                        <MdAttachEmail className="icon-margin" /> 
-                        info@esparkconsultants.com
-                      </a>
-                    </li>
-                    <li className="address">
-                      <a
-                        href="https://www.google.com/maps/dir//eSpark+Consulting+Group+301%2FB+3rd+Floor+%26+401%2FA+4th+Floor,+Blossom+Trade+Centre+Block+1+Gulistan-e-Johar,+Karachi,+74300/@24.929158,67.115604,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb33feab1c28595:0xa3b2a5dc2f97a82e"
-                        target="_blank"
-                        className="anchorss"
-                      >
-                        <FaMapMarkerAlt className="icon-margin" /> eSpark
-                        Consulting Group, 301/B <br /> 3rd Floor & 401/A 4th
-                        Floor, Blossom
-                        <br />
-                        Trade Centre, Block 1, Gulistan-e-Johar,
-                        <br />
-                        Karachi, 74300
-                      </a>
-                    </li>
-                  </ul> */}
                 </div>
               </div>
             </div>
@@ -214,7 +151,7 @@ const Footer = () => {
         <div className="copyright">
           <div className="col-lg-12 col-md-12">
             <div className="">
-              <p>2023 eSpark Consulting Group All Rights Reserved.</p>
+              <p>{constants.RESERVED}</p>
             </div>
           </div>
         </div>
