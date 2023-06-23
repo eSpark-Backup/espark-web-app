@@ -47,8 +47,6 @@ const WhyeSparks = () => {
                     end={items.ends}
                     target={items.ends}
                     enableScrollSpy={true}
-                    // duration={3}
-                    // redraw={false}
                     useEasing
                     className={styles.boxText}
                     suffix={items.text === "Customer Satisfaction" ? "%" : "+"}
