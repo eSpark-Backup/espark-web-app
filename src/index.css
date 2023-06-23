@@ -16,3 +16,12 @@
     border-radius: 0px;
     box-shadow: none
 }
+
+:root {
+    --divider-color: rgba(199, 207, 208, 1);
+}
+
+.divider {
+    border-bottom: 1px solid var(--divider-color);
+    width: 100%;
+}

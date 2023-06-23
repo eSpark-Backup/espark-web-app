@@ -1,24 +1,86 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import "./style.css";
-import { FaFacebookF, FaMapMarkerAlt, FaTwitter } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
-import { MdAttachEmail } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
-
-// import { HiChevronDoubleRight } from "react-icons/hi";
-
+import ButtonMailto from "../button/ButtonMailto";
 import ScrollTopButton from "./ScrollTopButton";
-import { HashLink } from "react-router-hash-link";
+import "./style.css";
+import { FaPhoneAlt } from "react-icons/fa";
+import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { FaFacebookF, FaMapMarkerAlt, FaTwitter } from "react-icons/fa";
+import PakistanFlag from "../../assets/images/Pakistan.svg";
+import UnitedKingdomFlag from "../../assets/images/UnitedKingdom.svg";
 
 const Footer = () => {
+  const socialLinks = [
+    {
+      name: "Facebook",
+      link: "https://www.facebook.com/esparkconsultants",
+      icon: <FaFacebookF />,
+    },
+    {
+      name: "Twitter",
+      link: "https://twitter.com/esparkconsult",
+      icon: <FaTwitter />,
+    },
+    {
+      name: "Instagram",
+      link: "https://www.instagram.com/esparkconsultants/",
+      icon: <AiFillInstagram />,
+    },
+    {
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/company/esparkconsgroup/",
+      icon: <AiFillLinkedin />,
+    },
+  ];
+
+  const mailtoAddress = [
+    "sales@esparkconsultants.com",
+    "info@esparkconsultants.com",
+    "hr@esparkconsultants.com",
+  ];
+
+  const footerLinks = [
+    { name: "About Us", link: "/about-us" },
+    { name: "Upcoming Events", link: "/upcoming" },
+    { name: "Blog & News", link: "/upcoming" },
+    { name: "FAQs", link: "/faq" },
+    { name: "Testimonials", link: "/#Testimonials" },
+    { name: "Privacy Policy", link: "/privacy-policy" },
+  ];
+
+  const locations = [
+    {
+      country: { name: "Pakistan", flag: PakistanFlag },
+      contact: {
+        phone: "+92(333-6006055)",
+        tel: "tel:+92333-6006055",
+      },
+      address: `301/B 3rd Floor & 401/A 4th Floor, Blossom 
+      Trade Centre, Block 1 Gulistan-e-Johar, 
+      Karachi, 74300`,
+      location:
+        "https://www.google.com/maps/dir//eSpark+Consulting+Group+301%2FB+3rd+Floor+%26+401%2FA+4th+Floor,+Blossom+Trade+Centre+Block+1+Gulistan-e-Johar,+Karachi,+74300/@24.929158,67.115604,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb33feab1c28595:0xa3b2a5dc2f97a82e",
+    },
+    {
+      country: { name: "United Kingdom", flag: UnitedKingdomFlag },
+      contact: {
+        phone: "+44(20 3286 5975)",
+        tel: "tel:+442032865975",
+      },
+      address: `27 Old Gloucester Street, London, 
+      WC1N 3AX.`,
+      location:
+        "https://www.google.com/maps/dir//eSpark+Consulting+Group+301%2FB+3rd+Floor+%26+401%2FA+4th+Floor,+Blossom+Trade+Centre+Block+1+Gulistan-e-Johar,+Karachi,+74300/@24.929158,67.115604,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb33feab1c28595:0xa3b2a5dc2f97a82e",
+    },
+  ];
+
   return (
     <>
       <div className="footers">
-        <footer className="footer-area">
-          <div className="container-fluid  footer_areas ">
-            <div className="row">
-              <div className="col-lg-4 col-md-4 col-sm-12">
+        <footer className="footer-area pt-4">
+          <div className="container-fluid">
+            <div className="row ">
+              <div className="col-xl-3 col-lg-4 col-sm-12">
                 <div className="single-footer-widget">
                   <div className="logo">
                     <Link href="/">
@@ -28,6 +90,32 @@ const Footer = () => {
                       />
                     </Link>
                   </div>
+                </div>
+              </div>
+              <div className="col-xl-9 col-lg-8 col-sm-12 flex">
+                <div className="row justify-content-start align-items-center">
+                  <div className="col-auto">
+                    <h3>Email Us</h3>
+                  </div>
+
+                  {mailtoAddress.map((mailto, index) => (
+                    <div
+                      className="col-auto d-flex align-items-center"
+                      key={`email-address-${index}`}
+                    >
+                      <ButtonMailto mailto={mailto} label={mailto} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="col-12 py-4">
+                <div className="divider"></div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-4 col-md-4 col-sm-12">
+                <div className="single-footer-widget">
                   <p className="footer-about">
                     At eSpark Consulting Group, we provide customized and
                     innovative software IoT-based. Our broad range of services
@@ -36,185 +124,96 @@ const Footer = () => {
                   </p>
                   <div>
                     <ul className="social-links ">
-                      <li>
-                        <a
-                          href="https://www.facebook.com/eSparkConsGroup"
-                          className="facebook"
-                          target="_blank"
-                        >
-                          <FaFacebookF />
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.instagram.com/esparkconsultantsgroup"
-                          className="instagram"
-                          target="_blank"
-                        >
-                          <AiFillInstagram />
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://twitter.com/eSparkConsGroup"
-                          className="twitter"
-                          target="_blank"
-                        >
-                          <FaTwitter />
-                        </a>
-                      </li>
+                      {socialLinks.map((socialLink, index) => (
+                        <li key={`social-links-${index}`}>
+                          <a
+                            className="p-2"
+                            href={socialLink.link}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {socialLink.icon}
+                          </a>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                 </div>
               </div>
-              <div className="col-lg-4 col-md-4 col-sm-6 footer">
-                <div className="single-footer-widget pl-5 explores exploreSectionWidth">
-                  <h3>Explore</h3>
-                  <ul className="list">
-                    <li>
-                      <Link to="/about-us">About Us</Link>
-                    </li>
-                    <li>
-                      <Link to="/upcomming">Upcoming Events</Link>
-                    </li>
-                    <li>
-                      <Link to="/upcomming">Blog & News</Link>
-                    </li>
-                    <li>
-                      <Link to="/upcomming">FAQ Question</Link>
-                    </li>
-                    <li>
-                      {/* <HashLink smooth to='/#testimonials' > Testimonial </HashLink> */}
-                      <Link to="/#Testimonials"> Testimonial</Link>
-                    </li>
-                    <li>
-                      <Link to="/privacy-policy">Privacy Policy</Link>
-                    </li>
-                  </ul>
+              {locations.map((location, index) => (
+                <div
+                  key={`location-${index}`}
+                  className="col-lg-4 col-md-4 col-sm-12 footers"
+                >
+                  <div className="row">
+                    <div className="col-auto "></div>
+                    <div className="col-auto d-flex flex-row align-items-center">
+                      <img
+                        className="flag me-2"
+                        src={location.country.flag}
+                        alt={location.country.name + "flag"}
+                      />
+                      <h6 className="text-dark fw-semibold">
+                        {location.country.name}
+                      </h6>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-auto d-flex ">
+                      <div className="d-flex justify-content-right py-1">
+                        <FaMapMarkerAlt className="icon-margin font-14 " />
+                      </div>
+                      <div>
+                        <a
+                          href={location.location}
+                          target="_blank"
+                          rel="noreferrer"
+                          style={{ whiteSpace: "pre-line" }}
+                        >
+                          {location.address}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-auto d-flex">
+                      <div className="d-flex justify-content-right py-1">
+                        <FaPhoneAlt className="icon-margin font-14 px-4" />
+                      </div>
+                      <div>
+                        <a
+                          href={location.contact.tel}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {location.contact.phone}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              {/* <div className="col-lg-2 col-md-6 col-sm-6 footers">
-              <div className="single-footer-widget">
-                <h3>Useful Links</h3>
-                <ul className="list">
-                <li>
-                    <Link to="/contact">
-                      <HiChevronDoubleRight className="icon-margin" /> Contact Us
-                    </Link>
-                  </li>
-                <li>
-                    <Link to="/upcomming">
-                      <HiChevronDoubleRight  className="icon-margin"/> Pricing Plan
-                    </Link>
-                  </li>
-                <li>
-                    <Link to="/upcomming">
-                      <HiChevronDoubleRight className="icon-margin" /> Instruction Profile
-                    </Link>
-                  </li>
-                <li>
-                    <Link to="/upcomming">
-                      <HiChevronDoubleRight className="icon-margin" /> Purchase Guide
-                    </Link>
-                  </li>
-                <li>
-                    <Link to="/upcomming">
-                      <HiChevronDoubleRight className="icon-margin" /> Popular Course
-                    </Link>
-                  </li>
-                <li>
-                    <Link to="/upcomming">
-                      <HiChevronDoubleRight className="icon-margin" /> Event Details
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div> */}
-              <div className="col-lg-4 col-md-4 col-sm-12 footers">
-                <div className="single-footer-widget contacts-det">
-                  <h3>Contact Detail</h3>
-
-                  <table className="contact-table">
-                    <tbody>
-                      <tr className="d-flex">
-                        <td>
-                          <FaPhoneAlt className="icon-margin" />
-                        </td>
-                        <td>
-                          <a href="tel:+923232788259">+92(323-2788259)</a>
-                        </td>
-                      </tr>
-
-                      <tr className="d-flex">
-                        <td>
-                          <MdAttachEmail className="icon-margin" />
-                        </td>
-                        <td>
-                          <a href="mailto:info@eSparkConsultingGroup.com">
-                            info@esparkconsultants.com
-                          </a>
-                        </td>
-                      </tr>
-                      <tr className="d-flex">
-                        <td>
-                          <FaMapMarkerAlt className="icon-margin" />
-                        </td>
-                        <td>
-                          <a
-                            href="https://www.google.com/maps/dir//eSpark+Consulting+Group+301%2FB+3rd+Floor+%26+401%2FA+4th+Floor,+Blossom+Trade+Centre+Block+1+Gulistan-e-Johar,+Karachi,+74300/@24.929158,67.115604,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb33feab1c28595:0xa3b2a5dc2f97a82e"
-                            target="_blank"
-                            className="anchorss"
-                          >
-                            eSpark Consulting Group,
-                            <br />
-                            301/B 3rd Floor & 401/A 4th Floor,
-                            <br /> Blossom Trade Centre,
-                            <br /> Block 1,Gulistan-e-Johar,
-                            <br /> Karachi, 74300
-                          </a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                  {/* <ul className="list ">
-                    <li className="phone">
-                      <a href="tel:+923232788259">
-                        <FaPhoneAlt className="icon-margin" />
-                        +92(323-2788259)
-                      </a>
-                    </li>
-                    <li className="email">
-                      <a href="mailto:info@eSparkConsultingGroup.com">
-                        <MdAttachEmail className="icon-margin" /> 
-                        info@esparkconsultants.com
-                      </a>
-                    </li>
-                    <li className="address">
-                      <a
-                        href="https://www.google.com/maps/dir//eSpark+Consulting+Group+301%2FB+3rd+Floor+%26+401%2FA+4th+Floor,+Blossom+Trade+Centre+Block+1+Gulistan-e-Johar,+Karachi,+74300/@24.929158,67.115604,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb33feab1c28595:0xa3b2a5dc2f97a82e"
-                        target="_blank"
-                        className="anchorss"
-                      >
-                        <FaMapMarkerAlt className="icon-margin" /> eSpark
-                        Consulting Group, 301/B <br /> 3rd Floor & 401/A 4th
-                        Floor, Blossom
-                        <br />
-                        Trade Centre, Block 1, Gulistan-e-Johar,
-                        <br />
-                        Karachi, 74300
-                      </a>
-                    </li>
-                  </ul> */}
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </footer>
         <div className="copyright">
-          <div className="col-lg-12 col-md-12">
-            <div className="">
-              <p>2023 eSpark Consulting Group . All Rights Reserved</p>
+          <div className="container-fluid">
+            <div className="row justify-content-between py-2">
+              <div className="col-auto">
+                <p className="fw-semibold">
+                  &copy; 2023 eSpark Consulting Group . All Rights Reserved
+                </p>
+              </div>
+
+              <div className="col-auto">
+                <ul className="row footer-nav-list">
+                  {footerLinks.map((footerLink, index) => (
+                    <li className="col-auto" key={`footer-link-${index}`}>
+                      <Link to={footerLink.link}>{footerLink.name}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>

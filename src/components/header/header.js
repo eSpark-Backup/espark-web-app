@@ -313,7 +313,7 @@ const Header = () => {
                     setIsNavCollapsed(false);
                   }}
                 >
-                  <Link class="nav-link" to="/upcomming">
+                  <Link class="nav-link" to="/upcoming">
                     <span
                       class={
                         pathname.includes("/blogs")
@@ -492,7 +492,7 @@ const Header = () => {
               <span>Careers</span>
             </Link>
             <Link
-              to="/upcomming"
+              to="/upcoming"
               className={
                 pathname.includes("/blogs")
                   ? "mobileDrawer mobileSelected"
