@@ -1,9 +1,7 @@
 import React from "react";
 import { hireDevelopersDetails } from "../../helper/Talent";
 
-const GetModal = ({ items, getid }) => {
-  console.log("opened", getid);
-
+const GetModal = ({ items, getid, handleDevTypeClick }) => {
   const final = hireDevelopersDetails.filter((item) => {
     return item.id === getid;
   });
@@ -20,7 +18,7 @@ const GetModal = ({ items, getid }) => {
                 {item.btns &&
                   item.btns.map((btnItem, index) => (
                     <div className=" col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 ">
-                      <button key={index} className="developerBtn">
+                      <button key={index} onClick={() => handleDevTypeClick(btnItem.btn1)} className="developerBtn">
                         {btnItem.btn1}
                       </button>
                     </div>
