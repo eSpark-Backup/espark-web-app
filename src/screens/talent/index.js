@@ -26,6 +26,7 @@ const Talent = () => {
         title={title}
         paragraph={para}
         images={heroImage}
+        imgResize={true}
         ShowButton={true}
         buttonText={hireATalent}
         buttonUrl={"#hire-talent"}

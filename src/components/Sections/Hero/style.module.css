@@ -1,3 +1,11 @@
+.paraTexts {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px !important;
+  line-height: 140%;
+  color: #3a3a3a;
+}
 /* .paraText {color: black;
 font-size: ;} */
 .service {
@@ -71,6 +79,10 @@ font-size: ;} */
     height: auto;
     width: 550px !important;
   }
+  .hireimage {
+    height: auto;
+    width: 712px !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -125,6 +137,11 @@ font-size: ;} */
     height: auto;
     width: 400px !important;
   }
+  .hireimage {
+    height: auto;
+    min-width: 400px !important;
+    max-width: 490px !important;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -173,6 +190,10 @@ font-size: ;} */
   .images {
     height: auto;
     width: 300px !important;
+  }
+  .hireimage {
+    height: auto;
+    width: 350px !important;
   }
 
   button {
@@ -232,7 +253,7 @@ font-size: ;} */
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .paraTexts {
     font-size: 16px;
   }
@@ -240,6 +261,10 @@ font-size: ;} */
   .images {
     height: auto;
     width: 300px !important;
+  }
+  .hireimage {
+    height: auto;
+    width: 350px !important;
   }
 
   button {
@@ -262,6 +287,42 @@ font-size: ;} */
   padding-top: 20px !important;
   padding-bottom: 20px !important;
   align-items: start;
+}
+@media (max-width: 2560px) and (min-width: 1930px) {
+  .hireimage {
+    height: auto;
+
+    min-width: 950px !important ;
+  }
+}
+@media (max-width: 1920px) and (min-width: 1441px) {
+  .hireimage {
+    height: auto;
+
+    min-width: 715px !important ;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1200px) {
+  .hireimage {
+    height: auto;
+
+    min-width: 590px !important ;
+  }
+}
+@media (max-width: 768px) and (min-width: 576px) {
+  .hireimage {
+    height: auto;
+    max-width: 560px !important ;
+    min-width: 500px !important ;
+  }
+}
+@media (min-width: 540px) and (max-width: 576px) {
+  .hireimage {
+    height: auto;
+
+    max-width: 450px !important ;
+    min-width: 400px !important ;
+  }
 }
 
 @media only screen and (min-width: 1366px) {
@@ -305,11 +366,20 @@ font-size: ;} */
   .images {
     width: 300px !important;
   }
+  .hireimage {
+    height: auto;
+    min-width: 240px !important;
+    max-width: 336px !important;
+  }
 }
 
 @media only screen and (max-width: 280px) {
   .images {
     height: auto;
     width: 250px !important;
+  }
+  .hireimage {
+    height: auto;
+    width: 300px !important;
   }
 }
