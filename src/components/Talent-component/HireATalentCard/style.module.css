@@ -83,6 +83,22 @@
     height: 480px;
   }
 }
+@media (max-width: 1300px) and (min-width: 1024px) {
+  .hireDevContainer {
+    width: 47%;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1300px) {
+  .hireDevContainer {
+    width: 31%;
+    height: 559px;
+    /* width: 400px;
+    height: 500px; */
+  }
+  .hireDevContents {
+    height: 480px;
+  }
+}
 @media (max-width: 1800px) and (min-width: 1441px) {
   .hireDevContainer {
     width: 31%;
@@ -166,6 +182,9 @@
 }
 
 @media (max-width: 465px) {
+  .hireTalent {
+    margin-top: 1rem;
+  }
   .hireDevContainer {
     width: 80%;
     margin-inline: auto;

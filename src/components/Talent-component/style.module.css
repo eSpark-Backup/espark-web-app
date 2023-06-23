@@ -37,7 +37,7 @@
 }
 .box {
   background: #3359a2;
-  width: 200px;
+  width: 12rem;
   height: 160px;
   box-shadow: 0px 0px 19.8363px rgba(0, 0, 0, 0.3);
   border-radius: 11.335px;
@@ -72,3 +72,15 @@
   padding-top: 10px;
 }
 
+@media only screen and (max-width: 425px) {
+  .heading {
+    font-family: "Poppins" !important;
+
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 137%;
+    text-align: center;
+    color: #3a3a3a;
+    padding-top: 10px;
+  }
+}

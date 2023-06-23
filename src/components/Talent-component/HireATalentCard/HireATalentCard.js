@@ -5,7 +5,7 @@ import styles from "./style.module.css";
 import LeftSwipe from "../../../assets/images/hire-a-developer/LeftSwipe.svg";
 import RightSwipe from "../../../assets/images/hire-a-developer/RightSwipe.svg";
 import { Modal } from "react-responsive-modal";
-import GetInTouch from "../../getInTouch/GetInTouch";
+// import GetInTouch from "../../getInTouch/GetInTouch";
 import GetModal from "../../getInTouch/getModal";
 import Calendly from "../../CalendlyMeeting/calendly";
 
@@ -17,19 +17,11 @@ const HirATalentCard = () => {
   const [devSelected, setDevSelected] = useState();
 
   const onOpenModal = (items) => {
+    setGetid(items.id);
     setOpen(true);
-    // console.log("onclick ---->>" , items)
-    setGetid(items.id)
-
-
-    // setIsNavCollapsed(false);
-    // setOpenDrawer(false);
   };
-  console.log(getid, "onclick <<------");
 
   const onCloseModal = () => { setOpen(false); setShowMeetingModal(false); }
-
-
 
   const changeSlider = (sum) => {
     if (index == 5 && sum == 1) {
@@ -178,7 +170,6 @@ const HirATalentCard = () => {
                   <div className={styles.hireTalent}>
                     <button
                       className={styles.hireDevButton}
-                      // onClick={() => onOpenModal(items)}
                       onClick={() => onOpenModal(items)}
 
                     >
@@ -203,7 +194,6 @@ const HirATalentCard = () => {
                   <div className={styles.hireTalent}>
                     <button
                       className={styles.hireDevButton}
-                      // onClick={() => onOpenModal(item)}
                       onClick={() => onOpenModal(item)}
                     >
                       Hire a Talent
@@ -216,7 +206,6 @@ const HirATalentCard = () => {
         </div>
       </div>
       <Modal open={open} onClose={onCloseModal} showCloseIcon={false} center>
-        {/* <GetInTouch modal={true} modelClose={(e) => setOpen(e)} /> */}
         {showMeetingModal ? <Calendly devSelected={devSelected}/> : <GetModal modal={true} modelClose={(e) => setOpen(e)} getid={getid} handleDevTypeClick={handleDevTypeClick} />}
       </Modal>
     </>
