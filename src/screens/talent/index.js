@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Herosection from "../../components/Sections/Hero/Herosection";
 import heroImage from "../../assets/images/talent-image/DASH BOARD.svg";
 import HowItWorks from "../../components/Talent-component/HowItWorks/HowItWorks";
@@ -15,6 +15,14 @@ import Hrplatform from "../../components/Talent-component/HrPlatform/HrPlatform"
 import * as constants from "../../constants/constants";
 
 const Talent = () => {
+  const handleStartProjectButtonClick = () => {
+    const hirATalentCardSection = document.getElementById("hirATalentCard");
+    if (hirATalentCardSection) {
+      const offset = 200; // Adjust this value to determine the amount of scroll
+      const scrollPosition = hirATalentCardSection.offsetTop - offset;
+      window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+    }
+  };
   const title = constants.HIRE_TALENT_TITLE;
   const para = constants.HIRE_TALENT_PARA;
   const hireATalent = constants.HIRE_TALENT;
@@ -35,14 +43,16 @@ const Talent = () => {
       <Benefit />
       <HowItWorks />
       <SaveTimeBudget />
-      <HirATalentCard />
+      <div id="hirATalentCard">
+        <HirATalentCard />
+      </div>
       <Hrplatform />
       <SectionTitle
         heading={whyEsparks}
         paragraph={<p>{completedProjects}</p>}
       />
       <WhyeSparks />
-      <StartProject />
+      <StartProject onStartProjectButtonClick={handleStartProjectButtonClick} />
     </div>
   );
 };
