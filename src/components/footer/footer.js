@@ -3,27 +3,27 @@ import { Link } from "react-router-dom";
 import ButtonMailto from "../button/ButtonMailto";
 import ScrollTopButton from "./ScrollTopButton";
 import "./style.css";
-import { FaPhoneAlt } from "react-icons/fa";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import { FaFacebookF, FaMapMarkerAlt, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaMapMarkerAlt, FaTwitter, FaPhoneAlt } from "react-icons/fa";
 import PakistanFlag from "../../assets/images/Pakistan.svg";
 import UnitedKingdomFlag from "../../assets/images/UnitedKingdom.svg";
+import { FOOTER_ABOUT_TEXT } from "./footerConstants";
 
 const Footer = () => {
   const socialLinks = [
     {
       name: "Facebook",
-      link: "https://www.facebook.com/esparkconsultants",
+      link: "https://www.facebook.com/eSparkConsGroup",
       icon: <FaFacebookF />,
     },
     {
       name: "Twitter",
-      link: "https://twitter.com/esparkconsult",
+      link: "https://twitter.com/eSparkConsGroup",
       icon: <FaTwitter />,
     },
     {
       name: "Instagram",
-      link: "https://www.instagram.com/esparkconsultants/",
+      link: "https://www.instagram.com/esparkconsultantsgroup/",
       icon: <AiFillInstagram />,
     },
     {
@@ -70,7 +70,7 @@ const Footer = () => {
       address: `27 Old Gloucester Street, London, 
       WC1N 3AX.`,
       location:
-        "https://www.google.com/maps/dir//eSpark+Consulting+Group+301%2FB+3rd+Floor+%26+401%2FA+4th+Floor,+Blossom+Trade+Centre+Block+1+Gulistan-e-Johar,+Karachi,+74300/@24.929158,67.115604,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb33feab1c28595:0xa3b2a5dc2f97a82e",
+        "https://www.google.com/maps/place/27+Old+Gloucester+St,+London+WC1N+3AX,+UK/@51.5206343,-0.1243985,17z/data=!3m1!4b1!4m6!3m5!1s0x48761b36a38947e9:0x5267951cbc0ad430!8m2!3d51.5206343!4d-0.1222098!16s%2Fg%2F11bw3x9nq7?entry=ttu",
     },
   ];
 
@@ -92,12 +92,11 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-xl-9 col-lg-8 col-sm-12 flex">
-                <div className="row justify-content-start align-items-center">
-                  <div className="col-auto">
+              <div className="col-xl-9 col-lg-8 col-sm-12 py-1 emailcontainer">
+                  <div className="col-auto email" style={{padding:"5px 18px 5px 0px"}}>
                     <h3>Email Us</h3>
                   </div>
-
+                <div className="row">
                   {mailtoAddress.map((mailto, index) => (
                     <div
                       className="col-auto d-flex align-items-center"
@@ -117,17 +116,14 @@ const Footer = () => {
               <div className="col-lg-4 col-md-4 col-sm-12">
                 <div className="single-footer-widget">
                   <p className="footer-about">
-                    At eSpark Consulting Group, we provide customized and
-                    innovative software IoT-based. Our broad range of services
-                    is aimed to help businesses optimize their processes, reduce
-                    costs, and efficiently promote their operations.
+                   {FOOTER_ABOUT_TEXT}
                   </p>
                   <div>
-                    <ul className="social-links ">
+                    <ul className="social-links" style={{marginLeft:-3}}>
                       {socialLinks.map((socialLink, index) => (
-                        <li key={`social-links-${index}`}>
+                        <li key={`social-links-${index}`} style={{paddingLeft:2}}>
                           <a
-                            className="p-2"
+                            style={{padding:"10px 11px 11px"}}
                             href={socialLink.link}
                             target="_blank"
                             rel="noreferrer"
@@ -161,7 +157,7 @@ const Footer = () => {
                   <div className="row">
                     <div className="col-auto d-flex ">
                       <div className="d-flex justify-content-right py-1">
-                        <FaMapMarkerAlt className="icon-margin font-14 " />
+                        <FaMapMarkerAlt className="icon-margin font-14" />
                       </div>
                       <div>
                         <a
@@ -178,7 +174,7 @@ const Footer = () => {
                   <div className="row">
                     <div className="col-auto d-flex">
                       <div className="d-flex justify-content-right py-1">
-                        <FaPhoneAlt className="icon-margin font-14 px-4" />
+                        <FaPhoneAlt className="icon-margin font-14" />
                       </div>
                       <div>
                         <a

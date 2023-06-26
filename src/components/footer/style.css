@@ -14,6 +14,14 @@
 
 .footer-about {
   text-align: left;
+  white-space: pre-wrap;
+}
+.email {
+  align-self: center;
+}
+
+.emailcontainer {
+  display: flex;
 }
 
 .footer-area h3 {
@@ -51,7 +59,7 @@
 
 .copyright {
   background: var(--color-secondary);
-  padding: 5px;
+  padding: 8px 0px;
 }
 
 .copyright p,
@@ -70,6 +78,27 @@ ul.footer-nav-list li:not(:last-child) {
 
 footer .container {
   padding-bottom: 100px;
+}
+
+@media only screen and (max-width: 1885px) {
+  .email {
+    align-self: normal;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+    .emailcontainer {
+      display: block;
+    }
+}
+@media only screen and (min-width: 786px) and (max-width: 1086px) {
+  .footer-about {
+    text-align: left;
+    white-space: normal;
+  }
+  .email {
+    align-self: normal;
+  }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 786px) {
@@ -94,6 +123,7 @@ footer .container {
   }
   .footer-about {
     text-align: left;
+    white-space: normal;
   }
 
   .footer-area h3 {
@@ -166,6 +196,7 @@ footer .container {
   }
   .footer-about {
     text-align: left;
+    white-space: normal;
   }
 
   .footer-area h3 {
