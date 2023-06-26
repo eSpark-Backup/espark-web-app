@@ -4,7 +4,12 @@ import ButtonMailto from "../button/ButtonMailto";
 import ScrollTopButton from "./ScrollTopButton";
 import "./style.css";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import { FaFacebookF, FaMapMarkerAlt, FaTwitter, FaPhoneAlt } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaMapMarkerAlt,
+  FaTwitter,
+  FaPhoneAlt,
+} from "react-icons/fa";
 import PakistanFlag from "../../assets/images/Pakistan.svg";
 import UnitedKingdomFlag from "../../assets/images/UnitedKingdom.svg";
 import { FOOTER_ABOUT_TEXT } from "./footerConstants";
@@ -93,13 +98,16 @@ const Footer = () => {
                 </div>
               </div>
               <div className="col-xl-9 col-lg-8 col-sm-12 py-1 emailcontainer">
-                  <div className="col-auto email" style={{padding:"5px 18px 5px 0px"}}>
-                    <h3>Email Us</h3>
-                  </div>
-                <div className="row">
+                <div
+                  className="col-auto email"
+                  style={{ padding: "5px 18px 5px 0px" }}
+                >
+                  <h3>Email Us</h3>
+                </div>
+                <div className="row email-address">
                   {mailtoAddress.map((mailto, index) => (
                     <div
-                      className="col-auto d-flex align-items-center"
+                      className="col-auto d-flex align-items-center pb-2"
                       key={`email-address-${index}`}
                     >
                       <ButtonMailto mailto={mailto} label={mailto} />
@@ -115,15 +123,16 @@ const Footer = () => {
             <div className="row">
               <div className="col-lg-4 col-md-4 col-sm-12">
                 <div className="single-footer-widget">
-                  <p className="footer-about">
-                   {FOOTER_ABOUT_TEXT}
-                  </p>
+                  <p className="footer-about pt-0 mt-0">{FOOTER_ABOUT_TEXT}</p>
                   <div>
-                    <ul className="social-links" style={{marginLeft:-3}}>
+                    <ul className="social-links" style={{ marginLeft: -3 }}>
                       {socialLinks.map((socialLink, index) => (
-                        <li key={`social-links-${index}`} style={{paddingLeft:2}}>
+                        <li
+                          key={`social-links-${index}`}
+                          style={{ paddingLeft: 2 }}
+                        >
                           <a
-                            style={{padding:"10px 11px 11px"}}
+                            style={{ padding: "10px 11px 11px" }}
                             href={socialLink.link}
                             target="_blank"
                             rel="noreferrer"
@@ -139,7 +148,7 @@ const Footer = () => {
               {locations.map((location, index) => (
                 <div
                   key={`location-${index}`}
-                  className="col-lg-4 col-md-4 col-sm-12 footers"
+                  className="col-lg-4 col-md-4 col-sm-12 footers mb-4"
                 >
                   <div className="row">
                     <div className="col-auto "></div>
@@ -194,14 +203,14 @@ const Footer = () => {
         </footer>
         <div className="copyright">
           <div className="container-fluid">
-            <div className="row justify-content-between py-2">
-              <div className="col-auto">
-                <p className="fw-semibold">
+            <div className="row justify-content-between footer-main py-2">
+              <div className="col-auto aa">
+                <p className="footer-copyright fw-semibold">
                   &copy; 2023 eSpark Consulting Group . All Rights Reserved
                 </p>
               </div>
 
-              <div className="col-auto">
+              <div className="col-auto aa">
                 <ul className="row footer-nav-list">
                   {footerLinks.map((footerLink, index) => (
                     <li className="col-auto" key={`footer-link-${index}`}>
