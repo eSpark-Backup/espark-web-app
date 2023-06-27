@@ -30,7 +30,7 @@
 }
 .hiringContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .box:hover {
   background-color: var(--color-primary);
@@ -44,6 +44,7 @@
   text-align: center;
   align-items: center;
   padding: 30px 0 !important;
+  margin-right: 10px;
 }
 .boxText {
   font-style: normal;
@@ -65,7 +66,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 137%;
   text-align: center;
   color: #3a3a3a;

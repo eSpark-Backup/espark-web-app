@@ -1,5 +1,5 @@
 .para {
-  font-family: "Inter" !important;
+  font-family: "Poppins" !important;
   font-size: 20px !important;
   font-weight: 400 !important;
   line-height: 32.3px !important;
@@ -9,4 +9,33 @@
   color: #3a3a3a !important;
   max-width: 60em;
   margin: 0 auto;
+}
+.heading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 44px;
+  line-height: 100%;
+  color: var(--color-secondary) !important;
+  text-align: center;
+  margin-top: 15px;
+}
+@media (max-width: 425px) {
+  .heading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700 !important;
+    font-size: 28px;
+    line-height: 100%;
+    color: var(--color-secondary) !important;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .para {
+    font-family: "Poppins" !important;
+    font-size: 16px !important;
+
+    text-align: left !important;
+    line-height: 140% !important;
+  }
 }

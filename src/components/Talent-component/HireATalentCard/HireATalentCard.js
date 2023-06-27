@@ -12,7 +12,7 @@ import Calendly from "../../CalendlyMeeting/calendly";
 const HirATalentCard = () => {
   const [index, setIndex] = useState(0);
   const [open, setOpen] = useState(false);
-  const [getid, setGetid] = useState('');
+  const [getid, setGetid] = useState("");
   const [showMeetingModal, setShowMeetingModal] = useState(false);
   const [devSelected, setDevSelected] = useState();
 
@@ -21,7 +21,10 @@ const HirATalentCard = () => {
     setOpen(true);
   };
 
-  const onCloseModal = () => { setOpen(false); setShowMeetingModal(false); }
+  const onCloseModal = () => {
+    setOpen(false);
+    setShowMeetingModal(false);
+  };
 
   const changeSlider = (sum) => {
     if (index == 5 && sum == 1) {
@@ -165,18 +168,18 @@ const HirATalentCard = () => {
                 <div className={`my-2 mx-auto ${styles.hireDevContainer}`}>
                   <div className={styles.hireDevContents}>
                     <p className={styles.hireDevHeading}>{items.title}</p>
-                    <p className={`hireDevPara ${styles.hireDevPara}`}>{items.descriptions}</p>
+                    <p className={`hireDevPara ${styles.hireDevPara}`}>
+                      {items.descriptions}
+                    </p>
                   </div>
                   <div className={styles.hireTalent}>
                     <button
                       className={styles.hireDevButton}
                       onClick={() => onOpenModal(items)}
-
                     >
                       Hire a Talent
                     </button>
                   </div>
-
                 </div>
               );
             })}
@@ -205,9 +208,20 @@ const HirATalentCard = () => {
           </Slider>
         </div>
       </div>
-      <Modal open={open} onClose={onCloseModal} showCloseIcon={false} center>
-        {showMeetingModal ? <Calendly devSelected={devSelected}/> : <GetModal modal={true} modelClose={(e) => setOpen(e)} getid={getid} handleDevTypeClick={handleDevTypeClick} />}
-      </Modal>
+      {open && (
+        <Modal open={open} onClose={onCloseModal} showCloseIcon={false} center>
+          {showMeetingModal ? (
+            <Calendly devSelected={devSelected} />
+          ) : (
+            <GetModal
+              modal={true}
+              modelClose={(e) => setOpen(e)}
+              getid={getid}
+              handleDevTypeClick={handleDevTypeClick}
+            />
+          )}
+        </Modal>
+      )}
     </>
   );
 };

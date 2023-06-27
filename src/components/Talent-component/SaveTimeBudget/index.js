@@ -7,7 +7,7 @@ const SaveTimeBudget = () => {
   return (
     <div id="hire-talent" className="container-fluid">
       <SectionTitle
-        heading={"Save Your Time & Budget"}
+        heading={<h2 className={styles.heading}>Save Your Time & Budget</h2>}
         padding={"80px"}
         paragraph={
           <p className={styles.para}>

@@ -9,7 +9,7 @@ const Hrplatform = () => {
     <div className="container-fluid">
       <div className={`row hrsec  ${styles.hrsec} `}>
         <div
-          className={`col-lg-6 col-md-12 order-lg-1 order-md-1 order-sm-1 my-2 ${styles.hrContainer}`}
+          className={`col-lg-6 col-md-12 order-lg-1 order-md-5 order-sm-5 my-2 ${styles.hrContainer}`}
         >
           <SectionTitle
             height={"0px"}
@@ -28,7 +28,7 @@ const Hrplatform = () => {
             global team, or consolidate payroll for everyone
           </p>
         </div>
-        <div className="col-lg-6 col-md-12 order-lg-5 order-md-5 order-sm-5">
+        <div className="col-lg-6 col-md-12 order-lg-5 order-md-1 order-sm-1">
           <div className="hrPlateformImageDiv">
             <img src={HrPlformPic} alt="" className={styles.hrPlateformImage} />
           </div>
