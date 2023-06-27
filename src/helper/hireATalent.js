@@ -15,7 +15,7 @@ export const hireDevelopers = [
     id: 3,
     title: "Hire a Digital Marketer",
     descriptions:
-      "A Quality Assurance Engineer is the cornerstone of every quality-based software program. We offer experienced QA Engineers who make sure that your software programs, apps, or websites go through robust testing and follow the state of the art quality checklist.",
+      "Are you looking for a Digital Marketing Expert who ensures that your brand gets much-needed exposure by reaching your dedicated audience? eSpark Consulting Group offers digital marketing professionals required for a breakthrough in the highly competitive online marketing realm.",
   },
   {
     id: 4,
@@ -33,6 +33,6 @@ export const hireDevelopers = [
     id: 6,
     title: "Hire a QA Engineer",
     descriptions:
-      "Are you looking for a Digital Marketing Expert who ensures that your brand gets much-needed exposure by reaching your dedicated audience? eSpark Consulting Group offers digital marketing professionals required for a breakthrough in the highly competitive online marketing realm.",
+      "A Quality Assurance Engineer is the cornerstone of every quality-based software program. We offer experienced QA Engineers who make sure that your software programs, apps, or websites go through robust testing and follow the state of the art quality checklist.",
   },
 ];

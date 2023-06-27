@@ -85,6 +85,16 @@
     height: 480px;
   }
 }
+
+@media (max-width: 1023px) and (min-width: 660px) {
+  .hireDevContainer {
+    height: 410px;
+  }
+  .hireDevContents {
+    height: 330px;
+  }
+}
+
 @media (max-width: 1300px) and (min-width: 1024px) {
   .hireDevContainer {
     width: 47%;
@@ -170,15 +180,6 @@
     font-size: 16px;
     line-height: 150%;
     color: #ffffff;
-  }
-}
-
-@media (max-width: 760px) and (min-width: 660px) {
-  .hireDevContainer {
-    height: 509px;
-  }
-  .hireDevContents {
-    height: 430px;
   }
 }
 
