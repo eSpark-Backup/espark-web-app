@@ -257,11 +257,7 @@ const DrawerNav = () => {
                 </li>
               </ul>
               <div className="d-none dropButton w-100">
-                <Button
-                  design={3}
-                  onClick={onOpenModal}
-                  title={"Let’s Talk"}
-                />
+                <Button design={3} onClick={onOpenModal} title={"Let’s Talk"} />
               </div>
             </div>
 

@@ -26,7 +26,7 @@ Software and IoT Solutions`}
         images={heroImage}
         ShowButton={true}
         buttonText={"Learn More"}
-        buttonUlr={"newDiv_0"}
+        buttonUrl={"#newDiv_0"}
         buttonDesign={13}
       />
       <WhyeSpark heading={"Why eSpark?"} />
