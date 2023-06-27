@@ -1,0 +1,286 @@
+.hireDevContainer {
+  background: linear-gradient(180deg, #00a099 73.43%, #076f8a 96.57%);
+  border-radius: 15px;
+  width: 450px;
+  height: 436px;
+}
+.hireDevContents {
+  width: 100%;
+  height: 360px;
+  padding: 35px 10px 0px 10px;
+}
+.hireDevHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 100%;
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+.hireDevPara {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.5px;
+  line-height: 150%;
+  color: #ffffff;
+}
+.hireTalent {
+  text-align: center;
+}
+.hireDevButton {
+  background-color: #ffffff !important;
+  box-shadow: 0px 4.11139px 4.93367px #176fae;
+  border-radius: 16.4456px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20.1458px;
+  line-height: 15px;
+  align-items: center !important;
+  text-align: center;
+  color: #3359a2 !important;
+}
+.slideBtn {
+  width: 30px;
+  height: 30px;
+}
+
+.rightSlideBtn {
+  width: 30px;
+  height: 30px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+}
+.leftSlideBtn {
+  width: 30px;
+  height: 30px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  z-index: 100;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 2560px) and (min-width: 1921px) {
+  .hireDevContainer {
+    width: 30%;
+    height: 559px;
+  }
+  .hireDevContents {
+    height: 480px;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 660px) {
+  .hireDevContainer {
+    height: 410px;
+  }
+  .hireDevContents {
+    height: 330px;
+  }
+}
+
+@media (max-width: 1300px) and (min-width: 1024px) {
+  .hireDevContainer {
+    width: 47%;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1300px) {
+  .hireDevContainer {
+    width: 31%;
+    height: 559px;
+  }
+  .hireDevContents {
+    height: 480px;
+  }
+}
+@media (max-width: 1920px) and (min-width: 1700px) {
+  .hireDevContainer {
+    width: 31%;
+    height: 470px;
+  }
+  .hireDevContents {
+    height: 400px;
+  }
+}
+@media (max-width: 1700px) and (min-width: 1441px) {
+  .hireDevContainer {
+    width: 31%;
+    height: 539px;
+  }
+  .hireDevContents {
+    height: 460px;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1201px) {
+  .hireDevContainer {
+    width: 30%;
+    height: 400px;
+  }
+  .hireDevContents {
+    height: 320px;
+  }
+
+  .hireDevHeading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    padding-bottom: 20px;
+    color: #ffffff;
+  }
+  .hireDevPara {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1024px) {
+  .hireDevContainer {
+    width: 30%;
+    height: 460px;
+  }
+  .hireDevContents {
+    height: 380px;
+  }
+
+  .hireDevHeading {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    padding-bottom: 20px;
+    color: #ffffff;
+  }
+  .hireDevPara {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 660px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .row {
+    display: none;
+  }
+  .hireDevContainer {
+    /* width: 60%; */
+    width: 356px;
+    height: 439px;
+    margin-inline: auto;
+  }
+  .hireDevContents {
+    height: 350px;
+    padding: 35px 15px 0px 15px;
+  }
+  .hireDevHeading {
+    text-align: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    padding-bottom: 20px;
+    color: #ffffff;
+  }
+  .hireDevPara {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 465px) {
+  /* .hireTalent {
+    margin-top: 1rem;
+  } */
+  .hireDevContainer {
+    width: 80%;
+    margin-inline: auto;
+    /* height: 539px; */
+  }
+
+  .rightSlideBtn {
+    width: 24px;
+    height: 24px;
+  }
+  .leftSlideBtn {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (max-width: 420px) {
+  .hireDevContainer {
+    height: 489px;
+  }
+  .hireDevContents {
+    height: 400px;
+  }
+}
+@media (max-width: 360px) {
+  .rightSlideBtn {
+    right: 1%;
+  }
+  .leftSlideBtn {
+    left: 1%;
+  }
+  .hireDevContainer {
+    height: 539px;
+  }
+  .hireDevContents {
+    height: 450px;
+  }
+}
+@media (max-width: 300px) {
+  .hireDevHeading {
+    text-align: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 100%;
+    padding-bottom: 20px;
+    color: #ffffff;
+  }
+  .hireDevPara {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 150%;
+    color: #ffffff;
+  }
+}

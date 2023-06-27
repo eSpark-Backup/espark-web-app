@@ -2,7 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaLongArrowAltRight, FaRegArrowAltCircleRight } from "react-icons/fa";
 import style from "./style.module.css";
-const Button = ({ title, link, design, type, onClick, disabled ,careerSmallBtn}) => {
+const Button = ({
+  title,
+  link,
+  design,
+  type,
+  onClick,
+  disabled,
+  careerSmallBtn,
+}) => {
   if (design === null) {
     return null;
   }
@@ -24,7 +32,13 @@ const Button = ({ title, link, design, type, onClick, disabled ,careerSmallBtn})
           onClick={onClick}
           disabled={disabled}
         >
-          <button className={careerSmallBtn ? `roundbutton rounded-pill ${style.careerSmallBtn}` : 'roundbutton rounded-pill'}>
+          <button
+            className={
+              careerSmallBtn
+                ? `roundbutton rounded-pill ${style.careerSmallBtn}`
+                : "roundbutton rounded-pill"
+            }
+          >
             {title}
             <FaLongArrowAltRight className={style.arrowSize} />
           </button>
@@ -173,7 +187,7 @@ const Button = ({ title, link, design, type, onClick, disabled ,careerSmallBtn})
     return (
       <>
         <a
-          href="#newDiv_0"
+          href={link}
           className={style.btnMargin}
           onClick={onClick}
           disabled={disabled}

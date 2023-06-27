@@ -12,6 +12,7 @@ function Herosection({
   serviceClass,
   homeclass,
   animation,
+  imgResize = false,
 }) {
   return (
     <>
@@ -19,7 +20,7 @@ function Herosection({
         <div class="container-fluid">
           <div class="row">
             <div
-              class={`${styles.headingColumn} col-lg-6 col-md-12 col-sm-12 `}
+              class={`${styles.headingColumn} col-lg-6 col-md-12 col-sm-12 .col-xl-4 `}
             >
               <div
                 class={
@@ -31,7 +32,7 @@ function Herosection({
                 <h1 className={styles.heading}>{title}</h1>
 
                 <p
-                  className={styles.paraTexts}
+                  className={`${styles.paraTexts}`}
                   dangerouslySetInnerHTML={{
                     __html: paragraph,
                   }}
@@ -53,7 +54,7 @@ function Herosection({
               class={
                 serviceClass
                   ? `animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-12 col-sm-12 text-center img-fluid `
-                  : `animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-2 col-sm-12 text-center img-fluid  ${styles.imageHero}`
+                  : `animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-2 col-sm-12 .col-xl-8 text-center img-fluid  ${styles.imageHero}`
               }
             >
               {animation && (
@@ -64,7 +65,11 @@ function Herosection({
                   }}
                 ></p>
               )}
-              <img src={images} class={`${styles.images}`} alt="image" />
+              <img
+                src={images}
+                class={imgResize ? `${styles.hireimage}` : `${styles.images}`}
+                alt="image"
+              />
             </div>
           </div>
         </div>
@@ -73,10 +78,15 @@ function Herosection({
         <div class="ml-banner-content p-20">
           <h1 className={styles.heading}>{title}</h1>
 
-          <p className={`${styles.paraText} pb-3`}>{paragraph}</p>
+          <p className={`${styles.paraTexts} pb-3`}>{paragraph}</p>
           <div className="d-flex">
             {ShowButton ? (
-              <Button title={buttonText} link={buttonUrl} design={2} />
+              <Button
+                className={styles.button}
+                title={buttonText}
+                link={buttonUrl}
+                design={2}
+              />
             ) : (
               ""
             )}

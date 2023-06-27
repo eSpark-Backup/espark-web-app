@@ -1,5 +1,8 @@
 import React from "react";
 
+import style from './style.module.css'
+
+
 const SectionTitle = ({
   heading,
   paragraph,
@@ -10,12 +13,17 @@ const SectionTitle = ({
   height,
   margin,
   my,
+  sectionHeading,
+  lh,
+  margintop,
+  paddTop,
+  alignRight
 }) => {
   return (
-    <div className={`my-2  pb-${padding ? padding : 80} pt-${paddingTop ? paddingTop : null}` }>
+    <div className={`my-2  pb-${padding ? padding : 80} ${margintop ? style.margintop : ''} `} >
       <hr style={{ width: width ? width : "200px", height: height }} />
       <div className={"content"}>
-        <h2 className={`my-${my ? my : "4"}`}>{heading ?? null}</h2>
+        <h2 className={`my-${my ? my : "4"} ${sectionHeading ? sectionHeading : ''}  ${lh ? style.lhData : ''} ${paddTop ? style.paddTop : ''} ${alignRight ? style.alignRight : ''}`}   >{heading ?? null}</h2>
         {paragraph?.type === "p" ? (
           paragraph ?? null
         ) : (

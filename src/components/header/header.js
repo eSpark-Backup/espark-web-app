@@ -32,7 +32,7 @@ const Header = () => {
   const onOpenModal = () => {
     setOpen(true);
     setIsNavCollapsed(false);
-    setOpenDrawer(false)
+    setOpenDrawer(false);
   };
   const onCloseModal = () => setOpen(false);
 
@@ -341,8 +341,10 @@ const Header = () => {
                   Download Now
                 </a>
               ) : (
-                <div className="headerBtn smallNone" onClick={onOpenModal}>
-                  <span className="btn-content ">Let’s Talk</span>
+                <div className="headerBtn smallNone">
+                  <Link className="btn-content" to={`/hire-a-talent`}>
+                    <span>Hire a Talent</span>
+                  </Link>
                 </div>
               )}
             </div>
@@ -503,9 +505,13 @@ const Header = () => {
               <span>Blogs</span>
             </Link>
           </div>
-          <div className="w-100 p-2 fixed-bottom">
-            <Button design={14} onClick={onOpenModal} title={"Let’s Talk"} />
-          </div>
+          <Link className="w-100 p-2 fixed-bottom" to={`/hire-a-talent`}>
+            <Button
+              design={14}
+              onClick={() => setOpenDrawer(false)}
+              title={"Hire a Talent"}
+            />
+          </Link>
         </div>
       </Drawer>
     </header>

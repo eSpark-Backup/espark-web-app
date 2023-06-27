@@ -1,0 +1,1 @@
+export const FOOTER_ABOUT_TEXT = "At eSpark Consulting Group, we\nprovide customized and innovative\nsoftware IoT-based. Our broad\nrange of services is aimed to help\nbusinesses optimize their processes,\nreduce costs, and efficiently\npromote their operations."

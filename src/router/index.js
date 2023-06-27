@@ -20,6 +20,8 @@ import JobDetail from "../screens/careers/jobDetail";
 import SEO from "./../utils/SEO";
 import Event from "./../components/event/event";
 import Upcoming from "../screens/upcoming-page";
+import Talent from "../screens/talent";
+
 
 const AppRoutes = () => {
   const data = window.scrollTo(0, 0);
@@ -30,6 +32,7 @@ const AppRoutes = () => {
     { path: "/portfolio", element: <Projects /> },
     { path: "/project-detail/:id", element: <ProjectDetails /> },
     { path: "/blogs/:id", element: <BlogDetail /> },
+    { path: "/hire-a-talent", element: <Talent /> },
     { path: "/blogs", element: <Blog /> },
     { path: "/services", element: <Services /> },
     // { path: "/products", element: <Products /> },
@@ -58,5 +61,4 @@ const AppWraper = () => {
     </Router>
   );
 };
-
 export default AppWraper;

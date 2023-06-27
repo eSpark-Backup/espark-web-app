@@ -14,6 +14,14 @@
 
 .footer-about {
   text-align: left;
+  white-space: pre-wrap;
+}
+.email {
+  align-self: center;
+}
+
+.emailcontainer {
+  display: flex;
 }
 
 .footer-area h3 {
@@ -36,8 +44,28 @@
   padding-bottom: 20px;
   padding-right: 10%;
 }
+.footer-about p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 143.5% !important;
+  color: #070707;
+  text-align: left !important;
+  padding-top: 0px !important;
+  padding-bottom: 20px;
+  padding-right: 10%;
+}
 
 .footer-area a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #070707 !important;
+}
+
+.footers a {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -50,16 +78,23 @@
 }
 
 .copyright {
-  background: var(--color-secondary);
-  padding: 5px;
+  background: #2B4E89;
+  padding: 8px 0px;
 }
 
-.copyright p,
+.copyright p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #e8f1f2 !important;
+  text-align: center !important;
+}
 .copyright a {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 16px;
   color: #e8f1f2 !important;
   text-align: center !important;
 }
@@ -72,10 +107,35 @@ footer .container {
   padding-bottom: 100px;
 }
 
+@media only screen and (max-width: 1885px) {
+  .email {
+    align-self: normal;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .emailcontainer {
+    display: block;
+  }
+}
+@media only screen and (min-width: 786px) and (max-width: 1086px) {
+  .footer-about {
+    text-align: left;
+    white-space: normal;
+  }
+  .email {
+    align-self: normal;
+  }
+}
+
 @media only screen and (min-width: 426px) and (max-width: 786px) {
   .footer-area {
     padding-top: 50px !important;
     padding-bottom: 30px !important;
+  }
+  .footer {
+    display: flex;
+    justify-content: center !important;
   }
 }
 
@@ -94,6 +154,7 @@ footer .container {
   }
   .footer-about {
     text-align: left;
+    white-space: normal;
   }
 
   .footer-area h3 {
@@ -118,6 +179,7 @@ footer .container {
     color: #070707 !important;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .footer-area {
     padding-top: 50px !important;
@@ -166,6 +228,7 @@ footer .container {
   }
   .footer-about {
     text-align: left;
+    white-space: normal;
   }
 
   .footer-area h3 {
@@ -174,11 +237,6 @@ footer .container {
 
   .footer-area p {
     font-size: 12px;
-  }
-
-  .footer-area a {
-    font-size: 12px !important;
-    color: #070707 !important;
   }
 }
 
@@ -231,3 +289,46 @@ footer .container {
   top: 8px;
   color: white;
 }
+
+@media (max-width: 773px) {
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-nav-list {
+    justify-content: center;
+  }
+
+  .emailcontainer {
+    flex-direction: column;
+    /* align-items: center; */
+    /* text-align: center; */
+    padding-bottom: 0.5rem;
+  }
+
+  .email-address {
+    flex-direction: row !important;
+    align-items: right !important;
+
+    justify-content: start;
+    text-align: right !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1203px) {
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width:1573px) {
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
