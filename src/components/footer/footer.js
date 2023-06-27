@@ -99,12 +99,12 @@ const Footer = () => {
               </div>
               <div className="col-xl-9 col-lg-8 col-sm-12 py-1 emailcontainer">
                 <div
-                  className="col-auto email"
-                  style={{ padding: "5px 18px 5px 0px" }}
+                  className="col-auto py-1 email"
+                  style={{ margin: "20px 18px 5px 0px" }}
                 >
                   <h3>Email Us</h3>
                 </div>
-                <div className="row email-address">
+                <div className="row email-address" style={{ marginTop: "25px" }}>
                   {mailtoAddress.map((mailto, index) => (
                     <div
                       className="col-auto d-flex align-items-center pb-2"
@@ -164,7 +164,7 @@ const Footer = () => {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-auto d-flex ">
+                    <div className="col-auto d-flex py-2">
                       <div className="d-flex justify-content-right py-1">
                         <FaMapMarkerAlt className="icon-margin font-14" />
                       </div>
@@ -181,7 +181,7 @@ const Footer = () => {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-auto d-flex">
+                    <div className="col-auto d-flex py-2">
                       <div className="d-flex justify-content-right py-1">
                         <FaPhoneAlt className="icon-margin font-14" />
                       </div>
@@ -204,16 +204,16 @@ const Footer = () => {
         <div className="copyright">
           <div className="container-fluid">
             <div className="row justify-content-between footer-main py-2">
-              <div className="col-auto aa">
+              <div className="col-auto">
                 <p className="footer-copyright fw-semibold">
                   &copy; 2023 eSpark Consulting Group . All Rights Reserved
                 </p>
               </div>
 
-              <div className="col-auto aa">
-                <ul className="row footer-nav-list">
+              <div className="col-auto">
+                <ul className="row footer-nav-list" >
                   {footerLinks.map((footerLink, index) => (
-                    <li className="col-auto" key={`footer-link-${index}`}>
+                    <li className="col-auto my-1" key={`footer-link-${index}`}>
                       <Link to={footerLink.link}>{footerLink.name}</Link>
                     </li>
                   ))}
