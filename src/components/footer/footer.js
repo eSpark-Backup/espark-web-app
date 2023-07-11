@@ -57,8 +57,8 @@ const Footer = () => {
     {
       country: { name: "Pakistan", flag: PakistanFlag },
       contact: {
-        phone: "+92(333-6006055)",
-        tel: "tel:+92333-6006055",
+        phone: "+92(323-2788259)",
+        tel: "tel:+92323-2788259",
       },
       address: `301/B 3rd Floor & 401/A 4th Floor, Blossom 
       Trade Centre, Block 1 Gulistan-e-Johar, 
