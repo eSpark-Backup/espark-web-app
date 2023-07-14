@@ -30,24 +30,6 @@ export const benefit = [
 export const hireDevelopersDetails = [
   {
     id: 1,
-    images: WebappImage,
-    btns: [
-      {
-        btn1: "React/Vue Developer",
-      },
-      {
-        btn1: "ASP.NET Developer",
-      },
-      {
-        btn1: "Node.JS Developer",
-      },
-      {
-        btn1: "Wordpress/Shopify Developer",
-      },
-    ],
-  },
-  {
-    id: 2,
     images: AppImage,
     btns: [
       {
@@ -61,6 +43,24 @@ export const hireDevelopersDetails = [
       },
       {
         btn1: "React Native App",
+      },
+    ],
+  },
+  {
+    id: 2,
+    images: WebappImage,
+    btns: [
+      {
+        btn1: "React/Vue Developer",
+      },
+      {
+        btn1: "ASP.NET Developer",
+      },
+      {
+        btn1: "Node.JS Developer",
+      },
+      {
+        btn1: "Wordpress/Shopify Developer",
       },
     ],
   },
@@ -130,4 +130,4 @@ export const hireDevelopersDetails = [
       },
     ],
   },
-]
+];
