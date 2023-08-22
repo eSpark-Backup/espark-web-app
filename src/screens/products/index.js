@@ -29,7 +29,7 @@ const Products = () => {
       />
      
       <div className="text-center">
-        <div class="multi-button">
+        <div className="multi-button">
           {products.map((item) => {
             return (
               <button

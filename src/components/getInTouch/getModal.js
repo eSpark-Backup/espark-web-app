@@ -8,7 +8,7 @@ const GetModal = ({ items, getid, handleDevTypeClick }) => {
   return (
     <div className="hireModalsContainer" id="developer">
       <div className="container">
-        <div class="row gy-1 gx-1">
+        <div className="row gy-1 gx-1">
           {final.map((item) => {
             return (
               <>

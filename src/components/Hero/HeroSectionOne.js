@@ -4,11 +4,11 @@ import "./style.css";
 const HeroSectionOne = ({ filterData }) => {
   return (
     <>
-      <div class="repair-main-banner">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <div class="repair-banner-content">
+      <div className="repair-main-banner">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div className="repair-banner-content">
                 <h1>{filterData[0]?.name}</h1>
                 <p
                   dangerouslySetInnerHTML={{
@@ -17,8 +17,8 @@ const HeroSectionOne = ({ filterData }) => {
                 <Button title="Quote Now" link="/contact" design={2} />
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="repair-banner-image">
+            <div className="col-lg-6">
+              <div className="repair-banner-image">
                 {filterData[0]?.data?.image?.map((item, index) => {
                   return (
                     <>

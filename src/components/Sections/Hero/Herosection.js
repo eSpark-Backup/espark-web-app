@@ -16,14 +16,14 @@ function Herosection({
 }) {
   return (
     <>
-      <div class="ml-main-section">
-        <div class="container-fluid">
-          <div class="row">
+      <div className="ml-main-section">
+        <div className="container-fluid">
+          <div className="row">
             <div
-              class={`${styles.headingColumn} col-lg-6 col-md-12 col-sm-12 .col-xl-4 `}
+              className={`${styles.headingColumn} col-lg-6 col-md-12 col-sm-12 .col-xl-4 `}
             >
               <div
-                class={
+                className={
                   serviceClass
                     ? `${styles.serviceText} ml-banner-content`
                     : "ml-banner-content"
@@ -51,7 +51,7 @@ function Herosection({
               </div>
             </div>
             <div
-              class={
+              className={
                 serviceClass
                   ? `animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-12 col-sm-12 text-center img-fluid `
                   : `animate__animated animate__fadeInDown animate__delay-1.5s col-lg-6 col-md-2 col-sm-12 .col-xl-8 text-center img-fluid  ${styles.imageHero}`
@@ -67,7 +67,7 @@ function Herosection({
               )}
               <img
                 src={images}
-                class={imgResize ? `${styles.hireimage}` : `${styles.images}`}
+                className={imgResize ? `${styles.hireimage}` : `${styles.images}`}
                 alt="image"
               />
             </div>
@@ -75,7 +75,7 @@ function Herosection({
         </div>
       </div>
       <div className={`${styles.headingColumnMobile} col-sm-12 col-md-12`}>
-        <div class="ml-banner-content p-20">
+        <div className="ml-banner-content p-20">
           <h1 className={styles.heading}>{title}</h1>
 
           <p className={`${styles.paraTexts} pb-3`}>{paragraph}</p>

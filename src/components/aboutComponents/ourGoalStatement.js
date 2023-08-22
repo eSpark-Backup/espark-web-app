@@ -16,16 +16,16 @@ const OurGoalStatement = () => {
                 return (
                   <>
                     <div className={`col-sm-4 col-md-4 col-lg-2  ${styles.aboutCol}`}>
-                      <div class={styles.ourGoalStatHexagon}>
+                      <div className={styles.ourGoalStatHexagon}>
                         <img src={items.icon} className={styles.icon} />
-                        <div class={styles.face1}></div>
-                        <div class={styles.face2}></div>
+                        <div className={styles.face1}></div>
+                        <div className={styles.face2}></div>
                       </div>
                     </div>
                     <div className={`col-sm-8 col-md-8 col-lg-10 ${styles.aboutCol}`}>
-                      <div class={styles.hexago}>
-                        <div class={styles.HexaTitle}>{items.title}</div>
-                        <div class={styles.HexaContenta}>
+                      <div className={styles.hexago}>
+                        <div className={styles.HexaTitle}>{items.title}</div>
+                        <div className={styles.HexaContenta}>
                           <p className={styles.HexaContent}>
                             {items.description}
                           </p>

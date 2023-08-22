@@ -40,7 +40,6 @@ const Header = () => {
 
   useEffect(() => {
     if (!pathname.includes("/services")) {
-      console.log(pathname);
       localStorage.clear("child_id");
       setSelectTab("");
     }
@@ -90,11 +89,11 @@ const Header = () => {
     toggleDrawer();
   };
   return (
-    <header id="header" class="headroom is-sticky">
-      <div class="startp-nav">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-md navbar-light">
-            <Link class="navbar-brand" to="/">
+    <header id="header" className="headroom is-sticky">
+      <div className="startp-nav">
+        <div className="container-fluid">
+          <nav className="navbar navbar-expand-md navbar-light">
+            <Link className="navbar-brand" to="/">
               <img
                 src={require(isAppScreen
                   ? "../../assets/images/logoApp.png"
@@ -102,11 +101,11 @@ const Header = () => {
                 alt="logo"
                 className="logo"
                 width={210}
-                height={isAppScreen && 60}
+                height={isAppScreen ? 60 : "auto"}
               />
             </Link>
             <button
-              class={
+              className={
                 openDrawer
                   ? "custom-toggler navbar-toggler customColor "
                   : "custom-toggler navbar-toggler customColor collapsed"
@@ -120,9 +119,9 @@ const Header = () => {
               onClick={handleBothDrawers}
               style={{ boxShadow: "none" }}
             >
-              <span class="icon-bar top-bar tes"></span>
-              <span class="icon-bar middle-bar tes"></span>
-              <span class="icon-bar bottom-bar tes"></span>
+              <span className="icon-bar top-bar tes"></span>
+              <span className="icon-bar middle-bar tes"></span>
+              <span className="icon-bar bottom-bar tes"></span>
             </button>
             <div
               className={
@@ -143,16 +142,16 @@ const Header = () => {
                     }}
                   >
                     <span
-                      class={pathname === "/" ? "itemTxt selected" : "itemTxt "}
+                      className={pathname === "/" ? "itemTxt selected" : "itemTxt "}
                     >
                       Home{" "}
                     </span>
                   </Link>
                 </li>
-                <li class="nav-item" onClick={() => setSelected(1)}>
-                  <Link class="nav-link">
+                <li className="nav-item" onClick={() => setSelected(1)}>
+                  <Link className="nav-link">
                     <span
-                      class={
+                      className={
                         pathname?.includes("services")
                           ? "itemTxt selected"
                           : "itemTxt "
@@ -176,21 +175,21 @@ const Header = () => {
                         />
                       </svg>
                     </span>
-                    <ul class="dropdown-menu">
-                      {services.map((item) => {
+                    <ul className="dropdown-menu">
+                      {services.map((item, index) => {
                         return (
-                          <li class={`nav-item`}>
+                          <li key={index + "nav-item"} className={`nav-item`}>
                             <i
-                              class="fa fa-envelope-square"
+                              className="fa fa-envelope-square"
                               aria-hidden="true"
                             ></i>
                             <Link
-                              class={"nav-link d-flex flex-column"}
+                              className={"nav-link d-flex flex-column"}
                               onClick={() => removeChildId(item)}
                               to={`services/${item.path}`}
                             >
                               <span
-                                class={
+                                className={
                                   item.path === getServiceId
                                     ? "nav-selected"
                                     : null
@@ -275,9 +274,9 @@ const Header = () => {
                     setIsNavCollapsed(false);
                   }}
                 >
-                  <Link class="nav-link" to="/portfolio">
+                  <Link className="nav-link" to="/portfolio">
                     <span
-                      class={
+                      className={
                         pathname === "/portfolio"
                           ? "itemTxt selected"
                           : "itemTxt"
@@ -294,9 +293,9 @@ const Header = () => {
                     setIsNavCollapsed(false);
                   }}
                 >
-                  <Link class="nav-link" to="/careers">
+                  <Link className="nav-link" to="/careers">
                     <span
-                      class={
+                      className={
                         pathname.includes("/careers")
                           ? "itemTxt selected"
                           : "itemTxt "
@@ -313,9 +312,9 @@ const Header = () => {
                     setIsNavCollapsed(false);
                   }}
                 >
-                  <Link class="nav-link" to="/upcoming">
+                  <Link className="nav-link" to="/upcoming">
                     <span
-                      class={
+                      className={
                         pathname.includes("/blogs")
                           ? "itemTxt selected"
                           : "itemTxt "
@@ -331,11 +330,11 @@ const Header = () => {
               </div>
             </div>
 
-            <div class="others-option">
+            <div className="others-option">
               {isAppScreen ? (
                 <a
                   href="https://play.google.com/store/apps/details?id=com.commanddo"
-                  class="btn btn-light"
+                  className="btn btn-light"
                   target="_blanks"
                 >
                   Download Now
@@ -364,7 +363,7 @@ const Header = () => {
       >
         <div>
           <div className="mobileDrawer d-felx align-items-center">
-            <Link class="navbar-brand" to="/">
+            <Link className="navbar-brand" to="/">
               <img
                 src={require(isAppScreen
                   ? "../../assets/images/logoApp.png"
@@ -372,7 +371,7 @@ const Header = () => {
                 alt="logo"
                 className="logo"
                 width={210}
-                height={isAppScreen && 60}
+                height={isAppScreen ? 60 : "auto"}
               />
             </Link>
           </div>
@@ -390,7 +389,7 @@ const Header = () => {
             </Link>
 
             <Link
-              class={
+              className={
                 pathname?.includes("services")
                   ? "mobileDrawer mobileSelected"
                   : "mobileDrawer"
@@ -424,8 +423,8 @@ const Header = () => {
                       to={`/services/${items.path}`}
                       onClick={() => toggleChildCollapse(items.path)}
                     >
-                      <p
-                        class={
+                      <span
+                        className={
                           items.path === getServiceId
                             ? "nav-selected"
                             : "mobileheading"
@@ -433,7 +432,7 @@ const Header = () => {
                       >
                         {" "}
                         {items.title}
-                      </p>
+                      </span>
 
                       <span
                         style={{

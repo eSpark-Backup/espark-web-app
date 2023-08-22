@@ -71,15 +71,15 @@ const JobDetail = ({ appliedFor }) => {
           <div className="col-lg-7">
             {ShemarLengths.map((item) => {
               return (
-                <div class="row">
-                  <div class="col-lg-4">
+                <div className="row">
+                  <div className="col-lg-4">
                     <ShimmerThumbnail
                       height={150}
                       width={200}
                       categoryStyle="STYLE_THREE"
                     />
                   </div>
-                  <div class="col-lg-8">
+                  <div className="col-lg-8">
                     <ShimmerText
                       line={5}
                       gap={10}

@@ -93,7 +93,7 @@ export default function Blog() {
             sliceStart={2}
             sliceEnd={6}
             shimmerCount={3}
-            shimmerClass="p-20 mx-10"
+            shimmerclassName="p-20 mx-10"
           />
         </div>
       </div>
@@ -129,7 +129,7 @@ export default function Blog() {
             col={4}
             row={1}
             gap={30}
-            shimmerClass="col-lg-12 col-md-12 col-sm-12"
+            shimmerclassName="col-lg-12 col-md-12 col-sm-12"
           />
         </div>
       </div> */}
@@ -141,7 +141,7 @@ export default function Blog() {
             sliceStart={11}
             sliceEnd={15}
             shimmerCount={3}
-            shimmerClass="p-20 mx-10"
+            shimmerclassName="p-20 mx-10"
           />
         </div>
 
@@ -151,7 +151,7 @@ export default function Blog() {
             sliceStart={15}
             sliceEnd={16}
             shimmerCount={1}
-            shimmerClass="p-20 mx-10 col-lg-12 h-100"
+            shimmerclassName="p-20 mx-10 col-lg-12 h-100"
           />
         </div>
       </div>
@@ -163,7 +163,7 @@ export default function Blog() {
             sliceStart={16}
             sliceEnd={17}
             shimmerCount={1}
-            shimmerClass="p-20 mx-10"
+            shimmerclassName="p-20 mx-10"
           />
         </div>
         <div className="col-lg-7 col-md-12 col-sm-12 p-0 paddingMbleScreen">
@@ -172,7 +172,7 @@ export default function Blog() {
             sliceStart={17}
             sliceEnd={18}
             shimmerCount={1}
-            shimmerClass="p-20 mx-10"
+            shimmerclassName="p-20 mx-10"
           />
         </div>
       </div>

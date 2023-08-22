@@ -15,21 +15,21 @@ import shape5 from "../../../../src/assets/images/shape5.png";
 function Service() {
   return (
     <div>
-      <div class="ml-services-area ptb-80">
-        <div class="container">
-          <div class="section-title">
-            <span class="sub-title">Our Solutions</span>
+      <div className="ml-services-area ptb-80">
+        <div className="container">
+          <div className="section-title">
+            <span className="sub-title">Our Solutions</span>
             <h2>Our Services</h2>
-            <div class="bar"></div>
+            <div className="bar"></div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-lg-4 col-sm-6">
-              <div class="single-ml-services-box">
-                <div class="image">
+          <div className="row justify-content-center">
+            <div className="col-lg-4 col-sm-6">
+              <div className="single-ml-services-box">
+                <div className="image">
                   <img
                     src={serviceImage1}
                     alt="image"
@@ -42,9 +42,9 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
-              <div class="single-ml-services-box">
-                <div class="image">
+            <div className="col-lg-4 col-sm-6">
+              <div className="single-ml-services-box">
+                <div className="image">
                   <img
                     src={serviceImage2}
                     alt="image"
@@ -57,9 +57,9 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
-              <div class="single-ml-services-box">
-                <div class="image">
+            <div className="col-lg-4 col-sm-6">
+              <div className="single-ml-services-box">
+                <div className="image">
                   <img
                     src={serviceImage3}
                     alt="image"
@@ -74,9 +74,9 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
-              <div class="single-ml-services-box">
-                <div class="image">
+            <div className="col-lg-4 col-sm-6">
+              <div className="single-ml-services-box">
+                <div className="image">
                   <img
                     src={serviceImage4}
                     alt="image"
@@ -91,9 +91,9 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
-              <div class="single-ml-services-box">
-                <div class="image">
+            <div className="col-lg-4 col-sm-6">
+              <div className="single-ml-services-box">
+                <div className="image">
                   <img
                     src={serviceImage5}
 
@@ -107,9 +107,9 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-6">
-              <div class="single-ml-services-box">
-                <div class="image">
+            <div className="col-lg-4 col-sm-6">
+              <div className="single-ml-services-box">
+                <div className="image">
                   <img
                     src={serviceImage6}
                     alt="image"
@@ -124,14 +124,14 @@ function Service() {
             </div>
           </div>
         </div>
-        <div class="shape1"><img src={shape5} alt="shape" /></div>
-        <div class="shape2 rotateme">
+        <div className="shape1"><img src={shape5} alt="shape" /></div>
+        <div className="shape2 rotateme">
           <img src={shape2} alt="shape" />
         </div>
-        <div class="shape3"><img src={shape3} alt="shape" /></div>
-        <div class="shape4"><img src={shape4} alt="shape" /></div>
-        <div class="shape7"><img src={shape4} alt="shape" /></div>
-        <div class="shape8 rotateme">
+        <div className="shape3"><img src={shape3} alt="shape" /></div>
+        <div className="shape4"><img src={shape4} alt="shape" /></div>
+        <div className="shape7"><img src={shape4} alt="shape" /></div>
+        <div className="shape8 rotateme">
           <img src={shape2} alt="shape" />
         </div>
       </div>

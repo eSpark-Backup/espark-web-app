@@ -37,7 +37,7 @@ const ServiceDetail = () => {
         paragraph={filterData[0]?.content}
         images={filterData[0]?.image}
         ShowButton={false}
-        serviceClass={"service"}
+        serviceclassName={"service"}
       />
       <div className={`container-fluid ptb-80 ${styles.gaps} `}>
         <SectionTitle

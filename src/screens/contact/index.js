@@ -14,12 +14,12 @@ const Contact = () => {
           "Feel free to reach out to us with any question you may have. <br/> We will get back to you as soon as possible."
         }
       />
-      <div class="contact-info-area ptb-80">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="contact-info-box">
-                <div class="icon">
+      <div className="contact-info-area ptb-80">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-4 col-md-6 col-sm-6">
+              <div className="contact-info-box">
+                <div className="icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -27,7 +27,7 @@ const Contact = () => {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
+                    strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   >
@@ -39,7 +39,7 @@ const Contact = () => {
                 <p>
                   <a href="mailto:info@esparkconsultants.com">
                     <span
-                      class="__cf_email__"
+                      className="__cf_email__"
                       data-cfemail="bddcd9d0d4d3fdcec9dccfc9cd93ded2d0"
                     >
                       info@esparkconsultants.com
@@ -49,7 +49,7 @@ const Contact = () => {
                 <p>
                   <a href="mailto:esparkconsgroup@gmail.com">
                     <span
-                      class="__cf_email__"
+                      className="__cf_email__"
                       data-cfemail="a4cdcac2cbe4d7d0c5d6d0d48ac7cbc9"
                     >
                       esparkconsgroup@gmail.com
@@ -58,9 +58,9 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="contact-info-box">
-                <div class="icon">
+            <div className="col-lg-4 col-md-6 col-sm-6">
+              <div className="contact-info-box">
+                <div className="icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -68,7 +68,7 @@ const Contact = () => {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
+                    strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   >
@@ -83,9 +83,9 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-              <div class="contact-info-box">
-                <div class="icon">
+            <div className="col-lg-4 col-md-6 col-sm-6">
+              <div className="contact-info-box">
+                <div className="icon">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -93,7 +93,7 @@ const Contact = () => {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
+                    strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   >

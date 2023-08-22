@@ -5,20 +5,20 @@ import { shapes } from "../../helper/ImageUrl";
 function HeroSectionTwo({ heading1, paragarph, features }) {
   return (
     <>
-      <div class="hosting-main-banner">
-        <div class="d-table">
-          <div class="d-table-cell">
-            <div class="container">
-              <div class="row align-items-center">
-                <div class="col-lg-6 col-md-12">
-                  <div class="hosting-banner-content">
+      <div className="hosting-main-banner">
+        <div className="d-table">
+          <div className="d-table-cell">
+            <div className="container">
+              <div className="row align-items-center">
+                <div className="col-lg-6 col-md-12">
+                  <div className="hosting-banner-content">
                     <h1 className="comando">{heading1}</h1>
 
                     <p dangerouslySetInnerHTML={{ __html: paragarph }}></p>
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-12" style={{ textAlign: "center" }}>
-                  <div class="hosting-banner-content">
+                <div className="col-lg-6 col-md-12" style={{ textAlign: "center" }}>
+                  <div className="hosting-banner-content">
                     <img
                       src={require("../../assets/images/App Screenshots/Command Do App Screenshots/GIF_CommandD.gif")}
                       alt=""
@@ -37,13 +37,13 @@ function HeroSectionTwo({ heading1, paragarph, features }) {
         ))}
 
         <div className="pt-5">
-          <div class="container">
-            <div class="row">
+          <div className="container">
+            <div className="row">
               {features &&
                 features.map((item) => {
                   return (
-                    <div class="col-lg-4 col-md-6">
-                      <div class="single-box">
+                    <div className="col-lg-4 col-md-6">
+                      <div className="single-box">
                         <h3>
                           <a>{item.name}</a>
                         </h3>

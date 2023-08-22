@@ -31,13 +31,13 @@ export default function UserExpectation({
           ))}
         </div>
         <div className="contact-cta-box row ">
-          <div class="col-lg-8">
+          <div className="col-lg-8">
             <h3>{h3}</h3>
             <p>
               {p2}&#x27;{p2_span}
             </p>
           </div>
-          <div class="col-lg-4">
+          <div className="col-lg-4">
             <Button
               title={btnTitle}
               link={href}

@@ -17,7 +17,7 @@ const Button = ({
   if (design === 0) {
     return (
       <div>
-        <button type={type} class="submit roundbutton" disabled={disabled}>
+        <button type={type} className="submit roundbutton" disabled={disabled}>
           {title}
         </button>
       </div>
@@ -64,7 +64,7 @@ const Button = ({
     return (
       <>
         <button
-          class="btn btn-light rounded-pill"
+          className="btn btn-light rounded-pill"
           to={link}
           onClick={onClick}
           style={{ width: "100%", boxShadow: "none" }}
@@ -79,7 +79,7 @@ const Button = ({
     return (
       <div>
         <Link
-          class="btn btn-primary rounded-pill"
+          className="btn btn-primary rounded-pill"
           to={link}
           onClick={onClick}
           disabled={disabled}
@@ -94,7 +94,7 @@ const Button = ({
   if (design === 5) {
     return (
       <div>
-        <Link class="btn btn-primary rounded-pill" to={link}>
+        <Link className="btn btn-primary rounded-pill" to={link}>
           {title}
         </Link>
       </div>
@@ -103,7 +103,7 @@ const Button = ({
   if (design === 6) {
     return (
       <div>
-        <Link class="read-more-btn " to={link} onClick={onClick}>
+        <Link className="read-more-btn " to={link} onClick={onClick}>
           {title}
           {"  "}
           <FaLongArrowAltRight style={{ marginTop: 0 }} margin={0} />
@@ -114,7 +114,7 @@ const Button = ({
   if (design === 7) {
     return (
       <div>
-        <Link class="read-more-btn" to={link}>
+        <Link className="read-more-btn" to={link}>
           {title}
         </Link>
       </div>

@@ -6,24 +6,24 @@ const Eventcard = () => {
     <>
       <div className="event-area gray-300">
         <div className="container position-relative pt-110">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="background-title text-style-one">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="background-title text-style-one">
                 <h2>EVENT</h2>
               </div>
-              <div class="section-head">
+              <div className="section-head">
                 <h5>Event</h5>
                 <h3>Popular Event</h3>
               </div>
             </div>
           </div>
           <div className="row">
-            <div class="col-lg-12">
-              <div class="event-category-buttons d-flex justify-content-center">
-                <ul class="nav nav-pills mb-3" id="events-tab" role="tablist">
-                  <li class="nav-item" role="presentation">
+            <div className="col-lg-12">
+              <div className="event-category-buttons d-flex justify-content-center">
+                <ul className="nav nav-pills mb-3" id="events-tab" role="tablist">
+                  <li className="nav-item" role="presentation">
                     <button
-                      class="nav-link"
+                      className="nav-link"
                       id="pills-tab1"
                       data-bs-toggle="pill"
                       data-bs-target="#pills-event1"
@@ -35,9 +35,9 @@ const Eventcard = () => {
                       Business <span>10</span>
                     </button>
                   </li>
-                  <li class="nav-item" role="presentation">
+                  <li className="nav-item" role="presentation">
                     <button
-                      class="nav-link"
+                      className="nav-link"
                       id="pills-tab2"
                       data-bs-toggle="pill"
                       data-bs-target="#pills-event2"
@@ -49,9 +49,9 @@ const Eventcard = () => {
                       Fire Wall <span>10</span>
                     </button>
                   </li>
-                  <li class="nav-item" role="presentation">
+                  <li className="nav-item" role="presentation">
                     <button
-                      class="nav-link"
+                      className="nav-link"
                       id="pills-tab3"
                       data-bs-toggle="pill"
                       data-bs-target="#pills-event3"
@@ -63,9 +63,9 @@ const Eventcard = () => {
                       Sport <span>10</span>
                     </button>
                   </li>
-                  <li class="nav-item" role="presentation">
+                  <li className="nav-item" role="presentation">
                     <button
-                      class="nav-link"
+                      className="nav-link"
                       id="pills-tab4"
                       data-bs-toggle="pill"
                       data-bs-target="#pills-event4"
@@ -77,9 +77,9 @@ const Eventcard = () => {
                       Web Development <span>10</span>
                     </button>
                   </li>
-                  <li class="nav-item" role="presentation">
+                  <li className="nav-item" role="presentation">
                     <button
-                      class="nav-link"
+                      className="nav-link"
                       id="pills-tab5"
                       data-bs-toggle="pill"
                       data-bs-target="#pills-event5"
@@ -91,9 +91,9 @@ const Eventcard = () => {
                       Marketing <span>10</span>
                     </button>
                   </li>
-                  <li class="nav-item" role="presentation">
+                  <li className="nav-item" role="presentation">
                     <button
-                      class="nav-link active"
+                      className="nav-link active"
                       id="pills-tab6"
                       data-bs-toggle="pill"
                       data-bs-target="#pills-event6"
@@ -109,81 +109,81 @@ const Eventcard = () => {
               </div>
             </div>
 
-            <div class="col-lg-12">
-              <div class="all-event-cards">
-                <div class="tab-content" id="events-tabContent">
+            <div className="col-lg-12">
+              <div className="all-event-cards">
+                <div className="tab-content" id="events-tabContent">
                   <div
-                    // class="tab-pane fade"
+                    // className="tab-pane fade"
                     id="pills-event1"
                     role="tabpanel"
                     aria-labelledby="pills-tab1"
                   >
-                    <div class="row">
+                    <div className="row">
                       {eventsCard.map((items) => {
                         return (
                           <div
-                            class="col-lg-4 col-md-6 wow fadeInUp mytransformfadeInUp"
+                            className="col-lg-4 col-md-6 wow fadeInUp mytransformfadeInUp"
                             data-wow-delay="200ms"
                             data-wow-duration="1500ms"
                           >
-                            <div class="event-card-md">
-                              <div class="event-thumb">
+                            <div className="event-card-md">
+                              <div className="event-thumb">
                                 <img src={items.img} alt="" />
-                                <div class="event-lavel">
-                                  <i class="bi bi-diagram-3"></i>
+                                <div className="event-lavel">
+                                  <i className="bi bi-diagram-3"></i>
                                   <span>{items.seats}</span>
                                 </div>
                               </div>
-                              <div class="event-content">
-                                <div class="event-info">
-                                  <div class="event-date">
+                              <div className="event-content">
+                                <div className="event-info">
+                                  <div className="event-date">
                                     <a>
-                                      <i class="bi bi-calendar2-week"></i>{" "}
+                                      <i className="bi bi-calendar2-week"></i>{" "}
                                       {items.date}
                                     </a>
                                   </div>
-                                  <div class="event-location">
+                                  <div className="event-location">
                                     <a>
-                                      <i class="bi bi-geo-alt"></i>{" "}
+                                      <i className="bi bi-geo-alt"></i>{" "}
                                       {items.country}
                                     </a>
                                   </div>
                                 </div>
-                                <h5 class="event-title">
+                                <h5 className="event-title">
                                   <a>
                                     Media companies need to better one then
                                     educate advertisers.
                                   </a>
                                 </h5>
-                                <div class="event-bottom">
-                                  <div class="event-readme">
+                                <div className="event-bottom">
+                                  <div className="event-readme">
                                     <a>{items.booking}</a>
                                   </div>
-                                  <div class="event-share-icons">
-                                    <ul class="share-options">
+                                  <div className="event-share-icons">
+                                    <ul className="share-options">
                                       <li>
                                         <a>
-                                          <i class="fab fa-facebook-f"></i>
+                                          <i className="fab fa-facebook-f"></i>
                                         </a>
                                       </li>
                                       <li>
                                         <a>
-                                          <i class="fab fa-instagram"></i>
+                                          <i className="fab fa-instagram"></i>
                                         </a>
                                       </li>
                                       <li>
                                         <a>
-                                          <i class="fab fa-linkedin-in"></i>
+                                          <i className="fab fa-linkedin-in"></i>
                                         </a>
                                       </li>
                                       <li>
                                         <a>
-                                          <i class="fab fa-twitter"></i>
+                                          <i className="fab fa-twitter"></i>
                                         </a>
                                       </li>
                                     </ul>
-                                    <div class="share-btn">
-                                      <i class="bi bi-share"></i>
+                                    <div className="share-btn">
+                                      <i className="bi bi-share"></i>
                                     </div>
                                   </div>
                                 </div>

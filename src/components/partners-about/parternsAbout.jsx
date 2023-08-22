@@ -4,7 +4,7 @@ import Testimonial from "../testimonial/Testimonial";
 
 export default function PartnerAbout() {
   return (
-    <div class="container-fluid">
+    <div className="container-fluid">
       <SectionTitle heading={"Client Testimonials"} paragraph={""} />
       <Testimonial />
     </div>

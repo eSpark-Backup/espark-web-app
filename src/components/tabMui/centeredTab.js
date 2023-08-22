@@ -29,7 +29,7 @@ function CenteredTabs({ cardHandler, tabSelect, tabData }) {
           <path
             d="M20.0769 1.84616L3.9231 17.2977L20.0769 31.4615"
             stroke="white"
-            stroke-width="5"
+            strokeWidth="5"
           />
         </svg>
       </div>
@@ -49,7 +49,7 @@ function CenteredTabs({ cardHandler, tabSelect, tabData }) {
           <path
             d="M1.92306 1.84619L18.0769 17.2977L1.92306 31.4616"
             stroke="white"
-            stroke-width="5"
+            strokeWidth="5"
           />
         </svg>
       </div>

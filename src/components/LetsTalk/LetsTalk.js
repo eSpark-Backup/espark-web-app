@@ -76,9 +76,9 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
 
   return (
     <div>
-      <div class={`contact-area  ${!modal ? "pb-80" : null}`}>
+      <div className={`contact-area  ${!modal ? "pb-80" : null}`}>
         <div className="container-fluid p-4  ">
-          <div class={`${style.letsTalk} row border sizeControl  `}>
+          <div className={`${style.letsTalk} row border sizeControl  `}>
             <div className="col-lg-8 text-center">
               <SectionTitle
                 heading={"Let’s Talk"}
@@ -108,24 +108,24 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                   className=""
                   ref={form}
                   onSubmit={sendEmail}>
-                  <div class="row ">
-                    <div class="col-lg-6 col-md-6">
-                      <div class="form-group">
+                  <div className="row ">
+                    <div className="col-lg-6 col-md-6">
+                      <div className="form-group">
                         <label className={`${style.label} d-flex`}>Name</label>
                         <input
                           type="text"
                           required
                           name="name"
                           placeholder="Your Name *"
-                          class="form-control"
+                          className="form-control"
                           value={name}
                           onChange={(e) => setName(e.target.value)}
                         />
-                        <div class="invalid-feedback"></div>
+                        <div className="invalid-feedback"></div>
                       </div>
                     </div>
-                    <div class="col-lg-6 col-md-6">
-                      <div class="form-group">
+                    <div className="col-lg-6 col-md-6">
+                      <div className="form-group">
                         <label className={`${style.label} d-flex`}>
                           Email Address
                         </label>
@@ -134,15 +134,15 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                           required
                           name="email"
                           placeholder="Your email address *"
-                          class="form-control"
+                          className="form-control"
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
                         />
-                        <div class="invalid-feedback"></div>
+                        <div className="invalid-feedback"></div>
                       </div>
                     </div>
-                    <div class="col-lg-12 col-md-12">
-                      <div class="form-group">
+                    <div className="col-lg-12 col-md-12">
+                      <div className="form-group">
                         <label className={`${style.label} d-flex`}>
                           Subject
                         </label>
@@ -150,17 +150,17 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                           type="text"
                           name="subject"
                           placeholder="Your Subject *"
-                          class="form-control"
+                          className="form-control"
                           required
                           value={subject}
                           onChange={(e) => setSubject(e.target.value)}
                         />
-                        <div class="invalid-feedback"></div>
+                        <div className="invalid-feedback"></div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-12 col-md-12">
-                    <div class="form-group">
+                  <div className="col-lg-12 col-md-12">
+                    <div className="form-group">
                       <label className={`${style.label} d-flex`}>Message</label>
                       <textarea
                         name="text"
@@ -168,13 +168,13 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                         cols="30"
                         rows="5"
                         placeholder={"Write your message ...*"}
-                        class="form-control"
+                        className="form-control"
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}></textarea>
-                      <div class="invalid-feedback"></div>
+                      <div className="invalid-feedback"></div>
                     </div>
                   </div>
-                  <div class="col-lg-12 col-sm-12 d-flex justify-content-center justify-content-sm-start ">
+                  <div className="col-lg-12 col-sm-12 d-flex justify-content-center justify-content-sm-start ">
                     <Button
                       type="submit"
                       onClick={sendEmail}

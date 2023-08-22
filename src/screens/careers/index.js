@@ -49,7 +49,7 @@ const Careers = () => {
     return (
       <div className="col-lg-12 col-md-12 col-sm-12   px-2">
         <select
-          class="form-select"
+          className="form-select"
           aria-label="Default select example"
           onChange={(e) => {
             selectCategory(e);
@@ -220,7 +220,7 @@ const Careers = () => {
         images={CareerImg}
         ShowButton={false}
       />
-      <div class="container-fluid containerMarginBottom  containerMarginTop">
+      <div className="container-fluid containerMarginBottom  containerMarginTop">
         {/* {careersData && (
           <div className="mb-3">
             <SectionTitle
@@ -243,9 +243,9 @@ const Careers = () => {
            careersData?.map((item) => {
             return (
               <>
-                <div class="careers">
+                <div className="careers">
                   <div className="row border-top p-5">
-                    <div class="col-lg-3  col-md-3 col-sm-12">
+                    <div className="col-lg-3  col-md-3 col-sm-12">
                       <h4 id="data_job_num1" data-job-num="1">
                         {item?.title?.rendered}
                       </h4>
@@ -256,7 +256,7 @@ const Careers = () => {
                         <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
                       </p>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div className="col-lg-6 col-md-6 col-sm-12">
                       <h4>Description</h4>
                       <p
                         dangerouslySetInnerHTML={{
@@ -264,7 +264,7 @@ const Careers = () => {
                         }}
                       ></p>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12 d-flex align-items-center justify-content-center cardsBtn ">
+                    <div className="col-lg-3 col-md-3 col-sm-12 d-flex align-items-center justify-content-center cardsBtn ">
                       <Button
                         title="Apply Now"
                         link={`/careers/${item.id}`}
@@ -274,10 +274,10 @@ const Careers = () => {
                   </div>
                 </div>
                 {/* Mobile card sections */}
-                <div class="careerMobile careerCard my-3">
-                  <div class="card-body ">
+                <div className="careerMobile careerCard my-3">
+                  <div className="card-body ">
                     <div className="row py-3">
-                      <div class=" col-12  ">
+                      <div className=" col-12  ">
                         <h4 id="data_job_num1" data-job-num="1">
                           {item?.title?.rendered}
                         </h4>
@@ -290,7 +290,7 @@ const Careers = () => {
                         </p>
                         <hr className="career-hr my-2" />
                       </div>
-                      <div class="col-12 ">
+                      <div className="col-12 ">
                         <p
                           className="cardDesc"
                           dangerouslySetInnerHTML={{
@@ -298,7 +298,7 @@ const Careers = () => {
                           }}
                         ></p>
                       </div>
-                      <div class=" col-12 cardbtn">
+                      <div className=" col-12 cardbtn">
                         <Button
                           careerSmallBtn
                           title="Apply Now"
@@ -317,15 +317,15 @@ const Careers = () => {
         ) : (
           ShemarLength?.map((item) => {
             return (
-              <div class="row">
-                <div class="col-lg-4">
+              <div className="row">
+                <div className="col-lg-4">
                   <ShimmerThumbnail
                     height={150}
                     width={300}
                     categoryStyle="STYLE_THREE"
                   />
                 </div>
-                <div class="col-lg-8">
+                <div className="col-lg-8">
                   <ShimmerText
                     line={5}
                     gap={10}

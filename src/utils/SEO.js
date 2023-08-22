@@ -10,9 +10,13 @@ export default function SEO() {
 
   return (
     <>
-      {currentData.map((item) => {
+      {currentData.map((item, index) => {
         return (
-          <Helmet prioritizeSeoTags>
+          <Helmet
+            prioritizeSeoTags
+            htmlAttributes={{ lang: "en" }}
+            key={index + "seo"}
+          >
             <title>{item.title}</title>
             <link rel="preload" as="style" href="" />
             <link rel="stylesheet" href={item.url} />

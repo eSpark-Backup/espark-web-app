@@ -1,6 +1,7 @@
+import React from "react";
 import Slider from "react-slick";
 import "./style.css";
-import '../../assets/css/responsive.css'
+import "../../assets/css/responsive.css";
 import { clients } from "../../helper/clients";
 import {
   MdOutlineArrowForwardIos,
@@ -69,15 +70,14 @@ const settings = {
 
 const Testimonial = () => {
   return (
-    <div className="testimonial " >
+    <div className="testimonial ">
       <div className="subtesti ">
         <Slider {...settings}>
-          {clients?.map((item) => {
+          {clients?.map((item, index) => {
             return (
-              <>
+              <React.Fragment key={"imgbox" + index}>
                 <div className="imgbox ">
                   <img
-
                     className="image "
                     src={item.image}
                     alt={item.testimonial}
@@ -88,7 +88,7 @@ const Testimonial = () => {
                   <p className="designation">{item.designation}</p>
                   <p className="testimonialText">{item.testimonial}</p>
                 </div>
-              </>
+              </React.Fragment>
             );
           })}
         </Slider>

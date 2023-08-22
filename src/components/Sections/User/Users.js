@@ -24,9 +24,12 @@ function Users() {
           portFolio="portfolio"
         />
         <div className="row mt-3">
-          {completedProject.map((item) => {
+          {completedProject.map((item, index) => {
             return (
-              <div class="col-6 col-sm-6 col-md-6 col-lg-3 pt-5 d-flex align-items-center flex-column">
+              <div
+                key={index + "cirular-progress"}
+                className="col-6 col-sm-6 col-md-6 col-lg-3 pt-5 d-flex align-items-center flex-column"
+              >
                 <CircularProgressbar
                   value={item.value}
                   text={`${item.numbers}`}

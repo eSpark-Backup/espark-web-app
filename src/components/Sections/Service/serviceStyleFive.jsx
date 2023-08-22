@@ -11,24 +11,24 @@ const ServiceStyleFive = ({ data, link }) => {
 
   return (
     <div>
-      <div class="agency-services-area">
-        <div class="container">
+      <div className="agency-services-area">
+        <div className="container">
           {newData?.slice(0,2)?.map((child) => {
             return (
-              <div class="row justify-content-center p-20">
+              <div className="row justify-content-center p-20">
                {link === "/" ?null: <Title title={child.name} link={window.location.pathname} /> }
                 {
                   child.childs.map(item => {
                     return (
-                      <div class="col-lg-4 col-sm-6 col-md-6">
-                        <div class="agency-services-box">
+                      <div className="col-lg-4 col-sm-6 col-md-6">
+                        <div className="agency-services-box">
                           <img src={item?.data?.image[0]} alt="img" height={300} className={style.serviceImg} />
-                          <div class={`content ${style.contents}`}>
+                          <div className={`content ${style.contents}`}>
                             <h6>
                               <Link to={`/services/${item.path}`}>{item.name}</Link>
                             </h6>
                             <Link
-                              class="read-more-btn"
+                              className="read-more-btn"
                               to={`/services/${item.path}`}
                             >
                               Read More
@@ -39,7 +39,7 @@ const ServiceStyleFive = ({ data, link }) => {
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
-                                stroke-width="2"
+                                strokeWidth="2"
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
                               >

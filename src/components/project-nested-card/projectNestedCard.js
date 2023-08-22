@@ -13,13 +13,13 @@ export default function ProjectNestedCard({data}) {
                 </div>  
             </div>
             </div>
-            <div class="discover-area ptb-80">
-                <div class="container">
-                    <div class="row align-items-center">
+            <div className="discover-area ptb-80">
+                <div className="container">
+                    <div className="row align-items-center">
                         {data[0].data.carousel.map(item => <TeamCard imgUrl={item.img}  h3={item.name} h3_span ={item.h3_span} h3_span2 = {item.h3_span2} p ={item.paragraph} />)}
                     </div>
                 </div>
-                <div class="analytics-shape1"><img src="https://startp-next.envytheme.com/images/bigdata-analytics/analytics-shape1.png" alt="image"/></div>
+                <div className="analytics-shape1"><img src="https://startp-next.envytheme.com/images/bigdata-analytics/analytics-shape1.png" alt="image"/></div>
             </div>
          </>
   )

@@ -33,12 +33,12 @@ const OurJourney = () => {
                     />
                   </div>
                   <div className={`col-5 col-md-5 col-lg-5 ${styles.last} `}>
-                    <div class={styles.hexagon}>
+                    <div className={styles.hexagon}>
                       <span className={styles.hexgonText2}>
                         {items.hexagonLeft}
                       </span>
-                      <div class={styles.face1}></div>
-                      <div class={styles.face2}></div>
+                      <div className={styles.face1}></div>
+                      <div className={styles.face2}></div>
                     </div>
                   </div>
                 </div>
@@ -48,12 +48,12 @@ const OurJourney = () => {
                   <div
                     className={`col-5 col-md-5 d-flex justify-content-end ${styles.secondDivHexagon}`}
                   >
-                    <div class={styles.hexagon}>
+                    <div className={styles.hexagon}>
                       <span className={styles.hexgonText2}>
                         {items.hexagonRight}
                       </span>
-                      <div class={styles.face1}></div>
-                      <div class={styles.face2}></div>
+                      <div className={styles.face1}></div>
+                      <div className={styles.face2}></div>
                     </div>
                   </div>
                   <div className="col-2 col-md-2 d-flex justify-content-center">
@@ -85,12 +85,12 @@ const OurJourney = () => {
                   className={`row d-flex align-items-center ptb-80 ${styles.journeyContainer} `}
                 >
                   <div className={`col-12 d-flex justify-content-center `}>
-                    <div class={styles.hexagon}>
+                    <div className={styles.hexagon}>
                       <span className={styles.hexgonText2}>
                         {items.hexagonLeft}
                       </span>
-                      <div class={styles.face1}></div>
-                      <div class={styles.face2}></div>
+                      <div className={styles.face1}></div>
+                      <div className={styles.face2}></div>
                     </div>
                   </div>
                   <div className={`col-12 d-flex justify-content-center `}>
@@ -106,12 +106,12 @@ const OurJourney = () => {
                   className={`row d-flex align-items-center ptb-80 ${styles.journeyContainer} `}
                 >
                   <div className={`col-12 d-flex justify-content-center `}>
-                    <div class={styles.hexagon}>
+                    <div className={styles.hexagon}>
                       <span className={styles.hexgonText2}>
                         {items.hexagonRight}
                       </span>
-                      <div class={styles.face1}></div>
-                      <div class={styles.face2}></div>
+                      <div className={styles.face1}></div>
+                      <div className={styles.face2}></div>
                     </div>
                   </div>
                   <div className={`col-12 d-flex justify-content-center `}>

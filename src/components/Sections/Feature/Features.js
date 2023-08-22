@@ -13,20 +13,20 @@ import shape5 from "../../../../src/assets/images/shape5.png";
 function Features({ heading }) {
   return (
     <div>
-      <div class="solutions-area pt-80">
-        <div class="container">
-          <div class="section-title">
+      <div className="solutions-area pt-80">
+        <div className="container">
+          <div className="section-title">
             <h2>{heading}</h2>
-            <div class="bar"></div>
+            <div className="bar"></div>
             <p>
               Catalyst Role & Solutions Provider We’ve won a ton of awards and
               have been featured in all of the magazines.
             </p>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-lg-4 col-sm-6 col-md-6">
-              <div class="single-solutions-box">
-                <div class="icon">
+          <div className="row justify-content-center">
+            <div className="col-lg-4 col-sm-6 col-md-6">
+              <div className="single-solutions-box">
+                <div className="icon">
                   <img src={icon4} alt="image" />
                 </div>
                 <h3>Marketing</h3>
@@ -37,9 +37,9 @@ function Features({ heading }) {
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-6 col-md-6">
-              <div class="single-solutions-box">
-                <div class="icon">
+            <div className="col-lg-4 col-sm-6 col-md-6">
+              <div className="single-solutions-box">
+                <div className="icon">
                   <img src={icon5} alt="image" />
                 </div>
                 <h3>Technology</h3>
@@ -50,9 +50,9 @@ function Features({ heading }) {
                 </p>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-6 col-md-6">
-              <div class="single-solutions-box">
-                <div class="icon">
+            <div className="col-lg-4 col-sm-6 col-md-6">
+              <div className="single-solutions-box">
+                <div className="icon">
                   <img src={icon6} alt="image" />
                 </div>
                 <h3>Development</h3>
@@ -65,25 +65,25 @@ function Features({ heading }) {
             </div>
           </div>
         </div>
-        <div class="shape1">
+        <div className="shape1">
           <img src={shape5} alt="shape" />
         </div>
-        <div class="shape2 rotateme">
+        <div className="shape2 rotateme">
           <img src={shape2} alt="shape" />
         </div>
-        <div class="shape3">
+        <div className="shape3">
           <img src={shape3} alt="shape" />
         </div>
-        <div class="shape4">
+        <div className="shape4">
           <img src={shape4} alt="shape" />
         </div>
-        <div class="shape6 rotateme">
+        <div className="shape6 rotateme">
           <img src={shape4} alt="shape" />
         </div>
-        <div class="shape7">
+        <div className="shape7">
           <img src={shape4} alt="shape" />
         </div>
-        <div class="shape8 rotateme">
+        <div className="shape8 rotateme">
           <img src={shape2} alt="shape" />
         </div>
       </div>

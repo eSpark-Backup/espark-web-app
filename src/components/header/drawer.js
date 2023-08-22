@@ -57,11 +57,11 @@ const DrawerNav = () => {
   }, [getId]);
 
   return (
-    <header id="header" class="headroom is-sticky">
-      <div class="startp-nav">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-md navbar-light">
-            <Link class="navbar-brand" to="/">
+    <header id="header" className="headroom is-sticky">
+      <div className="startp-nav">
+        <div className="container-fluid">
+          <nav className="navbar navbar-expand-md navbar-light">
+            <Link className="navbar-brand" to="/">
               <img
                 src={require(isAppScreen
                   ? "../../assets/images/logoApp.png"
@@ -73,7 +73,7 @@ const DrawerNav = () => {
               />
             </Link>
             <button
-              class={
+              className={
                 isNavCollapsed
                   ? "custom-toggler navbar-toggler customColor "
                   : "custom-toggler navbar-toggler customColor collapsed"
@@ -86,9 +86,9 @@ const DrawerNav = () => {
               aria-label="Toggle navigation"
               onClick={handleNavCollapse}
             >
-              <span class="icon-bar top-bar tes"></span>
-              <span class="icon-bar middle-bar tes"></span>
-              <span class="icon-bar bottom-bar tes"></span>
+              <span className="icon-bar top-bar tes"></span>
+              <span className="icon-bar middle-bar tes"></span>
+              <span className="icon-bar bottom-bar tes"></span>
             </button>
             <div
               className={
@@ -109,20 +109,20 @@ const DrawerNav = () => {
                     }}
                   >
                     <span
-                      class={pathname === "/" ? "itemTxt selected" : "itemTxt "}
+                      className={pathname === "/" ? "itemTxt selected" : "itemTxt "}
                     >
                       Home{" "}
                     </span>
                   </Link>
                 </li>
                 <li
-                  class="services-items nav-item"
+                  className="services-items nav-item"
                   id="serve"
                   onClick={() => setSelected(1)}
                 >
-                  <Link class="nav-link">
+                  <Link className="nav-link">
                     <span
-                      class={
+                      className={
                         pathname?.includes("services")
                           ? "itemTxt selected"
                           : "itemTxt "
@@ -205,9 +205,9 @@ const DrawerNav = () => {
                     setIsNavCollapsed(false);
                   }}
                 >
-                  <Link class="nav-link" to="/portfolio">
+                  <Link className="nav-link" to="/portfolio">
                     <span
-                      class={
+                      className={
                         pathname === "/portfolio"
                           ? "itemTxt selected"
                           : "itemTxt"
@@ -224,9 +224,9 @@ const DrawerNav = () => {
                     setIsNavCollapsed(false);
                   }}
                 >
-                  <Link class="nav-link" to="/careers">
+                  <Link className="nav-link" to="/careers">
                     <span
-                      class={
+                      className={
                         pathname.includes("/careers")
                           ? "itemTxt selected"
                           : "itemTxt "
@@ -243,9 +243,9 @@ const DrawerNav = () => {
                     setIsNavCollapsed(false);
                   }}
                 >
-                  <Link class="nav-link" to="/blogs">
+                  <Link className="nav-link" to="/blogs">
                     <span
-                      class={
+                      className={
                         pathname.includes("/blogs")
                           ? "itemTxt selected"
                           : "itemTxt "
@@ -261,11 +261,11 @@ const DrawerNav = () => {
               </div>
             </div>
 
-            <div class="others-option">
+            <div className="others-option">
               {isAppScreen ? (
                 <a
                   href="https://play.google.com/store/apps/details?id=com.commanddo"
-                  class="btn btn-light"
+                  className="btn btn-light"
                   target="_blanks"
                 >
                   Download Now

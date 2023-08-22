@@ -7,12 +7,12 @@ const OurExecutives = () => {
   return (
     <div className={styles.ceoIntro}>
       <div className={`container-fluid  my-2 ${styles.fullscreen} `}>
-        <div class={styles.wrapperLeft}>
-          <div class={`${styles.hexagone} my-4`}>
-            <div class={styles.hexagoneBackground}>
-              <div class={`${styles.exactiveRow} row`}>
+        <div className={styles.wrapperLeft}>
+          <div className={`${styles.hexagone} my-4`}>
+            <div className={styles.hexagoneBackground}>
+              <div className={`${styles.exactiveRow} row`}>
                 <div
-                  class={`col-12 col-sm-12 col-md-4 col-lg-4 ${styles.aboutImgDiv}`}
+                  className={`col-12 col-sm-12 col-md-4 col-lg-4 ${styles.aboutImgDiv}`}
                 >
                   <div className={styles.imageWrapper}>
                     <img
@@ -23,7 +23,7 @@ const OurExecutives = () => {
                   </div>
                 </div>
                 <div
-                  class={` col-12 col-sm-12 col-md-8 col-lg-8 ${styles.aboutParaLeft}`}
+                  className={` col-12 col-sm-12 col-md-8 col-lg-8 ${styles.aboutParaLeft}`}
                 >
                   <p className={styles.exactiveHeading}>Huzaifa Ali</p>
                   <p className={styles.exactiveSubHeading}>
@@ -45,8 +45,8 @@ const OurExecutives = () => {
           </div>
         </div>
         <div className={styles.wrapperRight}>
-          <div class={`${styles.hexagoneRight} `}>
-            <div class={styles.hexagoneBackground}>
+          <div className={`${styles.hexagoneRight} `}>
+            <div className={styles.hexagoneBackground}>
               <div className={`${styles.exactiveRow} row`}>
                 <div
                   className={`col-12 col-sm-12 col-md-4 col-lg-4 ${styles.aboutImgDivReverse}`}
@@ -60,7 +60,7 @@ const OurExecutives = () => {
                   </div>
                 </div>
                 <div
-                  class={`col-12 col-sm-12 col-md-8 col-lg-8 ${styles.aboutParaRight}`}
+                  className={`col-12 col-sm-12 col-md-8 col-lg-8 ${styles.aboutParaRight}`}
                 >
                   <p className={styles.exactiveHeadingRight}>
                     Faizan Ur Rahman

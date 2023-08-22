@@ -13,13 +13,13 @@ function Faqs({ imgs, data }) {
         paragraph="<p> We’ve amassed a large number of frequently asked questions (FAQs) by our clients.
         We hope this will be helpful for you to comprehend the most critical aspects of our effective project.</p>"
       />
-      <div class="faq-area pb-5">
-        <div class="container">
-          <div class="faq-accordion">
-            <div data-accordion-component="Accordion" class="accordion">
+      <div className="faq-area pb-5">
+        <div className="container">
+          <div className="faq-accordion">
+            <div data-accordion-component="Accordion" className="accordion">
               <div
                 data-accordion-component="AccordionItem"
-                class="accordion__item"
+                className="accordion__item"
               >
                 {data.map((item, index) => (
                   <>
@@ -28,11 +28,11 @@ function Faqs({ imgs, data }) {
                       key={index}
                       data-accordion-component="AccordionItemHeading"
                       role="heading"
-                      class="accordion__heading"
+                      className="accordion__heading"
                       aria-level="3"
                     >
                       <div
-                        class="accordion__button"
+                        className="accordion__button"
                         id="accordion__heading-a"
                         aria-disabled="false"
                         aria-expanded="true"
@@ -51,7 +51,7 @@ function Faqs({ imgs, data }) {
                     {item._id == faqId && faq && (
                       <div
                         data-accordion-component="AccordionItemPanel"
-                        class="accordion__panel"
+                        className="accordion__panel"
                         role="region"
                         aria-labelledby="accordion__heading-a"
                         id="accordion__panel-a"

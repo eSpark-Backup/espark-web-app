@@ -37,7 +37,7 @@ function TeamSection({ data }) {
       </div>
       <div className=" hides">
         <select
-          class="form-select"
+          className="form-select"
           aria-label="Default select example"
           value={active}
           onChange={(e) => {

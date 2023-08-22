@@ -3,13 +3,13 @@ import React from "react";
 const GradiantCards = ({ data }) => {
   return (
     <div className="pb-5">
-      <div class="container">
-        <div class="row">
+      <div className="container">
+        <div className="row">
           {data?.map((item) => {
             return (
-              <div class="col-lg-4 col-md-6 mt-1">
-                <div class="single-box">
-                  <div class="icon">
+              <div className="col-lg-4 col-md-6 mt-1">
+                <div className="single-box">
+                  <div className="icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -17,7 +17,7 @@ const GradiantCards = ({ data }) => {
                       viewbox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     >

@@ -84,7 +84,7 @@ function BlogSideBar({ catagoryPosts }) {
                           ? items.jetpack_featured_media_url
                           : "https://thumbs.dreamstime.com/b/blog-information-website-concept-workplace-background-text-view-above-127465079.jpg"
                       }
-                      class="fullimage cover bg3"
+                      className="fullimage cover bg3"
                       alt={items.title.rendered}
                     />
                   </Link>
@@ -107,15 +107,15 @@ function BlogSideBar({ catagoryPosts }) {
             <div className="mt-5">
               {ShemarLength.map((item) => {
                 return (
-                  <div class="d-flex">
-                    <div class="col-lg-4">
+                  <div className="d-flex">
+                    <div className="col-lg-4">
                       <ShimmerThumbnail
                         height={90}
                         width={90}
                         categoryStyle="STYLE_THREE"
                       />
                     </div>
-                    <div class="col-lg-8">
+                    <div className="col-lg-8">
                       <ShimmerText
                         line={3}
                         gap={10}

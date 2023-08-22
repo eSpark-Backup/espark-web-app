@@ -6,21 +6,21 @@ import freeTrial from "../../../../src/assets/images/free-trial-img.png";
 function Freetrial() {
   return (
     <div>
-      <div class="free-trial-area">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-lg-6 col-md-12">
-              <div class="free-trial-image">
+      <div className="free-trial-area">
+        <div className="container-fluid">
+          <div className="row align-items-center">
+            <div className="col-lg-6 col-md-12">
+              <div className="free-trial-image">
                 <img src={freeTrial} alt="image" />
               </div>
             </div>
-            <div class="col-lg-6 col-md-12">
-              <div class="free-trial-content">
+            <div className="col-lg-6 col-md-12">
+              <div className="free-trial-content">
                 <h2>Start your free trial</h2>
-                <form class="newsletter-form">
+                <form className="newsletter-form">
                   <input
                     type="email"
-                    class="input-newsletter"
+                    className="input-newsletter"
                     placeholder="Enter your business email here"
                   />
                   <button type="submit">Sign Up Free</button>
@@ -33,16 +33,16 @@ function Freetrial() {
             </div>
           </div>
         </div>
-        <div class="shape2 rotateme">
+        <div className="shape2 rotateme">
           <img src={shape2} alt="shape" />
         </div>
-        <div class="shape4">
+        <div className="shape4">
           <img src={shape4} alt="shape" />
         </div>
-        <div class="shape7">
+        <div className="shape7">
           <img src={shape4} alt="shape" />
         </div>
-        <div class="shape8 rotateme">
+        <div className="shape8 rotateme">
           <img src={shape2} alt="shape" />
         </div>
       </div>

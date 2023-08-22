@@ -4,26 +4,26 @@ import "./style.css";
 const Tabs = ({ data }) => {
   return (
     <div>
-      <div class="container-fluid">
-        <div class="row">
+      <div className="container-fluid">
+        <div className="row">
           {data.map((item) => {
             return (
-              <div class="icon-tab col-xs-12 col-sm-2 col-sm-offset-3 active">
-                <span class="{item.icon}"></span>
-                <span class="icon-label">{item.name}</span>
+              <div className="icon-tab col-xs-12 col-sm-2 col-sm-offset-3 active">
+                <span className="{item.icon}"></span>
+                <span className="icon-label">{item.name}</span>
               </div>
             );
           })}
         </div>
       </div>
-      <div class="item col-sm-10 col-sm-offset-1">
+      <div className="item col-sm-10 col-sm-offset-1">
         {data.map((item) => {
           return (
-            <div class="panel panel-default">
-              <div class="panel-heading">
+            <div className="panel panel-default">
+              <div className="panel-heading">
                 <h3>{item.name}</h3>
               </div>
-              <div class="panel-body">Yahan pr Specific Services aain gi</div>
+              <div className="panel-body">Yahan pr Specific Services aain gi</div>
             </div>
           );
         })}

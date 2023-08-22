@@ -4,80 +4,80 @@ import { recentEvent } from './../../helper/recentEventSchedule';
 const Recentevent = () => {
   return (
     <>
-      <div class="recent-schedule-area gray-300">
-        <div class="container position-relative pt-110">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="background-title text-style-one">
+      <div className="recent-schedule-area gray-300">
+        <div className="container position-relative pt-110">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="background-title text-style-one">
                 <h2>SCHEDULE</h2>
               </div>
-              <div class="section-head">
+              <div className="section-head">
                 <h5>Schedule</h5>
                 <h3>Recent Event Schedule</h3>
               </div>
             </div>
           </div>
-          <div class="row position-relative">
-            <div class="col-lg-12 overflow-hidden">
-              <div class="swiper-container schedule-slider position-relative swiper-initialized swiper-horizontal swiper-pointer-events">
+          <div className="row position-relative">
+            <div className="col-lg-12 overflow-hidden">
+              <div className="swiper-container schedule-slider position-relative swiper-initialized swiper-horizontal swiper-pointer-events">
                 <div
-                  class="swiper-wrapper myThreeD"
+                  className="swiper-wrapper myThreeD"
                   id="swiper-wrapper-de4130ab53042830"
                   aria-live="polite"
                  
                 >
                   <div
-                    class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-prev swiper-slide-duplicate-next recentclass"
+                    className="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-prev swiper-slide-duplicate-next recentclass"
                     data-swiper-slide-index="1"
 
                   >
-                    <div class="schedule-wrapper">
-                      <div class="event-date">
+                    <div className="schedule-wrapper">
+                      <div className="event-date">
                         <h3>01 Oct 2021</h3>
                       </div>
                       {
                         recentEvent.map((items)=>{
                             return (
                                 <div
-                                    class="single-schedule-card row wow fadeInLeft animated myanimation"
+                                    className="single-schedule-card row wow fadeInLeft animated myanimation"
                                     data-wow-delay="200ms"
                                     data-wow-duration="1500ms"
                                   
                                     >
-                                    <div class="col-xl-4 col-lg-5 p-0">
-                                    <div class="single-schedule-left">
-                                        <div class="schedule-top">
+                                    <div className="col-xl-4 col-lg-5 p-0">
+                                    <div className="single-schedule-left">
+                                        <div className="schedule-top">
                                         <h4>{items.time}</h4>
                                         <h5>
                                             Room No - <span>{items.Room}</span>
                                         </h5>
                                         </div>
-                                        <div class="schedule-bottom">
-                                        <div class="speaker-image">
+                                        <div className="schedule-bottom">
+                                        <div className="speaker-image">
                                             <img src={items.img} alt="" />
                                         </div>
-                                        <div class="speaker-info">
+                                        <div className="speaker-info">
                                             <h4>{items.name}</h4>
                                             <p>{items.field}</p>
-                                            <ul class="speaker-social-links">
+                                            <ul className="speaker-social-links">
                                             <li>
                                                 <a href="https://demo.egenslab.com/html/eventlab/#">
-                                                <i class="fab fa-facebook-f"></i>
+                                                <i className="fab fa-facebook-f"></i>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="https://demo.egenslab.com/html/eventlab/#">
-                                                <i class="fab fa-instagram"></i>
+                                                <i className="fab fa-instagram"></i>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="https://demo.egenslab.com/html/eventlab/#">
-                                                <i class="fab fa-linkedin-in"></i>
+                                                <i className="fab fa-linkedin-in"></i>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="https://demo.egenslab.com/html/eventlab/#">
-                                                <i class="fab fa-twitter"></i>
+                                                <i className="fab fa-twitter"></i>
                                                 </a>
                                             </li>
                                             </ul>
@@ -85,44 +85,44 @@ const Recentevent = () => {
                                         </div>
                                     </div>
                                     </div>
-                                    <div class="col-xl-8 col-lg-7 p-0">
-                                    <div class="single-schedule-right">
-                                        <h3 class="schedule-title">
+                                    <div className="col-xl-8 col-lg-7 p-0">
+                                    <div className="single-schedule-right">
+                                        <h3 className="schedule-title">
                                         <a href="https://demo.egenslab.com/html/eventlab/#">
                                            {items.title}
                                         </a>
                                         </h3>
-                                        <p class="schedule-discription">{items.paragraph}</p>
-                                        <div class="schedule-topics">
+                                        <p className="schedule-discription">{items.paragraph}</p>
+                                        <div className="schedule-topics">
                                         <h5>Topic</h5>
-                                        <div class="row">
-                                            <div class="col-md-4">
+                                        <div className="row">
+                                            <div className="col-md-4">
                                             <ul>
                                                 <li>
-                                                <i class="bi bi-check"></i> Color
+                                                <i className="bi bi-check"></i> Color
                                                 </li>
                                                 <li>
-                                                <i class="bi bi-check"></i> Typhography
+                                                <i className="bi bi-check"></i> Typhography
                                                 </li>
                                             </ul>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div className="col-md-4">
                                             <ul>
                                                 <li>
-                                                <i class="bi bi-check"></i> Allingment
+                                                <i className="bi bi-check"></i> Allingment
                                                 </li>
                                                 <li>
-                                                <i class="bi bi-check"></i> Development
+                                                <i className="bi bi-check"></i> Development
                                                 </li>
                                             </ul>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div className="col-md-4">
                                             <ul>
                                                 <li>
-                                                <i class="bi bi-check"></i> Graphic Design
+                                                <i className="bi bi-check"></i> Graphic Design
                                                 </li>
                                                 <li>
-                                                <i class="bi bi-check"></i> Web Design
+                                                <i className="bi bi-check"></i> Web Design
                                                 </li>
                                             </ul>
                                             </div>
@@ -137,14 +137,14 @@ const Recentevent = () => {
                       }
                      
                       <div
-                        class="single-schedule-card row wow fadeInLeft animated myanimation"
+                        className="single-schedule-card row wow fadeInLeft animated myanimation"
                         data-wow-delay="400ms"
                         data-wow-duration="1500ms"
                     
                       >
-                        <div class="col-xl-4 col-lg-5 p-0">
-                          <div class="single-schedule-left">
-                            <div class="schedule-top">
+                        <div className="col-xl-4 col-lg-5 p-0">
+                          <div className="single-schedule-left">
+                            <div className="schedule-top">
                               <h4>
                                
 
@@ -160,23 +160,23 @@ const Recentevent = () => {
                             </div>
                           </div>
                         </div>
-                        <div class="col-xl-8 col-lg-7 p-0">
-                          <div class="single-schedule-right has-break">
-                            <h3 class="break-type">Lunch Time</h3>
+                        <div className="col-xl-8 col-lg-7 p-0">
+                          <div className="single-schedule-right has-break">
+                            <h3 className="break-type">Lunch Time</h3>
                           </div>
                         </div>
                       </div>
                         
                      
-                      <div class="ticket-progress-wrap">
-                        <div class="ticket-progressbar"></div>
+                      <div className="ticket-progress-wrap">
+                        <div className="ticket-progressbar"></div>
                         <h4>
                           Available Seat: <span>390-500</span>
                         </h4>
-                        <div class="ticket-book-btn">
+                        <div className="ticket-book-btn">
                           <a
                             href="https://demo.egenslab.com/html/eventlab/event-details.html"
-                            class="primary-btn-fill"
+                            className="primary-btn-fill"
                           >
                             Book Now
                           </a>
@@ -186,7 +186,7 @@ const Recentevent = () => {
                   </div>
                 </div>
                 <span
-                  class="swiper-notification"
+                  className="swiper-notification"
                   aria-live="assertive"
                   aria-atomic="true"
                 ></span>

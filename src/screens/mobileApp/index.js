@@ -159,18 +159,18 @@ const MobileApp = () => {
           }
         />
       </div>
-      <div class="cta-area ptb-80">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-7 col-md-6">
-              <div class="cta-content">
+      <div className="cta-area ptb-80">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-7 col-md-6">
+              <div className="cta-content">
                 <strong style={{ fontSize: "25px", color: "white" }}>
                   Download App from google Play store{" "}
                 </strong>
               </div>
             </div>
-            <div class="col-lg-5 col-md-6">
-              <div class="cta-right-content">
+            <div className="col-lg-5 col-md-6">
+              <div className="cta-right-content">
                 <div className="d-flex">
                   <a
                     href="https://play.google.com/store/apps/details?id=com.commanddo"
@@ -189,7 +189,7 @@ const MobileApp = () => {
         </div>
       </div>
 
-      <div class="about-area">
+      <div className="about-area">
         <div className="">
           <Slider {...settings}>
             {appScreenShot.map((items) => {

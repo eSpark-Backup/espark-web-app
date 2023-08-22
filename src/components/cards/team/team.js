@@ -21,7 +21,7 @@ function Team({ name, designation, imageUrl, mainImage }) {
     //   </div>
     // </div>
     <div className="profile-card">
-      <div class="img">
+      <div className="img">
         <img
           src={
             imageUrl
@@ -30,7 +30,7 @@ function Team({ name, designation, imageUrl, mainImage }) {
           }
         />
       </div>
-      <div class="caption">
+      <div className="caption">
         <h3>{name}</h3>
         <p>{designation}</p>
       </div>

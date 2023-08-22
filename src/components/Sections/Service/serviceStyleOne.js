@@ -5,14 +5,14 @@ import icon4 from "../../../../src/assets/images/icon4.png";
 const ServiceStyleOne = ({ data }) => {
   return (
     <div>
-      <div class="solutions-area pt-80">
-        <div class="container">
-          <div class="row justify-content-center">
+      <div className="solutions-area pt-80">
+        <div className="container">
+          <div className="row justify-content-center">
             {data.map((item) => {
               return (
-                <div class="col-lg-3 col-sm-6 col-md-6">
-                  <div class="single-solutions-box">
-                    <div class="icon">
+                <div className="col-lg-3 col-sm-6 col-md-6">
+                  <div className="single-solutions-box">
+                    <div className="icon">
                       <img src={icon4} alt="IconImg" />
                     </div>
                     <h3>
@@ -22,7 +22,7 @@ const ServiceStyleOne = ({ data }) => {
                       Lorem ipsum dolor sit amet elit, adipiscing, sed do
                       eiusmod tempor incididunt ut labore dolore magna aliqua.
                     </p>
-                    <a class="learn-more-btn" href="/service-details/">
+                    <a className="learn-more-btn" href="/service-details/">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -30,7 +30,7 @@ const ServiceStyleOne = ({ data }) => {
                         viewbox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        stroke-width="2"
+                        strokeWidth="2"
                         stroke-linecap="round"
                         stroke-linejoin="round"
                       >

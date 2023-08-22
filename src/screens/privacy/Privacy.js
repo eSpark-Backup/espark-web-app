@@ -11,7 +11,7 @@ const Privacy = () => {
       <Title title={"Privacy Policy "} data={shapes} />
       <div className="container-fluid">
         <div className="row">
-          <div class="entry-content paragraph" itemprop="text">
+          <div className="entry-content paragraph" itemprop="text">
             <p>Last updated: December 21, 2022</p>
             <p>
               This Privacy Policy describes Our policies and procedures on the
@@ -32,48 +32,48 @@ const Privacy = () => {
               id="ez-toc-container"
               style={{ backgroundColor: "#f2fcfc" }}
             >
-              <h5 class="ez-toc-title">Table of Contents</h5>
+              <h5 className="ez-toc-title">Table of Contents</h5>
               <nav>
-                <ul class="ez-toc-list ez-toc-list-level-1">
-                  <li class="ez-toc-page-1 privacy-li ez-toc-heading-level-2">
+                <ul className="ez-toc-list ez-toc-list-level-1">
+                  <li className="ez-toc-page-1 privacy-li ez-toc-heading-level-2">
                     <a
-                      class="ez-toc-link ez-toc-heading-1"
+                      className="ez-toc-link ez-toc-heading-1"
                       href="#Interpretation-and-Definitions"
                       title="Interpretation and Definitions"
                     >
                       Interpretation and Definitions
                     </a>
                   </li>
-                  <li class="ez-toc-page-1 privacy-li ez-toc-heading-level-2">
+                  <li className="ez-toc-page-1 privacy-li ez-toc-heading-level-2">
                     <a
-                      class="ez-toc-link ez-toc-heading-2"
+                      className="ez-toc-link ez-toc-heading-2"
                       href="#Collecting-and-Using-Your-Personal-Data"
                       title="Collecting and Using Your Personal Data"
                     >
                       Collecting and Using Your Personal Data
                     </a>
                   </li>
-                  <li class="ez-toc-page-1 privacy-li ez-toc-heading-level-2">
+                  <li className="ez-toc-page-1 privacy-li ez-toc-heading-level-2">
                     <a
-                      class="ez-toc-link ez-toc-heading-3"
+                      className="ez-toc-link ez-toc-heading-3"
                       href="#Use-of-Your-Personal-Data"
                       title="Use of Your Personal Data"
                     >
                       Use of Your Personal Data
                     </a>
                   </li>
-                  <li class="ez-toc-page-1 privacy-li ez-toc-heading-level-2">
+                  <li className="ez-toc-page-1 privacy-li ez-toc-heading-level-2">
                     <a
-                      class="ez-toc-link ez-toc-heading-4"
+                      className="ez-toc-link ez-toc-heading-4"
                       href="#Retention-of-Your-Personal-Data"
                       title="Retention of Your Personal Data"
                     >
                       Retention of Your Personal Data
                     </a>
                   </li>
-                  <li class="ez-toc-page-1 privacy-li ez-toc-heading-level-2">
+                  <li className="ez-toc-page-1 privacy-li ez-toc-heading-level-2">
                     <a
-                      class="ez-toc-link ez-toc-heading-5"
+                      className="ez-toc-link ez-toc-heading-5"
                       href="#Disclosure-of-Your-Personal-Data"
                       title="Disclosure of Your Personal Data"
                     >
@@ -84,11 +84,11 @@ const Privacy = () => {
               </nav>
             </div>
             <div
-              class="code-block code-block-1"
+              className="code-block code-block-1"
               style={{ margin: "8px 0", clear: "both" }}
             >
-              <p class="gb-headline gb-headline-efd0cee8">
-                <span class="gb-icon">
+              <p className="gb-headline gb-headline-efd0cee8">
+                <span className="gb-icon">
                   <svg
                     height="512"
                     viewBox="0 0 24 24"
@@ -108,7 +108,7 @@ const Privacy = () => {
                     ></path>
                   </svg>
                 </span>
-                <span class="gb-headline-text">
+                <span className="gb-headline-text">
                   <strong>PRO TIP:</strong> "Save time and order lunch from your
                   workstation with our app. From 9am to 12:30pm every day, you
                   can easily place an order for a meal delivered straight to
@@ -118,7 +118,7 @@ const Privacy = () => {
             </div>
             <h2>
               <span
-                class="ez-toc-section"
+                className="ez-toc-section"
                 id="Interpretation-and-Definitions"
               ></span>
             </h2>
@@ -214,7 +214,7 @@ const Privacy = () => {
             </ul>
             <h2>
               <span
-                class="ez-toc-section"
+                className="ez-toc-section"
                 id="Collecting-and-Using-Your-Personal-Data"
               ></span>
             </h2>
@@ -283,11 +283,11 @@ const Privacy = () => {
             </p>
             <h2>
               <span
-                class="ez-toc-section"
+                className="ez-toc-section"
                 id="Use-of-Your-Personal-Data"
               ></span>
 
-              <span class="ez-toc-section-end"></span>
+              <span className="ez-toc-section-end"></span>
             </h2>
             <p>The Company may use Personal Data for the following purposes:</p>
             <ul>
@@ -404,10 +404,10 @@ const Privacy = () => {
             </ul>
             <h2>
               <span
-                class="ez-toc-section"
+                className="ez-toc-section"
                 id="Retention-of-Your-Personal-Data"
               ></span>
-              <span class="ez-toc-section-end"></span>
+              <span className="ez-toc-section-end"></span>
             </h2>
             <p>
               The Company will retain Your Personal Data only for as long as is
@@ -425,11 +425,11 @@ const Privacy = () => {
               obligated to retain this data for longer time periods.
             </p>
             <div
-              class="code-block code-block-1"
+              className="code-block code-block-1"
               style={{ margin: "8px 0", clear: "both" }}
             >
-              <p class="gb-headline gb-headline-efd0cee8">
-                <span class="gb-icon">
+              <p className="gb-headline gb-headline-efd0cee8">
+                <span className="gb-icon">
                   <svg
                     height="512"
                     viewBox="0 0 512 512"
@@ -466,7 +466,7 @@ const Privacy = () => {
                     </g>
                   </svg>
                 </span>
-                <span class="gb-headline-text">
+                <span className="gb-headline-text">
                   <strong>PRO TIP:</strong> "Save time and order lunch from your
                   workstation with our app. From 9am to 12:30pm every day, you
                   can easily place an order for a meal delivered straight to
@@ -520,10 +520,10 @@ const Privacy = () => {
             </p>
             <h2>
               <span
-                class="ez-toc-section"
+                className="ez-toc-section"
                 id="Disclosure-of-Your-Personal-Data"
               ></span>
-              <span class="ez-toc-section-end"></span>
+              <span className="ez-toc-section-end"></span>
             </h2>
             <h3>Business Transactions</h3>
             <p>
@@ -558,11 +558,11 @@ const Privacy = () => {
               <li>Protect against legal liability</li>
             </ul>
             <div
-              class="code-block code-block-1"
+              className="code-block code-block-1"
               style={{ margin: "8px 0", clear: "both" }}
             >
-              <p class="gb-headline gb-headline-efd0cee8 ">
-                <span class="gb-icon">
+              <p className="gb-headline gb-headline-efd0cee8 ">
+                <span className="gb-icon">
                   <svg
                     height="512"
                     viewBox="0 0 24 24"
@@ -582,7 +582,7 @@ const Privacy = () => {
                     ></path>
                   </svg>
                 </span>
-                <span class="gb-headline-text">
+                <span className="gb-headline-text">
                   <strong>PRO TIP:</strong> "Save time and order lunch from your
                   workstation with our app. From 9am to 12:30pm every day, you
                   can easily place an order for a meal delivered straight to

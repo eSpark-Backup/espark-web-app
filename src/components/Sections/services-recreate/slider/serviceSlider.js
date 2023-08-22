@@ -23,7 +23,7 @@ function ServiceSlider() {
           <path
             d="M1.92306 1.84619L18.0769 17.2977L1.92306 31.4616"
             stroke="white"
-            stroke-width="5"
+            strokeWidth="5"
           />
         </svg>
       </div>
@@ -43,7 +43,7 @@ function ServiceSlider() {
           <path
             d="M20.0769 1.84616L3.9231 17.2977L20.0769 31.4615"
             stroke="white"
-            stroke-width="5"
+            strokeWidth="5"
           />
         </svg>
       </div>
@@ -154,8 +154,8 @@ function ServiceSlider() {
       <>
         <div className="sliderMobileResponsive ">
           <Slider {...settings}>
-            {services.map((item) => (
-              <div>
+            {services.map((item, index) => (
+              <div key={item.hpname + index}>
                 <Link to={`/services/${item.path}`}>
                   <ServicesCard
                     image={item.icon}
@@ -171,7 +171,10 @@ function ServiceSlider() {
         <div className="mobileResponsive">
           <div className="row">
             {services.slice(0, 5).map((item) => (
-              <div className="col-12 col-sm-12 col-md-6 col-lg-3 ">
+              <div
+                key={item.hpname}
+                className="col-12 col-sm-12 col-md-6 col-lg-3 "
+              >
                 <Link to={`/services/${item.path}`}>
                   <ServicesCard
                     image={item.icon}

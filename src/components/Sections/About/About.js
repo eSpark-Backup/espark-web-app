@@ -13,20 +13,20 @@ function About({ id, img, p, h1 }) {
   return (
     <div>
       {id === 1 ? (
-        <div class="about-area pt-0 ptb-80">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-6 col-md-12">
-                <div class="ml-about-img">
+        <div className="about-area pt-0 ptb-80">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6 col-md-12">
+                <div className="ml-about-img">
                   <img src={img ? img : about4} alt="image" width={250} />
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12">
-                <div class="ml-about-content">
+              <div className="col-lg-6 col-md-12">
+                <div className="ml-about-content">
                   <h2>
                     {h1 ? h1 : "Engaging New Audiences Through Smart Approach "}
                   </h2>
-                  {h1 ? null : <div class="bar"></div>}
+                  {h1 ? null : <div className="bar"></div>}
                   {p ? (
                     <p>{p}</p>
                   ) : (
@@ -56,35 +56,35 @@ function About({ id, img, p, h1 }) {
               </div>
             </div>
           </div>
-          <div class="shape1">
+          <div className="shape1">
             <img src={shape5} alt="shape" />
           </div>
-          <div class="shape2 rotateme">
+          <div className="shape2 rotateme">
             <img src={shape2} alt="shape" />
           </div>
-          <div class="shape3">
+          <div className="shape3">
             <img src={shape3} alt="shape" />
           </div>
-          <div class="shape4">
+          <div className="shape4">
             <img src={shape4} alt="shape" />
           </div>
-          <div class="shape7">
+          <div className="shape7">
             <img src={shape4} alt="shape" />
           </div>
-          <div class="shape8 rotateme">
+          <div className="shape8 rotateme">
             <img src={shape2} alt="shape" />
           </div>
         </div>
       ) : (
-        <div class="about-area pt-0 ptb-80">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-6 col-md-12">
-                <div class="ml-about-content">
+        <div className="about-area pt-0 ptb-80">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6 col-md-12">
+                <div className="ml-about-content">
                   <h2>
                     {h1 ? h1 : "Engaging New Audiences Through Smart Approach "}
                   </h2>
-                  {h1 ? null : <div class="bar"></div>}
+                  {h1 ? null : <div className="bar"></div>}
                   {p ? (
                     <p className={styles.paraText}>{p}</p>
                   ) : (
@@ -112,29 +112,29 @@ function About({ id, img, p, h1 }) {
                   )}
                 </div>
               </div>
-              <div class="col-lg-6 col-md-12">
-                <div class="ml-about-img mt-2">
+              <div className="col-lg-6 col-md-12">
+                <div className="ml-about-img mt-2">
                   <img src={img ? img : about4} alt="image" width={250} />
                 </div>
               </div>
             </div>
           </div>
-          <div class="shape1">
+          <div className="shape1">
             <img src={shape5} alt="shape" />
           </div>
-          <div class="shape2 rotateme">
+          <div className="shape2 rotateme">
             <img src={shape2} alt="shape" />
           </div>
-          <div class="shape3">
+          <div className="shape3">
             <img src={shape3} alt="shape" />
           </div>
-          <div class="shape4">
+          <div className="shape4">
             <img src={shape4} alt="shape" />
           </div>
-          <div class="shape7">
+          <div className="shape7">
             <img src={shape4} alt="shape" />
           </div>
-          <div class="shape8 rotateme">
+          <div className="shape8 rotateme">
             <img src={shape2} alt="shape" />
           </div>
         </div>

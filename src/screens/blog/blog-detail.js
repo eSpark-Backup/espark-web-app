@@ -78,9 +78,9 @@ function BlogDetail() {
   return (
     <>
       {post[0] ? (
-        <div class="blog-details-area ptb-80">
-          <div class="container-fluid">
-            <div class="row">
+        <div className="blog-details-area ptb-80">
+          <div className="container-fluid">
+            <div className="row">
               <div className="col-lg-12 col-md-12 ">
                 <div className="w-100 text-center">
                   {/* <Button design={8} title={"Category"}></Button> */}
@@ -114,7 +114,7 @@ function BlogDetail() {
             </div>
             {/* <div className="d-flex justify-content-between">
               <div >
-              <button type="button" class="prevButon d-flex align-items-center" disabled={isPreveButtonDisabled} onClick={()=> preveBtn(post)}>
+              <button type="button" className="prevButon d-flex align-items-center" disabled={isPreveButtonDisabled} onClick={()=> preveBtn(post)}>
                 <div className="ms-auto iconwrappers">
                   <FaArrowLeft className="icon ms-auto"/>  
                 </div>
@@ -122,7 +122,7 @@ function BlogDetail() {
 
               </div>
               <div >
-              <button type="button" class="nextButon d-flex align-items-center" disabled={isNextButtonDisabled} onClick={()=> nextBtn(post)}>
+              <button type="button" className="nextButon d-flex align-items-center" disabled={isNextButtonDisabled} onClick={()=> nextBtn(post)}>
                 <div className="ms-auto iconwrappers" >
                  <FaArrowRight  className="icon ms-auto"/>
                 </div>
