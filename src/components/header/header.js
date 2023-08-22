@@ -267,7 +267,7 @@ const Header = () => {
                     </div> */}
                   </Link>
                 </li>
-                <li
+                {/* <li
                   className="nav-item"
                   onClick={() => {
                     setSelected(2);
@@ -285,7 +285,7 @@ const Header = () => {
                       Portfolio
                     </span>
                   </Link>
-                </li>
+                </li> */}
                 <li
                   className="nav-item"
                   onClick={() => {
@@ -470,7 +470,7 @@ const Header = () => {
                 );
               })}
             </Collapse>
-            <Link
+            {/* <Link
               to="/portfolio"
               className={
                 pathname === "/portfolio"
@@ -480,7 +480,7 @@ const Header = () => {
               onClick={toggleDrawer}
             >
               <span>Portfolio</span>
-            </Link>
+            </Link> */}
             <Link
               to="/careers"
               className={

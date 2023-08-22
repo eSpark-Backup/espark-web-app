@@ -29,7 +29,7 @@ const AppRoutes = () => {
   let routes = useRoutes([
     { path: "/", element: <Home /> },
     { path: "/about-us", element: <About /> },
-    { path: "/portfolio", element: <Projects /> },
+    // { path: "/portfolio", element: <Projects /> },
     { path: "/project-detail/:id", element: <ProjectDetails /> },
     { path: "/blogs/:id", element: <BlogDetail /> },
     { path: "/hire-a-talent", element: <Talent /> },
