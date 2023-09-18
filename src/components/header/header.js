@@ -341,8 +341,8 @@ const Header = () => {
                 </a>
               ) : (
                 <div className="headerBtn smallNone">
-                  <Link className="btn-content" to={`/hire-a-talent`}>
-                    <span>Hire a Talent</span>
+                  <Link className="btn-content" to={`/appointments`}>
+                    <span>Contact Us</span>
                   </Link>
                 </div>
               )}
