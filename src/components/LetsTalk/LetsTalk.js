@@ -101,13 +101,15 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
           </div>
           <div className="row sizeControl ">
             <div
-              className={`${style.formcol} col-lg-8 col-md-12 col-sm-12   text-center`}>
+              className={`${style.formcol} col-lg-8 col-md-12 col-sm-12   text-center`}
+            >
               <div className={`${style.formbox} col-lg-12 `}>
                 <form
                   id="contactForm"
                   className=""
                   ref={form}
-                  onSubmit={sendEmail}>
+                  onSubmit={sendEmail}
+                >
                   <div className="row ">
                     <div className="col-lg-6 col-md-6">
                       <div className="form-group">
@@ -170,7 +172,8 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
                         placeholder={"Write your message ...*"}
                         className="form-control"
                         value={message}
-                        onChange={(e) => setMessage(e.target.value)}></textarea>
+                        onChange={(e) => setMessage(e.target.value)}
+                      ></textarea>
                       <div className="invalid-feedback"></div>
                     </div>
                   </div>

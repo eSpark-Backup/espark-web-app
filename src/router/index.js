@@ -42,7 +42,7 @@ const AppRoutes = () => {
     { path: "/privacy-policy", element: <Privacy /> },
     // { path: "/teams", element: <Teams /> },
     // { path: "/event", element: <Event /> },
-    { path: "/appointments", element: <Contact /> },
+    // { path: "/appointments", element: <Contact /> },
     { path: "/careers", element: <Careers /> },
     { path: "/upcoming", element: <Upcoming /> },
     { path: "/careers/:id", element: <JobDetail /> },

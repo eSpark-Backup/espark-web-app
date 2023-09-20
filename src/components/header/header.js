@@ -16,7 +16,7 @@ import { Collapse } from "react-collapse";
 //import styles 👇
 import "react-modern-drawer/dist/index.css";
 
-const Header = () => {
+const Header = ({ scrollToLetsTalk }) => {
   const [open, setOpen] = useState(false);
   const [openDrawer, setOpenDrawer] = useState(false);
 
@@ -142,7 +142,9 @@ const Header = () => {
                     }}
                   >
                     <span
-                      className={pathname === "/" ? "itemTxt selected" : "itemTxt "}
+                      className={
+                        pathname === "/" ? "itemTxt selected" : "itemTxt "
+                      }
                     >
                       Home{" "}
                     </span>
@@ -341,9 +343,9 @@ const Header = () => {
                 </a>
               ) : (
                 <div className="headerBtn smallNone">
-                  <Link className="btn-content" to={`/appointments`}>
+                  <div onClick={scrollToLetsTalk} className="btn-content">
                     <span>Contact Us</span>
-                  </Link>
+                  </div>
                 </div>
               )}
             </div>
@@ -508,7 +510,7 @@ const Header = () => {
             <Button
               design={14}
               onClick={() => setOpenDrawer(false)}
-              title={"Hire a Talent"}
+              title={"Contact Us"}
             />
           </Link>
         </div>

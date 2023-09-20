@@ -37,7 +37,9 @@ Software and IoT Solutions`}
         <HashLinkObserver />
         <PartnerAbout />
       </div>
-      <LetsTalk />
+      <div id="letsTalkComponent">
+        <LetsTalk />
+      </div>
     </div>
   );
 };
