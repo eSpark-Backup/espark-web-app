@@ -8,9 +8,9 @@ const Portfolio = ({ data, title }) => {
   const [newstate, setNewstate] = useState(projects[0]);
   const getPortfolioId = localStorage.getItem("portfolio_id");
 
-  const [imageArray, setImageArray] = useState([]);
+  // const [imageArray, setImageArray] = useState([]);
 
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
 
   const filterData = (name) => {
     let filtered = projects.filter((item) => item.name === name);
@@ -18,12 +18,12 @@ const Portfolio = ({ data, title }) => {
     setNewstate(filtered);
   };
   useEffect(() => {
-    filterData("Software Service");
+    filterData("App Development");
   }, []);
-  const openGallery = (item) => {
-    setImageArray(item.imageArray);
-    setOpen(true);
-  };
+  // const openGallery = (item) => {
+  //   setImageArray(item.imageArray);
+  //   setOpen(true);
+  // };
 
   return (
     <div className="container-fluid ptb-80">
@@ -52,7 +52,7 @@ const Portfolio = ({ data, title }) => {
             return (
               <div
                 className="col-12 col-sm-6 col-md-6 col-lg-4 mt-2 mb-30"
-                onClick={() => openGallery(item)}
+                // onClick={() => openGallery(item)}
               >
                 <div className={styles.wrapper}>
                   <div className={styles.imagesWrapper}>
@@ -63,21 +63,23 @@ const Portfolio = ({ data, title }) => {
                         {item?.category}
                       </div>
                     </div>
-                    <img
-                      src={item?.image}
-                      className={styles.images}
-                      alt={"imagess"}
-                    />
+                    <div className={styles.imageContainer}>
+                      <img
+                        src={item?.image}
+                        className={styles.portfolioimages}
+                        alt={"imagess"}
+                      />
+                    </div>
                   </div>
-                  <div className={styles.titleWrapper}>
+                  {/* <div className={styles.titleWrapper}>
                     <h3 className={` ${styles.titleText}`}>{item?.name}</h3>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             );
           })}
       </div>
-      <Galleryimages images={imageArray} open={open} setOpen={setOpen} />
+      {/* <Galleryimages images={imageArray} open={open} setOpen={setOpen} /> */}
     </div>
   );
 };

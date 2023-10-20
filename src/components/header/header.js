@@ -269,7 +269,7 @@ const Header = ({ scrollToLetsTalk }) => {
                     </div> */}
                   </Link>
                 </li>
-                {/* <li
+                <li
                   className="nav-item"
                   onClick={() => {
                     setSelected(2);
@@ -287,7 +287,7 @@ const Header = ({ scrollToLetsTalk }) => {
                       Portfolio
                     </span>
                   </Link>
-                </li> */}
+                </li>
                 <li
                   className="nav-item"
                   onClick={() => {

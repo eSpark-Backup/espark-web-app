@@ -4,6 +4,17 @@
   opacity: 1;
 }
 
+.portfolioimages{
+  width: 129.4%;
+  height: 361.195px;
+  margin-left: -75px;
+  border-radius: 15px;
+
+}
+
+.imageContainer{
+  padding-left: 80px;
+}
 
 .badge {
   box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.75);
@@ -28,14 +39,10 @@
   text-align: center;
 }
 
-
-
 .imagesWrapper {
   position: relative;
   width: 100%;
 }
-
-
 
 .imagesWrapper:hover .badge {
   opacity: 1;
@@ -69,7 +76,7 @@
   background-color: var(--color-primary);
 }
 
-.titleWrapper:hover>h3 {
+.titleWrapper:hover > h3 {
   color: #ffffff;
 }
 
@@ -85,18 +92,33 @@
 }
 
 .filterTab {
-  font-family: "Inter";
+  /* font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   color: #9b9b9b;
+  cursor: pointer; */
+  border: 0.9px solid #3359a2;
+  background: #fff;
+  width: 363.236px;
+  height: 102.248px;
+  flex-shrink: 0;
+  color: #3359a2;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  padding-top: 32px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
 .filterTabSelected {
-  font-family: "Poppins";
+  /* font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -105,11 +127,25 @@
   color: var(--color-primary);
   cursor: pointer;
   border-bottom: 3px solid #3359a2;
-  padding-bottom: 10px;
+  padding-bottom: 10px; */
+  border: 0.9px solid #3359a2;
+  background: #fff;
+  width: 363.236px;
+  height: 102.248px;
+  flex-shrink: 0;
+  color: #3359a2;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  padding-top: 32px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 @media (min-width: 1000px) and (max-width: 1400px) {
-
   .badge {
     width: 40%;
   }
@@ -118,10 +154,10 @@
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 32px;
     line-height: 20px;
     text-align: center;
-    color: #9b9b9b;
+    color: #3359a2;
     cursor: pointer;
   }
 
@@ -129,7 +165,7 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 32px;
     line-height: 20px;
     text-align: center;
     cursor: pointer;
@@ -242,10 +278,9 @@
   .titleText {
     font-size: 16px;
   }
-  
 }
 
-@media(max-width:279px) {
+@media (max-width: 279px) {
   .filterTab {
     font-family: "Inter";
     font-style: normal;
@@ -253,7 +288,7 @@
     font-size: 10px;
     line-height: 12px;
     text-align: center;
-    color: #9b9b9b;
+    color: #3359a2;
     cursor: pointer;
   }
 
@@ -275,6 +310,5 @@
     font-size: 16.2574px;
     line-height: 100%;
     text-align: center;
-
   }
 }

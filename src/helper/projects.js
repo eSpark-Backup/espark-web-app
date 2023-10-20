@@ -1,7 +1,7 @@
-import PanayamaImg from "../assets/images/projects/Andriod/Panayama App.jpg";
-import PanayamaImg1 from "../assets/images/projects/Andriod/1.jpg";
-import PanayamaImg2 from "../assets/images/projects/Andriod/2.jpg";
-import PanayamaImg3 from "../assets/images/projects/Andriod/3.jpg";
+// import PanayamaImg from "../assets/images/projects/Andriod/Panayama App.jpg";
+// import PanayamaImg1 from "../assets/images/projects/Andriod/1.jpg";
+// import PanayamaImg2 from "../assets/images/projects/Andriod/2.jpg";
+// import PanayamaImg3 from "../assets/images/projects/Andriod/3.jpg";
 
 import PtzKeyboard from "../assets/images/projects/hardware/PTZkeyboard.jpg";
 import PtzKeyboard1 from "../assets/images/projects/hardware/Mahmood PTZkeyboard/1.jpg";
@@ -122,21 +122,41 @@ import TravelTrade2 from "../assets/images/projects/Wordpresss/travel trade read
 import TravelTrade3 from "../assets/images/projects/Wordpresss/travel trade ready/3.jpg";
 import TravelTrade4 from "../assets/images/projects/Wordpresss/travel trade ready/4.jpg";
 
-import IonMeter from "../assets/images/projects/Vue.js/ION Meter.jpg";
-import IonMeter1 from "../assets/images/projects/Vue.js/1.jpg";
-import IonMeter2 from "../assets/images/projects/Vue.js/2.jpg";
-import IonMeter3 from "../assets/images/projects/Vue.js/3.jpg";
-import IonMeter4 from "../assets/images/projects/Vue.js/4.jpg";
-import IonMeter5 from "../assets/images/projects/Vue.js/5.jpg";
+// import IonMeter from "../assets/images/projects/Vue.js/ION Meter.jpg";
+// import IonMeter1 from "../assets/images/projects/Vue.js/1.jpg";
+// import IonMeter2 from "../assets/images/projects/Vue.js/2.jpg";
+// import IonMeter3 from "../assets/images/projects/Vue.js/3.jpg";
+// import IonMeter4 from "../assets/images/projects/Vue.js/4.jpg";
+// import IonMeter5 from "../assets/images/projects/Vue.js/5.jpg";
 
-import Flexmold from "../assets/images/projects/desktop app/Flexmold.jpg";
-import Flexmold1 from "../assets/images/projects/desktop app/1.jpg";
-import Flexmold2 from "../assets/images/projects/desktop app/2.jpg";
-import Flexmold3 from "../assets/images/projects/desktop app/3.jpg";
-import Flexmold4 from "../assets/images/projects/desktop app/4.jpg";
-import Flexmold5 from "../assets/images/projects/desktop app/5.jpg";
-import Flexmold6 from "../assets/images/projects/desktop app/6.jpg";
-import Flexmold7 from "../assets/images/projects/desktop app/7.jpg";
+// import Flexmold from "../assets/images/projects/desktop app/Flexmold.jpg";
+// import Flexmold1 from "../assets/images/projects/desktop app/1.jpg";
+// import Flexmold2 from "../assets/images/projects/desktop app/2.jpg";
+// import Flexmold3 from "../assets/images/projects/desktop app/3.jpg";
+// import Flexmold4 from "../assets/images/projects/desktop app/4.jpg";
+// import Flexmold5 from "../assets/images/projects/desktop app/5.jpg";
+// import Flexmold6 from "../assets/images/projects/desktop app/6.jpg";
+// import Flexmold7 from "../assets/images/projects/desktop app/7.jpg";
+
+import Panayama from "../assets/images/projects/App Development/Panayama.svg";
+import IonMeter from "../assets/images/projects/App Development/Ion Meter.svg";
+import DualCamera from "../assets/images/projects/App Development/Dual Camera.svg";
+import Itarian from "../assets/images/projects/App Development/Itarian.svg";
+import OrderRight from "../assets/images/projects/App Development/Order Right.svg";
+import RealOdors from "../assets/images/projects/App Development/Realodors.svg";
+
+import SeekSocial from "../assets/images/projects/Web Development/SeekSocial.svg";
+import TimelessTreatment from "../assets/images/projects/Web Development/Timeless Treatment.svg";
+import TravelTradeReady from "../assets/images/projects/Web Development/Travel Trade Ready.svg";
+import Trendify from "../assets/images/projects/Web Development/Trendify.svg";
+import Nucal from "../assets/images/projects/Web Development/NuCAL.svg";
+import KineticTherapy from "../assets/images/projects/Web Development/Kinetic Therapy.svg";
+
+import CatanBoard from "../assets/images/projects/PCB Design/Catan Board.svg";
+import LCDBoard from "../assets/images/projects/PCB Design/LCD Display Board.svg";
+import SwitchBox from "../assets/images/projects/PCB Design/Switch Box.svg";
+import WaterMonitor from "../assets/images/projects/PCB Design/Water Monitor.svg";
+
 
 const hash = () => {
   const s4 = () => {
@@ -160,131 +180,140 @@ const projectItems = (image, projectUrl, name, category, subCategory) => {
 export const projects = [
   {
     id: hash(),
-    name: "Software Service",
-    path: "software-service",
+    name: "App Development",
+    path: "app-development",
     childs: [
-      projectItems(PanayamaImg, "", "Panayama App", "Android", [
-        PanayamaImg1,
-        PanayamaImg2,
-        PanayamaImg3,
+      projectItems(DualCamera, "", "Panayama App", "Android", [
+        // PanayamaImg1,
+        // PanayamaImg2,
+        // PanayamaImg3,
       ]),
-      projectItems(YougaApp, "", "Yoga App", "IOS", [
-        YougaApp1,
-        YougaApp2,
-        YougaApp3,
+      projectItems(Panayama, "", "Yoga App", "IOS", [
+        // YougaApp1,
+        // YougaApp2,
+        // YougaApp3,
       ]),
-      projectItems(FitnessTracker, "", "Fitness Tracker App", "React Native", [
-        FitnessTracker1,
-        FitnessTracker2,
-        FitnessTracker3,
+      projectItems(IonMeter, "", "Fitness Tracker App", "React Native", [
+        // FitnessTracker1,
+        // FitnessTracker2,
+        // FitnessTracker3,
       ]),
-      projectItems(Incubator, "", "Incubator App", "React Native", [
-        Incubator1,
-        Incubator2,
+      projectItems(Itarian, "", "Incubator App", "React Native", [
+        // Incubator1,
+        // Incubator2,
       ]),
-      projectItems(VanController, "", "Van Controller", "React Native", [
-        VanController1,
-        VanController2,
-        VanController3,
+      projectItems(OrderRight, "", "Van Controller", "React Native", [
+        // VanController1,
+        // VanController2,
+        // VanController3,
       ]),
-      projectItems(eSparkInstitue, "", "eSpark Institute", "React Js", [
-        eSparkInstitue1,
-        eSparkInstitue2,
-        eSparkInstitue3,
-        eSparkInstitue4,
+      projectItems(RealOdors, "", "eSpark Institute", "React Js", [
+        // eSparkInstitue1,
+        // eSparkInstitue2,
+        // eSparkInstitue3,
+        // eSparkInstitue4,
       ]),
-      projectItems(BeOneSolutions, "", "Be One Solutions", "Wordpress", [
-        BeOneSolutions1,
-        BeOneSolutions2,
-        BeOneSolutions3,
-        BeOneSolutions4,
+      // projectItems(BeOneSolutions, "", "Be One Solutions", "Wordpress", [
+      //   BeOneSolutions1,
+      //   BeOneSolutions2,
+      //   BeOneSolutions3,
+      //   BeOneSolutions4,
+      // ]),
+      // projectItems(IonEnergy, "", "ION Energy Solutions", "Wordpress", [
+      //   IonEnergy4,
+      //   IonEnergy3,
+      //   IonEnergy1,
+      //   IonEnergy2,
+      // ]),
+      // projectItems(TravelTrade, "", "Travel Trade Ready", "Wordpress", [
+      //   TravelTrade1,
+      //   TravelTrade2,
+      //   TravelTrade3,
+      //   TravelTrade4,
+      // ]),
+      // projectItems(Flexmold, "", "Flexmold", "Deckstop App", [
+      //   Flexmold1,
+      //   Flexmold2,
+      //   Flexmold3,
+      //   Flexmold4,
+      //   Flexmold5,
+      //   Flexmold6,
+      //   Flexmold7,
+      // ]),
+      // projectItems(IonMeter, "", "ION Meter", "Vue Js", [
+      //   IonMeter1,
+      //   IonMeter2,
+      //   IonMeter3,
+      //   IonMeter4,
+      //   IonMeter5,
+      // ]),
+    ],
+  },
+  {
+    id: hash(),
+    name: "Web Development",
+    path: "web-development",
+    category: "Web",
+    childs: [
+      projectItems(SeekSocial, "", "PTZkeyboard", "Hardware", [
+        // PtzKeyboard1,
+        // PtzKeyboard2,
+        // PtzKeyboard3,
+        // PtzKeyboard4,
       ]),
-      projectItems(IonEnergy, "", "ION Energy Solutions", "Wordpress", [
-        IonEnergy4,
-        IonEnergy3,
-        IonEnergy1,
-        IonEnergy2,
+      projectItems(TimelessTreatment, "", "Sleepenhencer", "Hardware", [
+        // Sleepenhencer1,
+        // Sleepenhencer2,
+        // Sleepenhencer3,
+        // Sleepenhencer4,
+        // Sleepenhencer5,
+        // Sleepenhencer6,
       ]),
-      projectItems(TravelTrade, "", "Travel Trade Ready", "Wordpress", [
-        TravelTrade1,
-        TravelTrade2,
-        TravelTrade3,
-        TravelTrade4,
+      projectItems(TravelTradeReady, "", "Sound Sensor", "Hardware", [
+        // SoundSensor1,
+        // SoundSensor2,
+        // SoundSensor3,
+        // SoundSensor4,
+        // SoundSensor5,
+        // SoundSensor6,
       ]),
-      projectItems(Flexmold, "", "Flexmold", "Deckstop App", [
-        Flexmold1,
-        Flexmold2,
-        Flexmold3,
-        Flexmold4,
-        Flexmold5,
-        Flexmold6,
-        Flexmold7,
+      projectItems(Trendify, "", "PTZkeyboard", "Hardware", [
+        
       ]),
-      projectItems(IonMeter, "", "ION Meter", "Vue Js", [
-        IonMeter1,
-        IonMeter2,
-        IonMeter3,
-        IonMeter4,
-        IonMeter5,
+      projectItems(Nucal, "", "PTZkeyboard", "Hardware", [
+        
+      ]),
+      projectItems(KineticTherapy, "", "PTZkeyboard", "Hardware", [
+        
       ]),
     ],
   },
   {
     id: hash(),
-    name: "Hardware Service",
-    path: "hardware-service",
-    category: "hardware",
-    childs: [
-      projectItems(PtzKeyboard, "", "PTZkeyboard", "Hardware", [
-        PtzKeyboard1,
-        PtzKeyboard2,
-        PtzKeyboard3,
-        PtzKeyboard4,
-      ]),
-      projectItems(Sleepenhencer, "", "Sleepenhencer", "Hardware", [
-        Sleepenhencer1,
-        Sleepenhencer2,
-        Sleepenhencer3,
-        Sleepenhencer4,
-        Sleepenhencer5,
-        Sleepenhencer6,
-      ]),
-      projectItems(SoundSensor, "", "Sound Sensor", "Hardware", [
-        SoundSensor1,
-        SoundSensor2,
-        SoundSensor3,
-        SoundSensor4,
-        SoundSensor5,
-        SoundSensor6,
-      ]),
-    ],
-  },
-  {
-    id: hash(),
-    name: "Mechanical Service",
-    path: "mechanical-service",
-    category: "Mechanical",
+    name: "PCB Designing",
+    path: "pcb-designing",
+    category: "PCB",
     childs: [
       projectItems(
-        FogScreen,
+        WaterMonitor,
         "",
         "Fog Screen Main Structure Design",
         "Mechanical",
-        [FogScreen1, FogScreen2, FogScreen3, FogScreen4, FogScreen5, FogScreen6]
+        // [FogScreen1, FogScreen2, FogScreen3, FogScreen4, FogScreen5, FogScreen6]
       ),
       projectItems(
-        InDoor,
+        CatanBoard,
         "",
         "In-Door Monitor Device with American plug",
         "Mechanical",
         [
-          InDoor1,
-          InDoor2,
-          InDoor3,
-          InDoor4,
-          InDoor5,
-          InDoor6,
-          InDoor7,
+          // InDoor1,
+          // InDoor2,
+          // InDoor3,
+          // InDoor4,
+          // InDoor5,
+          // InDoor6,
+          // InDoor7,
           // InDoor8,
           // InDoor9,
           // InDoor10,
@@ -295,7 +324,7 @@ export const projects = [
           // InDoor15,
         ]
       ),
-      projectItems(OutDoor, "", "Outdoor Monitor Device", "Mechanical", [
+      projectItems(LCDBoard, "", "Outdoor Monitor Device", "Mechanical", [
         // OutDoor1,
         // OutDoor2,
         // OutDoor3,
@@ -308,22 +337,22 @@ export const projects = [
         // OutDoor10,
         // OutDoor11,
         // OutDoor12,
-        OutDoor13,
-        OutDoor14,
-        OutDoor15,
-        OutDoor16,
-        OutDoor17,
-        OutDoor18,
+        // OutDoor13,
+        // OutDoor14,
+        // OutDoor15,
+        // OutDoor16,
+        // OutDoor17,
+        // OutDoor18,
         // OutDoor19,
         // OutDoor20,
         // OutDoor21,
       ]),
       projectItems(
-        Tracking,
+        SwitchBox,
         "https://faithletsgrow.com/",
         "Tracking Device",
         "Mechanical",
-        [Tracking1, Tracking2, Tracking3]
+        // [Tracking1, Tracking2, Tracking3]
       ),
       // projectItems(img_31, "https://emerynails.co.uk/", "Emery Nails Ltd"),
       // projectItems(img_34, "https://www.livejournal.com/", "Live Journal"),
