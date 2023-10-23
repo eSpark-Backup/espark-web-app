@@ -138,24 +138,24 @@ import TravelTrade4 from "../assets/images/projects/Wordpresss/travel trade read
 // import Flexmold6 from "../assets/images/projects/desktop app/6.jpg";
 // import Flexmold7 from "../assets/images/projects/desktop app/7.jpg";
 
-import Panayama from "../assets/images/projects/App Development/Panayama.svg";
-import IonMeter from "../assets/images/projects/App Development/Ion Meter.svg";
-import DualCamera from "../assets/images/projects/App Development/Dual Camera.svg";
-import Itarian from "../assets/images/projects/App Development/Itarian.svg";
-import OrderRight from "../assets/images/projects/App Development/Order Right.svg";
-import RealOdors from "../assets/images/projects/App Development/Realodors.svg";
+import Panayama from "../assets/images/projects/App Development/Panayama.jpg";
+import IonMeter from "../assets/images/projects/App Development/Ion Meter.jpg";
+import DualCamera from "../assets/images/projects/App Development/Dual Camera.jpg";
+import Itarian from "../assets/images/projects/App Development/Itarian.jpg";
+import OrderRight from "../assets/images/projects/App Development/Order Right.jpg";
+import RealOdors from "../assets/images/projects/App Development/Realodors.jpg";
 
-import SeekSocial from "../assets/images/projects/Web Development/SeekSocial.svg";
-import TimelessTreatment from "../assets/images/projects/Web Development/Timeless Treatment.svg";
-import TravelTradeReady from "../assets/images/projects/Web Development/Travel Trade Ready.svg";
-import Trendify from "../assets/images/projects/Web Development/Trendify.svg";
-import Nucal from "../assets/images/projects/Web Development/NuCAL.svg";
-import KineticTherapy from "../assets/images/projects/Web Development/Kinetic Therapy.svg";
+import SeekSocial from "../assets/images/projects/Web Development/Seeksocial.jpg";
+import TimelessTreatment from "../assets/images/projects/Web Development/Timeless Treatment.jpg";
+import TravelTradeReady from "../assets/images/projects/Web Development/Travel Trade Ready.jpg";
+import Trendify from "../assets/images/projects/Web Development/Trendify.jpg";
+import Nucal from "../assets/images/projects/Web Development/NuCAL.jpg";
+import KineticTherapy from "../assets/images/projects/Web Development/Kinetic Therapy.png";
 
-import CatanBoard from "../assets/images/projects/PCB Design/Catan Board.svg";
-import LCDBoard from "../assets/images/projects/PCB Design/LCD Display Board.svg";
-import SwitchBox from "../assets/images/projects/PCB Design/Switch Box.svg";
-import WaterMonitor from "../assets/images/projects/PCB Design/Water Monitor.svg";
+import CatanBoard from "../assets/images/projects/PCB Design/Catan Board.jpg";
+import LCDBoard from "../assets/images/projects/PCB Design/LCD Display.jpg";
+import SwitchBox from "../assets/images/projects/PCB Design/Switch Box.jpg";
+import WaterMonitor from "../assets/images/projects/PCB Design/Water Monitor.jpg";
 
 
 const hash = () => {
