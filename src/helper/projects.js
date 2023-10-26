@@ -138,25 +138,40 @@ import TravelTrade4 from "../assets/images/projects/Wordpresss/travel trade read
 // import Flexmold6 from "../assets/images/projects/desktop app/6.jpg";
 // import Flexmold7 from "../assets/images/projects/desktop app/7.jpg";
 
-import Panayama from "../assets/images/projects/App Development/Panayama.jpg";
-import IonMeter from "../assets/images/projects/App Development/Ion Meter.jpg";
-import DualCamera from "../assets/images/projects/App Development/Dual Camera.jpg";
-import Itarian from "../assets/images/projects/App Development/Itarian.jpg";
-import OrderRight from "../assets/images/projects/App Development/Order Right.jpg";
-import RealOdors from "../assets/images/projects/App Development/Realodors.jpg";
+import Paranyamabg from "../assets/images/projects/App Development/Backgrounds/paranyama01.png";
+import IonMeterbg from "../assets/images/projects/App Development/Backgrounds/ION metter04.png";
+import DualCamerabg from "../assets/images/projects/App Development/Backgrounds/DUAL CAMERA05.png";
+import Itarianbg from "../assets/images/projects/App Development/Backgrounds/itarain03.png";
+import OrderRightbg from "../assets/images/projects/App Development/Backgrounds/order right02.png";
+import RealOdorsbg from "../assets/images/projects/App Development/Backgrounds/REALODERS06.png";
+import Pranayama from "../assets/images/projects/App Development/paranyama.png";
+import IonMeter from "../assets/images/projects/App Development/ION Metter.png";
+import DualCamera from "../assets/images/projects/App Development/Dual Camera.png";
+import Itarian from "../assets/images/projects/App Development/Itarian.png";
+import OrderRight from "../assets/images/projects/App Development/order right.png";
+import RealOdors from "../assets/images/projects/App Development/Realodors.png";
 
-import SeekSocial from "../assets/images/projects/Web Development/Seeksocial.jpg";
-import TimelessTreatment from "../assets/images/projects/Web Development/Timeless Treatment.jpg";
-import TravelTradeReady from "../assets/images/projects/Web Development/Travel Trade Ready.jpg";
-import Trendify from "../assets/images/projects/Web Development/Trendify.jpg";
-import Nucal from "../assets/images/projects/Web Development/NuCAL.jpg";
-import KineticTherapy from "../assets/images/projects/Web Development/Kinetic Therapy.png";
 
-import CatanBoard from "../assets/images/projects/PCB Design/Catan Board.jpg";
-import LCDBoard from "../assets/images/projects/PCB Design/LCD Display.jpg";
-import SwitchBox from "../assets/images/projects/PCB Design/Switch Box.jpg";
-import WaterMonitor from "../assets/images/projects/PCB Design/Water Monitor.jpg";
 
+import SeekSocialbg from "../assets/images/projects/Web Development/backgrounds/seek social04.png";
+import TimelessTreatmentbg from "../assets/images/projects/Web Development/backgrounds/time less treatment03.png";
+import TravelTradeReadybg from "../assets/images/projects/Web Development/backgrounds/trvel trade ready 01.png";
+import Trendifybg from "../assets/images/projects/Web Development/backgrounds/Trendify02.png";
+import Nucalbg from "../assets/images/projects/Web Development/backgrounds/NUCAL05.png";
+import KineticTherapybg from "../assets/images/projects/Web Development/backgrounds/kentic therapy06.png";
+import SeekSocial from "../assets/images/projects/Web Development/Seek Social.png";
+import TimelessTreatment from "../assets/images/projects/Web Development/Time less treatment.png";
+import TravelTradeReady from "../assets/images/projects/Web Development/TRAVEL TRADE READY.png";
+import Trendify from "../assets/images/projects/Web Development/Trendify.png";
+import Nucal from "../assets/images/projects/Web Development/NUCAl.png";
+import KineticTherapy from "../assets/images/projects/Web Development/kenatic therapy.png";
+
+
+import CatanBoard from "../assets/images/projects/PCB Design/Catan Board.png";
+import LCDBoard from "../assets/images/projects/PCB Design/LCD Display BOx.png";
+import SwitchBox from "../assets/images/projects/PCB Design/Switch Box.png";
+import WaterMonitor from "../assets/images/projects/PCB Design/Water Monitore.png";
+import PCBbg from "../assets/images/projects/PCB Design/background/02.png";
 
 const hash = () => {
   const s4 = () => {
@@ -183,70 +198,49 @@ export const projects = [
     name: "App Development",
     path: "app-development",
     childs: [
-      projectItems(DualCamera, "", "Panayama App", "Android", [
-        // PanayamaImg1,
-        // PanayamaImg2,
-        // PanayamaImg3,
-      ]),
-      projectItems(Panayama, "", "Yoga App", "IOS", [
-        // YougaApp1,
-        // YougaApp2,
-        // YougaApp3,
-      ]),
-      projectItems(IonMeter, "", "Fitness Tracker App", "React Native", [
-        // FitnessTracker1,
-        // FitnessTracker2,
-        // FitnessTracker3,
-      ]),
-      projectItems(Itarian, "", "Incubator App", "React Native", [
-        // Incubator1,
-        // Incubator2,
-      ]),
-      projectItems(OrderRight, "", "Van Controller", "React Native", [
-        // VanController1,
-        // VanController2,
-        // VanController3,
-      ]),
-      projectItems(RealOdors, "", "eSpark Institute", "React Js", [
-        // eSparkInstitue1,
-        // eSparkInstitue2,
-        // eSparkInstitue3,
-        // eSparkInstitue4,
-      ]),
-      // projectItems(BeOneSolutions, "", "Be One Solutions", "Wordpress", [
-      //   BeOneSolutions1,
-      //   BeOneSolutions2,
-      //   BeOneSolutions3,
-      //   BeOneSolutions4,
-      // ]),
-      // projectItems(IonEnergy, "", "ION Energy Solutions", "Wordpress", [
-      //   IonEnergy4,
-      //   IonEnergy3,
-      //   IonEnergy1,
-      //   IonEnergy2,
-      // ]),
-      // projectItems(TravelTrade, "", "Travel Trade Ready", "Wordpress", [
-      //   TravelTrade1,
-      //   TravelTrade2,
-      //   TravelTrade3,
-      //   TravelTrade4,
-      // ]),
-      // projectItems(Flexmold, "", "Flexmold", "Deckstop App", [
-      //   Flexmold1,
-      //   Flexmold2,
-      //   Flexmold3,
-      //   Flexmold4,
-      //   Flexmold5,
-      //   Flexmold6,
-      //   Flexmold7,
-      // ]),
-      // projectItems(IonMeter, "", "ION Meter", "Vue Js", [
-      //   IonMeter1,
-      //   IonMeter2,
-      //   IonMeter3,
-      //   IonMeter4,
-      //   IonMeter5,
-      // ]),
+      projectItems(
+        DualCamerabg,
+        DualCamera,
+        "Dual Camera",
+        "One lens typically provides in-depth information, while the other captures the image. This enables impressive portrait mode effects and improves low-light performance.",
+        []
+      ),
+      projectItems(
+        Paranyamabg,
+        Pranayama,
+        "Paranyama App",
+        "Offers a convenient way to access guided breathing exercises and meditation techniques, helping users improve their overall well-being.",
+        [],
+        
+      ),
+      projectItems(
+        IonMeterbg,
+        IonMeter,
+        "Ion Meter",
+        "Provides a user-friendly interface for data visualization and analysis, allowing users to make informed decisions based on accurate measurement.",
+        []
+      ),
+      projectItems(
+        Itarianbg,
+        Itarian,
+        "Itarian",
+        "This application enables remote monitoring, security, and support, making IT administration more streamlined and responsive.",
+        []
+      ),
+      projectItems(
+        OrderRightbg,
+        OrderRight,
+        "Order Right",
+        "They streamline the entire order-to-delivery process, enhancing customer satisfaction and operational efficiency",
+        []
+      ),
+      projectItems(
+        RealOdorsbg,
+        RealOdors,
+        "RealOdors",
+        "They simplify property searches and real estate interactions for a more efficient and informed experience.",
+        []
+      ),
     ],
   },
   {
@@ -255,37 +249,48 @@ export const projects = [
     path: "web-development",
     category: "Web",
     childs: [
-      projectItems(SeekSocial, "", "PTZkeyboard", "Hardware", [
-        // PtzKeyboard1,
-        // PtzKeyboard2,
-        // PtzKeyboard3,
-        // PtzKeyboard4,
-      ]),
-      projectItems(TimelessTreatment, "", "Sleepenhencer", "Hardware", [
-        // Sleepenhencer1,
-        // Sleepenhencer2,
-        // Sleepenhencer3,
-        // Sleepenhencer4,
-        // Sleepenhencer5,
-        // Sleepenhencer6,
-      ]),
-      projectItems(TravelTradeReady, "", "Sound Sensor", "Hardware", [
-        // SoundSensor1,
-        // SoundSensor2,
-        // SoundSensor3,
-        // SoundSensor4,
-        // SoundSensor5,
-        // SoundSensor6,
-      ]),
-      projectItems(Trendify, "", "PTZkeyboard", "Hardware", [
-        
-      ]),
-      projectItems(Nucal, "", "PTZkeyboard", "Hardware", [
-        
-      ]),
-      projectItems(KineticTherapy, "", "PTZkeyboard", "Hardware", [
-        
-      ]),
+      projectItems(
+        SeekSocialbg,
+        SeekSocial,
+        "Seek Social",
+        "Offer a range of features like user profiles, search functions, and messaging tools to foster connections and interactions.",
+        []
+      ),
+      projectItems(
+        TimelessTreatmentbg,
+        TimelessTreatment,
+        "Timeless Treatment",
+        "This website is an essential destination for those looking to make informed decisions about their timeless beauty journey.",
+        []
+      ),
+      projectItems(
+        TravelTradeReadybg,
+        TravelTradeReady,
+        "Travel Trade Ready",
+        "A comprehensive platform for businesses in the travel and tourism industry to connect, collaborate, and stay informed about the latest industry trends.",
+        []
+      ),
+      projectItems(
+        Trendifybg,
+        Trendify,
+        "Trendify",
+        "It's a go-to destination for fashion enthusiasts seeking style guidance and product insights. A dynamic online platform that showcases the latest fashion trends.",
+        []
+      ),
+      projectItems(
+        Nucalbg,
+        Nucal,
+        "Nucal",
+        "offers valuable information, product details, and customer resources, making it a one-stop destination for those interested in optimizing their nutritional health.",
+        []
+      ),
+      projectItems(
+        KineticTherapybg,
+        KineticTherapy,
+        "Kinetic Therapy",
+        "This website serves as a valuable resource for patients seeking expert physical therapy services and rehabilitation A valuable resource to start your journey towards improved health.",
+        []
+      ),
     ],
   },
   {
@@ -295,64 +300,32 @@ export const projects = [
     category: "PCB",
     childs: [
       projectItems(
+        PCBbg,
         WaterMonitor,
-        "",
-        "Fog Screen Main Structure Design",
-        "Mechanical",
-        // [FogScreen1, FogScreen2, FogScreen3, FogScreen4, FogScreen5, FogScreen6]
+        "Water Monitor",
+        "It encompasses cutting-edge printed circuit board (PCB) designs that enable real-time monitoring of various water parameters such as pH levels, conductivity, and contamination.",
+        []
       ),
       projectItems(
+        PCBbg,
         CatanBoard,
-        "",
-        "In-Door Monitor Device with American plug",
-        "Mechanical",
-        [
-          // InDoor1,
-          // InDoor2,
-          // InDoor3,
-          // InDoor4,
-          // InDoor5,
-          // InDoor6,
-          // InDoor7,
-          // InDoor8,
-          // InDoor9,
-          // InDoor10,
-          // InDoor11,
-          // InDoor12,
-          // InDoor13,
-          // InDoor14,
-          // InDoor15,
-        ]
+        "Catan Board",
+        "It offers intricate PCB designs with embedded sensors, allowing for interactive gameplay and automated resource tracking.",
+        []
       ),
-      projectItems(LCDBoard, "", "Outdoor Monitor Device", "Mechanical", [
-        // OutDoor1,
-        // OutDoor2,
-        // OutDoor3,
-        // OutDoor4,
-        // OutDoor5,
-        // OutDoor6,
-        // OutDoor7,
-        // OutDoor8,
-        // OutDoor9,
-        // OutDoor10,
-        // OutDoor11,
-        // OutDoor12,
-        // OutDoor13,
-        // OutDoor14,
-        // OutDoor15,
-        // OutDoor16,
-        // OutDoor17,
-        // OutDoor18,
-        // OutDoor19,
-        // OutDoor20,
-        // OutDoor21,
-      ]),
       projectItems(
+        PCBbg,
+        LCDBoard,
+        "LCD Board",
+        "This system caters to businesses, institutions, and organizations seeking to implement dynamic and customizable visual communication solutions.",
+        []
+      ),
+      projectItems(
+        PCBbg,
         SwitchBox,
-        "https://faithletsgrow.com/",
-        "Tracking Device",
-        "Mechanical",
-        // [Tracking1, Tracking2, Tracking3]
+        "Switch Box",
+        "It is an innovative system that provides efficient PCB layouts that enhance the functionality and reliability of switch boxes used in automation, electronics, and industrial applications.",
+        []
       ),
       // projectItems(img_31, "https://emerynails.co.uk/", "Emery Nails Ltd"),
       // projectItems(img_34, "https://www.livejournal.com/", "Live Journal"),

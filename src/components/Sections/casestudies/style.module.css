@@ -4,12 +4,11 @@
   opacity: 1;
 }
 
-.portfolioimages{
-  width: 129.4%;
+.portfolioimages {
+  width: 122%;
   height: 361.195px;
   margin-left: -75px;
   border-radius: 15px;
-
 }
 
 .upward-animation {
@@ -23,19 +22,56 @@
   transition: transform 0.3s ease;
 }
 
-.imageContainer{
+.imageContainer {
   padding-left: 80px;
+  margin-bottom: -23px;
+}
+
+.tab1Overlay {
+  width: 200%;
+  height: 418px;
+  margin-top: -398px;
+  margin-left: -270px;
+}
+
+.tab2Overlay {
+  width: 200%;
+  height: 418px;
+  margin-top: -378px;
+  left: -270px;
+  margin-left: -220px;
+}
+
+
+.tab3Overlay {
+  width: 200%;
+  height: 418px;
+  margin-top: -380px;
+  margin-left: -221px;
 }
 
 .badge {
-  box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  /* box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.75); */
   width: 27%;
   color: white;
-  background-color: rgba(0,0,0,0.5);  padding: 5px;
+  /* background-color: rgba(0,0,0,0.5);  padding: 5px; */
   /* display: none; */
+  background: rgba(9, 0, 0, 0.42);
   opacity: 0;
   right: 0px;
-  border-radius: 3px;
+  border-bottom-left-radius: 15px;
+  /* margin-top: 360px; */
+  width: 97%;
+  border-bottom-right-radius: 15px;
+  margin-right: 6.5px;
+  height: 109.413px;
+  font-size: 13px;
+  text-align: left !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 25px;
+  z-index: 1;
+
 }
 
 .middleText {
@@ -56,11 +92,11 @@
 
 .imagesWrapper:hover .badge {
   opacity: 1;
-  position: absolute;
+  /* position: absolute; */
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  top: 0; /* Change 'top' to 'bottom' and set it to 0 */
-  transform: translateY(-100%); 
+  /* top: 0;  */
+  transform: translateY(230%);
 }
 
 .imagesWrapper:hover .middleText {
@@ -113,7 +149,7 @@
   cursor: pointer; */
   border: 0.9px solid #3359a2;
   background: #fff;
-  width: 363.236px;
+  width: 25.64%;
   height: 102.248px;
   flex-shrink: 0;
   color: #3359a2;
@@ -128,9 +164,8 @@
   cursor: pointer;
 }
 
-.filterTab:hover{
+.filterTab:hover {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
 }
 
 .filterTabSelected {
@@ -146,7 +181,7 @@
   padding-bottom: 10px; */
   border: 0.9px solid #3359a2;
   background: #fff;
-  width: 363.236px;
+  width: 25.64%;
   height: 102.248px;
   flex-shrink: 0;
   color: #3359a2;
@@ -161,7 +196,7 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-@media (min-width: 1000px) and (max-width: 1400px) {
+/* @media (min-width: 1000px) and (max-width: 1400px) {
   .badge {
     width: 40%;
   }
@@ -327,4 +362,4 @@
     line-height: 100%;
     text-align: center;
   }
-}
+} */
