@@ -146,7 +146,7 @@ import OrderRightbg from "../assets/images/projects/App Development/Backgrounds/
 import RealOdorsbg from "../assets/images/projects/App Development/Backgrounds/REALODERS06.png";
 import Pranayama from "../assets/images/projects/App Development/Paryanma.png";
 import IonMeter from "../assets/images/projects/App Development/ION Metter.png";
-import DualCamera from "../assets/images/projects/App Development/Dual camera.png";
+import DualCamera from "../assets/images/projects/App Development/Dual Camera.png";
 import Itarian from "../assets/images/projects/App Development/itarian.png";
 import OrderRight from "../assets/images/projects/App Development/Order right.png";
 import RealOdors from "../assets/images/projects/App Development/REALODERS.png";
