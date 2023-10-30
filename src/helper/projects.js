@@ -142,29 +142,29 @@ import Paranyamabg from "../assets/images/projects/App Development/Backgrounds/p
 import IonMeterbg from "../assets/images/projects/App Development/Backgrounds/ION-metter04.png";
 import DualCamerabg from "../assets/images/projects/App Development/Backgrounds/DUAL-CAMERA05.png";
 import Itarianbg from "../assets/images/projects/App Development/Backgrounds/itarain03.png";
-import OrderRightbg from "../assets/images/projects/App Development/Backgrounds/order right02.png";
+import OrderRightbg from "../assets/images/projects/App Development/Backgrounds/orderright02.png";
 import RealOdorsbg from "../assets/images/projects/App Development/Backgrounds/REALODERS06.png";
 import Pranayama from "../assets/images/projects/App Development/Paryanma.png";
 import IonMeter from "../assets/images/projects/App Development/ION Metter.png";
-import DualCamera from "../assets/images/projects/App Development/Dual Camera.png";
+import DualCamera from "../assets/images/projects/App Development/DualCamera.png";
 import Itarian from "../assets/images/projects/App Development/itarian.png";
-import OrderRight from "../assets/images/projects/App Development/Order right.png";
+import OrderRight from "../assets/images/projects/App Development/Orderright.png";
 import RealOdors from "../assets/images/projects/App Development/REALODERS.png";
 
 
 
-import SeekSocialbg from "../assets/images/projects/Web Development/backgrounds/seek social04.png";
-import TimelessTreatmentbg from "../assets/images/projects/Web Development/backgrounds/time-less-treatment03.png";
+import SeekSocialbg from "../assets/images/projects/Web Development/backgrounds/seek-social.png";
+import TimelessTreatmentbg from "../assets/images/projects/Web Development/backgrounds/timeless-treatment.png";
 import TravelTradeReadybg from "../assets/images/projects/Web Development/backgrounds/TRVEL-TRADE-READY.png";
 import Trendifybg from "../assets/images/projects/Web Development/backgrounds/Trendify.png";
-import Nucalbg from "../assets/images/projects/Web Development/backgrounds/NUCAL05.png";
-import KineticTherapybg from "../assets/images/projects/Web Development/backgrounds/kentic therapy06.png";
-import SeekSocial from "../assets/images/projects/Web Development/seek social.png";
-import TimelessTreatment from "../assets/images/projects/Web Development/Time less treatment03.png";
-import TravelTradeReady from "../assets/images/projects/Web Development/Travel Trade Ready.png";
-import Trendify from "../assets/images/projects/Web Development/Trendify01.png";
+import Nucalbg from "../assets/images/projects/Web Development/backgrounds/NUCAL.png";
+import KineticTherapybg from "../assets/images/projects/Web Development/backgrounds/kentic-therapy.png";
+import SeekSocial from "../assets/images/projects/Web Development/seek-social.png";
+import TimelessTreatment from "../assets/images/projects/Web Development/Timeless-treatment.png";
+import TravelTradeReady from "../assets/images/projects/Web Development/Travel-Trade-Ready.png";
+import Trendify from "../assets/images/projects/Web Development/Trendify.png";
 import Nucal from "../assets/images/projects/Web Development/Nucal.png";
-import KineticTherapy from "../assets/images/projects/Web Development/kenatic therapy02.png";
+import KineticTherapy from "../assets/images/projects/Web Development/kenatic-therapy.png";
 
 
 import CatanBoard from "../assets/images/projects/PCB Design/03.png";

@@ -56,9 +56,7 @@ const Portfolio = ({ data, title }) => {
               >
                   <div className={styles.imagesWrapper}>
                     <div className={`position-absolute w-100 d-flex flex-row justify-content-end `}>
-                      <div className={`${styles.badge} text-center `}>
-                        {item?.category}
-                      </div>
+                      
                     </div>
                     <div className={styles.imageContainer}>
                       <img
@@ -76,6 +74,9 @@ const Portfolio = ({ data, title }) => {
                         />
                       )}
                     </div>
+                    <div className={`${styles.badge} text-center `}>
+                        {item?.category}
+                      </div>
                   </div>
                 </div>
             );

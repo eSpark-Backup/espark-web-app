@@ -56,6 +56,11 @@
   margin-top: -28px;
 }
 
+.tab2Overlay:hover{
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
 .tab3Overlay {
   width: 106%;
   height: 420px;
@@ -83,6 +88,8 @@
   padding-left: 10px;
   padding-right: 10px;
   z-index: 1;
+  bottom: 0px;
+  position: absolute;
 }
 
 .middleText {
@@ -108,7 +115,7 @@
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   /* top: 0;  */
-  transform: translateY(230%);
+  /* transform: translateY(230%); */
   display: flex;
   justify-content: center;
   align-items: center;
