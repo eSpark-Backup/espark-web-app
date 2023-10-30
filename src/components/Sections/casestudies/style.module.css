@@ -5,10 +5,12 @@
 }
 
 .portfolioimages {
-  width: 122%;
+  width: 457px;
   height: 361.195px;
-  margin-left: -75px;
+  /* margin-left: -75px; */
   border-radius: 15px;
+  position: relative;
+  overflow: hidden;
 }
 
 .upward-animation {
@@ -23,55 +25,64 @@
 }
 
 .imageContainer {
-  padding-left: 80px;
-  margin-bottom: -23px;
+  /* padding-left: 80px;
+  margin-bottom: -23px; */
+  gap: 20px;
+  display: flex;
 }
 
 .tab1Overlay {
-  width: 200%;
-  height: 418px;
-  margin-top: -398px;
-  margin-left: -270px;
+  width: 100%;
+  height: 383px;
+  animation: slide-in 0.5s forwards;
+  position: absolute;
+  bottom: -40px;
+  right: -50px;
+  margin-bottom: -10px;
+  margin-right: 25px;
 }
 
 .tab2Overlay {
-  width: 200%;
-  height: 418px;
-  margin-top: -378px;
+  width: 114%;
+  height: 419px;
+  /* margin-top: -378px;
   left: -270px;
-  margin-left: -220px;
+  margin-left: -220px; */
+  position: absolute;
+  top: -40px;
+  left: -50px;
+  animation: slide-in-position 0.5s forwards;
+  margin-left: -45px;
+  margin-top: -28px;
 }
 
-
 .tab3Overlay {
-  width: 200%;
-  height: 418px;
-  margin-top: -380px;
-  margin-left: -221px;
+  width: 106%;
+  height: 420px;
+  /* margin-top: -380px;
+  margin-left: -221px; */
+  position: absolute;
+  bottom: -40px;
+  left: -50px;
+  animation: slide-in-transform 0.5s forwards;
+  margin-left: -20px;
+  margin-bottom: -40px;
 }
 
 .badge {
-  /* box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.75); */
-  width: 27%;
   color: white;
-  /* background-color: rgba(0,0,0,0.5);  padding: 5px; */
-  /* display: none; */
   background: rgba(9, 0, 0, 0.42);
   opacity: 0;
   right: 0px;
   border-bottom-left-radius: 15px;
-  /* margin-top: 360px; */
-  width: 97%;
+  width: 100%;
   border-bottom-right-radius: 15px;
-  margin-right: 6.5px;
   height: 109.413px;
   font-size: 13px;
   text-align: left !important;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 25px;
   z-index: 1;
-
 }
 
 .middleText {
@@ -88,6 +99,7 @@
 .imagesWrapper {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
 .imagesWrapper:hover .badge {
@@ -97,6 +109,9 @@
   transition: all 0.5s ease-out;
   /* top: 0;  */
   transform: translateY(230%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imagesWrapper:hover .middleText {
@@ -155,11 +170,13 @@
   color: #3359a2;
   text-align: center;
   font-family: Poppins;
-  font-size: 32px;
+  font-size: 4vh;
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
-  padding-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -187,11 +204,13 @@
   color: #3359a2;
   text-align: center;
   font-family: Poppins;
-  font-size: 32px;
+  font-size: 4vh;
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
-  padding-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 8px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -363,3 +382,57 @@
     text-align: center;
   }
 } */
+
+@keyframes slide-in {
+  to {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@keyframes slide-in-position {
+  to {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes slide-in-transform {
+  to {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 855px) and (min-width: 600px) {
+  .filterTabSelected {
+    height: 88.248px;
+    font-size: 3vh;
+  }
+  .filterTab {
+    height: 88.248px;
+    font-size: 3vh;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 500px) {
+  .filterTabSelected {
+    height: 75.248px;
+    font-size: 2vh;
+  }
+  .filterTab {
+    height: 75.248px;
+    font-size: 2vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .filterTabSelected {
+    height: 63.248px;
+    font-size: 10px;
+  }
+  .filterTab {
+    height: 63.248px;
+    font-size: 10px;
+  }
+}

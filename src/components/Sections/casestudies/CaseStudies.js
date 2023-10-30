@@ -21,7 +21,7 @@ const Portfolio = ({ data, title }) => {
   return (
     <div className="container-fluid ptb-80">
       <SectionTitle heading={title} />
-      <div className={`d-flex justify-content-center`} style={{ gap: "20px" }}>
+      <div className={`row d-flex justify-content-center`} style={{ gap: "20px" }}>
         {projects.map((items) => {
           return (
             <p
@@ -54,7 +54,6 @@ const Portfolio = ({ data, title }) => {
                 key={item.id}
                 className="col-12 col-sm-6 col-md-6 col-lg-4 mt-2 mb-30"
               >
-                <div className={styles.wrapper}>
                   <div className={styles.imagesWrapper}>
                     <div className={`position-absolute w-100 d-flex flex-row justify-content-end `}>
                       <div className={`${styles.badge} text-center `}>
@@ -71,7 +70,7 @@ const Portfolio = ({ data, title }) => {
                       {item.projectUrl && (
                         <img
                           src={item.projectUrl}
-                          className={`animate__animated animate__fadeInDown ${overlayClass}`}
+                          className={` ${overlayClass}`}
                           alt="Overlay Image"
                           loading="lazy"
                         />
@@ -79,7 +78,6 @@ const Portfolio = ({ data, title }) => {
                     </div>
                   </div>
                 </div>
-              </div>
             );
           })}
       </div>

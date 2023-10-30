@@ -139,39 +139,39 @@ import TravelTrade4 from "../assets/images/projects/Wordpresss/travel trade read
 // import Flexmold7 from "../assets/images/projects/desktop app/7.jpg";
 
 import Paranyamabg from "../assets/images/projects/App Development/Backgrounds/paranyama01.png";
-import IonMeterbg from "../assets/images/projects/App Development/Backgrounds/ION metter04.png";
-import DualCamerabg from "../assets/images/projects/App Development/Backgrounds/DUAL CAMERA05.png";
+import IonMeterbg from "../assets/images/projects/App Development/Backgrounds/ION-metter04.png";
+import DualCamerabg from "../assets/images/projects/App Development/Backgrounds/DUAL-CAMERA05.png";
 import Itarianbg from "../assets/images/projects/App Development/Backgrounds/itarain03.png";
 import OrderRightbg from "../assets/images/projects/App Development/Backgrounds/order right02.png";
 import RealOdorsbg from "../assets/images/projects/App Development/Backgrounds/REALODERS06.png";
-import Pranayama from "../assets/images/projects/App Development/paranyama.png";
+import Pranayama from "../assets/images/projects/App Development/Paryanma.png";
 import IonMeter from "../assets/images/projects/App Development/ION Metter.png";
-import DualCamera from "../assets/images/projects/App Development/Dual Camera.png";
-import Itarian from "../assets/images/projects/App Development/Itarian.png";
-import OrderRight from "../assets/images/projects/App Development/order right.png";
-import RealOdors from "../assets/images/projects/App Development/Realodors.png";
+import DualCamera from "../assets/images/projects/App Development/Dual camera.png";
+import Itarian from "../assets/images/projects/App Development/itarian.png";
+import OrderRight from "../assets/images/projects/App Development/Order right.png";
+import RealOdors from "../assets/images/projects/App Development/REALODERS.png";
 
 
 
 import SeekSocialbg from "../assets/images/projects/Web Development/backgrounds/seek social04.png";
-import TimelessTreatmentbg from "../assets/images/projects/Web Development/backgrounds/time less treatment03.png";
-import TravelTradeReadybg from "../assets/images/projects/Web Development/backgrounds/trvel trade ready 01.png";
-import Trendifybg from "../assets/images/projects/Web Development/backgrounds/Trendify02.png";
+import TimelessTreatmentbg from "../assets/images/projects/Web Development/backgrounds/time-less-treatment03.png";
+import TravelTradeReadybg from "../assets/images/projects/Web Development/backgrounds/TRVEL-TRADE-READY.png";
+import Trendifybg from "../assets/images/projects/Web Development/backgrounds/Trendify.png";
 import Nucalbg from "../assets/images/projects/Web Development/backgrounds/NUCAL05.png";
 import KineticTherapybg from "../assets/images/projects/Web Development/backgrounds/kentic therapy06.png";
-import SeekSocial from "../assets/images/projects/Web Development/Seek Social.png";
-import TimelessTreatment from "../assets/images/projects/Web Development/Time less treatment.png";
-import TravelTradeReady from "../assets/images/projects/Web Development/TRAVEL TRADE READY.png";
-import Trendify from "../assets/images/projects/Web Development/Trendify.png";
-import Nucal from "../assets/images/projects/Web Development/NUCAl.png";
-import KineticTherapy from "../assets/images/projects/Web Development/kenatic therapy.png";
+import SeekSocial from "../assets/images/projects/Web Development/seek social.png";
+import TimelessTreatment from "../assets/images/projects/Web Development/Time less treatment03.png";
+import TravelTradeReady from "../assets/images/projects/Web Development/Travel Trade Ready.png";
+import Trendify from "../assets/images/projects/Web Development/Trendify01.png";
+import Nucal from "../assets/images/projects/Web Development/Nucal.png";
+import KineticTherapy from "../assets/images/projects/Web Development/kenatic therapy02.png";
 
 
-import CatanBoard from "../assets/images/projects/PCB Design/Catan Board.png";
-import LCDBoard from "../assets/images/projects/PCB Design/LCD Display BOx.png";
-import SwitchBox from "../assets/images/projects/PCB Design/Switch Box.png";
-import WaterMonitor from "../assets/images/projects/PCB Design/Water Monitore.png";
-import PCBbg from "../assets/images/projects/PCB Design/background/02.png";
+import CatanBoard from "../assets/images/projects/PCB Design/03.png";
+import LCDBoard from "../assets/images/projects/PCB Design/02.png";
+import SwitchBox from "../assets/images/projects/PCB Design/01.png";
+import WaterMonitor from "../assets/images/projects/PCB Design/04.png";
+import PCBbg from "../assets/images/projects/PCB Design/background/1.png";
 
 const hash = () => {
   const s4 = () => {
