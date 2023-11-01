@@ -344,7 +344,7 @@ const Header = ({ scrollToLetsTalk }) => {
               ) : (
                 <div className="headerBtn smallNone">
                   <div onClick={scrollToLetsTalk} className="btn-content">
-                    <span>Contact Us</span>
+                    <span>Let’s Talk</span>
                   </div>
                 </div>
               )}
