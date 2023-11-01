@@ -6,7 +6,7 @@
 
 .portfolioimages {
   width: 457px;
-  height: 361.195px;
+  height: auto;
   /* margin-left: -75px; */
   border-radius: 15px;
   position: relative;
@@ -33,18 +33,15 @@
 
 .appdefault {
   width: 100%;
-  height: 383px;
+  height: auto;
   position: absolute;
-  margin-bottom: -10px;
+  margin-top: -12px;
   margin-right: 25px;
 }
 
-.appToWebOverlay{
+.appToWebOverlay {
   width: 114%;
-  height: 419px;
-  /* margin-top: -378px;
-  left: -270px;
-  margin-left: -220px; */
+  height: fit-content;
   position: absolute;
   top: -40px;
   left: -50px;
@@ -53,11 +50,9 @@
   margin-top: -28px;
 }
 
-.appToPCBOverlay{
+.appToPCBOverlay {
   width: 106%;
-  height: 420px;
-  /* margin-top: -380px;
-  margin-left: -221px; */
+  height: fit-content;
   position: absolute;
   left: -50px;
   animation: slide-in-pcb2 0.5s forwards;
@@ -65,21 +60,20 @@
   margin-bottom: -40px;
 }
 
-.webToAppOverlay{
+.webToAppOverlay {
   width: 100%;
-  height: 383px;
+  height: fit-content;
   animation: slide-in-app1 0.5s forwards;
   position: absolute;
   bottom: -40px;
   right: -50px;
   margin-bottom: -10px;
-  margin-right: 25px;}
+  margin-right: 25px;
+}
 
-.webToPCBOverlay{
+.webToPCBOverlay {
   width: 106%;
-  height: 420px;
-  /* margin-top: -380px;
-  margin-left: -221px; */
+  height: fit-content;
   position: absolute;
   bottom: -40px;
   left: -50px;
@@ -88,9 +82,9 @@
   margin-bottom: -40px;
 }
 
-.pcbToAppOverlay{
+.pcbToAppOverlay {
   width: 100%;
-  height: 383px;
+  height: fit-content;
   animation: slide-in-app2 0.5s forwards;
   position: absolute;
   right: -50px;
@@ -98,12 +92,9 @@
   margin-right: 25px;
 }
 
-.pcbToWebOverlay{
+.pcbToWebOverlay {
   width: 114%;
-  height: 419px;
-  /* margin-top: -378px;
-  left: -270px;
-  margin-left: -220px; */
+  height: fit-content;
   position: absolute;
   top: -40px;
   right: -50px;
@@ -115,9 +106,6 @@
 .tab2Overlay {
   width: 114%;
   height: 419px;
-  /* margin-top: -378px;
-  left: -270px;
-  margin-left: -220px; */
   position: absolute;
   top: -40px;
   right: -50px;
@@ -126,7 +114,7 @@
   margin-top: -28px;
 }
 
-.tab2Overlay:hover{
+.tab2Overlay:hover {
   transform: translateY(-10px);
   transition: transform 0.3s ease;
 }
@@ -134,8 +122,6 @@
 .tab3Overlay {
   width: 106%;
   height: 420px;
-  /* margin-top: -380px;
-  margin-left: -221px; */
   position: absolute;
   bottom: -40px;
   left: -50px;
@@ -181,11 +167,8 @@
 
 .imagesWrapper:hover .badge {
   opacity: 1;
-  /* position: absolute; */
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  /* top: 0;  */
-  /* transform: translateY(230%); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,14 +214,6 @@
 }
 
 .filterTab {
-  /* font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  color: #9b9b9b;
-  cursor: pointer; */
   border: 0.9px solid #3359a2;
   background: #fff;
   width: 25.64%;
@@ -247,7 +222,7 @@
   color: #3359a2;
   text-align: center;
   font-family: Poppins;
-  font-size: 3.2vh;
+  font-size: 32px !important;
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
@@ -263,16 +238,6 @@
 }
 
 .filterTabSelected {
-  /* font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  color: var(--color-primary);
-  cursor: pointer;
-  border-bottom: 3px solid #3359a2;
-  padding-bottom: 10px; */
   border: 0.9px solid #3359a2;
   background: #fff;
   width: 25.64%;
@@ -281,7 +246,7 @@
   color: #3359a2;
   text-align: center;
   font-family: Poppins;
-  font-size: 3.2vh;
+  font-size: 32px !important;
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
@@ -500,36 +465,41 @@
   }
 }
 
-
-@media (max-width: 855px) and (min-width: 600px) {
-  .filterTabSelected {
-    height: 88.248px;
-    font-size: 2.4vh;
-  }
-  .filterTab {
-    height: 88.248px;
-    font-size: 2.4vh;
+@media (min-width: 1920px) {
+  .portfolioimages {
+    width: 100%;
   }
 }
 
-@media (max-width: 600px) and (min-width: 500px) {
+@media (max-width: 1000px) and (min-width: 500px) {
+  .filterTabSelected {
+    height: 88.248px;
+    font-size: 2.4vw !important;
+  }
+  .filterTab {
+    height: 88.248px;
+    font-size: 2.4vw !important;
+  }
+}
+
+/* @media (max-width: 600px) and (min-width: 500px) {
   .filterTabSelected {
     height: 75.248px;
-    font-size: 1.3vh;
+    font-size: 2vw !important;
   }
   .filterTab {
     height: 75.248px;
-    font-size: 1.3vh;
+    font-size: 2vw !important;
   }
-}
+} */
 
 @media (max-width: 500px) {
   .filterTabSelected {
     height: 63.248px;
-    font-size: 10px;
+    font-size: 10px !important;
   }
   .filterTab {
     height: 63.248px;
-    font-size: 10px;
+    font-size: 10px !important;
   }
 }
