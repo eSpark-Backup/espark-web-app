@@ -81,7 +81,7 @@ const Portfolio = ({ data, title }) => {
                       src={item?.image}
                       className={styles.portfolioimages}
                       alt="Background Image"
-                      loading="eager"
+                      loading="lazy"
                     />
                     {item.projectUrl && (
                       <img
