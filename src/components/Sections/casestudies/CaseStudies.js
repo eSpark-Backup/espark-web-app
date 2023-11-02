@@ -81,14 +81,14 @@ const Portfolio = ({ data, title }) => {
                       src={item?.image}
                       className={styles.portfolioimages}
                       alt="Background Image"
-                      loading="lazy"
+                      loading="eager"
                     />
                     {item.projectUrl && (
                       <img
                         src={item.projectUrl}
                         className={` ${overlayClass}`}
                         alt="Overlay Image"
-                        loading="lazy"
+                        loading="eager"
                       />
                     )}
                   </div>
