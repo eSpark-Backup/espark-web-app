@@ -10,15 +10,25 @@ const Portfolio = ({ data, title }) => {
   const prevPortfolioId = localStorage.getItem("prev_portfolio_id");
 
   const filterData = (name) => {
+    if (name === getPortfolioId) {
+      return; // Don't do anything if it's the same tab
+    }
+  
     let filtered = projects.filter((item) => item.name === name);
     localStorage.setItem("prev_portfolio_id", getPortfolioId);
     localStorage.setItem("portfolio_id", name);
     setNewstate(filtered);
   };
-
+  
   useEffect(() => {
-    filterData("App Development");
+    // Add this condition to set the "appdefault" class when the page initially loads
+    if (!getPortfolioId) {
+      localStorage.setItem("prev_portfolio_id", "App Development");
+      localStorage.setItem("portfolio_id", "App Development");
+      setNewstate(projects.filter((item) => item.name === "App Development"));
+    }
   }, []);
+  
 
   // Determine the appropriate overlayClass based on the previous and current tab
   const determineOverlayClass = () => {
@@ -81,7 +91,7 @@ const Portfolio = ({ data, title }) => {
                       src={item?.image}
                       className={styles.portfolioimages}
                       alt="Background Image"
-                      loading="lazy"
+                      loading="eager"
                     />
                     {item.projectUrl && (
                       <img
