@@ -32,7 +32,7 @@
 }
 
 .appdefault {
-  width: 100%;
+  width: 98%;
   height: auto;
   position: absolute;
   margin-top: -12px;
@@ -40,7 +40,7 @@
 }
 
 .appToWebOverlay {
-  width: 114%;
+  width: 110%;
   height: fit-content;
   position: absolute;
   top: -40px;
@@ -61,7 +61,7 @@
 }
 
 .webToAppOverlay {
-  width: 100%;
+  width: 95%;
   height: fit-content;
   animation: slide-in-app1 0.5s forwards;
   position: absolute;
@@ -83,7 +83,7 @@
 }
 
 .pcbToAppOverlay {
-  width: 100%;
+  width: 95%;
   height: fit-content;
   animation: slide-in-app2 0.5s forwards;
   position: absolute;
@@ -93,7 +93,7 @@
 }
 
 .pcbToWebOverlay {
-  width: 114%;
+  width: 110%;
   height: fit-content;
   position: absolute;
   top: -40px;

@@ -642,7 +642,7 @@ const Privacy = () => {
               changes. Changes to this Privacy Policy are effective when they
               are posted on this page.
             </p>
-            <h2>Contact Us</h2>
+            <h2>Let’s Talk</h2>
             <p>
               If you have any questions about this Privacy Policy, You can
               contact us:

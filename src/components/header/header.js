@@ -472,7 +472,7 @@ const Header = ({ scrollToLetsTalk }) => {
                 );
               })}
             </Collapse>
-            {/* <Link
+            <Link
               to="/portfolio"
               className={
                 pathname === "/portfolio"
@@ -482,7 +482,7 @@ const Header = ({ scrollToLetsTalk }) => {
               onClick={toggleDrawer}
             >
               <span>Portfolio</span>
-            </Link> */}
+            </Link>
             <Link
               to="/careers"
               className={
@@ -510,7 +510,7 @@ const Header = ({ scrollToLetsTalk }) => {
             <Button
               design={14}
               onClick={() => setOpenDrawer(false)}
-              title={"Contact Us"}
+              title={"Let’s Talk"}
             />
           </Link>
         </div>

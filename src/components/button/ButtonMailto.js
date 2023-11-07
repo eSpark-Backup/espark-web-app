@@ -20,10 +20,10 @@ const ButtonMailto = ({ mailto, label, showIcon }) => {
           style={{ marginRight: "5px" }}
         />
       )}
-      <span
+      <span className="email-button"
         style={{
           color: "#070707",
-          fontSize: "18px",
+          fontSize: "16px",
           fontFamily: "Poppins",
           lineHeight: "100%",
         }}
