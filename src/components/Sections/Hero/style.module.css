@@ -190,7 +190,7 @@ font-size: ;} */
   .images {
     height: auto;
     width: 100% !important;
-    border: 1px solid red
+    /* border: 1px solid red */
   }
   .hireimage {
     height: auto;
@@ -234,7 +234,6 @@ font-size: ;} */
     height: auto;
     width: 100% !important;
   }
-
 }
 
 @media screen and (max-width: 786px) {
