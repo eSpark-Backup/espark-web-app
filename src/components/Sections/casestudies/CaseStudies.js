@@ -7,77 +7,109 @@ import Galleryimages from "./indeximages";
 const Portfolio = ({ data, title }) => {
   const [newstate, setNewstate] = useState(projects[0]);
   const getPortfolioId = localStorage.getItem("portfolio_id");
-
-  const [imageArray, setImageArray] = useState([]);
-
-  const [open, setOpen] = useState(false);
+  const prevPortfolioId = localStorage.getItem("prev_portfolio_id");
 
   const filterData = (name) => {
+    if (name === getPortfolioId) {
+      return; // Don't do anything if it's the same tab
+    }
+  
     let filtered = projects.filter((item) => item.name === name);
+    localStorage.setItem("prev_portfolio_id", getPortfolioId);
     localStorage.setItem("portfolio_id", name);
     setNewstate(filtered);
   };
+  
   useEffect(() => {
-    filterData("Software Service");
+    // Add this condition to set the "appdefault" class when the page initially loads
+    if (!getPortfolioId) {
+      localStorage.setItem("prev_portfolio_id", "App Development");
+      localStorage.setItem("portfolio_id", "App Development");
+      setNewstate(projects.filter((item) => item.name === "App Development"));
+    }
   }, []);
-  const openGallery = (item) => {
-    setImageArray(item.imageArray);
-    setOpen(true);
+  
+
+  // Determine the appropriate overlayClass based on the previous and current tab
+  const determineOverlayClass = () => {
+    if (prevPortfolioId === "App Development") {
+      if (getPortfolioId === "Web Development") {
+        return styles.appToWebOverlay;
+      } else if (getPortfolioId === "PCB Designing") {
+        return styles.appToPCBOverlay;
+      }
+    } else if (prevPortfolioId === "Web Development") {
+      if (getPortfolioId === "App Development") {
+        return styles.webToAppOverlay;
+      } else if (getPortfolioId === "PCB Designing") {
+        return styles.webToPCBOverlay;
+      }
+    } else if (prevPortfolioId === "PCB Designing") {
+      if (getPortfolioId === "App Development") {
+        return styles.pcbToAppOverlay;
+      } else if (getPortfolioId === "Web Development") {
+        return styles.pcbToWebOverlay;
+      }
+    }
+    return styles.appdefault; // Default overlay class
+    
   };
 
   return (
     <div className="container-fluid ptb-80">
+      <div style={{marginBottom:"-60px"}}>
       <SectionTitle heading={title} />
-      <div className={`d-flex justify-content-around `}>
+      </div>
+      <div className={`row d-flex justify-content-center`} style={{ gap: "20px" }}>
         {projects.map((items) => {
           return (
-            <>
-              <p
-                className={
-                  getPortfolioId === items.name
-                    ? `${styles.filterTabSelected}`
-                    : `${styles.filterTab}`
-                }
-                onClick={() => filterData(items.name, items.id)}
-              >
-                {items.name}
-              </p>
-            </>
+            <p
+              key={items.name}
+              className={
+                getPortfolioId === items.name
+                  ? `${styles.filterTabSelected}`
+                  : `${styles.filterTab}`
+              }
+              onClick={() => filterData(items.name, items.id)}
+            >
+              {items.name}
+            </p>
           );
         })}
       </div>
       <div className="row pt-5 mt-3" style={{ cursor: "pointer" }}>
         {newstate[0] &&
-          newstate[0]?.childs?.map((item) => {
+          newstate[0]?.childs?.map((item, index) => {
+            const overlayClass = determineOverlayClass();
             return (
-              <div
-                className="col-12 col-sm-6 col-md-6 col-lg-4 mt-2 mb-30"
-                onClick={() => openGallery(item)}
-              >
-                <div className={styles.wrapper}>
-                  <div className={styles.imagesWrapper}>
-                    <div
-                      className={`position-absolute w-100 p-3 d-flex flex-row justify-content-end `}
-                    >
-                      <div className={`${styles.badge} text-center `}>
-                        {item?.category}
-                      </div>
-                    </div>
+              <div key={item.id} className="col-12 col-sm-6 col-md-6 col-lg-4 mt-2 mb-30">
+                <div className={styles.imagesWrapper}>
+                  <div className={`position-absolute w-100 d-flex flex-row justify-content-end `}>
+                  </div>
+                  <div className={styles.imageContainer}>
                     <img
                       src={item?.image}
-                      className={styles.images}
-                      alt={"imagess"}
+                      className={styles.portfolioimages}
+                      alt="Background Image"
+                      loading="eager"
                     />
+                    {item.projectUrl && (
+                      <img
+                        src={item.projectUrl}
+                        className={` ${overlayClass}`}
+                        alt="Overlay Image"
+                        loading="eager"
+                      />
+                    )}
                   </div>
-                  <div className={styles.titleWrapper}>
-                    <h3 className={` ${styles.titleText}`}>{item?.name}</h3>
+                  <div className={`${styles.badge} text-center `}>
+                    {item?.category}
                   </div>
                 </div>
               </div>
             );
           })}
       </div>
-      <Galleryimages images={imageArray} open={open} setOpen={setOpen} />
     </div>
   );
 };

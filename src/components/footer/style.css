@@ -140,6 +140,7 @@ footer .container {
 }
 
 @media only screen and (min-width: 281px) and (max-width: 425px) {
+
   .footer-area {
     padding-top: 50px;
     padding-bottom: 30px;
@@ -315,6 +316,7 @@ footer .container {
     justify-content: start;
     text-align: right !important;
   }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width:1203px) {

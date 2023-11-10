@@ -190,10 +190,11 @@ font-size: ;} */
   .images {
     height: auto;
     width: 100% !important;
+    /* border: 1px solid red */
   }
   .hireimage {
     height: auto;
-    width: 350px !important;
+    width: 250px !important;
   }
 
   button {
@@ -233,7 +234,6 @@ font-size: ;} */
     height: auto;
     width: 100% !important;
   }
-
 }
 
 @media screen and (max-width: 786px) {
@@ -267,7 +267,7 @@ font-size: ;} */
 
   .images {
     height: auto;
-    width: 300px !important;
+    width: 100px !important;
   }
   .hireimage {
     height: auto;
@@ -342,7 +342,7 @@ font-size: ;} */
 @media only screen and (min-width: 1366px) {
   .images {
     height: auto;
-    width: 550px !important;
+    /* width: 550px !important; */
   }
 
   .headingColumn {
@@ -379,6 +379,7 @@ font-size: ;} */
 @media (min-width: 380px) and (max-width: 540px) {
   .images {
     width: 100% !important;
+    height: 300px !important;
   }
   .hireimage {
     height: auto;

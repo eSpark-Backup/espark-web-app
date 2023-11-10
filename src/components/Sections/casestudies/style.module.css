@@ -4,17 +4,189 @@
   opacity: 1;
 }
 
+.portfolioimages:hover {
+  margin-bottom: 0px !important;
+}
+
+.portfolioimages {
+  width: 457px;
+  height: auto;
+  /* margin-left: -75px; */
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.upward-animation {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+/* "Down" animation */
+.downward-animation {
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+}
+
+.imageContainer {
+  /* padding-left: 80px;
+  margin-bottom: -23px; */
+  gap: 20px;
+  display: flex;
+}
+
+.appdefault:hover {
+  margin-top: -10px !important;
+}
+
+.appdefault {
+  width: 98%;
+  height: auto;
+  position: absolute;
+  margin-top: 0px;
+  transition: all 0.3s ease-in-out;
+
+  margin-right: 25px;
+}
+
+.appToWebOverlay:hover {
+  margin-top: -38px;
+}
+
+.appToWebOverlay {
+  width: 110%;
+  height: fit-content;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: -40px;
+  left: -50px;
+  animation: slide-in-web1 0.5s forwards;
+  margin-left: -45px;
+  margin-top: -28px;
+}
+
+.appToPCBOverlay:hover {
+  bottom: -30px !important;
+}
+.appToPCBOverlay {
+  width: 106%;
+  height: fit-content;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  left: -50px;
+  animation: slide-in-pcb2 0.5s forwards;
+  margin-left: -20px;
+  /* margin-bottom: -40px; */
+  bottom: -40px;
+}
+
+.webToAppOverlay:hover {
+  margin-bottom: 0px;
+}
+.webToAppOverlay {
+  width: 95%;
+  height: fit-content;
+  animation: slide-in-app1 0.5s forwards;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+
+  bottom: -40px;
+  right: -50px;
+  margin-bottom: -10px;
+  margin-right: 25px;
+}
+
+.webToPCBOverlay:hover {
+  margin-bottom: -30px;
+}
+
+.webToPCBOverlay {
+  width: 106%;
+  height: fit-content;
+  position: absolute;
+  bottom: -40px;
+  left: -50px;
+  transition: all 0.3s ease-in-out;
+
+  animation: slide-in-pcb1 0.5s forwards;
+  margin-left: -20px;
+  margin-bottom: -40px;
+}
+
+.pcbToAppOverlay:hover {
+  bottom: -4px !important;
+}
+
+.pcbToAppOverlay {
+  width: 95%;
+  height: fit-content;
+  animation: slide-in-app2 0.5s forwards;
+  position: absolute;
+  right: -50px;
+  transition: all 0.3s ease-in-out;
+  bottom: -14px !important;
+  margin-right: 25px;
+}
+
+.pcbToWebOverlay:hover {
+  margin-top: -38px !important;
+}
+.pcbToWebOverlay {
+  width: 110%;
+  height: fit-content;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  top: -40px;
+  right: -50px;
+  animation: slide-in-web2 0.5s forwards;
+  margin-left: -45px;
+  margin-top: -28px;
+}
+
+.tab2Overlay {
+  width: 114%;
+  height: 419px;
+  position: absolute;
+  top: -40px;
+  right: -50px;
+  animation: slide-in-pcb 0.5s forwards;
+  margin-left: -45px;
+  margin-top: -28px;
+}
+
+.tab2Overlay:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+.tab3Overlay {
+  width: 106%;
+  height: 420px;
+  position: absolute;
+  bottom: -40px;
+  left: -50px;
+  animation: slide-in-transform 0.5s forwards;
+  margin-left: -20px;
+  margin-bottom: -40px;
+}
 
 .badge {
-  box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.75);
-  width: 27%;
   color: white;
-  background: var(--color-primary);
-  padding: 5px;
-  /* display: none; */
+  background: rgba(9, 0, 0, 0.42);
   opacity: 0;
   right: 0px;
-  border-radius: 3px;
+  border-bottom-left-radius: 15px;
+  width: 100%;
+  border-bottom-right-radius: 15px;
+  height: 109.413px;
+  font-size: 13px;
+  text-align: left !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 1;
+  bottom: 0px;
+  position: absolute;
 }
 
 .middleText {
@@ -28,21 +200,19 @@
   text-align: center;
 }
 
-
-
 .imagesWrapper {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
-
-
 
 .imagesWrapper:hover .badge {
   opacity: 1;
-  position: absolute;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imagesWrapper:hover .middleText {
@@ -69,7 +239,7 @@
   background-color: var(--color-primary);
 }
 
-.titleWrapper:hover>h3 {
+.titleWrapper:hover > h3 {
   color: #ffffff;
 }
 
@@ -85,31 +255,50 @@
 }
 
 .filterTab {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 36px;
+  border: 0.9px solid #3359a2;
+  background: #fff;
+  width: 25.64%;
+  height: 102.248px;
+  flex-shrink: 0;
+  color: #3359a2;
   text-align: center;
-  color: #9b9b9b;
+  font-family: Poppins;
+  font-size: 32px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
   cursor: pointer;
+}
+
+.filterTab:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .filterTabSelected {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 36px;
+  border: 0.9px solid #3359a2;
+  background: #fff;
+  width: 25.64%;
+  height: 102.248px;
+  flex-shrink: 0;
+  color: #3359a2;
   text-align: center;
-  color: var(--color-primary);
-  cursor: pointer;
-  border-bottom: 3px solid #3359a2;
-  padding-bottom: 10px;
+  font-family: Poppins;
+  font-size: 32px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-@media (min-width: 1000px) and (max-width: 1400px) {
-
+/* @media (min-width: 1000px) and (max-width: 1400px) {
   .badge {
     width: 40%;
   }
@@ -118,10 +307,10 @@
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 32px;
     line-height: 20px;
     text-align: center;
-    color: #9b9b9b;
+    color: #3359a2;
     cursor: pointer;
   }
 
@@ -129,7 +318,7 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 32px;
     line-height: 20px;
     text-align: center;
     cursor: pointer;
@@ -242,10 +431,9 @@
   .titleText {
     font-size: 16px;
   }
-  
 }
 
-@media(max-width:279px) {
+@media (max-width: 279px) {
   .filterTab {
     font-family: "Inter";
     font-style: normal;
@@ -253,7 +441,7 @@
     font-size: 10px;
     line-height: 12px;
     text-align: center;
-    color: #9b9b9b;
+    color: #3359a2;
     cursor: pointer;
   }
 
@@ -275,6 +463,88 @@
     font-size: 16.2574px;
     line-height: 100%;
     text-align: center;
+  }
+} */
 
+@keyframes slide-in-app1 {
+  to {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@keyframes slide-in-app2 {
+  to {
+    right: 0;
+  }
+}
+
+@keyframes slide-in-web1 {
+  to {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes slide-in-web2 {
+  to {
+    top: 0;
+    right: 0;
+  }
+}
+
+@keyframes slide-in-pcb1 {
+  to {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@keyframes slide-in-pcb2 {
+  to {
+    left: 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  .portfolioimages {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 500px) {
+  .filterTabSelected {
+    height: 88.248px;
+    font-size: 2.4vw !important;
+  }
+  .filterTab {
+    height: 88.248px;
+    font-size: 2.4vw !important;
+  }
+}
+
+/* @media (max-width: 600px) and (min-width: 500px) {
+  .filterTabSelected {
+    height: 75.248px;
+    font-size: 2vw !important;
+  }
+  .filterTab {
+    height: 75.248px;
+    font-size: 2vw !important;
+  }
+} */
+
+@media (max-width: 500px) {
+  .filterTabSelected {
+    height: 63.248px;
+    font-size: 10px !important;
+  }
+  .filterTab {
+    height: 63.248px;
+    font-size: 10px !important;
+  }
+  .badge {
+    height: 70.413px;
+    font-size: 9px;
   }
 }

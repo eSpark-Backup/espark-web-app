@@ -1,7 +1,7 @@
-import PanayamaImg from "../assets/images/projects/Andriod/Panayama App.jpg";
-import PanayamaImg1 from "../assets/images/projects/Andriod/1.jpg";
-import PanayamaImg2 from "../assets/images/projects/Andriod/2.jpg";
-import PanayamaImg3 from "../assets/images/projects/Andriod/3.jpg";
+// import PanayamaImg from "../assets/images/projects/Andriod/Panayama App.jpg";
+// import PanayamaImg1 from "../assets/images/projects/Andriod/1.jpg";
+// import PanayamaImg2 from "../assets/images/projects/Andriod/2.jpg";
+// import PanayamaImg3 from "../assets/images/projects/Andriod/3.jpg";
 
 import PtzKeyboard from "../assets/images/projects/hardware/PTZkeyboard.jpg";
 import PtzKeyboard1 from "../assets/images/projects/hardware/Mahmood PTZkeyboard/1.jpg";
@@ -122,21 +122,56 @@ import TravelTrade2 from "../assets/images/projects/Wordpresss/travel trade read
 import TravelTrade3 from "../assets/images/projects/Wordpresss/travel trade ready/3.jpg";
 import TravelTrade4 from "../assets/images/projects/Wordpresss/travel trade ready/4.jpg";
 
-import IonMeter from "../assets/images/projects/Vue.js/ION Meter.jpg";
-import IonMeter1 from "../assets/images/projects/Vue.js/1.jpg";
-import IonMeter2 from "../assets/images/projects/Vue.js/2.jpg";
-import IonMeter3 from "../assets/images/projects/Vue.js/3.jpg";
-import IonMeter4 from "../assets/images/projects/Vue.js/4.jpg";
-import IonMeter5 from "../assets/images/projects/Vue.js/5.jpg";
+// import IonMeter from "../assets/images/projects/Vue.js/ION Meter.jpg";
+// import IonMeter1 from "../assets/images/projects/Vue.js/1.jpg";
+// import IonMeter2 from "../assets/images/projects/Vue.js/2.jpg";
+// import IonMeter3 from "../assets/images/projects/Vue.js/3.jpg";
+// import IonMeter4 from "../assets/images/projects/Vue.js/4.jpg";
+// import IonMeter5 from "../assets/images/projects/Vue.js/5.jpg";
 
-import Flexmold from "../assets/images/projects/desktop app/Flexmold.jpg";
-import Flexmold1 from "../assets/images/projects/desktop app/1.jpg";
-import Flexmold2 from "../assets/images/projects/desktop app/2.jpg";
-import Flexmold3 from "../assets/images/projects/desktop app/3.jpg";
-import Flexmold4 from "../assets/images/projects/desktop app/4.jpg";
-import Flexmold5 from "../assets/images/projects/desktop app/5.jpg";
-import Flexmold6 from "../assets/images/projects/desktop app/6.jpg";
-import Flexmold7 from "../assets/images/projects/desktop app/7.jpg";
+// import Flexmold from "../assets/images/projects/desktop app/Flexmold.jpg";
+// import Flexmold1 from "../assets/images/projects/desktop app/1.jpg";
+// import Flexmold2 from "../assets/images/projects/desktop app/2.jpg";
+// import Flexmold3 from "../assets/images/projects/desktop app/3.jpg";
+// import Flexmold4 from "../assets/images/projects/desktop app/4.jpg";
+// import Flexmold5 from "../assets/images/projects/desktop app/5.jpg";
+// import Flexmold6 from "../assets/images/projects/desktop app/6.jpg";
+// import Flexmold7 from "../assets/images/projects/desktop app/7.jpg";
+
+import Paranyamabg from "../assets/images/projects/App-Development/Backgrounds/paranyama01.png";
+import IonMeterbg from "../assets/images/projects/App-Development/Backgrounds/ION-metter04.png";
+import DualCamerabg from "../assets/images/projects/App-Development/Backgrounds/DUAL-CAMERA05.png";
+import Itarianbg from "../assets/images/projects/App-Development/Backgrounds/itarain03.png";
+import OrderRightbg from "../assets/images/projects/App-Development/Backgrounds/orderright02.png";
+import RealOdorsbg from "../assets/images/projects/App-Development/Backgrounds/REALODERS06.png";
+import Pranayama from "../assets/images/projects/App-Development/Paryanma.png";
+import IonMeter from "../assets/images/projects/App-Development/ION Metter.png";
+import DualCamera from "../assets/images/projects/App-Development/DualCamera.png";
+import Itarian from "../assets/images/projects/App-Development/itarian.png";
+import OrderRight from "../assets/images/projects/App-Development/Orderright.png";
+import RealOdors from "../assets/images/projects/App-Development/REALODERS.png";
+
+
+
+import SeekSocialbg from "../assets/images/projects/Web-Development/backgrounds/seek-social.png";
+import TimelessTreatmentbg from "../assets/images/projects/Web-Development/backgrounds/timeless-treatment.png";
+import TravelTradeReadybg from "../assets/images/projects/Web-Development/backgrounds/TRVEL-TRADE-READY.png";
+import Trendifybg from "../assets/images/projects/Web-Development/backgrounds/Trendify.png";
+import Nucalbg from "../assets/images/projects/Web-Development/backgrounds/NUCAL.png";
+import KineticTherapybg from "../assets/images/projects/Web-Development/backgrounds/kentic-therapy.png";
+import SeekSocial from "../assets/images/projects/Web-Development/seek-social.png";
+import TimelessTreatment from "../assets/images/projects/Web-Development/Timeless-treatment.png";
+import TravelTradeReady from "../assets/images/projects/Web-Development/Travel-Trade-Ready.png";
+import Trendify from "../assets/images/projects/Web-Development/Trendify.png";
+import Nucal from "../assets/images/projects/Web-Development/Nucal.png";
+import KineticTherapy from "../assets/images/projects/Web-Development/kenatic-therapy.png";
+
+
+import CatanBoard from "../assets/images/projects/PCB-Design/03.png";
+import LCDBoard from "../assets/images/projects/PCB-Design/02.png";
+import SwitchBox from "../assets/images/projects/PCB-Design/01.png";
+import WaterMonitor from "../assets/images/projects/PCB-Design/04.png";
+import PCBbg from "../assets/images/projects/PCB-Design/background/1.png";
 
 const hash = () => {
   const s4 = () => {
@@ -160,170 +195,137 @@ const projectItems = (image, projectUrl, name, category, subCategory) => {
 export const projects = [
   {
     id: hash(),
-    name: "Software Service",
-    path: "software-service",
+    name: "App Development",
+    path: "app-development",
     childs: [
-      projectItems(PanayamaImg, "", "Panayama App", "Android", [
-        PanayamaImg1,
-        PanayamaImg2,
-        PanayamaImg3,
-      ]),
-      projectItems(YougaApp, "", "Yoga App", "IOS", [
-        YougaApp1,
-        YougaApp2,
-        YougaApp3,
-      ]),
-      projectItems(FitnessTracker, "", "Fitness Tracker App", "React Native", [
-        FitnessTracker1,
-        FitnessTracker2,
-        FitnessTracker3,
-      ]),
-      projectItems(Incubator, "", "Incubator App", "React Native", [
-        Incubator1,
-        Incubator2,
-      ]),
-      projectItems(VanController, "", "Van Controller", "React Native", [
-        VanController1,
-        VanController2,
-        VanController3,
-      ]),
-      projectItems(eSparkInstitue, "", "eSpark Institute", "React Js", [
-        eSparkInstitue1,
-        eSparkInstitue2,
-        eSparkInstitue3,
-        eSparkInstitue4,
-      ]),
-      projectItems(BeOneSolutions, "", "Be One Solutions", "Wordpress", [
-        BeOneSolutions1,
-        BeOneSolutions2,
-        BeOneSolutions3,
-        BeOneSolutions4,
-      ]),
-      projectItems(IonEnergy, "", "ION Energy Solutions", "Wordpress", [
-        IonEnergy4,
-        IonEnergy3,
-        IonEnergy1,
-        IonEnergy2,
-      ]),
-      projectItems(TravelTrade, "", "Travel Trade Ready", "Wordpress", [
-        TravelTrade1,
-        TravelTrade2,
-        TravelTrade3,
-        TravelTrade4,
-      ]),
-      projectItems(Flexmold, "", "Flexmold", "Deckstop App", [
-        Flexmold1,
-        Flexmold2,
-        Flexmold3,
-        Flexmold4,
-        Flexmold5,
-        Flexmold6,
-        Flexmold7,
-      ]),
-      projectItems(IonMeter, "", "ION Meter", "Vue Js", [
-        IonMeter1,
-        IonMeter2,
-        IonMeter3,
-        IonMeter4,
-        IonMeter5,
-      ]),
+      projectItems(
+        DualCamerabg,
+        DualCamera,
+        "Dual Camera",
+        "One lens typically provides in-depth information, while the other captures the image. This enables impressive portrait mode effects and improves low-light performance.",
+        []
+      ),
+      projectItems(
+        Paranyamabg,
+        Pranayama,
+        "Paranyama App",
+        "Offers a convenient way to access guided breathing exercises and meditation techniques, helping users improve their overall well-being.",
+        [],
+        
+      ),
+      projectItems(
+        IonMeterbg,
+        IonMeter,
+        "Ion Meter",
+        "Provides a user-friendly interface for data visualization and analysis, allowing users to make informed decisions based on accurate measurement.",
+        []
+      ),
+      projectItems(
+        Itarianbg,
+        Itarian,
+        "Itarian",
+        "This application enables remote monitoring, security, and support, making IT administration more streamlined and responsive.",
+        []
+      ),
+      projectItems(
+        OrderRightbg,
+        OrderRight,
+        "Order Right",
+        "They streamline the entire order-to-delivery process, enhancing customer satisfaction and operational efficiency",
+        []
+      ),
+      projectItems(
+        RealOdorsbg,
+        RealOdors,
+        "RealOdors",
+        "They simplify property searches and real estate interactions for a more efficient and informed experience.",
+        []
+      ),
     ],
   },
   {
     id: hash(),
-    name: "Hardware Service",
-    path: "hardware-service",
-    category: "hardware",
+    name: "Web Development",
+    path: "web-development",
+    category: "Web",
     childs: [
-      projectItems(PtzKeyboard, "", "PTZkeyboard", "Hardware", [
-        PtzKeyboard1,
-        PtzKeyboard2,
-        PtzKeyboard3,
-        PtzKeyboard4,
-      ]),
-      projectItems(Sleepenhencer, "", "Sleepenhencer", "Hardware", [
-        Sleepenhencer1,
-        Sleepenhencer2,
-        Sleepenhencer3,
-        Sleepenhencer4,
-        Sleepenhencer5,
-        Sleepenhencer6,
-      ]),
-      projectItems(SoundSensor, "", "Sound Sensor", "Hardware", [
-        SoundSensor1,
-        SoundSensor2,
-        SoundSensor3,
-        SoundSensor4,
-        SoundSensor5,
-        SoundSensor6,
-      ]),
+      projectItems(
+        SeekSocialbg,
+        SeekSocial,
+        "Seek Social",
+        "Offer a range of features like user profiles, search functions, and messaging tools to foster connections and interactions.",
+        []
+      ),
+      projectItems(
+        TimelessTreatmentbg,
+        TimelessTreatment,
+        "Timeless Treatment",
+        "This website is an essential destination for those looking to make informed decisions about their timeless beauty journey.",
+        []
+      ),
+      projectItems(
+        TravelTradeReadybg,
+        TravelTradeReady,
+        "Travel Trade Ready",
+        "A comprehensive platform for businesses in the travel and tourism industry to connect, collaborate, and stay informed about the latest industry trends.",
+        []
+      ),
+      projectItems(
+        Trendifybg,
+        Trendify,
+        "Trendify",
+        "It's a go-to destination for fashion enthusiasts seeking style guidance and product insights. A dynamic online platform that showcases the latest fashion trends.",
+        []
+      ),
+      projectItems(
+        Nucalbg,
+        Nucal,
+        "Nucal",
+        "offers valuable information, product details, and customer resources, making it a one-stop destination for those interested in optimizing their nutritional health.",
+        []
+      ),
+      projectItems(
+        KineticTherapybg,
+        KineticTherapy,
+        "Kinetic Therapy",
+        "This website serves as a valuable resource for patients seeking expert physical therapy services and rehabilitation A valuable resource to start your journey towards improved health.",
+        []
+      ),
     ],
   },
   {
     id: hash(),
-    name: "Mechanical Service",
-    path: "mechanical-service",
-    category: "Mechanical",
+    name: "PCB Designing",
+    path: "pcb-designing",
+    category: "PCB",
     childs: [
       projectItems(
-        FogScreen,
-        "",
-        "Fog Screen Main Structure Design",
-        "Mechanical",
-        [FogScreen1, FogScreen2, FogScreen3, FogScreen4, FogScreen5, FogScreen6]
+        PCBbg,
+        WaterMonitor,
+        "Water Monitor",
+        "It encompasses cutting-edge printed circuit board (PCB) designs that enable real-time monitoring of various water parameters such as pH levels, conductivity, and contamination.",
+        []
       ),
       projectItems(
-        InDoor,
-        "",
-        "In-Door Monitor Device with American plug",
-        "Mechanical",
-        [
-          InDoor1,
-          InDoor2,
-          InDoor3,
-          InDoor4,
-          InDoor5,
-          InDoor6,
-          InDoor7,
-          // InDoor8,
-          // InDoor9,
-          // InDoor10,
-          // InDoor11,
-          // InDoor12,
-          // InDoor13,
-          // InDoor14,
-          // InDoor15,
-        ]
+        PCBbg,
+        CatanBoard,
+        "Catan Board",
+        "It offers intricate PCB designs with embedded sensors, allowing for interactive gameplay and automated resource tracking.",
+        []
       ),
-      projectItems(OutDoor, "", "Outdoor Monitor Device", "Mechanical", [
-        // OutDoor1,
-        // OutDoor2,
-        // OutDoor3,
-        // OutDoor4,
-        // OutDoor5,
-        // OutDoor6,
-        // OutDoor7,
-        // OutDoor8,
-        // OutDoor9,
-        // OutDoor10,
-        // OutDoor11,
-        // OutDoor12,
-        OutDoor13,
-        OutDoor14,
-        OutDoor15,
-        OutDoor16,
-        OutDoor17,
-        OutDoor18,
-        // OutDoor19,
-        // OutDoor20,
-        // OutDoor21,
-      ]),
       projectItems(
-        Tracking,
-        "https://faithletsgrow.com/",
-        "Tracking Device",
-        "Mechanical",
-        [Tracking1, Tracking2, Tracking3]
+        PCBbg,
+        LCDBoard,
+        "LCD Board",
+        "This system caters to businesses, institutions, and organizations seeking to implement dynamic and customizable visual communication solutions.",
+        []
+      ),
+      projectItems(
+        PCBbg,
+        SwitchBox,
+        "Switch Box",
+        "It is an innovative system that provides efficient PCB layouts that enhance the functionality and reliability of switch boxes used in automation, electronics, and industrial applications.",
+        []
       ),
       // projectItems(img_31, "https://emerynails.co.uk/", "Emery Nails Ltd"),
       // projectItems(img_34, "https://www.livejournal.com/", "Live Journal"),

@@ -975,15 +975,15 @@ export const seoData = [
       "description": "Components Library Design - Service | eSpark Consulting Group"
     },
     {
-      "page": "Contact US",
+      "page": "Let’s Talk",
       "url": "/contact",
-      "title": "Contact US | eSpark Consulting Group",
+      "title": "Let’s Talk | eSpark Consulting Group",
       "description": "We are just one ping away. Feel free to reach us. We'll get back to you as soon as possible. Your query is our utmost priority. Connect with us!",
       "keywords": "Contact, Talk, query here, Reach us, Call-us, ",
       "canonical": "https://esparkconsultants.com/ets-talk",
       "ogLocale": "en-PK",
       "ogType": "website",
-      "ogTitle": "Contact US | eSpark Consulting Group",
+      "ogTitle": "Let’s Talk | eSpark Consulting Group",
       "ogDescription": "We are just one ping away. Feel free to reach us. We'll get back to you as soon as possible. Your query is our utmost priority. Connect with us!",
       "ogUrl": "https://esparkconsultants.com/ets-talk",
       "ogSite_name": "eSpark Consulting Group",
@@ -992,7 +992,7 @@ export const seoData = [
       "ogImageSecure_url": "https://esparkconsultants.com/static/media/contact-img.ce289df779c4a6e552b3.png",
       "ogImageWidth": "1920",
       "ogImage:height": "1080",
-      "ogImageAlt": "Contact US | eSpark Consulting Group",
+      "ogImageAlt": "Let’s Talk | eSpark Consulting Group",
       "ogImageType": "image/jpeg",
       "articlePublished_time": "12/30/2022 0:00",
       "articleModified_time": "12/30/2022 0:00",
@@ -1005,7 +1005,7 @@ export const seoData = [
       "twitterDescription": "We are just one ping away. Feel free to reach us. We'll get back to you as soon as possible. Your query is our utmost priority. Connect with us!",
       "twitterImage": "https://esparkconsultants.com/static/media/contact-img.ce289df779c4a6e552b3.png",
       "twitterSite": "esparkconsgroup",
-      "twitterTitle": "Contact US | eSpark Consulting Group"
+      "twitterTitle": "Let’s Talk | eSpark Consulting Group"
     },
     {
       "page": "Products",

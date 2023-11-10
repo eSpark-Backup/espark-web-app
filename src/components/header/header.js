@@ -269,7 +269,7 @@ const Header = ({ scrollToLetsTalk }) => {
                     </div> */}
                   </Link>
                 </li>
-                {/* <li
+                <li
                   className="nav-item"
                   onClick={() => {
                     setSelected(2);
@@ -287,7 +287,7 @@ const Header = ({ scrollToLetsTalk }) => {
                       Portfolio
                     </span>
                   </Link>
-                </li> */}
+                </li>
                 <li
                   className="nav-item"
                   onClick={() => {
@@ -344,7 +344,7 @@ const Header = ({ scrollToLetsTalk }) => {
               ) : (
                 <div className="headerBtn smallNone">
                   <div onClick={scrollToLetsTalk} className="btn-content">
-                    <span>Contact Us</span>
+                    <span>Let’s Talk</span>
                   </div>
                 </div>
               )}
@@ -472,7 +472,7 @@ const Header = ({ scrollToLetsTalk }) => {
                 );
               })}
             </Collapse>
-            {/* <Link
+            <Link
               to="/portfolio"
               className={
                 pathname === "/portfolio"
@@ -482,7 +482,7 @@ const Header = ({ scrollToLetsTalk }) => {
               onClick={toggleDrawer}
             >
               <span>Portfolio</span>
-            </Link> */}
+            </Link>
             <Link
               to="/careers"
               className={
@@ -510,7 +510,7 @@ const Header = ({ scrollToLetsTalk }) => {
             <Button
               design={14}
               onClick={() => setOpenDrawer(false)}
-              title={"Contact Us"}
+              title={"Let’s Talk"}
             />
           </Link>
         </div>
