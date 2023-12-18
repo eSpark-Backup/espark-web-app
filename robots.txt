@@ -46,4 +46,4 @@ Disallow: /?category=*
 Disallow: /?ap=*
 Disallow: /?email=*
 Disallow: /?firstname=*
-Sitemap: https://esparkconsultants.com/sitemap.xml
+Sitemap: https://esparkconsultants.com/sitemap_index.xml
