@@ -2,7 +2,7 @@ import Axios from "axios";
 export const getOpeningJobs = async () => {
   try {
     const data = await Axios.get(
-      "https://esparkconsultants.com/old/wp-json/wp/v2/jober"
+      "https://hasnitube.com/old/wp-json/wp/v2/jober"
     );
     if(typeof data?.data === 'string'){
       return [];
@@ -18,7 +18,7 @@ export const getOpeningJobs = async () => {
 export const getSingleOpeningJobs = async (id) => {
   try {
     const { data } = await Axios.get(
-      `https://esparkconsultants.com/old/wp-json/wp/v2/jober/${id}`
+      `https://hasnitube.com/old/wp-json/wp/v2/jober/${id}`
     );
     return data;
   } catch (error) {
