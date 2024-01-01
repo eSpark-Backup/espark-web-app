@@ -28,11 +28,11 @@ export const getSingleOpeningJobs = async (id) => {
 
 export const optionData = (data) => {
   const jobCategory = data?.map((item) => {
-   if(item?.acf) {
-     return item?.acf?.job_category[0];
-   }
-  //  return jobCategory
-  });
+    if (item?.acf?.job_category && item.acf.job_category.length > 0) {
+      return item.acf.job_category[0];
+    }
+    return null; // Return null for undefined or empty job_category
+  }).filter(category => category !== null); 
   const jobType = data?.map((item) => {
     return item?.acf?.job_type;
   });
