@@ -17,7 +17,7 @@ const OurGoalStatement = () => {
                   <>
                     <div className={`col-sm-4 col-md-4 col-lg-2  ${styles.aboutCol}`}>
                       <div className={styles.ourGoalStatHexagon}>
-                        <img src={items.icon} className={styles.icon} />
+                        <img src={items.icon} className={styles.icon} alt="goalSetimg"/>
                         <div className={styles.face1}></div>
                         <div className={styles.face2}></div>
                       </div>

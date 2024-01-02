@@ -1,15 +1,12 @@
 import React, { useRef, useState } from "react";
-import { services } from "../../helper/services";
 import letsTalkImage from "../../assets/images/letsTalk.svg";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
 import Button from "../button/button";
 import style from "./style.module.css";
 import SectionTitle from "../sectionTitle";
-import { IMaskInput } from "react-imask";
 import "../../assets/css/responsive.css";
-const EmailAddressMask = /^\S*@?\S*$/;
-const ContactNumberMask = "+{00}(000)000-00000";
+
 
 const LetsTalk = ({ modal, modelClose, link, h1 }) => {
   const [email, setEmail] = useState("");

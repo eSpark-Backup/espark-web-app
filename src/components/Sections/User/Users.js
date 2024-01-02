@@ -3,8 +3,6 @@ import "./style.css";
 import { completedProject } from "../../../helper/projectComplate";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "./AnimatedProgressProvider";
-import { easeQuadInOut } from "d3-ease";
-import AnimatedProgressProvider from "./AnimatedProgressProvider";
 import "react-circular-progressbar/dist/styles.css";
 import SectionTitle from "../../sectionTitle";
 

@@ -1,15 +1,12 @@
 import React from "react";
-import { useRef } from "react";
 import Slider from "react-slick";
-import { serviceData } from "../../../../helper/serviceCards";
 import { services } from "../../../../helper/services";
 import ServicesCard from "../../../services-card/servicesCard";
 import "./serviceSlider.css";
-import { Animated } from "react-animated-css";
 import { Link } from "react-router-dom";
 
 function ServiceSlider() {
-  const sliderRef = useRef(null);
+
   const CustomNextArrow = ({ onClick }) => {
     return (
       <div className="nextBtn" onClick={onClick}>

@@ -129,14 +129,14 @@ const Button = ({
   }
   if (design === 9) {
     return (
-      <a href={link} rel="nofollow" target="_blank">
+      <a href={link} target="_blank" rel="noreferrer">
         {title}
       </a>
     );
   }
   if (design === 10) {
     return (
-      <a className="icon" href={link} target="_blank">
+      <a className="icon" href={link} target="_blank" rel="noreferrer">
         <FaLongArrowAltRight />
       </a>
     );
@@ -147,6 +147,7 @@ const Button = ({
         <a
           href={link}
           target="_blank"
+          rel="noreferrer"
           className={style.btnMargin}
           onClick={onClick}
           disabled={disabled}
@@ -163,6 +164,7 @@ const Button = ({
         <a
           href={link}
           target="_blank"
+          rel="noreferrer"
           className={style.btnMargin}
           onClick={onClick}
           disabled={disabled}

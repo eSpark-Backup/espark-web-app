@@ -137,47 +137,47 @@ const Eventcard = () => {
                               <div className="event-content">
                                 <div className="event-info">
                                   <div className="event-date">
-                                    <a>
+                                    <a href="">
                                       <i className="bi bi-calendar2-week"></i>{" "}
                                       {items.date}
                                     </a>
                                   </div>
                                   <div className="event-location">
-                                    <a>
+                                    <a href="">
                                       <i className="bi bi-geo-alt"></i>{" "}
                                       {items.country}
                                     </a>
                                   </div>
                                 </div>
                                 <h5 className="event-title">
-                                  <a>
+                                  <a href="">
                                     Media companies need to better one then
                                     educate advertisers.
                                   </a>
                                 </h5>
                                 <div className="event-bottom">
                                   <div className="event-readme">
-                                    <a>{items.booking}</a>
+                                    <a href="">{items.booking}</a>
                                   </div>
                                   <div className="event-share-icons">
                                     <ul className="share-options">
                                       <li>
-                                        <a>
+                                        <a href="">
                                           <i className="fab fa-facebook-f"></i>
                                         </a>
                                       </li>
                                       <li>
-                                        <a>
+                                        <a href="">
                                           <i className="fab fa-instagram"></i>
                                         </a>
                                       </li>
                                       <li>
-                                        <a>
+                                        <a href="">
                                           <i className="fab fa-linkedin-in"></i>
                                         </a>
                                       </li>
                                       <li>
-                                        <a>
+                                        <a href="">
                                           <i className="fab fa-twitter"></i>
                                         </a>
                                       </li>
