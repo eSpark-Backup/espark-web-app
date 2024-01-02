@@ -43,7 +43,7 @@ function NotFound() {
 
             <div className="text">
                 <article>
-                    <p>The page you requested cannot be displayed right. Try Diffrent 
+                    <p>The page you requested cannot be displayed right now. Try Diffrent 
           page.</p>
           <br/>
                     <Button title="Back to home" link="/" design={1} />
