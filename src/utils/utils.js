@@ -40,7 +40,7 @@ export const optionData = (data) => {
     if(item?.acf){
       return item?.acf?.job_location[0];
     }
-    // return jobLocation;
+    return null;
   });
 
   const getMergeArrayCat = mergeArray(jobCategory);

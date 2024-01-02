@@ -1,16 +1,13 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { services } from "../../helper/services";
-import SectionTitle from "./../../components/sectionTitle/index";
-import ProcessCircle from "../../components/circle/processCircle";
 import Herosection from "../../components/Sections/Hero/Herosection";
+import ProcessCircle from "../../components/circle/processCircle";
 import CenteredTabs from "../../components/tabMui/centeredTab";
+import { services } from "../../helper/services";
 import TabCard from "../tabCard/tabCard";
 import TabDescription from "../tabDescription/tabDescription";
+import SectionTitle from "./../../components/sectionTitle/index";
 import styles from "./style.module.css";
-import { shapes } from "../../helper/ImageUrl";
-import Title from "../../components/title/title";
-import { useEffect } from "react";
 
 const ServiceDetail = () => {
   const params = useParams();

@@ -1,17 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { services } from "../../helper/services";
-import { products } from "../../helper/products";
-import "react-responsive-modal/styles.css";
-import { Modal } from "react-responsive-modal";
-import GetInTouch from "../getInTouch/GetInTouch";
-import { Link, useLocation } from "react-router-dom";
-import { AiOutlineCaretRight } from "react-icons/ai";
-import "./header.css";
-import LayoutOne from "./../../layout/layoutOne";
-import Title from "./../title/title";
-import Button from "./../button/button";
-import Drawer from "react-modern-drawer";
+import { useEffect, useState } from "react";
 import { Collapse } from "react-collapse";
+import Drawer from "react-modern-drawer";
+import { Modal } from "react-responsive-modal";
+import "react-responsive-modal/styles.css";
+import { Link, useLocation } from "react-router-dom";
+import { services } from "../../helper/services";
+import GetInTouch from "../getInTouch/GetInTouch";
+import Button from "./../button/button";
+import "./header.css";
 
 //import styles 👇
 import "react-modern-drawer/dist/index.css";

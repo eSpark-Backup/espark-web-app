@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { ShimmerPostList } from "react-shimmer-effects";
+import BlogCardRedesign from "../../components/blogs/blogCardRedesign";
+import "../../components/blogs/blogRedesign.css";
+import BlogsBanner from "../../components/blogs/blogsBanner";
 import {
-  BlogCardMap,
   BlogImageMap,
   BlogStripMap,
   getApiCall,
-  getCatApiCall,
+  getCatApiCall
 } from "./../../utils/Blogs";
-import "../../components/blogs/blogRedesign.css";
-import BlogsBanner from "../../components/blogs/blogsBanner";
-import BlogCardRedesign from "../../components/blogs/blogCardRedesign";
-import { ShimmerPostList } from "react-shimmer-effects";
 
 export default function Blog() {
   const [post, setPost] = useState();

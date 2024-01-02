@@ -1,16 +1,13 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Moment from "react-moment";
-import { getOpeningJobs } from "../../utils/utils";
-import "./style.css";
 import { ShimmerText, ShimmerThumbnail } from "react-shimmer-effects";
+import CareerImg from "../../assets/images/hero-section/Careerherosection.svg";
+import Herosection from "../../components/Sections/Hero/Herosection";
+import Button from "../../components/button/button";
+import { getOpeningJobs } from "../../utils/utils";
 import { ShemarLength } from "./../../helper/Shemars";
 import { optionData } from "./../../utils/utils";
-import Button from "../../components/button/button";
-import Herosection from "../../components/Sections/Hero/Herosection";
-import CareerImg from "../../assets/images/hero-section/Careerherosection.svg";
-import SectionTitle from "../../components/sectionTitle";
-import { Link } from "react-router-dom";
+import "./style.css";
 const Careers = () => {
   const [careersData, setCareersData] = useState([]);
   const [getCat, setGetCat] = useState([]);
