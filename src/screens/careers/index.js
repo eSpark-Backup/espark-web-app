@@ -26,12 +26,12 @@ const Careers = () => {
   useEffect(() => {
     const main = async () => {
       const data = await getOpeningJobs();
-    if(data){
-      setCareersData(data);
-      const getDatafromJobs = optionData(data);
-      setGetCat(getDatafromJobs);
-      setAllData(data);
-    }
+      if (data) {
+        setCareersData(data);
+        const getDatafromJobs = optionData(data);
+        setGetCat(getDatafromJobs);
+        setAllData(data);
+      }
     };
     main();
   }, []);
@@ -160,9 +160,11 @@ const Careers = () => {
   // };
   const applyFilter = (jobs, filter, currentFilter) => {
     // console.log("filter", currentFilter);
-
+    //   const job_category = jobs?.filter((job) =>
+    //   job?.acf[currentFilter]?.includes(filter[currentFilter])
+    // );
     const job_category = jobs?.filter((job) =>
-      job?.acf[currentFilter]?.includes(filter[currentFilter])
+      job?.title?.rendered.includes(filter[currentFilter])
     );
     return filter[currentFilter] === "All" ? jobs : job_category;
     // const job_type = jobs.filter((job) =>
@@ -240,7 +242,7 @@ const Careers = () => {
         <br />
 
         {careersData && careersData.length > 0 ? (
-           careersData?.map((item) => {
+          careersData?.map((item) => {
             return (
               <>
                 <div className="careers">
@@ -283,7 +285,7 @@ const Careers = () => {
                         </h4>
 
                         <p className="cardtitle">
-                          {item?.acf ? item?.acf.job_location[0] : ''}{" "}
+                          {item?.acf ? item?.acf.job_location[0] : ""}{" "}
                         </p>
                         <p>
                           <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
