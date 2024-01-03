@@ -9,7 +9,7 @@ on:
 
 jobs:
   build-deploy:
-    runs-on: webapp-runner
+    runs-on: main-runner
 
     strategy:
       matrix:
