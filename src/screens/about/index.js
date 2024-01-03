@@ -7,7 +7,6 @@ import OurJourney from "../../components/aboutComponents/ourJourney";
 import OurTeam from "../../components/aboutComponents/ourTeam";
 import OurExecutives from "../../components/aboutComponents/ourExecutives";
 import OurGoalStatement from "../../components/aboutComponents/ourGoalStatement";
-import OurPartner from "../../components/aboutComponents/ourPartner";
 
 export default function About() {
   return (

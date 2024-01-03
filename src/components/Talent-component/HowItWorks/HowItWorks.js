@@ -34,14 +34,14 @@ const HowItWorks = () => {
             <div className={styles.mainContainer}>
               <div
                 className={
-                  item.type == "odd"
+                  item.type === "odd"
                     ? styles.leftPointImageContainer
                     : styles.rightPointImageContainer
                 }
               >
                 <div
                   className={
-                    item.type == "odd" ? styles.leftPoint : styles.rightPoint
+                    item.type === "odd" ? styles.leftPoint : styles.rightPoint
                   }
                 >
                   <div className={styles.point}>{item._id}</div>
@@ -49,15 +49,15 @@ const HowItWorks = () => {
               </div>
               <div
                 className={
-                  item.type == "odd"
+                  item.type === "odd"
                     ? styles.leftSideContainer
                     : styles.rightSideContainer
                 }
               >
-                {item.type == "even" ? (
+                {item.type === "even" ? (
                   <div
                     className={
-                      item.type == "odd"
+                      item.type === "odd"
                         ? styles.leftSideLogoContainer
                         : styles.rightSideLogoContainer
                     }
@@ -73,14 +73,14 @@ const HowItWorks = () => {
                 ) : null}
                 <div
                   className={
-                    item.type == "odd"
+                    item.type === "odd"
                       ? styles.leftSideContentContainer
                       : styles.rightSideContentContainer
                   }
                 >
                   <h4
                     className={
-                      item.type == "odd"
+                      item.type === "odd"
                         ? styles.leftContentHeading
                         : styles.rightContentHeading
                     }
@@ -89,17 +89,17 @@ const HowItWorks = () => {
                   </h4>
                   <p
                     className={
-                      item.type == "odd"
+                      item.type === "odd"
                         ? styles.leftContentPara
                         : styles.rightContentPara
                     }
                     dangerouslySetInnerHTML={{ __html: item.content }}
                   ></p>
                 </div>
-                {item.type == "odd" ? (
+                {item.type === "odd" ? (
                   <div
                     className={
-                      item.type == "odd"
+                      item.type === "odd"
                         ? styles.leftSideLogoContainer
                         : styles.rightSideLogoContainer
                     }

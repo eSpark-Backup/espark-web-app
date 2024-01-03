@@ -13,7 +13,7 @@ const GetModal = ({ items, getid, handleDevTypeClick }) => {
             return (
               <>
                 <div className="ImageContainer">
-                  <img src={item.images} className="imagesHire" />
+                  <img src={item.images} className="imagesHire" alt="containerImage" />
                 </div>
                 {item.btns &&
                   item.btns.map((btnItem, index) => (

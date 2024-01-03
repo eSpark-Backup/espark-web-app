@@ -10,7 +10,6 @@ import GetModal from "../../getInTouch/getModal";
 import Calendly from "../../CalendlyMeeting/calendly";
 
 const HirATalentCard = () => {
-  const [index, setIndex] = useState(0);
   const [open, setOpen] = useState(false);
   const [getid, setGetid] = useState("");
   const [showMeetingModal, setShowMeetingModal] = useState(false);
@@ -26,20 +25,20 @@ const HirATalentCard = () => {
     setShowMeetingModal(false);
   };
 
-  const changeSlider = (sum) => {
-    if (index == 5 && sum == 1) {
-      setIndex(0);
-    } else if (index == 0 && sum == -1) {
-      setIndex(5);
-    } else {
-      setIndex(index + sum);
-    }
-  };
+  // const changeSlider = (sum) => {
+  //   if (index == 5 && sum == 1) {
+  //     setIndex(0);
+  //   } else if (index == 0 && sum == -1) {
+  //     setIndex(5);
+  //   } else {
+  //     setIndex(index + sum);
+  //   }
+  // };
 
   const CustomNextArrow = ({ onClick }) => {
     return (
       <div onClick={onClick}>
-        <img src={RightSwipe} className={styles.rightSlideBtn} />
+        <img src={RightSwipe} className={styles.rightSlideBtn} alt="CustomNextArrow" />
       </div>
     );
   };
@@ -47,7 +46,7 @@ const HirATalentCard = () => {
   const CustomPrevArrow = ({ onClick }) => {
     return (
       <div onClick={onClick}>
-        <img src={LeftSwipe} className={styles.leftSlideBtn} />
+        <img src={LeftSwipe} className={styles.leftSlideBtn} alt="CustomPrevArrow"/>
       </div>
     );
   };

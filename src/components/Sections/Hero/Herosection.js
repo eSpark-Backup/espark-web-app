@@ -68,7 +68,7 @@ function Herosection({
               <img
                 src={images}
                 className={imgResize ? `${styles.hireimage}` : `${styles.images}`}
-                alt="image"
+                alt="image103"
               />
             </div>
           </div>

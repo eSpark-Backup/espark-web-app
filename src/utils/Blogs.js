@@ -1,16 +1,13 @@
 import Axios from "axios";
 import {
-  ShimmerContentBlock,
-  ShimmerPostItem,
   ShimmerPostList,
-  ShimmerSectionHeader,
   ShimmerText,
   ShimmerThumbnail,
-  ShimmerTitle,
+  ShimmerTitle
 } from "react-shimmer-effects";
+import "../components/blogs/blogRedesign.css";
 import BlogsCard from "../components/blogs/blogsCard";
 import BlogsStrip from "../components/blogs/blogsStrip";
-import "../components/blogs/blogRedesign.css";
 export const getApiCall = async (page) => {
   try {
     const pageCount = page ? page : 1;

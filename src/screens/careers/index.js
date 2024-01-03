@@ -1,16 +1,13 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Moment from "react-moment";
-import { getOpeningJobs } from "../../utils/utils";
-import "./style.css";
 import { ShimmerText, ShimmerThumbnail } from "react-shimmer-effects";
+import CareerImg from "../../assets/images/hero-section/Careerherosection.svg";
+import Herosection from "../../components/Sections/Hero/Herosection";
+import Button from "../../components/button/button";
+import { getOpeningJobs } from "../../utils/utils";
 import { ShemarLength } from "./../../helper/Shemars";
 import { optionData } from "./../../utils/utils";
-import Button from "../../components/button/button";
-import Herosection from "../../components/Sections/Hero/Herosection";
-import CareerImg from "../../assets/images/hero-section/Careerherosection.svg";
-import SectionTitle from "../../components/sectionTitle";
-import { Link } from "react-router-dom";
+import "./style.css";
 const Careers = () => {
   const [careersData, setCareersData] = useState([]);
   const [getCat, setGetCat] = useState([]);
@@ -26,12 +23,12 @@ const Careers = () => {
   useEffect(() => {
     const main = async () => {
       const data = await getOpeningJobs();
-    if(data){
-      setCareersData(data);
-      const getDatafromJobs = optionData(data);
-      setGetCat(getDatafromJobs);
-      setAllData(data);
-    }
+      if (data) {
+        setCareersData(data);
+        const getDatafromJobs = optionData(data);
+        setGetCat(getDatafromJobs);
+        setAllData(data);
+      }
     };
     main();
   }, []);
@@ -131,6 +128,7 @@ const Careers = () => {
     // console.log(newData);
 
     setCareersData(newData);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filter]);
 
   // const jobFunction = (jobs, filter) => {
@@ -160,9 +158,11 @@ const Careers = () => {
   // };
   const applyFilter = (jobs, filter, currentFilter) => {
     // console.log("filter", currentFilter);
-
+    //   const job_category = jobs?.filter((job) =>
+    //   job?.acf[currentFilter]?.includes(filter[currentFilter])
+    // );
     const job_category = jobs?.filter((job) =>
-      job?.acf[currentFilter]?.includes(filter[currentFilter])
+      job?.title?.rendered.includes(filter[currentFilter])
     );
     return filter[currentFilter] === "All" ? jobs : job_category;
     // const job_type = jobs.filter((job) =>
@@ -240,7 +240,7 @@ const Careers = () => {
         <br />
 
         {careersData && careersData.length > 0 ? (
-           careersData?.map((item) => {
+          careersData?.map((item) => {
             return (
               <>
                 <div className="careers">
@@ -283,7 +283,7 @@ const Careers = () => {
                         </h4>
 
                         <p className="cardtitle">
-                          {item?.acf ? item?.acf.job_location[0] : ''}{" "}
+                          {item?.acf ? item?.acf.job_location[0] : ""}{" "}
                         </p>
                         <p>
                           <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>

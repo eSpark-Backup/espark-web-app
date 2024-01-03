@@ -174,13 +174,13 @@
 }
 
 .linkClass {
-  text-align: start;
-  align-items: start;
+  text-align: flex-start;
+  align-items: flex-start;
 }
 
 .headroom a {
-  text-align: start;
-  align-items: start;
+  text-align: flex-start;
+  align-items: flex-start;
 }
 
 .ptag {
@@ -216,13 +216,13 @@
   }
 
   .linkClass {
-    text-align: start;
-    align-items: start;
+    text-align: flex-start;
+    align-items: flex-start;
   }
 
   a {
-    text-align: start;
-    align-items: start;
+    text-align: flex-start;
+    align-items: flex-start;
   }
 
   .ptag {
@@ -254,13 +254,13 @@
   }
 
   .linkClass {
-    text-align: start;
-    align-items: start;
+    text-align: flex-start;
+    align-items: flex-start;
   }
 
   a {
-    text-align: start;
-    align-items: start;
+    text-align: flex-start;
+    align-items: flex-start;
   }
 
   .ptag {

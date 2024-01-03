@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import SectionTitle from "../../sectionTitle";
 import styles from "./style.module.css";
 import { projects } from "./../../../helper/projects";
-import Galleryimages from "./indeximages";
 
 const Portfolio = ({ data, title }) => {
   const [newstate, setNewstate] = useState(projects[0]);
@@ -27,6 +26,7 @@ const Portfolio = ({ data, title }) => {
       localStorage.setItem("portfolio_id", "App Development");
       setNewstate(projects.filter((item) => item.name === "App Development"));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   
 
@@ -90,14 +90,14 @@ const Portfolio = ({ data, title }) => {
                     <img
                       src={item?.image}
                       className={styles.portfolioimages}
-                      alt="Background Image"
+                      alt="BackgroundImage"
                       loading="eager"
                     />
                     {item.projectUrl && (
                       <img
                         src={item.projectUrl}
                         className={` ${overlayClass}`}
-                        alt="Overlay Image"
+                        alt="OverlayImage"
                         loading="eager"
                       />
                     )}

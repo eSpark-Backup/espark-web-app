@@ -4,10 +4,9 @@ export const getOpeningJobs = async () => {
     const data = await Axios.get(
       "https://hasnitube.com/old/wp-json/wp/v2/jober"
     );
-    if(typeof data?.data === 'string'){
+    if (typeof data?.data === "string") {
       return [];
-    }
-    else{
+    } else {
       return data?.data;
     }
   } catch (error) {
@@ -27,20 +26,27 @@ export const getSingleOpeningJobs = async (id) => {
 };
 
 export const optionData = (data) => {
-  const jobCategory = data?.map((item) => {
-   if(item?.acf) {
-     return item?.acf?.job_category[0];
-   }
-  //  return jobCategory
-  });
+  const jobCategory = data
+    ?.map((item) => {
+      // if (item?.acf?.job_category && item?.acf?.job_category?.length > 0) {
+      //   return item.acf.job_category[0];
+      // }
+
+      if (item?.title) {
+        return item?.title?.rendered;
+      }
+
+      return null; // Return null for undefined or empty job_category
+    })
+    .filter((category) => category !== null);
   const jobType = data?.map((item) => {
     return item?.acf?.job_type;
   });
   const jobLocation = data?.map((item) => {
-    if(item?.acf){
+    if (item?.acf) {
       return item?.acf?.job_location[0];
     }
-    // return jobLocation;
+    return null;
   });
 
   const getMergeArrayCat = mergeArray(jobCategory);
