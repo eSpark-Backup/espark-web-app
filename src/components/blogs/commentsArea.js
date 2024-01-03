@@ -15,20 +15,19 @@ function CommentsArea() {
   const form = useRef();
 
   let array = [];
-  let limit = 15;
 
-  const handleUpdateIntrestData = (e, index) => {
-    const data = array.find((item) => item === e);
+  // const handleUpdateIntrestData = (e, index) => {
+  //   const data = array.find((item) => item === e);
 
-    if (data === undefined) {
-      array.push(e);
-    } else {
-      const indexx = array.indexOf(e);
-      if (indexx > -1) {
-        array.splice(indexx, 1);
-      }
-    }
-  };
+  //   if (data === undefined) {
+  //     array.push(e);
+  //   } else {
+  //     const indexx = array.indexOf(e);
+  //     if (indexx > -1) {
+  //       array.splice(indexx, 1);
+  //     }
+  //   }
+  // };
 
   const clearState = () => {
     setEmail("");

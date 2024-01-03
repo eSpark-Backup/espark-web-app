@@ -5,6 +5,7 @@ import Slider from "react-slick";
 function CenteredTabs({ cardHandler, tabSelect, tabData }) {
   const selectRef = useRef(null);
   const getId = localStorage.getItem("child_id");
+
   useEffect(() => {
     cardHandler(
       getId === null
@@ -14,7 +15,7 @@ function CenteredTabs({ cardHandler, tabSelect, tabData }) {
     if (selectRef.current) {
       selectRef.current.value = tabData[0].title;
     }
-  }, [getId, tabData]);
+  }, [getId, tabData, ]);
 
   const CustomNextArrow = ({ onClick }) => {
     return (

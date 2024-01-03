@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Animate } from "react-move";
 
 const AnimatedProgressProvider = ({
@@ -10,13 +10,15 @@ const AnimatedProgressProvider = ({
   children
 }) => {
   const [isAnimated, setIsAnimated] = useState(false);
+  const durationRef = useRef(duration);
+  const repeatRef = useRef(repeat);
 
   useEffect(() => {
     let interval = undefined;
-    if (repeat) {
+    if (repeatRef.current) {
       interval = window.setInterval(() => {
-        setIsAnimated(prevIsAnimated => !prevIsAnimated);
-      }, duration * 1000);
+        setIsAnimated((prevIsAnimated) => !prevIsAnimated);
+      }, durationRef.current * 1000);
     } else {
       setIsAnimated(true);
     }
@@ -26,14 +28,14 @@ const AnimatedProgressProvider = ({
   return (
     <Animate
       start={() => ({
-        value: valueStart
+        value: valueStart,
       })}
       update={() => ({
         value: [isAnimated ? valueEnd : valueStart],
         timing: {
-          duration: duration * 1000,
-          ease: easingFunction
-        }
+          duration: durationRef.current * 1000,
+          ease: easingFunction,
+        },
       })}
     >
       {({ value }) => children(value)}
@@ -42,7 +44,7 @@ const AnimatedProgressProvider = ({
 };
 
 AnimatedProgressProvider.defaultProps = {
-  valueStart: 0
+  valueStart: 0,
 };
 
 export default AnimatedProgressProvider;

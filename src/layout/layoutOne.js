@@ -1,10 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 import Footer from "../components/footer/footer";
 import Header from "../components/header/header";
 import styles from "./style.module.css";
 
 const LayoutOne = ({ children }) => {
-  const letsTalkRef = useRef(null);
 
   // Function to scroll to the letsTalk component
   const scrollToLetsTalk = () => {

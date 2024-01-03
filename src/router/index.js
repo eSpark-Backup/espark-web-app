@@ -1,30 +1,23 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, useRoutes } from "react-router-dom";
 import About from "../screens/about";
 import Blog from "../screens/blog/blog";
-import Contact from "../screens/contact";
 import Home from "../screens/home";
 import Projects from "../screens/projects/projects";
 import Services from "../screens/services";
 import ServiceDetail from "../screens/services/serviceDetail";
 import LayoutOne from "../layout/layoutOne";
 import ProjectDetails from "../screens/project-details/projectDetails";
-import Products from "../screens/products";
-import MobileApp from "../screens/mobileApp";
 import Privacy from "./../screens/privacy/Privacy";
 import NotFound from "../screens/not-found/notFound";
-import Teams from "../screens/teams/teams";
 import BlogDetail from "../screens/blog/blog-detail";
 import Careers from "../screens/careers";
 import JobDetail from "../screens/careers/jobDetail";
 import SEO from "./../utils/SEO";
-import Event from "./../components/event/event";
 import Upcoming from "../screens/upcoming-page";
-import Talent from "../screens/talent";
 
 
 const AppRoutes = () => {
-  const data = window.scrollTo(0, 0);
 
   let routes = useRoutes([
     { path: "/", element: <Home /> },

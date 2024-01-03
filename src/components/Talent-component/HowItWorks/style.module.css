@@ -35,7 +35,7 @@
 .mainContainer {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 100px 1% 50px 1%;
 }
 
@@ -45,13 +45,13 @@
 
 .rightPointImageContainer {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .leftPoint {
   width: 50%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding-right: 25px;
 }
 
@@ -90,7 +90,7 @@
 .rightSideContainer {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .rightSideContentContainer {
@@ -104,7 +104,7 @@
 .rightSideLogoContainer {
   width: 50%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding-right: 25px;
 }
 

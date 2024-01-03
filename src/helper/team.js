@@ -1310,7 +1310,6 @@ export const team = [
         facebook: "",
         message: "",
       },
-      ,
       {
         teamName: "Finance",
         reporting: "CFO",

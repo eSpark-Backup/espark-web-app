@@ -26,12 +26,12 @@ function HeroSectionThree({ heading1, image, paragraph, link, bgimage }) {
                 <img
                   src={image}
                   className="animate__animated animate__fadeInUp animate__delay-0.8s"
-                  alt="image"
+                  alt="image01"
                 />
                 <img
                   src={require("../../assets/images/iot-banner-image/iot-shape1.png")}
                   className="animate__animated animate__zoomIn"
-                  alt="image"
+                  alt="image01"
                 />
               </div>
             )}

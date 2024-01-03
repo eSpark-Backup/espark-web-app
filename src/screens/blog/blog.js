@@ -1,25 +1,20 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { ShimmerPostList } from "react-shimmer-effects";
+import BlogCardRedesign from "../../components/blogs/blogCardRedesign";
+import "../../components/blogs/blogRedesign.css";
+import BlogsBanner from "../../components/blogs/blogsBanner";
 import {
-  BlogCardMap,
   BlogImageMap,
   BlogStripMap,
   getApiCall,
-  getCatApiCall,
 } from "./../../utils/Blogs";
-import "../../components/blogs/blogRedesign.css";
-import BlogsBanner from "../../components/blogs/blogsBanner";
-import BlogCardRedesign from "../../components/blogs/blogCardRedesign";
-import { ShimmerPostList } from "react-shimmer-effects";
 
 export default function Blog() {
   const [post, setPost] = useState();
-  const [count, setCount] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
 
   useEffect(() => {
     const main = async () => {
       const data = await getApiCall();
-      setTotalPages(data.headers["x-wp-totalpages"]);
       setPost(data.data);
     };
     main();
@@ -37,28 +32,28 @@ export default function Blog() {
   // const updatedPost = getUpdatedPost(post); 
 
 
-  const catPost = async (e) => {
-    const data = await getCatApiCall(e);
-    setPost(data.data);
-  };
+  // const catPost = async (e) => {
+  //   const data = await getCatApiCall(e);
+  //   setPost(data.data);
+  // };
 
-  const nextPost = async () => {
-    setCount(count + 1);
-    if (count <= totalPages) {
-      const data = await getApiCall(count);
-      setTotalPages(data.headers["x-wp-totalpages"]);
-      setPost(data.data);
-    }
-  };
+  // const nextPost = async () => {
+  //   setCount(count + 1);
+  //   if (count <= totalPages) {
+  //     const data = await getApiCall(count);
+  //     setTotalPages(data.headers["x-wp-totalpages"]);
+  //     setPost(data.data);
+  //   }
+  // };
 
-  const prvPost = async () => {
-    setCount(count - 1);
-    if (count === totalPages) {
-      const data = await getApiCall(count);
-      setTotalPages(data.headers["x-wp-totalpages"]);
-      setPost(data.data);
-    }
-  };
+  // const prvPost = async () => {
+  //   setCount(count - 1);
+  //   if (count === totalPages) {
+  //     const data = await getApiCall(count);
+  //     setTotalPages(data.headers["x-wp-totalpages"]);
+  //     setPost(data.data);
+  //   }
+  // };
   return (
     <div >
       <BlogsBanner

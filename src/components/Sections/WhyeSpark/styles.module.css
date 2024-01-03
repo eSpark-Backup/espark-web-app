@@ -9,7 +9,7 @@
    font-family: 'Poppins';
    transform: rotate(270deg);
    display: flex;
-   align-items: end;
+   align-items: flex-end;
    width: 100px;
    margin-top: 40px !important;
 }
@@ -124,7 +124,7 @@
 
    .image {
       display: flex;
-      align-items: end;
+      align-items: flex-end;
       /* margin-top: 100px; */
    }
 

@@ -45,7 +45,7 @@ function HeroSectionTwo({ heading1, paragarph, features }) {
                     <div className="col-lg-4 col-md-6">
                       <div className="single-box">
                         <h3>
-                          <a>{item.name}</a>
+                          <p>{item.name}</p>
                         </h3>
                         <p>{item.description}</p>
                       </div>
