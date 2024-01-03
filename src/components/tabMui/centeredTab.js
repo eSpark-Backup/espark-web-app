@@ -15,6 +15,7 @@ function CenteredTabs({ cardHandler, tabSelect, tabData }) {
     if (selectRef.current) {
       selectRef.current.value = tabData[0].title;
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [getId, tabData, ]);
 
   const CustomNextArrow = ({ onClick }) => {
