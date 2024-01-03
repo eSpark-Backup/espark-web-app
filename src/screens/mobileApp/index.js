@@ -175,6 +175,7 @@ const MobileApp = () => {
                   <a
                     href="https://play.google.com/store/apps/details?id=com.commanddo"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img
                       src={require("../../assets/images/App Screenshots/Command Do App Screenshots/btn-playstore.png")}

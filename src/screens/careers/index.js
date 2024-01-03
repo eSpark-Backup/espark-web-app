@@ -128,6 +128,7 @@ const Careers = () => {
     // console.log(newData);
 
     setCareersData(newData);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filter]);
 
   // const jobFunction = (jobs, filter) => {

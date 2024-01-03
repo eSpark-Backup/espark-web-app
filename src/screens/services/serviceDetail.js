@@ -27,6 +27,7 @@ const ServiceDetail = () => {
     localStorage?.setItem("child_id", name);
     setTabCard(item);
   };
+  
   return (
     <>
       <Herosection

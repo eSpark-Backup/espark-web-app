@@ -110,6 +110,7 @@ const Contact = () => {
         </div>
       </div>
       <iframe
+      key={1 + Math.random()}
         src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=eSpark Consulting Group&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         width="100%"
         height="450"

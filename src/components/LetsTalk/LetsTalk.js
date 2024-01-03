@@ -14,7 +14,6 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const [errors, setErrors] = useState({});
   const form = useRef();
 
   const clearState = () => {
@@ -46,7 +45,6 @@ const LetsTalk = ({ modal, modelClose, link, h1 }) => {
 
     // If there are errors, set them in state and exit
     if (Object.keys(errors).length > 0) {
-      setErrors(errors);
       return;
     }
 

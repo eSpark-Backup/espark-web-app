@@ -1,18 +1,15 @@
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import {
   ShimmerTable,
   ShimmerText,
   ShimmerThumbnail,
 } from "react-shimmer-effects";
-import GetInTouch from "../../components/getInTouch/GetInTouch";
-import Title from "../../components/title/title";
 import { getSingleOpeningJobs } from "../../utils/utils";
 import { ShemarLengths } from "./../../helper/Shemars";
 import SectionTitle from "../../components/sectionTitle";
-import HubspotContactForm from "../../components/HobspotForm/hubSpotForm";
 import HubspotForm from "react-hubspot-form";
 
 const JobDetail = ({ appliedFor }) => {
@@ -25,6 +22,7 @@ const JobDetail = ({ appliedFor }) => {
       setSingleJob(data);
     };
     main();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

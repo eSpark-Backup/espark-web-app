@@ -3,9 +3,6 @@ import Title from "./../../components/title/title";
 import { shapes } from "./../../helper/ImageUrl";
 const Privacy = () => {
 
- const metaTag = () =>{
-  
- }
   return (
     <div>
       <Title title={"Privacy Policy "} data={shapes} />
@@ -656,8 +653,8 @@ const Privacy = () => {
                   By visiting this page on our website:{" "}
                   <a
                     href="https://esparkconsultants.com"
-                    rel="external nofollow noopener"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     https://esparkconsultants.com
                   </a>

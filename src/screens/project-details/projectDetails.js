@@ -5,7 +5,7 @@ import { projects } from "../../helper/projects";
 
 export default function ProjectDetails() {
   const params = useParams();
-  const filterProjects = projects.filter((item) => item.name == params.id);
+  const filterProjects = projects.filter((item) => item.name === params.id);
 
   const properties = {
     prevArrow: (

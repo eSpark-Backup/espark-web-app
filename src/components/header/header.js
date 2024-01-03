@@ -37,31 +37,18 @@ const Header = ({ scrollToLetsTalk }) => {
   useEffect(() => {
     if (!pathname.includes("/services")) {
       localStorage.clear("child_id");
-      setSelectTab("");
     }
   }, [pathname]);
 
   const [isNavCollapsed, setIsNavCollapsed] = useState(false);
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const [isChildCollapsed, setIsChildCollapsed] = useState(false);
-  const [selectedService, setSelectedService] = useState(null);
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
   const location = useLocation();
   const isAppScreen = location.pathname === "/espark-app";
-
-  const [iconShow, setIconShow] = useState(false);
-
-  const [dropDownId, setDropDownId] = useState();
-  const newData = [...services].reverse();
-
-  const [selected, setSelected] = useState(0);
-
   const getId = localStorage.getItem("child_id");
   const getServiceId = localStorage.getItem("id");
-  const [tabSelect, setSelectTab] = useState("");
 
   useEffect(() => {
-    setSelectTab(getId);
   }, [getId]);
 
   function handleBothDrawers() {
@@ -79,7 +66,6 @@ const Header = ({ scrollToLetsTalk }) => {
   };
 
   const toggleChildCollapse = (serviceId) => {
-    setSelectedService((prev) => (prev === serviceId ? null : serviceId));
     localStorage.clear("child_id");
     localStorage.setItem("id", serviceId);
     toggleDrawer();
@@ -133,7 +119,6 @@ const Header = ({ scrollToLetsTalk }) => {
                     className="nav-link"
                     to="/"
                     onClick={() => {
-                      setSelected(0);
                       setIsNavCollapsed(false);
                     }}
                   >
@@ -146,7 +131,7 @@ const Header = ({ scrollToLetsTalk }) => {
                     </span>
                   </Link>
                 </li>
-                <li className="nav-item" onClick={() => setSelected(1)}>
+                <li className="nav-item" onClick={() => {}}>
                   <Link className="nav-link">
                     <span
                       className={
@@ -268,7 +253,6 @@ const Header = ({ scrollToLetsTalk }) => {
                 <li
                   className="nav-item"
                   onClick={() => {
-                    setSelected(2);
                     setIsNavCollapsed(false);
                   }}
                 >
@@ -287,7 +271,6 @@ const Header = ({ scrollToLetsTalk }) => {
                 <li
                   className="nav-item"
                   onClick={() => {
-                    setSelected(3);
                     setIsNavCollapsed(false);
                   }}
                 >
@@ -306,7 +289,6 @@ const Header = ({ scrollToLetsTalk }) => {
                 <li
                   className="nav-item"
                   onClick={() => {
-                    setSelected(4);
                     setIsNavCollapsed(false);
                   }}
                 >

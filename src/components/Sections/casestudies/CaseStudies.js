@@ -26,6 +26,7 @@ const Portfolio = ({ data, title }) => {
       localStorage.setItem("portfolio_id", "App Development");
       setNewstate(projects.filter((item) => item.name === "App Development"));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   
 

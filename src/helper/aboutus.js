@@ -1,4 +1,3 @@
-import teamImage from "../../src/assets/images/About-us-image/ourTeam.png"
 import companyName from "../../src/assets/images/About-us-image/company.png"
 import Orical from "../../src/assets/images/About-us-image/Oricle.png"
 import yourLogo from "../../src/assets/images/About-us-image/yourlogo.png"
@@ -9,11 +8,8 @@ import OurGoalIcon from "../../src/assets/images/About-us-image/OurGoalIcon.svg"
 import webappLead from "../../src/assets/images/About-us-image/webappLead.png"
 import SQALead from "../../src/assets/images/About-us-image/SQALead.png"
 import MarketingLead from "../../src/assets/images/About-us-image/MarketingLead.png"
-import HRLead from "../../src/assets/images/About-us-image/HRHead.png"
 import NodeLead from "../../src/assets/images/About-us-image/NodeLead.png"
 import DesignerLead from "../../src/assets/images/About-us-image/DesignerLead.png"
-import COO from "../../src/assets/images/About-us-image/COO.png"
-import OurJourney from './../components/aboutComponents/ourJourney';
 export const aboutData = [
     {
         icon : OurGoalIcon,
