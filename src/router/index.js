@@ -15,14 +15,12 @@ import Privacy from "./../screens/privacy/Privacy";
 import NotFound from "../screens/not-found/notFound";
 import Teams from "../screens/teams/teams";
 import BlogDetail from "../screens/blog/blog-detail";
-import Careers from "../screens/careers";
-import JobDetail from "../screens/careers/jobDetail";
 import SEO from "./../utils/SEO";
 import Event from "./../components/event/event";
 import Upcoming from "../screens/upcoming-page";
 import Talent from "../screens/talent";
-import  { Jobs } from "../screens/jobs";
-import CareerDetails from "../screens/jobs/details";
+import  { Jobs } from "../screens/careers";
+import CareerDetails from "../screens/careers/details";
 
 const AppRoutes = () => {
   const data = window.scrollTo(0, 0);
@@ -44,11 +42,9 @@ const AppRoutes = () => {
     // { path: "/teams", element: <Teams /> },
     // { path: "/event", element: <Event /> },
     // { path: "/appointments", element: <Contact /> },
-    { path: "/careers", element: <Careers /> },
     { path: "/upcoming", element: <Upcoming /> },
-    { path: "/careers/:id", element: <JobDetail /> },
-    { path: "/job", element: <Jobs /> },
-    { path: "/job/:jobId", element: <CareerDetails /> },
+    { path: "/careers", element: <Jobs /> },
+    { path: "/careers/:jobId", element: <CareerDetails /> },
     // { path: "/job", element: <JobList /> },
     { path: "/*", element: <NotFound /> },
   ]);

@@ -1,18 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { createClient } from "@sanity/client";
+import client from "../../utils/sanityClient";
 import SectionTitle from "../../components/sectionTitle";
 import HubspotForm from "react-hubspot-form";
 import { ShimmerTable } from "react-shimmer-effects";
+import BlockContent from "@sanity/block-content-to-react";
+import "./style.css"
 // Import other necessary components/styles here
-
-
-const client = createClient({
-  projectId: "958pip7i",
-  dataset: "production",
-  useCdn: false,
-  apiVersion: "2022-03-07",
-});
 
 const CareerDetails = () => {
   const { jobId } = useParams();
@@ -21,37 +15,46 @@ const CareerDetails = () => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const jobData = await client.fetch(`*[_type == "job" && _id == "${jobId}"][0]`);
+        const jobData = await client.fetch(
+          `*[_type == "job" && _id == "${jobId}"][0]`
+        );
         setJob(jobData);
       } catch (error) {
         console.error("Error fetching job data:", error);
       }
     };
-  
+
     if (jobId) {
       fetchJobs();
     }
   }, [jobId]);
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid jobDetails">
       {job && (
         <div className="row pt-80">
-            <SectionTitle heading={job.jobTitle} width={0} />
-            <div className="col-lg-7">
+          <SectionTitle heading={job.jobTitle} width={0} />
+          <div className="col-lg-7">
+            <p>
+              <b>Job Description – {job.jobTitle}</b>
+            </p>
             <p>{job.shortDescription}</p>
-            {job.detailsDescription.map((block, index) => (
-              <div key={index}>
-                {/* Render each block */}
-                {block.children.map((child, i) => (
-                  <p key={i}>{child.text}</p>
-                ))}
-              </div>
-            ))}
+            {/* Render detailsDescription using BlockContent */}
+            <BlockContent blocks={job.detailsDescription} 
+            serializers={{
+              types: {
+                // Add a serializer for 'block' type to handle spacing between blocks
+                block: ({ node, children }) => <p style={{ marginTop: '15px', }}>{children}</p>,
+              },
+            }}
+            />
           </div>
           <div className="col-lg-5">
-            <SectionTitle padding={10} heading={"Apply For This Position"} my={2} />
-            {/* Embed HubSpot form */}
+            <SectionTitle
+              padding={10}
+              heading={"Apply For This Position"}
+              my={2}
+            />
             <div className="pt-80">
               <HubspotForm
                 region="na1"
@@ -61,7 +64,6 @@ const CareerDetails = () => {
                 onReady={(form) => console.log("Form ready!")}
                 loading={
                   <div>
-                    {/* Use ShimmerTable as loading indicator */}
                     <ShimmerTable row={5} col={1} />
                   </div>
                 }

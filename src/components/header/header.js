@@ -303,7 +303,7 @@ const Header = ({ scrollToLetsTalk }) => {
                           : "itemTxt "
                       }
                     >
-                      Careers
+                      careers
                     </span>
                   </Link>
                 </li>
@@ -492,7 +492,7 @@ const Header = ({ scrollToLetsTalk }) => {
               }
               onClick={toggleDrawer}
             >
-              <span>Careers</span>
+              <span>careers</span>
             </Link>
             <Link
               to="/upcoming"
