@@ -1,28 +1,20 @@
-import React, { useEffect, useState } from "react";
-import sanityClient from "../../utils/sanityClient";
+import { useEffect, useState } from "react";
 import Moment from "react-moment";
-import Button from "../../components/button/button";
-import Herosection from "../../components/Sections/Hero/Herosection";
-import CareerImg from "../../assets/images/hero-section/Careerherosection.svg";
-import { createClient } from "@sanity/client";
 import { ShimmerText, ShimmerThumbnail } from "react-shimmer-effects";
+import CareerImg from "../../assets/images/hero-section/Careerherosection.svg";
+import Herosection from "../../components/Sections/Hero/Herosection";
+import Button from "../../components/button/button";
 import { ShemarLength } from "../../helper/Shemars";
+import client from "../../utils/sanityClient";
 import "./style.css";
+
 
 export const Jobs = () => {
   const [jobs, setJobs] = useState([]);
   const [filteredJobs, setFilteredJobs] = useState([]);
   const [jobTitles, setJobTitles] = useState([]);
   const [selectedJobTitle, setSelectedJobTitle] = useState("");
-  const [showMessage, setShowMessage] = useState(false);
 
-  // Creating Sanity client
-  const client = createClient({
-    projectId: "958pip7i",
-    dataset: "production",
-    useCdn: false,
-    apiVersion: "2022-03-07",
-  });
 
   useEffect(() => {
     const fetchJobs = async () => {
@@ -139,9 +131,7 @@ export const Jobs = () => {
               ))}
             </div>
           </ul>
-        ) : showMessage ? (
-          <div className="notfound">Not found try another filter</div>
-        ) : (
+        ) :  (
           ShemarLength?.map((item) => {
             return (
               <div className="row">
