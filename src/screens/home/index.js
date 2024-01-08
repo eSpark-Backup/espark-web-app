@@ -4,8 +4,6 @@ import Herosection from "../../components/Sections/Hero/Herosection";
 import Users from "./../../components/Sections/User/Users";
 import PartnerAbout from "../../components/partners-about/parternsAbout";
 import LetsTalk from "../../components/LetsTalk/LetsTalk";
-import Portfolio from "../../components/Sections/portfolio/Portfolio";
-import { projects } from "../../helper/projects";
 import heroImage from "../../../src/assets/images/hero-section/test-image.png";
 import ServicesRecreate from "./../../components/Sections/services-recreate/index";
 import HashLinkObserver from "react-hash-link";

@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../../button/button";
 import SectionTitle from "../../sectionTitle";
 import styles from "./style.module.css";
 

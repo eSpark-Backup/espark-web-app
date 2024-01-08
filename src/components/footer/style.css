@@ -313,7 +313,7 @@ footer .container {
     flex-direction: row !important;
     align-items: right !important;
 
-    justify-content: start;
+    justify-content: flex-start;
     text-align: right !important;
   }
 

@@ -5,22 +5,17 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
 import Button from "../button/button";
 import SectionTitle from "./../sectionTitle/index";
-
-import { IMaskInput } from "react-imask";
-
 import PhoneInput from "react-phone-number-input";
 import "./GetInTouch.css";
 
-const ContactNumberMask = "+00(000)000-00000";
 
 const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  const [isEdited, setIsEdited] = useState(false);
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [files, setFiles] = useState(null);
+ 
 
   const form = useRef();
 
@@ -46,24 +41,22 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
     setName("");
     setPhone("");
     setSubject("");
-    setFiles("");
     array = [];
   };
 
-  const setfileData = (e) => {
-    const fileToLoad = e.target.files[0];
+  // const setfileData = (e) => {
+  //   const fileToLoad = e.target.files[0];
 
-    var fileReader = new FileReader();
-    var base64;
-    // Onload of file read the file content
-    fileReader.onload = function (fileLoadedEvent) {
-      base64 = fileLoadedEvent.target.result;
-      // Print data in console
-      setFiles(base64);
-    };
-    // Convert data to base64
-    fileReader.readAsDataURL(fileToLoad);
-  };
+  //   var fileReader = new FileReader();
+  //   var base64;
+  //   // Onload of file read the file content
+  //   fileReader.onload = function (fileLoadedEvent) {
+  //     base64 = fileLoadedEvent.target.result;
+  //     // Print data in console
+  //   };
+  //   // Convert data to base64
+  //   fileReader.readAsDataURL(fileToLoad);
+  // };
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs.init("bo0d42dcDbZL1U83o");
@@ -135,16 +128,17 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
     }
   };
 
-  const handlePhoneOnChange = (e) => {
-    const value = e.slice(0, limit);
-    setPhone(value);
+  // const handlePhoneOnChange = (e) => {
+  //   const value = e.slice(0, limit);
+  //   setPhone(value);
 
-    if (!isEdited && value.startsWith("+92")) {
-      setPhone("");
-    }
+  //   if (!isEdited && value.startsWith("+92")) {
+  //     setPhone("");
+  //   }
 
-    setIsEdited(true);
-  };
+  //   setIsEdited(true);
+  // };
+
   return (
     <div>
       <div className={`contact-area  ${!modal ? "pb-80 pt-80" : null}`}>
@@ -171,7 +165,7 @@ const GetInTouch = ({ modal, modelClose, link, h1, appliedFor }) => {
             <div className="col-lg-6 col-md-12">
               <img
                 src={require("../../assets/images/contact-img.png")}
-                alt="image"
+                alt="SectionImage"
               />
             </div>
           )}

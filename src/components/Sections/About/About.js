@@ -7,7 +7,6 @@ import shape5 from "../../../../src/assets/images/shape5.png";
 import about4 from "../../../../src/assets/images/about4.png";
 import styles from "./style.module.css";
 
-import { Link } from "react-router-dom";
 
 function About({ id, img, p, h1 }) {
   return (
@@ -18,7 +17,7 @@ function About({ id, img, p, h1 }) {
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-12">
                 <div className="ml-about-img">
-                  <img src={img ? img : about4} alt="image" width={250} />
+                  <img src={img ? img : about4} alt="image101" width={250} />
                 </div>
               </div>
               <div className="col-lg-6 col-md-12">
@@ -114,7 +113,7 @@ function About({ id, img, p, h1 }) {
               </div>
               <div className="col-lg-6 col-md-12">
                 <div className="ml-about-img mt-2">
-                  <img src={img ? img : about4} alt="image" width={250} />
+                  <img src={img ? img : about4} alt="image102" width={250} />
                 </div>
               </div>
             </div>

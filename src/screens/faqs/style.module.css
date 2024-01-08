@@ -5,9 +5,9 @@
         .paraText {
         
             display: flex;
-            text-align: start;
+            text-align: flex-start;
             align-items: flex-start;
-            justify-content: start;
+            justify-content: flex-start;
             margin-left: 10px;
             margin-top: 0px;
         }

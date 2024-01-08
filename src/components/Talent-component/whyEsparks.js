@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./style.module.css";
 import { hiringWhyEspark } from "../../helper/whyEsparkTalent";
-import CountUp, { useCountUp } from "react-countup";
+import CountUp from "react-countup";
 import Slider from "react-slick";
 
 const WhyeSparks = () => {

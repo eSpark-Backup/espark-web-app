@@ -1,6 +1,5 @@
 import React from "react";
 import SectionTitle from "../../sectionTitle";
-import HirATalentCard from "../HireATalentCard/HireATalentCard";
 import styles from "./style.module.css";
 
 const SaveTimeBudget = () => {

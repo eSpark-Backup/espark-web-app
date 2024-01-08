@@ -25,5 +25,5 @@ jobs:
         cache: 'npm'
     - run: |
         npm ci --legacy-peer-deps
-        CI='' npm run build
+        npm run build
         pm2 restart webapp-dev

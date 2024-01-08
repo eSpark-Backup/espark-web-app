@@ -19,7 +19,7 @@ function WhyeSpark({ heading }) {
                   id={styles["whylinksbtn"]}
                   className={`col-4`}
                 >
-                  <a href={items.url} target="_blank">
+                  <a href={items.url} target="_blank" rel="noreferrer">
                     <button
                       className="roundbutton rounded-pill"
                       style={{
@@ -138,7 +138,7 @@ function WhyeSpark({ heading }) {
                   <div
                     key={index + "why-points-1"}
                     className={
-                      index == 0
+                      index === 0
                         ? `${styles.points} d-flex`
                         : `${styles.points} d-flex ${styles.imgCustomMargin}`
                     }

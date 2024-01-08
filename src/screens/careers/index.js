@@ -7,7 +7,7 @@ import CareerImg from "../../assets/images/hero-section/Careerherosection.svg";
 import { createClient } from "@sanity/client";
 import { ShimmerText, ShimmerThumbnail } from "react-shimmer-effects";
 import { ShemarLength } from "../../helper/Shemars";
-import "./style.css"
+import "./style.css";
 
 export const Jobs = () => {
   const [jobs, setJobs] = useState([]);
@@ -107,6 +107,7 @@ export const Jobs = () => {
                 </div>
               </li>
             ))}
+            {/* Mobile Section */}
             <div>
               {filteredJobs.map((job, index) => (
                 <div key={index} className="careerMobile careerCard my-3">
@@ -126,6 +127,7 @@ export const Jobs = () => {
                       </div>
                       <div className="col-12 cardbtn">
                         <Button
+                          careerSmallBtn
                           title="Apply Now"
                           link={`/careers/${job._id}`}
                           design={1}

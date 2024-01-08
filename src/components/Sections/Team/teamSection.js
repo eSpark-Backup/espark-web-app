@@ -56,7 +56,7 @@ function TeamSection({ data }) {
       <div className="employee-details">
         <div className="profile-card2">
           <div className="img">
-            <img src={teamData.imageUrl} />
+            <img src={teamData.imageUrl} alt=""/>
           </div>
           <div className="caption2">
             <h3>{teamData.name}</h3>
@@ -72,7 +72,7 @@ function TeamSection({ data }) {
           return (
             <div className="col-lg-3 profile-card">
               <div className="img">
-                <img src={item.imageUrl} />
+                <img src={item.imageUrl} alt=""/>
               </div>
               <div className="caption">
                 <h3>{item.name}</h3>

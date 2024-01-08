@@ -1,11 +1,6 @@
-import React, { useEffect, useState } from "react";
-import GradiantCards from "../../components/cards/gradiantCards/gradiantCards";
+import React, { useState } from "react";
 import HeroSectionThree from "../../components/Hero/HeroSectionThree";
-import Herosection from "../../components/Sections/Hero/Herosection";
-import Tabs from "../../components/tabs/tabs";
-import Title from "../../components/title/title";
 import TwoColumns from "../../components/two-column/twoColumns";
-import { shapes } from "../../helper/ImageUrl";
 import { products } from "../../helper/products";
 import "./style.css";
 

@@ -6,7 +6,7 @@ function CategoryCard({ header, image,des }) {
     <div className="card p-2">
       <div className="row">
         <div className="col-4">
-          <img className="card-img-top" src={image} alt="Card image cap" />
+          <img className="card-img-top" src={image} alt="Cardimagecap" />
         </div>
         <div className="col-8">
         <h1 className="carsour">{header}</h1>

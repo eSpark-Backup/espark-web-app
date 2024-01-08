@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./style.module.css";
-import { services } from './../../helper/services';
 
 function ServicesCard({ image, image2, title, para }) {
   return (

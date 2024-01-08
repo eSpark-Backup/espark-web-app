@@ -59,7 +59,7 @@
     "yet-another-react-lightbox": "^3.4.0"
   },
   "scripts": {
-    "start": "PORT=3003 react-scripts start",
+    "start": "react-scripts start",
     "dev": "PORT=3003 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
