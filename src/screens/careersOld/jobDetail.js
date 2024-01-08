@@ -1,19 +1,14 @@
-// import React from "react";
-// import { useState } from "react";
-// import { useEffect } from "react";
-// import { Link, useParams } from "react-router-dom";
+// import { useEffect, useState } from "react";
+// import HubspotForm from "react-hubspot-form";
+// import { useParams } from "react-router-dom";
 // import {
-//   ShimmerTable,
-//   ShimmerText,
-//   ShimmerThumbnail,
+//     ShimmerTable,
+//     ShimmerText,
+//     ShimmerThumbnail,
 // } from "react-shimmer-effects";
-// import GetInTouch from "../../components/getInTouch/GetInTouch";
-// import Title from "../../components/title/title";
+// import SectionTitle from "../../components/sectionTitle";
 // import { getSingleOpeningJobs } from "../../utils/utils";
 // import { ShemarLengths } from "./../../helper/Shemars";
-// import SectionTitle from "../../components/sectionTitle";
-// import HubspotContactForm from "../../components/HobspotForm/hubSpotForm";
-// import HubspotForm from "react-hubspot-form";
 
 // const JobDetail = ({ appliedFor }) => {
 //   const params = useParams();
