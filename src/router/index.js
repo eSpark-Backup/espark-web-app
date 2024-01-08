@@ -11,13 +11,15 @@ import ProjectDetails from "../screens/project-details/projectDetails";
 import Privacy from "./../screens/privacy/Privacy";
 import NotFound from "../screens/not-found/notFound";
 import BlogDetail from "../screens/blog/blog-detail";
-import Careers from "../screens/careers";
-import JobDetail from "../screens/careers/jobDetail";
 import SEO from "./../utils/SEO";
 import Upcoming from "../screens/upcoming-page";
-
+import "./../components/event/style.css";
+import  { Jobs } from "../screens/careers";
+import CareerDetails from "../screens/careers/details";
 
 const AppRoutes = () => {
+  const data = window.scrollTo(0, 0);
+  console.log("Scroll",data)
 
   let routes = useRoutes([
     { path: "/", element: <Home /> },
@@ -36,9 +38,10 @@ const AppRoutes = () => {
     // { path: "/teams", element: <Teams /> },
     // { path: "/event", element: <Event /> },
     // { path: "/appointments", element: <Contact /> },
-    { path: "/careers", element: <Careers /> },
     { path: "/upcoming", element: <Upcoming /> },
-    { path: "/careers/:id", element: <JobDetail /> },
+    { path: "/careers", element: <Jobs /> },
+    { path: "/careers/:jobId", element: <CareerDetails /> },
+    // { path: "/job", element: <JobList /> },
     { path: "/*", element: <NotFound /> },
   ]);
   return routes;

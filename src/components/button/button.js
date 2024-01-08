@@ -10,7 +10,9 @@ const Button = ({
   onClick,
   disabled,
   careerSmallBtn,
+  linkType
 }) => {
+  
   if (design === null) {
     return null;
   }
@@ -219,6 +221,21 @@ const Button = ({
       </>
     );
   }
+  if (linkType === "jobPage") {
+    return (
+      <Link to={link} className={`btn btn-design-${design}`}>
+        {title}
+      </Link>
+    );
+  } else {
+    return (
+      <a href={link} className={`btn btn-design-${design}`} target="_blank" rel="noopener noreferrer">
+        {title}
+      </a>
+    );
+  }
 };
+
+
 
 export default Button;

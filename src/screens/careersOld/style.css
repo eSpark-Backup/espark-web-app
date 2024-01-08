@@ -1,0 +1,133 @@
+.section-p {
+  text-align: left;
+}
+
+.section-p h2 {
+  color: var(--color-primary);
+}
+
+.section-p h3 {
+  color: gray !important;
+}
+
+.section-p p {
+  font-size: 16px;
+}
+
+.notfound {
+  text-align: center;
+  color: var(--color-primary);
+  margin-bottom: 80px;
+  margin-top: 60px;
+  font-size: 30px;
+}
+
+.containerMarginBottom {
+  margin-bottom: 80px;
+}
+
+.containerMarginTop {
+  margin-top: 220px;
+}
+
+.jobDetails {
+  padding-bottom: 50px;
+}
+
+.jobDetails>h2 {
+  line-height: 1.8;
+  font-size: 24px;
+}
+
+.jobsInfo>p {
+  line-height: 1.2;
+  color: black;
+  height: 50px;
+  font-size: 16px !important;
+}
+
+.jobsInfo>strong {
+  line-height: 1.2;
+  color: var(--color-secondary) !important;
+}
+
+.jobDetails>p {
+  line-height: 1.8;
+  color: black;
+  font-size: 16px !important;
+}
+
+.jobDetails>ul {
+  padding-left: 20px;
+  list-style-type: disc !important;
+  font-size: 16px;
+}
+
+.jobDetails>ol {
+  padding-left: 20px;
+  list-style-type: decimal !important;
+  font-size: 16px;
+}
+
+.paragraph .page-title-area {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700 !important;
+  font-size: 5px !important;
+  line-height: 100%;
+  color: var(--color-secondary) !important;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.careerCard .cardbtn {
+  text-align: right !important;
+  padding-top: 10px;
+
+}
+
+.careerMobile {
+  width: 96%;
+}
+
+.cardDesc>p {
+  text-align: justify;
+}
+
+.careerMobile {
+  display: none;
+}
+
+.career-hr {
+  width: 100% !important;
+  height: 1px !important;
+  background-color: #000 !important;
+}
+
+@media (max-width: 567px) {
+  .careerCard .cardbtn>a {
+    width: 100% !important;
+    align-items: left !important;
+  }
+
+  .cardDesc>p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 567px) and (max-width: 768px) {
+  .careerMobile {
+    width: 98%;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .careerMobile {
+    width: 99%;
+  }
+}
+
+.hs-form-iframe{
+  height: 559px !important;
+ }

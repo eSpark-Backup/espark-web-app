@@ -232,7 +232,7 @@ const DrawerNav = () => {
                           : "itemTxt "
                       }
                     >
-                      Careers
+                      careers
                     </span>
                   </Link>
                 </li>
