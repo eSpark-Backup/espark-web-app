@@ -33,7 +33,7 @@ export const Jobs = () => {
       }
     };
     fetchJobs();
-  }, [client]);
+  }, []);
 
   const handleJobTitleFilter = (e) => {
     const selectedTitle = e.target.value;
