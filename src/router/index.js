@@ -13,11 +13,13 @@ import NotFound from "../screens/not-found/notFound";
 import BlogDetail from "../screens/blog/blog-detail";
 import SEO from "./../utils/SEO";
 import Upcoming from "../screens/upcoming-page";
-import Event from "./../components/event/event";
+import "./../components/event/style.css";
 import  { Jobs } from "../screens/careers";
 import CareerDetails from "../screens/careers/details";
 
 const AppRoutes = () => {
+  const data = window.scrollTo(0, 0);
+  console.log("Scroll",data)
 
   let routes = useRoutes([
     { path: "/", element: <Home /> },
