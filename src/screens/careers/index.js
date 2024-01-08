@@ -1,317 +1,144 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import sanityClient from "../../utils/sanityClient";
 import Moment from "react-moment";
-import { ShimmerText, ShimmerThumbnail } from "react-shimmer-effects";
-import CareerImg from "../../assets/images/hero-section/Careerherosection.svg";
-import Herosection from "../../components/Sections/Hero/Herosection";
 import Button from "../../components/button/button";
-import { getOpeningJobs } from "../../utils/utils";
-import { ShemarLength } from "./../../helper/Shemars";
-import { optionData } from "./../../utils/utils";
+import Herosection from "../../components/Sections/Hero/Herosection";
+import CareerImg from "../../assets/images/hero-section/Careerherosection.svg";
+import { createClient } from "@sanity/client";
+import { ShimmerText, ShimmerThumbnail } from "react-shimmer-effects";
+import { ShemarLength } from "../../helper/Shemars";
 import "./style.css";
-const Careers = () => {
-  const [careersData, setCareersData] = useState([]);
-  const [getCat, setGetCat] = useState([]);
-  const [allData, setAllData] = useState([]);
+
+export const Jobs = () => {
+  const [jobs, setJobs] = useState([]);
+  const [filteredJobs, setFilteredJobs] = useState([]);
+  const [jobTitles, setJobTitles] = useState([]);
+  const [selectedJobTitle, setSelectedJobTitle] = useState("");
   const [showMessage, setShowMessage] = useState(false);
-  const [currentFilter, setcurrentFilter] = useState("");
-  const [filter, setFilter] = useState({
-    job_category: "",
-    job_type: "",
-    job_location: "",
+
+  // Creating Sanity client
+  const client = createClient({
+    projectId: "958pip7i",
+    dataset: "production",
+    useCdn: false,
+    apiVersion: "2022-03-07",
   });
 
   useEffect(() => {
-    const main = async () => {
-      const data = await getOpeningJobs();
-      if (data) {
-        setCareersData(data);
-        const getDatafromJobs = optionData(data);
-        setGetCat(getDatafromJobs);
-        setAllData(data);
+    const fetchJobs = async () => {
+      try {
+        const jobData = await client.fetch('*[_type == "job"]'); // Fetch job data from Sanity
+        setJobs(jobData);
+        setFilteredJobs(jobData); // Initially, set filtered jobs to all jobs
+
+        // Extract unique job titles from jobs to populate the dropdown
+        const uniqueJobTitles = [
+          ...new Set(jobData.map((job) => job.jobTitle)),
+        ];
+        setJobTitles(uniqueJobTitles);
+      } catch (error) {
+        console.error("Error fetching jobs:", error);
       }
     };
-    main();
-  }, []);
+    fetchJobs();
+  }, [client]);
 
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setShowMessage(true);
-    }, 3000);
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, []);
+  const handleJobTitleFilter = (e) => {
+    const selectedTitle = e.target.value;
+    setSelectedJobTitle(selectedTitle); // Update the selected job title
 
-  const inputFeilds = (category, inputFor) => {
-    return (
-      <div className="col-lg-12 col-md-12 col-sm-12   px-2">
-        <select
-          className="form-select"
-          aria-label="Default select example"
-          onChange={(e) => {
-            selectCategory(e);
-          }}
-        >
-          {category?.map((item) => {
-            return (
-              <>
-                <option value={item + "," + inputFor}>{item}</option>
-              </>
-            );
-          })}
-        </select>
-      </div>
-    );
+    // Filter jobs based on job title
+    if (selectedTitle === "") {
+      setFilteredJobs(jobs); // If "All" is selected, show all jobs
+    } else {
+      const filtered = jobs.filter((job) => job.jobTitle === selectedTitle);
+      setFilteredJobs(filtered); // Update the filtered jobs
+    }
   };
-
-  const selectCategory = (e) => {
-    const categories = e.target.value;
-    // console.log("categories", categories);
-    const categorySplitArr = categories.split(",");
-    const value = categorySplitArr[0];
-    const name = categorySplitArr[1];
-    setFilter({ ...filter, [name]: value });
-    setcurrentFilter(name);
-    // if (name === "job_cat") {
-    //   let newData = applyFilter([...allData],c
-    //     ...filter,
-    //     [name]: value,
-    //   });
-
-    //   setCareersData(newData);
-
-    //   setFilter({
-    //     job_cat: value,
-    //     job_type: "Full Time",
-    //     job_location: "Karachi",
-    //   });
-    // }
-    // if (name === "job_type") {
-    //   let newData = applyFilter([...allData], {
-    //     ...filter,
-    //     [name]: value,
-    //   });
-
-    //   setCareersData(newData);
-
-    //   setFilter({
-    //     job_cat: value,
-    //     job_type: "Full Time",
-    //     job_location: "Karachi",
-    //   });
-    // }
-    // if (name === "job_location") {
-    //   let newData = applyFilter([...allData], {
-    //     ...filter,
-    //     [name]: value,
-    //   });
-
-    //   setCareersData(newData);
-
-    //   setFilter({
-    //     job_cat: value,
-    //     job_type: "Full Time",
-    //     job_location: "Karachi",
-    //   });
-    // }
-    //  else {
-
-    // setFilter({
-    //   ...filter,
-    //   [name]: value,
-    // });
-    // }
-  };
-
-  useEffect(() => {
-    let newData = applyFilter([...allData], filter, currentFilter);
-    // console.log(newData);
-
-    setCareersData(newData);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [filter]);
-
-  // const jobFunction = (jobs, filter) => {
-  //   if (filter.job_category) {
-  //     const job_category = jobs.filter((job) =>
-  //       job.acf[filter.job_category].includes(filter[filter.job_category])
-  //     );
-  //     console.log("job_category", job_category);
-  //   }
-  // };
-  // const typeFunction = (jobs, filter) => {
-  //   if (filter.job_type) {
-  //     const job_type = jobs.filter((job) =>
-  //       job.acf[filter.job_type].includes(filter[filter.job_type])
-  //     );
-  //     console.log("job_type", job_type);
-  //   }
-  // };
-  // const locaFunction = (jobs, filter) => {
-  //   if (filter.job_location) {
-  //     const job_location = jobs.filter((job) =>
-  //       job.acf[filter.job_location].includes(filter[filter.job_location])
-  //     );
-  //     console.log("job_location", job_location);
-  //     // console.log("asddddd");
-  //   }
-  // };
-  const applyFilter = (jobs, filter, currentFilter) => {
-    // console.log("filter", currentFilter);
-    //   const job_category = jobs?.filter((job) =>
-    //   job?.acf[currentFilter]?.includes(filter[currentFilter])
-    // );
-    const job_category = jobs?.filter((job) =>
-      job?.title?.rendered.includes(filter[currentFilter])
-    );
-    return filter[currentFilter] === "All" ? jobs : job_category;
-    // const job_type = jobs.filter((job) =>
-    //   job.acf[filter.job_type].includes(filter[filter.job_type])
-    // );
-    // console.log("job_type", job_type);
-    // console.log("job_category", job_category);
-    // jobFunction(jobs, filter);
-    // locaFunction(jobs, filter);
-    // typeFunction(jobs, filter);
-    // if (filter.job_location) {
-    //   const job_location = jobs.filter((job) =>
-    //     job.acf[filter.job_location].includes(filter[filter.job_location])
-    //   );
-    //   console.log("job_location", job_location);
-    //   console.log("asddddd");
-    // }
-    //   return jobs;
-    // }
-    // if (
-    //   filter.job_category === "" &&
-    //   filter.job_type === "" &&
-    //   filter.job_location === ""
-    // ) {
-    //   console.log("asddddd");
-
-    //   return jobs;
-    // }
-    // else {
-    //   console.log("asd", filtration);
-    // return jobs.filter((job) => {
-    //   return (
-    //     job.acf.job_category.includes(filter.job_cat) &&
-    //     job.acf.job_type.includes(filter.job_type) &&
-    //     job.acf.job_location.includes(filter.job_location)
-    //   );
-    // });
-    // }
-    // if (filter.job_location !== "All") {
-    //   return jobs.filter((job) => {
-    //     return job.acf.job_location.includes(filter.job_location);
-    //   });
-    // } else if (filter.job_type) {
-    //   return jobs.filter((job) => {
-    //     return job.acf.job_type.includes(filter.job_type);
-    //   });
-    // }
-  };
-
   return (
-    <>
+    <div>
       <Herosection
         title="CAREERS"
         paragraph="Our career pathways provide premium opportunities to establish dynamic skillset and talent. We structure productive roadmaps for our employees to start off their IT career with an endless spirit. Our teams are formed by passing each candidate through effective technical assessments. Join any of our productive teams based on your prerequisite expertise, and make your professional career a brilliance."
         images={CareerImg}
         ShowButton={false}
       />
-      <div className="container-fluid containerMarginBottom  containerMarginTop">
-        {/* {careersData && (
-          <div className="mb-3">
-            <SectionTitle
-              heading={"Open Vacancies"}
-              height="2px"
-              width="158px"
-              my={2}
-            />
-          </div>
-        )} */}
-
-        <div className="d-lg-flex d-md-flex carrer-filter">
-          {inputFeilds(getCat.category, "job_category")}
-          {/* {inputFeilds(getCat.type, "job_type")}
-          {inputFeilds(getCat.location, "job_location")} */}
+      <div className="container-fluid containerMarginBottom containerMarginTop">
+        <div>
+          <select
+            className="form-select"
+            id="jobTitleFilter"
+            value={selectedJobTitle}
+            onChange={handleJobTitleFilter}
+          >
+            <option value="">All</option>
+            {jobTitles.map((title, index) => (
+              <option key={index} value={title}>
+                {title}
+              </option>
+            ))}
+          </select>
         </div>
-        <br />
-
-        {careersData && careersData.length > 0 ? (
-          careersData?.map((item) => {
-            return (
-              <>
-                <div className="careers">
-                  <div className="row border-top p-5">
-                    <div className="col-lg-3  col-md-3 col-sm-12">
-                      <h4 id="data_job_num1" data-job-num="1">
-                        {item?.title?.rendered}
-                      </h4>
-
-                      <p>
-                        Karachi
-                        <br />
-                        <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
-                      </p>
-                    </div>
-                    <div className="col-lg-6 col-md-6 col-sm-12">
-                      <h4>Description</h4>
-                      <p
-                        dangerouslySetInnerHTML={{
-                          __html: item?.excerpt.rendered,
-                        }}
-                      ></p>
-                    </div>
-                    <div className="col-lg-3 col-md-3 col-sm-12 d-flex align-items-center justify-content-center cardsBtn ">
-                      <Button
-                        title="Apply Now"
-                        link={`/careers/${item.id}`}
-                        design={1}
-                      />
-                    </div>
+        {filteredJobs.length > 0 ? (
+          <ul>
+            {filteredJobs.map((job) => (
+              <li key={job._id} className="careers">
+                <div className="row border-top p-5">
+                  <div className="col-lg-3 col-md-3 col-sm-12">
+                    <h4>{job.jobTitle}</h4>
+                    {/* You can replace this with your actual date */}
+                    <p>
+                      Karachi
+                      <br />
+                      <Moment format="YYYY/MM/DD">2024-01-05</Moment>
+                    </p>
+                  </div>
+                  <div className="col-lg-6 col-md-6 col-sm-12">
+                    <h4>Description</h4>
+                    <p>{job.shortDescription}</p>
+                  </div>
+                  <div className="col-lg-3 col-md-3 col-sm-12 d-flex align-items-center justify-content-center cardsBtn">
+                    <Button
+                      title="Apply Now"
+                      link={`/careers/${job._id}`}
+                      design={1}
+                    />
                   </div>
                 </div>
-                {/* Mobile card sections */}
-                <div className="careerMobile careerCard my-3">
-                  <div className="card-body ">
+              </li>
+            ))}
+            {/* Mobile Section */}
+            <div>
+              {filteredJobs.map((job, index) => (
+                <div key={index} className="careerMobile careerCard my-3">
+                  <div className="card-body">
                     <div className="row py-3">
-                      <div className=" col-12  ">
-                        <h4 id="data_job_num1" data-job-num="1">
-                          {item?.title?.rendered}
-                        </h4>
-
-                        <p className="cardtitle">
-                          {item?.acf ? item?.acf.job_location[0] : ""}{" "}
-                        </p>
+                      <div className="col-12">
+                        <h4>{job.jobTitle}</h4>
+                        {/* You can replace this with your actual date */}
+                        <p className="cardtitle">Karachi</p>
                         <p>
-                          <Moment format="YYYY/MM/DD">{item.date_gmt}</Moment>
+                          <Moment format="YYYY/MM/DD">2024-01-05</Moment>
                         </p>
                         <hr className="career-hr my-2" />
                       </div>
-                      <div className="col-12 ">
-                        <p
-                          className="cardDesc"
-                          dangerouslySetInnerHTML={{
-                            __html: item?.excerpt.rendered,
-                          }}
-                        ></p>
+                      <div className="col-12">
+                        <p className="cardDesc">{job.shortDescription}</p>
                       </div>
-                      <div className=" col-12 cardbtn">
+                      <div className="col-12 cardbtn">
                         <Button
                           careerSmallBtn
                           title="Apply Now"
-                          link={`/careers/${item.id}`}
+                          link={`/careers/${job._id}`}
                           design={1}
                         />
                       </div>
                     </div>
                   </div>
                 </div>
-              </>
-            );
-          })
+              ))}
+            </div>
+          </ul>
         ) : showMessage ? (
           <div className="notfound">Not found try another filter</div>
         ) : (
@@ -338,8 +165,6 @@ const Careers = () => {
           })
         )}
       </div>
-    </>
+    </div>
   );
 };
-
-export default Careers;

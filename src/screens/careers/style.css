@@ -1,3 +1,16 @@
+.jobDetails 
+ul {
+  
+  list-style: disc !important;
+  
+}
+
+.form-select{
+   
+    border: 1px solid #ced4da;
+   margin-bottom: 50px;
+}
+
 .section-p {
   text-align: left;
 }
@@ -97,6 +110,8 @@
 .careerMobile {
   display: none;
 }
+
+
 
 .career-hr {
   width: 100% !important;
