@@ -16,7 +16,7 @@
     "framer-motion": "^8.0.2",
     "gsap": "^3.11.3",
     "jquery": "^3.6.3",
-    "moment": "^2.29.4",
+    "moment": "^2.31.0",
     "react": "^18.1.0",
     "react-animated-css": "^1.2.1",
     "react-awesome-slider": "^4.1.0",
